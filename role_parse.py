@@ -11,35 +11,7 @@ train = json.load(open("train.json"))
 
 output_name = 'role_data.json'
 
-nouns = imsitu["nouns"]
-verbs = imsitu["verbs"]
-#
-# verbs["clinging"]
-
-# {u'abstract': u'an AGENT clings to the CLUNGTO at a PLACE',
-#  u'def': u'stick to',
-#  u'framenet': u'Retaining',
-#  u'order': [u'agent', u'clungto', u'place'],
-#  u'roles': {
-#   u'agent': {u'def': u'The entity doing the cling action',u'framenet': u'agent'},
-#   u'clungto': {u'def': u'The entity the AGENT is clinging to',u'framenet': u'theme'},
-#   u'place': {u'def': u'The location where the cling event is happening',u'framenet': u'place'}
-#  }
-# }
-
-# nouns["n02129165"]
-
-#{u'def': u'large gregarious predatory feline of Africa and India having a tawny coat with a shaggy mane in the male',
-# u'gloss': [u'lion', u'king of beasts', u'Panthera leo']}
-
-# train['clinging_250.jpg']
-#{u'frames': [{u'agent': u'n01882714', u'clungto': u'n05563770', u'place': u''},
-#  {u'agent': u'n01882714', u'clungto': u'n05563770', u'place': u''},
-#  {u'agent': u'n01882714', u'clungto': u'n00007846', u'place': u''}],
-# u'verb': u'clinging'}
-
-
-# TODO for each line of training
+# for each line of training
 # for each frame
 # save the noun key to its role
 # new dic should look like: {'noun_id1': ['agent': x many times, 'place': y many times, etc]}
