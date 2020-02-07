@@ -1,5 +1,9 @@
 import json
 from typing import TextIO
+import spacy
+from spacy import displacy
+
+nlp = spacy.load("en_core_web_sm")
 
 # training annotations
 train = json.load(open("train.json"))
@@ -34,6 +38,7 @@ VERBS = imsitu["verbs"]
 h = train['clinging_250.jpg']['verb']
 frames = train['clinging_250.jpg']['frames']
 
+###############Generate Verb_Role_Noun txt##############
 def gen_h_r_t(h: str, r: str, ts: [], write_file: TextIO) -> []:
     # result = []
     for t in ts:
@@ -71,9 +76,7 @@ def frames_h_r_ts(h: str, frames:[], write_file: TextIO):
 # print(frames_h_r_ts(h, frames))
 
 # using train.json frame data
-def gen_frame_based(train):
-    image_name = 'image.txt'
-    frame_name = 'image_frame.txt'
+def gen_frame_based(train, image_name, frame_name):
     # write image labels to text file
     with open(image_name, 'w') as im, open(frame_name, 'w') as fr:
         # write image names
@@ -86,4 +89,56 @@ def gen_frame_based(train):
             h = train[k]['verb']
             frames = train[k]['frames']
             frames_h_r_ts(h, frames, fr)
-gen_frame_based(train)
+
+image_name = 'image.txt'
+frame_name = 'image_frame.txt'
+# gen_frame_based(train, image_name, frame_name)
+
+###############Realize Sentences##############
+# remove frequency counts and subparts, filter out entries containing only the verbs
+def clean_realized(in_file, out_file):
+
+    with open(in_file, 'r') as rl, open(out_file, 'w') as rc:
+        for l in rl:
+            count, realized_parts, verb, sub = l.split('\t')
+            rp = realized_parts.split('_')
+            if len(rp) > 1:
+                line = realized_parts + '\t' + verb
+                rc.write(line + '\n')
+            # print(realized_parts)
+realized = 'simple_sentence_realization/realized_parts.tab'
+realized_clean = 'realized_clean.txt'
+# clean_realized(realized, realized_clean)
+
+###############Dep Parse##############
+
+# generate the dep text file
+# h_dep_t: throw_nsubj_kid
+def gen_dep(in_file, out_file):
+    with open(in_file, 'r') as f, open(out_file, 'w') as o:
+        for l in f:
+            realize, verb = l.split('\t')
+            # print(realize)
+            gen_dep_line(realize, o)
+
+# gen_dep(realized_clean)
+
+
+# doc = nlp("person adjusting fastening using hand at table.")
+line = 'person_adjusting_fastening_using_hand_at_table'
+dep_out_file = 'image_dep.txt'
+# displacy.serve(doc, style="dep")
+# generate the dependency relations based on one line of the role relation entry
+def gen_dep_line(input, file):
+    words = input.split('_')
+    doc = spacy.tokens.doc.Doc(nlp.vocab, words=words)
+    for name, proc in nlp.pipeline:
+        doc = proc(doc)
+
+    for token in doc:
+        result = token.head.text + '_' + token.dep_ + '_' + token.text
+        # print(token.text, token.dep_, [child for child in token.children])
+        # print(printing)
+        file.write(result + '\n')
+
+gen_dep(realized_clean, dep_out_file)
