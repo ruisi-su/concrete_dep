@@ -2,6 +2,7 @@ import json
 from typing import TextIO
 import spacy
 from spacy import displacy
+import ast
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -11,6 +12,10 @@ imsitu = json.load(open("imsitu_space.json"))
 
 NOUNS = imsitu["nouns"]
 VERBS = imsitu["verbs"]
+
+realized = 'simple_sentence_realization/realized_parts.tab'
+
+
 #
 # verbs["clinging"]
 
@@ -35,110 +40,150 @@ VERBS = imsitu["verbs"]
 #  {u'agent': u'n01882714', u'clungto': u'n00007846', u'place': u''}],
 # u'verb': u'clinging'}
 
-h = train['clinging_250.jpg']['verb']
-frames = train['clinging_250.jpg']['frames']
-
-###############Generate Verb_Role_Noun txt##############
-def gen_h_r_t(h: str, r: str, ts: [], write_file: TextIO) -> []:
-    # result = []
-    for t in ts:
-        h_r_t = h + '_' + r + '_' + t
-        write_file.write(h_r_t + '\n')
-        # print('writing')
-        # result.append(h_r_t)
-    # return result
-
-check1 = ['h_agent_koala', 'h_agent_koala bear', 'h_agent_kangaroo bear', 'h_agent_native bear', 'h_agent_Phascolarctos cinereus']
-ts = ['koala', 'koala bear', 'kangaroo bear', 'native bear', 'Phascolarctos cinereus']
-# assert(gen_h_r_t('h', 'agent', ts) == check1)
+h = train['glaring_215.jpg']['verb']
+frames = train['glaring_215.jpg']['frames']
 
 
-def pair_h_r_ts(h: str, frame: dict,  write_file: TextIO) -> []:
-    # result = []
+###############Realize Sentences##############
+
+# return a list object for future usage
+def realized_dict(in_file, in_verb):
+    sent_list = []
+    with open(in_file, 'r') as rl:
+        for l in rl:
+            count, realized_parts, verb, sub = l.split('\t')
+            if in_verb == verb:
+                sent_dict = {}
+                sent_dict['phrase'] = realized_parts
+                sent_dict['verb'] = verb
+                sent_dict['subparts'] = sub
+
+                sent_list.append(sent_dict)
+    return sent_list
+
+def get_realized(in_list, subparts):
+    for l in in_list:
+        realized_parts = l['phrase']
+        sub = l['subparts']
+        sub = ast.literal_eval(sub)
+        rp = realized_parts.split('_')
+        if sub == subparts:
+            return realized_parts
+
+realized_clean = 'frame_realized.txt'
+subparts = {'verb': 'glaring', 'agent': 'n10287213', 'place': 'n08613733'}
+# subparts = {'verb': 'glowing', 'place': 'n04105893'}
+# in_list = realized_dict(realized)
+
+# print(get_realized(in_list, subparts))
+
+
+############### Generate Verb_Role_Noun txt ##############
+
+
+# verb - frame
+def pair_h_r_t(h: str, frame: dict, write_file: TextIO) -> []:
+    # result = ''
     for f in frame.keys():
         if frame[f] != '':
             n_id = frame[f]
             ns = NOUNS[n_id]['gloss']
-            # print('role ' + f + '\n' + 'ns ' + str(ns))
-            r_ts = gen_h_r_t(h, f, ns, write_file)
-            # result.extend(r_ts)
-    # return result
-check2 = ['clinging_clungto_arm', 'clinging_agent_koala', 'clinging_agent_koala bear', 'clinging_agent_kangaroo bear', 'clinging_agent_native bear', 'clinging_agent_Phascolarctos cinereus']
-# assert(pair_h_r_ts(h, frames[0]) == check2)
+            # first of gloss
+            n = ns[0]
 
-def frames_h_r_ts(h: str, frames:[], write_file: TextIO):
-    # result = []
-    for f in frames:
-        # result.extend(pair_h_r_ts(h, f))
-        pair_h_r_ts(h, f, write_file)
+            hrt = h + '_' + f + '_' + n
+            write_file.write(hrt + '\t')
+            # result += hrt+'\t'
     # return result
+# check2 = 'glaring_place_sidewalk	glaring_agent_man'
 
-# print(frames_h_r_ts(h, frames))
+# # verb - frames
+# def frames_h_r_ts(h: str, frames:[], write_file: TextIO):
+#     result = []
+#     for f in frames:
+#         # result.append(pair_h_r_ts(h, f))
+#         # pair_h_r_ts(h, f)
+#
+#         write_file.write(pair_h_r_ts(h, f) + '\t')
+#     write_file.write('\n')
+#     # return result
+#
+# # print(frames_h_r_ts(h, frames))
 
 # using train.json frame data
-def gen_frame_based(train, image_name, frame_name):
+def gen_frame_based(train):
+    # name vars
+    im_name = 'image'
+    image_name = im_name + '.txt'
+    relation_name = im_name + '_frame.txt'
+    realized_name = im_name + '_realized.txt'
+
     # write image labels to text file
-    with open(image_name, 'w') as im, open(frame_name, 'w') as fr:
+    with open(dep_name, 'w') as dp, open(image_name, 'w') as im, open(realized_name, 'w') as rl:
         # write image names
         for k in train.keys():
-            im.write(k + '\n')
             # fr.write(k + '\n')
             # write frame data:
             # for example: h: throw r: agent t: kid
             # h_r_t
             h = train[k]['verb']
             frames = train[k]['frames']
-            frames_h_r_ts(h, frames, fr)
+            counter = 0
+            realized_list = realized_dict(realized, h)
 
-image_name = 'image.txt'
-frame_name = 'image_frame.txt'
-# gen_frame_based(train, image_name, frame_name)
+            for f in frames:
+                # write roles
+                pair_h_r_t(h, f, fr)
+                # new line
+                fr.write('\n')
 
-###############Realize Sentences##############
-# remove frequency counts and subparts, filter out entries containing only the verbs
-def clean_realized(in_file, out_file):
+                # write image labels
+                im.write(k + '\t' + str(counter) + '\n')
+                # counter
+                counter += 1
 
-    with open(in_file, 'r') as rl, open(out_file, 'w') as rc:
-        for l in rl:
-            count, realized_parts, verb, sub = l.split('\t')
-            rp = realized_parts.split('_')
-            if len(rp) > 1:
-                line = realized_parts + '\t' + verb
-                rc.write(line + '\n')
-            # print(realized_parts)
-realized = 'simple_sentence_realization/realized_parts.tab'
-realized_clean = 'realized_clean.txt'
-# clean_realized(realized, realized_clean)
+                # write realized sent
+                # remove empty entries
+                sub = {k: v for k, v in f.items() if v != ''}
+                sub['verb'] = h
+                # find the phrase in realized parts
+                rs = get_realized(realized_list, sub)
+                print(rs)
+                rl.write(rs + '\n')
+
+
+# gen_frame_based(train)
 
 ###############Dep Parse##############
 
 # generate the dep text file
-# h_dep_t: throw_nsubj_kid
 def gen_dep(in_file, out_file):
     with open(in_file, 'r') as f, open(out_file, 'w') as o:
         for l in f:
-            realize, verb = l.split('\t')
-            # print(realize)
-            gen_dep_line(realize, o)
-
-# gen_dep(realized_clean)
-
+            gen_dep_line(l, o)
+            # o.write('\n')
 
 # doc = nlp("person adjusting fastening using hand at table.")
-line = 'person_adjusting_fastening_using_hand_at_table'
-dep_out_file = 'image_dep.txt'
+line = 'man_glaring_at_sidewalk'
+dep_out_file = 'frame_dep.txt'
 # displacy.serve(doc, style="dep")
 # generate the dependency relations based on one line of the role relation entry
 def gen_dep_line(input, file):
     words = input.split('_')
     doc = spacy.tokens.doc.Doc(nlp.vocab, words=words)
+    # run the standard pipeline against it
     for name, proc in nlp.pipeline:
         doc = proc(doc)
 
     for token in doc:
-        result = token.head.text + '_' + token.dep_ + '_' + token.text
-        # print(token.text, token.dep_, [child for child in token.children])
-        # print(printing)
-        file.write(result + '\n')
+        if token.dep_ == 'ROOT':
+            continue
+        else:
+            result = token.head.text + '_' + token.dep_ + '_' + token.text
+            # print(token.text, token.dep_, [child for child in token.children])
+            file.write(result + '\t')
+            print(result)
 
-gen_dep(realized_clean, dep_out_file)
+# gen_dep_line(line, dep_out_file)
+
+gen_dep('image_realized.txt', 'image_dep.txt')

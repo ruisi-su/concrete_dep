@@ -1,0 +1,1 @@
+glaring_215.jpg | 1 | AGENT glares at PERCEIVER at PLACE | man_glaring_at_sidewalk	glaring | [glaring_place_sidewalk, glaring_agent_man]  | [at_pobj_sidewalk, glaring_nsubj_man, glaring_ROOT_glaring]
