@@ -160,8 +160,9 @@ def gen_frame_based(train):
 def gen_dep(in_file, out_file):
     with open(in_file, 'r') as f, open(out_file, 'w') as o:
         for l in f:
+            l = l.rstrip()
             gen_dep_line(l, o)
-            # o.write('\n')
+            o.write('\n')
 
 # doc = nlp("person adjusting fastening using hand at table.")
 line = 'man_glaring_at_sidewalk'
@@ -186,4 +187,4 @@ def gen_dep_line(input, file):
 
 # gen_dep_line(line, dep_out_file)
 
-gen_dep('image_realized.txt', 'image_dep.txt')
+gen_dep('image_realized.txt', 'image_dep1.txt')
