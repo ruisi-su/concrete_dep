@@ -10,6 +10,8 @@ import stanfordnlp
 
 # USING SPACY PARSER
 # nlp = spacy.load("en_core_web_sm")
+
+
 # USING STANFORD NLP PARSER
 stanfordnlp.download('en', force=True)
 nlp = stanfordnlp.Pipeline()
@@ -124,35 +126,33 @@ def mscoco_frame(path):
 
     preds = [f for f in listdir(path) if isfile(join(path, f))]
 
-    with open(realized_name, 'w') as rl:
-    # open(relation_name, 'w') as fr, open(image_name, 'w') as im,
+    with open(relation_name, 'w') as fr, open(image_name, 'w') as im, open(realized_name, 'w') as rl:
         for p in preds:
-            # print(p)
             file_name, ext = p.split('.')
-            # print(file_name)
             predFile = '{}/{}'.format(path,p)
+            print(predFile)
             p_data = json.load(open(predFile))
             p_data = p_data[0]
 
             # write frame data
             h = p_data['verb']
             frames = p_data['frames']
-            counter = 0
-            realized_list = realized_dict(realized, h)
+            # counter = 0
 
             for f in frames:
                 # write roles
-                # pair_h_r_t(h, f, fr)
-                # # new line
-                # fr.write('\n')
-                #
-                # # write image labels
-                # im.write(p + '\t' + str(counter) + '\n')
-                # # counter
+                pair_h_r_t(h, f, fr)
+                # new line
+                fr.write('\n')
+
+                # write image labels
+                im.write(p + '\n')
+                # counter
                 # counter += 1
 
                 # write captions
                 img_name = file_name + '.jpg'
+                print(img_name)
                 ann = get_anns(get_id(img_name))
                 rl.write(ann + '\n')
 
