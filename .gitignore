@@ -42,3 +42,5 @@ __pycache__/
 ######################
 simple_sentence_realization/
 examples_*/
+coco_val/
+annotations_2014/

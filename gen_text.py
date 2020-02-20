@@ -3,8 +3,16 @@ from typing import TextIO
 import spacy
 from spacy import displacy
 import ast
+from os import listdir
+from os.path import isfile, join
+from mscoco_ann import get_id, get_anns
+import stanfordnlp
 
-nlp = spacy.load("en_core_web_sm")
+# USING SPACY PARSER
+# nlp = spacy.load("en_core_web_sm")
+# USING STANFORD NLP PARSER
+stanfordnlp.download('en', force=True)
+nlp = stanfordnlp.Pipeline()
 
 # training annotations
 train = json.load(open("train.json"))
@@ -15,36 +23,12 @@ VERBS = imsitu["verbs"]
 
 realized = 'simple_sentence_realization/realized_parts.tab'
 
-
-#
-# verbs["clinging"]
-
-# {u'abstract': u'an AGENT clings to the CLUNGTO at a PLACE',
-#  u'def': u'stick to',
-#  u'framenet': u'Retaining',
-#  u'order': [u'agent', u'clungto', u'place'],
-#  u'roles': {
-#   u'agent': {u'def': u'The entity doing the cling action',u'framenet': u'agent'},
-#   u'clungto': {u'def': u'The entity the AGENT is clinging to',u'framenet': u'theme'},
-#   u'place': {u'def': u'The location where the cling event is happening',u'framenet': u'place'}
-#  }
-# }
-
-# NOUNS["n02129165"]
-
-#{u'def': u'large gregarious predatory feline of Africa and India having a tawny coat with a shaggy mane in the male',
-# u'gloss': [u'lion', u'king of beasts', u'Panthera leo']}
-
-#{u'frames': [{u'agent': u'n01882714', u'clungto': u'n05563770', u'place': u''},
-#  {u'agent': u'n01882714', u'clungto': u'n05563770', u'place': u''},
-#  {u'agent': u'n01882714', u'clungto': u'n00007846', u'place': u''}],
-# u'verb': u'clinging'}
-
 h = train['glaring_215.jpg']['verb']
 frames = train['glaring_215.jpg']['frames']
 
+preds = json.load(open('examples_predictions/jumping_100.predictions'))
 
-###############Realize Sentences##############
+############### Realize Sentences ##############
 
 # return a list object for future usage
 def realized_dict(in_file, in_verb):
@@ -72,14 +56,8 @@ def get_realized(in_list, subparts):
 
 realized_clean = 'frame_realized.txt'
 subparts = {'verb': 'glaring', 'agent': 'n10287213', 'place': 'n08613733'}
-# subparts = {'verb': 'glowing', 'place': 'n04105893'}
-# in_list = realized_dict(realized)
-
-# print(get_realized(in_list, subparts))
-
 
 ############### Generate Verb_Role_Noun txt ##############
-
 
 # verb - frame
 def pair_h_r_t(h: str, frame: dict, write_file: TextIO) -> []:
@@ -93,22 +71,6 @@ def pair_h_r_t(h: str, frame: dict, write_file: TextIO) -> []:
 
             hrt = h + '_' + f + '_' + n
             write_file.write(hrt + '\t')
-            # result += hrt+'\t'
-    # return result
-# check2 = 'glaring_place_sidewalk	glaring_agent_man'
-
-# # verb - frames
-# def frames_h_r_ts(h: str, frames:[], write_file: TextIO):
-#     result = []
-#     for f in frames:
-#         # result.append(pair_h_r_ts(h, f))
-#         # pair_h_r_ts(h, f)
-#
-#         write_file.write(pair_h_r_ts(h, f) + '\t')
-#     write_file.write('\n')
-#     # return result
-#
-# # print(frames_h_r_ts(h, frames))
 
 # using train.json frame data
 def gen_frame_based(train):
@@ -153,28 +115,73 @@ def gen_frame_based(train):
 
 
 # gen_frame_based(train)
+def mscoco_frame(path):
+    # name vars
+    im_name = 'mscoco'
+    image_name = im_name + '.txt'
+    relation_name = im_name + '_frame.txt'
+    realized_name = im_name + '_realized.txt'
 
-###############Dep Parse##############
+    preds = [f for f in listdir(path) if isfile(join(path, f))]
+
+    with open(realized_name, 'w') as rl:
+    # open(relation_name, 'w') as fr, open(image_name, 'w') as im,
+        for p in preds:
+            # print(p)
+            file_name, ext = p.split('.')
+            # print(file_name)
+            predFile = '{}/{}'.format(path,p)
+            p_data = json.load(open(predFile))
+            p_data = p_data[0]
+
+            # write frame data
+            h = p_data['verb']
+            frames = p_data['frames']
+            counter = 0
+            realized_list = realized_dict(realized, h)
+
+            for f in frames:
+                # write roles
+                # pair_h_r_t(h, f, fr)
+                # # new line
+                # fr.write('\n')
+                #
+                # # write image labels
+                # im.write(p + '\t' + str(counter) + '\n')
+                # # counter
+                # counter += 1
+
+                # write captions
+                img_name = file_name + '.jpg'
+                ann = get_anns(get_id(img_name))
+                rl.write(ann + '\n')
+
+# mscoco_frame(preds)
+path = 'coco_val'
+# mscoco_frame(path)
+############### Dep Parse ##############
 
 # generate the dep text file
 def gen_dep(in_file, out_file):
     with open(in_file, 'r') as f, open(out_file, 'w') as o:
         for l in f:
             l = l.rstrip()
-            gen_dep_line(l, o)
+            gen_dep_sementic(l, o)
             o.write('\n')
 
 # doc = nlp("person adjusting fastening using hand at table.")
-line = 'man_glaring_at_sidewalk'
-dep_out_file = 'frame_dep.txt'
-# displacy.serve(doc, style="dep")
+line = 'Player returning ball during volley at tennis match'
+dep_out_file = 'mscoco_dep.txt'
+
 # generate the dependency relations based on one line of the role relation entry
 def gen_dep_line(input, file):
-    words = input.split('_')
-    doc = spacy.tokens.doc.Doc(nlp.vocab, words=words)
-    # run the standard pipeline against it
-    for name, proc in nlp.pipeline:
-        doc = proc(doc)
+    # words = input.split('_')
+    # doc = spacy.tokens.doc.Doc(nlp.vocab, words=words)
+    # # run the standard pipeline against it
+    # for name, proc in nlp.pipeline:
+    #     doc = proc(doc)
+
+    doc = nlp(input)
 
     for token in doc:
         if token.dep_ == 'ROOT':
@@ -182,9 +189,21 @@ def gen_dep_line(input, file):
         else:
             result = token.head.text + '_' + token.dep_ + '_' + token.text
             # print(token.text, token.dep_, [child for child in token.children])
-            file.write(result + '\t')
+            # file.write(result + '\t')
             print(result)
 
-# gen_dep_line(line, dep_out_file)
-
-gen_dep('image_realized.txt', 'image_dep1.txt')
+def gen_dep_sementic(sent, file):
+    doc = nlp(sent)
+    deps = doc.sentences[0].dependencies
+    # results = []
+    for d in deps:
+        w1, r, w2 = d
+        h = w1.text
+        t = w2.text
+        result = h + '_' + r + '_' + t
+        # results.append(result)
+        file.write(result + '\t')
+        print(result)
+    # return results
+# print(gen_dep_sementic(line, dep_out_file))
+gen_dep('mscoco_realized.txt', 'mscoco_dep.txt')
