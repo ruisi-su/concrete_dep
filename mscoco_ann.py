@@ -27,19 +27,23 @@ def get_id(file_name):
 
 def get_anns(im_id):
     result_anns = []
+    result = ''
     for ann in anns:
         if ann['image_id'] == im_id:
             cap = ann['caption']
-            result_anns.append(cap)
+            cap = cap.strip('\n').strip('\t')
+            # result_anns.append(cap)
+            result += cap + '\t'
 
-    # randomly pick one
-    # print(result_anns)
-    ind = random.randint(0, len(result_anns)-1)
-    # print(ind)
-    result = result_anns[ind].strip('\n').strip('.')
+    # # randomly pick one
+    # # print(result_anns)
+    # ind = random.randint(0, len(result_anns)-1)
+    # # print(ind)
+    #
+    # result = result_anns[ind].strip('\n').strip('.')
+    # # print(result)
+    # # result = result.replace(' ', '_')
     # print(result)
-    # result = result.replace(' ', '_')
-    print(result)
     return result
 
 # get_anns(get_id(im_id))

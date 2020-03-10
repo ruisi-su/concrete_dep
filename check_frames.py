@@ -6,7 +6,9 @@ cnt_frame = defaultdict(lambda: 0)
 cnt_dep = defaultdict(lambda: 0)
 
 sents = 0.0
-with open('mscoco_frame.txt', 'r') as frame, open('mscoco_dep.txt', 'r') as dep:
+
+data_path = 'data/mscoco/'
+with open(data_path+'mscoco_frame.txt', 'r') as frame, open(data_path+'mscoco_dep_sem.txt', 'r') as dep:
     read = []
     for fstr, dstr in zip(frame,dep):
         sents += 1.0

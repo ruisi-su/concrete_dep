@@ -7,14 +7,13 @@ from os import listdir
 from os.path import isfile, join
 from mscoco_ann import get_id, get_anns
 import stanfordnlp
+import argparse
 
-# USING SPACY PARSER
-# nlp = spacy.load("en_core_web_sm")
+parser = argparse.ArgumentParser()
+parser.add_argument('--parser', default='spacy', help='using spacy or stanfordnlp parser')
+parser.add_argument('--type', default='imagename', help='generate the type of file')
 
-
-# USING STANFORD NLP PARSER
-stanfordnlp.download('en', force=True)
-nlp = stanfordnlp.Pipeline()
+args = parser.parse_args()
 
 # training annotations
 train = json.load(open("train.json"))
@@ -22,13 +21,12 @@ imsitu = json.load(open("imsitu_space.json"))
 
 NOUNS = imsitu["nouns"]
 VERBS = imsitu["verbs"]
-
 realized = 'simple_sentence_realization/realized_parts.tab'
 
-h = train['glaring_215.jpg']['verb']
-frames = train['glaring_215.jpg']['frames']
-
-preds = json.load(open('examples_predictions/jumping_100.predictions'))
+# h = train['glaring_215.jpg']['verb']
+# frames = train['glaring_215.jpg']['frames']
+#
+# preds = json.load(open('examples_predictions/jumping_100.predictions'))
 
 ############### Realize Sentences ##############
 
@@ -115,66 +113,89 @@ def gen_frame_based(train):
                 print(rs)
                 rl.write(rs + '\n')
 
-
 # gen_frame_based(train)
-def mscoco_frame(path):
+def mscoco_frame(path, type):
     # name vars
     im_name = 'mscoco'
     image_name = im_name + '.txt'
     relation_name = im_name + '_frame.txt'
-    realized_name = im_name + '_realized.txt'
+    realized_name = im_name + '_realized1.txt'
 
     preds = [f for f in listdir(path) if isfile(join(path, f))]
+    #
+    # if type == 'all':
+    #     with open(relation_name, 'w') as fr, open(image_name, 'w') as im, open(realized_name, 'w') as rl:
+    for p in preds:
+        file_name, ext = p.split('.')
+        predFile = '{}/{}'.format(path,p)
+        print(predFile)
+        p_data = json.load(open(predFile))
+        p_data = p_data[0]
+        frames = p_data['frames']
 
-    with open(relation_name, 'w') as fr, open(image_name, 'w') as im, open(realized_name, 'w') as rl:
-        for p in preds:
-            file_name, ext = p.split('.')
-            predFile = '{}/{}'.format(path,p)
-            print(predFile)
-            p_data = json.load(open(predFile))
-            p_data = p_data[0]
+        if type == 'all':
+            with open(relation_name, 'w') as fr, open(image_name, 'w') as im, open(realized_name, 'w') as rl:
+                # write frame data
+                h = p_data['verb']
+                # counter = 0
+                for f in frames:
+                    # write roles
+                    pair_h_r_t(h, f, fr)
+                    # new line
+                    fr.write('\n')
 
-            # write frame data
-            h = p_data['verb']
-            frames = p_data['frames']
-            # counter = 0
+                    # write image labels
+                    im.write(p + '\n')
 
-            for f in frames:
-                # write roles
-                pair_h_r_t(h, f, fr)
-                # new line
-                fr.write('\n')
-
-                # write image labels
-                im.write(p + '\n')
-                # counter
-                # counter += 1
-
-                # write captions
-                img_name = file_name + '.jpg'
-                print(img_name)
-                ann = get_anns(get_id(img_name))
-                rl.write(ann + '\n')
+                    # write captions
+                    img_name = file_name + '.jpg'
+                    print(img_name)
+                    ann = get_anns(get_id(img_name))
+                    rl.write(ann + '\n')
+        elif type == 'frame':
+            with open(relation_name, 'w') as fr:
+                for f in frames:
+                    # write roles
+                    pair_h_r_t(h, f, fr)
+                    # new line
+                    fr.write('\n')
+        elif type == 'realized':
+            with open(realized_name, 'a') as rl:
+                for f in frames:
+                    # write captions
+                    img_name = file_name + '.jpg'
+                    print(img_name)
+                    ann = get_anns(get_id(img_name))
+                    rl.write(ann + '\n')
+        elif type == 'imagename':
+            with open(image_name, 'w') as im:
+                for f in frames:
+                    # write image labels
+                    im.write(p + '\n')
+        else:
+            raise NotImplementedError
 
 # mscoco_frame(preds)
-path = 'coco_val'
 # mscoco_frame(path)
 ############### Dep Parse ##############
 
 # generate the dep text file
-def gen_dep(in_file, out_file):
+def gen_dep(in_file, out_file, nlp):
     with open(in_file, 'r') as f, open(out_file, 'w') as o:
         for l in f:
             l = l.rstrip()
-            gen_dep_sementic(l, o)
+            sents = l.split('\t')
+            for s in sents:
+                print(s)
+                gen_dep_sementic(s, o, nlp)
             o.write('\n')
 
 # doc = nlp("person adjusting fastening using hand at table.")
-line = 'Player returning ball during volley at tennis match'
-dep_out_file = 'mscoco_dep.txt'
+# line = 'Player returning ball during volley at tennis match'
+# dep_out_file = 'mscoco_dep.txt'
 
 # generate the dependency relations based on one line of the role relation entry
-def gen_dep_line(input, file):
+def gen_dep_line(input, file, nlp):
     # words = input.split('_')
     # doc = spacy.tokens.doc.Doc(nlp.vocab, words=words)
     # # run the standard pipeline against it
@@ -183,27 +204,68 @@ def gen_dep_line(input, file):
 
     doc = nlp(input)
 
-    for token in doc:
-        if token.dep_ == 'ROOT':
+    # for token in doc:
+    for token in doc.noun_chunks:
+        # if token.dep_ == 'ROOT':
+        if token.root.dep_ == 'ROOT':
             continue
         else:
-            result = token.head.text + '_' + token.dep_ + '_' + token.text
+            result = token.root.head.text + '_' + token.root.dep_ + '_' + token.root.text
+            # result = token.head.text + '_' + token.dep_ + '_' + token.text
             # print(token.text, token.dep_, [child for child in token.children])
-            # file.write(result + '\t')
-            print(result)
+            file.write(result + '\t')
+            # print(result)
 
-def gen_dep_sementic(sent, file):
+def gen_dep_sementic(sent, file, nlp):
     doc = nlp(sent)
     deps = doc.sentences[0].dependencies
+    # ignore = {'punct', 'det', 'root'}
+    whitelist = {'obl', 'obj', 'nsubj', 'subj', 'iobj'}
     # results = []
     for d in deps:
         w1, r, w2 = d
         h = w1.text
         t = w2.text
-        result = h + '_' + r + '_' + t
-        # results.append(result)
-        file.write(result + '\t')
-        print(result)
+        if r in whitelist:
+            result = h + '_' + r + '_' + t
+            # results.append(result)
+            file.write(result + '\t')
+            print(result)
+        else:
+            continue
+
     # return results
 # print(gen_dep_sementic(line, dep_out_file))
-gen_dep('mscoco_realized.txt', 'mscoco_dep.txt')
+# gen_dep('mscoco_realized.txt', 'mscoco_dep.txt')
+
+
+def main(args):
+    data_path = 'data/mscoco/'
+    mscoco_path = 'coco_val'
+
+    # set parser
+    if args.parser == 'spacy':
+        nlp = spacy.load("en_core_web_sm")
+    elif args.parser == 'stanfordnlp':
+        stanfordnlp.download('en', force=True)
+        nlp = stanfordnlp.Pipeline()
+
+    # set type to generate
+    if args.type == 'imagename':
+        mscoco_frame(mscoco_path, 'imagename')
+    elif args.type == 'realized':
+        mscoco_frame(mscoco_path, 'realized')
+    elif args.type == 'frame':
+        mscoco_frame(mscoco_path, 'frame')
+    elif args.type == 'all':
+        mscoco_frame(mscoco_path, 'all')
+    elif args.type == 'dep':
+        gen_dep(data_path+'mscoco_realized_all.txt', data_path+'mscoco_dep_sem.txt', nlp)
+    else:
+        raise NotImplementedError
+    # else:
+    #     raise NotImplementedError
+    # mscoco_frame(path)
+
+if __name__ == '__main__':
+    main(args)
