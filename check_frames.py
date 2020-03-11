@@ -1,5 +1,6 @@
 from collections import defaultdict
 import math
+import sys
 
 cnt_frame_dep = defaultdict(lambda: 0)
 cnt_frame = defaultdict(lambda: 0)
@@ -7,8 +8,11 @@ cnt_dep = defaultdict(lambda: 0)
 
 sents = 0.0
 
+frame_file = sys.argv[1]
+dep_file = sys.argv[2]
+
 data_path = 'data/mscoco/'
-with open(data_path+'mscoco_frame.txt', 'r') as frame, open(data_path+'mscoco_dep_sem.txt', 'r') as dep:
+with open(data_path+frame_file, 'r') as frame, open(data_path+dep_file, 'r') as dep:
     read = []
     for fstr, dstr in zip(frame,dep):
         sents += 1.0

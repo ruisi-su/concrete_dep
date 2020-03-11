@@ -8,6 +8,7 @@ from os.path import isfile, join
 from mscoco_ann import get_id, get_anns
 import stanfordnlp
 import argparse
+import utils
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--parser', default='spacy', help='using spacy or stanfordnlp parser')
@@ -132,11 +133,9 @@ def mscoco_frame(path, type):
         p_data = json.load(open(predFile))
         p_data = p_data[0]
         frames = p_data['frames']
-
+        h = p_data['verb']
         if type == 'all':
-            with open(relation_name, 'w') as fr, open(image_name, 'w') as im, open(realized_name, 'w') as rl:
-                # write frame data
-                h = p_data['verb']
+            with open(relation_name, 'a') as fr, open(image_name, 'a') as im, open(realized_name, 'a') as rl:
                 # counter = 0
                 for f in frames:
                     # write roles
@@ -153,7 +152,7 @@ def mscoco_frame(path, type):
                     ann = get_anns(get_id(img_name))
                     rl.write(ann + '\n')
         elif type == 'frame':
-            with open(relation_name, 'w') as fr:
+            with open(relation_name, 'a') as fr:
                 for f in frames:
                     # write roles
                     pair_h_r_t(h, f, fr)
@@ -168,7 +167,7 @@ def mscoco_frame(path, type):
                     ann = get_anns(get_id(img_name))
                     rl.write(ann + '\n')
         elif type == 'imagename':
-            with open(image_name, 'w') as im:
+            with open(image_name, 'a') as im:
                 for f in frames:
                     # write image labels
                     im.write(p + '\n')
@@ -180,19 +179,25 @@ def mscoco_frame(path, type):
 ############### Dep Parse ##############
 
 # generate the dep text file
-def gen_dep(in_file, out_file, nlp):
+def gen_dep(in_file, out_file, type):
+    # set parser
+    if args.parser == 'spacy':
+        nlp = spacy.load("en_core_web_sm")
+    elif args.parser == 'stanfordnlp':
+        stanfordnlp.download('en', force=True)
+        nlp = stanfordnlp.Pipeline()
+
     with open(in_file, 'r') as f, open(out_file, 'w') as o:
         for l in f:
             l = l.rstrip()
             sents = l.split('\t')
             for s in sents:
                 print(s)
-                gen_dep_sementic(s, o, nlp)
+                if type == 'spacy':
+                    gen_dep_line(s, o, nlp)
+                else:
+                    gen_dep_sementic(s, o, nlp)
             o.write('\n')
-
-# doc = nlp("person adjusting fastening using hand at table.")
-# line = 'Player returning ball during volley at tennis match'
-# dep_out_file = 'mscoco_dep.txt'
 
 # generate the dependency relations based on one line of the role relation entry
 def gen_dep_line(input, file, nlp):
@@ -203,36 +208,47 @@ def gen_dep_line(input, file, nlp):
     #     doc = proc(doc)
 
     doc = nlp(input)
-
+    whitelist = {'pobj', 'dobj', 'nsubj'}
+    results = []
     # for token in doc:
     for token in doc.noun_chunks:
         # if token.dep_ == 'ROOT':
-        if token.root.dep_ == 'ROOT':
-            continue
-        else:
+        # if token.root.dep_ == 'ROOT':
+        #     continue
+        if token.root.dep_ in whitelist:
             result = token.root.head.text + '_' + token.root.dep_ + '_' + token.root.text
             # result = token.head.text + '_' + token.dep_ + '_' + token.text
             # print(token.text, token.dep_, [child for child in token.children])
-            file.write(result + '\t')
+            results.append(result)
             # print(result)
+        else:
+            continue
+    old = len(results)
+    results = utils.unique(results)
+    new = len(results)
+    print('old len: ' + str(old) + ' new len: ' + str(new))
+    for result in results:
+        file.write(result + '\t')
 
 def gen_dep_sementic(sent, file, nlp):
     doc = nlp(sent)
     deps = doc.sentences[0].dependencies
     # ignore = {'punct', 'det', 'root'}
     whitelist = {'obl', 'obj', 'nsubj', 'subj', 'iobj'}
-    # results = []
+    results = []
     for d in deps:
         w1, r, w2 = d
         h = w1.text
         t = w2.text
         if r in whitelist:
             result = h + '_' + r + '_' + t
-            # results.append(result)
-            file.write(result + '\t')
-            print(result)
+            results.append(result)
         else:
             continue
+    results = utils.unique(results)
+    for result in results:
+        file.write(result + '\t')
+        print(result)
 
     # return results
 # print(gen_dep_sementic(line, dep_out_file))
@@ -242,13 +258,6 @@ def gen_dep_sementic(sent, file, nlp):
 def main(args):
     data_path = 'data/mscoco/'
     mscoco_path = 'coco_val'
-
-    # set parser
-    if args.parser == 'spacy':
-        nlp = spacy.load("en_core_web_sm")
-    elif args.parser == 'stanfordnlp':
-        stanfordnlp.download('en', force=True)
-        nlp = stanfordnlp.Pipeline()
 
     # set type to generate
     if args.type == 'imagename':
@@ -260,7 +269,7 @@ def main(args):
     elif args.type == 'all':
         mscoco_frame(mscoco_path, 'all')
     elif args.type == 'dep':
-        gen_dep(data_path+'mscoco_realized_all.txt', data_path+'mscoco_dep_sem.txt', nlp)
+        gen_dep(data_path+'mscoco_realized.txt', data_path+'mscoco_dep_sem_short.txt', args.parser)
     else:
         raise NotImplementedError
     # else:

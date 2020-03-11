@@ -39,3 +39,12 @@ def initLinear(linear, val = None):
     spread = val
   linear.weight.data.uniform_(-spread,spread)
   linear.bias.data.uniform_(-spread,spread)
+
+def unique(pair):
+    result = []
+    pair_set = set(pair)
+    # convert the set to the list
+    unique_pair = (list(pair_set))
+    for x in unique_pair:
+        result.append(x)
+    return result
