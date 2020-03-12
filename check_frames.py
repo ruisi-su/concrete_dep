@@ -28,13 +28,16 @@ with open(data_path+frame_file, 'r') as frame, open(data_path+dep_file, 'r') as 
 scored_pairs = []
 print(len(cnt_frame_dep))
 for tup, c in cnt_frame_dep.items():
-    if c != 1:
+    if c > 1:
         f, d = tup
         scored_pairs.append((f, d, math.log(cnt_frame_dep[f,d]/cnt_dep[d]) - math.log(cnt_frame[f]/sents)))
 
 scored_pairs.sort(key=lambda x: x[2], reverse=True)
-for v in scored_pairs[:100]:
-    print(v)
+with open(data_path+'mutual_inf.txt', 'w') as mi:
+    for v in scored_pairs[:100]:
+        print(v)
+        mi.write(str(v))
+        mi.write('\n')
 
 # kframe = sorted(denomframe.keys(), key=lambda x: denomframe[x], reverse=True)
 # for k in kframe[:10]:
