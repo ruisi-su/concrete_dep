@@ -50,7 +50,7 @@ def get_realized(in_list, subparts):
     for l in in_list:
         realized_parts = l['phrase']
         # make space as hyphens
-        realized_parts.replace(' ','-')
+        realized_parts = realized_parts.replace(' ','-')
         sub = l['subparts']
         sub = ast.literal_eval(sub)
         rp = realized_parts.split('_')
@@ -71,7 +71,7 @@ def pair_h_r_t(h, frame, write_file):
             ns = NOUNS[n_id]['gloss']
             # first of gloss
             n = ns[0]
-            n.replace(' ','-')
+            n = n.replace(' ','-')
             hrt = h + '_' + f + '_' + n
             write_file.write(hrt + '\t')
 
