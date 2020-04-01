@@ -20,7 +20,7 @@ def filter_move(splitType, orig_dir, dest_dir):
             # print(file_name)
             # print(orig_dir)
             # print(dest_dir)
-            shutil.move('{}/{}'.format(orig_dir, pred_name), dest_dir)
+            shutil.copy('{}/{}'.format(orig_dir, pred_name), dest_dir)
 
 
 if __name__ == "__main__":
