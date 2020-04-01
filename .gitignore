@@ -44,3 +44,11 @@ simple_sentence_realization/
 examples_*/
 coco_val/
 annotations_2014/
+coco/.ipynb_checkpoints/
+coco/annotations/
+
+# Data #
+############
+*.mat
+sample.json
+load.py
