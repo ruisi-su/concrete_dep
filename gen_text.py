@@ -1,12 +1,12 @@
 import json
 from typing import TextIO
-import spacy
-from spacy import displacy
+#import spacy
+#from spacy import displacy
 import ast
 from os import listdir
 from os.path import isfile, join
-from mscoco_ann import get_id, get_anns
-import stanfordnlp
+#from mscoco_ann import get_id, get_anns
+#import stanfordnlp
 import argparse
 import utils
 
@@ -63,7 +63,7 @@ subparts = {'verb': 'glaring', 'agent': 'n10287213', 'place': 'n08613733'}
 ############### Generate Verb_Role_Noun txt ##############
 
 # verb - frame
-def pair_h_r_t(h: str, frame: dict, write_file: TextIO) -> []:
+def pair_h_r_t(h, frame, write_file):
     # result = ''
     for f in frame.keys():
         if frame[f] != '':
@@ -117,7 +117,7 @@ def gen_frame_based(train):
                 print(rs)
                 rl.write(rs + '\n')
 
-gen_frame_based(train)
+# gen_frame_based(train)
 # gen_frame_based(train)
 def mscoco_frame(path, type):
     # name vars
@@ -127,7 +127,7 @@ def mscoco_frame(path, type):
     realized_name = im_name + '_realized.txt'
 
     preds = [f for f in listdir(path) if isfile(join(path, f))]
-    #
+    print('num of preds' + str(len(preds)))
     # if type == 'all':
     #     with open(relation_name, 'w') as fr, open(image_name, 'w') as im, open(realized_name, 'w') as rl:
     for p in preds:
@@ -258,7 +258,7 @@ def gen_dep_sementic(sent, file, nlp):
 
 def main(args):
     data_path = 'data/mscoco/'
-    mscoco_path = 'coco_val'
+    mscoco_path = '/home/ruisis/coco/coco_val'
 
     # set type to generate
     if args.type == 'imagename':
