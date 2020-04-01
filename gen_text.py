@@ -71,7 +71,7 @@ def pair_h_r_t(h, frame, write_file):
             ns = NOUNS[n_id]['gloss']
             # first of gloss
             n = ns[0]
-
+            n.replace(' ','-')
             hrt = h + '_' + f + '_' + n
             write_file.write(hrt + '\t')
 
