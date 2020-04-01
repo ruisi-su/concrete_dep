@@ -14,13 +14,13 @@ def filter_move(splitType, orig_dir, dest_dir):
     file_names = 'data2014/{}_name.txt'.format(splitType)
     with open(file_names, 'r') as name:
         for file_name in name:
-            file_name = file_name.rstrip()
-            file_name = file_name.split('.')[0]
-            pred_name = file_name + '.predictions'
+            orig_file_name = file_name.rstrip()
+            file_name = orig_file_name.split('.')[0]
+            pred_name ='coco_val' + file_name + '.predictions'
             # print(file_name)
             # print(orig_dir)
             # print(dest_dir)
-            shutil.move('{}/{}'.format(orig_dir, file_name), dest_dir)
+            shutil.move('{}/{}'.format(orig_dir, pred_name), dest_dir)
 
 
 if __name__ == "__main__":
