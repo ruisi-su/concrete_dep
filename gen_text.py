@@ -124,7 +124,7 @@ def mscoco_frame(path, type):
     im_name = 'mscoco'
     image_name = im_name + '.txt'
     relation_name = im_name + '_frame.txt'
-    realized_name = im_name + '_realized1.txt'
+    realized_name = im_name + '_realized.txt'
 
     preds = [f for f in listdir(path) if isfile(join(path, f))]
     #
@@ -133,7 +133,7 @@ def mscoco_frame(path, type):
     for p in preds:
         file_name, ext = p.split('.')
         predFile = '{}/{}'.format(path,p)
-        print(predFile)
+        # print(predFile)
         p_data = json.load(open(predFile))
         p_data = p_data[0]
         frames = p_data['frames']
@@ -256,26 +256,26 @@ def gen_dep_sementic(sent, file, nlp):
 
 
 
-# def main(args):
-#     data_path = 'data/mscoco/'
-#     mscoco_path = 'coco_val'
-#
-#     # set type to generate
-#     if args.type == 'imagename':
-#         mscoco_frame(mscoco_path, 'imagename')
-#     elif args.type == 'realized':
-#         mscoco_frame(mscoco_path, 'realized')
-#     elif args.type == 'frame':
-#         mscoco_frame(mscoco_path, 'frame')
-#     elif args.type == 'all':
-#         mscoco_frame(mscoco_path, 'all')
-#     elif args.type == 'dep':
-#         gen_dep(data_path+'mscoco_realized.txt', data_path+'mscoco_dep_sem_short.txt', args.parser)
-#     else:
-#         raise NotImplementedError
-#     # else:
-#     #     raise NotImplementedError
-#     # mscoco_frame(path)
-#
-# if __name__ == '__main__':
-#     main(args)
+def main(args):
+    data_path = 'data/mscoco/'
+    mscoco_path = 'coco_val'
+
+    # set type to generate
+    if args.type == 'imagename':
+        mscoco_frame(mscoco_path, 'imagename')
+    elif args.type == 'realized':
+        mscoco_frame(mscoco_path, 'realized')
+    elif args.type == 'frame':
+        mscoco_frame(mscoco_path, 'frame')
+    elif args.type == 'all':
+        mscoco_frame(mscoco_path, 'all')
+    elif args.type == 'dep':
+        gen_dep(data_path+'mscoco_realized.txt', data_path+'mscoco_dep_sem_short.txt', args.parser)
+    else:
+        raise NotImplementedError
+    # else:
+    #     raise NotImplementedError
+    # mscoco_frame(path)
+
+if __name__ == '__main__':
+    main(args)
