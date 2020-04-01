@@ -258,7 +258,7 @@ def gen_dep_sementic(sent, file, nlp):
 
 def main(args):
     data_path = 'data/mscoco/'
-    mscoco_path = '/home/ruisis/coco/coco_val'
+    mscoco_path = '/home/ruisis/coco/coco_train'
 
     # set type to generate
     if args.type == 'imagename':
