@@ -49,6 +49,8 @@ def realized_dict(in_file, in_verb):
 def get_realized(in_list, subparts):
     for l in in_list:
         realized_parts = l['phrase']
+        # make space as hyphens
+        realized_parts.replace(' ','-')
         sub = l['subparts']
         sub = ast.literal_eval(sub)
         rp = realized_parts.split('_')
@@ -82,10 +84,11 @@ def gen_frame_based(train):
     realized_name = im_name + '_realized.txt'
 
     # write image labels to text file
-    with open(dep_name, 'w') as dp, open(image_name, 'w') as im, open(realized_name, 'w') as rl:
+    with open(realized_name, 'w') as rl:
+    # open(dep_name, 'w') as dp, open(image_name, 'w') as im,
+
         # write image names
         for k in train.keys():
-            # fr.write(k + '\n')
             # write frame data:
             # for example: h: throw r: agent t: kid
             # h_r_t
@@ -95,15 +98,15 @@ def gen_frame_based(train):
             realized_list = realized_dict(realized, h)
 
             for f in frames:
-                # write roles
-                pair_h_r_t(h, f, fr)
-                # new line
-                fr.write('\n')
-
-                # write image labels
-                im.write(k + '\t' + str(counter) + '\n')
-                # counter
-                counter += 1
+                # # write roles
+                # pair_h_r_t(h, f, fr)
+                # # new line
+                # fr.write('\n')
+                #
+                # # write image labels
+                # im.write(k + '\t' + str(counter) + '\n')
+                # # counter
+                # counter += 1
 
                 # write realized sent
                 # remove empty entries
@@ -114,6 +117,7 @@ def gen_frame_based(train):
                 print(rs)
                 rl.write(rs + '\n')
 
+gen_frame_based(train)
 # gen_frame_based(train)
 def mscoco_frame(path, type):
     # name vars
@@ -250,31 +254,28 @@ def gen_dep_sementic(sent, file, nlp):
         file.write(result + '\t')
         print(result)
 
-    # return results
-# print(gen_dep_sementic(line, dep_out_file))
-# gen_dep('mscoco_realized.txt', 'mscoco_dep.txt')
 
 
-def main(args):
-    data_path = 'data/mscoco/'
-    mscoco_path = 'coco_val'
-
-    # set type to generate
-    if args.type == 'imagename':
-        mscoco_frame(mscoco_path, 'imagename')
-    elif args.type == 'realized':
-        mscoco_frame(mscoco_path, 'realized')
-    elif args.type == 'frame':
-        mscoco_frame(mscoco_path, 'frame')
-    elif args.type == 'all':
-        mscoco_frame(mscoco_path, 'all')
-    elif args.type == 'dep':
-        gen_dep(data_path+'mscoco_realized.txt', data_path+'mscoco_dep_sem_short.txt', args.parser)
-    else:
-        raise NotImplementedError
-    # else:
-    #     raise NotImplementedError
-    # mscoco_frame(path)
-
-if __name__ == '__main__':
-    main(args)
+# def main(args):
+#     data_path = 'data/mscoco/'
+#     mscoco_path = 'coco_val'
+#
+#     # set type to generate
+#     if args.type == 'imagename':
+#         mscoco_frame(mscoco_path, 'imagename')
+#     elif args.type == 'realized':
+#         mscoco_frame(mscoco_path, 'realized')
+#     elif args.type == 'frame':
+#         mscoco_frame(mscoco_path, 'frame')
+#     elif args.type == 'all':
+#         mscoco_frame(mscoco_path, 'all')
+#     elif args.type == 'dep':
+#         gen_dep(data_path+'mscoco_realized.txt', data_path+'mscoco_dep_sem_short.txt', args.parser)
+#     else:
+#         raise NotImplementedError
+#     # else:
+#     #     raise NotImplementedError
+#     # mscoco_frame(path)
+#
+# if __name__ == '__main__':
+#     main(args)
