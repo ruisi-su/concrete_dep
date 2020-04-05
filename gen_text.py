@@ -13,7 +13,7 @@ import utils
 parser = argparse.ArgumentParser()
 parser.add_argument('--parser', default='spacy', help='using spacy or stanfordnlp parser')
 parser.add_argument('--splitType', default='train')
-parser.add_agrument('--nameFile')
+parser.add_argument('--nameFile')
 parser.add_argument('--type', default='imagename', help='generate the type of file')
 
 args = parser.parse_args()
@@ -138,8 +138,9 @@ def mscoco_frame(path, type, nameFile):
     print('num of preds' + str(len(preds)))
 
     for p in preds:
+	print(p)
         file_name, ext = p.split('.')
-        predFile = '{}/{}'.format(path,p)
+        predFile = '{}/coco_val{}.predictions'.format(path,file_name)
         # print(predFile)
         p_data = json.load(open(predFile))
         p_data = p_data[0]
@@ -273,7 +274,7 @@ def main(args):
     elif args.type == 'realized':
         mscoco_frame(mscoco_path, 'realized')
     elif args.type == 'frame':
-        mscoco_frame(mscoco_path, 'frame')
+        mscoco_frame(mscoco_path, 'frame', args.nameFile)
     elif args.type == 'all':
         mscoco_frame(mscoco_path, 'all')
     elif args.type == 'dep':
