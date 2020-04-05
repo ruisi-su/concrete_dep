@@ -12,6 +12,8 @@ import utils
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--parser', default='spacy', help='using spacy or stanfordnlp parser')
+parser.add_argument('--splitType', default='train')
+parser.add_agrument('--nameFile')
 parser.add_argument('--type', default='imagename', help='generate the type of file')
 
 args = parser.parse_args()
@@ -119,17 +121,22 @@ def gen_frame_based(train):
 
 # gen_frame_based(train)
 # gen_frame_based(train)
-def mscoco_frame(path, type):
+def mscoco_frame(path, type, nameFile):
     # name vars
     im_name = 'mscoco'
-    image_name = im_name + '.txt'
+    # image_name = im_name + '.txt'
     relation_name = im_name + '_frame.txt'
     realized_name = im_name + '_realized.txt'
 
-    preds = [f for f in listdir(path) if isfile(join(path, f))]
+    # preds = [f for f in listdir(path) if isfile(join(path, f))]
+
+    # preload preds from nameFile
+    f = open(nameFile, 'r')
+    preds = f.read().splitlines()
+    f.close()
+    
     print('num of preds' + str(len(preds)))
-    # if type == 'all':
-    #     with open(relation_name, 'w') as fr, open(image_name, 'w') as im, open(realized_name, 'w') as rl:
+
     for p in preds:
         file_name, ext = p.split('.')
         predFile = '{}/{}'.format(path,p)
@@ -258,7 +265,7 @@ def gen_dep_sementic(sent, file, nlp):
 
 def main(args):
     data_path = 'data/mscoco/'
-    mscoco_path = '/home/ruisis/coco/coco_train'
+    mscoco_path = '/home/ruisis/coco/coco_' + args.splitType
 
     # set type to generate
     if args.type == 'imagename':
