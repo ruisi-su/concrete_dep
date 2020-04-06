@@ -47,9 +47,10 @@ annotations_2014/
 coco/.ipynb_checkpoints/
 coco/annotations/
 
-# Data #
+# Data & Code #
 ############
 *.mat
 sample.json
 load.py
 dataset.json
+*.ipynb
