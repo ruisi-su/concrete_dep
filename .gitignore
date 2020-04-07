@@ -44,8 +44,8 @@ simple_sentence_realization/
 examples_*/
 coco_val/
 annotations_2014/
-coco/.ipynb_checkpoints/
-coco/annotations/
+data/coco/.ipynb_checkpoints/
+data/coco/annotations/
 
 # Data & Code #
 ############
