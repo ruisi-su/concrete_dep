@@ -23,7 +23,7 @@ def gen_trees(input_file, output_file):
 
 
 def main(args):
-    data_path = 'coco/data2014'
+    data_path = 'data/coco/mscoco_full'
     input_file = '{}/{}_cap.txt'.format(data_path, args.splitType)
     output_file = '{}/{}_gold.txt'.format(data_path, args.splitType)
     gen_trees(input_file, output_file)
