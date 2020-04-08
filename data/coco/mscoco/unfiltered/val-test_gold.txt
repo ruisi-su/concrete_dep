@@ -4996,7 +4996,7 @@
 (S (NP (CD two) (NNS women)) (VP (VBG standing) (ADVP (RB together)) (SBAR (IN while) (S (VP (VBG holding) (PP (IN onto) (NP (NN tennis) (NNS rackets))))))))
 (NP (NP (DT a) (NN man)) (VP (VBG standing) (PP (IN in) (NP (NP (NN front)) (PP (IN of) (NP (DT a) (JJ metallic) (NN refrigerator) (NN freezer))))) (PP (IN with) (NP (NP (DT a) (NN baby)) (PP (IN on) (NP (NP (NN top)) (PP (IN of) (NP (PRP it)))))))))
 (NP (NP (NP (CD two) (VBN stuffed) (NNS bears)) (ADVP (RB next) (PP (TO to) (NP (DT each) (JJ other))))) (, ,) (NP (NP (CD one)) (PP (IN with) (NP (DT a) (JJ hawaiian) (NN shirt)))))
-_(NP (NP (NP (DT a) (NN man)) (PP (IN with) (NP (DT a) (JJ red) (NN helmet)))) (PP (IN on) (NP (NP (DT a) (JJ small) (NN moped)) (PP (IN on) (NP (DT a) (NN dirt) (NN road))))))
+(NP (NP (NP (DT a) (NN man)) (PP (IN with) (NP (DT a) (JJ red) (NN helmet)))) (PP (IN on) (NP (NP (DT a) (JJ small) (NN moped)) (PP (IN on) (NP (DT a) (NN dirt) (NN road))))))
 (S (NP (NN girl)) (VP (VBG blowing) (PRT (RP out)) (NP (DT the) (NN candle)) (PP (IN on) (NP (DT an) (NN ice) (: -) (NN cream)))))
 (S (S (NP (DT a) (NN person)) (VP (VBZ is) (VP (VBG riding) (NP (DT a) (NN bicycle))))) (CC but) (S (NP (EX there)) (VP (VBZ is) (NP (DT a) (NN train)) (PP (IN in) (NP (DT the) (NN background))))))
 (NP (NP (DT a) (NN kitchen)) (PP (IN with) (NP (NP (CD two) (NNS windows)) (CC and) (NP (CD two) (NN metal) (NNS sinks)))))
