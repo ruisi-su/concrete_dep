@@ -22,7 +22,7 @@ def gen_trees(input_file, output_file):
             out_file.write(tree + '\n')
 
 def main(args):
-    data_path = 'data/coco/mscoco_unfiltered'
+    data_path = 'data/coco/mscoco/unfiltered'
     input_file = '{}/{}_cap_clean.txt'.format(data_path, args.splitType)
     output_file = '{}/{}_gold.txt'.format(data_path, args.splitType)
     gen_trees(input_file, output_file)
