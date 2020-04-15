@@ -54,3 +54,4 @@ sample.json
 load.py
 dataset.json
 *.ipynb
+*.npy

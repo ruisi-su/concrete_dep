@@ -1,8 +1,7 @@
-
-datapath = 'data/coco/mscoco/unfiltered/'
-cap_file = 'val_cap.txt'
-frame_file = 'val_frame.txt'
-out_file = 'val_cap_clean.txt'
+datapath = 'data/coco/mscoco/unfiltered/original/'
+cap_file = 'test_name.txt'
+frame_file = 'test_frame.txt'
+out_file = 'test_name_clean.txt'
 with open(datapath + cap_file, 'r') as cap, open(datapath + frame_file, 'r') as fr, open(datapath + out_file, 'w') as out:
     for tree, frame in zip(cap, fr):
         frame = frame.strip().split('\t')
