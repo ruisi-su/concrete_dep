@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-from pycocotools.coco import COCO
+#from pycocotools.coco import COCO
 import numpy as np
 from nltk.tokenize import ToktokTokenizer
 import json
@@ -10,13 +10,20 @@ nlp = spacy.load("en_core_web_sm")
 import random
 toktok = ToktokTokenizer()
 import re
+import argparse
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument('--start', type = int,default=0,help='start idx')
+parser.add_argument('--end', type = int, default=413915,help='end idx')
+args = parser.parse_args()
 
 dataType=['train2014','val2014']
 # annFile='{}/annotations/instances_{}.json'.format(dataDir,dataType)
 annFile_train='annotations/instances_{}.json'.format(dataType[0])
 annFile_val='annotations/instances_{}.json'.format(dataType[1])
 splitFolder = './VGNSL_split/'
-splitFile = 'dataset.json'
+splitFile = 'dataset_coco.json'
 dataDir = '.'
 
 # initialize COCO api for caption annotations
@@ -24,12 +31,19 @@ dataDir = '.'
 # capFile_val = 'annotations/captions_{}.json'.format(dataType[1])
 # coco_caps_train = COCO(capFile_train)
 # coco_caps_val = COCO(capFile_val)
+with open(splitFile) as datafile:
+        data = json.load(datafile)
+        IMAGES = data['images']
 
-def get_image_id(splitType, im_file, log_file):
+def get_image_id(splitType, start_idx, end_idx):
     captions = []
+    im_file = splitType + '_ids_' + str(start_idx) + '.txt'
+    log_file = splitType + '_log_' + str(start_idx) + '.txt'
     # get the caps from text
     with open(splitFolder + splitType + '_caps.txt', 'r') as cap_file:
-        for c in cap_file:
+        for i, c in enumerate(cap_file):
+            if i < start_idx or i >= end_idx:
+                continue
 #             c = c.replace("**LL** ", '(').replace(" **RR**",')').lower()
 #             c = c.strip('\n').replace('.', '').replace(',',' ').replace('-', ' ').replace('/', ' ').replace(":", "").lower()
 #             c = c.replace("``", "").replace(";", "")
@@ -57,14 +71,13 @@ def get_image_id(splitType, im_file, log_file):
             coco_set.append((im['cocoid'], raws))
     count = 0
     count_miss = 0
-    im_ids = []
+    #im_ids = []
 
 
     for idx, c in enumerate(captions):
 #         c_tok = toktok.tokenize(c)
         c_tok = c.split()
         found = False
-
         for (cocoid, items) in coco_set:
             for item in items:
                 item = re.sub('[^A-Za-z0-9]+', ' ', item.lower())
@@ -73,23 +86,20 @@ def get_image_id(splitType, im_file, log_file):
                 diff_2 = list(set(c_tok).difference(set(item)))
                 diff = max(len(diff_1), len(diff_2))
                 if diff <= 1:
-                    im_ids.append(cocoid)
+                    #im_ids.append(cocoid)
                     count += 1
                     found = True
                     break
             if found:
+                with open(im_file, 'a') as imfile:
+                    imfile.write(str(cocoid) + '\n')
                 break
         if not found:
             count_miss += 1
             with open(log_file, 'a') as logfile:
                 logfile.write(str(idx) + '\t' + str(c_tok) + '\t' + c + '\n')
                 print('could not found : ' + str(idx) + str(c_tok) + ' ' + c)
-
-    with open(im_file, 'w') as imfile:
-        for im_id in im_ids:
-            imfile.write(str(im_id) + '\n')
-
-get_image_id('train', 'train_ids.txt', 'train_log.txt')
+#get_image_id('train', 'train_ids.txt', 'train_log.txt')
 
 # sample_cap = "A woman takes a `` selfie `` with her cellphone with a cat on her shoulder .\n".lower()
 # s2 =  'A grafitti \'d mail box by a pole with a stop sign on it .'.lower()
@@ -161,3 +171,6 @@ def has_action(ann):
         elif token.dep_ == 'ROOT':
             return 'VERB' in [child.pos_ for child in token.children]
     return False
+
+if __name__ == '__main__':
+    get_image_id('train', args.start, args.end)
