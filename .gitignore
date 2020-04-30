@@ -56,6 +56,9 @@ data/coco/cleaning_scripts/
 sample.json
 load.py
 dataset_coco.json
+<<<<<<< HEAD
 train_set.json
+=======
+>>>>>>> 2ba8be503aa4ddd74e3c6cf79f1a6b70fe38c947
 *.ipynb
 *.npy
