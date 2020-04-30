@@ -128,19 +128,18 @@ def mscoco_frame(path, type, nameFile):
     relation_name = im_name + '_frame.txt'
     realized_name = im_name + '_realized.txt'
 
-    # preds = [f for f in listdir(path) if isfile(join(path, f))]
-
     # preload preds from nameFile
     f = open(nameFile, 'r')
     preds = f.read().splitlines()
     f.close()
-    
+
     print('num of preds' + str(len(preds)))
 
     for p in preds:
 	print(p)
-        file_name, ext = p.split('.')
-        predFile = '{}/coco_val{}.predictions'.format(path,file_name)
+        # file_name, ext = p.split('.')
+        im_id = p
+        predFile = '{}/coco_val{}.predictions'.format(path, im_id)
         # print(predFile)
         p_data = json.load(open(predFile))
         p_data = p_data[0]
@@ -186,8 +185,6 @@ def mscoco_frame(path, type, nameFile):
         else:
             raise NotImplementedError
 
-# mscoco_frame(preds)
-# mscoco_frame(path)
 ############### Dep Parse ##############
 
 # generate the dep text file
@@ -261,7 +258,6 @@ def gen_dep_sementic(sent, file, nlp):
     for result in results:
         file.write(result + '\t')
         print(result)
-
 
 
 def main(args):
