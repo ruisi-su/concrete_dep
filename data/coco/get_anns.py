@@ -74,6 +74,11 @@ def get_image_id(splitType, start_idx=0, end_idx=5000):
     count = 0
     count_miss = 0
     #im_ids = []
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 43328a80cb0bbfd47b67bf1a5ec2ceb1d113a491
     for idx, c in enumerate(captions):
         c_tok = tokenizer(c)
         c_tok = [token.text for token in c_tok]
@@ -87,7 +92,11 @@ def get_image_id(splitType, start_idx=0, end_idx=5000):
                 diff_1 = list(set(item).difference(set(c_tok)))
                 diff_2 = list(set(c_tok).difference(set(item)))
                 diff = max(len(diff_1), len(diff_2))
+<<<<<<< HEAD
                 if diff == 0:
+=======
+                if diff <= 1:
+>>>>>>> 43328a80cb0bbfd47b67bf1a5ec2ceb1d113a491
                     #im_ids.append(cocoid)
                     count += 1
                     found = True
@@ -101,6 +110,39 @@ def get_image_id(splitType, start_idx=0, end_idx=5000):
             with open(log_file, 'a') as logfile:
                 logfile.write(str(idx) + '\t' + str(c_tok) + '\t' + c + '\n')
                 print('could not found : ' + str(idx) + str(c_tok) + ' ' + c)
+<<<<<<< HEAD
+=======
+#get_image_id('train', 'train_ids.txt', 'train_log.txt')
+
+# sample_cap = "A woman takes a `` selfie `` with her cellphone with a cat on her shoulder .\n".lower()
+# s2 =  'A grafitti \'d mail box by a pole with a stop sign on it .'.lower()
+# print(re.sub('[^A-Za-z0-9]+', ' ', sample_cap))
+# print(sample_cap)
+# print(re.sub('[^A-Za-z0-9]+', ' ', s2.replace(" '",'')))
+
+# get COCOids by split
+# 82783 train, 5000 val, 5000 test
+# with open(splitFile) as jsf:
+#     data = json.load(jsf)
+# IMAGES = data['images']
+#
+# # return the ids for
+# dataIds = {}
+# dataIds['train'] = []
+# dataIds['test'] = []
+# dataIds['val'] = []
+# for im in IMAGES:
+#     cocoid = im['cocoid']
+#     if im['split'] == 'train':
+#         dataIds['train'].append(cocoid)
+#     elif im['split'] == 'test':
+#         dataIds['test'].append(cocoid)
+#     elif im['split'] == 'val':
+#         dataIds['val'].append(cocoid)
+#
+# size = [len(d) for d in dataIds.values()]
+# assert(sum(size) == 92783)
+>>>>>>> 43328a80cb0bbfd47b67bf1a5ec2ceb1d113a491
 
 def write_data(splitType, coco_im, coco_cap, dataIds):
     capfile = dataDir + '/' + splitType + '_cap.txt'
@@ -143,5 +185,9 @@ def has_action(ann):
     return False
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     # get_image_id('train', args.start, args.end)
     get_image_id('test')
+=======
+    get_image_id('train', args.start, args.end)
+>>>>>>> 43328a80cb0bbfd47b67bf1a5ec2ceb1d113a491
