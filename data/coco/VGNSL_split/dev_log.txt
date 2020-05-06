@@ -1,5 +1,4 @@
-536	['a', 'baseball', 'game', 'with', 'barry', 'bonds', '25', 'at', 'bat', 'and', 'a', 'catcher', 'and', 'umpire', 'behind', 'the', 'plate', 'as', 'fans', 'photographers', 'and', 'camera', 'people', 'look', 'on', 'from', 'the', 'stands']	a baseball game with barry bonds 25 at bat and a catcher and umpire behind the plate as fans photographers and camera people look on from the stands 
-<<<<<<< HEAD
+536	['a', 'baseball', 'game', 'with', 'barry', 'bonds', '25', 'at', 'bat', 'and', 'a', 'catcher', 'and', 'umpire', 'behind', 'the', 'plate', 'as', 'fans', 'photographers', 'and', 'camera', 'people', 'look', 'on', 'from', 'the', 'stands']	a baseball game with barry bonds 25 at bat and a catcher and umpire behind the plate as fans photographers and camera people look on from the stands
 713	['an', 'airplane', 'sitting', 'on', 'a', 'runway', 'being', 'loaded', 'up']	an airplane sitting on a runway being loaded up
 1077	['a', 'piece', 'of', 'pizza', 'sitting', 'on', 'a', 'plate', 'while', 'a', 't', 'v', 'is', 'on']	a piece of pizza sitting on a plate while a t v is on
 1210	['a', 'kitchen', 'with', 'a', 'stainless', 'steel', 'stove', 'and', 'white', 'cabinets']	a kitchen with a stainless steel stove and white cabinets
@@ -7,12 +6,3 @@
 2080	['a', 'street', 'sign', 'for', 'jack', 'kerouac', 'll', 'adler', 'rr', 'road']	a street sign for jack kerouac ll adler rr road
 2402	['a', 'room', 'that', 'has', 'a', 'flat', 'screen', 't', 'v', 'in', 'it']	a room that has a flat screen t v in it
 2638	['a', 'hydrant', 'of', 'the', 'canada', 'valve', 'hydrant', 'co', 'ltd', 'along', 'a', 'residential', 'road']	a hydrant of the canada valve hydrant co ltd along a residential road
-=======
-713	['an', 'airplane', 'sitting', 'on', 'a', 'runway', 'being', 'loaded', 'up']	an airplane sitting on a runway being loaded up 
-1077	['a', 'piece', 'of', 'pizza', 'sitting', 'on', 'a', 'plate', 'while', 'a', 't', 'v', 'is', 'on']	a piece of pizza sitting on a plate while a t v is on 
-1210	['a', 'kitchen', 'with', 'a', 'stainless', 'steel', 'stove', 'and', 'white', 'cabinets']	a kitchen with a stainless steel stove and white cabinets 
-1559	['a', 'white', 'plate', 'topped', 'with', 'vegetables', 'covered', 'in', 'sauce']	a white plate topped with vegetables covered in sauce 
-2080	['a', 'street', 'sign', 'for', 'jack', 'kerouac', 'll', 'adler', 'rr', 'road']	a street sign for jack kerouac ll adler rr road 
-2402	['a', 'room', 'that', 'has', 'a', 'flat', 'screen', 't', 'v', 'in', 'it']	a room that has a flat screen t v in it 
-2638	['a', 'hydrant', 'of', 'the', 'canada', 'valve', 'hydrant', 'co', 'ltd', 'along', 'a', 'residential', 'road']	a hydrant of the canada valve hydrant co ltd along a residential road 
->>>>>>> 2ba8be503aa4ddd74e3c6cf79f1a6b70fe38c947
