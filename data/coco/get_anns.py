@@ -7,9 +7,9 @@ import json
 import spacy
 from spacy.lang.en import English
 from spacy.tokenizer import Tokenizer
-from spacy.lang.char_classes import ALPHA, ALPHA_LOWER, ALPHA_UPPER, CONCAT_QUOTES, LIST_ELLIPSES, LIST_ICONS
-from spacy.util import compile_infix_regex
-
+from collections import Counter
+import os.path
+from os import path
 import random
 import re
 import argparse
@@ -29,98 +29,115 @@ splitFolder = './VGNSL_split/'
 splitFile = 'dataset_coco.json'
 dataDir = '.'
 
-with open(splitFile) as datafile:
-        data = json.load(datafile)
-        IMAGES = data['images']
+
+def get_mapping(splitType):
+    json_file = 'data_' + splitType + '.json'
+    # load mscoco caption-id pairs from json
+    if path.exists(json_file):
+        with open(json_file, 'r') as read_file:
+            coco_set = json.load(read_file)
+    else:
+        if splitType == 'dev':
+            splitType = 'val'
+        coco_set = []
+        with open(splitFile) as datafile:
+                data = json.load(datafile)
+                IMAGES = data['images']
+        for im in IMAGES:
+            if im['split'] == splitType:
+                sents = im['sentences']
+                tokens = [sent['tokens'] for sent in sents]
+                raws = [sent['raw'].replace('.','').strip().lower() for sent in sents]
+                raws_tokens = []
+                for raw in raws:
+                    coco_token = [token.text for token in nlp(raw)]
+                    if ' ' in coco_token:
+                        coco_token = list(dict.fromkeys(coco_token))
+                        coco_token.remove(' ')
+                    raws_tokens.append(coco_token)
+                assert(len(raws_tokens) == len(raws))
+                coco_set.append((im['cocoid'], raws, tokens, raws_tokens))
+        with open(json_file, "w") as write_file:
+            json.dump(coco_set, write_file)
+    return coco_set
 
 def get_image_id(splitType, start_idx=0, end_idx=5000):
     im_file = splitType + '_ids_' + str(start_idx) + '.txt'
     log_file = splitType + '_log_' + str(start_idx) + '.txt'
     # im_file = splitType + '_ids'  + '.txt'
     # log_file = splitType + '_log' + '.txt'
-    json_file = 'data_' + splitType + '.json'
     # get the caps from text
     vgnsl_caps = []
 
+    # load VGNSL captions
     with open(splitFolder + splitType + '_caps.txt', 'r') as cap_file:
         for i, c in enumerate(cap_file):
             if i < start_idx or i >= end_idx:
                 continue
-            c = c.strip().lower()
+            # c = c.strip().lower()
             # manually replacing ``, periods, and apostrophes
-            c = c.replace("``", "\"").replace('.','').replace(" '","'").replace("**rr**",")").replace("**ll**", "(")
+            c = c.replace("``", "\"").replace('.','').replace("**rr**",")").replace("**ll**", "(").strip().lower()
+            # c = c.replace("``", "\"").replace('.','').replace(" '","'").replace("**rr**",")").replace("**ll**", "(")
             vgnsl_tok = [token.text for token in nlp(c)]
+            # remove duplicate spaces in tokens
             if ' ' in vgnsl_tok:
+                vgnsl_tok = list(dict.fromkeys(vgnsl_tok))
                 vgnsl_tok.remove(' ')
             vgnsl_caps.append((c, vgnsl_tok))
 
-    if splitType == 'dev':
-        splitType = 'val'
+    coco_set = get_mapping(splitType)
 
-    coco_set = []
-    for im in IMAGES:
-        if im['split'] == splitType:
-            sents = im['sentences']
-            tokens = [sent['tokens'] for sent in sents]
-            raws = [sent['raw'].replace('.','').strip().lower() for sent in sents]
-            # coco_set.append((im['cocoid'], tokens))
-            raws_tokens = []
-            for raw in raws:
-                coco_token = [token.text for token in nlp(raw)]
-                if ' ' in coco_token:
-                    coco_token.remove(' ')
-                raws_tokens.append(coco_token)
-            assert(len(raws_tokens) == len(raws))
-            coco_set.append((im['cocoid'], raws, tokens, raws_tokens))
+    # get majority vote of ids
+    def majority(ids,idx):
+        # convert array into dictionary
+        freqDict = Counter(ids)
+        # traverse dictionary and check majority element
+        size = len(ids)
+        for (key,val) in freqDict.items():
+             if (val > (size/2)):
+                 return key
+        print(ids)
+        raise ValueError('There is not an id that is most common for: ' + str(idx))
 
-    with open(json_file, "w") as write_file:
-        json.dump(coco_set, write_file)
-
-    count = 0
-    count_miss = 0
-
+    id_per_5 = None
     for idx, vgnsl in enumerate(vgnsl_caps):
         (c, vgnsl_tok) = vgnsl
         vgnsl_list = c.split()
         if ' ' in vgnsl_list:
+            vgnsl_list = list(dict.fromkeys(vgnsl_list))
             vgnsl_list.remove(' ')
         found = False
+        id_per_1 = set()
+
+        # if idx % 5 == 0:
+        #     id_per_5 = []
+
         for (cocoid, raws, tokens, raws_tokens) in coco_set:
             for raw, token, raw_token in zip(raws, tokens, raws_tokens):
                 raw_split = raw.split()
                 if ' ' in raw_split:
+                    raw_split = list(dict.fromkeys(raw_split))
                     raw_split.remove(' ')
                 # string comparison and VGNSL splits vs. tokens
-                if (raw == c) or (vgnsl_list == token) or (vgnsl_list == raw_split):
-                    count += 1
+                if (raw == c) or (raw_split == vgnsl_list) or (raw_token == vgnsl_list) or (token == vgnsl_list) or (raw_token == vgnsl_tok) or (token == vgnsl_tok):
                     found = True
-                    break
-                # regex(vgnsl) vs. regex(coco)
-                # coco_regex = re.sub("[^a-z-A-Z-0-9' ]+", '', item)
-                # if (vgnsl_regex == coco_regex) or (vgnsl_regex.split() == coco_regex.split()):
-                #     count += 1
-                #     found = True
-                #     break
-                # VGNSL split vs. tokenize(coco)
-                # coco_list = [token.text for token in nlp(raw)]
-                if (raw_token == vgnsl_list):
-                    count += 1
-                    found = True
-                    break
-                # tokenize(VGNSL) vs. tokenize(coco)
-                if (raw_token == vgnsl_tok) or (token == vgnsl_tok):
-                    count += 1
-                    found = True
-                    break
-            if found:
-                with open(im_file, 'a') as imfile:
-                    imfile.write(str(cocoid) + '\n')
-                break
+                    id_per_1.add(cocoid)
+                    continue
+            # if found:
+            #     # add to set
+            #     id_per_5.append(cocoid)
+            #     break
         if not found:
-            count_miss += 1
             with open(log_file, 'a') as logfile:
                 logfile.write(str(idx) + '\t' + str(vgnsl_list) + '\t' + c + '\n')
-                print('could not found : ' + str(idx) + str(vgnsl_list) + ' ' + c)
+                print('could not find : ' + str(idx) + str(vgnsl_list) + ' ' + c)
+        # elif idx % 5 == 4:
+            # most_common = majority(id_per_5, idx)
+            # with open(im_file, 'a') as imfile:
+            #     imfile.write(str(most_common) + '\n')
+
+        with open(im_file, 'a') as imfile:
+            imfile.write(str(list(id_per_1)) + '\n')
 
 def write_data(splitType, coco_im, coco_cap, dataIds):
     capfile = dataDir + '/' + splitType + '_cap.txt'
@@ -163,7 +180,7 @@ def has_action(ann):
 
 if __name__ == '__main__':
     get_image_id('train', args.start, args.end)
-    # get_image_id('test')
+    # get_image_id('train', 5000, 100000)
 
     # coco = "A man is riding an elephant with and \"I love NY\" sign."
     # vgnsl = "**LL** A man is riding an elephant with and `` I love NY `` sign ."
