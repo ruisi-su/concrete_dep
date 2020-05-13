@@ -53,12 +53,10 @@ data/coco/cleaning_scripts/
 # Data & Code #
 ############
 *.mat
-sample.json
-load.py
-dataset_coco.json
-<<<<<<< HEAD
-train_set.json
+*.json
 =======
->>>>>>> 2ba8be503aa4ddd74e3c6cf79f1a6b70fe38c947
 *.ipynb
 *.npy
+data/coco/VGNSL_split/train_caps.original.txt
+compound-pcfg/script/*
+compound-pcfg/data/*
