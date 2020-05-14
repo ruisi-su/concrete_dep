@@ -87,19 +87,6 @@ def get_image_id(splitType, start_idx=0, end_idx=5000):
 
     coco_set = get_mapping(splitType)
 
-    # get majority vote of ids
-    def majority(ids,idx):
-        # convert array into dictionary
-        freqDict = Counter(ids)
-        # traverse dictionary and check majority element
-        size = len(ids)
-        for (key,val) in freqDict.items():
-             if (val > (size/2)):
-                 return key
-        print(ids)
-        raise ValueError('There is not an id that is most common for: ' + str(idx))
-
-    id_per_5 = None
     for idx, vgnsl in enumerate(vgnsl_caps):
         (c, vgnsl_tok) = vgnsl
         vgnsl_list = c.split()
@@ -108,9 +95,6 @@ def get_image_id(splitType, start_idx=0, end_idx=5000):
             vgnsl_list.remove(' ')
         found = False
         id_per_1 = set()
-
-        # if idx % 5 == 0:
-        #     id_per_5 = []
 
         for (cocoid, raws, tokens, raws_tokens) in coco_set:
             for raw, token, raw_token in zip(raws, tokens, raws_tokens):
@@ -123,18 +107,11 @@ def get_image_id(splitType, start_idx=0, end_idx=5000):
                     found = True
                     id_per_1.add(cocoid)
                     continue
-            # if found:
-            #     # add to set
-            #     id_per_5.append(cocoid)
-            #     break
+
         if not found:
             with open(log_file, 'a') as logfile:
                 logfile.write(str(idx) + '\t' + str(vgnsl_list) + '\t' + c + '\n')
                 print('could not find : ' + str(idx) + str(vgnsl_list) + ' ' + c)
-        # elif idx % 5 == 4:
-            # most_common = majority(id_per_5, idx)
-            # with open(im_file, 'a') as imfile:
-            #     imfile.write(str(most_common) + '\n')
 
         with open(im_file, 'a') as imfile:
             imfile.write(str(list(id_per_1)) + '\n')

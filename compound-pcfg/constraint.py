@@ -64,7 +64,7 @@ def invalid_phrases(frame, phrase, invalids, sent, alignment):
 
 # generate all possible phrases from left to right, not including the entire sentence
 def gen_phrases(sent, frame, alignment):
-    alignment = get_align(alignment)
+    alignment = get_align(alignment.lower())
     sent = sent.split(' ')
     pointer = 0
     end = len(sent)
@@ -99,6 +99,13 @@ def get_align(alignment):
             frame = als[2]
         else:
             cap, frame = als
+
+        # remove indicators from the alignment: place_dining -> dining
+        frame = frame.split('_')
+        if len(frame) > 1:
+            frame = frame[1]
+        else:
+            frame = frame[0]
         # print(cap)
         # only store the first occurance of the aligned word
         if frame not in aligns.keys():
