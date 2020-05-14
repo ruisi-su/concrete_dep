@@ -1,0 +1,5000 @@
+child:agent_male umbrella:follower_bull petting:leading 
+young:agent_male umbrella:follower_bull herd:leading 
+boy:agent_male cow:follower_bull 
+boy:agent_male cow:follower_bull 
+boy:agent_male umbrella:follower_bull 
+with:glowing appliances:agent_stove 
+appliances:agent_stove 
+appliances:agent_stove 
+stove:agent_stove 
+pantry:agent_stove 
+girl:agent_female kitten:item_cat 
+Girl:patting kitten:item_cat yard:place_outdoors 
+girl:agent_female cat:item_cat 
+Girl:patting yellow:place_outdoors cat:item_cat 
+girl:agent_female holds:patting kitty:item_cat 
+toilet:source_toilet bathroom:place_bathroom 
+toilet:source_toilet bathroom:place_bathroom 
+bathroom:place_bathroom and:overflowing 
+toilet:source_toilet bathroom:place_bathroom 
+bathroom:place_bathroom needs:source_toilet 
+
+
+
+
+
+woman:agent_woman bicycle:vehicle_bicycle median:place_street 
+her:agent_woman bike:vehicle_bicycle street:place_street 
+lady:agent_woman bicycle:vehicle_bicycle street:place_street 
+person:agent_woman bike:vehicle_bicycle street:place_street 
+woman:agent_woman bike:vehicle_bicycle divider:place_street 
+tub:bathing bathroom:place_bathroom 
+bathroom:place_bathroom clean:bathing 
+tub:bathing sink:place_bathroom 
+bathroom:place_bathroom bathtub:bathing 
+bathroom:place_bathroom bathtub:bathing 
+meters:place_city 
+street:brancher_street 
+located:brancher_street 
+street:brancher_street traffic:place_city 
+street:brancher_street 
+tub:place_bathtub 
+tub:place_bathtub 
+vintage-styled:place_bathtub 
+bathtub:place_bathtub 
+tub:place_bathtub 
+helmet:source_bucket toilet:agent_water dirt:place_outdoors 
+toilet:agent_water helmet:source_bucket it:overflowing 
+toilet:agent_water helmet:source_bucket it:overflowing 
+toilet:agent_water area:place_outdoors helmet:source_bucket it:overflowing 
+old:source_bucket toilet:agent_water 
+car:towing with:tool_tool field:place_field 
+old:agent_truck car:towing some:place_field 
+old:agent_truck car:towing top:tool_tool 
+vehicle:agent_truck 
+old:agent_truck it:tool_tool 
+cat:agent_cat toilet:container_toilet 
+cat:agent_cat toilet:container_toilet 
+cat:agent_cat bowl:lapping seat:container_toilet 
+cat:agent_cat seat:container_toilet bathroom:place_bathroom 
+cat:agent_cat toilet:container_toilet 
+building:tool_pulley 
+a:source_land spire:place_outside roof:tool_pulley 
+tower:tool_pulley towering:item_flag over:source_land 
+tall:tool_pulley 
+building:tool_pulley 
+woman:agent_woman motorcycle:vehicle_motorcycle street:place_street 
+woman:agent_woman motorcycle:vehicle_motorcycle passing:place_street 
+woman:agent_woman cycle:vehicle_motorcycle street:place_street 
+woman:agent_woman motorcycle:vehicle_motorcycle street:place_street 
+woman:agent_woman motorcycle:vehicle_motorcycle street:place_street 
+person:agent_woman desk:working 
+woman:agent_woman desk:working intently:place_room 
+woman:agent_woman desk:working 
+woman:agent_woman working:focus_undertaking 
+woman:agent_woman desk:working 
+bananas:agent_banana 
+Bananas:agent_banana 
+bananas:agent_banana 
+Bananas:agent_banana cardboard:spoiling 
+ripe:agent_banana 
+airplane:agent_airplane airport:place_airport runway:ground_runway 
+runway:ground_runway 
+airplane:agent_airplane runway:ground_runway 
+plane:agent_airplane take:ground_runway 
+airplane:agent_airplane 
+airplane:agent_airplane tarmac:ground_runway airport:place_airport 
+Plane:agent_airplane airport:place_airport 
+plane:agent_airplane runway:ground_runway 
+AIRPLANE:agent_airplane RUNWAY:place_airport 
+plan:agent_airplane terminal:place_airport 
+stopped:turneditem_car street:place_street 
+stopped:turneditem_car 
+intersection:turneditem_car street:place_street 
+car:turneditem_car crosswalk:place_street 
+car:turneditem_car street:place_street 
+street:place_street night:agent_light 
+night:agent_light confusing:place_street 
+glows:glowing night:agent_light 
+lights:agent_light 
+street:place_street light:agent_light 
+plane:agent_airplane sky:place_sky 
+plane:agent_airplane cloudy:place_sky 
+biplane:agent_airplane sky:place_sky 
+plane:agent_airplane flying:soaring 
+airplane:agent_airplane sky:place_sky 
+building:agent_building 
+tall:agent_building skyscrapers:place_city 
+building:agent_building shining:glowing 
+WITH:glowing SCRAPERS:agent_building 
+modern:glowing buildings:place_city 
+candidate:tool_hitch 
+candidate:tool_hitch 
+bus:agent_bus 
+bus:agent_bus advertisement:item_trailer 
+trailer:item_trailer 
+giraffe:agent_giraffe next:place_outdoors 
+giraffes:agent_giraffe bush:target_prey 
+giraffes:agent_giraffe trees:target_prey 
+giraffes:agent_giraffe by:place_outdoors trees:target_prey 
+giraffes:agent_giraffe 
+giraffe:agent_giraffe lying:resting ground:goal_land 
+giraffe:agent_giraffe laying:resting ground:goal_land 
+giraffe:agent_giraffe lying:resting 
+giraffe:agent_giraffe sitting:resting ground:goal_land 
+giraffe:agent_giraffe laying:resting 
+giraffes:agent_giraffe 
+giraffes:agent_giraffe trees:target_prey 
+giraffes:agent_giraffe by:place_outdoors 
+giraffes:agent_giraffe 
+giraffe:agent_giraffe next:place_outdoors 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug with:overflowing background:place_outdoors 
+sidewalk:place_city 
+sidewalk:place_city 
+sign:brancher_street north:place_city 
+brightly:place_city beside:branching 
+that:branching 
+street:place_street 
+street:place_street 
+street:place_street 
+English:turning foreign:agent_driver 
+street:place_street 
+background:place_field photo:intermingling 
+sheep:agents_sheep are:intermingling 
+heard:intermingling sheep:agents_sheep 
+of:intermingling sheep:agents_sheep field:place_field 
+group:intermingling sheep:agents_sheep grassy:place_field 
+bus:turning traffic:turneditem_car 
+bus:turning cars:turneditem_car street:place_street 
+bus:turning 
+City:agent_driver bus:turning 
+bus:turning down:place_street cars:turneditem_car 
+giraffe:agent_giraffe each:nuzzling 
+giraffes:item_giraffe 
+giraffe:agent_giraffe other:nuzzling giraffes:item_giraffe 
+giraffe:agent_giraffe 
+giraffes:item_giraffe zebras:nuzzling 
+bird:agent_bird branch:place_branch 
+perches:agent_bird branch:place_branch 
+bird:agent_bird branch:place_branch 
+bird:agent_bird branch:place_branch 
+bird:agent_bird branch:place_branch 
+big:tool_tool building:item_sign 
+sign:item_sign adorns:displaying 
+sign:item_sign 
+sign:item_sign wall:displaying 
+painting:displaying building:item_sign 
+bird:agent_bird tree:place_tree 
+bird:agent_bird feathers:bodypart_wing tree:place_tree 
+bird:agent_bird tree:place_tree 
+UNUSUAL:place_tree BIRD:agent_bird 
+bird:agent_bird tree:place_tree 
+street:brancher_street traffic:place_city 
+Broadway:brancher_street 
+Broadway:brancher_street avenue:branching 
+signs:brancher_street 
+post:brancher_street 
+train:agent_train by:place_outdoors 
+train:agent_train 
+train:agent_train near:place_outdoors 
+train:agent_train 
+train:agent_train pulling:pulling behind:place_outdoors 
+Train:vehicle_train depot:place_railway 
+Passengers:vehicle_train station:place_railway 
+train:vehicle_train an:disembarking 
+photograph:disembarking station:place_railway 
+people:agent_people waiting:vehicle_train station:place_railway 
+sign:panhandling street:place_street 
+graffiti:panhandling pictured:agent_person 
+graffiti:panhandling Red:place_street 
+Graffiti:panhandling 
+written:panhandling 
+a:tool_camera the:place_outdoors around:agent_cameraman 
+jack:agent_cameraman next:place_outdoors camera:tool_camera 
+a:tool_camera near:agent_cameraman outside:place_outdoors 
+operating:filming a:tool_camera jackhammer:agent_cameraman 
+a:tool_camera jack:agent_cameraman next:place_outdoors 
+cat:agent_cat near:waddling 
+cat:agent_cat the:waddling 
+cat:agent_cat the:waddling 
+cat:agent_cat the:waddling 
+cat:agent_cat ledge:waddling to:place_outdoors 
+sitting:crouching next:place_outdoors dogs:agent_dog 
+white:agent_dog sits:crouching by:place_outdoors 
+cat:crouching dogs:agent_dog by:place_outdoors 
+dogs:agent_dog cat:crouching 
+cat:crouching dogs:agent_dog by:place_outdoors 
+dog:agent_dog couch:place_sofa 
+dog:agent_dog cat:coagent_cat couch:place_sofa 
+cat:coagent_cat dog:agent_dog couch:place_sofa 
+dog:agent_dog cat:coagent_cat couch:place_sofa 
+cat:coagent_cat dog:agent_dog couch:place_sofa 
+cat:agent_cat lays:place_sofa 
+cat:agent_cat chair:place_sofa 
+cat:agent_cat stuffed:place_sofa 
+cat:agent_cat chair:place_sofa 
+fat:agent_cat stuffed:place_sofa 
+cats:agent_cat shoes:item_shoe 
+cats:agent_cat outside:place_outdoors sneakers:item_shoe 
+cats:agent_cat shoes:item_shoe outdoors:place_outdoors 
+cats:agent_cat sneakers:item_shoe 
+cat:agent_cat shoes:item_shoe 
+cat:agent_cat suitcase:place_bag 
+cat:agent_cat suitcase:place_bag 
+cat:agent_cat suitcase:place_bag 
+cat:agent_cat suitcase:place_bag 
+cat:agent_cat suitcase:place_bag 
+chair:goal_chair room:place_room 
+cat:goal_chair 
+Cat:goal_chair 
+sitting:goal_chair 
+chair:goal_chair 
+cows:agent_cattle grazing:item_grass field:place_field 
+Cows:agent_cattle meadow:item_grass 
+cows:agent_cattle field:place_field 
+cows:agent_cattle grazing:item_grass 
+Cows:agent_cattle grass:item_grass 
+flatbed:item_bikes 
+transporting:hauling shipment:item_bikes 
+hauling:carrier_truck bicycles:item_bikes 
+flatbed:item_bikes 
+bikes:item_bikes back:hauling 
+cows:agent_cow 
+cows:agent_cow standing:urinating the:place_outdoors 
+cows:agent_cow 
+cows:agent_cow standing:urinating 
+cows:agent_cow standing:urinating 
+remote:place_telephone 
+remote:place_telephone 
+cat:agent_cat control:place_telephone 
+kitten:place_telephone 
+kitten:place_telephone 
+elephant:agent_elephant carrying:fetching 
+elephant:agent_elephant 
+nd:item_water elephant:agent_elephant carrying:fetching some:place_outdoors 
+of:item_water an:agent_elephant with:fetching 
+elephant:agent_elephant carries:fetching 
+elephant:agent_elephant walking:wading 
+elephant:agent_elephant 
+elephant:agent_elephant 
+elephant:agent_elephant 
+elephant:agent_elephant 
+elephants:agent_elephant by:place_outdoors water:wading 
+elephants:agent_elephant walking:wading 
+elephant:agent_elephant water:wading 
+elephant:agent_elephant walking:wading 
+elephants:agent_elephant water:wading 
+elephants:agent_elephant bathing:wading 
+elephants:agent_elephant water:wading 
+Elephants:agent_elephant shallow:wading day:place_outdoors 
+elephants:agent_elephant 
+elephants:agent_elephant water:wading 
+elephant:agent_elephant 
+elephant:agent_elephant herd:item_grass 
+elephants:agent_elephant 
+elephants:agent_elephant 
+herd:item_grass elephants:agent_elephant 
+elephant:agent_elephant field:place_field 
+elephants:agent_elephant field:place_field 
+elephant:agent_elephant 
+elephant:agent_elephant 
+elephant:agent_elephant field:place_field 
+elephant:agent_elephant 
+elephant:agent_elephant stands:standing 
+elephant:agent_elephant standing:standing beside:place_outdoors 
+elephant:agent_elephant stands:standing 
+elephant:agent_elephant standing:standing the:place_outdoors 
+elephants:agent_elephant to:target_post 
+elephants:agent_elephant trunks:target_post 
+elephants:agent_elephant trunks:target_post 
+elephants:agent_elephant touching:target_post in:peeing 
+elephants:agent_elephant trunks:target_post 
+woman:agent_woman frisbee:caughtitem_Frisbee 
+woman:agent_woman park:place_park frisbee:caughtitem_Frisbee 
+woman:agent_woman frisbee:caughtitem_Frisbee 
+person:agent_woman Frisbee:caughtitem_Frisbee 
+woman:agent_woman Frisbee:caughtitem_Frisbee lawn:place_park 
+people:agent_people a:throwing lake:destination_lake 
+people:agent_people frisbee:item_Frisbee 
+people:agent_people shoreline:place_shore in:throwing 
+group:agent_people play:throwing catch:item_Frisbee beside:place_shore 
+friends:agent_people beach:place_shore 
+dogs:item_dog area:place_outdoors 
+dogs:item_dog 
+dogs:item_dog near:place_outdoors 
+dogs:item_dog against:place_outdoors 
+dogs:item_dog dirt:place_outdoors 
+kid:agent_male frisbee:caughtitem_Frisbee 
+young:agent_male frisbee:caughtitem_Frisbee park:place_park 
+toddler:agent_male frisbee:caughtitem_Frisbee 
+young:agent_male park:place_park 
+child:agent_male frisbee:caughtitem_Frisbee 
+zebra:agent_zebra 
+zebras:agent_zebra together:nuzzling 
+One:nuzzling zebra:agent_zebra 
+zebra:agent_zebra another:nuzzling 
+zebra:agent_zebra another:nuzzling 
+Person:agent_person horse:vehicle_horse 
+person:agent_person horse:vehicle_horse trail:place_mountain 
+person:agent_person donkey:vehicle_horse mountains:place_mountain 
+mountains:place_mountain 
+person:agent_person horse:vehicle_horse hills:place_mountain 
+herd:item_grass zebras:agent_zebra 
+zebras:agent_zebra 
+zebras:agent_zebra beside:place_outdoors 
+herd:item_grass zebra:agent_zebra 
+zebras:agent_zebra an:place_outdoors field:item_grass 
+Horses:agent_horse 
+horses:agent_horse background:place_field 
+Horses:agent_horse 
+Horses:agent_horse field:place_field 
+Five:stampeding horses:agent_horse 
+leads:follower_horse girl:agent_girl 
+girl:agent_girl horse:follower_horse 
+girls:agent_girl pathway:place_path horse:follower_horse 
+horse:follower_horse girl:agent_girl 
+led:leading trainer:follower_horse 
+horse:agent_horse drawn:item_carriage 
+horse:agent_horse pull:item_carriage street:place_street 
+horse:agent_horse drawn:item_carriage street:place_street 
+horse:agent_horse pulling:item_carriage 
+horse:agent_horse trolley:tool_harness street:place_street 
+horses:agent_horse wooded:place_forest amongst:foraging 
+horses:agent_horse woods:place_forest 
+grass:item_grass woods:place_forest 
+horses:agent_horse trees:place_forest 
+horses:agent_horse woods:place_forest 
+and:place_table apples:agent_apple 
+plate:place_table apples:agent_apple 
+table:place_table apples:agent_apple 
+table:place_table fruit:agent_apple 
+array:place_table apples:agent_apple 
+throw:hurling 
+pitch:hurling 
+throw:hurling 
+man:agent_man throw:hurling 
+male:agent_man throw:hurling 
+necklace:giggling 
+necklace:giggling 
+person:agent_woman laughing:giggling 
+necklace:giggling 
+poses:agent_woman joyously:giggling 
+orange:agent_tomato 
+orange:agent_tomato 
+orange:agent_tomato 
+orange:agent_tomato 
+orange:agent_tomato 
+grasshopper:target_cup 
+up:agent_person bug:target_cup 
+grasshopper:target_cup 
+cage:target_cup 
+is:agent_person wooden:place_room cage:target_cup 
+clock:agent_clock shape:glowing 
+clock:agent_clock 
+clock:agent_clock 
+clock:agent_clock 
+cock:agent_clock side:place_outside 
+tube:source_cup 
+tube:source_cup 
+and:overflowing cup:source_cup 
+and:overflowing cup:source_cup 
+tube:source_cup 
+person:agent_man sidewalk:place_sidewalk skateboard:vehicle_skateboard 
+person:agent_man skateboard:vehicle_skateboard sidewalk:place_sidewalk 
+Person:agent_man skateboard:vehicle_skateboard sidewalk:place_sidewalk 
+PERSON:place_sidewalk SKATEBOARDING:skating 
+person:agent_man skateboarding:vehicle_skateboard 
+man:agent_man holding:tool_hand at:eating 
+man:agent_man hot:food_hotdog eating:eating 
+man:agent_man eating:eating hot:food_hotdog 
+man:agent_man holds:tool_hand hotdog:food_hotdog 
+man:agent_man at:eating chili:food_hotdog 
+hot:agent_hotdog plate:place_plate 
+hot:agent_hotdog plate:place_plate 
+buns:agent_hotdog 
+buns:agent_hotdog plate:place_plate 
+buns:agent_hotdog plate:place_plate 
+girl:agent_female restaurant:place_restaurant for:tool_hand 
+girl:agent_female missing:place_restaurant enjoys:eating hotdog:food_sandwich 
+child:agent_female bar:place_restaurant eating:eating 
+girl:agent_female at:place_restaurant eating:eating 
+girl:agent_female eating:eating restaurant:place_restaurant 
+skating:skating rink:place_rink 
+snowboard:vehicle_ice 
+competition:vehicle_ice 
+Man:agent_man snowboard:vehicle_ice riding:skating 
+snowboarder:vehicle_ice his:agent_man moves:place_rink 
+snowboard:vehicle_ice 
+snowboard:vehicle_ice 
+man:agent_man riding:skating snowboard:vehicle_ice 
+man:agent_man jacket:vehicle_ice 
+man:agent_man riding:skating snowboard:vehicle_ice 
+lots:selling food:item_food 
+food:item_food 
+of:selling food:item_food 
+plates:item_food fruit:selling 
+food:item_food 
+donuts:agent_doughnut 
+close:spoiling doughnuts:agent_doughnut 
+donuts:agent_doughnut 
+doughnuts:agent_doughnut 
+flavored:agent_doughnut 
+person:agent_person holding:item_beer chocolate:substance_cocoa 
+holding:item_beer what:agent_person chocolate:substance_cocoa 
+person:agent_person holding:item_beer tasty:dipping treat:substance_cocoa 
+person:agent_person holding:item_beer cookie:substance_cocoa 
+person:agent_person cookie:substance_cocoa 
+candles:item_candle 
+candles:item_candle 
+Someone:agent_person candles:item_candle 
+birthday:decorated_birthday being:agent_person 
+2nd:decorated_birthday 
+soccer:victim_soccer 
+boys:agent_male grassy:place_field soccer:victim_soccer 
+soccer:victim_soccer field:place_field 
+soccer:victim_soccer field:place_field 
+soccer:victim_soccer grass:place_field 
+on:place_ocean top:cresting 
+surfboards:place_ocean 
+Surboarders:agent_cloud water:place_ocean 
+Surfers:place_ocean 
+surfers:place_ocean 
+cake:agent_candle table:place_table 
+cake:agent_candle table:place_table 
+cake:agent_candle and:glowing eaten:place_table 
+decorated:glowing table:place_table candles:agent_candle 
+table:place_table candles:agent_candle 
+soccer:surface_foot ball:item_ball 
+men:agent_man soccer:surface_foot field:place_field ball:item_ball 
+soccer:surface_foot ball:item_ball 
+Man:agent_man soccer:surface_foot ball:item_ball 
+soccer:surface_foot playing:item_ball 
+soccer:agent_soccer field:place_field 
+soccer:agent_soccer 
+soccer:agent_soccer 
+soccer:agent_soccer field:place_field 
+Soccer:agent_soccer 
+plate:rotting dessert:agent_fruit 
+dessert:agent_fruit 
+chocolate:agent_fruit 
+desert:agent_fruit 
+in:container_bowl frosting:agent_fruit 
+messy:agent_garbage room:place_room 
+house:place_room renovated:agent_garbage 
+bags:agent_garbage 
+messy:agent_garbage room:place_room 
+messy:agent_garbage wall:place_room 
+man:agent_man standing:walking beach:place_beach 
+an:walking man:agent_man ocean:place_beach 
+man:agent_man standing:walking beach:place_beach 
+person:agent_man the:place_beach 
+man:agent_man ocean:place_beach 
+older:encouraging woman:agent_woman two:reciever_female 
+an:place_outdoors woman:agent_woman 
+lady:agent_woman two:reciever_female the:place_outdoors 
+girls:reciever_female outside:place_outdoors 
+an:place_outdoors woman:agent_woman 
+three:container_mouth 
+Three:agent_people eating:container_mouth 
+men:agent_people enjoying:container_mouth 
+Three:agent_people eating:container_mouth 
+Three:agent_people eating:container_mouth 
+girl:agent_female teeth:substance_toothpaste 
+child:agent_female teeth:substance_toothpaste 
+girl:agent_female teeth:substance_toothpaste 
+girl:agent_female toothbrush:tool_toothbrush 
+girl:agent_female toothbrush:tool_toothbrush 
+child:agent_female teeth:substance_toothpaste 
+child:agent_female teeth:substance_toothpaste 
+girl:agent_female teeth:substance_toothpaste 
+child:agent_female teeth:substance_toothpaste 
+girl:agent_female teeth:substance_toothpaste 
+boy:agent_male holds:tool_telephone couch:place_living 
+boy:agent_male on:phoning couch:place_living 
+boy:agent_male sitting:place_living 
+kid:agent_male on:phoning coach:place_living 
+boy:agent_male television:place_living 
+room:place_room windows:agent_light 
+room:place_room lit:agent_light 
+room:place_room windows:agent_light 
+room:place_room couches:agent_light lamps:glowing 
+room:place_room windows:agent_light 
+sky:place_sky of:agent_people kites:parachute_parachute 
+of:agent_people kites:parachute_parachute flying:place_sky 
+kites:parachute_parachute cloudy:place_sky 
+kites:parachute_parachute sky:place_sky 
+bunch:agent_people sky:place_sky 
+skis:skiing 
+snow:skiing 
+snowboard:agent_skier 
+snow:skiing 
+snow:skiing 
+room:place_room laptop:item_laptop 
+There:tool_tool room:place_room laptops:item_laptop 
+laptop:item_laptop projection:place_room 
+computer:item_laptop wall:displaying 
+laptops:item_laptop 
+building:agent_building 
+architectural:agent_building dock:medium_water 
+Scaffolding:agent_building 
+Scaffolding:agent_building 
+tower:agent_building 
+baseball:place_ball swinging:hitting 
+baseball:place_ball swinging:hitting bat:tool_bat 
+baseball:place_ball bat:tool_bat 
+baseball:place_ball bat:tool_bat 
+batter:victim_baseball hits:hitting League:place_ball 
+baseball:place_ball bat:tool_bat 
+baseball:place_ball Barry:victim_baseball 
+Base:agent_ballplayer base:place_ball umpire:victim_baseball 
+bat:tool_bat baseball:place_ball 
+baseball:place_ball bat:tool_bat 
+boy:agent_male baseball:pitched_baseball bat:tool_bat 
+boy:agent_male ball:pitching bat:tool_bat 
+holding:agent_male baseball:pitched_baseball bat:tool_bat 
+bat:tool_bat 
+boy:agent_male bat:tool_bat baseball:pitched_baseball 
+baseball:place_ball ready:tool_bat 
+baseball:place_ball bat:tool_bat 
+league:place_ball ready:tool_bat hit:hitting 
+baseball:place_ball bat:tool_bat 
+baseball:place_ball 
+ball:blow_tennis 
+man:agent_man Tennis:blow_tennis 
+man:agent_man returning:place_tennis ball:blow_tennis 
+ball:blow_tennis 
+Man:agent_man during:ducking tennis:blow_tennis 
+tennis:tool_tennis player:place_stadium ball:victim_ball 
+woman:agent_woman hitting:victim_ball tennis:tool_tennis 
+woman:agent_woman tennis:tool_tennis player:place_stadium 
+tennis:tool_tennis player:place_stadium ball:victim_ball she:agent_woman 
+woman:agent_woman strike:tool_tennis ball:victim_ball 
+person:agent_man swing:hitting tennis:tool_tennis ball:victim_ball 
+shirt:agent_man shorts:tool_tennis 
+tennis:tool_tennis player:place_stadium hits:victim_ball 
+person:agent_man shorts:tool_tennis indoor:place_stadium 
+swinging:hitting court:tool_tennis 
+desk:place_office 
+desk:place_office 
+office:place_office supplies:source_mailbox 
+desk:place_office arranged:overflowing 
+desk:place_office 
+computer:typing 
+using:typing 
+woman:agent_woman typing:typing 
+woman:agent_woman laptop:tool_laptop 
+typing:typing 
+cords:installing 
+wires:installing 
+cords:installing 
+wires:installing 
+open:installing laptop:component_computer sitting:place_room 
+men:agent_man using:dialing computers:place_office 
+men:agent_man laptops:place_office 
+Business:place_office devices:item_telephone 
+men:agent_man at:item_telephone desk:place_office 
+laptops:place_office man:agent_man phone:dialing 
+girl:agent_female eating:eating 
+girl:agent_female eating:eating 
+girl:agent_female bites:eating 
+girl:agent_female biting:eating 
+girl:agent_female bite:eating 
+women:agent_woman walking:walking 
+woman:agent_woman walking:walking 
+woman:agent_woman heels:walking 
+woman:agent_woman walking:walking 
+woman:agent_woman walking:walking 
+girl:agent_female chair:container_chair 
+child:agent_female stuffed:rocking 
+girl:agent_female chair:container_chair 
+girl:agent_female chair:container_chair 
+girl:agent_female chair:container_chair 
+clock:item_clock 
+sidewalk:place_outside 
+clock:item_clock 
+clock:item_clock front:place_outside 
+clock:item_clock 
+clock:item_clock 
+statues:item_clock 
+clock:item_clock 
+clock:item_clock from:place_outside 
+clock:item_clock 
+table:place_table flowers:blossoming 
+plant:agent_tree vase:blossoming table:place_table 
+flowers:blossoming table:place_table 
+Flowers:blossoming table:place_table 
+table:place_table 
+people:agent_people table:place_dining having:dining 
+people:agent_people table:place_dining 
+people:agent_people table:place_dining 
+people:agent_people table:place_dining 
+people:agent_people table:place_dining 
+woman:agent_woman kitchen:place_kitchen 
+woman:agent_woman kitchen:place_kitchen 
+kitchen:place_kitchen 
+made:foodcontainer_pan 
+woman:agent_woman kitchen:place_kitchen 
+kitchen:place_kitchen 
+view:glowing kitchen:place_kitchen 
+kitchen:place_kitchen lights:glowing 
+kitchen:place_kitchen room:agent_lamp 
+kitchen:place_kitchen 
+man:agent_man bicycle:vehicle_bicycle riding:riding 
+man:agent_man bicycle:vehicle_bicycle back:riding 
+person:agent_man bike:vehicle_bicycle lot:place_street 
+man:agent_man riding:riding bike:vehicle_bicycle 
+man:agent_man riding:riding bike:vehicle_bicycle 
+tub:place_bathtub 
+tub:place_bathtub 
+bathtub:place_bathtub 
+bathroom:place_bathtub 
+bathroom:place_bathtub 
+person:agent_person toothbrush:object_toothbrush 
+toothbrush:object_toothbrush 
+person:agent_person toothbrush:object_toothbrush 
+toothbrush:object_toothbrush 
+Person:agent_person toothbrush:object_toothbrush 
+bus:victim_bus 
+bus:victim_bus 
+bus:victim_bus parked:ramming 
+bus:victim_bus parked:ramming 
+bus:victim_bus 
+woman:agent_woman table:place_restaurant 
+woman:agent_woman table:place_restaurant plate:container_plate 
+woman:agent_woman restaurant:place_restaurant plate:container_plate 
+of:food_spaghetti woman:agent_woman just:tool_hand 
+her:agent_woman face:eating 
+bird:agent_bird pond:wading 
+bird:agent_bird shallow:wading 
+bird:agent_bird shallow:wading 
+bird:agent_bird water:wading 
+bird:agent_bird water:wading 
+rest:place_bathroom toilets:source_toilet 
+toilet:source_toilet sink:place_bathroom 
+toilets:source_toilet 
+toilets:source_toilet bathroom:place_bathroom 
+bathroom:place_bathroom tank:source_toilet 
+silverware:place_dining 
+mashed:source_plate and:overflowing 
+silverware:place_dining and:overflowing 
+mashed:source_plate tuna:agent_food table:place_dining 
+plate:source_plate food:agent_food with:overflowing table:place_dining 
+plate:place_plate 
+chocolate:agent_fruit plate:place_plate 
+chocolate:agent_fruit plate:place_plate 
+chocolate:agent_fruit fork:place_plate 
+chocolate:agent_fruit plate:place_plate 
+oranges:agent_tomato table:place_table 
+glass:place_table oranges:agent_tomato 
+oranges:agent_tomato 
+glass:place_table oranges:agent_tomato 
+tangerines:agent_tomato wooden:place_table 
+motorcycle:vehicle_motorcycle 
+motorcycle:vehicle_motorcycle 
+motorcycle:vehicle_motorcycle driveway:place_road 
+There:agent_person cycle:vehicle_motorcycle 
+motorcycle:vehicle_motorcycle road:place_road 
+man:agent_man motorcycle:vehicle_motorcycle 
+man:agent_man motorcylce:vehicle_motorcycle 
+man:agent_man motorcycle:vehicle_motorcycle 
+man:agent_man motorcycle:vehicle_motorcycle sidewalk:place_sidewalk 
+man:agent_man cycle:vehicle_motorcycle 
+next:place_outdoors lined:agents_motorcycle 
+motorcycles:agents_motorcycle are:intermingling to:place_outdoors 
+row:agents_motorcycle next:place_outdoors 
+row:agents_motorcycle 
+motorcycles:agents_motorcycle 
+jetliner:agent_jet sky:place_sky 
+sky:place_sky 
+jet:agent_jet flies:soaring sky:place_sky 
+plane:agent_jet sky:place_sky 
+plane:agent_jet sky:place_sky 
+jet:agent_jet airport:place_airport runway:ground_runway 
+strip:ground_runway 
+airport:place_airport 
+Lufthansa:agent_jet 
+runway:ground_runway airport:place_airport 
+plan:agent_airplane 
+propeller:agent_airplane runway:ground_runway 
+propeller:agent_airplane runway:ground_runway 
+airplane:agent_airplane airport:place_airport 
+aircraft:agent_airplane tarmac:ground_runway 
+terminal:place_airport 
+tarmac:ground_runway 
+runway:ground_runway 
+airplane:taxiing 
+terminal:place_airport 
+airplane:agent_airplane smoke:start_air 
+sky:plummeting 
+sky:plummeting 
+jet:plummeting airplane:agent_airplane air:destination_yard streams:place_air 
+sky:plummeting 
+cat:agent_cat bench:place_bench 
+fat:agent_cat bench:place_bench 
+cat:agent_cat bench:place_bench 
+cat:agent_cat bench:place_bench 
+cat:agent_cat bench:place_bench 
+tree:brancher_giraffe beside:place_shore 
+giraffe:brancher_giraffe 
+giraffe:brancher_giraffe boats:place_shore 
+giraffe:brancher_giraffe water:place_shore lined:branching 
+giraffe:brancher_giraffe the:place_shore 
+shoe:erased_paint 
+pointy-toed:erased_paint 
+shoe:erased_paint 
+shoe:erased_paint 
+shoe:erased_paint 
+animal:agent_dog sitting:resting some:place_outdoors 
+lays:item_body grassy:goal_land 
+lying:resting 
+knoll:goal_land on:resting green:place_outdoors 
+sits:resting 
+giraffe:agent_giraffe looking:item_head rocks:rubbing 
+giraffe:agent_giraffe rests:item_head rocks:rubbing 
+giraffe:agent_giraffe head:agentpart_neck rocks:rubbing 
+giraffe:agent_giraffe obtain:rubbing 
+giraffe:agent_giraffe head:agentpart_neck rocks:rubbing 
+street:place_street 
+People:agent_people bus:place_street 
+bus:place_street people:agent_people 
+Men:agent_people street:place_street 
+Hyundai:parading city:place_street 
+sheep:agent_sheep for:standing 
+sheep:agent_sheep standing:standing 
+sheep:agent_sheep standing:standing 
+sheep:agent_sheep stand:standing 
+five:standing sheep:agent_sheep 
+wheelchair:blocker_pole street:tool_street 
+crossing:blocking traffic:blocker_pole 
+traffic:blocker_pole 
+road:blocking wheelchair:blocker_pole 
+traffic:blocker_pole 
+traffic:place_city hanging:branching 
+street:place_city hanging:branching 
+street:place_city houses:brancher_road 
+city:place_city 
+urban:place_city intersection:brancher_road 
+decker:turneditem_bus bus:agent_bus 
+decker:turneditem_bus bus:agent_bus street:place_street 
+decker:turneditem_bus bus:agent_bus street:place_street England:turning 
+double-decked:turneditem_bus bus:agent_bus 
+decker:turneditem_bus bus:agent_bus street:place_street 
+OF:tool_tool BUS:item_bus 
+bus:item_bus and:tool_tool lot:towing 
+,:tool_tool school:place_road bus:item_bus 
+and:tool_tool bus:item_bus gravel:place_road lot:towing 
+lot:towing 
+paint:place_person 
+metal:agent_dentition bolt:place_person 
+hydrant:place_person 
+decaying:place_person 
+pink:place_person 
+old:agent_water hydrant:source_fountain sits:overflowing 
+decorative:agent_water yard:place_outdoors 
+hydrant:source_fountain patch:place_outdoors of:overflowing 
+cementery:source_fountain 
+style:agent_water hydrant:source_fountain 
+of:colliding birds:item_bird floating:agent_boat 
+birds:item_bird row:colliding boat:agent_boat water:place_body 
+boat:agent_boat water:place_body of:colliding birds:item_bird 
+Birds:item_bird boat:agent_boat water:place_body 
+of:colliding boat:agent_boat 
+bird:agent_bird an:place_outdoors 
+Bird:agent_bird 
+bird:agent_bird an:place_outdoors 
+bird:agent_bird an:place_outdoors 
+bird:agent_bird 
+water:wading bird:agent_bird tide:place_beach 
+bird:agent_bird toward:wading 
+bird:agent_bird beach:place_beach 
+pelican:agent_bird beach:place_beach 
+bird:agent_bird shore:place_beach 
+geese:agent_duck lot:place_road grassy:foraging 
+Ducks:agent_duck grass:foraging lot:place_road 
+birds:agent_duck patch:foraging 
+geese:agent_duck lot:place_road 
+ducks:agent_duck grassy:foraging lot:place_road 
+lights:agent_light 
+giving:place_outside light:agent_light 
+light:agent_light says:place_outside 
+traffic:agent_light post:place_outside 
+lights:agent_light 
+bird:agent_bird water:wading 
+bird:agent_bird by:place_outdoors water:wading 
+bird:agent_bird bank:wading 
+edge:wading 
+bird:agent_bird next:place_outdoors water:wading 
+birds:agent_bird 
+birds:agent_bird 
+Sea:waddling 
+birds:agent_bird 
+birds:agent_bird 
+man:traveler_man moving:vehicle_subway 
+passing:traveler_man train:place_subway 
+platform:place_subway 
+man:traveler_man train:place_subway 
+waiting:place_subway 
+branches:place_tree 
+birds:eater_bird tree:place_tree 
+branches:place_tree 
+perched:eater_bird branches:place_tree 
+branches:place_tree 
+toucan:agentpart_neck perches:agent_bird behind:place_outdoors 
+bird:agent_bird looks:item_head cage:agentpart_neck 
+black:tilting bird:agent_bird huge:place_outdoors cage:agentpart_neck 
+bird:agent_bird behind:place_outdoors 
+toucan:agentpart_neck beak:agent_bird 
+tracks:agent_train some:place_outdoors 
+tracks:agent_train setting:place_outdoors 
+tracks:agent_train 
+tracks:agent_train near:place_outdoors 
+tracks:agent_train 
+meter:source_car 
+meter:source_car 
+front:place_outside the:substance_water meter:source_car 
+gray:substance_water meter:source_car 
+meter:source_car 
+cows:agent_cow camera:drooling 
+cows:agent_cow 
+cow:agent_cow 
+cows:agent_cow close:drooling 
+close:drooling cow:agent_cow near:place_outdoors 
+cat:agent_cat drinking:food_water table:place_table 
+cat:agent_cat table:place_table drinking:food_water 
+cat:agent_cat drinking:food_water 
+cat:agent_cat drinking:food_water 
+cat:agent_cat drinking:food_water 
+cat:agent_cat chair:place_chair 
+cat:agent_cat chair:place_chair 
+cat:agent_cat chair:place_chair 
+cat:agent_cat chair:place_chair 
+cat:agent_cat chair:place_chair 
+Cat:agent_cat at:place_inside reflection:leaping 
+cat:agent_cat at:place_inside reflection:leaping in:source_land 
+cat:agent_cat at:place_inside in:source_land the:leaping 
+curious:agent_cat at:place_inside in:source_land the:leaping 
+cats:agent_cat reflection:leaping a:source_land 
+cat:agent_cat laptop:paweditem_laptop 
+cat:agent_cat laptop:paweditem_laptop 
+cat:agent_cat laptop:paweditem_laptop 
+cat:agent_cat computer:paweditem_laptop 
+Cat:agent_cat laptop:paweditem_laptop 
+cow:agent_cow it:destination_land 
+cow:agent_cow the:place_outdoors 
+Cow:agent_cow chain:destination_land 
+cow:agent_cow 
+cow:agent_cow to:destination_land 
+man:agent_man in:item_car bus:driving 
+man:agent_man bus:driving road:place_road 
+man:agent_man bus:driving 
+man:agent_man in:item_car bus:driving rural:place_road 
+man:agent_man in:item_car tour:driving rural:place_road 
+People:agent_people beach:place_beach umbrellas:shelter_tent 
+umbrellas:shelter_tent beach:place_beach 
+people:agent_people beach:place_beach 
+Many:agent_people umbrellas:shelter_tent beach:place_beach 
+Many:agent_people shade:shelter_tent beach:place_beach 
+Two:place_field dogs:item_leash 
+are:place_field dogs:item_leash 
+group:place_field dogs:item_leash 
+dogs:item_leash 
+grass:place_field dogs:item_leash 
+people:agent_people tables:dining 
+An:place_outdoors patio:dining of:agent_people 
+patio:dining people:agent_people 
+tables:dining umbrellas:agent_people shading:place_outdoors 
+table:dining near:place_outdoors people:agent_people 
+dressed:saluting by:place_outdoors 
+An:place_outdoors leather:saluting 
+
+dressed:saluting green:place_outdoors 
+mask:saluting 
+white:agentpart_tail terrier:agent_dog yellow:place_outdoors 
+dog:agent_dog yellow:place_outdoors vest:agentpart_tail 
+Terrier:agent_dog vest:agentpart_tail sunshine:place_outdoors 
+to:place_outdoors 
+dog:agent_dog 
+of:place_shop people:agent_people 
+People:agent_people wooden:source_floor 
+of:place_shop people:agent_people 
+people:agent_people indoor:place_shop 
+of:place_shop wood:cleaning people:agent_people 
+ski:skiing poles:place_snow 
+skiing:skiing with:agent_person snow:place_snow 
+snow:place_snow skier:skiing 
+country:place_snow skiing:skiing with:agent_person 
+person:agent_person country:place_snow skiing:skiing 
+bears:coagent_bear covers:place_bed 
+stuffed:coagent_bear bed:place_bed 
+bear:agent_bear comforter:place_bed 
+bears:coagent_bear bed:place_bed 
+stuffed:coagent_bear bed:place_bed cuddled:snuggling 
+man:agent_man catch:caughtitem_Frisbee 
+man:agent_man catch:caughtitem_Frisbee 
+man:agent_man catch:caughtitem_Frisbee 
+man:agent_man Frisbee:caughtitem_Frisbee 
+Man:agent_man leaping:catching frisbee:caughtitem_Frisbee 
+zebras:agent_zebra grassy:place_field 
+Three:item_grass zebra:agent_zebra 
+zebras:agent_zebra field:place_field 
+zebra:agent_zebra field:place_field 
+zebras:agent_zebra grassy:place_field 
+zebra:agent_zebra eating:gnawing grass:item_grass 
+zebra:agent_zebra grazing:item_grass 
+zebra:agent_zebra grazing:item_grass 
+zebra:agent_zebra grass:item_grass its:gnawing 
+zebra:agent_zebra grazing:item_grass 
+horses:agent_horse grazing:item_grass field:place_field 
+horse:agent_horse lush:item_grass field:place_field 
+horse:agent_horse grazing:item_grass 
+horse:agent_horse grazing:item_grass field:place_field 
+horse:agent_horse grazing:item_grass field:place_field 
+horse:vehicle_horse girl:agent_girl 
+girl:agent_girl cowboy:vehicle_horse 
+girl:agent_girl horse:vehicle_horse 
+girl:agent_girl horse:vehicle_horse 
+girl:agent_girl horse:vehicle_horse 
+horse:agent_horse carriage:item_carriage 
+horse:agent_horse carriage:item_carriage 
+horse:agent_horse carriage:item_carriage 
+horse:agent_horse carriage:item_carriage next:place_outdoors 
+horse:agent_horse carriage:item_carriage 
+orange:agent_tomato twist:place_plate 
+orange:agent_tomato plate:place_plate 
+dish:place_plate orange:agent_tomato 
+fruit:agent_tomato crackers:place_plate 
+orange:agent_tomato plate:place_plate 
+people:agent_people snow:place_snow skis:skiing 
+friends:agent_people ski:skiing warm:place_snow 
+people:agent_people skis:skiing 
+people:agent_people 
+people:agent_people snow:place_snow skis:skiing 
+players:tool_baseball catch:catching 
+playing:catching baseball:tool_baseball 
+Baseball:agent_ballplayer players:tool_baseball air:catching 
+third:tool_baseball thrown:catching glove:caughtitem_baseball 
+players:tool_baseball leaping:catching 
+girls:victim_daughter bed:place_bedroom bananas:disciplining 
+child:agent_mother bananas:disciplining 
+mother:agent_mother together..:disciplining 
+child:agent_mother bananas:disciplining 
+girl:agent_mother bed:place_bedroom bananas:disciplining 
+salad:theme_food out:cramming 
+with:cramming food:theme_food as:container_mouth 
+holding:container_mouth and:theme_food 
+food:theme_food eat:container_mouth 
+sitting:container_mouth 
+bananas:item_corn 
+selling:buyer_woman bananas:item_corn 
+buying:buyer_woman 
+banana:item_corn sale:selling people:buyer_woman 
+farmers:place_market 
+skiing:skiing 
+ski:place_ski 
+ski:place_ski jacket:agent_skier 
+skiing:skiing 
+ski:place_ski poles:agent_skier 
+people:agent_people covered:place_mountain ski:skiing 
+people:agent_people snow:skiing 
+group:agent_people skiers:skiing mountain:place_mountain 
+Four:agent_people skiers:skiing steep:place_mountain 
+people:agent_people ski:skiing 
+skis:skiing it:agent_person 
+skis:skiing legs:agent_person 
+ski:skiing 's:agent_person 
+There:agent_person skis:skiing 
+Person:agent_person skis:skiing snow:place_snow 
+
+group:agent_people skiers:skiing 
+skiing:skiing 
+group:agent_people skis:skiing 
+skiers:skiing 
+plate:place_plate onions:sprouter_bean 
+pasta:sprouter_bean toasted:place_plate 
+noodles:sprouter_bean 
+pasta:sprouter_bean 
+noodles:sprouter_bean 
+man:agent_man skateboard:vehicle_skateboard ramp:place_ramp 
+man:agent_man skateboard:vehicle_skateboard 
+skating:skating 
+skateboarder:place_ramp 
+his:agent_man skateboard:vehicle_skateboard skate:place_ramp 
+skiing:skiing 
+skiing:skiing 
+downhill:agent_skier skiing:skiing 
+skiing:skiing 
+ski:place_ski 
+skis:item_vent 
+skis:item_vent 
+skis:item_vent 
+skis:item_vent 
+skis:item_vent 
+OUT:agent_people SKIING:skiing 
+couple:agent_people snow:place_snow slope:skiing 
+people:agent_people skis:skiing snowy:place_snow 
+people:agent_people ski:skiing 
+country:place_snow skiers:skiing 
+sandwich:food_sandwich is:agent_person next:place_outdoors to:tool_hand 
+next:place_outdoors to:tool_hand sandwich:food_sandwich with:agent_person 
+held:agent_person up:tool_hand sandwich:food_sandwich 
+placed:agent_person sandwich:food_sandwich eating:eating 
+eating:eating sandwich:food_sandwich covered:agent_person 
+skateboard:vehicle_skateboard lot:place_street 
+person:agent_man skateboard:vehicle_skateboard 
+man:agent_man skate:vehicle_skateboard lot:place_street 
+guy:agent_man grinds:skating lot:place_street skateboard:vehicle_skateboard 
+man:agent_man skateboard:vehicle_skateboard 
+guy:agent_man skateboard:vehicle_skateboard 
+person:agent_man skateboard:vehicle_skateboard the:place_outdoors 
+shirt:agent_man jeans:vehicle_skateboard 
+his:agent_man skateboard:vehicle_skateboard 
+skating:skating his:agent_man 
+plate:place_plate sandwich:agent_sandwich 
+sandwich:agent_sandwich plate:place_plate 
+slices:place_plate sandwich:agent_sandwich 
+sandwich:agent_sandwich plate:place_plate 
+sandwich:agent_sandwich plate:place_plate 
+waves:agent_surfer 
+wave:tool_surfboard 
+surfboard:agent_surfer 
+waters:place_ocean 
+surfing:tool_surfboard 
+hand:wrapping sandwich:wrappeditem_sandwich 
+made:agent_person lettuce:wrappeditem_sandwich 
+lettuce:wrappeditem_sandwich 
+sandwich:wrappeditem_sandwich 
+sub:wrappeditem_sandwich 
+bed:place_bed 
+bed:place_bed 
+bed:place_bed 
+beds:place_bed 
+bed:place_bed 
+lamps:agent_lamp 
+furniture:agent_lamp 
+room:agent_lamp love:glowing 
+room:agent_lamp 
+lamp:agent_lamp 
+girl:agent_female sitting:rocking bed:place_bedroom 
+girl:agent_female room:place_bedroom 
+girl:agent_female bed:place_bedroom 
+girl:agent_female sitting:rocking bed:place_bedroom 
+girl:agent_female sitting:rocking bed:place_bedroom 
+woman:agent_woman holding:tool_hand pizza:food_pizza 
+woman:agent_woman pizza:food_pizza hands:eating 
+woman:agent_woman pizza:food_pizza hands:eating 
+lady:agent_woman holding:tool_hand pizza:food_pizza 
+woman:agent_woman holding:tool_hand pizza:food_pizza 
+pizza:agent_pizza plate:container_plate 
+toppings:agent_pizza plate:container_plate 
+pizza:agent_pizza plate:container_plate t.v:place_room 
+pizza:agent_pizza 
+parmesan:agent_pizza TV:place_room 
+vegetables:rotting 
+Some:agent_bread meat:container_plate 
+closeup:rotting bacon:container_plate 
+spinach:container_plate 
+Lettuce:agent_bread 
+greens:agent_food 
+bits:rotting spinach:container_plate 
+greens:agent_food 
+lettuce:agent_food prosciutto:container_plate 
+toppings:rotting 
+man:agent_man tennis:place_tennis ball:target_tennis 
+tennis:place_tennis ball:target_tennis him:agent_man serve:item_tennis 
+tennis:place_tennis serve:item_tennis 
+tennis:place_tennis serve:item_tennis ball:target_tennis 
+man:agent_man serve:item_tennis ball:target_tennis tennis:place_tennis 
+boy:agent_male play:model_male 
+boy:agent_male play:model_male 
+kid:agent_male play:model_male video:imitating 
+babys:model_male video:imitating 
+child:agent_male TV:place_living 
+man:agent_man in:item_door 
+person:agent_man door:item_door 
+male:agent_man 
+man:agent_man front:item_door 
+man:agent_man standing:knocking up:place_inside 
+windows:item_art 
+room:item_art 
+room:item_art ,:displaying 
+room:item_art with:displaying 
+room:item_art trim:tool_tool 
+whale:ballooning 
+whale:ballooning 
+whale:ballooning 
+balloon:ballooning 
+balloon:ballooning 
+girl:agent_girl umbrella:hitchhiking 
+girl:agent_girl road:place_road 
+girl:agent_girl 
+young:agent_girl carrying:hitchhiking 
+child:agent_girl holding:hitchhiking 
+kite:ballooning that:agent_person 
+flying:place_sky 
+kite:ballooning 
+closeup:agent_person kites:ballooning flying:place_sky 
+kite:ballooning air:place_sky 
+tennis:place_tennis 
+woman:agent_woman tennis:place_tennis court:skill_tennis 
+woman:agent_woman racquet:tool_tennis 
+tennis:place_tennis 
+tennis:place_tennis 
+pot:source_pot design:agent_water one:place_outdoors 
+placed:overflowing outside:source_pot 
+inside:agent_water set:overflowing green:place_outdoors plants:source_pot 
+outside:source_pot 
+outside:source_pot 
+people:agent_people sitting:hunching wall:place_room 
+laptop:surface_laptop 
+using:surface_laptop 
+man:hunching their:agent_people devices:place_room 
+people:agent_people sitting:hunching wall:place_room 
+woman:agent_woman talking:telephoning laptop:place_room 
+woman:agent_woman sitting:place_room talking:telephoning 
+lady:agent_woman computer:place_room talking:telephoning 
+Woman:agent_woman talking:telephoning computer:place_room 
+woman:agent_woman desk:place_room talking:telephoning 
+person:agent_man sitting:sitting ground:contact_floor 
+man:agent_man seated:sitting floor:contact_floor 
+male:agent_man sits:sitting floor:contact_floor 
+man:agent_man floor:contact_floor 
+sitting:sitting floor:contact_floor 
+baby:agent_baby bed:place_bed 
+baby:agent_baby laptop:sleeping 
+baby:agent_baby bed:place_bed 
+baby:agent_baby bed:place_bed 
+bed:place_bed 
+microwave:microwaving 
+microwave:microwaving the:place_outdoors 
+microwave:microwaving by:place_outdoors 
+microwave:microwaving the:place_outdoors 
+microwave:microwaving next:place_outdoors 
+man:agent_man cell:dialing 
+man:agent_man cellphone:dialing 
+man:agent_man cell:dialing 
+man:agent_man cell:dialing 
+man:agent_man smart:dialing 
+girl:agent_woman talking:phoning 
+woman:agent_woman phone:tool_telephone 
+woman:agent_woman talks:phoning 
+woman:agent_woman talks:phoning 
+talking:phoning her:agent_woman 
+different:overflowing top:source_ashcan 
+This:overflowing fridge:agent_garbage 
+microwave:source_ashcan 
+,:overflowing microwave:source_ashcan 
+microwave:source_ashcan white:overflowing 
+next:leaking to:destination_land 
+An:substance_water old:leaking and:place_inside 
+An:substance_water old:leaking 
+table:place_inside in:substance_water 
+WITH:destination_land AND:place_inside 
+finger:place_room with:displaying 
+pastries:item_cupcake 
+with:displaying 
+if:place_room eating:item_cupcake 
+display:item_cupcake 
+flowers:agent_flower 
+roses:agent_flower and:place_room greenery:wilting 
+Wilted:agent_flower 
+drooping:agent_flower 
+plant:wilting flower:agent_flower 
+poodle:agent_dog couch:contact_chair 
+dog:agent_dog couch:contact_chair 
+dog:agent_dog couch:contact_chair 
+dog:agent_dog sitting:contact_chair 
+dog:agent_dog couch:contact_chair 
+man:agent_man table:dining food:food_shrimp 
+man:agent_man seated:dining 
+man:agent_man table:dining 
+man:agent_man table:dining 
+man:agent_man food:food_shrimp eating:dining 
+Two:tasting meal:tool_spoon 
+two:tasting sitting:place_room at:item_sauce with:tool_spoon 
+at:item_sauce and:place_room while:tasting 
+woman:agent_woman something:item_sauce 
+having:tasting meal:tool_spoon 
+poured:agent_coffee it:overflowing 
+Liquid:agent_coffee white:overflowing 
+with:overflowing poured:agent_coffee 
+This:overflowing doused:agent_coffee liquid:source_cup 
+poured:agent_coffee 
+kitchen:place_kitchen stove.and:cooking 
+kitchen:place_kitchen 
+kitchen:place_kitchen 
+kitchen:place_kitchen 
+kitchen:place_kitchen 
+kitchen:place_kitchen 
+kitchen:place_kitchen 
+Kitchen:place_kitchen 
+kitchen:place_kitchen 
+kitchen:place_kitchen 
+stove:agent_stove 
+island:agent_stove 
+appliances:agent_stove 
+appliances:agent_stove 
+stove:agent_stove 
+bathroom:place_bathroom 
+bathroom:place_bathroom toilet:target_toilet 
+bathroom:place_bathroom toilet:target_toilet it:agent_person 
+The:agent_person shower:place_bathroom 
+bathroom:place_bathroom toilet:target_toilet up:agent_person 
+bicycles:agent_cyclist race:racing 
+racing:racing bicycles:agent_cyclist 
+riders:agent_cyclist down:place_road 
+bikes:agent_cyclist road:place_road 
+cyclists:agent_cyclist race:racing 
+man:agent_man bathroom:place_bathroom mirror:target_urinal 
+man:agent_man himself:target_urinal bathroom:place_bathroom 
+bathroom:place_bathroom mirror:target_urinal 
+man:agent_man selfie:target_urinal 
+man:agent_man taking:target_urinal bathroom:place_bathroom 
+cat:agent_cat inside:peeing bathroom:place_bathroom 
+curious:agent_cat bathroom:place_bathroom 
+cat:agent_cat sink:place_bathroom 
+cat:agent_cat bathroom:place_bathroom 
+Cat:agent_cat bathroom:place_bathroom 
+towel:place_bathroom 
+bathroom:place_bathroom 
+bathroom:place_bathroom 
+bathroom:place_bathroom with:liquid_water 
+that:agent_person bathroom:place_bathroom 
+toilet:source_toilet messy:agent_garbage bathroom:place_bathroom 
+bathroom:place_bathroom toilet:source_toilet and:overflowing 
+toilet:source_toilet and:overflowing 
+toilet:source_toilet saperate:agent_garbage bathroom:place_bathroom 
+bathroom:place_bathroom toilet:source_toilet 
+cat:agent_cat floor:place_living 
+cat:agent_cat floor:place_living 
+kitty:agent_cat floor:place_living 
+cat:agent_cat floor:place_living 
+cat:agent_cat floor:place_living 
+rider:jumping 
+a:source_land dirt:jumping 
+motorcyclist:agent_motorcycle mid:jumping 
+jump:jumping motorcycle:agent_motorcycle 
+Daring:agent_motorcycle mid:jumping 
+air:destination_earth bike:agent_motorcycle 
+jumping:jumping motorcycle:agent_motorcycle 
+BIKE:agent_motorcycle RIDER:destination_earth 
+mid:jumping air:destination_earth motor:agent_motorcycle 
+motorcycle:agent_motorcycle air:destination_earth 
+air:destination_earth background:place_outdoors 
+rider:destination_earth 
+rider:destination_earth blue:place_outdoors 
+air:destination_earth 
+rider:destination_earth 
+woman:agent_couple motorcycle:vehicle_motorcycle 
+driving:place_road cycle:vehicle_motorcycle man:agent_couple 
+helmets:vehicle_motorcycle 
+woman:agent_couple motor:vehicle_motorcycle 
+Two:agent_couple motorcycle:vehicle_motorcycle 
+dog:agent_dog laying:sleeping 
+dog:agent_dog sleeping:sleeping 
+dog:agent_dog sleeps:sleeping 
+dog:agent_dog sleeping:sleeping 
+dog:agent_dog laying:sleeping 
+
+
+
+
+
+
+
+
+
+
+air:place_sky Angels:agent_airplane 
+formation:circling partly:place_sky 
+formation:circling 
+sky:place_sky 
+sky:place_sky 
+plane:agent_airplane sky:place_sky 
+airplane:agent_airplane flying:circling 
+airplane:agent_airplane sky:place_sky 
+plane:agent_airplane sky:place_sky 
+plane:agent_airplane sky:place_sky 
+Giraffe:agent_giraffe standing:drooling near:place_outdoors 
+close:drooling giraffe:agent_giraffe 
+giraffe:agent_giraffe camera:drooling 
+giraffe:agent_giraffe camera:drooling 
+giraffe:agent_giraffe camera:drooling 
+sign:brancher_street 
+stores:brancher_street sunny:branching 
+buildings:place_city 
+city:place_city M:brancher_street 
+marks:brancher_street Station:place_city 
+next:overflowing potted:source_pot 
+small:agent_water an:place_outdoors concrete:source_pot 
+wooden:agent_water and:overflowing potted:source_pot 
+and:overflowing potted:source_pot 
+and:overflowing pots:source_pot 
+people:agent_people bench:contact_bench 
+people:agent_people bench:contact_bench 
+people:agent_people bench:contact_bench next:place_outdoors 
+people:agent_people bench:contact_bench near:place_outdoors 
+people:agent_people bench:contact_bench the:place_outdoors 
+park:place_park bench:brancher_bench 
+bench:brancher_bench green:branching 
+bench:brancher_bench park:place_park 
+bench:brancher_bench 
+bench:brancher_bench park:place_park 
+yellow:pulling against:agent_bicycle 
+sidewalk:agent_bicycle 
+bike:agent_bicycle 
+locked:agent_bicycle 
+yellow:pulling sidewalk:agent_bicycle 
+hydrant:source_fireplug 
+hydrant:source_fireplug dirt:place_outdoors 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+Blue:place_outdoors hydrant:source_fireplug 
+'s:place_outdoors of:colliding bus:item_bus 
+bus:item_bus 
+van:agent_bus outside:place_outdoors 
+bus:item_bus by:place_outdoors 
+van:agent_bus 
+sheep:agent_sheep standing:standing field:place_field 
+sheep:agent_sheep stands:standing field:place_field 
+Single:standing sheep:agent_sheep field:place_field 
+sheep:agent_sheep standing:standing grass:place_field 
+sheep:agent_sheep standing:standing grass:place_field 
+man:agent_man punching:eater_giraffe side:place_outside 's:source_hand 
+man:agent_man giraffe:eater_giraffe 
+man:agent_man giraffe:eater_giraffe sculpture:place_outside 
+man:agent_man punching:eater_giraffe statue:place_outside 
+man:agent_man statue:place_outside giraffe:eater_giraffe 
+giraffe:agent_giraffe 
+giraffe:agent_giraffe 
+giraffe:agent_giraffe standing:standing 
+Giraffe:agent_giraffe rock:place_rock 
+giraffe:agent_giraffe standing:standing 
+street:tool_street pole:blocker_barrier 
+pole:blocker_barrier street:tool_street 
+sign:blocker_barrier intersection:tool_street 
+sign:blocker_barrier 
+sign:blocker_barrier intersection:tool_street 
+bird:agent_bird branch:place_branch 
+bird:agent_bird branch:place_branch 
+bird:agent_bird branch:place_branch 
+bird:agent_bird perched:place_branch 
+bird:agent_bird branch:place_branch 
+road:brancher_road from:branching 
+signs:brancher_road 
+sign:brancher_road 
+RD:brancher_road Main:place_town 
+residential:place_town 
+woman:agent_woman black:item_truck 
+woman:agent_woman blue:place_outdoors suitcase:opening 
+woman:agent_woman a:tool_hand 
+woman:agent_woman holding:tool_hand 
+woman:agent_woman holding:tool_hand suitcase:opening 
+
+
+
+
+
+train:agent_train under:place_outdoors 
+train:agent_train under:place_outdoors 
+track:agent_train 
+steam:agent_train 
+train:agent_train under:place_outdoors 
+baseball:ducking bat:blow_golf while:agent_man 
+man:agent_man balloon:blow_golf 
+man:agent_man bat:blow_golf 
+bat:blow_golf 
+balloon:blow_golf 
+tunnel:brancher_track 
+tunnel:brancher_track 
+tunnel:brancher_track greenery:branching 
+tunnel:brancher_track by:place_outdoors 
+tunnel:brancher_track 
+painted:miming 
+street:place_street painted:miming 
+as:place_street 
+intersection:place_street 
+street:place_street painted:miming 
+train:agent_train 
+tracks:agent_train 
+train:agent_train station:place_railway 
+train:agent_train 
+train:agent_train 
+two:agent_people trucks:tool_truck trees:place_forest 
+truck:tool_truck of:agent_people trees:place_forest 
+Two:agent_people work:tool_truck the:fording forest:place_forest 
+truck:tool_truck trees:place_forest 
+Two:agent_people trucks:tool_truck trees:place_forest 
+field:place_field cows:agent_cattle hay:item_hay 
+cows:agent_cattle graze:foraging field:place_field 
+cows:agent_cattle field:place_field 
+cows:agent_cattle field:place_field 
+cows:agent_cattle field:place_field 
+cows:agent_cattle river:place_river 
+cows:agent_cattle water:place_river 
+cows:agent_cattle water:place_river 
+cows:agent_cattle lake:place_river 
+cows:agent_cattle stream:place_river 
+cattle:agent_cattle grazing:item_grass field:place_field 
+animals:agent_cattle field:place_field 
+cows:agent_cattle field:place_field 
+cows:agent_cattle field:place_field 
+cows:agent_cattle field:place_field 
+ferrets:paweditem_cat 
+ferrets:paweditem_cat 
+laying:agent_cat top:pawing 
+a:agentpart_hand Ferrat:paweditem_cat brown:pawing laying:agent_cat 
+rodents:paweditem_cat 
+black:agent_dog laying:sleeping bed:place_bed 
+its:agent_dog sleeping:sleeping bed:place_bed 
+bed:place_bed 
+back:agent_dog bed:place_bed 
+black:agent_dog lying:sleeping bed:place_bed 
+cow:instrument_cattle person:agent_man street:place_street 
+to:plowing 
+man:agent_man street:place_street cow:instrument_cattle 
+Person:agent_man cow:instrument_cattle street:place_street 
+man:agent_man down:place_street cow:instrument_cattle 
+woman:agent_woman boat:place_boat 
+lady:agent_woman is:crouching 
+woman:agent_woman sitting:crouching boat:place_boat 
+person:agent_woman sitting:crouching boat:place_boat 
+person:agent_woman sitting:crouching boat:place_boat 
+elephants:item_elephant each:nuzzling 
+each:nuzzling trunks:item_elephant 
+trunks:item_elephant each:nuzzling 
+elephants:item_elephant each:nuzzling day:place_outdoors 
+elephants:item_elephant each:nuzzling long:place_outdoors 
+man:agent_man car:item_car 
+man:agent_man car:item_car 
+man:agent_man vehicle:item_car 
+man:agent_man car:item_car 
+man:agent_man driving:driving 
+man:agent_man on:riding elephant:vehicle_elephant 
+person:agent_man riding:riding elephant:vehicle_elephant 
+man:agent_man riding:riding elephant:vehicle_elephant 
+man:agent_man on:riding elephants:vehicle_elephant 
+is:agent_man riding:riding elephant:vehicle_elephant 
+man:agent_man sitting:sitting outside:place_outdoors 
+man:agent_man under:place_outdoors 
+man:agent_man sitting:sitting an:place_outdoors 
+man:agent_man sits:sitting under:place_outdoors 
+man:agent_man sitting:sitting an:place_outdoors 
+people:agent_people backs:vehicle_elephant 
+elephants:vehicle_elephant are:agent_people field:place_field 
+elephants:vehicle_elephant people:agent_people riding:riding 
+riders:riding grassy:place_field photograph:agent_people 
+people:agent_people ride:vehicle_elephant 
+
+
+
+
+
+people:agent_people boats:vehicle_boat water:place_body 
+people:agent_people life:place_body boat:vehicle_boat 
+boats:vehicle_boat are:agent_people water:place_body 
+boats:vehicle_boat people:agent_people 
+Groups:boarding boats:vehicle_boat water:place_body 
+trunk:place_car bags:agent_garbage 
+car:place_car packed:agent_garbage 
+car:place_car suitcases:source_ashcan and:overflowing 
+duffel:place_car bags:agent_garbage 
+trunk:place_car packed:agent_garbage 
+people:agent_people luggage:container_bag 
+people:agent_people luggage:container_bag 
+family:agent_people leave:container_bag 
+These:agent_people luggage:container_bag 
+People:agent_people luggage:container_bag 
+dog:agent_dog running:chasee_horse 
+dog:agent_dog running:chasee_horse yard:place_outdoors 
+dog:agent_dog running:chasee_horse 
+horse:chasee_horse dog:agent_dog together:chasing 
+dog:agent_dog running:chasee_horse 
+to:peeing around:agent_elephant 
+elephant:agent_elephant 
+elephants:agent_elephant wire:target_fence 
+Elephants:agent_elephant fence:target_fence 
+elephant:agent_elephant zoo:target_fence 
+dog:agent_dog frisbee:place_yard 
+dog:agent_dog collar:agentpart_tail frisbee:place_yard 
+dog:agent_dog grass:place_yard 
+dog:agent_dog grass:place_yard 
+dog:agent_dog Frisbee:place_yard 
+small:agent_clothing on:source_bag 
+sleigh:agent_clothing items:source_bag 
+sleigh:agent_clothing and:overflowing 
+and:overflowing sleigh:agent_clothing 
+and:overflowing blanket:agent_clothing 
+Frisbee:item_Frisbee beach:place_beach 
+young:agent_male frisbee:item_Frisbee beach:place_beach 
+beach:place_beach frisbee:item_Frisbee 
+disc:item_Frisbee beach:place_beach lake:destination_body 
+frisbee:item_Frisbee beach:place_beach 
+girl:agent_woman catch:caughtitem_Frisbee 
+girl:agent_woman catch:caughtitem_Frisbee 
+catch:caughtitem_Frisbee 
+Woman:agent_woman catch:caughtitem_Frisbee field:place_field 
+woman:agent_woman catch:caughtitem_Frisbee 
+dog:agent_dog bed:place_bed 
+Labrador:agent_dog bed:place_bed 
+dog:agent_dog bed:place_bed 
+dog:agent_dog bed:place_bed 
+dog:agent_dog bed:place_bed 
+few:agent_people near:place_outside fountain:tool_bucket 
+kids:tool_bucket water:drenching 
+fountain:tool_bucket 
+fountain:tool_bucket 
+outdoor:place_outside fountain:tool_bucket 
+zebras:agent_zebra walking:wading 
+zebra:agent_zebra walking:wading 
+zebra:agent_zebra walking:wading 
+zebras:agent_zebra walking:wading 
+zebra:agent_zebra walking:wading 
+pineapple:agent_pineapple 
+pineapple:agent_pineapple 
+plate:agent_pineapple table:place_table 
+pineapple:agent_pineapple oranges:spoiling 
+pineapple:agent_pineapple 
+people:agent_people mountainside:place_mountain 
+people:agent_people skis:skiing mountain:place_mountain 
+group:agent_people mountain:place_mountain snow:skiing 
+group:agent_people skiers:skiing mountain:place_mountain 
+group:agent_people skiers:skiing mountain:place_mountain 
+play:student_male game:place_ball 
+boy:student_male baseball:skill_baseball 
+baseball:skill_baseball 
+onto:agent_man baseball:skill_baseball 
+league:student_male is:agent_man 
+broccoli:agent_vegetable plate:container_plate 
+plate:container_plate 
+close-up:rotting plate:container_plate vegetables:agent_vegetable 
+plate:container_plate broccoli:agent_vegetable 
+plate:container_plate vegetables.covered:agent_vegetable 
+plate:place_plate cooked:sprouting 
+plate:place_plate 
+plate:place_plate 
+Plate:place_plate vegetables:sprouter_plant 
+plate:place_plate containing:sprouter_plant chicken:sprouting 
+Woman:agent_woman banana:nipping 
+woman:agent_woman lips:item_ball 
+lady:agent_woman hand:nipping 
+girl:agent_woman showing:place_room banana:nipping 
+woman:agent_woman banana:nipping 
+cake:decorating plates:decorated_plate 
+plate:place_table with:decorated_plate is:item_paint shown:agent_person 
+cake:decorating plates:decorated_plate 
+table:decorated_plate 
+cake:decorating 's:agent_person 
+man:agent_man working:tool_drill living:place_living 
+man:agent_man fixing:component_wood 
+man:agent_man skis:component_wood 
+man:agent_man room:place_living 
+man:agent_man fixing:component_wood 
+people:agent_people skis:skiing mountain:place_mountain 
+people:agent_people snowboards:skiing 
+People:agent_people snow:skiing 
+people:agent_people skis:skiing 
+people:agent_people ski:skiing covered:place_mountain 
+pasta:food_pasta 
+salad:tool_spoon 
+bowl:tool_spoon pasta:food_pasta 
+pasta:food_pasta some:tool_spoon 
+bowl:tool_spoon pasta:food_pasta 
+Pasta:sprouting bowl:place_bowl 
+bowl:place_bowl pasta:sprouter_plant 
+Bowl:place_bowl pasta:sprouter_plant 
+bowl:place_bowl pasta:sprouter_plant 
+bowl:place_bowl pasta:sprouter_plant 
+broccoli:sprouter_plant 
+Packaging:place_pot 
+florets:place_pot 
+florets:place_pot 
+broccoli:sprouter_plant 
+food:agent_food tomato:container_pan bits:rotting 
+bowl:container_pan vegetables:agent_food 
+dish:agent_food 
+seasoning:container_pan 
+salad:agent_food 
+plate:item_chicken 
+broccoli:item_chicken 
+chicken:item_chicken 
+close:gnawing food:item_chicken 
+meat:item_chicken 
+skiing:skiing hill:place_mountain 
+skiing:skiing covered:place_mountain 
+skier:agent_skier hill:place_mountain 
+skier:agent_skier 
+ski:skiing mountains:place_mountain 
+boy:agent_male skateboard:vehicle_skateboard 
+boy:agent_male skateboard:vehicle_skateboard 
+boy:agent_male helmet:skating 
+skateboarding:vehicle_skateboard 
+boy:agent_male skate:vehicle_skateboard 
+slope:skiing 
+downhill:agent_skier 
+hill:skiing 
+snow:skiing 
+hill:skiing 
+man:agent_man skateboard:vehicle_skateboard hall:place_inside 
+man:agent_man skateboards:vehicle_skateboard 
+man:agent_man skateboard:vehicle_skateboard 
+man:agent_man skateboard:vehicle_skateboard indoors:place_inside 
+man:agent_man skateboard:vehicle_skateboard 
+people:agent_people 
+Four:agent_people wall:place_room stuffed:shivering 
+Four:agent_people with:place_room his:shivering 
+group:agent_people 
+at:agent_people with:place_room his:shivering 
+Man:agent_man 
+T-shirt:agent_man 
+person:agent_man 
+his:agent_man trick:bouncing 
+guy:agent_man 
+man:agent_man skateboard:vehicle_skateboard street:place_street 
+man:agent_man skateboarding:vehicle_skateboard street:place_street 
+man:agent_man skateboarding:vehicle_skateboard street:place_street 
+man:agent_man skateboard:vehicle_skateboard street:place_street 
+man:agent_man skateboard:vehicle_skateboard street:place_street 
+corn:sprouter_corn olives:sprouting 
+Tortellini:sprouter_corn vegetable:sprouting 
+vegetarian:sprouting corn:sprouter_corn 
+half:place_plate corn:sprouter_corn 
+plate:place_plate corn:sprouter_corn pasta:sprouting 
+buns:agent_sausage 
+cloth:place_table different:spoiling hot:agent_sausage 
+piece:spoiling hot:agent_sausage 
+hotdogs:agent_sausage 
+piece:spoiling hot:agent_sausage 
+snowboard:slider_snowboard 
+snowboard:slider_snowboard 
+snowboard:slider_snowboard 
+man:agent_man snowboard:slider_snowboard 
+snowboarder:slider_snowboard his:agent_man 
+donut:biting 
+Someone:agent_person bite:biting 
+bite:biting 
+donut:biting be:agent_person 
+Someone:agent_person bun:item_bread hand:biting 
+glazed:agent_loaf 
+sugar:agent_loaf table:place_table 
+sugar:agent_loaf 
+sugar:agent_loaf 
+doughnuts:agent_loaf 
+donuts:food_doughnut 
+out:baking 
+doughnuts:food_doughnut 
+doughnuts:food_doughnut 
+donuts:food_doughnut 
+his:agent_man sand:place_beach water:wading 
+surf:place_beach hunched:agent_man 
+person:agent_man beach:place_beach 
+man:agent_man beach:place_beach 
+man:agent_man beach:place_beach 
+surfboards:item_surfboard beach:place_beach 
+man:agent_man sand:contact_sand a:tool_hand surfboard:item_surfboard 
+surfboard:item_surfboard beach:place_beach sand:contact_sand 
+his:agent_man surfboard:item_surfboard beach:place_beach 
+surfboards:item_surfboard beach:place_beach 
+different:displaying objects:tool_tool 
+
+cakes:item_cake ,:displaying 
+desserts:item_cake displayed:displaying 
+cakes:item_cake sitting:place_room 
+wedding:place_wedding 
+cutting:place_wedding 
+married:place_wedding together:nuzzling 
+bride:place_wedding together:nuzzling 
+cake:place_wedding together:nuzzling 
+girl:agent_female cake:decorated_cake 
+girl:agent_female table:place_table cake:decorated_cake 
+girl:agent_female table:place_table cake:decorated_cake 
+girl:agent_female cake:decorated_cake table:place_table 
+young:agent_female table:place_table cake:decorated_cake 
+man:agent_man wave:tool_surfboard 
+man:agent_man surfing:tool_surfboard 
+man:agent_man surfs:tool_surfboard 
+man:agent_man ocean:place_ocean wave:tool_surfboard 
+man:agent_man wave:tool_surfboard 
+dog:agent_dog bed:recuperating 
+dog:agent_dog sleeping:place_sofa bed:recuperating 
+dog:agent_dog bed:recuperating 
+bed:recuperating 
+bed:recuperating 
+unmade:place_bed style:agent_person 
+unmade:place_bed 
+unmade:place_bed 
+unmade:place_bed style:agent_person 
+unmade:place_bed 
+pizza:agent_pizza plate:place_plate 
+pizza:agent_pizza 
+crust:agent_pizza 
+pizza:agent_pizza 
+pizza:agent_pizza 
+rests:sleeping bed:place_bed person:agent_person 
+laying:sleeping bed:place_bed with:agent_person 
+bed:place_bed 
+bed:place_bed someone:agent_person 
+bed:place_bed 
+pieces:spoiling surface:agent_bread 
+baked:agent_bread 
+pieces:spoiling 
+Pieces:agent_bread 
+slices:agent_bread wooden:place_table 
+pizza:destination_pizza salad:source_bowl 
+pizza:destination_pizza salad:source_bowl 
+pizza:destination_pizza salad:source_bowl 
+made:agent_person pizza:destination_pizza salad:source_bowl 
+salad:source_bowl pizza:destination_pizza 
+Man:agent_man tennis:place_tennis court:skill_tennis 
+man:agent_man court:skill_tennis tennis:place_tennis 
+man:agent_man tennis:place_tennis 
+man:agent_man racket:tool_racket court:skill_tennis 
+man:agent_man tennis:place_tennis receive:skill_tennis 
+sink:place_bathroom toothpaste:item_gap 
+sink:place_bathroom paste:item_gap 
+bathroom:place_bathroom hygiene:item_gap products:sealing 
+care:sealing sink:place_bathroom 
+toothpaste:item_gap 
+girl:agent_female shelf:item_shoe chair:place_living 
+girl:agent_female Christmas:place_living stocking:lacing 
+girl:agent_female christmas:place_living stocking:lacing 
+girl:agent_female Christmas:place_living stocking:lacing 
+girl:agent_female Christmas:place_living stocking..:lacing 
+person:agent_person living:place_living 
+television:place_living 
+living:place_living the:shelter_tent 
+white:agent_person the:shelter_tent room:place_living 
+the:shelter_tent living:place_living 
+shocked:gasping 
+playing:agent_male remote:gasping 
+remote:gasping 
+face:gasping playing:agent_male 
+holding:gasping 
+are:agent_people video:unpacking 
+living:place_living Wii:unpacking together:agent_people 
+couple:agent_people of:container_box video:unpacking 
+Two:agent_people Wii:unpacking 
+of:container_box people:agent_people video:unpacking 
+TV:place_room 
+hand:agent_person television:item_object set:displaying 
+television:item_object 
+person:agent_person television:item_object 
+Someone:agent_person television:item_object 
+at:agent_people 
+People:agent_people standing:standing screen:place_room 
+visitors:agent_people in:standing booth:place_room 
+people:agent_people area:standing 
+people:agent_people standing:standing room:place_room 
+monitor:item_computer 
+computer:item_computer 
+computer:item_computer 
+desk:item_computer 
+OFFICE:item_computer 
+cloudy:place_sky 
+sky:place_sky 
+kite:parachute_parachute is:agent_person sky:place_sky 
+overcast:destination_ocean 
+jetty:destination_ocean 
+boy:agent_male play:practicing 
+boy:agent_male baseball:skill_baseball 
+boy:agent_male holding:practicing bat:tool_bat 
+boy:agent_male baseball:skill_baseball bat:tool_bat 
+young:agent_male holding:practicing baseball:skill_baseball bat:tool_bat 
+baseball:place_ball 
+baseball:place_ball bat:tool_bat 
+hit:hitting baseball:place_ball 
+league:place_ball bat:tool_bat 
+baseball:place_ball pitch:victim_baseball 
+woman:agent_woman swinging:hitting court:tool_tennis 
+tennis:tool_tennis player:place_stadium swing:hitting ball:victim_ball 
+woman:agent_woman hitting:victim_ball tennis:tool_tennis 
+woman:agent_woman ready:hitting serve:victim_ball 
+girl:agent_woman ready:hitting serve:victim_ball 
+MAN:agent_man COURT:place_tennis 
+tennis:place_tennis 
+man:agent_man tennis:place_tennis serving:serving ball:item_tennis 
+tennis:place_tennis ball:item_tennis 
+man:agent_man tennis:place_tennis ball:item_tennis 
+boxes:item_pizza 
+pizzas:item_pizza store:selling 
+grocery:selling 
+boxes:item_pizza price:selling 
+bunch:selling boxes:item_pizza 
+man:agent_man racket:item_tennis 
+tennis:item_tennis yellow:place_outdoors 
+man:agent_man ball:target_tennis 
+man:agent_man racket:item_tennis next:place_outdoors ball:target_tennis 
+man:agent_man tennis:item_tennis near:place_outdoors 
+playing:place_living laptop:item_laptop 
+girl:agent_woman laptop:item_laptop 
+little:tool_hand laptop:item_laptop her:agent_woman living:place_living 
+working:operating a:tool_hand laptop:item_laptop 
+girl:agent_woman laptop:item_laptop 
+clock:item_clock 
+clock:item_clock 
+clock:item_clock 
+clock:item_clock stands:place_outside 
+clock:item_clock 
+woman:agent_woman street:place_street talking:telephoning 
+woman:agent_woman cellphone:telephoning city:place_street 
+by:place_street talking:telephoning her:agent_woman 
+women:agent_woman talking:telephoning the:place_street 
+woman:agent_woman sidewalk:place_street phone:telephoning 
+front:place_outside vandalized:panhandling 
+used:agent_person wall:panhandling 
+front:place_outside 
+front:place_outside with:agent_person graffiti:panhandling 
+up:agent_person front:place_outside 
+woman:agent_woman singing:shouting wall:place_room 
+singing:shouting 
+and:place_room women:agent_woman into:addressee_man 
+and:place_room woman:agent_woman 
+people:addressee_man with:place_room 
+slices:spoiling fruit:agent_apple 
+peach:agent_apple teapot:spoiling 
+fruit:agent_apple cut:spoiling table:place_table 
+plate:place_table fruit:agent_apple 
+fruit:agent_apple tea:place_table 
+the:place_outdoors tower:cresting 
+tower:cresting beneath:place_outdoors 
+steeple:agent_cloud 
+tower:cresting 
+tower:cresting the:place_outdoors 
+tower:agent_clock some:place_outdoors 
+tower:agent_clock 
+tower:agent_clock the:place_outdoors 
+tower:agent_clock the:place_outdoors 
+tower:agent_clock 
+ceiling:item_clock 
+hangs:item_clock 
+clock:item_clock 
+this:tool_tool contraption:place_room sculpture:item_clock 
+ceiling:item_clock 
+flowers:agent_flower 
+vase:agent_flower iris:blossoming 
+flowers:agent_flower table:place_table 
+Flowers:agent_flower table:place_table 
+irises:blossoming table:place_table 
+white:overflowing salad:agent_food 
+salad:agent_food and:overflowing egg:place_table 
+egg:place_table salad:agent_food 
+egg:place_table and:overflowing salad:agent_food 
+egg:place_table and:overflowing vegetables:agent_food 
+baby:admired_baby who:admiring 
+baby:admired_baby has:agent_person 
+child:admired_baby 
+baby:admired_baby 
+baby:admired_baby 
+kitchen:place_kitchen cabinets:brancher_kitchen 
+cabinets:brancher_kitchen 
+kitchen:place_kitchen cabinets:brancher_kitchen 
+kitchen:place_kitchen cabinets:brancher_kitchen 
+kitchen:place_kitchen cabinets:brancher_kitchen 
+man:agent_man taking:photographing 
+man:agent_man takes:photographing 
+man:agent_man mirror:photographing 
+man:agent_man taking:photographing 
+man:agent_man takes:photographing 
+modern:glowing bathroom:place_bathroom 
+bathroom:place_bathroom made:glowing 
+bathroom:place_bathroom with:glowing walk:agent_light 
+bathroom:place_bathroom 
+bathroom:place_bathroom with:glowing 
+sinks:bathing 
+sinks:bathing 
+bathroom:place_bathroom sinks:bathing 
+bathroom:place_bathroom sinks:bathing 
+bathroom:place_bathroom sinks:bathing 
+,:glowing window:agent_light 
+shelf:place_room window:agent_light above:glowing 
+sit:place_room clean:glowing 
+dresser:place_room has:glowing 
+window:agent_light 
+ON:item_body CONTRAPTION:carrier_wheelchair PERSON:agent_woman 
+on:item_body bicycle:wheeling very:place_outdoors 
+on:item_body the:place_outdoors 
+person:agent_woman bike:wheeling on:item_body 
+on:item_body 
+toilet:place_bathroom 
+bathroom:place_bathroom 
+clean:bathing toilet:place_bathroom 
+bathroom:place_bathroom 
+bathroom:place_bathroom 
+cat:agent_cat toilet:destination_toilet 
+cat:agent_cat standing:pooing toilet:destination_toilet 
+small:place_bathroom cat:agent_cat sitting:destination_toilet 
+cat:agent_cat toilet:destination_toilet 
+cat:agent_cat toilet:destination_toilet looking:pooing 
+building:against_building plane:agent_airplane background:place_outdoors 
+airliner:agent_airplane over:against_building structure:place_outdoors 
+plane:agent_airplane over:against_building 
+old:crashing building:against_building plane:agent_airplane background:place_outdoors 
+airplane:agent_airplane flying:against_building 
+bathroom:place_bathroom toilet:target_toilet it:agent_person 
+toilet:target_toilet generic:agent_person bathroom:place_bathroom 
+commode:target_toilet tiled:place_bathroom 
+toilet:target_toilet bathroom:place_bathroom 
+THIS:agent_person TOILET:target_toilet 
+bathroom:place_bathroom needs:source_toilet 
+BATHROOM:place_bathroom REMODEL:source_toilet 
+rest:place_bathroom toilet:source_toilet it:overflowing 
+bathroom:place_bathroom and:overflowing toilet:source_toilet 
+toilet:source_toilet bathroom:place_bathroom 
+toilet:source_toilet bathroom:place_bathroom 
+toilet:source_toilet bathroom:place_bathroom 
+toilet:source_toilet shower:place_bathroom 
+porcelain:agent_water toilet:source_toilet 
+toilet:source_toilet and:overflowing 
+toilet:source_toilet and:overflowing 
+toilet:source_toilet bathroom:place_bathroom 
+toilet:source_toilet bathroom:place_bathroom 
+bathroom:place_bathroom toilet:source_toilet 
+chrome:agent_water toilet:source_toilet bathroom:place_bathroom 
+tower:agent_clock 
+Building:place_outside steeple:agent_clock windows:glowing 
+WITH:glowing SPIRE:agent_clock 
+tower:agent_clock 
+with:glowing steeple:agent_clock 
+toilet:source_toilet and:overflowing 
+nasty:source_toilet bathroom:place_bathroom would:overflowing 
+nasty:source_toilet rest:place_bathroom 
+toilet:source_toilet 
+crude:agent_water sink:place_bathroom and:overflowing toilet:source_toilet 
+street:brancher_street 
+signs:brancher_street 
+signs:brancher_street 
+signs:brancher_street businesses:place_city 
+signs:brancher_street 
+dog:agent_dog near:place_outdoors bowl:container_bowl 
+dog:agent_dog ground:place_outdoors bowl:container_bowl 
+dog:agent_dog near:place_outdoors bowl:container_bowl 
+dog:agent_dog its:lapping dish:container_bowl 
+dog:agent_dog bowl:container_bowl ground:place_outdoors 
+signal:agent_lamp television:place_livingroom 
+Light:glowing 
+view:glowing TV:place_livingroom 
+television:place_livingroom 
+TV:place_livingroom 
+top:sprouting desk:place_pot 
+shown:place_pot it:sprouting 
+and:sprouter_plant desk:place_pot 
+top:sprouting desk:place_pot 
+plant:place_pot 
+giraffes:item_giraffe together:nuzzling 
+giraffes:item_giraffe 
+giraffes:item_giraffe 
+Giraffes:agent_giraffe foliage:nuzzling 
+giraffes:item_giraffe 
+giraffe:agent_giraffe standing:standing 
+giraffe:agent_giraffe 
+giraffe:agent_giraffe standing:standing 
+giraffe:agent_giraffe standing:standing 
+giraffe:agent_giraffe 
+unison:against_airplane 
+formation:against_airplane 
+formation:against_airplane 
+planes:place_air 
+Seven:against_airplane planes:place_air 
+light:agent_light street:place_street 
+light:agent_light curb:place_street 
+street:place_street light:agent_light 
+street:place_street light:agent_light 
+light:agent_light 
+cat:agent_cat sleeping:sleeping bench:place_bench 
+cat:agent_cat sleeping:sleeping bench:place_bench 
+cat:agent_cat nap:sleeping bench:place_bench 
+cat:agent_cat curled:sleeping bench:place_bench 
+cat:agent_cat laying:sleeping 
+waiting:waiting bus:place_street 
+bus:place_street up:agent_person 
+waiting:waiting red:place_street up:agent_person 
+by:waiting street:place_street with:agent_person 
+on:waiting side:place_street with:agent_person 
+giraffes:agent_giraffe standing:standing outdoors:place_outdoors 
+giraffes:agent_giraffe yard:place_outdoors 
+giraffes:agent_giraffe standing:standing 
+giraffes:agent_giraffe standing:standing 
+giraffes:agent_giraffe yard:place_outdoors 
+street:brancher_road trees:branching 
+traffic:brancher_road 
+the:place_outdoors street:brancher_road 
+leading:brancher_road to:place_outdoors 
+the:place_outdoors end:brancher_road 
+light:agent_lamp under:place_outside 
+light:agent_lamp near:place_outside 
+light:agent_lamp 
+light:agent_lamp 
+light:agent_lamp 
+pasture:item_grass animals:agent_sheep 
+sheep:agent_sheep field:place_field 
+sheep:agent_sheep field:place_field 
+field:place_field sheep:agent_sheep meadow:item_grass 
+sheep:agent_sheep field:place_field 
+goat:agent_goat house:place_outside to:peeing 
+sheep:agent_goat standing:target_fence side:place_outside 
+goat:agent_goat stands:peeing 
+goat:agent_goat 
+GOAT:agent_goat TO:place_outside 
+man:agent_man hydrant:substance_gasoline 
+city:source_storage worker:destination_car hydrant:substance_gasoline he:agent_man 
+man:agent_man hydrant:substance_gasoline 
+man:agent_man hooking:source_storage hydrant:substance_gasoline 
+attached:destination_car hydrant:substance_gasoline 
+birds:agent_bird walking:wading beach:place_beach 
+birds:agent_bird shore:place_beach 
+birds:agent_bird the:place_beach water:wading 
+birds:agent_bird walking:wading sea:place_beach 
+cranes:agent_bird the:place_beach water:wading 
+bus:agent_bus street:place_street 
+bus:agent_bus bag:item_bag 
+bus:agent_bus 
+bus:agent_bus stopped:pulling bag:item_bag 
+bus:agent_bus waiting:item_bag sidewalk:place_street 
+animals:agent_sheep 
+sheep:agent_sheep mountain:place_mountain 
+hill:place_mountain 
+Sheep:agent_sheep mountains:place_mountain 
+sheep:agent_sheep hill:place_mountain 
+birds:eater_bird 
+birds:eater_bird iron:place_outside 
+perch:eater_bird 
+birds:eater_bird 
+birds:eater_bird background:place_outside 
+
+
+
+
+
+boat:vehicle_motorboat 
+boat:vehicle_motorboat water:place_body 
+boat:vehicle_motorboat water:place_body 
+yacht:boaters_person 
+boat:vehicle_motorboat sailing:boaters_person 
+
+
+
+
+
+that:agent_person 
+reflection:place_bus someone:agent_person 
+door:boarding 
+shows:agent_person reflection:place_bus 
+subway:boarding seen:agent_person 
+against:place_outdoors window:theme_people 
+window:theme_people 
+adults:agent_people out:theme_people 
+people:agent_people out:theme_people 
+outside:place_outdoors window:theme_people 
+train:place_railroad 
+train:place_railroad 
+tracks:place_railroad 
+rusted:carrier_truck tracks:place_railroad 
+train:place_railroad some:item_wood 
+Kerouac:brancher_street 
+signs:brancher_street 
+Kerouac:brancher_street 
+pole:brancher_street 
+lamppost:brancher_street 
+is:crashing by:place_outdoors train:agent_train 
+train:agent_train sits:crashing the:place_outdoors 
+raised:place_outdoors front:crashing 
+lot:crashing greenery:place_outdoors train:agent_train 
+green:place_outdoors next:crashing 
+tracks:agent_train 
+tracks:agent_train 
+track:agent_train 
+engine:agent_train pulls:pulling 
+tracks:agent_train 
+truck:agent_truck center:tool_tool 
+truck:agent_truck 
+truck:agent_truck 
+truck:agent_truck trailers:towing 
+truck:agent_truck 
+truck:agent_truck street:place_street 
+truck:agent_truck street:place_street it:tool_tool 
+delivery:agent_truck street:place_street 
+truck:agent_truck street:place_street 
+truck:agent_truck street:place_street 
+kites:agent_kite sky:place_sky 
+kites:agent_kite sky:place_sky 
+flown:agent_kite sky:place_sky 
+kites:agent_kite flying:soaring 
+kites:agent_kite sky:place_sky 
+cows:agent_cattle laying:resting near:place_outdoors 
+cattle:agent_cattle laying:resting 
+cows:agent_cattle laying:resting 
+cattle:agent_cattle laying:resting 
+cows:agent_cattle sitting:resting the:goal_land 
+cats:agent_cat laying:sleeping chair:place_chair 
+cat:agent_cat lying:sleeping 
+cats:agent_cat laying:sleeping 
+cats:agent_cat laying:sleeping 
+cat:agent_cat sleeping:sleeping 
+Cattle:agent_cattle cud:item_grass 
+cows:agent_cattle field:place_field grass:item_grass 
+cows:agent_cattle field:place_field grass:item_grass 
+cows:agent_cattle field:place_field grass:item_grass 
+cows:agent_cattle grass:item_grass 
+cow:source_cow pen:place_farm 
+boy:agent_male at:tool_hand cow:source_cow 
+boy:agent_male is:tool_hand cow:source_cow barn:place_farm 
+boy:agent_male a:tool_hand cow:source_cow 
+a:tool_hand fence:place_farm cow:source_cow 
+Dairy:agent_cow wire:target_fence 
+Cows:agent_cow wire:target_fence 
+cows:agent_cow fence:target_fence 
+cows:agent_cow fencing:target_fence 
+cows:agent_cow wire:target_fence 
+elephant:agent_elephant 
+elephant:agent_elephant her:carrying 
+elephant:agent_elephant next:place_outdoors 
+elephant:agent_elephant 
+elephant:agent_elephant 
+people:agent_people street:place_street 
+People:agent_people procession:parading 
+people:agent_people parade:parading 
+are:agent_people many:parading street:place_street 
+parade:parading 
+
+
+
+
+
+ties:tool_clothesline 
+ties:tool_clothesline 
+ties:tool_clothesline 
+OF:tool_clothesline TABLE:item_fabric 
+ties:tool_clothesline 
+people:agent_people luggage:place_warehouse 
+people:agent_people cases:place_warehouse 
+for:queuing 
+people:agent_people 
+People:agent_people luggage:place_warehouse 
+luggage:item_bag a:tool_hand 
+luggage:item_bag to:tool_hand 
+suitcases:item_bag are:agent_people a:tool_hand pickup:place_parking 
+loads:unloading 
+a:tool_hand pile:item_bag 
+chair:rocking 
+chair:rocking 
+chair:rocking 
+chair:rocking 
+sitting:rocking 
+bear:agent_bear laptop:contact_chair 
+bear:agent_bear seated:sitting chair:contact_chair 
+bear:agent_bear chair:contact_chair sitting:sitting 
+bear:agent_bear sitting:sitting 
+bear:agent_bear laptop:contact_chair 
+person:agent_man skate:vehicle_skateboard 
+person:agent_man skate:vehicle_skateboard 
+skateboarder:vehicle_skateboard 
+guy:agent_man skateboard:vehicle_skateboard in:place_barn 
+guy:agent_man grinding:skating skateboard:vehicle_skateboard 
+dogs:agent_dog out:item_house building:guarding 
+dog:agent_dog outside:item_house 
+dogs:agent_dog out:item_house opposite:place_outdoors 
+dogs:agent_dog sidelights:item_house 
+door:item_house dogs:agent_dog 
+wild:hunted_zebra 
+zebra:hunted_zebra field:place_field 
+feral:agent_lion 
+open:agent_lion zebra:hunted_zebra 
+wild:hunted_zebra Africa:hunting 
+dog:agent_dog grass:place_grass 
+dog:agent_dog ground:place_grass 
+dog:agent_dog lawn:place_grass 
+dog:agent_dog ground:place_grass its:gnawing 
+dog:agent_dog grass:place_grass toy:item_plaything 
+play:chasee_male 
+are:chasing playing:chasee_male field:place_field 
+playing:chasee_male in:place_field 
+are:chasing playing:chasee_male grass:place_field 
+youths:chasee_male field:place_field 
+horse:agent_horse 
+horse:agent_horse 
+THERE:paweditem_land HORSE:agent_horse 
+horse:agent_horse 
+galloping:agent_horse 
+horse:agent_horse drawn:tool_carriage 
+horse:agent_horse carriage:tool_carriage down:place_road 
+horse:agent_horse carriage:tool_carriage down:place_road 
+horse:agent_horse carriage:tool_carriage 
+carriage:tool_carriage horse:agent_horse 
+group:agent_people flags:parading 
+line:parading street:place_street 
+line:parading 
+group:agent_people flag:parading 
+group:agent_people flags:parading 
+skis:skiing 
+skis:skiing 
+skier:agent_skier slope:skiing 
+skier:agent_skier ski:place_ski 
+skis:skiing 
+ski:skiing snow:place_snow 
+skiier:agent_skier skiing:skiing snow:place_snow 
+skis:skiing snow:place_snow 
+skiing:skiing snow:place_snow 
+skier:agent_skier skis:skiing snow:place_snow 
+snow:surface_snow 
+kids:agent_child 
+kids:agent_child 
+kids:agent_child snow:surface_snow 
+snow:surface_snow 
+muffin:food_bread sit:dining 
+muffin:food_bread cafe:place_restaurant 
+muffin:food_bread cafe:place_restaurant 
+muffin:food_bread plate:place_restaurant 
+of:agent_people muffin:food_bread plate:place_restaurant 
+glass:agent_glass wine:place_barroom it:flaming 
+glass:agent_glass wine:place_barroom 
+glass:agent_glass of:flaming 
+glass:agent_glass wine:place_barroom 
+glass:agent_glass wine:place_barroom 
+plate:place_plate noodles:sprouter_bean 
+noodles:sprouter_bean plate:place_plate 
+tasty:place_plate pasta:sprouter_bean 
+entree:sprouter_bean plate:place_plate 
+plate:place_plate noodles:sprouter_bean 
+bowl:container_bowl of:item_food 
+pot:whisking spaghetti:container_bowl stove:place_kitchen 
+pot:whisking stove:place_kitchen 
+pot:whisking 
+pot:whisking 
+skateboarder:vehicle_skateboard who:agent_man stairs:place_stairs 
+skaterboarder:vehicle_skateboard stairs:place_stairs 
+skate:vehicle_skateboard stairs:place_stairs 
+skateboarder:vehicle_skateboard stairs:place_stairs 
+man:agent_man skateboarding:vehicle_skateboard steps:place_stairs 
+Plate:place_plate mixed:sprouter_plant 
+plate:place_plate shredded:sprouter_plant 
+plate:place_plate vegetables:sprouter_plant 
+dish:sprouter_plant 
+plate:place_plate vegetables:sprouter_plant 
+hand:source_hand carrot:food_carrot 
+person:agent_person carrot:food_carrot 
+fed:feeding carrot:food_carrot 
+carrot:food_carrot 
+Someone:agent_person carrot:food_carrot 
+food:item_food fork:whisking it:agent_person 
+spoon:whisking that:agent_person 
+spoon:whisking it:agent_person 
+food:item_food fork:whisking it:agent_person 
+it:agent_person liquid:whisking 
+knife:agent_hunter standing:hunting 
+knife:agent_hunter stands:hunting 
+black:place_forest knife:agent_hunter 
+in:hunting black:place_forest knife:agent_hunter 
+in:hunting black:place_forest knife:agent_hunter 
+skateboard:vehicle_skateboard 
+ramp:place_ramp 
+ramp:place_ramp 
+young:agent_male skateboard:vehicle_skateboard ramp:place_ramp 
+boy:agent_male skateboard:vehicle_skateboard tricks:place_ramp 
+bowl:source_bowl carrots:item_carrot spoon:tool_spoon 
+bowl:source_bowl utensil:tool_spoon 
+bowl:source_bowl spoon:tool_spoon 
+bowl:source_bowl carrots:item_carrot 
+food:tool_spoon eaten:scooping 
+hot:theme_hotdog held:agent_person baseball:place_baseball 
+hot:theme_hotdog someone:agent_person baseball:place_baseball 
+hot:theme_hotdog baseball:place_baseball 
+hotdog:theme_hotdog stadium:place_baseball 
+Person:agent_person hotdog:theme_hotdog baseball:place_baseball 
+city:place_street with:flaming 
+of:flaming street:place_street 
+street:place_street 
+food:flaming 
+lights:flaming the:place_street 
+bun:agent_loaf 
+bun:agent_loaf 
+bacon:agent_loaf plate:place_plate 
+bun:agent_loaf topped:place_plate 
+onion:agent_loaf 
+man:agent_man with:place_room 
+man:agent_man 
+person:agent_man holding:drumming 
+man:agent_man 
+Man:agent_man with:place_room 
+food:item_food cart:buyer_people street:place_street 
+stand:buyer_people meats:item_food 
+food:item_food market:buyer_people 
+street:place_street available:seller_woman sale:selling 
+food:item_food 
+person:agent_person hot:food_sausage 
+LOADED:food_sausage 
+hand:agent_person hot:food_sausage 
+person:agent_person hot:food_sausage 
+hot:food_sausage 
+three:agent_people plates:place_dining 
+table:place_dining three:agent_people teapots:dining 
+table:place_dining 
+are:agent_people table:place_dining 
+table:place_dining 
+person:agent_person hill:skiing 
+snowboarder:place_snow hill:skiing it:agent_person 
+Person:agent_person snowy:place_snow 
+snowy:place_snow slope:skiing 
+snowboard:place_snow 
+time:decomposer_person 
+hot:decomposer_person 
+hot:decomposer_person 
+time:decomposer_person 
+time:decomposer_person 
+plate:place_plate donuts:agent_loaf 
+donuts:agent_loaf plate:place_plate 
+plate:place_plate pastries:agent_loaf 
+close:spoiling plate:place_plate doughnuts:agent_loaf 
+donut:agent_loaf plate:place_plate 
+leafy:sprouter_plant 
+topped:sprouting leaf:place_land 
+garnish:place_land 
+food:sprouter_plant leaf:place_land 
+rice:sprouter_plant garnish:place_land 
+donuts:place_box 
+sugary:agent_bread donuts:place_box 
+glazed:agent_bread donuts:place_box 
+pastry:agent_bread 
+glazed:agent_bread donuts:place_box 
+table:place_table person:agent_person fries:item_french beverages:dipping 
+person:agent_person burger:item_french 
+Someone:agent_person burger:item_french 
+hand:agent_person eaten:dipping sandwich:item_french 
+burger:item_french 
+food:item_food which:place_outside 
+buffet:served_people 
+buffet:served_people 
+buffet:served_people 
+plates:serving food:item_food 
+MAN:agent_man WITH:place_kitchen CUPCAKE:tool_match 
+man:agent_man blowing:tool_match 
+man:agent_man blowing:tool_match 
+man:agent_man blowing:tool_match 
+man:agent_man with:place_kitchen candles:item_candle 
+wetsuit:agent_surfer wave:tool_surfboard 
+surfer:agent_surfer wave:tool_surfboard ocean:place_ocean 
+wave:tool_surfboard 
+wave:tool_surfboard 
+wave:tool_surfboard 
+pepperoni:agent_pizza veggies:rotting 
+pepperoni:agent_pizza close:rotting 
+herbs:agent_pizza 
+Closeup:rotting pepperoni:agent_pizza 
+pizza:agent_pizza 
+pan:sprouter_food table:place_table 
+pie:sprouter_food toppings:sprouting 
+pan:sprouter_food table:place_table 
+pizza:sprouter_food toppings:sprouting 
+toppings:sprouting served:sprouter_food 
+tennis:place_tennis prepares:practicing match:tool_racket 
+man:agent_man tennis:place_tennis court:skill_tennis 
+man:agent_man defensive:tool_racket tennis:place_tennis 
+tennis:place_tennis court:skill_tennis 
+man:agent_man tennis:place_tennis court:skill_tennis 
+tennis:place_tennis racquet:competition_tennis 
+his:agent_male tennis:place_tennis racket:competition_tennis 
+tennis:place_tennis racket:competition_tennis 
+tennis:place_tennis shirt:agent_male 
+tennis:place_tennis racket:competition_tennis 
+man:agent_man teeth:target_dentition 
+man:agent_man teeth:target_dentition 
+Man:agent_man teeth:target_dentition 
+man:agent_man teeth:target_dentition 
+man:agent_man teeth:target_dentition 
+boy:agent_male Christmas:place_living 
+kid:agent_male Nintendo:place_living 
+dog:chasee_dog boy:agent_male video:place_living 
+child:agent_male Wii:place_living dog:chasee_dog 
+boy:agent_male remote:place_living 
+video:admired_family 
+game:admired_family controllers:place_living 
+before:admiring TV:place_living playing:admired_family 
+video:admired_family 
+front:admiring video:admired_family 
+living:place_living 
+living:place_living 
+t.v:place_living 
+living:place_living 
+living:place_living 
+flown:parachute_parachute sky:place_sky 
+kit:parachute_parachute that:agent_person sky:place_sky 
+kite:parachute_parachute with:agent_person sky:place_sky 
+kite:parachute_parachute sky:place_sky 
+kite:parachute_parachute sky:place_sky 
+windsurfing:place_ocean 
+ocean:place_ocean 
+ocean:place_ocean 
+surf:agent_surfer 
+surfing:tool_surfboard ocean:place_ocean 
+man:agent_man marley:celebrating the:place_outdoors 
+person:agent_man green:place_outdoors 
+man:agent_man 
+male:agent_man one:place_outdoors 
+one:place_outdoors 
+Dozens:gathering people:gatherers_people 
+banner:place_outside 
+people:gatherers_people 
+crowd:gatherers_people 
+crowd:gatherers_people outside:place_outside 
+person:agent_woman bed:place_bed 
+her:agent_woman bed:place_bed 
+her:agent_woman bed:place_bed 
+laying:sleeping her:agent_woman 
+person:agent_woman laying:sleeping bed:place_bed 
+bear:agent_bear sitting:waiting table:place_table 
+bear:agent_bear sitting:waiting plate:place_table 
+bear:agent_bear table:place_table 
+bear:agent_bear sitting:waiting table:place_table 
+table:place_table next:waiting bear:agent_bear 
+baseball:place_ball home:victim_baseball 
+batter:victim_baseball hit:hitting baseball:place_ball 
+BASEBALL:place_ball 
+baseball:place_ball bat:tool_bat 
+batter:victim_baseball 
+baseball:place_ball bat:tool_bat 
+baseball:place_ball bat:tool_bat 
+batter:victim_baseball baseball:place_ball 
+BASE:place_ball BAT:tool_bat 
+baseball:place_ball bat:tool_bat 
+tennis:place_tennis is:agent_man 
+man:agent_man tennis:place_tennis court:skill_tennis 
+man:agent_man tennis:place_tennis court:skill_tennis 
+man:agent_man tennis:place_tennis court:skill_tennis 
+man:agent_man tennis:place_tennis court:skill_tennis 
+pick:tool_truck wood:item_log 
+Truck:hauling full:carrier_person wood:item_log 
+truck:tool_truck wood:item_log 
+logs:item_log 
+truck:tool_truck wood:item_log 
+woman:agent_woman baked:heatsource_oven bread:food_bread 
+woman:agent_woman bread:food_bread oven:heatsource_oven 
+woman:agent_woman bread:food_bread oven:heatsource_oven 
+Woman:agent_woman bread:food_bread oven:heatsource_oven 
+woman:agent_woman oven:heatsource_oven bread:food_bread 
+vase:source_vase 
+of:overflowing vase:source_vase 
+vase:source_vase table:place_table 
+vase:source_vase 
+wooden:place_table vase:source_vase with:overflowing 
+man:agent_man standing:standing 
+man:agent_man standing:standing with:place_room 
+man:agent_man with:place_room 
+man:agent_man in:standing with:place_room 
+man:agent_man against:standing 
+woman:agent_woman an:weighing 
+lady:agent_woman an:weighing with:place_room 
+holding:agent_woman time:mass_body 
+Samsung:mass_body holding:agent_woman 
+phone:weighing 
+woman:agent_woman cell:photographing 
+taking:photographing her:agent_woman 
+woman:agent_woman an:place_outside cell:photographing 
+woman:agent_woman phone:photographing 
+woman:agent_woman take:photographing 
+couch:object_living 
+man:agent_man couch:object_living 
+man:agent_man couch:object_living 
+couch:object_living 
+man:agent_man couch:object_living 
+boy:agent_male brush:target_dentition 
+kid:agent_male comb:tool_toothbrush 
+boy:agent_male brush:target_dentition floor:place_family 
+boy:agent_male hairbrush:place_family 
+boy:agent_male hairbrush:place_family 
+with:place_room stuffed:admired_doll 
+shirt:agent_male teddy:admired_doll wall:place_room 
+Emotional:admired_doll while:agent_male room:place_room 
+looking:admiring teddy:admired_doll 
+stuffed:admired_doll 
+vase:agent_flower picture:place_inside 
+flower:agent_flower matches:place_inside 
+red:agent_flower 
+flowers:agent_flower 
+Decorative:blossoming picture:place_inside 
+vases:wilting wall:place_room 
+plants:agent_plant 
+plants:agent_plant 
+flowers:wilting wall:place_room 
+plants:agent_plant with:place_room 
+woman:agent_woman with:tool_rag scissors:source_table 
+person:agent_woman with:tool_rag scissors:source_table 
+cabinets:tool_rag woman:agent_woman 
+woman:agent_woman fabric:dusting scissors:source_table 
+woman:agent_woman fabric:dusting scissors:source_table 
+small:agent_water kitchen:place_kitchen items:overflowing 
+kitchen:place_kitchen and:overflowing 
+kitchen:place_kitchen next:overflowing 
+kitchen:place_kitchen tile:agent_water and:overflowing 
+kitchen:place_kitchen and:overflowing 
+countertop:place_kitchen 
+kitchen:place_kitchen knife:tool_knife 
+kitchen:place_kitchen 
+with:place_kitchen cheese:tool_knife 
+knife:tool_knife toaster:place_kitchen 
+people:agent_people bench:contact_bench 
+park:place_park 
+on:sitting people:agent_people 
+on:sitting grass:place_park 
+people:agent_people 
+woman:agent_woman television:place_room 
+wall:place_room 
+woman:agent_woman photographing:tool_camera television:place_room 
+woman:agent_woman a:tool_camera tv:place_room 
+television:place_room 
+mirror:target_bathroom 
+and:displaying mirror:target_bathroom 
+bathroom:target_bathroom mint:item_painting 
+showing:displaying mirror:target_bathroom 
+has:displaying mirror:target_bathroom vanity:place_bathroom 
+woman:agent_woman bathroom:place_bathroom mirror:target_urinal 
+person:agent_woman mirror:target_urinal sink:place_bathroom 
+woman:agent_woman herself:target_urinal bathroom:place_bathroom 
+herself:target_urinal 
+woman:agent_woman selfie:target_urinal bathroom:place_bathroom 
+bicycle:vehicle_bicycle 
+bike:vehicle_bicycle 
+Bike:vehicle_bicycle 
+bike:vehicle_bicycle up:agent_person 
+bicycle:vehicle_bicycle 
+street:place_street traffic:turneditem_car 
+traffic:turneditem_car street:place_street 
+busy:turneditem_car street:place_street 
+street:place_street 
+cars:turneditem_car street:place_street 
+bathroom:place_bathroom toilet:source_toilet 
+toilet:source_toilet 
+toliet:source_toilet it:overflowing 
+bathroom:place_bathroom toilet:source_toilet 
+toilet:source_toilet bathroom:place_bathroom 
+group:agent_people bikers:parading 
+several:agent_people city:place_street 
+gather:agent_people sidewalk:place_street 
+People:agent_people bikers:parading street:place_street 
+crowd:parading people:agent_people sidewalk:place_street 
+wooden:components_wood 
+wooden:components_wood 
+outhouse:goalitem_house 
+outhouse:goalitem_house 
+wooden:components_wood 
+garage:place_garage with:agent_person 
+motor:goalitem_motorcycle parked:component_motorcycle 
+scooters:place_garage indoors:goalitem_motorcycle 
+garage:place_garage with:agent_person 
+garage:place_garage 
+Two:agent_child computers:item_computer a:tool_hand 
+a:tool_hand desktop:item_computer 
+desktop:item_computer 
+to:tool_hand monitor:item_computer 
+monitors:item_computer 
+bedroom:place_bedroom with:overflowing closet:source_bag 
+small:overflowing room:place_bedroom 
+bedroom:place_bedroom and:overflowing 
+bed:place_bedroom and:overflowing 
+all:source_bag room:place_bedroom 
+people:agent_people restaurant:place_restaurant 
+crowded:agent_people enormous:place_restaurant 
+people:agent_people gathered:dining 
+people:agent_people sitting:dining 
+People:agent_people tables:dining 
+Giraffes:agent_giraffe zebra:item_zebra 
+giraffe:agent_giraffe zebra:item_zebra 
+zebra:item_zebra giraffes:agent_giraffe 
+giraffes:agent_giraffe zebra:item_zebra 
+giraffes:agent_giraffe zebra:item_zebra 
+street:place_street lights:agent_light 
+street:place_street lights:agent_light 
+lights:agent_light lane:place_street 
+sidewalk:place_street lights:agent_light 
+lights:agent_light street:place_street 
+woman:agent_couple western:grinning front:place_outside 
+posts:place_outside picture:grinning 
+western:grinning pose:agent_couple front:place_outside 
+woman:agent_couple front:place_outside 
+Two:agent_couple against:place_outside 
+top:displaying building:item_sign 
+top:displaying building:item_sign 
+has:displaying building:item_sign 
+top:displaying building:item_sign 
+sign:item_sign outside:place_outside 
+pole:branching 
+pole:branching an:place_outdoors 
+light:brancher_path near:place_outdoors lines:branching 
+light:brancher_path 
+sign:branching 
+giraffe:agent_giraffe sitting:crouching grass:place_field 
+Giraffe:agent_giraffe laying:crouching field:place_field 
+giraffe:agent_giraffe legs:crouching 
+giraffe:agent_giraffe laying:crouching grass:place_field 
+giraffe:agent_giraffe field:place_field 
+necks:item_giraffe 
+giraffe:agent_giraffe standing:nuzzling 
+giraffes:item_giraffe seem:nuzzling 
+necks:item_giraffe 
+giraffes:item_giraffe each:nuzzling 
+sheep:agent_sheep stands:standing 
+sheep:agent_sheep standing:standing 
+sheep:agent_sheep 
+sheep:agent_sheep standing:standing 
+sheep:agent_sheep coat:standing 
+street:place_street light:agent_lamp 
+light:agent_lamp intersection:place_street dusk:glowing 
+traffic:place_street lights:glowing 
+Empty:glowing street:place_street light:agent_lamp 
+light:agent_lamp street:place_street twilight:glowing 
+man:agent_man bench:contact_bench under:place_outdoors 
+man:agent_man bench:contact_bench 
+man:agent_man bench:contact_bench under:place_outdoors 
+man:agent_man bench:contact_bench under:place_outdoors 
+An:place_outdoors man:agent_man bench:contact_bench 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug &:place_outside 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug yard:place_outdoors 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+and:overflowing white:agent_water bench:source_sewer 
+bench:source_sewer the:place_outdoors 
+ground:place_outdoors bench:source_sewer has:agent_water 
+caved:source_sewer with:overflowing the:place_outdoors 
+river:source_sewer it:overflowing 
+giraffe:agent_giraffe its:sniffing 
+giraffe:agent_giraffe next:sniffing tree:item_tree 
+giraffe:agent_giraffe its:sniffing 
+giraffe:agent_giraffe next:sniffing tree:item_tree 
+giraffe:agent_giraffe next:sniffing tree:item_tree 
+woman:agent_woman takes:tool_camera 
+woman:agent_woman taking:tool_camera 
+lady:agent_woman taking:tool_camera 
+an:place_outdoors woman:agent_woman photographing:tool_camera 
+a:tool_camera green:place_outdoors 
+duck:agent_swan water:wading 
+buoy:agent_swan 
+standing:wading buoy:agent_swan behind:place_outdoors 
+buoy:agent_swan water:wading 
+water:wading 
+giraffe:agent_giraffe 
+giraffe:agent_giraffe 
+giraffe:agent_giraffe standing:standing 
+giraffe:agent_giraffe standing:standing 
+giraffe:agent_giraffe 
+truck:agent_tow double:item_bus 
+recovery:agent_tow bus:item_bus 
+truck:agent_tow bus:item_bus 
+trucks:agent_tow 
+towing:agent_tow bus:item_bus 
+birds:individuals_bird chairs:place_railing 
+birds:individuals_bird chairs:place_railing 
+birds:individuals_bird chairs:place_railing 
+Birds:individuals_bird poolside:place_railing 
+birds:individuals_bird chairs:place_railing 
+women:agent_woman fence:eater_giraffe 
+zoo:eater_giraffe women:agent_woman 
+giraffe:eater_giraffe near:place_outside women:agent_woman 
+near:place_outside fence:eater_giraffe 
+fence:eater_giraffe women:agent_woman 
+truck:agent_truck back:item_people 
+the:place_outdoors back:item_people truck:agent_truck 
+the:place_outdoors back:item_people 
+the:place_outdoors back:item_people truck:agent_truck 
+are:item_people lining:place_outdoors truck:agent_truck 
+wearing:agent_veteran hat:saluting 
+wearing:agent_veteran hat:saluting 
+costume:agent_veteran 
+period:agent_veteran 
+dressed:saluting uniform:agent_veteran 
+We:brancher_street 
+Avenue:brancher_street 
+signs:brancher_street 
+signs:brancher_street 
+signs:brancher_street 
+bird:waddling 
+birds:agent_duck 
+birds:agent_duck 
+miniature:place_outdoors birds:agent_duck 
+birds:agent_duck 
+tracks:agent_train 
+tracks:agent_train by:place_outdoors 
+track:agent_train by:place_outdoors 
+track:agent_train near:place_outdoors 
+track:agent_train 
+pickup:agent_truck street:place_street 
+truck:agent_truck street:place_street 
+pick:agent_truck 
+and:tool_tool streets:place_street 
+pickup:agent_truck 
+
+
+
+
+
+tennis:place_tennis 
+tennis:place_tennis player:hitting 
+tennis:place_tennis player:hitting serve:tool_tennis ball:victim_tennis 
+tennis:place_tennis 
+tennis:place_tennis player:hitting 
+kitten:agent_cat 
+cat:agent_cat 
+cat:agent_cat 
+cat:agent_cat 
+cat:agent_cat rinsed:paweditem_plaything and:place_room 
+deer:agent_deer forest:place_forest 
+moose:agent_deer 
+antelope:agent_deer bushes:place_forest 
+deer:agent_deer bushes:place_forest 
+deer:agent_deer woods:place_forest 
+vase:item_flower chair:agent_cat backyard:place_outdoors 
+cat:agent_cat under:place_outdoors flowers:item_flower 
+flowers:item_flower cat:agent_cat 
+cat:agent_cat under:place_outdoors flowers:item_flower 
+cat:agent_cat yard:place_outdoors flowers:item_flower 
+cat:agent_cat asleep:sleeping sofa:place_sofa 
+cat:agent_cat sleeping:sleeping couch:place_sofa 
+cat:agent_cat asleep:sleeping couch:place_sofa 
+CAT:agent_cat SLEEPING:sleeping COUCH:place_sofa 
+cat:agent_cat sleeping:sleeping couch:place_sofa 
+cement:item_tank truck:carrier_truck next:place_outdoors 
+cement:item_tank truck:carrier_truck 
+Parked:item_tank truck:carrier_truck near:place_outdoors 
+cement:item_tank truck:carrier_truck one:place_outdoors 
+cement:item_tank truck:carrier_truck next:place_outdoors 
+metal:substance_water lake:submerging 
+water:submerging 
+water:submerging 
+water:submerging 
+water:submerging 
+cat:agent_cat keyboard:paweditem_computer 
+cat:agent_cat keyboard:paweditem_computer 
+cat:agent_cat paw:pawing keyboard:paweditem_computer 
+cat:agent_cat keyboard:paweditem_computer 
+cat:agent_cat paw:pawing keyboard:paweditem_computer 
+boy:agent_male 
+Afro:place_school boy:agent_male poses:grinning 
+smiling:grinning boy:agent_male 
+smiling:grinning boy:agent_male 
+boy:agent_male 
+mountains:agent_cloud from:place_outdoors 
+near:place_outdoors 
+mountains:agent_cloud 
+green:place_outdoors 
+massive:cresting distance:agent_cloud 
+ferry:vehicle_ferry 
+water:place_body boats:boating 
+boat:vehicle_ferry 
+Boats:boaters_person Ellis:vehicle_ferry 
+boat:vehicle_ferry sails:boaters_person 
+elephants:agents_elephant next:place_outdoors 
+elephants:agents_elephant the:place_outdoors 
+elephants:agents_elephant 
+elephants:agents_elephant 
+elephants:agents_elephant 
+Dog:agent_dog room:place_room 
+dog:agent_dog blanket:slouching 
+dog:agent_dog sheets:slouching 
+dog:agent_dog sitting:contact_chair floor:place_room 
+dog:agent_dog floor:place_room 
+group:intermingling boats:place_river 
+number:intermingling water:place_river 
+group:intermingling boats:place_river 
+group:intermingling water:place_river 
+boats:place_river people:agents_people 
+Many:queuing people:agent_people hallway:place_inside 
+people:agent_people 
+milling:agent_people lobby:place_inside 
+people:agent_people hallway:place_inside 
+people:agent_people 
+elephants:item_elephant each:nuzzling 
+Two:nuzzling elephants:item_elephant 
+Two:nuzzling elephants:item_elephant by:place_outdoors 
+Two:nuzzling elephants:item_elephant 
+elephants:item_elephant zoo:nuzzling 
+filled:overflowing canes:agent_laundry 
+basket:source_basket 
+of:source_basket umbrellas:agent_laundry 
+of:source_basket umbrellas:agent_laundry 
+and:overflowing canes:agent_laundry basket:source_basket 
+
+
+
+
+
+girl:agent_woman 
+woman:agent_woman standing:walking building:place_outside 
+lady:agent_woman building:place_outside 
+woman:agent_woman standing:walking building:place_outside 
+woman:agent_woman building:place_outside 
+desktop:item_desktop 
+desk:item_desktop 
+desktop:item_desktop 
+desktop:item_desktop 
+desk:item_desktop 
+bear:agent_bear swims:place_body 
+bear:agent_bear is:item_body water:place_body 
+bear:agent_bear river:place_body 
+bear:agent_bear water:place_body 
+Black:shaking bear:agent_bear water:place_body 
+bear:agent_bear 
+bear:agent_bear pool:container_pool 
+bear:agent_bear the:place_outdoors 
+bear:agent_bear the:place_outdoors 
+bear:agent_bear 
+a:tool_hand luggage:item_bag airport:destination_airplane 
+men:agent_man luggage:item_bag plane:destination_airplane 
+baggage:item_bag 
+baggage:item_bag handlers:loading 
+luggage:item_bag tarmac:destination_airplane 
+bear:agent_bear grass:foraging 
+bear:agent_bear paved:place_road 
+bear:agent_bear field:foraging 
+bear:agent_bear grass:foraging 
+bear:agent_bear the:place_road grass:foraging 
+bear:agent_dog playing:item_ball 
+bear:agent_dog green:place_outdoors ball:item_ball 
+close:gnawing bear:agent_dog ball:item_ball 
+bear:agent_dog playing:item_ball 
+bear:agent_dog the:place_outdoors 
+dog:agent_dog laying:sleeping floor:place_floor 
+puppy:agent_dog 
+dog:agent_dog bed:sleeping 
+dog:agent_dog bed:sleeping 
+dog:agent_dog bed:sleeping 
+grizzly:agent_bear fighting:caughtitem_bear 
+hind:caughtitem_bear 
+woods:place_forest fighting:caughtitem_bear 
+fierce:caughtitem_bear 
+hind:caughtitem_bear trees:place_forest 
+man:agent_man 
+man:agent_man sandy:wading area:substance_water 
+man:agent_man in:substance_water 
+man:agent_man the:substance_water 
+man:agent_man outside:place_outside 
+zebras:agent_zebra 
+zebras:agent_zebra 
+Three:nuzzling zebra:agent_zebra 
+zebra:agent_zebra 
+zebras:agent_zebra 
+horse:agent_horse bug-gee:item_carriage next:pulling buildings:place_street 
+horse:agent_horse carriage:item_carriage street:place_street 
+horse:agent_horse carriage:item_carriage street:place_street 
+horse:agent_horse carriage:item_carriage past:pulling 
+horse:agent_horse pulling:item_carriage buildings:place_street 
+person:agent_surfer the:place_ocean 
+ocean:place_ocean 
+on:tool_surfboard 
+water:place_ocean 
+ocean:place_ocean 
+plate:place_plate banana:agent_banana 
+banana:agent_banana plate:place_plate 
+banana:agent_banana plate:place_plate 
+banana:agent_banana plate:place_plate 
+plate:place_plate banana:agent_banana 
+plate:container_plate herbs:rotting 
+plate:container_plate 
+plate:container_plate 
+meat:agent_meat 
+meat:agent_meat 
+close:rotting 
+carrots:agent_carrot 
+carrots:agent_carrot 
+close:rotting carrots:agent_carrot 
+carrots:agent_carrot 
+pizza:sliceditem_pizza is:agent_person 
+baked:place_table pizza:sliceditem_pizza 
+person:agent_person of:place_table pizza:sliceditem_pizza 
+This:agent_person pizza:sliceditem_pizza 
+pizza:sliceditem_pizza fingers:agent_person 
+apple:agent_apple 
+apple:agent_apple 
+apple:agent_apple table:place_table 
+apple:agent_apple bloody:place_table 
+apple:agent_apple 
+vegetables:agent_vegetable onion:rotting 
+squash:agent_vegetable mushrooms:rotting 
+vegetables:agent_vegetable potatoes:rotting 
+broccoli:agent_vegetable mushrooms:rotting 
+mushrooms:rotting squash:agent_vegetable 
+skis:skiing mountain:place_mountain 
+skier:skiing of:agent_people mountain:place_mountain 
+skis:skiing mountain:place_mountain 
+mountain:place_mountain 
+of:agent_people mountain:place_mountain 
+broccoli:agent_vegetable meat:container_plate 
+meat:container_plate broccoli:agent_vegetable 
+Broccoli:agent_vegetable cooked:rotting meat:container_plate 
+plate:container_plate table:place_table broccoli:agent_vegetable 
+steak:container_plate broccoli:agent_vegetable 
+man:agent_man water:tool_ocean 
+man:agent_man water:tool_ocean 
+man:agent_man rope:tool_ocean 
+man:agent_man water:tool_ocean 
+man:agent_man water:tool_ocean wave:surfing 
+skis:skiing 
+ski:place_ski 
+skis:skiing 
+skier:agent_skier 
+skier:agent_skier 
+holds:agent_woman skates:skating 
+skateboard:vehicle_skateboard holds:agent_woman 
+holds:agent_woman skateboards:vehicle_skateboard 
+skateboard:vehicle_skateboard holding:agent_woman 
+skateboard:vehicle_skateboard 
+skiing:skiing hill:place_mountain 
+skiing:skiing snowy:place_mountain 
+skis:skiing covered:place_mountain 
+skier:agent_skier hill:place_mountain 
+freestyle:agent_skier skis:skiing steep:place_mountain 
+is:agent_person jump:flipping 
+below:place_outside person:agent_person air:flipping 
+person:agent_person jump:flipping 
+person:agent_person trick:flipping 
+person:agent_person snowboard:flipping 
+cliff:place_mountain skiing:skiing 
+skier:agent_skier ski:skiing 
+skier:agent_skier cliff:place_mountain 
+ski:skiing snowy:place_mountain 
+skier:agent_skier cliff:place_mountain 
+
+
+
+
+
+snow:place_snow air:flipping 
+Man:agent_man jump:flipping 
+air:flipping 
+is:agent_man air:flipping 
+mid:flipping 
+tennis:place_tennis player:hitting 
+tennis:place_tennis 
+tennis:place_tennis 
+tennis:place_tennis player:hitting 
+tennis:place_tennis 
+woman:agent_woman bites:eating 
+girl:agent_woman eating:eating 
+woman:agent_woman eating:eating 
+woman:agent_woman eating:eating 
+woman:agent_woman bite:food_sandwich 
+pizza:agent_pizza egg:rotting 
+olives:agent_pizza 
+olives:agent_pizza 
+olives:agent_pizza sprinkled:rotting 
+burned:rotting olives:agent_pizza 
+table:place_table some:making 
+at:making table:place_table 
+woman:agent_woman table:place_table 
+women:agent_woman table:place_table 
+woman:agent_woman table:place_table 
+holds:tugging of:agent_people field:place_field 
+playing:tugging 
+son:tugging are:agent_people field:place_field 
+little:tugging are:agent_people field:place_field 
+parent:place_field son:tugging 
+laptop:item_screen computer:agent_computer 
+Flickr:item_screen television:place_bedroom 
+Flickr:item_screen 
+laptop:item_screen television:place_bedroom set:displaying 
+screen:item_screen computer:agent_computer 
+man:agent_man holding:carrying wet:item_surfboard 
+man:agent_man carrying:carrying outside:place_outdoors 
+man:agent_man holding:carrying wet:item_surfboard 
+man:agent_man holding:carrying surfboard:item_surfboard the:place_outdoors 
+man:agent_man wet:item_surfboard holding:carrying under:place_outdoors 
+surfboard:agent_surfer 
+wave:tool_surfboard 
+surfboard:agent_surfer sea:place_ocean 
+water:place_ocean 
+surfboard:agent_surfer 
+man:agent_man waves:plunged_body 
+man:agent_man wave:place_ocean 
+surfer:place_ocean shirt:agent_man surfing:plunged_body 
+above:plunged_body surfer:place_ocean 
+man:agent_man surfing:plunged_body wave:place_ocean 
+child:agent_male water:place_body boogie:tool_inner 
+young:agent_male raft:place_body shore:medium_water 
+toddler:agent_male surfboard:tool_inner shore:medium_water 
+boy:agent_male water:place_body 
+toddler:agent_male water:place_body 
+floating:submerging of:agent_people wave:object_canoe 
+surfboard:object_canoe the:place_body 
+surfboard:object_canoe 
+surfers:substance_water one:agent_people fell:object_canoe 
+surfboard:object_canoe water:place_body 
+man:agent_man racquet:competition_tennis tennis:place_tennis 
+man:agent_man hit:competition_tennis tennis:place_tennis 
+man:agent_man tennis:place_tennis racket:competition_tennis 
+guy:agent_man playing:competing tennis:place_tennis 
+tennis:place_tennis match:competition_tennis 
+dining:dining room:place_home are:agent_people 
+dinner:dining plants:place_home 
+little:place_home tables:dining 
+table:dining windows..:place_home 
+dining:dining room:place_home 
+platter:spoiling baked:agent_bread good:place_table 
+bread:agent_bread plate:place_table 
+cheese:agent_bread table:place_table 
+close:spoiling surface:agent_bread table:place_table 
+cracker:spoiling cutting:place_table 
+pizzas:destination_pizza 
+uncooked:destination_pizza 
+Two:source_hand pizzas:destination_pizza 
+hand:source_hand toppings:destination_pizza 
+Two:source_hand homemade:sprinkling 
+very:agent_water living:place_living with:overflowing 
+couch:place_living ,:overflowing 
+containing:overflowing couch:place_living wooden:agent_water coffee:source_cup 
+livingroom:place_living 
+couch:place_living and:overflowing 
+his:item_finger mouth:biting 
+blonde:item_finger child:agent_baby mouth:biting 
+chewing:item_finger 
+toddler:agent_baby chewing:item_finger 
+chewing:item_finger 
+chairs:item_art 
+,:displaying chairs:item_art 
+chairs:item_art 
+concept:displaying furniture:item_art 
+chairs:item_art it:displaying 
+apart:paying 
+apart:paying table:place_table 
+apart:paying 
+of:seller_person table:place_table 
+apart:paying 
+women:target_girl video:place_living together:giggling 
+girls:target_girl 
+women:target_girl 
+Two:target_girl couch:place_living 
+Young:agent_girl women:target_girl remote:place_living 
+while:socializing room:place_room 
+standing:coagent_people 
+people:agent_people controllers:coagent_people 
+woman:coagent_people room:place_room 
+and:place_room group:agent_people 
+couch:object_living 
+couple:tickled_hand room:object_living 
+sofa:object_living 
+video:object_living 
+WII:object_living 
+field:place_field kite:ballooning 
+'s:agent_person here:place_field 
+person:agent_person kite:ballooning field:place_field 
+kite:ballooning field:place_field 
+field:place_field kite:ballooning person:agent_person 
+swinging:hitting bat:tool_bat 
+swinging:hitting bat:tool_bat 
+baseball:place_baseball 
+batter:victim_baseball readies:hitting 
+swing:tool_bat 
+baseball:place_ball bat:tool_bat 
+baseball:place_ball bat:tool_bat 
+baseball:place_ball 
+Home:victim_baseball baseball:place_ball 
+baseball:place_ball ready:tool_bat hit:hitting 
+baseball:place_ball bat:tool_bat 
+Player:hitting bat:tool_bat during:place_ball 
+baseball:place_ball bat:tool_bat 
+baseball:place_ball hitting:hitting 
+bat:tool_bat 
+baseball:place_ball swing:tool_bat 
+baseball:place_ball 
+bunting:place_ball 
+action:hitting baseball:place_ball 
+batter:victim_baseball hit:hitting base:place_ball 
+pizzas:food_pizza stove:heatsource_stove 
+pizza:food_pizza stove:heatsource_stove 
+pizza:food_pizza stove:heatsource_stove 
+pizza:food_pizza kitchen:place_kitchen stove:heatsource_stove 
+pizzas:food_pizza stove:heatsource_stove 
+windows:agent_light inside:place_inside 
+with:glowing stained:agent_light glass:place_inside 
+windows:agent_light 
+with:glowing stain:agent_light 
+picture:place_inside night:agent_light 
+desktop:item_desktop 
+desk:item_desktop 
+things:item_desktop 
+desk:item_desktop 
+desk:item_desktop 
+people:agent_people computers:working 
+Small:place_room group:agent_people laptops:focus_undertaking 
+group:agent_people working:focus_undertaking 
+Several:agent_people students:focus_undertaking with:place_room 
+people:agent_people working:focus_undertaking 
+computer:item_computer 
+computer:item_computer 
+laptop:agent_computer sitting:place_room 
+laptop:agent_computer 
+TOP:item_computer 
+man:agent_man talking:phoning 
+man:agent_man phone:tool_telephone 
+man:agent_man talking:phoning 
+man:agent_man talking:phoning 
+man:agent_man talking:phoning 
+man:agent_man street:place_street pole:panhandling 
+walk:target_passerby street:place_street 
+walk:target_passerby streets:place_street 
+man:agent_man walking:target_passerby 
+man:agent_man pole:panhandling 
+refrigerator:source_cup and:overflowing tiled:agent_water 
+fridge:source_cup 
+There:overflowing refrigerator:source_cup 
+refrigerator:source_cup 
+refrigerator:source_cup 
+
+
+
+
+
+wall:place_room with:liquid_water 
+objects:place_room 
+shelf:place_room drinking:liquid_water 
+wall:place_room 
+has:immersing 
+ceiling:item_clock various:displaying 
+clocks:item_clock units:tool_tool 
+clocks:item_clock 
+display:displaying 
+clocks:item_clock 
+book:item_book books:destination_bookshelf 
+book:item_book shelf:place_library 
+book:item_book shelf:place_library 
+library:place_library 
+books:destination_bookshelf 
+plate:item_toast cup:place_table 
+toast:buttering 
+bread:buttering egg:place_table plate:item_toast 
+plate:item_toast shown:agent_person 
+that:agent_person toast:buttering 
+A:tool_brush chopsticks:target_chicken 
+chopsticks:target_chicken 
+ravioli:target_chicken 
+A:tool_brush tea:target_chicken 
+plate:target_chicken 
+bowl:source_bowl 
+dish:source_bowl 
+bowl:source_bowl 
+spoon:scooping bowl:source_bowl 
+bowl:source_bowl meat:scooping 
+salsa:dipping 
+dip:dipping in:substance_water 
+food:item_bread small:substance_water salsa:dipping table:place_table 
+person:agent_person table:place_table food:item_bread 
+drinks:dipping 
+people:agent_people beach:place_beach 
+people:agent_people beach:place_beach 
+people:agent_people sand:place_beach in:stooping 
+Adults:stooping beach:place_beach 
+people:agent_people sand:place_beach 
+area:place_outdoors of:agent_people restaurant:dining 
+people:agent_people outside:place_outdoors cafe:dining 
+Black:place_outdoors umbrellas:agent_people 
+people:agent_people gathered:dining 
+are:agent_people sitting:dining the:place_outdoors 
+car:agent_car 
+car:agent_car 
+Car:agent_car 
+CAR:agent_car 
+vehicle:agent_car near:crashing 
+the:place_outdoors back:item_people 
+yellow:place_outdoors people:item_people it:carting 
+people:item_people outside:place_outdoors 
+people:item_people 
+Yellow:place_outdoors people:item_people 
+tub:place_bathtub 
+tub:place_bathtub 
+tub:place_bathtub 
+person:agent_person tub:place_bathtub 
+tile:place_bathtub 
+bathroom:place_bathroom sinks:bathing 
+vanity:bathing 
+vanity:bathing 
+bathroom:place_bathroom sinks:bathing 
+bathroom:place_bathroom sinks:bathing 
+tub:place_bathtub 
+bathtub:place_bathtub 
+tub:place_bathtub 
+tub:place_bathtub 
+bathtub:place_bathtub 
+people:agent_people to:tool_hand food:item_bread cart:source_truck 
+a:tool_hand from:source_truck 
+vendor:unloading to:tool_hand 
+People:agent_people food:item_bread at:tool_hand cart:source_truck sidewalk:place_outside 
+people:agent_people to:tool_hand food:item_bread stand:source_truck 
+clock:agent_clock 
+tower:agent_clock 
+tower:agent_clock has:glowing 
+tower:agent_clock 
+Church:place_outside tower:agent_clock color:glowing 
+man:agent_man motorcycle:item_motorcycle back:driving 
+man:agent_man motorcycle:item_motorcycle riding:place_street 
+motorcycle:item_motorcycle 
+Male:agent_man motorcycle:item_motorcycle 
+man:agent_man riding:place_street motorcycle:item_motorcycle back:driving 
+men:agent_people motorcycle:vehicle_motorcycle 
+adults:agent_people motorcycle:vehicle_motorcycle 
+people:agent_people scooter:vehicle_motorcycle street:place_street 
+motorcycle:vehicle_motorcycle together:agent_people 
+scooter:vehicle_motorcycle people:agent_people riding:riding 
+sitting:sitting 
+sitting:sitting 
+stuffed:agent_teddy sitting:sitting 
+stuffed:agent_teddy sitting:sitting 
+on:sitting 
+ARE:seller_motorcyclist 
+thee:seller_motorcyclist 
+Motorcycles:item_motorcycle street:place_street of:selling 
+cycles:item_motorcycle street:place_street 
+motorcycles:buyer_motorcyclist 
+jet:agent_jet sky:place_sky 
+flying:soaring 
+Lufthansa:agent_jet flight:soaring sky:place_sky 
+plane:agent_jet 
+commercial:agent_jet flying:soaring 
+man:agent_man bench:contact_bench 
+man:agent_man bench:contact_bench by:place_outdoors 
+man:agent_man bench:contact_bench 
+person:agent_man bench:contact_bench from:place_outdoors 
+man:agent_man religious:place_outdoors talking:contact_bench on:sitting 
+corner:brancher_street city:place_city 
+streets:brancher_street 
+between:branching buildings:place_city 
+corner:brancher_street 
+corner:brancher_street empty:branching city:place_city 
+bike:vehicle_bicycle street:place_street 
+bike:vehicle_bicycle city:place_street 
+biking:vehicle_bicycle street:place_street 
+Bicyclist:traveler_man street:place_street 
+bike:vehicle_bicycle street:place_street 
+SHEEP:source_sheep 
+sheep:source_sheep 
+sheep:source_sheep 
+man:agent_man sheep:source_sheep 
+sheep:source_sheep 
+cat:agent_cat petted:item_finger 
+brown:gnawing cat:agent_cat 
+cat:agent_cat attention:item_finger 
+Cat:agent_cat petted:item_finger 
+cat:agent_cat attention:item_finger 
+van:agent_bus mirrored:item_bus 
+bus:item_bus 
+TOUR:agent_bus BUS:item_bus 
+bus:item_bus 
+bus:item_bus 
+park:place_park night:agent_light 
+very:glowing benches:place_park 
+nighttime:agent_light park:place_park 
+park:place_park illuminated:glowing light:agent_light 
+park:place_park setting:glowing 
+sheep:agent_sheep standing:standing field:place_field 
+sheep:agent_sheep in:standing 
+sheep:agent_sheep standing:standing field:place_field 
+lamb:agent_sheep standing:standing 
+sheep:agent_sheep standing:standing grass:place_field 
+hydrant:source_fireplug landscaping:place_outdoors 
+hydrant:source_fireplug stone:place_outdoors 
+hydrant:source_fireplug outside:place_outdoors 
+hydrant:source_fireplug 
+hydrant:source_fireplug 
+fire:source_fireplug 
+hydrant:source_fireplug 
+hydrant:source_fireplug outside:place_outdoors 
+hydrant:source_fireplug shade:place_outdoors 
+hydrant:source_fireplug protected:destination_land by:place_outdoors 
+Two:agent_people horses:vehicle_horse 
+their:agent_people horses:vehicle_horse 
+women:agent_people horses:vehicle_horse 
+Two:agent_people horses:vehicle_horse 
+are:agent_people horses:vehicle_horse 
+horse:item_horse 
+horse:item_horse 
+horse:item_horse 
+horse:item_horse 
+horse:item_horse 
+train:agent_train 
+tracks:agent_train 
+steam:agent_train 
+track:agent_train 
+trains:item_train engine:agent_train 
+train:agent_train 
+to:place_outdoors track:agent_train 
+track:agent_train near:place_outdoors 
+engine:agent_train caboose:item_train 
+engine:agent_train railway:item_train 
+subway:vehicle_train 
+station:place_railway 
+train:vehicle_train 
+train:vehicle_train 
+train:vehicle_train 
+stop:hoisting sign:tool_pulley into:source_land 
+stop:hoisting sign:tool_pulley beneath:place_outside 
+SHIP:item_flag 
+signs:tool_pulley stop:hoisting 
+signs:tool_pulley tyring:item_flag a:source_land 
+stop:blocker_barrier 
+stop:blocker_barrier 
+stop:blocker_barrier 
+stop:blocker_barrier 
+stop:blocker_barrier 
+DOWN:place_road 
+truck:turneditem_truck down:place_road 
+truck:turneditem_truck road:place_road car:agent_driver 
+truck:turneditem_truck road:place_road 
+highway:turneditem_truck 
+bear:agent_bear animal:clungto_rock 
+STUFF:clungto_rock BEAR:agent_bear 
+bear:agent_bear hanging:clinging 
+bear:agent_bear 
+bear:agent_bear hanging:clinging 
+classic:agent_car truck:item_trailer lot:place_parking 
+old:agent_car truck:item_trailer 
+pickup:towing truck:item_trailer classic:agent_car 
+truck:item_trailer lot:place_parking 
+truck:item_trailer 
+ox:agent_cattle grass:goal_land 
+steer:agent_cattle lie:goal_land 
+cows:agent_cattle sitting:resting 
+Two:goal_land cows:agent_cattle sitting:resting 
+cows:agent_cattle laying:resting 
+cow:agent_cow grass:place_field 
+cow:agent_cow field:place_field next:butting 
+cow:agent_cow field:place_field next:butting 
+field:place_field cow:agent_cow 
+bull:agent_cow coyote:target_cow field:place_field 
+man:agent_man water:place_river umbrella:shelter_tent 
+man:agent_man umbrella:shelter_tent water:place_river 
+man:agent_man umbrella:shelter_tent boat:place_river 
+person:agent_man water:place_river umbrella:shelter_tent 
+man:agent_man umbrella:shelter_tent water:place_river 
+boat:vehicle_motorboat 
+boat:vehicle_motorboat 
+boat:vehicle_motorboat beach:place_beach 
+boat:vehicle_motorboat beach:place_beach 
+boat:vehicle_motorboat beach:place_beach 
+April:queuing 
+Goodmayes:queuing 
+group:agent_people 
+adults:agent_people 
+April:queuing 
+man:agent_man chart:speaking 
+businessman:agent_man presentation:speaking 
+man:agent_man front:place_stage 
+chart:speaking 
+man:agent_man glasses:coagent_audience front:place_stage projector:speaking 
+photograph:agent_man tie:shivering 
+bed:place_chair tie:shivering 
+tie:shivering 
+bow:shivering trying:agent_man 
+sitting:shivering bed:place_chair his:agent_man 
+A:tool_brush elephant:target_elephant ground:place_outdoors 
+children:agent_child elephant:target_elephant 
+children:agent_child elephant:target_elephant 
+Children:agent_child elephants:target_elephant brush:brushing 
+children:agent_child help:brushing elephant:target_elephant 
+group:gatherers_people 
+group:gatherers_people 
+bunch:gathering and:place_inside 
+group:gatherers_people 
+posing:gatherers_people 
+photo:kneeling 
+chalkboard:contact_land 
+class:contact_land 
+group:agent_people chalkboard:contact_land 
+photograph:kneeling 
+child:agent_male to:sniffing luggage:item_bag 
+child:agent_male luggage:item_bag 
+small:agent_male suitcase:item_bag terminal:place_plaza 
+boy:agent_male looking:sniffing suitcase:item_bag 
+boy:agent_male luggage:item_bag an:place_plaza 
+bear:agent_bear bed:goal_bed 
+bear:agent_bear laying:resting bed:goal_bed 
+bear:agent_bear bed:goal_bed 
+bear:agent_bear laying:resting comforter:goal_bed 
+animal:agent_bear sits:resting bed:goal_bed 
+bear:agent_bear water:place_body 
+bear:agent_bear water:place_body gray:item_body 
+bear:agent_bear is:item_body water:place_body 
+bear:agent_bear swimming:place_body 
+BEAR:agent_bear SPLASHING:shaking 
+black:lapping dog:agent_dog ground:place_outdoors 
+dog:agent_dog its:lapping 
+dog:agent_dog reflection:lapping 
+dog:agent_dog its:lapping 
+black:lapping dog:agent_dog near:place_outdoors 
+rainbow:agents_zebra 
+rainbow:agents_zebra 
+rainbow:agents_zebra 
+rainbow:agents_zebra 
+rainbow:agents_zebra 
+Someone:agent_person holding:tool_brush dog:target_dog 
+person:agent_person teeth:brushing 
+brushed:target_dog 
+person:agent_person nose:tool_brush teeth:brushing 
+Someone:agent_person mouth:brushing dog:target_dog 
+larger:nuzzling zebra:agent_zebra 
+One:nuzzling zebra:agent_zebra 
+Zebra:agent_zebra another:nuzzling 
+zebras:agent_zebra together:nuzzling 
+zebras:agent_zebra other:nuzzling 
+horse:agent_horse drawn:tool_wagon beach:place_beach 
+pulling:tool_wagon two-wheeled:agent_horse beach:place_beach 
+riding:item_people horse:agent_horse trailer:tool_wagon beach:place_beach 
+horse:agent_horse beach:place_beach 
+horse:agent_horse pulling:tool_wagon shore:place_beach 
+horses:agent_horse snowy:place_snow 
+horses:agent_horse the:place_snow dirt:stampeding 
+horses:agent_horse snowy:place_snow terrain:stampeding 
+horses:agent_horse snowy:place_snow field:stampeding 
+horses:agent_horse snow:place_snow 
+horse:agent_horse jump:obstacle_hurdle 
+horse:agent_horse obstacle:obstacle_hurdle 
+horse:agent_horse jump:obstacle_hurdle 
+hurdle:obstacle_hurdle horse:agent_horse 
+horse:agent_horse jumping:obstacle_hurdle 
+horses:agent_horse pulling:tool_wagon 
+horses:agent_horse wagon:tool_wagon 
+horses:agent_horse cart:tool_wagon 
+horses:agent_horse pulling:tool_wagon 
+horses:agent_horse carriage:tool_wagon 
+racing:place_racetrack motorcycles:agent_motorcycle 
+motorcycles:agent_motorcycle race:place_racetrack 
+finish:racing line:agent_motorcycle 
+bikes:agent_motorcycle track:place_racetrack 
+racing:place_racetrack 
+person:agent_man baseball:skill_baseball game:student_people 
+baseball:skill_baseball 
+baseball:skill_baseball game:student_people 
+baseball:skill_baseball game:student_people 
+baseball:skill_baseball man:agent_man standing:student_people 
+people:agent_people skis:skiing covered:place_mountain 
+people:agent_people snow:skiing 
+people:agent_people mountain:place_mountain 
+people:agent_people skis:skiing mountain:place_mountain 
+Skiers:skiing mountain:place_mountain 
+of:agent_people slope:skiing 
+People:agent_people ski:place_ski 
+People:agent_people gear:skiing 
+ARE:agent_people SKIERS:skiing 
+ski:place_ski 
+banana:peeling 
+banana:peeling 
+banana:peeling 
+banana:peeling 
+banana:peeling 
+bananas:item_banana 
+bananas:item_banana sale:selling 
+bananas:item_banana sale:selling 
+bananas:item_banana 
+Bunches:item_banana 
+plate:place_table bananas:agent_banana 
+bananas:agent_banana table:place_table 
+plate:place_table bananas:agent_banana 
+plate:place_table bananas:agent_banana 
+bananas:agent_banana plate:place_table 
+diamond:place_ball 
+boys:agent_male playing:throwing baseball:item_baseball 
+catchers:item_baseball playing:throwing 
+kids:agent_male playing:throwing baseball:item_baseball 
+COUPLE:item_baseball YOUNG:throwing BOYS:agent_male BASEBALL:place_ball 
+crouching:destination_base 
+catcher:destination_base 
+catcher:destination_base 
+catcher:destination_base 
+catcher:destination_base 
+skis:skiing 
+skis:skiing mountain:place_mountain 
+skiing:skiing mountain:place_mountain 
+skis:skiing mountains:place_mountain 
+skier:agent_skier mountain:place_mountain 
+skis:skiing 
+skis:skiing 
+skis:skiing 
+skis:skiing 
+skier:agent_skier snowy:skiing 
+boy:agent_male 
+young:agent_male an:place_outdoors 
+boy:agent_male 
+boy:agent_male 
+boy:agent_male another:tugging background:place_outdoors 
+table:place_table different:overflowing ingredients:agent_milk 
+counter:source_glass items:agent_milk 
+items:agent_milk counter:source_glass 
+containers:overflowing milk:agent_milk egg:place_table 
+table:place_table cups:agent_milk 
+guy:agent_man for:components_trailer 
+skate:components_trailer a:tool_hand area:place_outdoors 
+guys:agent_man for:components_trailer 
+man:agent_man a:tool_hand wooden:goalitem_house ramp:components_trailer 
+wooden:goalitem_house ramp:components_trailer at:tool_hand the:place_outdoors his:agent_man 
+person:agent_person skis:skiing snow:place_snow 
+person:agent_person snow:place_snow skis:skiing 
+person:agent_person cross-country:place_snow winters:skiing 
+person:agent_person country:place_snow skis:skiing 
+snow:place_snow skis:skiing 
+florets:brancher_grape 
+broccoli:brancher_grape 
+broccoli:brancher_grape 
+florets:brancher_grape some:place_outdoors 
+florets:brancher_grape 
+GALA:place_grocery APPLES:agent_apple DISPLAY:spoiling 
+apples:agent_apple display:place_grocery 
+apples:agent_apple 
+apples:agent_apple supermarket:place_grocery 
+apples:agent_apple market:place_grocery 
+lime:agent_fruit 
+fruit:agent_fruit foil:container_bag 
+fruits:agent_fruit foil:container_bag 
+fruits:agent_fruit foil:container_bag 
+foil:container_bag 
+of:tool_hammer car:against_parking 
+car:against_parking 
+parking:smashed_car lot:against_parking 
+A:smashing car:against_parking 
+people:smashed_car standing:against_parking 
+man:agent_man skateboard:vehicle_skateboard 
+skateboarding:vehicle_skateboard sidewalk:place_sidewalk 
+skateboards:vehicle_skateboard is:agent_man 
+skate:vehicle_skateboard 
+skateboarders:skating 
+fish:source_plate fork:scooping 
+fork:scooping chicken:source_plate 
+fish:source_plate fork:scooping 
+fork:scooping shredded:source_plate 
+fork:scooping fish:source_plate 
+hill:place_mountain 
+mountains:place_mountain 
+mountain:place_mountain 
+mountain:place_mountain 
+hiking:ascending 
+
+
+
+
+
+person:agent_person heart:crafting 
+heart:crafting 
+birthday:crafting 
+birthday:crafting 
+birthday:crafting with:agent_person 
+plate:container_plate 
+meat:agent_meat 
+plate:container_plate 
+delicious:container_plate onion:rotting 
+bacon:agent_meat 
+hot:agent_hotdog 
+hot:agent_hotdog containers:place_tray 
+hot:agent_hotdog 
+hotdogs:agent_hotdog tray:place_tray 
+chili:place_tray 
+potatoes:source_plate 
+fries:source_plate 
+french:source_plate 
+french:source_plate 
+french:source_plate 
+with:place_room 
+and:place_room 
+
+and:place_room 
+
+beach:place_beach surfboard:agent_surfer 
+lone:wading surfer:agent_surfer the:place_beach 
+waves:agent_surfer 
+surf:agent_surfer water:wading 
+surfer:agent_surfer beach:place_beach 
+fried:agent_food plate:place_plate 
+plate:place_plate 
+Plate:place_plate 
+plate:place_plate 
+food:agent_food plate:place_plate 
+surfboard:agent_surfer 
+surfer:agent_surfer wave:tool_surfboard 
+surfer:agent_surfer wave:tool_surfboard 
+surfing:tool_surfboard 
+Surfer:agent_surfer wave:tool_surfboard ocean:place_ocean 
+with:overflowing potatoes:source_plate 
+chips:source_plate 
+with:overflowing potatos:source_plate 
+includes:agent_food fries:source_plate 
+plate:source_plate with:overflowing 
+surfing:tool_surfboard surfboards:skill_surfing beach:place_beach 
+people:agent_people surf:tool_surfboard beach:place_beach 
+people:agent_people surfboards:skill_surfing beach:place_beach 
+people:agent_people beach:place_beach surf:tool_surfboard 
+people:agent_people standing:practicing beach:place_beach surfboards:skill_surfing 
+desktops:item_computer 
+screens:item_computer 
+entertainment:displaying monitors:item_computer 
+monitors:item_computer 
+computers:item_computer 
+woman:agent_woman table:dining pizza:food_pizza 
+woman:agent_woman pizza:food_pizza restaurant:place_restaurant 
+woman:agent_woman table:dining pizza:food_pizza 
+woman:agent_woman table:dining pizza:food_pizza 
+woman:agent_woman pizza:food_pizza restaurant:place_restaurant 
+young:agent_male racquet:place_stadium 
+ball:item_ball 
+serve:place_stadium 
+player:place_stadium he:agent_male ball:item_ball 
+playing:item_ball tennis:place_stadium 
+tennis:place_tennis 
+tennis:place_tennis 
+woman:agent_woman tennis:place_tennis 
+lady:agent_woman tennis:place_tennis court:skill_tennis 
+tennis:place_tennis court:skill_tennis 
+tennis:place_tennis wearing:grimacing 
+tennis:place_tennis his:agent_man 
+tennis:place_tennis 
+Tennis:place_tennis at:agent_man 
+man:agent_man tennis:place_tennis 
+toothbrush:tool_toothbrush 
+little:agent_baby toothbrush:tool_toothbrush 
+little:agent_baby toothbrush:tool_toothbrush 
+child:agent_baby teeth:target_dentition 
+child:agent_baby teeth:target_dentition 
+living:place_living 
+view:glowing living:place_living 
+room:place_living 
+living:place_living 
+living:place_living 
+furnished:agent_television 
+living:place_livingroom 
+TV:agent_television 
+television:agent_television 
+television:agent_television 
+living:place_living 
+nice:glowing room:place_living 
+living:place_living fabrics/carpeting:agent_art 
+living:place_living loud:agent_art 
+living:place_living center:glowing 
+living:place_living and:overflowing 
+LIVING:place_living WITH:source_glass 
+couch:place_living 
+living:place_living table:source_glass 
+den:place_living ,:overflowing 
+player:hitting lunges:victim_tennis 
+tennis:place_tennis hit:victim_tennis 
+man:agent_man tennis:place_tennis 
+tennis:place_tennis is:agent_man hit:victim_tennis 
+man:agent_man tennis:place_tennis ball:victim_tennis motion:hitting 
+woman:agent_woman tennis:place_tennis court:skill_tennis 
+woman:agent_woman tennis:place_tennis 
+tennis:place_tennis 
+woman:agent_woman tennis:place_tennis serve:tool_tennis 
+woman:agent_woman tennis:place_tennis court:skill_tennis 
+simple:glowing apartment:agent_light 
+room:place_room 
+TV:place_room window:agent_light 
+curtained:agent_light room:place_room 
+room:place_room furniture:glowing 
+people:agent_people flying:place_sky kites:destination_field 
+people:agent_people kites:destination_field 
+kites:destination_field sky:place_sky 
+Several:agent_people kites:destination_field flying:place_sky 
+people:agent_people flies:place_sky kites:destination_field 
+chair:hugged_baby teddy:hugging 
+cute:hugged_baby stuffed:hugging 
+chair:hugged_baby teddy:hugging 
+stuffed:hugging chair:hugged_baby 
+chair:hugged_baby teddy:hugging 
+kite:parachute_parachute is:agent_person the:place_beach 
+person:agent_person glider:destination_ocean 
+day:parachute_parachute 
+kite:parachute_parachute sea:place_beach 
+with:agent_person parachute:parachute_parachute 
+lights:glowing tower:agent_clock 
+building:agent_clock 
+has:glowing clock:agent_clock 
+Big:agent_clock 
+Big:agent_clock 
+man:agent_man wheelchair:carrier_wheelchair bat:place_ball 
+man:agent_man wheel:carrier_wheelchair 
+man:agent_man baseball:place_ball on:item_body 
+man:agent_man on:item_body field:place_ball 
+man:agent_man wheel:carrier_wheelchair baseball:place_ball 
+boys:student_male softball:skill_baseball 
+baseball:skill_baseball 
+boy:student_male baseball:skill_baseball 
+is:agent_man umpire:place_ball kids:coaching 
+baseball:skill_baseball 
+Ms:grimacing Williams:agent_tennis tennis:place_tennis 
+dress:grimacing tennis:place_tennis 
+tennis:place_tennis dress:grimacing 
+dressed:grimacing tennis:place_tennis 
+tennis:place_tennis pink:grimacing outfit:agent_tennis 
+office:place_room with:agent_person equipment:tool_camera 
+a:tool_camera office:place_room 
+room:place_room with:agent_person equipment:tool_camera 
+The:agent_person hung:place_room 
+a:tool_camera desk:place_room 
+man:agent_man laptop:item_laptop 
+man:agent_man uses:staring laptop:item_laptop 
+man:agent_man laptop:item_laptop 
+Man:agent_man looking:staring laptop:item_laptop 
+person:agent_man laptop:item_laptop 
+
+
+
+
+
+dressed:agent_man the:place_outdoors phone:telephoning 
+THAT:place_outdoors PHONE:telephoning 
+talking:telephoning shirt:agent_man 
+talking:telephoning 
+as:agent_man talks:telephoning 
+counter:place_kitchen microwave:microwaving 
+microwave:microwaving kitchen:place_kitchen 
+microwave:microwaving 
+microwave:microwaving 
+kitchen:place_kitchen microwave:microwaving 
+couch:place_living 
+people:nagging room:place_living 
+woman:nagging 
+man:nagging 
+couple:nagging couch:place_living 
+
+
+
+
+
+restaurant:place_restaurant man:agent_man phone:item_cellular 
+male:agent_man smart:item_cellular restaurant:place_restaurant 
+restaurant:place_restaurant phone:item_cellular 
+man:agent_man smart:item_cellular cafe:place_restaurant 
+man:agent_man looking:staring cell:item_cellular restaurant:place_restaurant 
+woman:agent_woman fridge:item_art has:displaying 
+woman:agent_woman fridge:item_art which:tool_tool has:displaying 
+woman:agent_woman refrigerator:item_art 
+while:agent_woman it:displaying painted:item_art 
+scene:tool_tool with:displaying person:agent_woman refrigerator:item_art 
+woman:agent_woman vase:admired_flower 
+woman:agent_woman vase:admired_flower to:admiring 
+vase:admired_flower 
+vase:admired_flower with:place_room 
+vase:admired_flower 
+counter:place_kitchen with:overflowing 
+tissues:agent_water ,:overflowing supplies:source_cup 
+counter:place_kitchen next:overflowing 
+items:source_cup including:overflowing 
+full:overflowing view:agent_water 
+scissors:agent_wood 
+scissors:agent_wood wrapped:rotting 
+scissors:agent_wood displayed:rotting 
+crumpled:agent_wood on:rotting 
+,:rotting crumpled:agent_wood 
+man:agent_man holding:grinning 
+man:agent_man table:place_restaurant holding:grinning 
+man:agent_man holds:grinning at:place_restaurant 
+man:agent_man drink:place_restaurant smiles:grinning 
+Man:agent_man holding:grinning wine:place_restaurant 
+woman:agent_woman umbrella:shivering next:place_outdoors 
+woman:agent_woman rain:shivering 
+woman:agent_woman umbrella:shivering 
+Woman:agent_woman the:place_outdoors rain:shivering 
+Woman:agent_woman umbrella:shivering near:place_outdoors 
+with:place_room plants:brancher_plant 
+window:brancher_plant 
+potted:brancher_plant front:place_room 
+room:place_room potted:brancher_plant 
+chair:place_room plants:brancher_plant 
+woman:agent_woman oven:destination_oven 
+woman:agent_woman food:placeditem_food kitchen:place_kitchen 
+woman:agent_woman oven:destination_oven 
+woman:agent_woman kitchen:place_kitchen food:placeditem_food 
+woman:agent_woman kitchen:place_kitchen baking:placeditem_food 
+with:displaying bright:tool_tool window:item_painting 
+with:displaying furniture:item_painting 
+with:displaying tulips:item_painting 
+bright:tool_tool with:displaying tulips:item_painting 
+dining:item_painting 
+man:agent_man skateboard:place_sidewalk 
+his:agent_man sidewalk:place_sidewalk 
+man:agent_man skateboard:place_sidewalk wheels:begging 
+skateboard:place_sidewalk 
+man:agent_man skateboard:place_sidewalk 
+woman:agent_woman hair:tool_comb 
+woman:agent_woman hair:tool_comb 
+woman:agent_woman hair:tool_comb and:place_room 
+woman:agent_woman hair:tool_comb 
+lady:agent_woman hair:tool_comb 
+
+
+
+
+
+shower:bathing bathroom:place_bathroom 
+bath:bathing sink:place_bathroom 
+bathroom:place_bathroom 
+bathroom:place_bathroom shower:bathing 
+shower:bathing sink:place_bathroom 
+
+
+
+
+
+motorcycle:vehicle_motorcycle with:agent_person 
+motorcycle:vehicle_motorcycle with:agent_person painted:place_street 
+motorcycle:vehicle_motorcycle 
+ride:riding motorcycle:vehicle_motorcycle 
+person:agent_person motorcycle:vehicle_motorcycle 
+urinals:agent_urinal bathroom:place_bathroom 
+urinals:agent_urinal 
+Urinals:agent_urinal bathroom:place_bathroom 
+urinals:agent_urinal bathroom:place_bathroom 
+than:agent_urinal 
+motorcycle:tool_motorcycle down:place_road cow:agent_cow 
+cow:agent_cow road:place_road 
+motorcycle:tool_motorcycle photo:item_people 
+motor:tool_motorcycle cows:agent_cow 
+motorcycle:tool_motorcycle past:place_road of:item_people cows:agent_cow 
+church:place_inside of:agent_people 
+cross:agent_people church:place_inside 
+of:agent_people 
+and:place_inside sit:dining 
+inside:place_inside of:agent_people 
+horses:agent_horse grazing:item_grass field:place_field 
+grazing:item_grass field:place_field 
+horses:agent_horse pasture:item_grass 
+horses:agent_horse lush:item_grass field:place_field 
+horses:agent_horse grass:item_grass 
+bathroom:place_bathroom toilet:target_toilet 
+toilet:target_toilet restroom:place_bathroom 
+toilets:target_toilet bathroom:place_bathroom 
+Looking:agent_person bidet:target_toilet 
+Toilet:target_toilet bathroom:place_bathroom it:agent_person 
+dog:agent_dog food:item_food ground:place_floor 
+dog:agent_dog food:item_food 
+dog:agent_dog from:item_food 
+dog:agent_dog food:item_food 
+dog:agent_dog at:item_food 
+bananas:item_banana 
+bananas:item_banana 
+bananas:item_banana stand:seller_man 
+Bananas:item_banana 
+stand:seller_man bananas:item_banana 
+airliner:destination_runway airport:place_airport 
+liner:place_airport over:landing 
+jetliner:agent_airplane 
+airliner:destination_runway 
+plane:agent_airplane liner:place_airport 
+
+
+
+
+
+giraffe:agent_giraffe tongue:licking fence:item_fence 
+giraffe:agent_giraffe tongue:licking 
+giraffe:agent_giraffe tongue:licking fence:item_fence 
+giraffe:agent_giraffe next:place_outdoors fence:item_fence licking:licking 
+giraffe:agent_giraffe tongue:licking fence:item_fence 
+giraffes:agent_giraffe 
+giraffes:agent_giraffe grassy:place_field 
+giraffes:agent_giraffe are:place_field standing:standing 
+giraffes:agent_giraffe standing:standing field:place_field 
+giraffe:agent_giraffe distant:place_field standing:standing 
+plane:agent_airplane 
+plane:agent_airplane 
+plane:agent_airplane 
+airplane:agent_airplane 
+plane:agent_airplane 
+giraffe:agent_giraffe walking:walking 
+giraffe:agent_giraffe stands:place_outside 
+giraffe:agent_giraffe walking:walking 
+giraffe:agent_giraffe walks:walking 
+giraffe:agent_giraffe 
+bird:agent_bird 
+benches:waddling 
+bird:agent_bird 
+benches:waddling 
+bird:agent_bird 
+giraffe:agent_giraffe bush:target_prey 
+giraffe:agent_giraffe wilderness:prowling 
+giraffe:agent_giraffe 
+giraffe:agent_giraffe shrubs:target_prey 
+giraffe:agent_giraffe 
+flies:soaring sky:place_sky 
+plane:agent_jet flies:soaring sky:place_sky 
+land:soaring tarmac:agent_jet 
+jet:agent_jet flying:soaring 
+commercial:agent_jet sky:place_sky 
+to:place_outdoors bench:contact_bench 
+their:agent_people bench:contact_bench 
+benches:contact_bench 
+bench:contact_bench under:place_outdoors 
+couple:agent_people bench:contact_bench 
+giraffes:agent_giraffe standing:standing 
+giraffes:agent_giraffe the:place_outdoors 
+giraffe:agent_giraffe 
+giraffe:agent_giraffe 
+giraffes:agent_giraffe 
+fence:brancher_path near:branching hill:place_mountain 
+fence:brancher_path mountain:place_mountain 
+gated:brancher_path grazing:place_mountain 
+scenic:brancher_path mountain:place_mountain 
+green:branching hillside:place_mountain 
+bus:turning stopped:turneditem_car 
+bus:turning downtown:turneditem_car street:place_street 
+bus:turning city:place_street 
+bus:turning city:place_street 
+bus:turning street:place_street 
+flowers:agent_flower dirt:place_forest 
+flowers:agent_flower in:place_forest 
+bloom:agent_flower in:place_forest 
+flowers:agent_flower in:place_forest 
+blooming:blossoming near:place_forest 
+rusted:leaking 
+metal:source_pipe hydrant:leaking by:place_outdoors 
+hydrant:leaking 
+hydrant:leaking 
+hydrant:leaking 
+snow:skiing 
+snow:skiing 
+mountain:skiing 
+surface:skiing 
+snow:skiing 
+bus:agent_bus 
+bus:agent_bus driving:item_trailer down:place_road 
+bus:agent_bus advertising:item_trailer side:place_road 
+bus:agent_bus stops:pulling street:place_road 
+bus:agent_bus side:place_road 
+bus:agent_bus traveling:skidding down:place_snow 
+bus:agent_bus is:skidding 
+bus:agent_bus snowy:place_snow road:skidding 
+bus:agent_bus 
+bus:agent_bus snowy:place_snow road:skidding 
+bus:turneditem_bus down:place_road 
+bus:turneditem_bus alongside:place_road 
+bus:turneditem_bus 
+bus:turneditem_bus stopped:agent_driver road:place_road 
+bus:turneditem_bus road:place_road 
+and:tool_tool bus:agent_bus driving:item_trailer 
+bus:agent_bus road:towing 
+bus:agent_bus road:towing 
+,:tool_tool bus:agent_bus advertisement:item_trailer 
+bus:agent_bus 
+giraffe:agent_giraffe branch:target_post 
+giraffe:agent_giraffe is:peeing branches:target_post 
+giraffe:agent_giraffe branches:target_post 
+giraffe:agent_giraffe branch:target_post 
+giraffe:agent_giraffe to:target_post 
+BIRD:place_land 
+and:sprouter_plant 
+it:sprouting 
+it:sprouting 
+white:sprouter_plant 
+sign:agent_sign 
+An:glowing sign:agent_sign sidewalk:place_outside 
+The:glowing sign:agent_sign 
+sign:agent_sign place:glowing 
+sign:agent_sign 
+swans:waddling in:place_park 
+boys:agent_male ducks:waddling 
+boys:agent_male geese:waddling 
+young:agent_male goose:waddling 
+boys:agent_male swans:waddling 
+sign:brancher_road 
+area:place_outdoors sign:brancher_road 
+Sign:brancher_road near:place_outdoors 
+signs:brancher_road 
+sign:brancher_road 
+woman:agent_woman bending:hugged_cat holding:agentpart_arm 
+woman:agent_woman bending:hugged_cat holding:agentpart_arm and:place_room 
+her:hugged_cat arms:agentpart_arm and:place_room 
+woman:agent_woman her:hugged_cat 
+woman:agent_woman holding:agentpart_arm and:place_room kissing:hugged_cat 
+man:agent_man horse:item_horse green:place_outdoors 
+man:agent_man horse:item_horse 
+an:place_outdoors man:agent_man horse:item_horse 
+man:agent_man horse:item_horse the:place_outdoors 
+Person:agent_man horse:item_horse 
+some:place_outdoors tracks:agent_train 
+tracks:agent_train near:place_outdoors 
+train:agent_train next:place_outdoors 
+track:agent_train near:place_outdoors 
+train:agent_train 
+side:blocking 
+sign:tool_outdoors tree:blocker_tree 
+sign:tool_outdoors 
+sign:tool_outdoors 
+street:blocking 
+signs:brancher_road 
+freeway:brancher_road 
+traffic:place_city sign:brancher_road 
+near:branching one:place_city 
+south:brancher_road 
+track:agent_train 
+train:agent_train passed:pulling 
+train:agent_train by:place_outdoors 
+train:agent_train by:place_outdoors 
+tracks:agent_train 
+steam:agent_train 
+green:place_outdoors engine:agent_train 
+locomotive:agent_train by:place_outdoors 
+track:agent_train 
+green:place_outdoors locomotive:agent_train 
+trees:place_rail 
+train:vehicle_train traveling:place_rail 
+train:vehicle_train on:riding tracks:place_rail 
+train:vehicle_train tracks:place_rail 
+train:vehicle_train is:agent_person riding:riding tracks:place_rail 
+track:agent_train 
+track:agent_train 
+track:agent_train 
+train:agent_train 
+engine:agent_train platform:place_railway 
+tagged:item_cow cow:agent_cow field:place_field 
+cow:agent_cow calf:item_cow together:nuzzling grass:place_field 
+cow:agent_cow tag:item_cow 
+cow:agent_cow 
+cow:agent_cow calf:item_cow 
+parking:agent_car lot:colliding 
+as:place_street fire:colliding pickup:agent_car 
+lot:colliding cars:agent_car 
+lot:colliding cars:agent_car 
+cars:agent_car 
+cat:agent_cat sleeping:sleeping chair:place_chair 
+cat:agent_cat sleeps:sleeping blanketed:place_chair 
+cat:agent_cat asleep:sleeping blanketed:place_chair 
+long-haired:agent_cat sleeping:sleeping chair:place_chair 
+cat:agent_cat sleeping:sleeping 
+cat:agent_cat TV:paweditem_television 
+cat:agent_cat television:paweditem_television 
+cat:agent_cat tv:paweditem_television 
+cat:agent_cat television:paweditem_television 
+cat:agent_cat TV:paweditem_television 
+elephants:agent_elephant walking:wading 
+elephants:agent_elephant by:place_outdoors water:wading 
+elephants:agent_elephant hole:substance_water 
+elephants:agent_elephant walking:wading world:place_outdoors 
+elephants:agent_elephant 
+dog:agent_dog 
+dog:agent_dog bow:agentpart_neck 
+dog:agent_dog bow:agentpart_neck 
+dog:agent_dog bow:agentpart_neck 
+puppy:agent_dog tie:agentpart_neck 
+day:place_lake in:vehicle_canoe 
+boat:boating 
+water:place_lake foliaged:vehicle_canoe 
+lake:place_lake fall:vehicle_canoe 
+boat:boating 
+people:agent_people 
+ceiling:shopping of:agent_people terminal:place_plaza 
+are:agent_people ceiling:shopping 
+ceiling:shopping 
+shopping:shopping their:agent_people mall:place_plaza 
+adjusting:saluting her:agent_woman 
+person:agent_woman tie:saluting room:place_room 
+woman:agent_woman and:place_room tie:saluting 
+tie:saluting 
+tie:saluting 
+man:agent_man pants:standing and:place_room 
+Man:agent_man in:standing with:place_room 
+man:agent_man tie:standing 
+short:standing man:agent_man 
+man:agent_man dressed:standing picture:place_room 
+elephant:agent_elephant water:wading 
+elephant:agent_elephant next:place_outdoors 
+elephant:agent_elephant 
+elephant:agent_elephant water:wading 
+elephant:agent_elephant water:wading 
+boats:tool_boat are:agent_people 
+boats:tool_boat are:agent_people 
+boats:tool_boat 
+beyond:tool_boat 
+of:agent_people boats:tool_boat 
+people:agent_people carrying:carrying luggage:item_bag 
+Neither:carrying people:agent_people 
+are:agent_people the:place_outdoors holding:carrying suitcases:item_bag 
+gathered:agent_people luggage:item_bag 
+the:place_outdoors their:agent_people travel:item_bag 
+holding:photographing an:place_outside a:tool_camera 
+CONCERT:photographing 
+holding:photographing an:place_outside a:tool_camera 
+recording:photographing rain:place_outside 
+taking:photographing 
+Luggage:molding 
+Luggage:molding 
+revolving:molding 
+bagage:molding 
+Luggage:molding 
+holding:grinning 
+hold:grinning 
+couple:agent_people posing:grinning 
+couple:agent_people holding:grinning 
+pose:grinning 
+wall:place_room couch:contact_sofa dog:agent_dog on:sitting 
+dog:agent_dog sitting:sitting sofa:contact_sofa 
+dog:agent_dog sitting:sitting couch:contact_sofa 
+dog:agent_dog sits:sitting sofa:contact_sofa 
+dog:agent_dog sitting:sitting couch:contact_sofa 
+group:agent_people young:tugging 
+Four:agent_people playing:tugging 
+Men:agent_people playing:tugging 
+group:agent_people playing:tugging 
+Four:agent_people playing:tugging 
+mirror:place_car dog:agent_dog head:item_head 
+dog:agent_dog looking:item_head 
+dog:agent_dog car:place_car 
+dog:agent_dog head:item_head window:place_car 
+dog:agent_dog head:item_head rear:place_car 
+futon:place_bed student:sleeping 
+bed:place_bed 
+with:agent_person pillows:place_bed 
+The:agent_person bedroom:place_bed 
+with:agent_person blanket:place_bed 
+man:agent_man the:place_beach Frisbee:item_Frisbee 
+Man:agent_man frisbee:item_Frisbee beach:place_beach 
+man:agent_man flying:flinging disk:item_Frisbee 
+man:agent_man the:place_beach Frisbee:item_Frisbee 
+person:agent_man catches:item_Frisbee beach:place_beach 
+zebras:agent_zebra wild:stampeding 
+herd:stampeding zebra:agent_zebra field:place_field 
+herd:stampeding zebra:agent_zebra 
+Herd:stampeding zebras:agent_zebra grass:place_field 
+herd:stampeding zebra:agent_zebra field:place_field 
+riding:racing horse:agent_horse 
+horse:agent_horse flag:racing field:place_playing 
+horse:agent_horse flag:racing field:place_playing 
+riding:racing horse:agent_horse stadium:place_playing 
+arena:racing 
+city:place_street with:agent_person 
+standing:leading sidewalk:place_street 
+horse:follower_horse with:agent_person street:place_street 
+street:place_street 
+horse:follower_horse sidewalk:place_street 
+yellow:place_outdoors helmets:racing horses:agent_horse 
+Clydesdale:agent_horse 
+riding:racing horses:agent_horse 
+horse:agent_horse 
+riding:racing the:place_outdoors horses:agent_horse 
+man:agent_man snowboard:slider_snowboard 
+snowboard:slider_snowboard 
+side:place_outside hill:slider_snowboard 
+snowy:slider_snowboard weather:place_outside 
+snowboard:slider_snowboard 
+
+
+
+
+
+people:agent_people jet-ski:place_white 
+life:rafting watercraft:place_white 
+hurtling:place_white 
+people:agent_people doo:place_white 
+people:agent_people riding:place_white 
+bunches:seller_man market:item_fruit 
+Bundles:place_shop farmers:seller_man market:item_fruit 
+vendor:seller_man 
+bunches:seller_man bananas:item_fruit 
+bananas:item_fruit 
+cross-country:place_snow 
+skies:skiing 
+skies:skiing snow:place_snow 
+skis:skiing snow:place_snow 
+country:place_snow skier:agent_skier 
+baseball:place_ball swinging:hitting bat:tool_bat 
+baseball:place_ball swung:victim_baseball bat:tool_bat 
+baseball:place_ball hitter:victim_baseball swinging:hitting bat:tool_bat 
+baseball:place_ball 
+baseball:place_ball batter:victim_baseball swinging:hitting 
+christmas:decorated_tree 
+hand:agent_person Christmas:item_decoration 
+orange:decorated_tree 
+orange:decorated_tree 
+christmas:decorated_tree 
+team:student_people players:coaching 
+group:student_people wearing:agent_man uniforms:skill_baseball 
+players:coaching 
+team:student_people 
+team:student_people 
+competitive:place_ski skier:agent_skier 
+skier:agent_skier 
+skier:agent_skier skies:skiing 
+faster:agent_skier 
+skiing:skiing 
+person:agent_man skateboard:item_skateboard 
+man:agent_man skateboard:item_skateboard the:place_outdoors 
+skateboarder:agentpart_body 
+skateboarder:agentpart_body dressed:agent_man black:tilting 
+person:agent_man skateboard:item_skateboard to:place_outdoors 
+pile:agent_carrot 
+kinds:rotting vegetables:agent_carrot 
+vegetables:agent_carrot 
+vegetables:agent_carrot 
+vegetables:agent_carrot 
+man:agent_man skateboard:skating 
+skaters:vehicle_skate 
+man:agent_man skateboard:skating 
+man:agent_man skateboard:skating 
+man:agent_man skateboard:skating 
+in:container_pot metal:frying 
+carrots:food_carrot inside:place_kitchen 
+carrots:food_carrot 
+pot:container_pot carrots:food_carrot 
+silver:place_kitchen carrots:food_carrot 
+jump:sliding skateboard:surface_slide girl:agent_child 
+young:agent_child on:sliding 
+air:sliding girl:agent_child 
+kid:agent_child 
+couple:agent_child skateboard:surface_slide 
+tall:place_outside skateboarder:vehicle_skateboard 
+outdoors:place_outside 
+man:agent_man skateboard:vehicle_skateboard structure:place_outside 
+person:agent_man skate:vehicle_skateboard 
+skateboard:vehicle_skateboard from:place_outside 
+table:place_dining of:congregating 
+table:place_dining people:individuals_people 
+table:place_dining of:congregating 
+table:place_dining in:congregating 
+table:place_dining many:individuals_people 
+man:agent_man holding:tool_hand giant:eating sandwich:food_sandwich table:place_table 
+man:agent_man table:place_table eating:eating sandwich:food_sandwich 
+person:agent_man holding:tool_hand sandwich:food_sandwich at:eating table:place_table 
+man:agent_man eating:eating sandwich:food_sandwich 
+person:agent_man holding:tool_hand sandwich:food_sandwich 
+Woman:agent_woman bite:food_sandwich 
+woman:agent_woman bite:food_sandwich 
+woman:agent_woman bites:eating 
+woman:agent_woman eating:eating sandwich:food_sandwich 
+woman:agent_woman eats:eating sandwich:food_sandwich 
+
+
+
+
+
+Three:agent_people restaurant:place_restaurant 
+people:agent_people table:dining 
+Three:agent_people table:dining drinks:place_restaurant 
+people:agent_people table:dining 
+people:agent_people eating:food_sandwich 
+box:container_box 
+box:container_box eaten:rotting 
+box:container_box ,:rotting 
+box:container_box eaten:rotting 
+close:rotting box:container_box 
+surfboards:agent_canoe beach:place_beach 
+colorful:medium_sand boards:agent_canoe sand:tool_body 
+colorful:medium_sand surfboards:agent_canoe beach:place_beach 
+Surfboard:medium_sand beach:place_beach day:floating 
+Surfboards:medium_sand beach:place_beach 
+by:place_outdoors water:wading 
+man:agent_man water:wading 
+person:agent_man surfboard:wading 
+water:wading 
+water:wading 
+plate:container_plate 
+some:agent_hamburger frosting:rotting strawberries:container_plate 
+sandwich:agent_hamburger cookie:rotting 
+patty:container_plate 
+plate:container_plate 
+birthday:item_candle topped:place_table 
+candles:item_candle have:place_table been:agent_person 
+be:agent_person candles:item_candle 
+candles:item_candle table:place_table 
+candles:item_candle it:agent_person 
+surfer:agent_surfer wave:tool_surfboard 
+surfboard:agent_surfer 
+Surfer:agent_surfer 
+surfing:tool_surfboard ocean:place_ocean 
+ocean:place_ocean wave:tool_surfboard 
+bed:place_bed 
+bed:place_bed it:agent_person 
+sheets:place_bed colorful:agent_person 
+bed:place_bed with:agent_person 
+bed:place_bed with:agent_person 
+people:agent_people splashing:tool_ocean wave:surfing 
+men:agent_people boogie:tool_ocean 
+people:agent_people splashing:tool_ocean 
+people:agent_people ocean:place_surfboard 
+people:agent_people splashing:tool_ocean 
+bedroom:place_bedroom 
+hotel:place_bedroom 
+bed:place_bedroom lamp:agent_lamp 
+neatly:place_bedroom 
+well-made:place_bedroom night:glowing 
+beach:place_beach surfboard:agent_surfer 
+surfboard:agent_surfer 
+surfer:agent_surfer carrying:wading 
+surfboard:agent_surfer shore:place_beach 
+walking:wading surfboard:agent_surfer beach:place_beach 
+woman:agent_woman taking:photographing lunch:item_food 
+girl:agent_woman taking:photographing of:item_food 
+Woman:agent_woman photographing:tool_camera plates:item_food 
+eating:item_food a:tool_camera 
+girl:agent_woman photographing:tool_camera food:item_food 
+video:phenomenon_television 
+people:agent_people video:phenomenon_television games:place_studio 
+Some:agent_people video:phenomenon_television 
+game:phenomenon_television 
+people:agent_people watching:place_studio 
+baby:eater_baby 
+arms:eater_baby 
+baby:eater_baby tattoos:agent_woman 
+baby:eater_baby 
+baby:eater_baby 
+girls:removeditem_wallpaper to:tool_hand 
+girls:removeditem_wallpaper to:tool_hand 
+girls:removeditem_wallpaper tv:place_room 
+girls:removeditem_wallpaper television:place_room 
+little:agent_female girls:removeditem_wallpaper sitting:place_room 
+living:place_living video:surface_rug 
+Wii:surface_rug living:place_living 
+living:place_living 
+living:place_living video:surface_rug 
+living:place_living wii:surface_rug 
+with:displaying furniture:item_painting 
+room:item_painting shelves:displaying 
+floral:item_painting 
+bedroom:item_painting with:displaying 
+room:item_painting color:tool_tool 
+family:agent_people flying:place_sky kite:parachute_parachute beach:destination_desert 
+people:agent_people flying:place_sky kite:parachute_parachute beach:destination_desert 
+People:agent_people kite:parachute_parachute sky:place_sky 
+people:agent_people beach:destination_desert flying:place_sky kite:parachute_parachute 
+people:agent_people beach:destination_desert sky:place_sky 
+sailing:vehicle_sailboat water:place_body 
+sailboat:vehicle_sailboat 
+sailboat:vehicle_sailboat 
+sail:vehicle_sailboat 
+sail:vehicle_sailboat 
+baseball:place_ball swing:tool_bat 
+batter:victim_baseball approaches:hitting 
+baseball:place_ball pitch:victim_baseball 
+contact:victim_baseball baseball:place_ball 
+baseball:place_ball 
+baseball:place_ball bat:tool_bat 
+baseball:place_ball bat:tool_bat 
+batter:victim_baseball bat:tool_bat 
+batter:victim_baseball first:place_ball hit:hitting 
+diamond:place_ball 
+batter:victim_baseball 
+Batter:victim_baseball 
+bat:tool_bat 
+umpire:victim_baseball bat:tool_bat 
+home:victim_baseball base:agent_ballplayer 
+woman:agent_woman pizza:food_pizza 
+woman:agent_woman holding:tool_hand pizza:food_pizza 
+woman:agent_woman pizza:food_pizza 
+woman:agent_woman onto:tool_hand piece:eating pizza:food_pizza 
+woman:agent_woman piece:eating pizza:food_pizza 
+tennis:place_tennis 
+her:agent_woman tennis:place_tennis court:skill_tennis 
+woman:agent_woman tennis:place_tennis court:skill_tennis 
+woman:agent_woman tennis:place_tennis 
+tennis:place_tennis her:agent_woman 
+boy:agent_male tennis:tool_racket 
+boy:agent_male tennis:tool_racket 
+boy:agent_male porch:place_backyard tennis:tool_racket 
+boy:agent_male tennis:tool_racket 
+tennis:tool_racket 
+woman:agent_woman kitchen:place_kitchen 
+woman:agent_woman kitchen:place_kitchen something:source_table 
+woman:agent_woman is:dusting kitchen:place_kitchen 
+woman:agent_woman kitchen:place_kitchen 
+woman:agent_woman kitchen:place_kitchen 
+refrigerator:place_cabinet sitting:waiting top:agent_cat 
+next:waiting refrigerator:place_cabinet 
+cat:agent_cat sits:waiting refrigerator:place_cabinet 
+refrigerator:place_cabinet 
+cat:agent_cat sitting:waiting refrigerator:place_cabinet 
+cat:agent_cat screen:place_room 
+cat:agent_cat someones:place_room 
+cat:agent_cat computer:place_room 
+kitten:agent_cat lying:resting laptop:place_room 
+cat:agent_cat lays:item_body computer:place_room 
+cameras:photographing 
+cameras:photographing bed:place_bedroom 
+cameras:photographing 
+cameras:photographing 
+cameras:photographing 
+balloons:agent_rubbish it:source_ashcan and:overflowing the:place_outdoors 
+telephone:source_ashcan with:overflowing 
+of:overflowing stuffed:agent_rubbish the:place_outdoors 
+and:overflowing balloons:agent_rubbish 
+filled:overflowing balloons:agent_rubbish 
+ELECTRONICS:place_metro 
+subway:place_metro 
+public:place_metro transit:traveler_people 
+subway:place_metro 
+subway:place_metro 
+hillside:hiking 
+back:place_path packs:hiking 
+while:place_path 
+men:agent_people woods:hiking 
+backpack:hiking 
+cellular:item_telephone 
+Someone:agent_person text:dialing 
+someone:agent_person iphone:item_telephone 
+type:agent_person text:dialing 
+cell:dialing 
+man:agent_man cellphone:dialing 
+men:agent_man checking:dialing 
+man:agent_man cellphones:dialing 
+men:agent_man phones:item_telephone 
+man:agent_man cell:dialing 
+clocks:item_clock 
+clock:item_clock room:place_room 
+clocks:item_clock 
+clocks:item_clock 
+clocks:item_clock 
+scissors:component_wire 
+and:tool_tool scissors:component_wire 
+scissors:component_wire 
+scissors:component_wire 
+number:assembling scissors:component_wire 
+with:agent_person and:place_room piece:item_knife 
+scissors:item_knife 
+and:place_room scissors:item_knife 
+of:sharpening 
+displaying:place_room scissors:item_knife 
+scissors:tool_pen 
+man:agent_man paper:tool_pen 
+shirt:agent_man scissors:tool_pen 
+person:agent_man paper:tool_pen 
+paper:tool_pen 
+
+
+
+
+
+people:agent_people bike:vehicle_motorcycle down:place_street 
+riding:riding of:agent_people motor:vehicle_motorcycle 
+Group:agent_people on:riding street:place_street 
+car:place_street people:agent_people scooter:vehicle_motorcycle 
+people:agent_people ride:riding moped:vehicle_motorcycle street:place_street 
+dog:restrained_outdoors 
+lap:restraining 
+holding:agent_woman black:restraining 
+lap:restraining 
+lap:restraining 
+stove:agent_stove window:glowing 
+stove:agent_stove colored:glowing 
+stove:agent_stove 
+has:glowing stove:agent_stove 
+with:glowing stove:agent_stove 
+woman:agent_woman 
+woman:agent_woman kitchen:place_kitchen 
+person:agent_woman at:boringthing_man kitchen:place_kitchen 
+woman:agent_woman cooking:place_kitchen 
+woman:agent_woman kitchen:place_kitchen 
+alongside:place_outdoors of:overflowing 
+barge:agent_rubbish filled:overflowing river:source_sewer 
+of:overflowing river:source_sewer 
+red:agent_rubbish next:overflowing 
+barge:agent_rubbish next:overflowing area:place_outdoors 
+toilet:source_toilet bathroom:place_bathroom 
+bathroom:place_bathroom toilet:source_toilet ,:overflowing 
+bathroom:place_bathroom need:agent_water toilet:source_toilet 
+toilet:source_toilet 
+toilet:source_toilet sink:place_bathroom 
+while:miming teeth:agent_mime looking:place_room 
+looking:place_room holding:miming 
+with:place_room 
+looking:place_room his:agent_mime 
+looking:place_room teeth:agent_mime 
+Bathroom:bathing 
+tub:place_bathtub 
+tub:place_bathtub 
+clean:bathing bathroom:place_bathtub 
+tub:place_bathtub 
+hairdryer:bathing 
+bath:bathing sink:place_bathroom 
+bathroom:place_bathroom 
+vanity:bathing 
+bathroom:place_bathroom 
+person:agent_man motor:vehicle_motorcycle street:place_street 
+man:agent_man city:place_street motorcycle:vehicle_motorcycle 
+person:agent_man motorcycle:vehicle_motorcycle street:place_street 
+man:agent_man motorcycle:vehicle_motorcycle 
+driving:place_street through:riding 
+bathroom:place_bathroom odd:agent_water toilet:source_toilet 
+bathroom:place_bathroom toilet:source_toilet 
+toilet:source_toilet 
+bathroom:place_bathroom walls:source_toilet 
+bathroom:place_bathroom toilet:source_toilet and:overflowing 
+women:agent_woman pair:heaveditem_bag 
+woman:agent_woman giant:heaveditem_bag 
+woman:agent_woman with:place_room giant:heaveditem_bag 
+lady:agent_woman pair:heaveditem_bag 
+woman:agent_woman giant:heaveditem_bag 
+motorcycle:vehicle_motorcycle with:agent_person 
+motorcycle:vehicle_motorcycle being:agent_person car:place_road 
+motorcycle:vehicle_motorcycle road:place_road 
+motorcycle:vehicle_motorcycle 
+blue:agent_person motorcycle:vehicle_motorcycle vehicle:place_road 
+toilet:agent_toilet bathroom:place_bathroom 
+restroom:agent_toilet ,:glowing 
+restroom:agent_toilet view:glowing 
+bathroom:place_bathroom 
+bathroom:place_bathroom with:glowing toilet:agent_toilet 
+toilet:place_bathroom trash:agent_garbage 
+dirty:agent_garbage bathroom:place_bathroom 
+toilet:place_bathroom trash:agent_garbage 
+toilet:place_bathroom trash:agent_garbage 
+toilet:place_bathroom trash:agent_garbage 
+motorcycle:vehicle_motorcycle 
+riding:riding bike:vehicle_motorcycle 
+open:agent_person 
+person:agent_person riding:riding bike:vehicle_motorcycle 
+page:agent_person motor:vehicle_motorcycle 
+motorcycle:vehicle_motorcycle road:place_road 
+motorcycle:vehicle_motorcycle is:agent_person 
+motorcycle:vehicle_motorcycle road:place_road 
+motorcycle:vehicle_motorcycle road:place_road 
+motorcycle:vehicle_motorcycle bottom:agent_person 
+motorcycles:agent_motorcycle by:place_outdoors 
+motorcycle:agent_motorcycle some:place_outdoors 
+motorcycles:agent_motorcycle the:place_outdoors 
+bikers:agent_motorcycle near:crashing 
+motorcycles:agent_motorcycle 
+Row:item_motorcycle 
+motorcycles:item_motorcycle 
+Few:place_parking motorcycles:item_motorcycle 
+motorcycles:item_motorcycle 
+motorcycles:item_motorcycle 
+This:agent_person motorcycle:vehicle_motorcycle side:place_road 
+motorcycle:vehicle_motorcycle with:agent_person lot:place_road 
+motorcycle:vehicle_motorcycle road:place_road 
+motorcycle:vehicle_motorcycle with:agent_person 
+motorcycle:vehicle_motorcycle 
+plane:agent_airplane tarmac:ground_runway 
+airplane:agent_airplane 
+World:agent_airplane taxiing:ground_runway 
+plane:agent_airplane 
+airplane:agent_airplane 
+plane:agent_airplane runway:ground_runway airport:place_airport 
+plane:agent_airplane runway:ground_runway 
+airplane:agent_airplane runway:ground_runway airport:place_airport 
+airliner:agent_airplane runway:ground_runway 
+plane:agent_airplane runway:ground_runway 
+runway:ground_runway 
+propeller:agent_airplane runway:ground_runway 
+plane:agent_airplane runway:ground_runway 
+airport:place_airport runway:ground_runway 
+propellers:agent_airplane 
+runway:ground_runway airport:place_airport 
+airliner:agent_jet runway:ground_runway 
+airplane:taxiing 
+jet:agent_jet runway:ground_runway airport:place_airport 
+commercial:agent_jet runway:ground_runway airport:place_airport 
+jetliner:agent_jet sky:place_sky 
+sky:place_sky 
+ANA:agent_jet flies:soaring sky:place_sky 
+ANA:agent_jet flying:soaring 
+air:place_sky 
+
+
+
+
+
+leaves:container_park 
+leaves:container_park 
+leaves:container_park 
+leaves:container_park ground:place_outdoors 
+,:rotting leaves:container_park 
+street:place_street bus:turning 
+decker:turning street:place_street 
+cars:turneditem_car street:place_street 
+deckered:turning street:place_street 
+STREET:place_street BUS:turning CARS:turneditem_car 
+parked:turning 
+buses:turning 
+buses:turning 
+buses:turning 
+transit:turning street:place_street 
+bus:turneditem_bus street:place_street 
+bus:turneditem_bus street:place_street 
+bus:turneditem_bus street:place_street 
+city:place_street bus:turneditem_bus 
+bus:turneditem_bus street:place_street 
+along:place_pier tree:brancher_tree 
+bench:brancher_tree 
+body:place_pier park:brancher_tree underneath:branching 
+bench:brancher_tree bridge:place_pier 
+bench:brancher_tree body:place_pier 
+bench:agent_bench the:place_mountain 
+bench:agent_bench mountains:place_mountain 
+bench:agent_bench mountainous:place_mountain 
+bench:agent_bench mountain:place_mountain 
+bench:agent_bench 
+the:place_outdoors middle:glowing 
+The:glowing rusting:place_outdoors 
+city:agent_light 
+this:glowing 
+
+articulated:item_bus Europe:place_street 
+man:agent_man bus:item_bus 
+man:agent_man bus:item_bus 
+man:agent_man bus:item_bus 
+bus:item_bus old:driving man:agent_man 
+street:place_street decker:turneditem_bus 
+decker:turneditem_bus 
+decker:turneditem_bus street:place_street 
+bus:turneditem_bus city:place_street 
+decker:turneditem_bus 
+mountain:place_mountain goats:agent_goat 
+mountain:place_mountain goats:agent_goat 
+goats:agent_goat mountain:place_mountain 
+Rams:target_goat mountain:place_mountain 
+rams:target_goat mountains:place_mountain 
+bus:turneditem_bus street:place_street 
+city:place_street bus:turneditem_bus 
+bus:turneditem_bus traffic:place_street 
+curb:turneditem_bus 
+bus:turneditem_bus street:place_street 
+flamingos:agent_flamingo next:place_outdoors 
+flamingos:agent_flamingo 
+flamingos:agent_flamingo 
+flamingos:agent_flamingo 
+flamingos:agent_flamingo 
+window:agent_light next:place_inside 
+window:agent_light 
+window:agent_light 
+next:place_inside light:agent_light 
+window:agent_light with:glowing 
+detour:brancher_road under:place_outdoors 
+sign:brancher_road 
+an:place_outdoors detour:brancher_road 
+sign:brancher_road 
+detour:brancher_road 
+train:agent_train yard:place_outdoors 
+tracks:agent_train 
+steam:agent_train 
+locomotive:agent_train 
+locomotive:agent_train from:place_outdoors 
+
+
+
+
+
+the:place_outdoors 
+front:urinating 
+standing:urinating 
+
+Two:urinating 
+head:agentpart_neck 
+cat:agent_cat head:agentpart_neck and:place_room 
+cat:agent_cat camera:item_head 
+cat:agent_cat eyes:item_head 
+cat:agent_cat head:agentpart_neck 
+and:place_room kittens:food_milk pot:container_bowl 
+kittens:food_milk pot:container_bowl 
+and:place_room cats:agent_cat bowl:container_bowl 
+kittens:food_milk curled:lapping bowl:container_bowl 
+kittens:food_milk curled:lapping pot:container_bowl 
+motor:chasee_motorcycle cow:agent_cow 
+motorcycle:chasee_motorcycle road:place_road 
+scooter:chasee_motorcycle road:place_road 
+walking:chasing road:place_road 
+motorcycle:chasee_motorcycle road:place_road 
+cat:agent_cat dresser:item_chair 
+cat:agent_cat dresser:item_chair 
+cat:agent_cat dresser:item_chair 
+cat:agent_cat dresser:item_chair 
+cat:agent_cat dresser:item_chair 
+old:agent_car if:place_outdoors 
+shown:rotting dirt:place_outdoors lot:agent_car 
+old:agent_car ,:rotting 
+vintage:agent_car 
+old:agent_car up:rotting yard:place_outdoors 
+accident:agent_car freeway:place_road 
+accident:agent_car 
+accident:agent_car 
+road:place_road car:agent_car 
+side:place_road 
+man:agent_man and:place_room tie:saluting 
+man:agent_man wearing:saluting 
+man:agent_man finger:saluting 
+man:agent_man 
+man:agent_man and:place_room tie:saluting 
+man:agent_man tie:laughing 
+smiling:laughing man:agent_man 
+man:agent_man tie:laughing 
+man:agent_man tie:laughing 
+at:place_inside man:agent_man 
+spraying:tool_hose 
+man:agent_man spraying:tool_hose 
+elephant:coagent_elephant 
+man:agent_man spraying:tool_hose 
+elephant:coagent_elephant while:agent_man 
+laptop:item_laptop 
+laptop:item_laptop floor:place_room 
+laptop:item_laptop legs:agent_person 
+laptop:item_laptop that:agent_person 
+laptop:item_laptop case:displaying 
+child:agent_family umbrellas:shelter_tent 
+umbrella:shelter_tent child:agent_family 
+umbrellas:shelter_tent 
+umbrellas:shelter_tent 
+umbrella:shelter_tent child:agent_family 
+
+
+
+
+
+bear:agent_dog sits:resting ground:goal_land 
+laying:resting ground:goal_land out:agent_dog 
+bear:agent_dog sleeps:resting dirt:goal_land 
+brown:agent_dog sleepy:resting 
+brown:agent_dog laying:resting 
+bear:agent_bear sitting:sitting rusty:place_outdoors 
+bear:agent_bear sits:sitting near:place_outdoors 
+bear:agent_bear on:sitting some:place_outdoors 
+bear:agent_bear sitting:sitting near:place_outdoors 
+bear:agent_bear sits:sitting 
+bears:agent_bear trees:target_prey 
+bears:agent_bear habitat:prowling 
+bears:agent_bear woods:prowling 
+bears:agent_bear 
+bears:agent_bear through:prowling 
+frisbee:caughtitem_Frisbee 
+frisbee:caughtitem_Frisbee 
+frisbee:caughtitem_Frisbee 
+wearing:agent_man Frisbee:caughtitem_Frisbee 
+frisbee:caughtitem_Frisbee 
+zebra:agent_zebra each:nuzzling 
+zebras:agent_zebra 
+zebra:agent_zebra each:nuzzling 
+zebras:agent_zebra together:nuzzling 
+zebras:agent_zebra 
+zebra:agent_zebra standing:standing grass:place_field 
+zebra:agent_zebra field:place_field 
+zebra:agent_zebra grass:place_field 
+zebra:agent_zebra in:standing grass:place_field 
+Zebra:agent_zebra field:place_field agitated:standing 
+horse:agent_horse buggy:carting beach:place_beach 
+horse:agent_horse carriage:carting beach:place_beach 
+beach:place_beach two-wheeled:agent_horse cart:tool_cart pulled:item_man 
+horse:agent_horse pulling:carting beach:place_beach 
+man:item_man beach:place_beach horse:agent_horse 
+people:agent_people horses:vehicle_horse trail:place_mountain 
+people:agent_people horses:vehicle_horse 
+people:agent_people horses:vehicle_horse down:place_mountain 
+Group:agent_people horseback:vehicle_horse snow:place_mountain 
+people:agent_people horseback:vehicle_horse mountains:place_mountain 
+horse:destination_horse a:tool_hand 
+horse:destination_horse of:loading a:tool_hand vendor:item_food 
+horse:destination_horse to:tool_hand while:agent_man 
+an:loading outdoor:place_outdoors a:tool_hand horse:destination_horse 
+of:loading a:tool_hand horse:destination_horse 
+person:agent_woman back:riding horse:vehicle_horse 
+woman:agent_woman in:place_field equestrian:vehicle_horse 
+woman:agent_woman equestrian:vehicle_horse field:place_field 
+horse:vehicle_horse field:place_field 
+lady:agent_woman in:place_field horse:vehicle_horse 
+apples:agent_apple 
+apples:agent_apple 
+apples:agent_apple 
+Apples:agent_apple 
+apples:agent_apple 
+banana:agent_banana tree:place_tree 
+tree:place_tree bananas:agent_banana 
+vine:place_tree bananas:agent_banana 
+bunch:agent_banana growing:place_tree 
+banana:agent_banana tree:place_tree 
+vegetables:agent_food 
+vegetables:agent_food 
+vegetables:agent_food 
+on:rotting table:container_plate 
+meat:agent_food 
+skiing:skiing 
+skier:agent_skier 
+skis:skiing 
+ski:skiing jumper:agent_skier 
+snow:place_snow skis:skiing 
+man:agent_man rail:place_stairs skateboard:vehicle_skateboard 
+man:agent_man skating:skating stairs:place_stairs 
+man:agent_man skating:skating stair:place_stairs 
+skating:skating stairs:place_stairs 
+man:agent_man skateboard:vehicle_skateboard stairs:place_stairs 
+man:agent_man skateboard:vehicle_skateboard 
+skateboarder:vehicle_skateboard 
+MAN:agent_man DOING:vehicle_skateboard 
+man:agent_man skateboard:vehicle_skateboard 
+man:agent_man skateboarding:vehicle_skateboard 
+people:agent_people near:place_pier 
+people:agent_people sitting:waiting benches:place_pier 
+people:agent_people near:place_pier 
+people:agent_people front:waiting water:place_pier 
+People:agent_people along:place_pier sidewalk:waiting 
+bowl:container_bowl 
+broccoli:item_broccoli table:place_table 
+plate:place_table broccoli:item_broccoli 
+bowl:container_bowl 
+Broccoli:item_broccoli bowl:container_bowl table:place_table 
+person:agent_man skate:vehicle_skateboard 
+man:agent_man lane:place_road skateboard:vehicle_skateboard 
+skate:vehicle_skateboard the:place_road 
+man:agent_man skateboard:vehicle_skateboard down:place_road 
+man:agent_man skateboard:vehicle_skateboard road:place_road 
+skateboarder:place_ramp 
+skateboarding:vehicle_skateboard ramp:place_ramp 
+ramp:place_ramp 
+ramp:place_ramp 
+skateboard:vehicle_skateboard ramp:place_ramp 
+ramp:place_ramp skateboard:vehicle_skateboard 
+wearing:agent_woman skateboard:vehicle_skateboard ramp:place_ramp 
+skateboard:vehicle_skateboard 
+skateboard:vehicle_skateboard ramp:place_ramp 
+skateboard:vehicle_skateboard 
+group:agent_people snow:place_snow 
+skis:skiing snow:place_snow 
+ski:skiing 
+snow:place_snow skis:skiing 
+are:agent_people snow:place_snow 
+wrapper:agent_loaf 
+wrapper:agent_loaf 
+sandwich:agent_loaf table:place_table 
+table:place_table sandwich:agent_loaf 
+wrapper:agent_loaf table:place_table 
+man:agent_man skateboard:vehicle_skateboard down:place_road 
+man:agent_man skateboard:vehicle_skateboard road:place_road 
+man:agent_man skateboards:vehicle_skateboard down:place_road incline:skating 
+MAN:agent_man SKATE:vehicle_skateboard 
+man:agent_man skateboard:vehicle_skateboard down:place_road 
+Pizza:food_pizza restaurant:place_restaurant 
+pizza:food_pizza restaurant:place_restaurant 
+Pizza:food_pizza of:agent_people restaurant:place_restaurant 
+pizza:food_pizza restaurant:place_restaurant people:agent_people 
+pizza:food_pizza restaurant:place_restaurant 
+sandwich:agent_bread meat:place_plate 
+wrapper:agent_bread eaten:place_plate 
+sandwich:agent_bread 
+beef:place_plate sandwich:agent_bread 
+meat:place_plate sandwich:agent_bread 
+sprinkles:agent_cupcake 
+doughnuts:agent_cupcake 
+plate:place_table donuts:agent_cupcake 
+plate:place_table doughnuts:agent_cupcake 
+donuts:agent_cupcake plate:place_table 
+laptop:agent_laptop that:glowing 
+laptop:agent_laptop 
+laptop:agent_laptop that:glowing 
+laptop:agent_laptop with:glowing 
+laptop:agent_laptop blue:glowing 
+office:place_room well:displaying open:item_laptop 
+laptop:item_laptop office:place_room 
+office:place_room laptop:item_laptop 
+room:place_room desk:item_laptop 
+laptop:item_laptop 
+book:item_book 
+book:item_book 
+book:item_book colorful:agent_person 
+book:item_book 
+paperback:reading 
+bed:place_bed it:agent_person 
+bed:place_bed it:agent_person 
+messed:sleeping bed:place_bed 
+bed:place_bed it:agent_person 
+bed:place_bed it:agent_person 
+waves:agent_surfer ocean:place_ocean 
+Surfers:place_ocean waves:agent_surfer 
+ocean:place_ocean waves:agent_surfer 
+wave:tool_surfboard 
+waves:agent_surfer 
+bedroom:place_bed with:agent_person 
+unmade:place_bed 
+that:agent_person on:sleeping 
+bedroom:place_bed that:agent_person 
+unmade:place_bed 
+pizza:food_pizza kitchen:place_kitchen 
+kitchen:place_kitchen pizza:food_pizza 
+person:agent_woman pizza:food_pizza kitchen:place_kitchen 
+kitchen:place_kitchen pizza:food_pizza 
+Person:agent_woman pizza:food_pizza 
+pizza:agent_pizza bacon:place_plate 
+pizza:agent_pizza topped:place_plate 
+pizza:agent_pizza plate:place_plate 
+pizza:agent_pizza 
+pizza:agent_pizza white:place_plate surface:spoiling 
+little:agent_baby bed:place_bed 
+bed:place_bed stuffed:item_plaything 
+bed:place_bed 
+child:agent_baby bed:place_bed 
+little:agent_baby bed:place_bed stuffed:item_plaything 
+laptop:item_laptop 
+unit:place_room electronics:item_laptop 
+computer:item_laptop 
+tv:place_room laptop:item_laptop 
+computers:item_laptop 
+man:agent_man tennis:place_tennis court:skill_tennis 
+man:agent_man tennis:place_tennis 
+tennis:place_tennis court:skill_tennis his:agent_man 
+tennis:place_tennis court:skill_tennis 
+serve:tool_tennis court:skill_tennis 
+cook:baking pizza:food_pizza kitchen:place_kitchen 
+Man:agent_man out:heatsource_oven pizza:food_pizza 
+man:agent_man placing:heatsource_oven pizza:food_pizza 
+man:agent_man serving:baking pizza:food_pizza customer:foodcontainer_cookie 
+man:agent_man serving:baking customer:foodcontainer_cookie 
+pizza:agent_pizza plate:place_table 
+pepperoni:agent_pizza 
+Pizza:agent_pizza cup:place_table 
+pizza:agent_pizza table:place_table 
+pepperoni:agent_pizza table:place_table 
+controller:bottom_block 
+remote:bottom_block 
+instructions:bottom_block 
+instructions:bottom_block 
+instructions:bottom_block 
+bedroom:glowing 
+furniture:glowing 
+with:glowing 
+room:glowing furnitures:agent_light 
+furniture:glowing 
+wii:place_living 
+standing:miming living:place_living 
+video:miming games:place_living 
+video:miming 
+video:miming 
+woman:agent_woman holding:place_place game:victim_man controller:bothering 
+man:victim_man woman:agent_woman 
+man:victim_man woman:agent_woman 
+man:victim_man woman:agent_woman 
+women:agent_woman man:victim_man 
+Man:agent_man Wii:installing 
+man:agent_man with:destination_floor remote:installing at:tool_hand 
+man:agent_man Wii:installing Bowling:component_computer small:destination_floor 
+man:agent_man Wii:installing 
+man:agent_man and:destination_floor Wii:installing 
+filled:place_kitchen hardwood:brancher_column 
+house:branching be:place_kitchen 
+View:branching kitchen:place_kitchen living:brancher_column 
+kitchen:place_kitchen hardwood:brancher_column 
+living:brancher_column modern:place_kitchen 
+waves:agent_surfer ocean:place_ocean 
+surfboard:agent_surfer 
+person:agent_surfer sail:place_ocean 
+strong:agent_surfer 
+ocean:place_ocean wet:agent_surfer 
+girl:agent_woman kite:releasing 
+fly:releasing park:place_park 
+kites:releasing park:place_park 
+park:place_park kite:releasing 
+kite:releasing 
+boat:tool_boat water:place_river 
+river:place_river 
+river:place_river 
+water:place_river 
+boat:tool_boat water:place_river 
+pepperoni:agent_pizza 
+pizza:agent_pizza sprinkled:rotting 
+pizza:agent_pizza shaker:place_table 
+pepperoni:agent_pizza 
+close:rotting pizza:agent_pizza plate:container_plate 
+boy:agent_male eating:container_mouth 
+young:agent_male up:cramming 
+child:agent_male 
+kid:agent_male eating:container_mouth some:place_outdoors 
+boy:agent_male eats:container_mouth from:place_outdoors 
+woman:agent_woman bounces:items_tennis 
+woman:agent_woman racket:items_tennis 
+woman:agent_woman racket:items_tennis 
+green:place_outdoors bounces:items_tennis her:agent_woman 
+person:agent_woman racket:items_tennis 
+kitchen:place_kitchen meal:served_female 
+kitchen:place_kitchen food:serving 
+girl:agent_female of:serving pizza:item_pizza 
+pizza:item_pizza at:served_female kitchen:place_kitchen 
+food:serving kitchen:place_kitchen 
+pictures:tool_camera homescreen:performer_giraffe 
+COLLECTION:performer_giraffe 
+computer:performer_giraffe camera:tool_camera sitting:place_living 
+computer:performer_giraffe sitting:place_living a:tool_camera 
+camera:tool_camera computer:performer_giraffe 
+his:agent_man phone:dialing 
+men:agent_man 
+man:agent_man phone:dialing 
+man:agent_man mobile:dialing 
+male:agent_man cellphone:dialing 
+ritz:agent_pumpkin 
+attached:agent_pumpkin 
+yellow:agent_pumpkin 
+attached:agent_pumpkin it:spoiling 
+attached:agent_pumpkin 
