@@ -274,6 +274,7 @@ def get_data(args):
                     if replace_num == 1:
                         sent = [clean_number(w) for w in sent]
                     if (len(sent) > seqlength and apply_length_filter == 1) or len(sent) < minseqlength:
+                        dropped += 1
                         continue
                     if include_boundary == 1:
                         sent = [indexer.BOS] + sent + [indexer.EOS]
