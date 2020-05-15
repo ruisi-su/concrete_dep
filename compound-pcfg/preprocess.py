@@ -196,8 +196,8 @@ def get_data(args):
         dropped = 0
         sent_id = 0
         other_data = []
-        start_idx = int(start_idx)
-        end_idx = int(end_idx)
+        # start_idx = int(start_idx)
+        # end_idx = int(end_idx)
         dep_idx = 0
         if (conllfile != ''):
             deptrees = utils.read_conll(open(conllfile, 'r'))
