@@ -248,10 +248,8 @@ def get_data(args):
                     print("{}/{} sentences processed".format(sent_id, num_sents))
         else:
             with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align:
-                for (tree,  frame, alignment) in zip(txt, fr, align):
+                for (tree, frame, alignment) in zip(txt, fr, align):
                     frame = frame.strip().split('\t')
-                    if frame[0] == '':
-                        continue
                     tree = tree.strip()
                     action = get_actions(tree)
                     tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
@@ -282,7 +280,10 @@ def get_data(args):
                     sent_pad = pad(sent, newseqlength, indexer.PAD)
                     sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
                     sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
-                    invalids = gen_phrases(sent_str, frame, alignment)
+                    if frame[0] == '':
+                        invalids = []
+                    else:
+                        invalids = gen_phrases(sent_str, frame, alignment)
 
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
                     other_data_item = [sent_str, invalids, tags, action,
@@ -290,6 +291,7 @@ def get_data(args):
 
                     if (conllfile != ''):
                         other_data_item.append(heads)
+
                     other_data.append(other_data_item)
                     assert(2*(len(sent)- 2) - 1 == len(binary_actions))
                     assert(sum(binary_actions) + 1 == len(sent) - 2)
