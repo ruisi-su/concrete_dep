@@ -434,8 +434,10 @@ def eval(data, model):
       total_kl  += kl.sum().item()
       num_sents += batch_size
       num_words += batch_size*(length +1) # we implicitly generate </s> so we explicitly count it
+      
+      if args.evaluate_dep:
+          assert(len(argmax_spans) == len(heads))
 
-      assert(len(argmax_spans) == len(heads))
       for b in range(batch_size):
         span_b = [(a[0], a[1]) for a in argmax_spans[b] if a[0] != a[1]] #ignore labels
         span_b_set = set(span_b[:-1])
