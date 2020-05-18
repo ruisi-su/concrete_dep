@@ -173,6 +173,9 @@ def get_data(args):
             # else:
             tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
             assert(len(tags) == len(sent))
+
+            if lowercase == 1:
+                sent = sent_lower
             if replace_num == 1:
                 sent = [clean_number(w) for w in sent]
             if (len(sent) > seqlength and apply_length_filter == 1) or len(sent) < minseqlength:
