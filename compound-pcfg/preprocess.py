@@ -382,19 +382,19 @@ def get_data(args):
                          args.outputfile + "test.pkl", num_sents_test,
                          max_sent_l, args.shuffle, args.include_boundary, 0,
                          args.multimodal, args.testframe, args.testalign,
-                         conllfile="/home/ruisis/MultimodalGI/data/coco/mscoco/dep/test.conllx" if args.dep else "")
+                         conllfile="data/dep/test.conllx" if args.dep else "")
     max_sent_l = convert(args.valfile, args.lowercase, args.replace_num,
                          args.batchsize, valid_seqlength, args.minseqlength,
                          args.outputfile + "val.pkl", num_sents_valid,
                          max_sent_l, args.shuffle, args.include_boundary, 0,
                          args.multimodal, args.valframe, args.valalign,
-                         conllfile="/home/ruisis/MultimodalGI/data/coco/mscoco/dep/val.conllx" if args.dep else "")
+                         conllfile="data/dep/dev.conllx" if args.dep else "")
     max_sent_l = convert(args.trainfile, args.lowercase, args.replace_num,
                          args.batchsize, args.seqlength,  args.minseqlength,
                          args.outputfile + "train.pkl", num_sents_train,
                          max_sent_l, args.shuffle, args.include_boundary, 1,
                          args.multimodal, args.trainframe, args.trainalign,
-                         conllfile="/home/ruisis/MultimodalGI/data/coco/mscoco/dep/train.conllx" if args.dep else "")
+                         conllfile="" if args.dep else "")
     print("Max sent length (before dropping): {}".format(max_sent_l))
 
 def main(arguments):
