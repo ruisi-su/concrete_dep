@@ -58,7 +58,8 @@ def invalid_phrases(frame, phrase, invalids, sent, alignment):
             #if len(intersect) == 0  and pred_ind <= end_idx:
             #    print('indx equal')
             #    invalids.add((start_idx, end_idx, pred_ind))
-            if (head != predicate) or (head_ind <= end_idx) or (head not in argument):
+            if (head != predicate) or (head_ind <= end_idx):
+            #if (head != predicate) or (head_ind <= end_idx) or (head not in argument):
                 invalids.add(phrase_range)
     return invalids
 

@@ -10,7 +10,8 @@ import numpy as np
 # dict_path = 'data/preprocessed/ptb.dict'
 
 glove_dim=300
-vico_path = './glove_300_vico_select_200/'
+vico_path = './glove_300_vico_linear_100/'
+#vico_path = './glove_300_vico_select_200/'
 f = h5py.File(vico_path + 'visual_word_vecs.h5py','r')
 word_to_idx = json.load(open(vico_path + 'visual_word_vecs_idx.json','r'))
 visual_words = json.load(open(vico_path + 'visual_words.json','r'))
