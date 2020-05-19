@@ -21,4 +21,4 @@
 *.DS_Store
 runs/*
 events.out.tfevents*
-glove_300_vico_select_200/*
+glove_300_vico_*/*

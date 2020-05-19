@@ -60,3 +60,8 @@ data/coco/cleaning_scripts/
 data/coco/VGNSL_split/train_caps.original.txt
 compound-pcfg/script/*
 compound-pcfg/data/*
+data/coco/train_ids_*.txt
+data/coco/train_log_*.txt
+data/coco/cc_coco_old/
+data/coco/VGNSL_split/*_trees.txt
+data/coco/VGNSL_ids/
