@@ -106,6 +106,31 @@ def get_tags_tokens_lowercase(line):
         output_lowercase.append(terminal_split[1].lower())
     return [output_tags, output_tokens, output_lowercase]
 
+# for the VGNSL ground truth spans comparison
+def extract_spans(tree):
+    answer = list()
+    stack = list()
+    items = tree.split()
+    curr_index = 0
+    for item in items:
+        if item == ')':
+            pos = -1
+            right_margin = stack[pos][1]
+            left_margin = None
+            while stack[pos] != '(':
+                left_margin = stack[pos][0]
+                pos -= 1
+            assert left_margin is not None
+            assert right_margin is not None
+            stack = stack[:pos] + [(left_margin, right_margin)]
+            answer.append((left_margin, right_margin))
+        elif item == '(':
+            stack.append(item)
+        else:
+            stack.append((curr_index, curr_index))
+            curr_index += 1
+    return answer
+
 def get_nonterminal(line, start_idx):
     assert line[start_idx] == '(' # make sure it's an open bracket
     output = []
@@ -159,18 +184,12 @@ def clean_number(w):
 
 def get_data(args):
     indexer = Indexer(["<pad>","<unk>","<s>","</s>"])
-    print('mult' + str(args.multimodal))
     def make_vocab(textfile, seqlength, minseqlength, lowercase, replace_num,
-                   train=1, apply_length_filter=1, multimodal=0):
+                   train=1, apply_length_filter=1):
         num_sents = 0
         max_seqlength = 0
         for tree in open(textfile, 'r'):
             tree.strip()
-            # if multimodal==1:
-            #     sent = tree.split(' ')
-            #     if lowercase == 1:
-            #         sent = tree.lower().strip().split(' ')
-            # else:
             tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
             assert(len(tags) == len(sent))
 
@@ -185,12 +204,11 @@ def get_data(args):
             if train == 1:
                 for word in sent:
                     indexer.vocab[word] += 1
-        print('vocab ' + str(max_seqlength))
         return num_sents, max_seqlength
 
     def convert(textfile, lowercase, replace_num,
                 batchsize, seqlength, minseqlength, outfile, num_sents, max_sent_l=0,
-                shuffle=0, include_boundary=1, apply_length_filter=1, multimodal=0, framefile='', alignfile='', conllfile=""):
+                shuffle=0, include_boundary=1, apply_length_filter=1, framefile='', alignfile='', conllfile="", test=False):
         newseqlength = seqlength
         if include_boundary == 1:
             newseqlength += 2 #add 2 for EOS and BOS
@@ -199,63 +217,18 @@ def get_data(args):
         dropped = 0
         sent_id = 0
         other_data = []
-        # start_idx = int(start_idx)
-        # end_idx = int(end_idx)
+
         dep_idx = 0
         if (conllfile != ''):
             deptrees = utils.read_conll(open(conllfile, 'r'))
             dep_list = list(deptrees)
-        if multimodal == 0:
-            for tree in open(textfile, 'r'):
-                tree = tree.strip()
-                action = get_actions(tree)
-                tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
-                if (conllfile != ''):
-                    try:
-                        words, heads = dep_list[dep_idx]
-                    except IndexError:
-                        continue
-                    if words != sent:
-                        print("Data mismatch, got {} in {}, but {} in {}.".format(sent, textfile, words, conllfile))
-                        continue
-                    else:
-                        dep_idx += 1
-                    assert(len(words) == len(heads))
-                    assert(len(heads) == len(sent))
-                assert(len(tags) == len(sent))
-                if lowercase == 1:
-                    sent = sent_lower
-                sent_str = " ".join(sent)
-                if replace_num == 1:
-                    sent = [clean_number(w) for w in sent]
-                if (len(sent) > seqlength and apply_length_filter == 1) or len(sent) < minseqlength:
-                    continue
-                if include_boundary == 1:
-                    sent = [indexer.BOS] + sent + [indexer.EOS]
-                max_sent_l = max(len(sent), max_sent_l)
-                sent_pad = pad(sent, newseqlength, indexer.PAD)
-                sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
-                sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
-                span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
-                other_data_item = [sent_str, tags, action,
-                    binary_actions, nonbinary_actions, span, tree]
-
-                if (conllfile != ''):
-                    other_data_item.append(heads)
-                other_data.append(other_data_item)
-                assert(2*(len(sent)- 2) - 1 == len(binary_actions))
-                assert(sum(binary_actions) + 1 == len(sent) - 2)
-                sent_id += 1
-                if sent_id % 100000 == 0:
-                    print("{}/{} sentences processed".format(sent_id, num_sents))
-        else:
-            with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align:
-                for (tree, frame, alignment) in zip(txt, fr, align):
+        if test:
+            with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align, open('../data/coco/VGNSL_split/test_ground-truth.txt', 'r') as truth:
+                for (tree, frame, alignment, ground_truth) in zip(txt, fr, align, truth):
                     frame = frame.strip().split('\t')
                     tree = tree.strip()
-                    action = get_actions(tree)
-                    tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
+                    ground_truth = ground_truth.strip()
                     if (conllfile != ''):
                         try:
                             words, heads = dep_list[dep_idx]
@@ -268,7 +241,11 @@ def get_data(args):
                             dep_idx += 1
                         assert(len(words) == len(heads))
                         assert(len(heads) == len(sent))
+
+                    action = get_actions(tree)
+                    tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
                     assert(len(tags) == len(sent))
+
                     if lowercase == 1:
                         sent = sent_lower
                     sent_str = " ".join(sent)
@@ -289,6 +266,8 @@ def get_data(args):
                         invalids = gen_phrases(sent_str, frame, alignment)
 
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
+
+                    span = extract_spans(ground_truth)
                     other_data_item = [sent_str, invalids, tags, action,
                         binary_actions, nonbinary_actions, span, tree]
 
@@ -301,6 +280,62 @@ def get_data(args):
                     sent_id += 1
                     if sent_id % 100000 == 0:
                         print("{}/{} sentences processed".format(sent_id, num_sents))
+        else:
+            with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align:
+                for (tree, frame, alignment) in zip(txt, fr, align):
+                    frame = frame.strip().split('\t')
+                    tree = tree.strip()
+                    if (conllfile != ''):
+                        try:
+                            words, heads = dep_list[dep_idx]
+                        except IndexError:
+                            continue
+                        if words != sent:
+                            print("Data mismatch, got {} in {}, but {} in {}.".format(sent, textfile, words, conllfile))
+                            continue
+                        else:
+                            dep_idx += 1
+                        assert(len(words) == len(heads))
+                        assert(len(heads) == len(sent))
+
+                    action = get_actions(tree)
+                    tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
+                    assert(len(tags) == len(sent))
+
+                    if lowercase == 1:
+                        sent = sent_lower
+                    sent_str = " ".join(sent)
+                    if replace_num == 1:
+                        sent = [clean_number(w) for w in sent]
+                    if (len(sent) > seqlength and apply_length_filter == 1) or len(sent) < minseqlength:
+                        dropped += 1
+                        continue
+                    if include_boundary == 1:
+                        sent = [indexer.BOS] + sent + [indexer.EOS]
+                    max_sent_l = max(len(sent), max_sent_l)
+                    sent_pad = pad(sent, newseqlength, indexer.PAD)
+                    sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
+                    sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
+                    if frame[0] == '':
+                        invalids = []
+                    else:
+                        invalids = gen_phrases(sent_str, frame, alignment)
+
+                    span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
+
+                    other_data_item = [sent_str, invalids, tags, action,
+                        binary_actions, nonbinary_actions, span, tree]
+
+                    if (conllfile != ''):
+                        other_data_item.append(heads)
+
+                    other_data.append(other_data_item)
+                    assert(2*(len(sent)- 2) - 1 == len(binary_actions))
+                    assert(sum(binary_actions) + 1 == len(sent) - 2)
+                    sent_id += 1
+                    if sent_id % 100000 == 0:
+                        print("{}/{} sentences processed".format(sent_id, num_sents))
+
 
         print(sent_id, num_sents)
         if shuffle == 1:
@@ -355,14 +390,11 @@ def get_data(args):
         return max_sent_l
 
     print("First pass through data to get vocab...")
-    num_sents_train, train_seqlength = make_vocab(args.trainfile, args.seqlength, args.minseqlength,
-                                                  args.lowercase, args.replace_num, 1, 1, args.multimodal)
+    num_sents_train, train_seqlength = make_vocab(args.trainfile, args.seqlength, args.minseqlength,args.lowercase, args.replace_num, 1, 1)
     print("Number of sentences in training: {}".format(num_sents_train))
-    num_sents_valid, valid_seqlength = make_vocab(args.valfile, args.seqlength, args.minseqlength,
-                                                  args.lowercase, args.replace_num, 0, 0, args.multimodal)
+    num_sents_valid, valid_seqlength = make_vocab(args.valfile, args.seqlength, args.minseqlength,args.lowercase, args.replace_num, 0, 0)
     print("Number of sentences in valid: {}".format(num_sents_valid))
-    num_sents_test, test_seqlength = make_vocab(args.testfile, args.seqlength, args.minseqlength,
-                                                args.lowercase, args.replace_num, 0, 0, args.multimodal)
+    num_sents_test, test_seqlength = make_vocab(args.testfile, args.seqlength, args.minseqlength,args.lowercase, args.replace_num, 0, 0)
     print("Number of sentences in test: {}".format(num_sents_test))
 
     if args.vocabminfreq >= 0:
@@ -381,20 +413,15 @@ def get_data(args):
                          args.batchsize, test_seqlength, args.minseqlength,
                          args.outputfile + "test.pkl", num_sents_test,
                          max_sent_l, args.shuffle, args.include_boundary, 0,
-                         args.multimodal, args.testframe, args.testalign,
-                         conllfile="data/dep/test.conllx" if args.dep else "")
+                         args.testframe, args.testalign, conllfile="data/dep/test.conllx" if args.dep else "", test=True)
     max_sent_l = convert(args.valfile, args.lowercase, args.replace_num,
                          args.batchsize, valid_seqlength, args.minseqlength,
                          args.outputfile + "val.pkl", num_sents_valid,
-                         max_sent_l, args.shuffle, args.include_boundary, 0,
-                         args.multimodal, args.valframe, args.valalign,
-                         conllfile="data/dep/dev.conllx" if args.dep else "")
+                         max_sent_l, args.shuffle, args.include_boundary, 0, args.valframe, args.valalign, conllfile="data/dep/dev.conllx" if args.dep else "")
     max_sent_l = convert(args.trainfile, args.lowercase, args.replace_num,
                          args.batchsize, args.seqlength,  args.minseqlength,
                          args.outputfile + "train.pkl", num_sents_train,
-                         max_sent_l, args.shuffle, args.include_boundary, 1,
-                         args.multimodal, args.trainframe, args.trainalign,
-                         conllfile="" if args.dep else "")
+                         max_sent_l, args.shuffle, args.include_boundary, 1, args.trainframe, args.trainalign, conllfile="" if args.dep else "")
     print("Max sent length (before dropping): {}".format(max_sent_l))
 
 def main(arguments):
@@ -437,7 +464,7 @@ def main(arguments):
     parser.add_argument('--dep', action="store_true", help="Including dependency parse files. Their "
                                                            "names should be same as data file, but extensions "
                                                            "are .conllx.")
-    parser.add_argument('--multimodal', help='Using multimodal', type = int, default = 0)
+    # parser.add_argument('--multimodal', help='Using multimodal', type = int, default = 0)
     parser.add_argument('--trainframe', help='File for train frame results', type = str, default='')
     parser.add_argument('--valframe', help='File for val frame results', type = str, default='')
     parser.add_argument('--testframe', help='File for test frame results', type = str, default='')

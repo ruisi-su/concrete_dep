@@ -224,7 +224,7 @@ def main(args):
       gold_tree = None
       gold_actions = []
       gold_spans = []
-      gold_binary_trees = []
+      # gold_binary_trees = []
       if args.multimodal==1:
         invalid_spans = []
       else:
@@ -235,7 +235,7 @@ def main(args):
         for j in range(batch_size):
             gold_actions.append(other_data[j][4])
             gold_spans.append(other_data[j][6])
-            gold_binary_trees.append(other_data[j][7])
+            # gold_binary_trees.append(other_data[j][7])
             if args.multimodal==1:
                 invalid_spans.append(other_data[j][1])
 
@@ -245,7 +245,7 @@ def main(args):
           for j in range(batch_size):
               gold_actions.append(other_data[j][4])
               gold_spans.append(other_data[j][6])
-              gold_binary_trees.append(other_data[j][7])
+              # gold_binary_trees.append(other_data[j][7])
               if args.multimodal==1:
                   invalid_spans.append(other_data[j][1])
               heads.append(other_data[j][8])
@@ -389,7 +389,7 @@ def eval(data, model):
     for i in range(len(data)):
       gold_actions = []
       gold_spans = []
-      gold_binary_trees = []
+      # gold_binary_trees = []
       if args.multimodal==1:
         invalid_spans = []
       else:
@@ -400,7 +400,7 @@ def eval(data, model):
         for j in range(batch_size):
             gold_actions.append(other_data[j][4])
             gold_spans.append(other_data[j][6])
-            gold_binary_trees.append(other_data[j][7])
+            # gold_binary_trees.append(other_data[j][7])
             if args.multimodal==1:
                 invalid_spans.append(other_data[j][1])
 
@@ -410,7 +410,7 @@ def eval(data, model):
           for j in range(batch_size):
               gold_actions.append(other_data[j][4])
               gold_spans.append(other_data[j][6])
-              gold_binary_trees.append(other_data[j][7])
+              # gold_binary_trees.append(other_data[j][7])
               if args.multimodal==1:
                   invalid_spans.append(other_data[j][1])
               heads.append(other_data[j][8])
@@ -434,7 +434,7 @@ def eval(data, model):
       total_kl  += kl.sum().item()
       num_sents += batch_size
       num_words += batch_size*(length +1) # we implicitly generate </s> so we explicitly count it
-      
+
       if args.evaluate_dep:
           assert(len(argmax_spans) == len(heads))
 
