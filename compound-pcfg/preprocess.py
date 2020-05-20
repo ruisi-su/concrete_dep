@@ -285,6 +285,10 @@ def get_data(args):
                 for (tree, frame, alignment) in zip(txt, fr, align):
                     frame = frame.strip().split('\t')
                     tree = tree.strip()
+
+                    action = get_actions(tree)
+                    tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
+                    assert(len(tags) == len(sent))
                     if (conllfile != ''):
                         try:
                             words, heads = dep_list[dep_idx]
@@ -297,10 +301,6 @@ def get_data(args):
                             dep_idx += 1
                         assert(len(words) == len(heads))
                         assert(len(heads) == len(sent))
-
-                    action = get_actions(tree)
-                    tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
-                    assert(len(tags) == len(sent))
 
                     if lowercase == 1:
                         sent = sent_lower
