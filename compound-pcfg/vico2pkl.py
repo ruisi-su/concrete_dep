@@ -42,5 +42,6 @@ with open(sys.argv[1], 'r') as dict:
             word_embed = np.average(embed_mat, 0)
             word_embed_glove = word_embed[:glove_dim] # GloVe component
             word_embed_vico = word_embed[glove_dim:]  # ViCo component
-        w2v[word] = word_embed_vico
+        # w2v[word] = word_embed_vico
+        w2v[word] = word_embed
 pickle.dump(w2v, open(sys.argv[2], "wb"))
