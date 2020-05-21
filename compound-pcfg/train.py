@@ -434,49 +434,51 @@ def eval(data, model):
       num_sents += batch_size
       num_words += batch_size*(length +1) # we implicitly generate </s> so we explicitly count it
 
-      if args.evaluate_dep:
+
+
+      for b in range(batch_size):
+        span_b = [(a[0], a[1]) for a in argmax_spans[b] if a[0] != a[1]] #ignore labels
+        span_b_set = set(span_b[:-1])
+        gold_b_set = set(gold_spans[b][:-1])
+        # gold_b_set = set(gold_spans[:-1])
+
+        # print(span_b_set)
+        # print(gold_b_set)
+        tp, fp, fn = get_stats(span_b_set, gold_b_set)
+
+        corpus_f1[0] += tp
+        corpus_f1[1] += fp
+        corpus_f1[2] += fn
+
+        # sent-level F1 is based on L83-89 from https://github.com/yikangshen/PRPN/test_phrase_grammar.py
+        model_out = span_b_set
+        std_out = gold_b_set
+        overlap = model_out.intersection(std_out)
+        prec = float(len(overlap)) / (len(model_out) + 1e-8)
+        reca = float(len(overlap)) / (len(std_out) + 1e-8)
+        if len(std_out) == 0:
+          reca = 1.
+          if len(model_out) == 0:
+            prec = 1.
+        f1 = 2 * prec * reca / (prec + reca + 1e-8)
+        sent_f1.append(f1)
+
+        if args.evaluate_dep:
           assert(len(argmax_spans) == len(heads))
+          update_dep_stats(argmax_spans[b], heads[b], dep_stats)
 
-      if args.out_file != '':
-        with open(args.out_file, 'a') as output:
-          for b in range(batch_size):
-            span_b = [(a[0], a[1]) for a in argmax_spans[b] if a[0] != a[1]] #ignore labels
-            span_b_set = set(span_b[:-1])
-            gold_b_set = set(gold_spans[b][:-1])
-            # gold_b_set = set(gold_spans[:-1])
+        if args.out_file != '':
+          with open(args.out_file, 'a') as output:
+            tree = get_tree_from_binary_matrix(binary_matrix[b], length)
+            action = get_actions(tree)
+            sent_str = [data.idx2word[word_idx] for word_idx in list(sents[b].cpu().numpy())]
+            pred_tree_log = "Pred Tree: %s" % get_tagged_parse(get_tree(action, sent_str), argmax_spans[b])
+            #pred_tree_log = "Pred Tree: %s" % get_tree(action, sent_str)
+            gold_tree_log = "Gold Tree: %s" % get_tree(gold_actions[b], sent_str)
+            count += 1
+            output.write(pred_tree_log + '\t' + gold_tree_log + '\n')
 
-            # print(span_b_set)
-            # print(gold_b_set)
-            tp, fp, fn = get_stats(span_b_set, gold_b_set)
-
-            corpus_f1[0] += tp
-            corpus_f1[1] += fp
-            corpus_f1[2] += fn
-
-            # sent-level F1 is based on L83-89 from https://github.com/yikangshen/PRPN/test_phrase_grammar.py
-            model_out = span_b_set
-            std_out = gold_b_set
-            overlap = model_out.intersection(std_out)
-            prec = float(len(overlap)) / (len(model_out) + 1e-8)
-            reca = float(len(overlap)) / (len(std_out) + 1e-8)
-            if len(std_out) == 0:
-              reca = 1.
-              if len(model_out) == 0:
-                prec = 1.
-            f1 = 2 * prec * reca / (prec + reca + 1e-8)
-            sent_f1.append(f1)
-
-            if(args.evaluate_dep):
-              tree = get_tree_from_binary_matrix(binary_matrix[b], length)
-              action = get_actions(tree)
-              sent_str = [data.idx2word[word_idx] for word_idx in list(sents[b].cpu().numpy())]
-              update_dep_stats(argmax_spans[b], heads[b], dep_stats)
-                    pred_tree_log = "Pred Tree: %s" % get_tagged_parse(get_tree(action, sent_str), argmax_spans[b])
-                    #pred_tree_log = "Pred Tree: %s" % get_tree(action, sent_str)
-                    gold_tree_log = "Gold Tree: %s" % get_tree(gold_actions[b], sent_str)
-                    count += 1
-                    output.write(pred_tree_log + '\t' + gold_tree_log + '\n')
-
+  print('count is ' + str(count))
   tp, fp, fn = corpus_f1
   prec = tp / (tp + fp)
   recall = tp / (tp + fn)
