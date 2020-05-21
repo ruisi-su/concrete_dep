@@ -478,14 +478,8 @@ def eval(data, model):
           # printing some results
           if args.out_file != '':
             with open(args.out_file, 'a') as output:
-              for b in range(batch_size):
-                tree = get_tree_from_binary_matrix(binary_matrix[b], length)
-                action = get_actions(tree)
-                sent_str = [data.idx2word[word_idx] for word_idx in list(sents[b].cpu().numpy())]
-                if(args.evaluate_dep):
-                  pred_tree_log = "Pred Tree: %s" % get_tagged_parse(get_tree(action, sent_str), argmax_spans[b])
-                else:
-                  pred_tree_log = "Pred Tree: %s" % get_tree(action, sent_str)
+                pred_tree_log = "Pred Tree: %s" % get_tagged_parse(get_tree(action, sent_str), argmax_spans[b])
+                #pred_tree_log = "Pred Tree: %s" % get_tree(action, sent_str)
                 gold_tree_log = "Gold Tree: %s" % get_tree(gold_actions[b], sent_str)
                 count += 1
                 output.write(pred_tree_log + '\t' + gold_tree_log + '\n')
