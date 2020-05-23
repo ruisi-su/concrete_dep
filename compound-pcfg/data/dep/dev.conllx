@@ -512,21 +512,17 @@
 11	feet	_	NNS	NNS	_	9	pobj	_	_
 12	.	_	.	.	_	8	punct	_	_
 
-1	A	_	DT	DT	_	7	det	_	_
-2	lovely	_	JJ	JJ	_	7	amod	_	_
-3	,	_	,	,	_	7	punct	_	_
-4	vintage	_	NN	NN	_	7	dep	_	_
-5	-	_	:	:	_	7	punct	_	_
-6	styled	_	JJ	JJ	_	7	amod	_	_
-7	bathroom	_	NN	NN	_	0	root	_	_
-8	with	_	IN	IN	_	7	prep	_	_
-9	a	_	DT	DT	_	14	det	_	_
-10	great	_	JJ	JJ	_	14	amod	_	_
-11	claw	_	JJ	JJ	_	14	amod	_	_
-12	-	_	JJ	JJ	_	14	amod	_	_
-13	footed	_	JJ	JJ	_	14	amod	_	_
-14	tub	_	NN	NN	_	8	pobj	_	_
-15	.	_	.	.	_	7	punct	_	_
+1	A	_	DT	DT	_	5	det	_	_
+2	lovely	_	JJ	JJ	_	5	amod	_	_
+3	,	_	,	,	_	5	punct	_	_
+4	vintage-styled	_	JJ	JJ	_	5	amod	_	_
+5	bathroom	_	NN	NN	_	0	root	_	_
+6	with	_	IN	IN	_	5	prep	_	_
+7	a	_	DT	DT	_	10	det	_	_
+8	great	_	JJ	JJ	_	10	amod	_	_
+9	claw-footed	_	JJ	JJ	_	10	amod	_	_
+10	tub	_	NN	NN	_	6	pobj	_	_
+11	.	_	.	.	_	5	punct	_	_
 
 1	Bathroom	_	NN	NN	_	0	root	_	_
 2	with	_	IN	IN	_	1	prep	_	_
@@ -1891,12 +1887,10 @@
 5	cars	_	NNS	NNS	_	2	conj	_	_
 6	driving	_	VBG	VBG	_	2	partmod	_	_
 7	down	_	IN	IN	_	6	prep	_	_
-8	a	_	DT	DT	_	12	det	_	_
-9	multi	_	JJ	JJ	_	12	amod	_	_
-10	-	_	:	:	_	12	punct	_	_
-11	laned	_	JJ	JJ	_	12	amod	_	_
-12	street	_	NN	NN	_	7	pobj	_	_
-13	.	_	.	.	_	2	punct	_	_
+8	a	_	DT	DT	_	10	det	_	_
+9	multi-laned	_	JJ	JJ	_	10	amod	_	_
+10	street	_	NN	NN	_	7	pobj	_	_
+11	.	_	.	.	_	2	punct	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	white	_	JJ	JJ	_	3	amod	_	_
@@ -3570,12 +3564,10 @@
 9	a	_	DT	DT	_	10	det	_	_
 10	tree	_	NN	NN	_	8	pobj	_	_
 11	in	_	IN	IN	_	4	prep	_	_
-12	his	_	PRP$	PRP$	_	16	poss	_	_
-13	park	_	NN	NN	_	16	nn	_	_
-14	-	_	:	:	_	16	punct	_	_
-15	like	_	JJ	JJ	_	16	amod	_	_
-16	enclosure	_	NN	NN	_	11	pobj	_	_
-17	.	_	.	.	_	4	punct	_	_
+12	his	_	PRP$	PRP$	_	14	poss	_	_
+13	park-like	_	JJ	JJ	_	14	amod	_	_
+14	enclosure	_	NN	NN	_	11	pobj	_	_
+15	.	_	.	.	_	4	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	elephant	_	NN	NN	_	0	root	_	_
@@ -5655,10 +5647,17 @@
 25	.	_	.	.	_	7	punct	_	_
 
 1	Three	_	CD	CD	_	2	num	_	_
-2	men	_	NN	NN	_	4	nsubj	_	_
+2	men	_	NNS	NNS	_	4	nsubj	_	_
 3	are	_	VBP	VBP	_	4	aux	_	_
 4	playing	_	VBG	VBG	_	0	root	_	_
 5	soccer	_	NN	NN	_	4	dobj	_	_
+6	one	_	CD	CD	_	7	num	_	_
+7	man	_	NN	NN	_	8	nsubj	_	_
+8	is	_	VBZ	VBZ	_	4	dep	_	_
+9	on	_	IN	IN	_	8	prep	_	_
+10	the	_	DT	DT	_	11	det	_	_
+11	grown	_	NN	NN	_	9	pobj	_	_
+12	.	_	.	.	_	4	punct	_	_
 
 1	Three	_	CD	CD	_	2	num	_	_
 2	men	_	NNS	NNS	_	0	root	_	_
@@ -6286,12 +6285,10 @@
 5	a	_	DT	DT	_	6	det	_	_
 6	sail	_	NN	NN	_	4	dobj	_	_
 7	in	_	IN	IN	_	3	prep	_	_
-8	open	_	JJ	JJ	_	12	amod	_	_
-9	snow	_	NN	NN	_	12	nn	_	_
-10	-	_	RB	RB	_	12	advmod	_	_
-11	packed	_	JJ	JJ	_	12	amod	_	_
-12	field	_	NN	NN	_	7	pobj	_	_
-13	.	_	.	.	_	3	punct	_	_
+8	open	_	JJ	JJ	_	10	amod	_	_
+9	snow-packed	_	JJ	JJ	_	10	amod	_	_
+10	field	_	NN	NN	_	7	pobj	_	_
+11	.	_	.	.	_	3	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	man	_	NN	NN	_	0	root	_	_
@@ -7180,18 +7177,16 @@
 8	down	_	RP	RP	_	7	prt	_	_
 9	.	_	.	.	_	3	punct	_	_
 
-1	A	_	DT	DT	_	4	det	_	_
-2	close	_	JJ	JJ	_	4	amod	_	_
-3	-	_	:	:	_	4	punct	_	_
-4	up	_	NN	NN	_	0	root	_	_
-5	of	_	IN	IN	_	4	prep	_	_
-6	a	_	DT	DT	_	8	det	_	_
-7	little	_	JJ	JJ	_	8	amod	_	_
-8	girl	_	NN	NN	_	5	pobj	_	_
-9	eating	_	VBG	VBG	_	8	partmod	_	_
-10	a	_	DT	DT	_	11	det	_	_
-11	sandwich	_	NN	NN	_	9	dobj	_	_
-12	.	_	.	.	_	4	punct	_	_
+1	A	_	DT	DT	_	2	det	_	_
+2	close-up	_	NN	NN	_	0	root	_	_
+3	of	_	IN	IN	_	2	prep	_	_
+4	a	_	DT	DT	_	6	det	_	_
+5	little	_	JJ	JJ	_	6	amod	_	_
+6	girl	_	NN	NN	_	3	pobj	_	_
+7	eating	_	VBG	VBG	_	6	partmod	_	_
+8	a	_	DT	DT	_	9	det	_	_
+9	sandwich	_	NN	NN	_	7	dobj	_	_
+10	.	_	.	.	_	2	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	girl	_	NN	NN	_	4	nsubj	_	_
@@ -7934,22 +7929,20 @@
 7	and	_	CC	CC	_	6	cc	_	_
 8	yellow	_	JJ	JJ	_	6	conj	_	_
 
-1	A	_	DT	DT	_	8	det	_	_
-2	blue	_	JJ	JJ	_	8	amod	_	_
+1	A	_	DT	DT	_	7	det	_	_
+2	blue	_	JJ	JJ	_	7	amod	_	_
 3	and	_	CC	CC	_	2	cc	_	_
 4	yellow	_	JJ	JJ	_	2	conj	_	_
-5	`	_	``	``	_	8	punct	_	_
-6	`	_	``	``	_	8	punct	_	_
-7	book	_	NN	NN	_	8	nn	_	_
-8	bus	_	NN	NN	_	12	nsubjpass	_	_
-9	`	_	''	''	_	8	punct	_	_
-10	`	_	''	''	_	8	punct	_	_
-11	is	_	VBZ	VBZ	_	12	auxpass	_	_
-12	parked	_	VBN	VBN	_	0	root	_	_
-13	on	_	IN	IN	_	12	prep	_	_
-14	the	_	DT	DT	_	15	det	_	_
-15	street	_	NN	NN	_	13	pobj	_	_
-16	.	_	.	.	_	12	punct	_	_
+5	``	_	``	``	_	7	punct	_	_
+6	book	_	NN	NN	_	7	nn	_	_
+7	bus	_	NN	NN	_	10	nsubjpass	_	_
+8	``	_	''	''	_	7	punct	_	_
+9	is	_	VBZ	VBZ	_	10	auxpass	_	_
+10	parked	_	VBN	VBN	_	0	root	_	_
+11	on	_	IN	IN	_	10	prep	_	_
+12	the	_	DT	DT	_	13	det	_	_
+13	street	_	NN	NN	_	11	pobj	_	_
+14	.	_	.	.	_	10	punct	_	_
 
 1	The	_	DT	DT	_	2	det	_	_
 2	bus	_	NN	NN	_	3	nsubj	_	_
@@ -8638,18 +8631,16 @@
 11	building	_	NN	NN	_	9	pobj	_	_
 12	.	_	.	.	_	3	punct	_	_
 
-1	A	_	DT	DT	_	5	det	_	_
-2	Lufthansa	_	NNP	NNP	_	5	nn	_	_
-3	jumbo	_	JJ	JJ	_	5	amod	_	_
-4	-	_	:	:	_	5	punct	_	_
-5	jet	_	NN	NN	_	0	root	_	_
-6	at	_	IN	IN	_	5	prep	_	_
-7	some	_	DT	DT	_	8	det	_	_
-8	airport	_	NN	NN	_	6	pobj	_	_
-9	during	_	IN	IN	_	5	prep	_	_
-10	the	_	DT	DT	_	11	det	_	_
-11	day	_	NN	NN	_	9	pobj	_	_
-12	.	_	.	.	_	5	punct	_	_
+1	A	_	DT	DT	_	3	det	_	_
+2	Lufthansa	_	NNP	NNP	_	3	nn	_	_
+3	jumbo-jet	_	NN	NN	_	0	root	_	_
+4	at	_	IN	IN	_	3	prep	_	_
+5	some	_	DT	DT	_	6	det	_	_
+6	airport	_	NN	NN	_	4	pobj	_	_
+7	during	_	IN	IN	_	3	prep	_	_
+8	the	_	DT	DT	_	9	det	_	_
+9	day	_	NN	NN	_	7	pobj	_	_
+10	.	_	.	.	_	3	punct	_	_
 
 1	The	_	DT	DT	_	2	det	_	_
 2	plane	_	NN	NN	_	4	nsubj	_	_
@@ -8992,13 +8983,11 @@
 2	woman	_	NN	NN	_	0	root	_	_
 3	showing	_	VBG	VBG	_	2	partmod	_	_
 4	off	_	RP	RP	_	3	prt	_	_
-5	her	_	PRP$	PRP$	_	10	poss	_	_
-6	pink	_	JJ	JJ	_	10	amod	_	_
-7	pointy	_	NN	NN	_	10	nn	_	_
-8	-	_	:	:	_	10	punct	_	_
-9	toed	_	JJ	JJ	_	10	amod	_	_
-10	heels	_	NNS	NNS	_	3	dobj	_	_
-11	.	_	.	.	_	2	punct	_	_
+5	her	_	PRP$	PRP$	_	8	poss	_	_
+6	pink	_	JJ	JJ	_	8	amod	_	_
+7	pointy-toed	_	JJ	JJ	_	8	amod	_	_
+8	heels	_	NNS	NNS	_	3	dobj	_	_
+9	.	_	.	.	_	2	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	woman	_	NN	NN	_	0	root	_	_
@@ -9374,11 +9363,9 @@
 3	city	_	NN	NN	_	4	nn	_	_
 4	street	_	NN	NN	_	5	nsubj	_	_
 5	has	_	VBZ	VBZ	_	0	root	_	_
-6	one	_	CD	CD	_	9	num	_	_
-7	-	_	:	:	_	9	punct	_	_
-8	way	_	JJ	JJ	_	9	amod	_	_
-9	traffic	_	NN	NN	_	5	dobj	_	_
-10	only	_	RB	RB	_	9	advmod	_	_
+6	one-way	_	JJ	JJ	_	7	amod	_	_
+7	traffic	_	NN	NN	_	5	dobj	_	_
+8	only	_	RB	RB	_	7	advmod	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	red	_	JJ	JJ	_	3	amod	_	_
@@ -9431,17 +9418,15 @@
 8	in	_	IN	IN	_	4	prep	_	_
 9	England	_	NNP	NNP	_	8	pobj	_	_
 
-1	A	_	DT	DT	_	5	det	_	_
-2	double	_	NN	NN	_	5	nn	_	_
-3	-	_	:	:	_	5	punct	_	_
-4	decked	_	JJ	JJ	_	5	amod	_	_
-5	bus	_	NN	NN	_	7	nsubj	_	_
-6	is	_	VBZ	VBZ	_	7	aux	_	_
-7	driving	_	VBG	VBG	_	0	root	_	_
-8	along	_	IN	IN	_	7	prep	_	_
-9	the	_	DT	DT	_	10	det	_	_
-10	highway	_	NN	NN	_	8	pobj	_	_
-11	.	_	.	.	_	7	punct	_	_
+1	A	_	DT	DT	_	3	det	_	_
+2	double-decked	_	JJ	JJ	_	3	amod	_	_
+3	bus	_	NN	NN	_	5	nsubj	_	_
+4	is	_	VBZ	VBZ	_	5	aux	_	_
+5	driving	_	VBG	VBG	_	0	root	_	_
+6	along	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	highway	_	NN	NN	_	6	pobj	_	_
+9	.	_	.	.	_	5	punct	_	_
 
 1	A	_	DT	DT	_	4	det	_	_
 2	double	_	JJ	JJ	_	4	amod	_	_
@@ -9753,20 +9738,18 @@
 10	open	_	JJ	JJ	_	11	amod	_	_
 11	umbrella	_	NN	NN	_	8	pobj	_	_
 
-1	A	_	DT	DT	_	4	det	_	_
-2	close	_	JJ	JJ	_	4	amod	_	_
-3	-	_	:	:	_	4	punct	_	_
-4	up	_	NN	NN	_	0	root	_	_
-5	of	_	IN	IN	_	4	prep	_	_
-6	a	_	DT	DT	_	7	det	_	_
-7	bird	_	NN	NN	_	5	pobj	_	_
-8	on	_	IN	IN	_	4	prep	_	_
-9	the	_	DT	DT	_	10	det	_	_
-10	edge	_	NN	NN	_	8	pobj	_	_
-11	of	_	IN	IN	_	10	prep	_	_
-12	a	_	DT	DT	_	13	det	_	_
-13	roof	_	NN	NN	_	11	pobj	_	_
-14	.	_	.	.	_	4	punct	_	_
+1	A	_	DT	DT	_	2	det	_	_
+2	close-up	_	NN	NN	_	0	root	_	_
+3	of	_	IN	IN	_	2	prep	_	_
+4	a	_	DT	DT	_	5	det	_	_
+5	bird	_	NN	NN	_	3	pobj	_	_
+6	on	_	IN	IN	_	2	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	edge	_	NN	NN	_	6	pobj	_	_
+9	of	_	IN	IN	_	8	prep	_	_
+10	a	_	DT	DT	_	11	det	_	_
+11	roof	_	NN	NN	_	9	pobj	_	_
+12	.	_	.	.	_	2	punct	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	water	_	NN	NN	_	3	nn	_	_
@@ -9928,14 +9911,12 @@
 6	light	_	NN	NN	_	3	pobj	_	_
 7	that	_	WDT	WDT	_	8	nsubj	_	_
 8	says	_	VBZ	VBZ	_	2	rcmod	_	_
-9	`	_	``	``	_	8	punct	_	_
-10	`	_	``	``	_	8	punct	_	_
-11	US-1	_	NNP	NNP	_	13	nn	_	_
-12	Whitehead	_	NNP	NNP	_	13	nn	_	_
-13	St	_	NNP	NNP	_	8	dobj	_	_
-14	.	_	.	.	_	8	punct	_	_
-15	`	_	''	''	_	8	punct	_	_
-16	`	_	''	''	_	8	punct	_	_
+9	``	_	``	``	_	8	punct	_	_
+10	US-1	_	CD	CD	_	12	num	_	_
+11	Whitehead	_	NNP	NNP	_	12	nn	_	_
+12	St	_	NNP	NNP	_	8	dobj	_	_
+13	.	_	.	.	_	2	punct	_	_
+14	``	_	''	''	_	2	punct	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	highway	_	NN	NN	_	3	nn	_	_
@@ -11262,12 +11243,10 @@
 7	baby	_	NN	NN	_	8	nn	_	_
 8	bear	_	NN	NN	_	0	root	_	_
 9	under	_	IN	IN	_	8	prep	_	_
-10	a	_	DT	DT	_	14	det	_	_
-11	beige	_	NN	NN	_	14	amod	_	_
-12	/	_	CC	CC	_	11	cc	_	_
-13	white	_	JJ	JJ	_	11	conj	_	_
-14	comforter	_	NN	NN	_	9	pobj	_	_
-15	.	_	.	.	_	8	punct	_	_
+10	a	_	DT	DT	_	12	det	_	_
+11	beige/white	_	JJ	JJ	_	12	amod	_	_
+12	comforter	_	NN	NN	_	9	pobj	_	_
+13	.	_	.	.	_	8	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	trio	_	NN	NN	_	6	nsubj	_	_
@@ -11594,7 +11573,13 @@
 13	man	_	NN	NN	_	15	nsubj	_	_
 14	is	_	VBZ	VBZ	_	15	aux	_	_
 15	checking	_	VBG	VBG	_	7	advcl	_	_
-16	fo	_	FW	FW	_	15	dobj	_	_
+16	fo	_	NNP	NNP	_	17	nsubj	_	_
+17	make	_	VB	VB	_	15	ccomp	_	_
+18	sure	_	JJ	JJ	_	17	acomp	_	_
+19	she	_	PRP	PRP	_	21	nsubj	_	_
+20	's	_	VBZ	VBZ	_	21	cop	_	_
+21	safe	_	JJ	JJ	_	18	ccomp	_	_
+22	.	_	.	.	_	7	punct	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	brown	_	JJ	JJ	_	3	amod	_	_
@@ -11875,8 +11860,7 @@
 5	eating	_	VBG	VBG	_	2	partmod	_	_
 6	a	_	DT	DT	_	7	det	_	_
 7	banana	_	NN	NN	_	5	dobj	_	_
-8	together	_	RB	RB	_	5	advmod	_	_
-9	..	_	:	:	_	2	punct	_	_
+8	together..	_	:	:	_	2	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	woman	_	NN	NN	_	6	nsubj	_	_
@@ -12503,8 +12487,11 @@
 1	TWO	_	CD	CD	_	2	num	_	_
 2	LADIES	_	NNS	NNS	_	3	nsubj	_	_
 3	ARE	_	VBP	VBP	_	0	root	_	_
-4	OUT	_	IN	IN	_	3	advmod	_	_
+4	OUT	_	RB	RB	_	3	advmod	_	_
 5	SPENDING	_	VBG	VBG	_	3	xcomp	_	_
+6	THE	_	DT	DT	_	7	det	_	_
+7	DAY	_	NN	NN	_	5	tmod	_	_
+8	SKIING	_	NN	NN	_	5	dep	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	couple	_	NN	NN	_	0	root	_	_
@@ -12636,11 +12623,10 @@
 6	a	_	DT	DT	_	7	det	_	_
 7	sandwich	_	NN	NN	_	5	dobj	_	_
 8	on	_	IN	IN	_	5	prep	_	_
-9	a	_	DT	DT	_	12	det	_	_
-10	grass	_	NN	NN	_	11	dep	_	_
-11	covered	_	VBN	VBN	_	12	amod	_	_
-12	field	_	NN	NN	_	8	pobj	_	_
-13	..	_	.	.	_	4	punct	_	_
+9	a	_	DT	DT	_	10	det	_	_
+10	grass	_	NN	NN	_	8	pobj	_	_
+11	covered	_	VBN	VBN	_	10	amod	_	_
+12	field..	_	.	.	_	4	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	boy	_	NN	NN	_	0	root	_	_
@@ -14360,9 +14346,10 @@
 7	in	_	IN	IN	_	6	prep	_	_
 8	front	_	NN	NN	_	7	pobj	_	_
 9	of	_	IN	IN	_	8	prep	_	_
-10	a	_	DT	DT	_	11	det	_	_
-11	slide	_	NN	NN	_	9	pobj	_	_
-12	out	_	IN	IN	_	11	amod	_	_
+10	a	_	DT	DT	_	13	det	_	_
+11	slide	_	NN	NN	_	13	amod	_	_
+12	out	_	IN	IN	_	11	dep	_	_
+13	glass	_	NN	NN	_	9	pobj	_	_
 
 1	a	_	DT	DT	_	2	det	_	_
 2	woman	_	NN	NN	_	3	nsubj	_	_
@@ -14416,17 +14403,15 @@
 2	makeshift	_	JJ	JJ	_	3	amod	_	_
 3	kitchen	_	NN	NN	_	0	root	_	_
 4	including	_	VBG	VBG	_	3	prep	_	_
-5	a	_	DT	DT	_	8	det	_	_
-6	mini	_	NN	NN	_	8	dep	_	_
-7	-	_	:	:	_	8	punct	_	_
-8	fridge	_	NN	NN	_	4	pobj	_	_
-9	,	_	,	,	_	8	punct	_	_
-10	microwave	_	NN	NN	_	8	conj	_	_
-11	,	_	,	,	_	8	punct	_	_
-12	and	_	CC	CC	_	8	cc	_	_
-13	coffee	_	NN	NN	_	14	nn	_	_
-14	brewer	_	NN	NN	_	8	conj	_	_
-15	.	_	.	.	_	3	punct	_	_
+5	a	_	DT	DT	_	6	det	_	_
+6	mini-fridge	_	NN	NN	_	4	pobj	_	_
+7	,	_	,	,	_	6	punct	_	_
+8	microwave	_	NN	NN	_	6	conj	_	_
+9	,	_	,	,	_	6	punct	_	_
+10	and	_	CC	CC	_	6	cc	_	_
+11	coffee	_	NN	NN	_	12	nn	_	_
+12	brewer	_	NN	NN	_	6	conj	_	_
+13	.	_	.	.	_	3	punct	_	_
 
 1	a	_	DT	DT	_	7	det	_	_
 2	refrigerator	_	NN	NN	_	7	nn	_	_
@@ -15121,12 +15106,10 @@
 8	floor	_	NN	NN	_	5	conj	_	_
 9	,	_	,	,	_	5	punct	_	_
 10	and	_	CC	CC	_	5	cc	_	_
-11	a	_	DT	DT	_	15	det	_	_
-12	see	_	JJ	JJ	_	15	amod	_	_
-13	-	_	:	:	_	15	punct	_	_
-14	through	_	JJ	JJ	_	15	amod	_	_
-15	shower	_	NN	NN	_	5	conj	_	_
-16	.	_	.	.	_	2	punct	_	_
+11	a	_	DT	DT	_	13	det	_	_
+12	see-through	_	JJ	JJ	_	13	amod	_	_
+13	shower	_	NN	NN	_	5	conj	_	_
+14	.	_	.	.	_	2	punct	_	_
 
 1	a	_	DT	DT	_	2	det	_	_
 2	bathroom	_	NN	NN	_	0	root	_	_
@@ -15620,13 +15603,15 @@
 9	motorcycle	_	NN	NN	_	7	pobj	_	_
 
 1	MOTOR	_	NN	NN	_	2	nsubj	_	_
-2	CROSS	_	VB	VB	_	0	root	_	_
+2	CROSS	_	VBP	VBP	_	0	root	_	_
 3	BIKE	_	NN	NN	_	2	dobj	_	_
 4	AND	_	CC	CC	_	3	cc	_	_
 5	RIDER	_	NN	NN	_	3	conj	_	_
 6	IN	_	IN	IN	_	2	prep	_	_
 7	THE	_	DT	DT	_	8	det	_	_
 8	AIR	_	NN	NN	_	6	pobj	_	_
+9	DOING	_	VBG	VBG	_	2	xcomp	_	_
+10	TRICKS	_	NNS	NNS	_	9	dobj	_	_
 
 1	a	_	DT	DT	_	2	det	_	_
 2	man	_	NN	NN	_	0	root	_	_
@@ -16172,15 +16157,13 @@
 5	sign	_	NN	NN	_	0	root	_	_
 6	reading	_	VBG	VBG	_	5	partmod	_	_
 7	,	_	,	,	_	6	punct	_	_
-8	`	_	``	``	_	6	punct	_	_
-9	`	_	``	``	_	6	punct	_	_
-10	M	_	NNP	NNP	_	13	nn	_	_
-11	transit	_	NNP	NNP	_	13	nn	_	_
-12	mall	_	NNP	NNP	_	13	nn	_	_
-13	station	_	NNP	NNP	_	6	dobj	_	_
-14	`	_	''	''	_	6	punct	_	_
-15	`	_	''	''	_	6	punct	_	_
-16	.	_	.	.	_	5	punct	_	_
+8	``	_	``	``	_	6	punct	_	_
+9	M	_	NNP	NNP	_	12	nn	_	_
+10	transit	_	NNP	NNP	_	12	nn	_	_
+11	mall	_	NNP	NNP	_	12	nn	_	_
+12	station	_	NNP	NNP	_	6	dobj	_	_
+13	``	_	''	''	_	6	punct	_	_
+14	.	_	.	.	_	5	punct	_	_
 
 1	A	_	DT	DT	_	5	det	_	_
 2	blue	_	JJ	JJ	_	5	amod	_	_
@@ -16925,19 +16908,17 @@
 13	St	_	NNP	NNP	_	9	conj	_	_
 14	.	_	.	.	_	2	punct	_	_
 
-1	A	_	DT	DT	_	6	det	_	_
-2	rain	_	NN	NN	_	6	nn	_	_
-3	-	_	:	:	_	6	punct	_	_
-4	wet	_	JJ	JJ	_	6	amod	_	_
-5	residential	_	JJ	JJ	_	6	amod	_	_
-6	street	_	NN	NN	_	0	root	_	_
-7	lined	_	VBN	VBN	_	6	partmod	_	_
-8	with	_	IN	IN	_	7	prep	_	_
-9	trees	_	NNS	NNS	_	8	pobj	_	_
-10	and	_	CC	CC	_	9	cc	_	_
-11	old	_	JJ	JJ	_	12	amod	_	_
-12	homes	_	NNS	NNS	_	9	conj	_	_
-13	.	_	.	.	_	6	punct	_	_
+1	A	_	DT	DT	_	4	det	_	_
+2	rain-wet	_	JJ	JJ	_	4	amod	_	_
+3	residential	_	JJ	JJ	_	4	amod	_	_
+4	street	_	NN	NN	_	0	root	_	_
+5	lined	_	VBN	VBN	_	4	partmod	_	_
+6	with	_	IN	IN	_	5	prep	_	_
+7	trees	_	NNS	NNS	_	6	pobj	_	_
+8	and	_	CC	CC	_	7	cc	_	_
+9	old	_	JJ	JJ	_	10	amod	_	_
+10	homes	_	NNS	NNS	_	7	conj	_	_
+11	.	_	.	.	_	4	punct	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	beautiful	_	JJ	JJ	_	3	amod	_	_
@@ -17171,15 +17152,14 @@
 1	A	_	DT	DT	_	2	det	_	_
 2	train	_	NN	NN	_	0	root	_	_
 3	traveling	_	VBG	VBG	_	2	partmod	_	_
-4	through	_	IN	IN	_	3	prep	_	_
+4	through	_	IN	IN	_	3	dep	_	_
 5	a	_	DT	DT	_	7	det	_	_
 6	dark	_	JJ	JJ	_	7	amod	_	_
-7	tunnel	_	NN	NN	_	4	pobj	_	_
-8	next	_	RB	RB	_	7	advmod	_	_
-9	to	_	TO	TO	_	8	prep	_	_
-10	green	_	JJ	JJ	_	11	amod	_	_
-11	brush	_	NN	NN	_	9	pobj	_	_
-12	..	_	.	.	_	2	punct	_	_
+7	tunnel	_	NN	NN	_	3	dobj	_	_
+8	next	_	RB	RB	_	3	advmod	_	_
+9	to	_	TO	TO	_	3	prep	_	_
+10	green	_	JJ	JJ	_	9	pobj	_	_
+11	brush..	_	.	.	_	2	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	train	_	NN	NN	_	4	nsubj	_	_
@@ -17676,12 +17656,10 @@
 3	cat	_	NN	NN	_	4	nsubj	_	_
 4	lays	_	VBZ	VBZ	_	0	root	_	_
 5	of	_	IN	IN	_	4	prep	_	_
-6	a	_	DT	DT	_	10	det	_	_
-7	multi	_	RB	RB	_	10	advmod	_	_
-8	-	_	IN	IN	_	10	amod	_	_
-9	colored	_	JJ	JJ	_	10	amod	_	_
-10	bed	_	NN	NN	_	5	pobj	_	_
-11	spread	_	VBN	VBN	_	10	dep	_	_
+6	a	_	DT	DT	_	8	det	_	_
+7	multi-colored	_	JJ	JJ	_	8	amod	_	_
+8	bed	_	NN	NN	_	5	pobj	_	_
+9	spread	_	VBN	VBN	_	8	dep	_	_
 
 1	Cat	_	NN	NN	_	2	nsubj	_	_
 2	stretching	_	VBG	VBG	_	0	root	_	_
@@ -18204,14 +18182,19 @@
 13	.	_	.	.	_	3	punct	_	_
 
 1	two	_	CD	CD	_	2	num	_	_
-2	rafts	_	NNS	NNS	_	0	root	_	_
+2	rafts	_	NNS	NNS	_	11	nsubj	_	_
 3	with	_	IN	IN	_	2	prep	_	_
 4	people	_	NNS	NNS	_	3	pobj	_	_
 5	with	_	IN	IN	_	4	prep	_	_
 6	life	_	NN	NN	_	7	nn	_	_
 7	vests	_	NNS	NNS	_	5	pobj	_	_
 8	one	_	CD	CD	_	9	num	_	_
-9	boat	_	NN	NN	_	4	dep	_	_
+9	boat	_	NN	NN	_	3	dep	_	_
+10	is	_	VBZ	VBZ	_	11	cop	_	_
+11	red	_	JJ	JJ	_	0	root	_	_
+12	the	_	DT	DT	_	13	det	_	_
+13	other	_	JJ	JJ	_	11	dobj	_	_
+14	white	_	JJ	JJ	_	13	amod	_	_
 
 1	Two	_	CD	CD	_	3	num	_	_
 2	inflatable	_	JJ	JJ	_	3	amod	_	_
@@ -19113,18 +19096,16 @@
 10	plate	_	NN	NN	_	8	pobj	_	_
 11	.	_	.	.	_	3	punct	_	_
 
-1	A	_	DT	DT	_	4	det	_	_
-2	close	_	JJ	JJ	_	4	amod	_	_
-3	-	_	:	:	_	4	punct	_	_
-4	up	_	NN	NN	_	0	root	_	_
-5	of	_	IN	IN	_	4	prep	_	_
-6	a	_	DT	DT	_	7	det	_	_
-7	plate	_	NN	NN	_	5	pobj	_	_
-8	of	_	IN	IN	_	7	prep	_	_
-9	vegetables	_	NNS	NNS	_	8	pobj	_	_
-10	containing	_	VBG	VBG	_	7	partmod	_	_
-11	broccoli	_	NNS	NNS	_	10	dobj	_	_
-12	.	_	.	.	_	4	punct	_	_
+1	A	_	DT	DT	_	2	det	_	_
+2	close-up	_	NN	NN	_	0	root	_	_
+3	of	_	IN	IN	_	2	prep	_	_
+4	a	_	DT	DT	_	5	det	_	_
+5	plate	_	NN	NN	_	3	pobj	_	_
+6	of	_	IN	IN	_	5	prep	_	_
+7	vegetables	_	NNS	NNS	_	6	pobj	_	_
+8	containing	_	VBG	VBG	_	5	partmod	_	_
+9	broccoli	_	NNS	NNS	_	8	dobj	_	_
+10	.	_	.	.	_	2	punct	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	white	_	JJ	JJ	_	3	amod	_	_
@@ -19249,6 +19230,11 @@
 6	of	_	IN	IN	_	5	prep	_	_
 7	a	_	DT	DT	_	8	det	_	_
 8	banana	_	NN	NN	_	6	pobj	_	_
+9	and	_	CC	CC	_	2	cc	_	_
+10	shes	_	VBZ	VBZ	_	11	nsubj	_	_
+11	making	_	VBG	VBG	_	2	conj	_	_
+12	a	_	DT	DT	_	13	det	_	_
+13	face	_	NN	NN	_	11	dobj	_	_
 
 1	There	_	EX	EX	_	2	expl	_	_
 2	is	_	VBZ	VBZ	_	0	root	_	_
@@ -20112,18 +20098,16 @@
 1	A	_	DT	DT	_	2	det	_	_
 2	man	_	NN	NN	_	0	root	_	_
 3	in	_	IN	IN	_	2	prep	_	_
-4	a	_	DT	DT	_	8	det	_	_
-5	white	_	JJ	JJ	_	8	amod	_	_
-6	T	_	NN	NN	_	8	nn	_	_
-7	-	_	NN	NN	_	8	nn	_	_
-8	shirt	_	NN	NN	_	3	pobj	_	_
-9	and	_	CC	CC	_	8	cc	_	_
-10	a	_	DT	DT	_	11	det	_	_
-11	helmet	_	NN	NN	_	8	conj	_	_
-12	riding	_	VBG	VBG	_	2	partmod	_	_
-13	a	_	DT	DT	_	14	det	_	_
-14	skateboard	_	NN	NN	_	12	dobj	_	_
-15	.	_	.	.	_	2	punct	_	_
+4	a	_	DT	DT	_	6	det	_	_
+5	white	_	JJ	JJ	_	6	amod	_	_
+6	T-shirt	_	NN	NN	_	3	pobj	_	_
+7	and	_	CC	CC	_	6	cc	_	_
+8	a	_	DT	DT	_	9	det	_	_
+9	helmet	_	NN	NN	_	6	conj	_	_
+10	riding	_	VBG	VBG	_	2	partmod	_	_
+11	a	_	DT	DT	_	12	det	_	_
+12	skateboard	_	NN	NN	_	10	dobj	_	_
+13	.	_	.	.	_	2	punct	_	_
 
 1	The	_	DT	DT	_	2	det	_	_
 2	person	_	NN	NN	_	7	nsubj	_	_
@@ -21501,22 +21485,38 @@
 2	adorable	_	JJ	JJ	_	4	amod	_	_
 3	little	_	JJ	JJ	_	4	amod	_	_
 4	girl	_	NN	NN	_	0	root	_	_
-5	holding	_	VBG	VBG	_	4	partmod	_	_
+5	holding	_	VBG	VBG	_	4	amod	_	_
 6	a	_	DT	DT	_	7	det	_	_
-7	toothbrush	_	NN	NN	_	5	dobj	_	_
-8	and	_	CC	CC	_	7	cc	_	_
-9	a	_	DT	DT	_	11	det	_	_
-10	Christmas	_	NNP	NNP	_	11	nn	_	_
-11	stocking	_	NN	NN	_	7	conj	_	_
-12	..	_	.	.	_	4	punct	_	_
+7	toothbrush	_	NN	NN	_	4	dep	_	_
+8	and	_	CC	CC	_	4	cc	_	_
+9	a	_	DT	DT	_	10	det	_	_
+10	Christmas	_	NNP	NNP	_	4	conj	_	_
+11	stocking..	_	.	.	_	10	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	person	_	NN	NN	_	3	nsubj	_	_
 3	is	_	VBZ	VBZ	_	0	root	_	_
 4	on	_	IN	IN	_	3	prep	_	_
-5	a	_	DT	DT	_	7	det	_	_
-6	living	_	VBG	VBG	_	7	amod	_	_
-7	room	_	NN	NN	_	4	pobj	_	_
+5	a	_	DT	DT	_	8	det	_	_
+6	living	_	VBG	VBG	_	8	amod	_	_
+7	room	_	NN	NN	_	8	nn	_	_
+8	couch	_	NN	NN	_	4	pobj	_	_
+9	watching	_	VBG	VBG	_	3	xcomp	_	_
+10	TV	_	NN	NN	_	9	dobj	_	_
+11	and	_	CC	CC	_	3	cc	_	_
+12	there	_	EX	EX	_	13	expl	_	_
+13	is	_	VBZ	VBZ	_	3	conj	_	_
+14	a	_	DT	DT	_	17	det	_	_
+15	stuffed	_	JJ	JJ	_	17	amod	_	_
+16	panda	_	NN	NN	_	17	nn	_	_
+17	bear	_	NN	NN	_	13	nsubj	_	_
+18	and	_	CC	CC	_	17	cc	_	_
+19	a	_	DT	DT	_	20	det	_	_
+20	purse	_	NN	NN	_	17	conj	_	_
+21	on	_	IN	IN	_	13	prep	_	_
+22	the	_	DT	DT	_	23	det	_	_
+23	table	_	NN	NN	_	21	pobj	_	_
+24	.	_	.	.	_	3	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	child	_	NN	NN	_	3	nsubj	_	_
@@ -22312,32 +22312,28 @@
 2	little	_	JJ	JJ	_	3	amod	_	_
 3	girl	_	NN	NN	_	4	nsubj	_	_
 4	uses	_	VBZ	VBZ	_	0	root	_	_
-5	a	_	DT	DT	_	9	det	_	_
-6	child	_	NN	NN	_	9	nn	_	_
-7	-	_	:	:	_	9	punct	_	_
-8	sized	_	JJ	JJ	_	9	amod	_	_
-9	laptop	_	NN	NN	_	4	dobj	_	_
-10	in	_	IN	IN	_	4	prep	_	_
-11	her	_	PRP$	PRP$	_	13	poss	_	_
-12	living	_	NN	NN	_	13	nn	_	_
-13	room	_	NN	NN	_	10	pobj	_	_
-14	.	_	.	.	_	4	punct	_	_
+5	a	_	DT	DT	_	7	det	_	_
+6	child-sized	_	JJ	JJ	_	7	amod	_	_
+7	laptop	_	NN	NN	_	4	dobj	_	_
+8	in	_	IN	IN	_	4	prep	_	_
+9	her	_	PRP$	PRP$	_	11	poss	_	_
+10	living	_	NN	NN	_	11	nn	_	_
+11	room	_	NN	NN	_	8	pobj	_	_
+12	.	_	.	.	_	4	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	child	_	NN	NN	_	0	root	_	_
 3	working	_	VBG	VBG	_	2	partmod	_	_
 4	on	_	IN	IN	_	3	prep	_	_
-5	a	_	DT	DT	_	6	det	_	_
-6	toy	_	NN	NN	_	4	pobj	_	_
-7	-	_	:	:	_	6	punct	_	_
-8	like	_	JJ	JJ	_	9	amod	_	_
-9	laptop	_	NN	NN	_	6	dep	_	_
-10	that	_	WDT	WDT	_	11	nsubj	_	_
-11	is	_	VBZ	VBZ	_	6	rcmod	_	_
-12	on	_	IN	IN	_	11	prep	_	_
-13	a	_	DT	DT	_	14	det	_	_
-14	table	_	NN	NN	_	12	pobj	_	_
-15	.	_	.	.	_	2	punct	_	_
+5	a	_	DT	DT	_	7	det	_	_
+6	toy-like	_	JJ	JJ	_	7	amod	_	_
+7	laptop	_	NN	NN	_	4	pobj	_	_
+8	that	_	WDT	WDT	_	9	nsubj	_	_
+9	is	_	VBZ	VBZ	_	7	rcmod	_	_
+10	on	_	IN	IN	_	9	prep	_	_
+11	a	_	DT	DT	_	12	det	_	_
+12	table	_	NN	NN	_	10	pobj	_	_
+13	.	_	.	.	_	2	punct	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	young	_	JJ	JJ	_	3	amod	_	_
@@ -23199,14 +23195,16 @@
 12	.	_	.	.	_	2	punct	_	_
 
 1	A	_	DT	DT	_	4	det	_	_
-2	oarge	_	NN	NN	_	4	nn	_	_
+2	oarge	_	NNP	NNP	_	4	nn	_	_
 3	open	_	JJ	JJ	_	4	amod	_	_
 4	bathroom	_	NN	NN	_	0	root	_	_
 5	with	_	IN	IN	_	4	prep	_	_
 6	walk	_	NN	NN	_	5	pobj	_	_
 7	in	_	IN	IN	_	6	prep	_	_
 8	shower	_	NN	NN	_	7	pobj	_	_
-9	and	_	CC	CC	_	4	cc	_	_
+9	and	_	CC	CC	_	6	cc	_	_
+10	double	_	NN	NN	_	11	nn	_	_
+11	sink	_	NN	NN	_	6	conj	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	bathroom	_	NN	NN	_	0	root	_	_
@@ -23363,8 +23361,13 @@
 3	A	_	DT	DT	_	4	det	_	_
 4	CONTRAPTION	_	NN	NN	_	2	pobj	_	_
 5	,	_	,	,	_	1	punct	_	_
-6	SURROUNDED	_	VBN	VBN	_	1	dep	_	_
+6	SURROUNDED	_	VBN	VBN	_	1	partmod	_	_
 7	BY	_	IN	IN	_	6	prep	_	_
+8	A	_	DT	DT	_	9	det	_	_
+9	BICYCLE	_	NN	NN	_	7	pobj	_	_
+10	AND	_	CC	CC	_	9	cc	_	_
+11	ANOTHER	_	DT	DT	_	12	det	_	_
+12	PERSON	_	NN	NN	_	9	conj	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	man	_	NN	NN	_	0	root	_	_
@@ -23873,6 +23876,10 @@
 3	WITH	_	IN	IN	_	2	prep	_	_
 4	TALL	_	JJ	JJ	_	5	amod	_	_
 5	SPIRE	_	NN	NN	_	3	pobj	_	_
+6	REACHING	_	VBG	VBG	_	5	partmod	_	_
+7	TO	_	TO	TO	_	6	prep	_	_
+8	THE	_	DT	DT	_	9	det	_	_
+9	SKY	_	NN	NN	_	7	pobj	_	_
 
 1	An	_	DT	DT	_	6	det	_	_
 2	old	_	JJ	JJ	_	6	amod	_	_
@@ -24110,15 +24117,13 @@
 9	buttons	_	NNS	NNS	_	4	dobj	_	_
 10	except	_	IN	IN	_	9	prep	_	_
 11	for	_	IN	IN	_	10	pcomp	_	_
-12	a	_	DT	DT	_	19	det	_	_
-13	yellow	_	JJ	JJ	_	19	amod	_	_
-14	`	_	``	``	_	19	punct	_	_
-15	`	_	``	``	_	19	punct	_	_
-16	Light	_	NN	NN	_	19	nn	_	_
-17	`	_	''	''	_	19	punct	_	_
-18	`	_	''	''	_	19	punct	_	_
-19	button	_	NN	NN	_	11	pobj	_	_
-20	.	_	.	.	_	4	punct	_	_
+12	a	_	DT	DT	_	17	det	_	_
+13	yellow	_	JJ	JJ	_	17	amod	_	_
+14	``	_	``	``	_	17	punct	_	_
+15	Light	_	NN	NN	_	17	nn	_	_
+16	``	_	''	''	_	17	punct	_	_
+17	button	_	NN	NN	_	11	pobj	_	_
+18	.	_	.	.	_	4	punct	_	_
 
 1	This	_	DT	DT	_	4	nsubj	_	_
 2	is	_	VBZ	VBZ	_	4	cop	_	_
@@ -24898,11 +24903,13 @@
 
 1	A	_	DT	DT	_	3	det	_	_
 2	WHITE	_	JJ	JJ	_	3	amod	_	_
-3	GOAT	_	NN	NN	_	0	root	_	_
-4	CLIMBING	_	VBG	VBG	_	3	partmod	_	_
+3	GOAT	_	NN	NN	_	4	nsubj	_	_
+4	CLIMBING	_	VBG	VBG	_	0	root	_	_
 5	UP	_	RB	RB	_	4	advmod	_	_
 6	TO	_	TO	TO	_	7	aux	_	_
 7	EAT	_	VB	VB	_	4	xcomp	_	_
+8	SOME	_	DT	DT	_	9	det	_	_
+9	GRASS	_	NN	NN	_	7	dobj	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	man	_	NN	NN	_	0	root	_	_
@@ -25303,21 +25310,19 @@
 8	water	_	NN	NN	_	6	pobj	_	_
 9	.	_	.	.	_	2	punct	_	_
 
-1	A	_	DT	DT	_	6	det	_	_
-2	white	_	JJ	JJ	_	6	amod	_	_
-3	pontoon	_	NN	NN	_	6	nn	_	_
-4	-	_	:	:	_	6	punct	_	_
-5	type	_	JJ	JJ	_	6	amod	_	_
-6	boat	_	NN	NN	_	7	nsubj	_	_
-7	is	_	VBZ	VBZ	_	0	root	_	_
-8	in	_	IN	IN	_	7	prep	_	_
-9	the	_	DT	DT	_	10	det	_	_
-10	water	_	NN	NN	_	8	pobj	_	_
-11	with	_	IN	IN	_	7	prep	_	_
-12	people	_	NNS	NNS	_	11	pobj	_	_
-13	in	_	IN	IN	_	12	prep	_	_
-14	it	_	PRP	PRP	_	13	pobj	_	_
-15	.	_	.	.	_	7	punct	_	_
+1	A	_	DT	DT	_	4	det	_	_
+2	white	_	JJ	JJ	_	4	amod	_	_
+3	pontoon-type	_	JJ	JJ	_	4	amod	_	_
+4	boat	_	NN	NN	_	5	nsubj	_	_
+5	is	_	VBZ	VBZ	_	0	root	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	water	_	NN	NN	_	6	pobj	_	_
+9	with	_	IN	IN	_	5	prep	_	_
+10	people	_	NNS	NNS	_	9	pobj	_	_
+11	in	_	IN	IN	_	10	prep	_	_
+12	it	_	PRP	PRP	_	11	pobj	_	_
+13	.	_	.	.	_	5	punct	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	white	_	JJ	JJ	_	3	amod	_	_
@@ -25596,9 +25601,13 @@
 1	A	_	DT	DT	_	3	det	_	_
 2	street	_	NN	NN	_	3	nn	_	_
 3	sign	_	NN	NN	_	0	root	_	_
-4	for	_	IN	IN	_	3	prep	_	_
+4	for	_	IN	IN	_	3	amod	_	_
 5	Jack	_	NNP	NNP	_	6	nn	_	_
-6	Kerouac	_	NNP	NNP	_	4	pobj	_	_
+6	Kerouac	_	NNP	NNP	_	3	dep	_	_
+7	**LL**	_	SYM	SYM	_	8	dep	_	_
+8	Adler	_	NNP	NNP	_	6	dep	_	_
+9	**RR**	_	SYM	SYM	_	8	dep	_	_
+10	Road	_	NN	NN	_	6	dep	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	green	_	JJ	JJ	_	3	amod	_	_
@@ -25947,7 +25956,11 @@
 4	one	_	CD	CD	_	3	dobj	_	_
 5	is	_	VBZ	VBZ	_	7	cop	_	_
 6	a	_	DT	DT	_	7	det	_	_
-7	shark	_	NN	NN	_	0	root	_	_
+7	shark	_	NNP	NNP	_	0	root	_	_
+8	the	_	DT	DT	_	7	poss	_	_
+9	other	_	POS	POS	_	8	possessive	_	_
+10	a	_	DT	DT	_	11	det	_	_
+11	tiger	_	NN	NN	_	7	dep	_	_
 
 1	Two	_	CD	CD	_	2	num	_	_
 2	kites	_	NNS	NNS	_	0	root	_	_
@@ -27085,9 +27098,11 @@
 2	IS	_	VBZ	VBZ	_	0	root	_	_
 3	A	_	DT	DT	_	5	det	_	_
 4	WHITE	_	JJ	JJ	_	5	amod	_	_
-5	HORSE	_	NN	NN	_	6	nsubj	_	_
-6	WALKING	_	VBG	VBG	_	2	dep	_	_
-7	DOWN	_	RB	RB	_	6	advmod	_	_
+5	HORSE	_	NN	NN	_	2	nsubj	_	_
+6	WALKING	_	VBG	VBG	_	5	partmod	_	_
+7	DOWN	_	IN	IN	_	6	prep	_	_
+8	THE	_	DT	DT	_	9	det	_	_
+9	STREET	_	NN	NN	_	7	pobj	_	_
 
 1	a	_	DT	DT	_	2	det	_	_
 2	horse	_	NN	NN	_	3	nsubj	_	_
@@ -27820,12 +27835,10 @@
 3	is	_	VBZ	VBZ	_	4	aux	_	_
 4	biting	_	VBG	VBG	_	0	root	_	_
 5	on	_	IN	IN	_	4	prep	_	_
-6	a	_	DT	DT	_	10	det	_	_
-7	hand	_	NN	NN	_	10	nn	_	_
-8	-	_	JJ	JJ	_	10	amod	_	_
-9	fed	_	JJ	JJ	_	10	amod	_	_
-10	carrot	_	NN	NN	_	5	pobj	_	_
-11	.	_	.	.	_	4	punct	_	_
+6	a	_	DT	DT	_	8	det	_	_
+7	hand-fed	_	JJ	JJ	_	8	amod	_	_
+8	carrot	_	NN	NN	_	5	pobj	_	_
+9	.	_	.	.	_	4	punct	_	_
 
 1	Someone	_	NN	NN	_	2	nsubj	_	_
 2	feeding	_	VBG	VBG	_	0	root	_	_
@@ -28156,17 +28169,15 @@
 9	baseball	_	NN	NN	_	10	nn	_	_
 10	game	_	NN	NN	_	7	pobj	_	_
 
-1	A	_	DT	DT	_	5	det	_	_
-2	half	_	JJ	JJ	_	5	amod	_	_
-3	-	_	:	:	_	5	punct	_	_
-4	eaten	_	JJ	JJ	_	5	amod	_	_
-5	hotdog	_	NN	NN	_	0	root	_	_
-6	with	_	IN	IN	_	5	prep	_	_
-7	a	_	DT	DT	_	10	det	_	_
-8	baseball	_	NN	NN	_	10	nn	_	_
-9	stadium	_	NN	NN	_	10	nn	_	_
-10	backdrop	_	NN	NN	_	6	pobj	_	_
-11	.	_	.	.	_	5	punct	_	_
+1	A	_	DT	DT	_	3	det	_	_
+2	half-eaten	_	JJ	JJ	_	3	amod	_	_
+3	hotdog	_	NN	NN	_	0	root	_	_
+4	with	_	IN	IN	_	3	prep	_	_
+5	a	_	DT	DT	_	8	det	_	_
+6	baseball	_	NN	NN	_	8	nn	_	_
+7	stadium	_	NN	NN	_	8	nn	_	_
+8	backdrop	_	NN	NN	_	4	pobj	_	_
+9	.	_	.	.	_	3	punct	_	_
 
 1	Person	_	NN	NN	_	0	root	_	_
 2	holding	_	VBG	VBG	_	1	partmod	_	_
@@ -29703,15 +29714,13 @@
 3	with	_	IN	IN	_	2	prep	_	_
 4	the	_	DT	DT	_	5	det	_	_
 5	words	_	NNS	NNS	_	3	pobj	_	_
-6	`	_	``	``	_	5	punct	_	_
-7	`	_	``	``	_	5	punct	_	_
-8	one	_	CD	CD	_	9	num	_	_
-9	love	_	NN	NN	_	5	dep	_	_
-10	`	_	''	''	_	5	punct	_	_
-11	`	_	''	''	_	5	punct	_	_
-12	on	_	IN	IN	_	5	prep	_	_
-13	it	_	PRP	PRP	_	12	pobj	_	_
-14	.	_	.	.	_	2	punct	_	_
+6	``	_	``	``	_	5	punct	_	_
+7	one	_	CD	CD	_	8	num	_	_
+8	love	_	NN	NN	_	5	dep	_	_
+9	``	_	''	''	_	5	punct	_	_
+10	on	_	IN	IN	_	5	prep	_	_
+11	it	_	PRP	PRP	_	10	pobj	_	_
+12	.	_	.	.	_	2	punct	_	_
 
 1	Dozens	_	NNS	NNS	_	0	root	_	_
 2	of	_	IN	IN	_	1	prep	_	_
@@ -30027,6 +30036,14 @@
 2	MAN	_	NN	NN	_	4	nsubj	_	_
 3	IS	_	VBZ	VBZ	_	4	aux	_	_
 4	HOLDING	_	VBG	VBG	_	0	root	_	_
+5	A	_	DT	DT	_	8	det	_	_
+6	BASE	_	NN	NN	_	8	nn	_	_
+7	BALL	_	NN	NN	_	8	nn	_	_
+8	BAT	_	NN	NN	_	4	dobj	_	_
+9	STANDING	_	VBG	VBG	_	8	partmod	_	_
+10	AT	_	IN	IN	_	9	prep	_	_
+11	THE	_	DT	DT	_	12	det	_	_
+12	DIRT	_	NN	NN	_	10	pobj	_	_
 
 1	a	_	DT	DT	_	3	det	_	_
 2	baseball	_	NN	NN	_	3	nn	_	_
@@ -31377,8 +31394,10 @@
 2	white	_	JJ	JJ	_	3	amod	_	_
 3	toilet	_	NN	NN	_	0	root	_	_
 4	in	_	IN	IN	_	3	prep	_	_
-5	a	_	DT	DT	_	6	det	_	_
-6	houses	_	NNS	NNS	_	4	pobj	_	_
+5	a	_	DT	DT	_	8	det	_	_
+6	houses	_	VBZ	VBZ	_	8	dep	_	_
+7	small	_	JJ	JJ	_	8	amod	_	_
+8	bathroom	_	NN	NN	_	4	pobj	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	group	_	NN	NN	_	5	nsubj	_	_
@@ -32181,7 +32200,7 @@
 11	other	_	JJ	JJ	_	9	dobj	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
-2	fenced	_	JJ	JJ	_	3	amod	_	_
+2	fenced	_	VBN	VBN	_	3	amod	_	_
 3	area	_	NN	NN	_	11	nsubj	_	_
 4	ringed	_	VBN	VBN	_	3	partmod	_	_
 5	with	_	IN	IN	_	4	prep	_	_
@@ -32195,20 +32214,18 @@
 13	giraffes	_	NNS	NNS	_	11	dobj	_	_
 14	,	_	,	,	_	11	punct	_	_
 15	their	_	PRP$	PRP$	_	16	poss	_	_
-16	necks	_	NNS	NNS	_	19	nsubj	_	_
-17	criss	_	NNP	NNP	_	19	dep	_	_
-18	-	_	:	:	_	19	punct	_	_
-19	crossing	_	JJ	JJ	_	11	dep	_	_
-20	,	_	,	,	_	11	punct	_	_
-21	so	_	IN	IN	_	25	mark	_	_
-22	that	_	IN	IN	_	25	mark	_	_
-23	their	_	PRP$	PRP$	_	24	poss	_	_
-24	heads	_	NNS	NNS	_	25	nsubj	_	_
-25	look	_	VBP	VBP	_	11	advcl	_	_
-26	in	_	IN	IN	_	25	prep	_	_
-27	opposite	_	JJ	JJ	_	28	amod	_	_
-28	directions	_	NNS	NNS	_	26	pobj	_	_
-29	.	_	.	.	_	11	punct	_	_
+16	necks	_	NNS	NNS	_	17	nsubj	_	_
+17	criss-crossing	_	JJ	JJ	_	11	dep	_	_
+18	,	_	,	,	_	11	punct	_	_
+19	so	_	IN	IN	_	23	mark	_	_
+20	that	_	IN	IN	_	23	mark	_	_
+21	their	_	PRP$	PRP$	_	22	poss	_	_
+22	heads	_	NNS	NNS	_	23	nsubj	_	_
+23	look	_	VBP	VBP	_	11	advcl	_	_
+24	in	_	IN	IN	_	23	prep	_	_
+25	opposite	_	JJ	JJ	_	26	amod	_	_
+26	directions	_	NNS	NNS	_	24	pobj	_	_
+27	.	_	.	.	_	11	punct	_	_
 
 1	Two	_	CD	CD	_	2	num	_	_
 2	giraffes	_	NNPS	NNPS	_	4	nsubj	_	_
@@ -33068,11 +33085,9 @@
 6	the	_	DT	DT	_	7	det	_	_
 7	back	_	NN	NN	_	5	pobj	_	_
 8	of	_	IN	IN	_	7	prep	_	_
-9	a	_	DT	DT	_	12	det	_	_
-10	dump	_	NN	NN	_	12	nn	_	_
-11	-	_	:	:	_	12	punct	_	_
-12	truck	_	NN	NN	_	8	pobj	_	_
-13	.	_	.	.	_	2	punct	_	_
+9	a	_	DT	DT	_	10	det	_	_
+10	dump-truck	_	NN	NN	_	8	pobj	_	_
+11	.	_	.	.	_	2	punct	_	_
 
 1	Bunch	_	NN	NN	_	0	root	_	_
 2	of	_	IN	IN	_	1	prep	_	_
@@ -34686,15 +34701,13 @@
 3	smiles	_	VBZ	VBZ	_	0	root	_	_
 4	at	_	IN	IN	_	3	prep	_	_
 5	something	_	NN	NN	_	4	pobj	_	_
-6	off	_	RB	RB	_	8	advmod	_	_
-7	-	_	:	:	_	8	punct	_	_
-8	screen	_	RB	RB	_	3	advmod	_	_
-9	while	_	IN	IN	_	10	mark	_	_
-10	holding	_	VBG	VBG	_	3	advcl	_	_
-11	a	_	DT	DT	_	13	det	_	_
-12	magenta	_	NN	NN	_	13	nn	_	_
-13	umbrella	_	NN	NN	_	10	dobj	_	_
-14	.	_	.	.	_	3	punct	_	_
+6	off-screen	_	RB	RB	_	3	advmod	_	_
+7	while	_	IN	IN	_	8	mark	_	_
+8	holding	_	VBG	VBG	_	3	advcl	_	_
+9	a	_	DT	DT	_	11	det	_	_
+10	magenta	_	NN	NN	_	11	nn	_	_
+11	umbrella	_	NN	NN	_	8	dobj	_	_
+12	.	_	.	.	_	3	punct	_	_
 
 1	a	_	DT	DT	_	2	det	_	_
 2	girl	_	NN	NN	_	0	root	_	_
@@ -35326,18 +35339,16 @@
 10	.	_	.	.	_	3	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
-2	horse	_	NN	NN	_	8	nsubj	_	_
+2	horse	_	NN	NN	_	6	nsubj	_	_
 3	and	_	CC	CC	_	2	cc	_	_
-4	bug	_	NN	NN	_	6	nn	_	_
-5	-	_	:	:	_	6	punct	_	_
-6	gee	_	NN	NN	_	2	conj	_	_
-7	is	_	VBZ	VBZ	_	8	aux	_	_
-8	riding	_	VBG	VBG	_	0	root	_	_
-9	next	_	JJ	JJ	_	8	advmod	_	_
-10	to	_	TO	TO	_	9	prep	_	_
-11	the	_	DT	DT	_	12	det	_	_
-12	buildings	_	NNS	NNS	_	10	pobj	_	_
-13	.	_	.	.	_	8	punct	_	_
+4	bug-gee	_	NN	NN	_	2	conj	_	_
+5	is	_	VBZ	VBZ	_	6	aux	_	_
+6	riding	_	VBG	VBG	_	0	root	_	_
+7	next	_	JJ	JJ	_	6	advmod	_	_
+8	to	_	TO	TO	_	7	prep	_	_
+9	the	_	DT	DT	_	10	det	_	_
+10	buildings	_	NNS	NNS	_	8	pobj	_	_
+11	.	_	.	.	_	6	punct	_	_
 
 1	The	_	DT	DT	_	3	det	_	_
 2	horse	_	NN	NN	_	3	nn	_	_
@@ -36365,17 +36376,15 @@
 1	A	_	DT	DT	_	2	det	_	_
 2	snowboarder	_	NN	NN	_	0	root	_	_
 3	in	_	IN	IN	_	2	prep	_	_
-4	mid	_	JJ	JJ	_	6	amod	_	_
-5	-	_	DT	DT	_	6	det	_	_
-6	air	_	JJ	JJ	_	3	pobj	_	_
-7	with	_	IN	IN	_	2	prep	_	_
-8	another	_	DT	DT	_	9	det	_	_
-9	person	_	NN	NN	_	10	nsubj	_	_
-10	watching	_	VBG	VBG	_	7	pcomp	_	_
-11	in	_	IN	IN	_	10	prep	_	_
-12	the	_	DT	DT	_	13	det	_	_
-13	background	_	NN	NN	_	11	pobj	_	_
-14	.	_	.	.	_	2	punct	_	_
+4	mid-air	_	JJ	JJ	_	3	pobj	_	_
+5	with	_	IN	IN	_	2	prep	_	_
+6	another	_	DT	DT	_	7	det	_	_
+7	person	_	NN	NN	_	8	nsubj	_	_
+8	watching	_	VBG	VBG	_	5	pcomp	_	_
+9	in	_	IN	IN	_	8	prep	_	_
+10	the	_	DT	DT	_	11	det	_	_
+11	background	_	NN	NN	_	9	pobj	_	_
+12	.	_	.	.	_	2	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	person	_	NN	NN	_	0	root	_	_
@@ -37224,10 +37233,9 @@
 7	chairs	_	NNS	NNS	_	4	pobj	_	_
 8	in	_	IN	IN	_	3	prep	_	_
 9	front	_	NN	NN	_	8	pobj	_	_
-10	of	_	IN	IN	_	9	prep	_	_
-11	two	_	CD	CD	_	12	num	_	_
-12	windows	_	NNS	NNS	_	10	pobj	_	_
-13	..	_	:	:	_	3	punct	_	_
+10	of	_	IN	IN	_	8	prep	_	_
+11	two	_	CD	CD	_	10	dep	_	_
+12	windows..	_	:	:	_	3	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	fireplace	_	NN	NN	_	0	root	_	_
@@ -37461,19 +37469,17 @@
 7	something	_	NN	NN	_	6	pobj	_	_
 8	blue	_	JJ	JJ	_	7	amod	_	_
 
-1	A	_	DT	DT	_	7	det	_	_
-2	smiling	_	VBG	VBG	_	7	amod	_	_
-3	blue	_	JJ	JJ	_	7	amod	_	_
-4	-	_	:	:	_	7	punct	_	_
-5	eyed	_	JJ	JJ	_	7	amod	_	_
-6	boy	_	NN	NN	_	7	nn	_	_
-7	toddler	_	NN	NN	_	0	root	_	_
-8	chewing	_	VBG	VBG	_	7	partmod	_	_
-9	on	_	IN	IN	_	8	prep	_	_
-10	a	_	DT	DT	_	12	det	_	_
-11	plastic	_	JJ	JJ	_	12	amod	_	_
-12	object	_	NN	NN	_	9	pobj	_	_
-13	.	_	.	.	_	7	punct	_	_
+1	A	_	DT	DT	_	5	det	_	_
+2	smiling	_	VBG	VBG	_	5	amod	_	_
+3	blue-eyed	_	JJ	JJ	_	5	amod	_	_
+4	boy	_	NN	NN	_	5	nn	_	_
+5	toddler	_	NN	NN	_	0	root	_	_
+6	chewing	_	VBG	VBG	_	5	partmod	_	_
+7	on	_	IN	IN	_	6	prep	_	_
+8	a	_	DT	DT	_	10	det	_	_
+9	plastic	_	JJ	JJ	_	10	amod	_	_
+10	object	_	NN	NN	_	7	pobj	_	_
+11	.	_	.	.	_	5	punct	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	small	_	JJ	JJ	_	3	amod	_	_
@@ -38391,9 +38397,8 @@
 5	is	_	VBZ	VBZ	_	6	aux	_	_
 6	sitting	_	VBG	VBG	_	0	root	_	_
 7	on	_	IN	IN	_	6	prep	_	_
-8	a	_	DT	DT	_	9	det	_	_
-9	desk	_	NN	NN	_	7	pobj	_	_
-10	..	_	.	.	_	6	punct	_	_
+8	a	_	DT	DT	_	7	dep	_	_
+9	desk..	_	.	.	_	6	punct	_	_
 
 1	a	_	DT	DT	_	4	det	_	_
 2	small	_	JJ	JJ	_	4	amod	_	_
@@ -38406,7 +38411,7 @@
 
 1	AN	_	DT	DT	_	3	det	_	_
 2	INSPIRION	_	NNP	NNP	_	3	nn	_	_
-3	LAPTOP	_	NN	NN	_	0	root	_	_
+3	LAPTOP	_	NNP	NNP	_	0	root	_	_
 4	SITTING	_	VBG	VBG	_	3	partmod	_	_
 5	ON	_	IN	IN	_	4	prep	_	_
 6	THE	_	DT	DT	_	7	det	_	_
@@ -38414,6 +38419,9 @@
 8	OF	_	IN	IN	_	7	prep	_	_
 9	A	_	DT	DT	_	10	det	_	_
 10	TABLE	_	NN	NN	_	8	pobj	_	_
+11	WHICH	_	WDT	WDT	_	13	nsubj	_	_
+12	IS	_	VBZ	VBZ	_	13	cop	_	_
+13	WOOD	_	NN	NN	_	10	rcmod	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	young	_	JJ	JJ	_	3	amod	_	_
@@ -39242,8 +39250,14 @@
 3	LOADED	_	VBN	VBN	_	2	partmod	_	_
 4	WITH	_	IN	IN	_	3	prep	_	_
 5	BICYCLES	_	NNS	NNS	_	4	pobj	_	_
-6	ON	_	IN	IN	_	3	prep	_	_
+6	ON	_	IN	IN	_	5	prep	_	_
 7	TOP	_	NN	NN	_	6	pobj	_	_
+8	AND	_	CC	CC	_	2	cc	_	_
+9	PEOPLE	_	NNS	NNS	_	2	conj	_	_
+10	STANDING	_	VBG	VBG	_	9	partmod	_	_
+11	AROUND	_	RB	RB	_	10	advmod	_	_
+12	WITH	_	IN	IN	_	10	prep	_	_
+13	UMBRELLAS	_	NNS	NNS	_	12	pobj	_	_
 
 1	A	_	DT	DT	_	6	det	_	_
 2	black	_	JJ	JJ	_	6	amod	_	_
@@ -39827,6 +39841,12 @@
 2	ARE	_	VBP	VBP	_	0	root	_	_
 3	MOTOR	_	NN	NN	_	4	nn	_	_
 4	BIKES	_	NNS	NNS	_	2	nsubj	_	_
+5	THAT	_	WDT	WDT	_	7	nsubjpass	_	_
+6	ARE	_	VBP	VBP	_	7	auxpass	_	_
+7	PARKED	_	VBN	VBN	_	4	rcmod	_	_
+8	ON	_	IN	IN	_	7	prep	_	_
+9	THE	_	DT	DT	_	10	det	_	_
+10	STREET	_	NN	NN	_	8	pobj	_	_
 
 1	thee	_	NNP	NNP	_	2	nn	_	_
 2	motorcycles	_	NNS	NNS	_	3	nsubj	_	_
@@ -40277,8 +40297,19 @@
 10	.	_	.	.	_	4	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
-2	VAN	_	NN	NN	_	0	root	_	_
-3	MADE	_	VBN	VBN	_	2	partmod	_	_
+2	VAN	_	NN	NN	_	3	nsubj	_	_
+3	MADE	_	VBN	VBN	_	0	root	_	_
+4	TO	_	TO	TO	_	5	aux	_	_
+5	LOOK	_	VB	VB	_	3	xcomp	_	_
+6	LIKE	_	IN	IN	_	5	prep	_	_
+7	A	_	DT	DT	_	9	det	_	_
+8	DISCO	_	NN	NN	_	9	nn	_	_
+9	BALL	_	NN	NN	_	6	pobj	_	_
+10	NEXT	_	RB	RB	_	9	advmod	_	_
+11	TO	_	TO	TO	_	10	prep	_	_
+12	A	_	DT	DT	_	14	det	_	_
+13	TOUR	_	NN	NN	_	14	nn	_	_
+14	BUS	_	NN	NN	_	11	pobj	_	_
 
 1	a	_	DT	DT	_	4	det	_	_
 2	silver	_	JJ	JJ	_	4	amod	_	_
@@ -40577,20 +40608,16 @@
 10	picture	_	NN	NN	_	8	dobj	_	_
 11	.	_	.	.	_	4	punct	_	_
 
-1	A	_	DT	DT	_	7	det	_	_
-2	black	_	JJ	JJ	_	6	dep	_	_
-3	-	_	:	:	_	6	punct	_	_
-4	and	_	CC	CC	_	6	cc	_	_
-5	-	_	JJ	JJ	_	6	conj	_	_
-6	white	_	JJ	JJ	_	7	amod	_	_
-7	photo	_	NN	NN	_	0	root	_	_
-8	of	_	IN	IN	_	7	prep	_	_
-9	two	_	CD	CD	_	10	num	_	_
-10	women	_	NNS	NNS	_	8	pobj	_	_
-11	sitting	_	VBG	VBG	_	10	partmod	_	_
-12	on	_	IN	IN	_	11	prep	_	_
-13	horses	_	NNS	NNS	_	12	pobj	_	_
-14	.	_	.	.	_	7	punct	_	_
+1	A	_	DT	DT	_	3	det	_	_
+2	black-and-white	_	JJ	JJ	_	3	amod	_	_
+3	photo	_	NN	NN	_	0	root	_	_
+4	of	_	IN	IN	_	3	prep	_	_
+5	two	_	CD	CD	_	6	num	_	_
+6	women	_	NNS	NNS	_	4	pobj	_	_
+7	sitting	_	VBG	VBG	_	6	partmod	_	_
+8	on	_	IN	IN	_	7	prep	_	_
+9	horses	_	NNS	NNS	_	8	pobj	_	_
+10	.	_	.	.	_	3	punct	_	_
 
 1	Two	_	CD	CD	_	2	num	_	_
 2	women	_	NNS	NNS	_	0	root	_	_
@@ -40873,13 +40900,11 @@
 7	snack	_	NN	NN	_	8	nn	_	_
 8	bar	_	NN	NN	_	4	dobj	_	_
 9	beneath	_	IN	IN	_	4	prep	_	_
-10	a	_	DT	DT	_	15	det	_	_
-11	three	_	JJ	JJ	_	15	amod	_	_
-12	-	_	:	:	_	15	punct	_	_
-13	masted	_	JJ	JJ	_	15	amod	_	_
-14	ship	_	NN	NN	_	15	nn	_	_
-15	display	_	NN	NN	_	9	pobj	_	_
-16	.	_	.	.	_	3	punct	_	_
+10	a	_	DT	DT	_	13	det	_	_
+11	three-masted	_	JJ	JJ	_	13	amod	_	_
+12	ship	_	NN	NN	_	13	nn	_	_
+13	display	_	NN	NN	_	9	pobj	_	_
+14	.	_	.	.	_	3	punct	_	_
 
 1	A	_	DT	DT	_	4	det	_	_
 2	DECORATIVE	_	JJ	JJ	_	4	amod	_	_
@@ -40888,6 +40913,8 @@
 5	THAT	_	WDT	WDT	_	6	nsubj	_	_
 6	LOOKS	_	VBZ	VBZ	_	4	rcmod	_	_
 7	LIKE	_	IN	IN	_	6	prep	_	_
+8	A	_	DT	DT	_	9	det	_	_
+9	SHIP	_	NN	NN	_	7	pobj	_	_
 
 1	some	_	DT	DT	_	2	det	_	_
 2	signs	_	NNS	NNS	_	0	root	_	_
@@ -40996,19 +41023,17 @@
 11	STREET	_	NN	NN	_	9	pobj	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
-2	truck	_	NN	NN	_	10	nsubj	_	_
+2	truck	_	NN	NN	_	8	nsubj	_	_
 3	labeled	_	VBN	VBN	_	2	partmod	_	_
 4	as	_	IN	IN	_	3	prep	_	_
-5	`	_	``	``	_	4	punct	_	_
-6	`	_	``	``	_	4	punct	_	_
-7	horses	_	NNS	NNS	_	4	pobj	_	_
-8	`	_	''	''	_	4	punct	_	_
-9	`	_	''	''	_	4	punct	_	_
-10	drives	_	VBZ	VBZ	_	0	root	_	_
-11	down	_	IN	IN	_	10	prep	_	_
-12	a	_	DT	DT	_	13	det	_	_
-13	street	_	NN	NN	_	11	pobj	_	_
-14	.	_	.	.	_	10	punct	_	_
+5	``	_	``	``	_	4	punct	_	_
+6	horses	_	NNS	NNS	_	4	pobj	_	_
+7	``	_	''	''	_	4	punct	_	_
+8	drives	_	VBZ	VBZ	_	0	root	_	_
+9	down	_	IN	IN	_	8	prep	_	_
+10	a	_	DT	DT	_	11	det	_	_
+11	street	_	NN	NN	_	9	pobj	_	_
+12	.	_	.	.	_	8	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	truck	_	NN	NN	_	8	nsubj	_	_
@@ -41028,25 +41053,23 @@
 
 1	A	_	DT	DT	_	3	det	_	_
 2	small	_	JJ	JJ	_	3	amod	_	_
-3	truck	_	NN	NN	_	11	nsubj	_	_
+3	truck	_	NN	NN	_	9	nsubj	_	_
 4	labeled	_	VBN	VBN	_	3	partmod	_	_
-5	`	_	``	``	_	7	punct	_	_
-6	`	_	``	``	_	7	punct	_	_
-7	Horses	_	NNS	NNS	_	4	dep	_	_
-8	`	_	''	''	_	7	punct	_	_
-9	`	_	''	''	_	7	punct	_	_
-10	is	_	VBZ	VBZ	_	11	aux	_	_
-11	driving	_	VBG	VBG	_	0	root	_	_
-12	down	_	IN	IN	_	11	prep	_	_
-13	the	_	DT	DT	_	14	det	_	_
-14	road	_	NN	NN	_	12	pobj	_	_
-15	in	_	IN	IN	_	11	prep	_	_
-16	the	_	DT	DT	_	17	det	_	_
-17	middle	_	NN	NN	_	15	pobj	_	_
-18	of	_	IN	IN	_	17	prep	_	_
-19	the	_	DT	DT	_	20	det	_	_
-20	afternoon	_	NN	NN	_	18	pobj	_	_
-21	.	_	.	.	_	11	punct	_	_
+5	``	_	``	``	_	6	punct	_	_
+6	Horses	_	NNS	NNS	_	4	dep	_	_
+7	``	_	''	''	_	6	punct	_	_
+8	is	_	VBZ	VBZ	_	9	aux	_	_
+9	driving	_	VBG	VBG	_	0	root	_	_
+10	down	_	IN	IN	_	9	prep	_	_
+11	the	_	DT	DT	_	12	det	_	_
+12	road	_	NN	NN	_	10	pobj	_	_
+13	in	_	IN	IN	_	9	prep	_	_
+14	the	_	DT	DT	_	15	det	_	_
+15	middle	_	NN	NN	_	13	pobj	_	_
+16	of	_	IN	IN	_	15	prep	_	_
+17	the	_	DT	DT	_	18	det	_	_
+18	afternoon	_	NN	NN	_	16	pobj	_	_
+19	.	_	.	.	_	9	punct	_	_
 
 1	A	_	DT	DT	_	4	det	_	_
 2	black	_	JJ	JJ	_	4	amod	_	_
@@ -42233,17 +42256,15 @@
 2	horse	_	NN	NN	_	4	nsubj	_	_
 3	is	_	VBZ	VBZ	_	4	aux	_	_
 4	pulling	_	VBG	VBG	_	0	root	_	_
-5	a	_	DT	DT	_	9	det	_	_
-6	two	_	JJ	JJ	_	9	amod	_	_
-7	-	_	JJ	JJ	_	9	amod	_	_
-8	wheeled	_	JJ	JJ	_	9	amod	_	_
-9	card	_	NN	NN	_	4	dobj	_	_
-10	and	_	CC	CC	_	4	cc	_	_
-11	man	_	NN	NN	_	4	conj	_	_
-12	on	_	IN	IN	_	11	dep	_	_
-13	the	_	DT	DT	_	14	det	_	_
-14	beach	_	NN	NN	_	12	pobj	_	_
-15	.	_	.	.	_	4	punct	_	_
+5	a	_	DT	DT	_	7	det	_	_
+6	two-wheeled	_	JJ	JJ	_	7	amod	_	_
+7	card	_	NN	NN	_	4	dobj	_	_
+8	and	_	CC	CC	_	4	cc	_	_
+9	man	_	NN	NN	_	4	conj	_	_
+10	on	_	IN	IN	_	9	dep	_	_
+11	the	_	DT	DT	_	12	det	_	_
+12	beach	_	NN	NN	_	10	pobj	_	_
+13	.	_	.	.	_	4	punct	_	_
 
 1	a	_	DT	DT	_	2	det	_	_
 2	man	_	NN	NN	_	0	root	_	_
@@ -43310,16 +43331,14 @@
 10	.	_	.	.	_	2	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
-2	person	_	NN	NN	_	6	dep	_	_
-3	cross	_	NN	NN	_	6	dep	_	_
-4	-	_	:	:	_	6	punct	_	_
-5	country	_	NN	NN	_	6	nn	_	_
-6	skiing	_	NN	NN	_	0	root	_	_
-7	on	_	IN	IN	_	6	dep	_	_
-8	a	_	DT	DT	_	10	det	_	_
-9	winters	_	NNS	NNS	_	10	nn	_	_
-10	day	_	NN	NN	_	7	pobj	_	_
-11	.	_	.	.	_	6	punct	_	_
+2	person	_	NN	NN	_	4	nn	_	_
+3	cross-country	_	NN	NN	_	4	nn	_	_
+4	skiing	_	NN	NN	_	0	root	_	_
+5	on	_	IN	IN	_	4	prep	_	_
+6	a	_	DT	DT	_	8	det	_	_
+7	winters	_	NNS	NNS	_	8	nn	_	_
+8	day	_	NN	NN	_	5	pobj	_	_
+9	.	_	.	.	_	4	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	person	_	NN	NN	_	0	root	_	_
@@ -43610,10 +43629,8 @@
 5	one	_	CD	CD	_	3	conj	_	_
 6	of	_	IN	IN	_	5	prep	_	_
 7	them	_	PRP	PRP	_	6	pobj	_	_
-8	mid	_	JJ	JJ	_	9	advmod	_	_
-9	-	_	IN	IN	_	3	advmod	_	_
-10	jump	_	JJ	JJ	_	9	advmod	_	_
-11	.	_	.	.	_	3	punct	_	_
+8	mid-jump	_	JJ	JJ	_	3	advmod	_	_
+9	.	_	.	.	_	3	punct	_	_
 
 1	Two	_	CD	CD	_	2	num	_	_
 2	skateboarders	_	NNS	NNS	_	0	root	_	_
@@ -44916,25 +44933,23 @@
 11	couch	_	NN	NN	_	7	conj	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
-2	living	_	NN	NN	_	3	nn	_	_
+2	living	_	VBG	VBG	_	3	amod	_	_
 3	room	_	NN	NN	_	0	root	_	_
 4	with	_	IN	IN	_	3	prep	_	_
-5	a	_	DT	DT	_	6	dep	_	_
-6	red	_	JJ	JJ	_	4	pobj	_	_
-7	/	_	CC	CC	_	6	cc	_	_
-8	brown	_	JJ	JJ	_	10	amod	_	_
-9	area	_	NN	NN	_	10	nn	_	_
-10	rug	_	NN	NN	_	6	conj	_	_
-11	,	_	,	,	_	6	punct	_	_
-12	two	_	CD	CD	_	13	num	_	_
-13	couches	_	NNS	NNS	_	6	conj	_	_
-14	and	_	CC	CC	_	6	cc	_	_
-15	a	_	DT	DT	_	19	det	_	_
-16	large	_	JJ	JJ	_	19	amod	_	_
-17	flat	_	JJ	JJ	_	19	amod	_	_
-18	screen	_	NN	NN	_	19	nn	_	_
-19	TV	_	NN	NN	_	6	conj	_	_
-20	.	_	.	.	_	3	punct	_	_
+5	a	_	DT	DT	_	8	det	_	_
+6	red/brown	_	JJ	JJ	_	8	amod	_	_
+7	area	_	NN	NN	_	8	nn	_	_
+8	rug	_	NN	NN	_	4	pobj	_	_
+9	,	_	,	,	_	8	punct	_	_
+10	two	_	CD	CD	_	11	num	_	_
+11	couches	_	NNS	NNS	_	8	conj	_	_
+12	and	_	CC	CC	_	8	cc	_	_
+13	a	_	DT	DT	_	17	det	_	_
+14	large	_	JJ	JJ	_	17	amod	_	_
+15	flat	_	JJ	JJ	_	17	amod	_	_
+16	screen	_	NN	NN	_	17	nn	_	_
+17	TV	_	NN	NN	_	8	conj	_	_
+18	.	_	.	.	_	3	punct	_	_
 
 1	A	_	DT	DT	_	4	det	_	_
 2	empty	_	JJ	JJ	_	4	amod	_	_
@@ -44989,15 +45004,13 @@
 6	oak	_	NN	NN	_	7	nn	_	_
 7	furniture	_	NN	NN	_	4	dobj	_	_
 8	with	_	IN	IN	_	7	prep	_	_
-9	fabrics	_	NNS	NNS	_	11	nn	_	_
-10	/	_	:	:	_	11	punct	_	_
-11	carpeting	_	NN	NN	_	8	pobj	_	_
-12	in	_	IN	IN	_	11	prep	_	_
-13	brightly	_	RB	RB	_	14	advmod	_	_
-14	colored	_	VBN	VBN	_	15	amod	_	_
-15	circles	_	NNS	NNS	_	12	pobj	_	_
-16	and	_	CC	CC	_	15	cc	_	_
-17	stripes	_	NNS	NNS	_	15	conj	_	_
+9	fabrics/carpeting	_	NN	NN	_	8	pobj	_	_
+10	in	_	IN	IN	_	9	prep	_	_
+11	brightly	_	RB	RB	_	12	advmod	_	_
+12	colored	_	VBN	VBN	_	13	amod	_	_
+13	circles	_	NNS	NNS	_	10	pobj	_	_
+14	and	_	CC	CC	_	13	cc	_	_
+15	stripes	_	NNS	NNS	_	13	conj	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	living	_	NN	NN	_	3	nn	_	_
@@ -45441,19 +45454,17 @@
 9	glider	_	NN	NN	_	7	pobj	_	_
 10	.	_	.	.	_	2	punct	_	_
 
-1	A	_	DT	DT	_	4	det	_	_
-2	para	_	NN	NN	_	4	nn	_	_
-3	-	_	:	:	_	4	punct	_	_
-4	surfer	_	NN	NN	_	6	nsubj	_	_
-5	is	_	VBZ	VBZ	_	6	aux	_	_
-6	surfing	_	VBG	VBG	_	0	root	_	_
-7	rough	_	JJ	JJ	_	8	amod	_	_
-8	waves	_	NNS	NNS	_	6	dobj	_	_
-9	on	_	IN	IN	_	6	prep	_	_
-10	a	_	DT	DT	_	12	det	_	_
-11	foggy	_	JJ	JJ	_	12	amod	_	_
-12	day	_	NN	NN	_	9	pobj	_	_
-13	.	_	.	.	_	6	punct	_	_
+1	A	_	DT	DT	_	2	det	_	_
+2	para-surfer	_	NN	NN	_	4	nsubj	_	_
+3	is	_	VBZ	VBZ	_	4	aux	_	_
+4	surfing	_	VBG	VBG	_	0	root	_	_
+5	rough	_	JJ	JJ	_	6	amod	_	_
+6	waves	_	NNS	NNS	_	4	dobj	_	_
+7	on	_	IN	IN	_	4	prep	_	_
+8	a	_	DT	DT	_	10	det	_	_
+9	foggy	_	JJ	JJ	_	10	amod	_	_
+10	day	_	NN	NN	_	7	pobj	_	_
+11	.	_	.	.	_	4	punct	_	_
 
 1	A	_	DT	DT	_	4	det	_	_
 2	lone	_	JJ	JJ	_	4	amod	_	_
@@ -47705,11 +47716,21 @@
 11	.	_	.	.	_	5	punct	_	_
 
 1	Four	_	CD	CD	_	2	num	_	_
-2	airplane	_	NN	NN	_	0	root	_	_
-3	flying	_	VBG	VBG	_	2	partmod	_	_
+2	airplane	_	NN	NN	_	3	nsubj	_	_
+3	flying	_	VBG	VBG	_	8	dep	_	_
 4	in	_	IN	IN	_	3	prep	_	_
 5	formation	_	NN	NN	_	4	pobj	_	_
-6	.	_	.	.	_	2	punct	_	_
+6	.	_	.	.	_	8	punct	_	_
+7	Smoke	_	NN	NN	_	8	nn	_	_
+8	trails	_	NNS	NNS	_	10	nsubj	_	_
+9	are	_	VBP	VBP	_	10	aux	_	_
+10	coming	_	VBG	VBG	_	0	root	_	_
+11	out	_	IN	IN	_	10	prep	_	_
+12	of	_	IN	IN	_	11	pcomp	_	_
+13	3	_	CD	CD	_	12	pobj	_	_
+14	of	_	IN	IN	_	13	prep	_	_
+15	the	_	DT	DT	_	16	det	_	_
+16	plane	_	NN	NN	_	14	pobj	_	_
 
 1	there	_	EX	EX	_	2	expl	_	_
 2	are	_	VBP	VBP	_	0	root	_	_
@@ -49311,6 +49332,13 @@
 1	a	_	DT	DT	_	2	det	_	_
 2	train	_	NN	NN	_	3	nsubj	_	_
 3	travels	_	VBZ	VBZ	_	0	root	_	_
+4	o	_	IN	IN	_	3	prep	_	_
+5	some	_	DT	DT	_	6	det	_	_
+6	tracks	_	NNS	NNS	_	4	pobj	_	_
+7	next	_	RB	RB	_	3	advmod	_	_
+8	to	_	TO	TO	_	7	prep	_	_
+9	some	_	DT	DT	_	10	det	_	_
+10	water	_	NN	NN	_	8	pobj	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	train	_	NN	NN	_	0	root	_	_
@@ -49393,13 +49421,11 @@
 7	that	_	WDT	WDT	_	8	nsubj	_	_
 8	says	_	VBZ	VBZ	_	6	rcmod	_	_
 9	,	_	,	,	_	8	punct	_	_
-10	`	_	``	``	_	8	punct	_	_
-11	`	_	``	``	_	8	punct	_	_
-12	East	_	NNP	NNP	_	13	nn	_	_
-13	Street	_	NNP	NNP	_	8	dobj	_	_
-14	`	_	''	''	_	8	punct	_	_
-15	`	_	''	''	_	8	punct	_	_
-16	.	_	.	.	_	3	punct	_	_
+10	``	_	``	``	_	8	punct	_	_
+11	East	_	NNP	NNP	_	12	nn	_	_
+12	Street	_	NNP	NNP	_	8	dobj	_	_
+13	``	_	''	''	_	8	punct	_	_
+14	.	_	.	.	_	3	punct	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	black	_	JJ	JJ	_	3	amod	_	_
@@ -49552,15 +49578,13 @@
 10	a	_	DT	DT	_	11	det	_	_
 11	character	_	NN	NN	_	9	pobj	_	_
 12	from	_	IN	IN	_	11	prep	_	_
-13	`	_	``	``	_	20	punct	_	_
-14	`	_	``	``	_	20	punct	_	_
-15	Thomas	_	NNP	NNP	_	17	nn	_	_
-16	the	_	DT	DT	_	17	det	_	_
-17	Train	_	NNP	NNP	_	20	nn	_	_
-18	`	_	''	''	_	20	punct	_	_
-19	`	_	''	''	_	20	punct	_	_
-20	books	_	NNS	NNS	_	12	pobj	_	_
-21	.	_	.	.	_	6	punct	_	_
+13	``	_	``	``	_	18	punct	_	_
+14	Thomas	_	NNP	NNP	_	18	dep	_	_
+15	the	_	DT	DT	_	14	det	_	_
+16	Train	_	NNP	NNP	_	14	dep	_	_
+17	``	_	''	''	_	18	punct	_	_
+18	books	_	NNS	NNS	_	12	pobj	_	_
+19	.	_	.	.	_	6	punct	_	_
 
 1	A	_	DT	DT	_	4	det	_	_
 2	green	_	JJ	JJ	_	4	amod	_	_
@@ -49680,12 +49704,11 @@
 6	a	_	DT	DT	_	8	det	_	_
 7	train	_	NN	NN	_	8	nn	_	_
 8	track	_	NN	NN	_	5	pobj	_	_
-9	that	_	WDT	WDT	_	10	nsubj	_	_
-10	s	_	VBZ	VBZ	_	8	rcmod	_	_
-11	next	_	RB	RB	_	10	advmod	_	_
-12	to	_	TO	TO	_	11	prep	_	_
-13	a	_	DT	DT	_	14	det	_	_
-14	fence	_	NN	NN	_	12	pobj	_	_
+9	thats	_	VBZ	VBZ	_	8	dep	_	_
+10	next	_	RB	RB	_	9	advmod	_	_
+11	to	_	TO	TO	_	10	prep	_	_
+12	a	_	DT	DT	_	13	det	_	_
+13	fence	_	NN	NN	_	11	pobj	_	_
 
 1	Train	_	NN	NN	_	0	root	_	_
 2	sitting	_	VBG	VBG	_	1	partmod	_	_
@@ -49836,21 +49859,19 @@
 6	various	_	JJ	JJ	_	7	amod	_	_
 7	cars	_	NNS	NNS	_	5	pobj	_	_
 8	and	_	CC	CC	_	4	cc	_	_
-9	a	_	DT	DT	_	15	det	_	_
-10	fire	_	NN	NN	_	15	nn	_	_
-11	department	_	NN	NN	_	15	nn	_	_
-12	pick	_	NN	NN	_	15	nn	_	_
-13	-	_	:	:	_	15	punct	_	_
-14	up	_	NN	NN	_	15	nn	_	_
-15	truck	_	NN	NN	_	4	conj	_	_
-16	near	_	IN	IN	_	4	prep	_	_
-17	two	_	CD	CD	_	18	num	_	_
-18	people	_	NNS	NNS	_	16	pobj	_	_
-19	standing	_	VBG	VBG	_	18	partmod	_	_
-20	in	_	IN	IN	_	19	prep	_	_
-21	the	_	DT	DT	_	22	det	_	_
-22	lot	_	NN	NN	_	20	pobj	_	_
-23	.	_	.	.	_	4	punct	_	_
+9	a	_	DT	DT	_	13	det	_	_
+10	fire	_	NN	NN	_	13	nn	_	_
+11	department	_	NN	NN	_	13	nn	_	_
+12	pick-up	_	NN	NN	_	13	nn	_	_
+13	truck	_	NN	NN	_	4	conj	_	_
+14	near	_	IN	IN	_	4	prep	_	_
+15	two	_	CD	CD	_	16	num	_	_
+16	people	_	NNS	NNS	_	14	pobj	_	_
+17	standing	_	VBG	VBG	_	16	partmod	_	_
+18	in	_	IN	IN	_	17	prep	_	_
+19	the	_	DT	DT	_	20	det	_	_
+20	lot	_	NN	NN	_	18	pobj	_	_
+21	.	_	.	.	_	4	punct	_	_
 
 1	two	_	CD	CD	_	2	num	_	_
 2	people	_	NNS	NNS	_	0	root	_	_
@@ -49897,19 +49918,17 @@
 8	blanketed	_	VBN	VBN	_	9	amod	_	_
 9	chair	_	NN	NN	_	6	pobj	_	_
 
-1	A	_	DT	DT	_	7	det	_	_
-2	white	_	JJ	JJ	_	7	amod	_	_
-3	long	_	JJ	JJ	_	7	amod	_	_
-4	-	_	:	:	_	7	punct	_	_
-5	haired	_	JJ	JJ	_	7	amod	_	_
-6	adult	_	NN	NN	_	7	nn	_	_
-7	cat	_	NN	NN	_	0	root	_	_
-8	sleeping	_	VBG	VBG	_	7	partmod	_	_
-9	in	_	IN	IN	_	8	prep	_	_
-10	a	_	DT	DT	_	12	det	_	_
-11	wicker	_	NN	NN	_	12	nn	_	_
-12	chair	_	NN	NN	_	9	pobj	_	_
-13	.	_	.	.	_	7	punct	_	_
+1	A	_	DT	DT	_	5	det	_	_
+2	white	_	JJ	JJ	_	5	amod	_	_
+3	long-haired	_	JJ	JJ	_	5	amod	_	_
+4	adult	_	NN	NN	_	5	nn	_	_
+5	cat	_	NN	NN	_	0	root	_	_
+6	sleeping	_	VBG	VBG	_	5	partmod	_	_
+7	in	_	IN	IN	_	6	prep	_	_
+8	a	_	DT	DT	_	10	det	_	_
+9	wicker	_	NN	NN	_	10	nn	_	_
+10	chair	_	NN	NN	_	7	pobj	_	_
+11	.	_	.	.	_	5	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	cat	_	NN	NN	_	0	root	_	_
@@ -50681,15 +50700,13 @@
 15	frisbee	_	NN	NN	_	11	dobj	_	_
 16	that	_	WDT	WDT	_	17	nsubj	_	_
 17	says	_	VBZ	VBZ	_	15	rcmod	_	_
-18	`	_	``	``	_	17	punct	_	_
-19	`	_	``	``	_	17	punct	_	_
-20	Cheese	_	NN	NN	_	21	nn	_	_
-21	Shop	_	NNP	NNP	_	17	dobj	_	_
-22	`	_	''	''	_	17	punct	_	_
-23	`	_	''	''	_	17	punct	_	_
-24	on	_	IN	IN	_	17	prep	_	_
-25	it	_	PRP	PRP	_	24	pobj	_	_
-26	.	_	.	.	_	2	punct	_	_
+18	``	_	``	``	_	17	punct	_	_
+19	Cheese	_	NNP	NNP	_	20	nn	_	_
+20	Shop	_	NNP	NNP	_	17	dobj	_	_
+21	``	_	''	''	_	17	punct	_	_
+22	on	_	IN	IN	_	17	prep	_	_
+23	it	_	PRP	PRP	_	22	pobj	_	_
+24	.	_	.	.	_	2	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	woman	_	NN	NN	_	5	nsubj	_	_
@@ -50748,30 +50765,26 @@
 5	blue	_	JJ	JJ	_	6	amod	_	_
 6	wall	_	NN	NN	_	3	dep	_	_
 7	over	_	IN	IN	_	6	dep	_	_
-8	a	_	DT	DT	_	13	det	_	_
-9	well	_	RB	RB	_	13	advmod	_	_
-10	-	_	JJ	JJ	_	13	amod	_	_
-11	stuffed	_	JJ	JJ	_	13	amod	_	_
-12	blue	_	JJ	JJ	_	13	amod	_	_
-13	couch	_	NN	NN	_	7	pobj	_	_
-14	that	_	WDT	WDT	_	15	nsubj	_	_
-15	dwarfs	_	VBZ	VBZ	_	13	rcmod	_	_
-16	the	_	DT	DT	_	21	det	_	_
-17	already	_	RB	RB	_	18	advmod	_	_
-18	small	_	JJ	JJ	_	21	amod	_	_
-19	,	_	,	,	_	21	punct	_	_
-20	fluffy	_	JJ	JJ	_	21	amod	_	_
-21	dog	_	NN	NN	_	15	dobj	_	_
-22	resting	_	VBG	VBG	_	21	partmod	_	_
-23	face	_	NN	NN	_	25	dep	_	_
-24	-	_	:	:	_	25	punct	_	_
-25	forward	_	RB	RB	_	22	advmod	_	_
-26	on	_	IN	IN	_	22	prep	_	_
-27	one	_	CD	CD	_	26	pobj	_	_
-28	of	_	IN	IN	_	27	prep	_	_
-29	its	_	PRP$	PRP$	_	30	poss	_	_
-30	cushions	_	NNS	NNS	_	28	pobj	_	_
-31	.	_	.	.	_	3	punct	_	_
+8	a	_	DT	DT	_	11	det	_	_
+9	well-stuffed	_	JJ	JJ	_	11	amod	_	_
+10	blue	_	JJ	JJ	_	11	amod	_	_
+11	couch	_	NN	NN	_	7	pobj	_	_
+12	that	_	WDT	WDT	_	13	nsubj	_	_
+13	dwarfs	_	VBZ	VBZ	_	11	rcmod	_	_
+14	the	_	DT	DT	_	19	det	_	_
+15	already	_	RB	RB	_	16	advmod	_	_
+16	small	_	JJ	JJ	_	19	amod	_	_
+17	,	_	,	,	_	19	punct	_	_
+18	fluffy	_	JJ	JJ	_	19	amod	_	_
+19	dog	_	NN	NN	_	13	dobj	_	_
+20	resting	_	VBG	VBG	_	19	partmod	_	_
+21	face-forward	_	RB	RB	_	20	advmod	_	_
+22	on	_	IN	IN	_	20	prep	_	_
+23	one	_	CD	CD	_	22	pobj	_	_
+24	of	_	IN	IN	_	23	prep	_	_
+25	its	_	PRP$	PRP$	_	26	poss	_	_
+26	cushions	_	NNS	NNS	_	24	pobj	_	_
+27	.	_	.	.	_	3	punct	_	_
 
 1	A	_	DT	DT	_	4	det	_	_
 2	small	_	JJ	JJ	_	4	amod	_	_
@@ -50933,19 +50946,17 @@
 18	background	_	NN	NN	_	16	pobj	_	_
 19	.	_	.	.	_	2	punct	_	_
 
-1	A	_	DT	DT	_	5	det	_	_
-2	zebra	_	NN	NN	_	5	nn	_	_
-3	-	_	:	:	_	5	punct	_	_
-4	print	_	NN	NN	_	5	nn	_	_
-5	futon	_	NNP	NNP	_	0	root	_	_
-6	with	_	IN	IN	_	5	prep	_	_
-7	red	_	JJ	JJ	_	8	amod	_	_
-8	cushions	_	NNS	NNS	_	6	pobj	_	_
-9	in	_	IN	IN	_	5	prep	_	_
-10	a	_	DT	DT	_	11	det	_	_
-11	student	_	NN	NN	_	13	poss	_	_
-12	's	_	POS	POS	_	11	possessive	_	_
-13	room	_	NN	NN	_	9	pobj	_	_
+1	A	_	DT	DT	_	3	det	_	_
+2	zebra-print	_	NN	NN	_	3	nn	_	_
+3	futon	_	NNP	NNP	_	0	root	_	_
+4	with	_	IN	IN	_	3	prep	_	_
+5	red	_	JJ	JJ	_	6	amod	_	_
+6	cushions	_	NNS	NNS	_	4	pobj	_	_
+7	in	_	IN	IN	_	3	prep	_	_
+8	a	_	DT	DT	_	9	det	_	_
+9	student	_	NN	NN	_	11	poss	_	_
+10	's	_	POS	POS	_	9	possessive	_	_
+11	room	_	NN	NN	_	7	pobj	_	_
 
 1	Reading	_	NN	NN	_	2	nn	_	_
 2	materials	_	NNS	NNS	_	4	nsubjpass	_	_
@@ -51423,15 +51434,13 @@
 3	of	_	IN	IN	_	2	prep	_	_
 4	people	_	NNS	NNS	_	3	pobj	_	_
 5	riding	_	VBG	VBG	_	2	partmod	_	_
-6	a	_	DT	DT	_	9	det	_	_
-7	jet	_	NN	NN	_	9	nn	_	_
-8	-	_	:	:	_	9	punct	_	_
-9	ski	_	NN	NN	_	5	dobj	_	_
-10	on	_	IN	IN	_	5	prep	_	_
-11	top	_	NN	NN	_	10	pobj	_	_
-12	of	_	IN	IN	_	11	prep	_	_
-13	water	_	NN	NN	_	12	pobj	_	_
-14	.	_	.	.	_	2	punct	_	_
+6	a	_	DT	DT	_	7	det	_	_
+7	jet-ski	_	NN	NN	_	5	dobj	_	_
+8	on	_	IN	IN	_	5	prep	_	_
+9	top	_	NN	NN	_	8	pobj	_	_
+10	of	_	IN	IN	_	9	prep	_	_
+11	water	_	NN	NN	_	10	pobj	_	_
+12	.	_	.	.	_	2	punct	_	_
 
 1	Two	_	CD	CD	_	2	num	_	_
 2	people	_	NNS	NNS	_	0	root	_	_
@@ -51541,20 +51550,18 @@
 8	string	_	NN	NN	_	6	pobj	_	_
 9	.	_	.	.	_	5	punct	_	_
 
-1	She	_	PRP	PRP	_	6	nsubj	_	_
-2	is	_	VBZ	VBZ	_	6	cop	_	_
-3	cross	_	NN	NN	_	6	nn	_	_
-4	-	_	:	:	_	6	punct	_	_
-5	country	_	NN	NN	_	6	nn	_	_
-6	skiing	_	NN	NN	_	0	root	_	_
-7	for	_	IN	IN	_	6	prep	_	_
-8	the	_	DT	DT	_	9	det	_	_
-9	exercise	_	NN	NN	_	7	pobj	_	_
-10	it	_	PRP	PRP	_	11	nsubj	_	_
-11	provides	_	VBZ	VBZ	_	9	rcmod	_	_
-12	for	_	IN	IN	_	11	prep	_	_
-13	her	_	PRP	PRP	_	12	pobj	_	_
-14	.	_	.	.	_	6	punct	_	_
+1	She	_	PRP	PRP	_	4	nsubj	_	_
+2	is	_	VBZ	VBZ	_	4	cop	_	_
+3	cross-country	_	NN	NN	_	4	nn	_	_
+4	skiing	_	NN	NN	_	0	root	_	_
+5	for	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	exercise	_	NN	NN	_	5	pobj	_	_
+8	it	_	PRP	PRP	_	9	nsubj	_	_
+9	provides	_	VBZ	VBZ	_	7	rcmod	_	_
+10	for	_	IN	IN	_	9	prep	_	_
+11	her	_	PRP	PRP	_	10	pobj	_	_
+12	.	_	.	.	_	4	punct	_	_
 
 1	The	_	DT	DT	_	2	det	_	_
 2	woman	_	NN	NN	_	7	nsubj	_	_
@@ -53047,25 +53054,23 @@
 7	made	_	VBN	VBN	_	8	amod	_	_
 8	bed	_	NN	NN	_	4	pobj	_	_
 
-1	a	_	DT	DT	_	5	det	_	_
-2	well	_	RB	RB	_	4	advmod	_	_
-3	-	_	:	:	_	4	punct	_	_
-4	made	_	JJ	JJ	_	5	amod	_	_
-5	bed	_	NN	NN	_	0	root	_	_
-6	with	_	IN	IN	_	5	prep	_	_
-7	many	_	JJ	JJ	_	8	amod	_	_
-8	pillows	_	NNS	NNS	_	6	pobj	_	_
-9	in	_	IN	IN	_	5	prep	_	_
-10	front	_	NN	NN	_	9	pobj	_	_
-11	of	_	IN	IN	_	10	prep	_	_
-12	a	_	DT	DT	_	13	det	_	_
-13	window	_	NN	NN	_	11	pobj	_	_
-14	looking	_	VBG	VBG	_	13	partmod	_	_
-15	out	_	RB	RB	_	14	advmod	_	_
-16	into	_	IN	IN	_	14	prep	_	_
-17	a	_	DT	DT	_	19	det	_	_
-18	night	_	NN	NN	_	19	nn	_	_
-19	scene	_	NN	NN	_	16	pobj	_	_
+1	a	_	DT	DT	_	3	det	_	_
+2	well-made	_	JJ	JJ	_	3	amod	_	_
+3	bed	_	NN	NN	_	0	root	_	_
+4	with	_	IN	IN	_	3	prep	_	_
+5	many	_	JJ	JJ	_	6	amod	_	_
+6	pillows	_	NNS	NNS	_	4	pobj	_	_
+7	in	_	IN	IN	_	3	prep	_	_
+8	front	_	NN	NN	_	7	pobj	_	_
+9	of	_	IN	IN	_	8	prep	_	_
+10	a	_	DT	DT	_	11	det	_	_
+11	window	_	NN	NN	_	9	pobj	_	_
+12	looking	_	VBG	VBG	_	11	partmod	_	_
+13	out	_	RB	RB	_	12	advmod	_	_
+14	into	_	IN	IN	_	12	prep	_	_
+15	a	_	DT	DT	_	17	det	_	_
+16	night	_	NN	NN	_	17	nn	_	_
+17	scene	_	NN	NN	_	14	pobj	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	man	_	NN	NN	_	0	root	_	_
@@ -54566,23 +54571,21 @@
 8	a	_	DT	DT	_	9	det	_	_
 9	man	_	NN	NN	_	2	conj	_	_
 10	in	_	IN	IN	_	9	prep	_	_
-11	a	_	DT	DT	_	16	det	_	_
-12	long	_	JJ	JJ	_	16	amod	_	_
-13	-	_	:	:	_	16	punct	_	_
-14	sleeved	_	JJ	JJ	_	16	amod	_	_
-15	green	_	JJ	JJ	_	16	amod	_	_
-16	shirt	_	NN	NN	_	10	pobj	_	_
-17	and	_	CC	CC	_	2	cc	_	_
-18	a	_	DT	DT	_	19	det	_	_
-19	man	_	NN	NN	_	2	conj	_	_
-20	in	_	IN	IN	_	19	prep	_	_
-21	a	_	DT	DT	_	23	det	_	_
-22	black	_	JJ	JJ	_	23	amod	_	_
-23	coat	_	NN	NN	_	20	pobj	_	_
-24	holding	_	VBG	VBG	_	19	partmod	_	_
-25	their	_	PRP$	PRP$	_	26	poss	_	_
-26	cellphones	_	NNS	NNS	_	24	dobj	_	_
-27	.	_	.	.	_	2	punct	_	_
+11	a	_	DT	DT	_	14	det	_	_
+12	long-sleeved	_	JJ	JJ	_	14	amod	_	_
+13	green	_	JJ	JJ	_	14	amod	_	_
+14	shirt	_	NN	NN	_	10	pobj	_	_
+15	and	_	CC	CC	_	2	cc	_	_
+16	a	_	DT	DT	_	17	det	_	_
+17	man	_	NN	NN	_	2	conj	_	_
+18	in	_	IN	IN	_	17	prep	_	_
+19	a	_	DT	DT	_	21	det	_	_
+20	black	_	JJ	JJ	_	21	amod	_	_
+21	coat	_	NN	NN	_	18	pobj	_	_
+22	holding	_	VBG	VBG	_	17	partmod	_	_
+23	their	_	PRP$	PRP$	_	24	poss	_	_
+24	cellphones	_	NNS	NNS	_	22	dobj	_	_
+25	.	_	.	.	_	2	punct	_	_
 
 1	Three	_	CD	CD	_	2	num	_	_
 2	men	_	NN	NN	_	3	nsubj	_	_
@@ -56206,12 +56209,10 @@
 4	parked	_	VBD	VBD	_	0	root	_	_
 5	somewhere	_	RB	RB	_	4	advmod	_	_
 6	in	_	IN	IN	_	4	prep	_	_
-7	a	_	DT	DT	_	11	det	_	_
-8	park	_	NN	NN	_	11	nn	_	_
-9	-	_	:	:	_	11	punct	_	_
-10	like	_	JJ	JJ	_	11	amod	_	_
-11	setting	_	NN	NN	_	6	pobj	_	_
-12	.	_	.	.	_	4	punct	_	_
+7	a	_	DT	DT	_	9	det	_	_
+8	park-like	_	JJ	JJ	_	9	amod	_	_
+9	setting	_	NN	NN	_	6	pobj	_	_
+10	.	_	.	.	_	4	punct	_	_
 
 1	Large	_	JJ	JJ	_	4	amod	_	_
 2	commercial	_	JJ	JJ	_	4	amod	_	_
@@ -56334,14 +56335,12 @@
 1	A	_	DT	DT	_	2	det	_	_
 2	runway	_	NN	NN	_	3	nsubj	_	_
 3	has	_	VBZ	VBZ	_	0	root	_	_
-4	many	_	JJ	JJ	_	8	amod	_	_
-5	old	_	JJ	JJ	_	8	amod	_	_
-6	-	_	JJ	JJ	_	8	amod	_	_
-7	fashioned	_	JJ	JJ	_	8	amod	_	_
-8	planes	_	NNS	NNS	_	3	dobj	_	_
-9	and	_	CC	CC	_	8	cc	_	_
-10	helicopters	_	NNS	NNS	_	8	conj	_	_
-11	.	_	.	.	_	3	punct	_	_
+4	many	_	JJ	JJ	_	6	amod	_	_
+5	old-fashioned	_	JJ	JJ	_	6	amod	_	_
+6	planes	_	NNS	NNS	_	3	dobj	_	_
+7	and	_	CC	CC	_	6	cc	_	_
+8	helicopters	_	NNS	NNS	_	6	conj	_	_
+9	.	_	.	.	_	3	punct	_	_
 
 1	A	_	DT	DT	_	3	det	_	_
 2	propeller	_	NN	NN	_	3	nn	_	_
@@ -57403,21 +57402,19 @@
 8	yard	_	NN	NN	_	5	pobj	_	_
 9	.	_	.	.	_	3	punct	_	_
 
-1	An	_	DT	DT	_	5	det	_	_
-2	old	_	JJ	JJ	_	5	amod	_	_
-3	-	_	:	:	_	5	punct	_	_
-4	fashioned	_	JJ	JJ	_	5	amod	_	_
-5	train	_	NN	NN	_	0	root	_	_
-6	going	_	VBG	VBG	_	5	partmod	_	_
-7	down	_	IN	IN	_	6	prep	_	_
-8	the	_	DT	DT	_	9	det	_	_
-9	tracks	_	NNS	NNS	_	7	pobj	_	_
-10	with	_	IN	IN	_	6	prep	_	_
-11	lots	_	NNS	NNS	_	10	pobj	_	_
-12	of	_	IN	IN	_	11	prep	_	_
-13	wires	_	NNS	NNS	_	12	pobj	_	_
-14	overhead	_	RB	RB	_	11	advmod	_	_
-15	.	_	.	.	_	5	punct	_	_
+1	An	_	DT	DT	_	3	det	_	_
+2	old-fashioned	_	JJ	JJ	_	3	amod	_	_
+3	train	_	NN	NN	_	0	root	_	_
+4	going	_	VBG	VBG	_	3	partmod	_	_
+5	down	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	tracks	_	NNS	NNS	_	5	pobj	_	_
+8	with	_	IN	IN	_	4	prep	_	_
+9	lots	_	NNS	NNS	_	8	pobj	_	_
+10	of	_	IN	IN	_	9	prep	_	_
+11	wires	_	NNS	NNS	_	10	pobj	_	_
+12	overhead	_	RB	RB	_	9	advmod	_	_
+13	.	_	.	.	_	3	punct	_	_
 
 1	Train	_	NN	NN	_	2	nn	_	_
 2	engine	_	NN	NN	_	0	root	_	_
@@ -57916,7 +57913,21 @@
 2	tanker	_	NN	NN	_	3	nn	_	_
 3	trunk	_	NN	NN	_	4	nsubj	_	_
 4	is	_	VBZ	VBZ	_	0	root	_	_
-5	on	_	IN	IN	_	4	advmod	_	_
+5	on	_	IN	IN	_	4	prep	_	_
+6	it	_	PRP$	PRP$	_	7	poss	_	_
+7	's	_	POS	POS	_	8	poss	_	_
+8	side	_	NN	NN	_	5	pobj	_	_
+9	on	_	IN	IN	_	4	prep	_	_
+10	the	_	DT	DT	_	11	det	_	_
+11	side	_	NN	NN	_	9	pobj	_	_
+12	of	_	IN	IN	_	11	prep	_	_
+13	a	_	DT	DT	_	14	det	_	_
+14	road	_	NN	NN	_	12	pobj	_	_
+15	near	_	IN	IN	_	14	prep	_	_
+16	a	_	DT	DT	_	18	det	_	_
+17	police	_	NN	NN	_	18	nn	_	_
+18	car	_	NN	NN	_	15	pobj	_	_
+19	.	_	.	.	_	4	punct	_	_
 
 1	The	_	DT	DT	_	2	det	_	_
 2	truck	_	NN	NN	_	4	nsubj	_	_
@@ -57924,7 +57935,11 @@
 4	rolled	_	VBN	VBN	_	0	root	_	_
 5	over	_	RP	RP	_	4	prt	_	_
 6	on	_	IN	IN	_	4	prep	_	_
-7	to	_	TO	TO	_	6	dep	_	_
+7	to	_	TO	TO	_	6	pcomp	_	_
+8	it	_	PRP	PRP	_	10	poss	_	_
+9	's	_	POS	POS	_	8	possessive	_	_
+10	side	_	NN	NN	_	7	pobj	_	_
+11	.	_	.	.	_	4	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	man	_	NN	NN	_	0	root	_	_
@@ -58386,12 +58401,10 @@
 8	in	_	IN	IN	_	4	prep	_	_
 9	front	_	NN	NN	_	8	pobj	_	_
 10	of	_	IN	IN	_	9	prep	_	_
-11	a	_	DT	DT	_	16	det	_	_
-12	rusty	_	JJ	JJ	_	16	amod	_	_
-13	chain	_	NN	NN	_	16	nn	_	_
-14	-	_	:	:	_	16	punct	_	_
-15	link	_	JJ	JJ	_	16	amod	_	_
-16	fence	_	NN	NN	_	10	pobj	_	_
+11	a	_	DT	DT	_	14	det	_	_
+12	rusty	_	JJ	JJ	_	14	amod	_	_
+13	chain-link	_	JJ	JJ	_	14	amod	_	_
+14	fence	_	NN	NN	_	10	pobj	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	bear	_	NN	NN	_	3	nsubj	_	_
@@ -58698,16 +58711,14 @@
 6	the	_	DT	DT	_	7	det	_	_
 7	beach	_	NN	NN	_	5	pobj	_	_
 8	in	_	IN	IN	_	4	prep	_	_
-9	a	_	DT	DT	_	13	det	_	_
-10	two	_	JJ	JJ	_	13	amod	_	_
-11	-	_	:	:	_	13	punct	_	_
-12	wheeled	_	JJ	JJ	_	13	amod	_	_
-13	cart	_	NN	NN	_	8	pobj	_	_
-14	pulled	_	VBN	VBN	_	13	partmod	_	_
-15	by	_	IN	IN	_	14	prep	_	_
-16	a	_	DT	DT	_	17	det	_	_
-17	horse	_	NN	NN	_	15	pobj	_	_
-18	.	_	.	.	_	4	punct	_	_
+9	a	_	DT	DT	_	11	det	_	_
+10	two-wheeled	_	JJ	JJ	_	11	amod	_	_
+11	cart	_	NN	NN	_	8	pobj	_	_
+12	pulled	_	VBN	VBN	_	11	partmod	_	_
+13	by	_	IN	IN	_	12	prep	_	_
+14	a	_	DT	DT	_	15	det	_	_
+15	horse	_	NN	NN	_	13	pobj	_	_
+16	.	_	.	.	_	4	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	horse	_	NN	NN	_	0	root	_	_
@@ -59734,8 +59745,12 @@
 1	MAN	_	NN	NN	_	0	root	_	_
 2	ON	_	IN	IN	_	1	prep	_	_
 3	A	_	DT	DT	_	5	det	_	_
-4	SKATE	_	NN	NN	_	5	nn	_	_
+4	SKATE	_	NNP	NNP	_	5	nn	_	_
 5	BOARD	_	NN	NN	_	2	pobj	_	_
+6	CROSSING	_	VBG	VBG	_	1	partmod	_	_
+7	OVER	_	IN	IN	_	6	prep	_	_
+8	SOME	_	DT	DT	_	9	det	_	_
+9	GRAFFITI	_	NN	NN	_	7	pobj	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	man	_	NN	NN	_	0	root	_	_
@@ -61411,8 +61426,8 @@
 12	.	_	.	.	_	4	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
-2	boy	_	NN	NN	_	29	nsubj	_	_
-3	wearing	_	VBG	VBG	_	2	partmod	_	_
+2	boy	_	NN	NN	_	21	nsubj	_	_
+3	wearing	_	VBG	VBG	_	2	dep	_	_
 4	a	_	DT	DT	_	11	det	_	_
 5	black	_	JJ	JJ	_	11	amod	_	_
 6	,	_	,	,	_	5	punct	_	_
@@ -61421,33 +61436,25 @@
 9	yellow	_	JJ	JJ	_	5	conj	_	_
 10	superhero	_	NN	NN	_	11	nn	_	_
 11	costume	_	NN	NN	_	3	dobj	_	_
-12	and	_	CC	CC	_	2	cc	_	_
-13	wearing	_	VBG	VBG	_	2	conj	_	_
-14	a	_	DT	DT	_	26	det	_	_
-15	painted	_	VBN	VBN	_	22	dep	_	_
-16	-	_	:	:	_	22	punct	_	_
-17	on	_	JJ	JJ	_	22	conj	_	_
-18	black	_	JJ	JJ	_	22	dep	_	_
-19	-	_	:	:	_	22	punct	_	_
-20	and	_	CC	CC	_	22	cc	_	_
-21	-	_	JJ	JJ	_	22	conj	_	_
-22	white	_	JJ	JJ	_	26	amod	_	_
-23	`	_	``	``	_	26	punct	_	_
-24	`	_	``	``	_	26	punct	_	_
-25	eye	_	NN	NN	_	26	nn	_	_
-26	mask	_	NN	NN	_	2	dep	_	_
-27	`	_	''	''	_	26	punct	_	_
-28	`	_	''	''	_	26	punct	_	_
-29	eats	_	VBZ	VBZ	_	0	root	_	_
-30	something	_	NN	NN	_	29	dobj	_	_
-31	from	_	IN	IN	_	29	prep	_	_
-32	a	_	DT	DT	_	33	det	_	_
-33	sheet	_	NN	NN	_	31	pobj	_	_
-34	of	_	IN	IN	_	33	prep	_	_
-35	white	_	JJ	JJ	_	37	amod	_	_
-36	wax	_	NN	NN	_	37	nn	_	_
-37	paper	_	NN	NN	_	34	pobj	_	_
-38	.	_	.	.	_	29	punct	_	_
+12	and	_	CC	CC	_	3	cc	_	_
+13	wearing	_	VBG	VBG	_	3	conj	_	_
+14	a	_	DT	DT	_	19	det	_	_
+15	painted-on	_	JJ	JJ	_	19	amod	_	_
+16	black-and-white	_	JJ	JJ	_	19	amod	_	_
+17	``	_	``	``	_	19	punct	_	_
+18	eye	_	NN	NN	_	19	nn	_	_
+19	mask	_	NN	NN	_	13	dobj	_	_
+20	``	_	''	''	_	19	punct	_	_
+21	eats	_	VBZ	VBZ	_	0	root	_	_
+22	something	_	NN	NN	_	21	dobj	_	_
+23	from	_	IN	IN	_	21	prep	_	_
+24	a	_	DT	DT	_	25	det	_	_
+25	sheet	_	NN	NN	_	23	pobj	_	_
+26	of	_	IN	IN	_	25	prep	_	_
+27	white	_	JJ	JJ	_	29	amod	_	_
+28	wax	_	NN	NN	_	29	nn	_	_
+29	paper	_	NN	NN	_	26	pobj	_	_
+30	.	_	.	.	_	21	punct	_	_
 
 1	A	_	DT	DT	_	2	det	_	_
 2	woman	_	NN	NN	_	3	nsubj	_	_
