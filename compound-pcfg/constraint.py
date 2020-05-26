@@ -16,7 +16,8 @@ with rule 2, if we had a phrase "dogs eat", the head could not be "dogs", and "d
 # frame only has one verb
 # gets the invalid phrases that violent either rules
 # sent gives the original position of each word
-def invalid_phrases(frame, phrase, invalids, sent, alignment):
+# constraint type: 1 = rule 1, 2 = rule 2, 3 = rule 1 & 2
+def invalid_phrases(frame, phrase, invalids, sent, alignment, type):
     predicate = frame[0].split('_')[0]
     # phrase = phrase.split(' ')
     heads = phrase
@@ -34,7 +35,9 @@ def invalid_phrases(frame, phrase, invalids, sent, alignment):
             argument.add(align)
 
     intersect = phrase_set.intersection(argument)
-
+    # store copies for different rule type
+    invalids_2 = invalids
+    invalids_3 = invalids
     # get range
     start_idx = sent.index(phrase[0])
     end_idx = sent.index(phrase[-1])
@@ -48,23 +51,25 @@ def invalid_phrases(frame, phrase, invalids, sent, alignment):
                 head_ind = sent.index(head)
                 phrase_range = (start_idx, end_idx, head_ind)
                 invalids.add(phrase_range)
+                invalids_3.add(phrase_range)
     else:
         pred_ind = sent.index(predicate)
-
         for head in heads:
             head_ind = sent.index(head)
             phrase_range = (start_idx, end_idx, head_ind)
-            # ASSUME predicate cannot exist by itself
-            #if len(intersect) == 0  and pred_ind <= end_idx:
-            #    print('indx equal')
-            #    invalids.add((start_idx, end_idx, pred_ind))
             if (head != predicate) or (head_ind <= end_idx):
             #if (head != predicate) or (head_ind <= end_idx) or (head not in argument):
-                invalids.add(phrase_range)
-    return invalids
+                invalids_2.add(phrase_range)
+                invalids_3.add(phrase_range)
+    if type == 1:
+        return invalids
+    elif type == 2:
+        return invalids_2
+    else:
+        return invalids_3
 
 # generate all possible phrases from left to right, not including the entire sentence
-def gen_phrases(sent, frame, alignment):
+def gen_phrases(sent, frame, alignment, type):
     alignment = get_align(alignment.lower())
     sent = sent.split(' ')
     pointer = 0
@@ -80,7 +85,7 @@ def gen_phrases(sent, frame, alignment):
         for ind in range(pointer, phrase_end):
             phrase = sent[pointer:ind+1]
             # phrase_str = ' '.join(phrase)
-            invalids = invalid_phrases(frame, phrase, invalids, sent, alignment)
+            invalids = invalid_phrases(frame, phrase, invalids, sent, alignment, type)
 
         pointer += 1
     return list(invalids)

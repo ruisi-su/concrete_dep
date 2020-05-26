@@ -208,7 +208,7 @@ def get_data(args):
 
     def convert(textfile, lowercase, replace_num,
                 batchsize, seqlength, minseqlength, outfile, num_sents, max_sent_l=0,
-                shuffle=0, include_boundary=1, apply_length_filter=1, framefile='', alignfile='', conllfile="", test=False):
+                shuffle=0, include_boundary=1, apply_length_filter=1, framefile='', alignfile='', constraint_type=3, conllfile="", test=False):
         newseqlength = seqlength
         if include_boundary == 1:
             newseqlength += 2 #add 2 for EOS and BOS
@@ -263,7 +263,7 @@ def get_data(args):
                     if frame[0] == '':
                         invalids = []
                     else:
-                        invalids = gen_phrases(sent_str, frame, alignment)
+                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type)
 
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
@@ -319,7 +319,7 @@ def get_data(args):
                     if frame[0] == '':
                         invalids = []
                     else:
-                        invalids = gen_phrases(sent_str, frame, alignment)
+                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type)
 
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
@@ -413,15 +413,20 @@ def get_data(args):
                          args.batchsize, test_seqlength, args.minseqlength,
                          args.outputfile + "test.pkl", num_sents_test,
                          max_sent_l, args.shuffle, args.include_boundary, 0,
-                         args.testframe, args.testalign, conllfile="data/dep/test.conllx" if args.dep else "", test=True)
+                         args.testframe, args.testalign, args.constraint_type,
+                         conllfile="data/dep/test.conllx" if args.dep else "", test=True)
     max_sent_l = convert(args.valfile, args.lowercase, args.replace_num,
                          args.batchsize, valid_seqlength, args.minseqlength,
                          args.outputfile + "val.pkl", num_sents_valid,
-                         max_sent_l, args.shuffle, args.include_boundary, 0, args.valframe, args.valalign, conllfile="data/dep/dev.conllx" if args.dep else "")
+                         max_sent_l, args.shuffle, args.include_boundary, 0,
+                         args.valframe, args.valalign, args.constraint_type,
+                         conllfile="data/dep/dev.conllx" if args.dep else "")
     max_sent_l = convert(args.trainfile, args.lowercase, args.replace_num,
                          args.batchsize, args.seqlength,  args.minseqlength,
                          args.outputfile + "train.pkl", num_sents_train,
-                         max_sent_l, args.shuffle, args.include_boundary, 1, args.trainframe, args.trainalign, conllfile="" if args.dep else "")
+                         max_sent_l, args.shuffle, args.include_boundary, 1,
+                         args.trainframe, args.trainalign, args.constraint_type,
+                         conllfile="" if args.dep else "")
     print("Max sent length (before dropping): {}".format(max_sent_l))
 
 def main(arguments):
@@ -471,6 +476,7 @@ def main(arguments):
     parser.add_argument('--trainalign', help='File for train align results', type = str, default='')
     parser.add_argument('--valalign', help='File for val align results', type = str, default='')
     parser.add_argument('--testalign', help='File for test align results', type = str, default='')
+    parser.add_argument('--constraint_type', help='Type for constraint setup, rule 1 or rule 2 or both', type = int, default=3)
     args = parser.parse_args(arguments)
     np.random.seed(3435)
     get_data(args)
