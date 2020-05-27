@@ -12,12 +12,16 @@ with rule 1, "food at home" could not be a phrase, but "eat food at home", "food
 
 with rule 2, if we had a phrase "dogs eat", the head could not be "dogs", and "dogs eat food at home" the heads could not be "dogs", "food", or "home"
 '''
-
 # frame only has one verb
 # gets the invalid phrases that violent either rules
 # sent gives the original position of each word
 # constraint type: 1 = rule 1, 2 = rule 2, 3 = rule 1 & 2
-def invalid_phrases(frame, phrase, invalids, sent, alignment, type):
+def invalid_phrases(frame, phrase, invalids, sent, alignment, type, log_invalids=False):
+    if log_invalids:
+        log_file = open("log_invalids.txt", "a")
+    else:
+        log_file = ''
+
     predicate = frame[0].split('_')[0]
     # phrase = phrase.split(' ')
     heads = phrase
@@ -40,7 +44,8 @@ def invalid_phrases(frame, phrase, invalids, sent, alignment, type):
     invalids_3 = invalids
     # get range
     start_idx = sent.index(phrase[0])
-    end_idx = sent.index(phrase[-1])
+    end_idx = len(phrase) - 1
+    # print('phrase is ' + str(phrase) + ' and last of phrase is ' + str(phrase[-1]) + ' and last index is ' + str(end_idx))
     phrase_str = ' '.join(phrase)
     # check rule 1
     # check if predicate exists in phrase
@@ -50,8 +55,13 @@ def invalid_phrases(frame, phrase, invalids, sent, alignment, type):
             for head in heads:
                 head_ind = sent.index(head)
                 phrase_range = (start_idx, end_idx, head_ind)
-                invalids.add(phrase_range)
-                invalids_3.add(phrase_range)
+                if head_ind <= end_idx:
+                    log = 'R1 invalid is ('  + str(' '.join(sent[start_idx:end_idx])) + ') head is ' + str(head_ind) + '-' + str(sent[head_ind])
+                    invalids.add(phrase_range)
+                    invalids_3.add(phrase_range)
+                    if log_file != '':
+                        log_file.write(log + '\n')
+
     else:
         pred_ind = sent.index(predicate)
         for head in heads:
@@ -59,8 +69,12 @@ def invalid_phrases(frame, phrase, invalids, sent, alignment, type):
             phrase_range = (start_idx, end_idx, head_ind)
             if (head != predicate) or (head_ind <= end_idx):
             #if (head != predicate) or (head_ind <= end_idx) or (head not in argument):
+                log = 'R2 invalid is ('  + str(' '.join(sent[start_idx:end_idx])) + ') head is ' + str(head_ind) + '-' + str(sent[head_ind])
                 invalids_2.add(phrase_range)
                 invalids_3.add(phrase_range)
+                if log_file != '':
+                    log_file.write(log + '\n')
+    log_file.close()
     if type == 1:
         return invalids
     elif type == 2:
@@ -117,3 +131,10 @@ def get_align(alignment):
         if frame not in aligns.keys():
             aligns[frame] = cap
     return aligns
+
+# gold is ( ( a road ) ( filled ( with cars ) ( in ( a desert ) ) ) )
+# aligns = 'road:obstacle_car in:source_land '
+# frame = 'leaping_destination_land	leaping_agent_man	leaping_source_land	leaping_obstacle_car	leaping_place_road'
+# sent = 'a road filled with cars in a desert'
+# invals = gen_phrases(sent, frame.strip().split('\t'), aligns, 1)
+# print(invals)

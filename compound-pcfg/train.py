@@ -32,10 +32,10 @@ parser = argparse.ArgumentParser()
 
 # Program options
 parser.add_argument('--mode', default='train', help='train/test')
-parser.add_argument('--test_file', default='data/baseline/ptb-test.pkl')
+parser.add_argument('--test_file', default='data/multimodal/cocotest.pkl')
 # Data path options
-parser.add_argument('--train_file', default='data/baseline/ptb-train.pkl')
-parser.add_argument('--val_file', default='data/baseline/ptb-val.pkl')
+parser.add_argument('--train_file', default='data/multimodal/cocotrain.pkl')
+parser.add_argument('--val_file', default='data/multimodal/cocoval.pkl')
 parser.add_argument('--save_path', default='compound-pcfg.pt', help='where to save the model')
 parser.add_argument('--pretrained_word_emb', default="", help="word emb file")
 # Model options
