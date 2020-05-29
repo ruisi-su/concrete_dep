@@ -222,8 +222,10 @@ def get_data(args):
         if (conllfile != ''):
             deptrees = utils.read_conll(open(conllfile, 'r'))
             dep_list = list(deptrees)
+        # count for when pred is in the caption
 
         if test:
+            pred_present = 0
             with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align, open('../data/coco/VGNSL_split/test_ground-truth.txt', 'r') as truth:
                 for (tree, frame, alignment, ground_truth) in zip(txt, fr, align, truth):
                     frame = frame.strip().split('\t')
@@ -263,7 +265,7 @@ def get_data(args):
                     if frame[0] == '':
                         invalids = []
                     else:
-                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type)
+                        invalids, pred_present = gen_phrases(sent_str, frame, alignment, constraint_type, pred_present)
 
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
@@ -280,7 +282,9 @@ def get_data(args):
                     sent_id += 1
                     if sent_id % 100000 == 0:
                         print("{}/{} sentences processed".format(sent_id, num_sents))
+                print('num of pred in the caption ' + str(pred_present))
         else:
+            pred_present = 0
             with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align:
                 for (tree, frame, alignment) in zip(txt, fr, align):
                     frame = frame.strip().split('\t')
@@ -319,8 +323,7 @@ def get_data(args):
                     if frame[0] == '':
                         invalids = []
                     else:
-                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type)
-
+                        invalids, pred_present = gen_phrases(sent_str, frame, alignment, constraint_type, pred_present)
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
                     other_data_item = [sent_str, invalids, tags, action,
@@ -335,8 +338,7 @@ def get_data(args):
                     sent_id += 1
                     if sent_id % 100000 == 0:
                         print("{}/{} sentences processed".format(sent_id, num_sents))
-
-
+                print('num of pred in the caption ' + str(pred_present))
         print(sent_id, num_sents)
         if shuffle == 1:
             rand_idx = np.random.permutation(sent_id)
