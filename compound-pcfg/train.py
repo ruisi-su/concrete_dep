@@ -480,7 +480,6 @@ def eval(data, model):
             count += 1
             output.write(pred_tree_log + '\t' + gold_tree_log + '\n')
 
-  print('count is ' + str(count))
   tp, fp, fn = corpus_f1
   prec = tp / (tp + fp)
   recall = tp / (tp + fn)
