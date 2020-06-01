@@ -31,7 +31,7 @@ class PCFG(nn.Module):
     #unary scores : b x n x T
     #rule scores : b x NT  x (NT+T) x (NT+T)
     #root : b x NT
-
+    print('inside' + str(len(invalid_spans)))
     # statistics
     batch_size = unary_scores.size(0)
     n = unary_scores.size(1)
@@ -48,7 +48,6 @@ class PCFG(nn.Module):
       for i in range(batch_size):
         if len(invalid_spans[i]) < 1:
           continue
-          #print('inside' + str(len(invalid_spans[i])))
         for (l, r, h) in invalid_spans[i]:
             mask[i][l, r+1, :].fill_(-50)
 
@@ -122,7 +121,6 @@ class PCFG(nn.Module):
       for i in range(batch_size):
         if len(invalid_spans[i]) < 1:
           continue
-          #print('inside' + str(len(invalid_spans[i])))
         for (l, r, h) in invalid_spans[i]:
             mask[i][l, r+1, :].fill_(-50)
 

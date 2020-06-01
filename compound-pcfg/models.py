@@ -67,7 +67,7 @@ class CompPCFG(nn.Module):
     result =  -0.5 * (logvar - torch.pow(mean, 2)- torch.exp(logvar) + 1)
     return result
 
-  def forward(self, x, argmax=False, use_mean=False, invalid_spans =None, **kwargs):
+  def forward(self, x, argmax=False, use_mean=False, invalid_spans=None, **kwargs):
     #x : batch x n
     n = x.size(1)
     batch_size = x.size(0)
@@ -107,12 +107,12 @@ class CompPCFG(nn.Module):
     unary = torch.gather(unary_scores, 3, x_expand).squeeze(3)
     rule_score = F.log_softmax(self.rule_mlp(nt_emb), 2) # nt x t**2
     rule_scores = rule_score.view(batch_size, self.nt_states, self.all_states, self.all_states)
-    log_Z = self.pcfg._inside(unary, rule_scores, root_scores, invalid_spans = invalid_spans)
+    log_Z = self.pcfg._inside(unary, rule_scores, root_scores, invalid_spans)
     if self.z_dim == 0:
       kl = torch.zeros_like(log_Z)
     if argmax:
       with torch.no_grad():
-        max_score, binary_matrix, spans = self.pcfg._viterbi(unary, rule_scores, root_scores,invalid_spans = invalid_spans)
+        max_score, binary_matrix, spans = self.pcfg._viterbi(unary, rule_scores, root_scores, invalid_spans)
         self.tags = self.pcfg.argmax_tags
       return -log_Z, kl, binary_matrix, spans
     else:
