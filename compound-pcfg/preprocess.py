@@ -228,7 +228,6 @@ def get_data(args):
             pred_present = 0
             with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align, open('../data/coco/VGNSL_split/test_ground-truth.txt', 'r') as truth:
                 for (tree, frame, alignment, ground_truth) in zip(txt, fr, align, truth):
-                    frame = frame.strip().split('\t')
                     tree = tree.strip()
                     ground_truth = ground_truth.strip()
                     action = get_actions(tree)
@@ -250,6 +249,9 @@ def get_data(args):
 
                     if lowercase == 1:
                         sent = sent_lower
+                        alignment = alignment.lower()
+                        frame = frame.lower()
+                    frame = frame.strip().split('\t')
                     sent_str = " ".join(sent)
                     if replace_num == 1:
                         sent = [clean_number(w) for w in sent]
