@@ -225,7 +225,6 @@ def get_data(args):
         # count for when pred is in the caption
 
         if test:
-            pred_present = 0
             with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align, open('../data/coco/VGNSL_split/test_ground-truth.txt', 'r') as truth:
                 for (tree, frame, alignment, ground_truth) in zip(txt, fr, align, truth):
                     tree = tree.strip()
@@ -267,7 +266,7 @@ def get_data(args):
                     if frame[0] == '':
                         invalids = []
                     else:
-                        invalids, pred_present = gen_phrases(sent_str, frame, alignment, constraint_type, pred_present)
+                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.head)
 
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
@@ -284,9 +283,7 @@ def get_data(args):
                     sent_id += 1
                     if sent_id % 100000 == 0:
                         print("{}/{} sentences processed".format(sent_id, num_sents))
-                print('num of pred in the caption ' + str(pred_present))
         else:
-            pred_present = 0
             with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align:
                 for (tree, frame, alignment) in zip(txt, fr, align):
                     frame = frame.strip().split('\t')
@@ -325,7 +322,7 @@ def get_data(args):
                     if frame[0] == '':
                         invalids = []
                     else:
-                        invalids, pred_present = gen_phrases(sent_str, frame, alignment, constraint_type, pred_present)
+                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.head)
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
                     other_data_item = [sent_str, invalids, tags, action,
@@ -340,7 +337,6 @@ def get_data(args):
                     sent_id += 1
                     if sent_id % 100000 == 0:
                         print("{}/{} sentences processed".format(sent_id, num_sents))
-                print('num of pred in the caption ' + str(pred_present))
         print(sent_id, num_sents)
         if shuffle == 1:
             rand_idx = np.random.permutation(sent_id)
@@ -480,7 +476,8 @@ def main(arguments):
     parser.add_argument('--trainalign', help='File for train align results', type = str, default='')
     parser.add_argument('--valalign', help='File for val align results', type = str, default='')
     parser.add_argument('--testalign', help='File for test align results', type = str, default='')
-    parser.add_argument('--constraint_type', help='Type for constraint setup, rule 1 or rule 2 or both', type = int, default=3)
+    parser.add_argument('--constraint_type', help='Type for constraint setup, rule 1 or rule 2 or both', type = int, required=True)
+    parser.add_argument('--head', action='store_true', help='Including head index in spans')
     args = parser.parse_args(arguments)
     np.random.seed(3435)
     get_data(args)
