@@ -44,7 +44,7 @@ class PCFG(nn.Module):
     # create masks
     mask = self.beta.new(batch_size, n+1, n+1, self.states).fill_(0)
     if (invalid_spans != None) and (len(invalid_spans) > 0):
-      #print('inside' + str(len(invalid_spans)))
+      # print('inside' + str(len(invalid_spans)))
       for i in range(batch_size):
         if len(invalid_spans[i]) < 1:
           continue

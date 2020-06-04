@@ -16,81 +16,62 @@ with rule 2, if we had a phrase "dogs eat", the head could not be "dogs", and "d
 # gets the invalid phrases that violent either rules
 # sent gives the original position of each word
 # constraint type: 1 = rule 1, 2 = rule 2
-def invalid_phrases_type1(frame, predicate, phrase_set, start, end, invalids, sent, arguments, is_pred, heads, log_path=''):
+def invalid_phrases_type1(frame, predicate, phrase, start, end, invalids, sent, arguments, log_path=''):
     if log_path != '':
         log_file = open(log_path, "a")
 
-    # predicate = frame[0].split('_')[0]
-    # heads = phrase
-    # phrase_set = set(phrase)
-    intersect = phrase_set.intersection(arguments)
-    # phrase_str = ' '.join(phrase)
+    intersect = set(phrase).intersection(arguments)
     # rule 1 applies when predicate does not exist in the phrase
-    if (predicate not in phrase_set) or not is_pred:
+    if predicate == '':
+        head_ind = start
         # if more than one argument exists in the phrase, its already invalid
         if len(intersect) > 1:
-            if heads != None:
-                for head in heads:
-                    head_ind = sent.index(head)
-                    phrase_range = (start, end, head_ind)
-                    if head_ind <= end:
-                        invalids.add(phrase_range)
-                        log = 'R1 invalid is ('  + str(' '.join(sent[start:end])) + ') head is ' + str(head_ind) + '-' + str(sent[head_ind])
-                        if log_path != '':
-                            log_file.write(log + '\n')
-            else:
-                phrase_range = (start, end)
-                invalids.add(phrase_range)
-                log = 'R1 invalid is ('  + str(' '.join(sent[start:end])) + ')'
-                if log_path != '':
-                    log_file.write(log + '\n')
+            for head in phrase:
+                phrase_range = (start, end, head_ind)
+                if head_ind <= end:
+                    invalids.add(phrase_range)
+                    log = 'R1 invalid is ('  + str(' '.join(sent[start:end+1])) + ') head is ' + str(head_ind) + '-' + str(sent[head_ind])
+
+                    if log_path != '':
+                        log_file.write(log + '\n')
+                head_ind += 1
     if log_path != '':
         log_file.close()
     return invalids
 
-def invalid_phrases_type2(frame, predicate, phrase_set, start, end, invalids, sent, arguments, alignment, is_pred, heads, log_path=''):
+# rule 2: an argument cannot be the head of a phrase that also contains its predicate
+def invalid_phrases_type2(frame, predicate, phrase, start, end, invalids, sent, arguments, log_path=''):
     if log_path != '':
         log_file = open(log_path, "a")
 
-    # predicate = frame[0].split('_')[0]
-    # heads = phrase
-    # phrase_set = set(phrase)
-
-    intersect = phrase_set.intersection(arguments)
-    # phrase_str = ' '.join(phrase)
-    # rule 2 applies when the predicate exists in the phrase (must exist in the sent)
-    if (predicate in phrase_set) or is_pred:
-        if predicate in alignment.keys():
-            predicate = alignment[predicate]
-        else:
-            pred_ind = sent.index(predicate)
-        if heads != None:
-            for head in heads:
-                head_ind = sent.index(head)
-                phrase_range = (start, end, head_ind)
-                if (head != predicate) or (head_ind <= end):
-                #if (head != predicate) or (head_ind <= end_idx) or (head not in argument):
-                    log = 'R2 invalid is ('  + str(' '.join(sent[start:end])) + ') head is ' + str(head_ind) + '-' + str(sent[head_ind])
-                    invalids.add(phrase_range)
-                    if log_path != '':
-                        log_file.write(log + '\n')
+    intersect = set(phrase).intersection(arguments)
+    # print(intersect)
+    # predicate is present in this phrase
+    if predicate != '':
+        head_ind = start
+        for head in phrase:
+            phrase_range = (start, end, head_ind)
+            assert(head_ind <= end)
+            # if this head is an argument, it is invalid (because the span contains the predicate)
+            if (head in intersect):
+                log = 'R2 invalid is ('  + str(' '.join(sent[start:end+1])) + ') head is ' + str(head_ind) + '-' + str(sent[head_ind])
+                invalids.add(phrase_range)
+                if log_path != '':
+                    log_file.write(log + '\n')
+            head_ind += 1
     if log_path != '':
         log_file.close()
     return invalids
 
 # generate all possible phrases from left to right, not including the entire sentence
-def gen_phrases(sent, frame, alignment, type, head):
+def gen_phrases(sent, frame, alignment, type):
     alignment = alignment
     # parse alignment
     alignment = get_align(alignment.lower())
-    # default: assume pred is not in the sent
-    is_pred = False
 
     sent = sent.split(' ')
-    # check if predicate exists in the sentence, or it is aligned
     predicate = frame[0].split('_')[0]
-    if (predicate in sent) or (predicate in alignment.keys()):
-        is_pred = True
+
     # add alignments
     arguments = set()
     for f in frame:
@@ -105,29 +86,34 @@ def gen_phrases(sent, frame, alignment, type, head):
             arguments.add(align)
 
     pointer = 0
-    end = len(sent)
+    # end = len(sent)
     invalids = set()
 
-    while pointer < end:
+    while pointer < len(sent):
         # loop for current pointer
-        for ind in range(pointer, end):
-            # set end index
-            if pointer == 0:
-                phrase = sent[pointer:ind]
-            else:
-                phrase = sent[pointer:ind+1]
+        if pointer == 0:
+            end = len(sent)
+        else:
+            end = len(sent) + 1
+        for ind in range(pointer+2, end):
+            phrase = sent[pointer:ind]
+            # print(str(phrase) + ' from ' + str(pointer) + ' to ' + str(ind-1))
             # generate set
             phrase_set = set(phrase)
+            # predicate in caption
+            pred_cap = ''
+            # find predicate in caption phrase, if any, or if it is aligned to any word of the caption phrase
+            if (predicate in phrase):
+                pred_cap = predicate
+            elif (predicate in alignment.keys()) and (alignment[predicate] in phrase):
+                pred_cap = alignment[predicate]
             # generate list of heads
-            if head:
-                heads = phrase
-            else:
-                heads = None
-
             if type == 1:
-                invalids = invalid_phrases_type1(frame, predicate, phrase_set, pointer, ind, invalids, sent, arguments, is_pred, heads)
+                invalids = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments)
             elif type == 2:
-                invalids = invalid_phrases_type2(frame, predicate, phrase_set, pointer, ind, invalids, sent, arguments, alignment, is_pred, heads)
+                invalids = invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments)
+            elif type == 3:
+                invalids = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments).union(invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments))
         pointer += 1
     return list(invalids)
 
@@ -159,9 +145,10 @@ def get_align(alignment):
 # gold is ( ( ( ( A man) ) ( doing ( a  hand ) ) ) ( stand ( next ( to (a Frisbee ) ) ) ) (. .))
 # aligns = 'man:agent_man hand:tool_hand Frisbee:caughtitem_Frisbee '
 # frame = 'catching_tool_hand	catching_agent_man	catching_caughtitem_Frisbee	catching_place_park'
-# sent = 'a man doing a hand stand next to a frisbee'
-# invals = gen_phrases(sent, frame.lower().strip().split('\t'), aligns.lower(), 1, False)
-# invals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2, True)
+# sent = 'a man catching a hand stand next to a frisbee'
+# invals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1)
+# invals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2)
+# invals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3)
 # print(invals)
 # print(invals_2)
-# print(invals == invals_2)
+# print(set(invals).union(set(invals_2)) == set(invals_3))

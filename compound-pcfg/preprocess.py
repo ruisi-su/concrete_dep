@@ -266,7 +266,7 @@ def get_data(args):
                     if frame[0] == '':
                         invalids = []
                     else:
-                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.head)
+                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type)
 
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
@@ -322,7 +322,7 @@ def get_data(args):
                     if frame[0] == '':
                         invalids = []
                     else:
-                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.head)
+                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type)
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
                     other_data_item = [sent_str, invalids, tags, action,
@@ -477,7 +477,6 @@ def main(arguments):
     parser.add_argument('--valalign', help='File for val align results', type = str, default='')
     parser.add_argument('--testalign', help='File for test align results', type = str, default='')
     parser.add_argument('--constraint_type', help='Type for constraint setup, rule 1 or rule 2 or both', type = int, required=True)
-    parser.add_argument('--head', action='store_true', help='Including head index in spans')
     args = parser.parse_args(arguments)
     np.random.seed(3435)
     get_data(args)
