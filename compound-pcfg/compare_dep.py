@@ -54,12 +54,14 @@ diff = 0
 dim = sys.argv[1]
 out_file = sys.argv[2]
 
-with open('test_h{}_type1_dep.txt'.format(dim), 'r') as t1, open('test_h{}_type2_dep.txt'.format(dim), 'r') as t2, open('test_h{}_type3_dep.txt'.format(dim), 'r') as t3,  open(out_file, 'w') as out:
-    for l1, l2, l3 in zip(t1, t2, t3):
+with open('test_h{}_base_dep.txt'.format(dim), 'r') as base, open('test_h{}_type1_dep.txt'.format(dim), 'r') as t1, open('test_h{}_type2_dep.txt'.format(dim), 'r') as t2, open('test_h{}_type3_dep.txt'.format(dim), 'r') as t3,  open(out_file, 'w') as out:
+    for l0, l1, l2, l3 in zip(base, t1, t2, t3):
 
-        pred_1, gold = l1.rstrip().split('\t')
+        pred_0, gold = l0.rstrip().split('\t')
+        pred_1, _ = l1.rstrip().split('\t')
         pred_2, _ = l2.rstrip().split('\t')
         pred_3, _ = l3.rstrip().split('\t')
+        pred_0 = pred_1.split(' ')[2:]
         pred_1 = pred_1.split(' ')[2:]
         pred_2 = pred_2.split(' ')[2:]
         pred_3 = pred_3.split(' ')[2:]
@@ -67,14 +69,14 @@ with open('test_h{}_type1_dep.txt'.format(dim), 'r') as t1, open('test_h{}_type2
 
         align, frame = get_af(' '.join(gold), test_dict)
 
-        if (pred_1 == pred_2) and (pred_2 == pred_3) and (pred_3 == pred_1):
+        if (pred_0 == pred_1) and (pred_1 == pred_2) and (pred_2 == pred_3) and (pred_3 == pred_0):
             same += 1
             out.write('-----SAME-----'+'\n')
-            output_line = 'file 1 : ' +' '.join(pred_1) + '\n' + 'file 2 : ' + ' '.join(pred_2) + '\n' + 'file 3 : ' + ' '.join(pred_3) + '\n' + 'gold tree : ' + ' '.join(gold) + '\n' + 'alignment : ' + align + '\n' + 'frame: ' + frame + '\n'
+            output_line = 'baseline : ' + ' '.join(pred_0) + '\n' + 'type 1 : ' +' '.join(pred_1) + '\n' + 'type 2 : ' + ' '.join(pred_2) + '\n' + 'type 3 : ' + ' '.join(pred_3) + '\n' + 'gold tree : ' + ' '.join(gold) + '\n' + 'alignment : ' + align + '\n' + 'frame : ' + frame + '\n'
         else:
             diff += 1
             out.write('-----DIFF-----'+'\n')
-            output_line = 'file 1 : ' +' '.join(pred_1) + '\n' + 'file 2 : ' + ' '.join(pred_2) + '\n' + 'file 3 : ' + ' '.join(pred_3) + '\n' + 'gold tree : ' + ' '.join(gold) + '\n' + 'alignment : ' + align + '\n' + 'frame: ' + frame + '\n'
+            output_line = 'baseline : ' + ' '.join(pred_0) + '\n' + 'type 1 : ' +' '.join(pred_1) + '\n' + 'type 2 : ' + ' '.join(pred_2) + '\n' + 'type 3 : ' + ' '.join(pred_3) + '\n' + 'gold tree : ' + ' '.join(gold) + '\n' + 'alignment : ' + align + '\n' + 'frame : ' + frame + '\n'
             # print(output_line)
         out.write(output_line)
     out.write('--------------'+'\n')
