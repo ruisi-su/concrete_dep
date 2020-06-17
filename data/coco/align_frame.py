@@ -27,9 +27,11 @@ def pair_h_r_t(h, frame):
         if type(frame[f]) is list and len(frame)>0:
             if len(frame[f]) > 0:
                 word = frame[f][0]
+                words = frame[f]
                 if word != 'null':
-                    word = word.replace(' ','-')
-                    hrt = h + '_' + f.lower() + '_' + word
+                    words = '-'.join(words)
+                    # word = word.replace(' ','-')
+                    hrt = h + '_' + f.lower() + '_' + words
                     result += hrt + '\t'
     return result
 

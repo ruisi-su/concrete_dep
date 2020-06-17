@@ -474,12 +474,12 @@ def eval(data, model):
             sent_str = [data.idx2word[word_idx] for word_idx in list(sents[b].cpu().numpy())]
             if args.evaluate_dep:
                 pred_tree_log = "Pred Tree: %s" % get_tagged_parse(get_tree(action, sent_str), argmax_spans[b])
-                gold_tree_log = "Gold Tree: %s" % get_tagged_parse(get_tree(gold_actions[b], sent_str), gold_spans[b])
+                # gold_tree_log = "Gold Tree: %s" % get_tagged_parse(get_tree(gold_actions[b], sent_str), gold_spans[b])
             else:
                 pred_tree_log = "Pred Tree: %s" % get_tree(action, sent_str)
-                gold_tree_log = "Gold Tree: %s" % get_tree(gold_actions[b], sent_str)
+            gold_tree_log = "Gold Tree: %s" % get_tree(gold_actions[b], sent_str)
             count += 1
-            
+
             output.write(pred_tree_log + '\t' + gold_tree_log + '\n')
 
   tp, fp, fn = corpus_f1
