@@ -491,5 +491,6 @@ def get_span2head(spans, heads, gold_actions=None, gold_tags=None):
 
 NT_list = ['NP', 'VP', 'S', 'ADVP', 'PP', 'ADJP', 'SBAR', 'WHADVP', 'WHNP', 'PRN', 'SINV', 'QP', 'PRT', 'NAC', 'NX', 'UCP', 'FRAG', 'INTJ', 'X', 'RRC', 'SQ', 'CONJP', 'WHPP', 'WHADJP', 'SBARQ', 'LST', 'PRT|ADVP']
 PT_list = ['DT', 'JJ', 'NNS', 'VBD', 'NN', 'CC', 'RB', 'IN', 'JJS', 'NNP', 'CD', 'TO', 'JJR', 'VBG', 'POS', 'VBP', 'VBN', 'RBR', 'WRB', 'PRP', 'PRP$', 'WDT', 'EX', 'MD', 'VB', 'VBZ', 'NNPS', 'WP', 'RP', 'PDT', 'WP$', 'RBS', 'FW', 'UH', 'SYM', 'LS']
+PUNCT_list = [',', '.', '#', ':', '``', "''"]
 NT2ID = {j:i for i, j in enumerate(NT_list)}
-PT2ID = {j:i for i, j in enumerate(PT_list)}
+PT2ID = {j:i for i, j in enumerate(PT_list+PUNCT_list)}
