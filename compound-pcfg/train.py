@@ -360,7 +360,7 @@ def main(args):
     print('Checking validation perf...')
     val_ppl, val_f1 = eval(val_data, model)
     print('--------------------------------')
-    if val_ppl <= best_val_ppl:
+    if val_f1 <= best_val_f1:
       best_val_ppl = val_ppl
       best_val_f1 = val_f1
       checkpoint = {
