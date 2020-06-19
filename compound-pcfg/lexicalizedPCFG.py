@@ -161,7 +161,7 @@ class LexicalizedPCFG(nn.Module):
           continue
         # print('inside' + str(len(invalid_spans[i])))
         for (l, r, h) in invalid_spans[i]:
-            mask[i][l, r+1, :, h].fill_(-50)
+            mask[i][l, r+1, :, h].fill_(-self.huge)
 
 
     # initialization: f[k, k+1]
@@ -274,7 +274,7 @@ class LexicalizedPCFG(nn.Module):
           # print(len(invalid_spans[i]))
           for (l, r, h) in invalid_spans[i]:
             #print('applying mask')
-            mask[i][l, r+1, :, h].fill_(-50)
+            mask[i][l, r+1, :, h].fill_(-self.huge)
 
     # initialization: f[k, k+1]
     for k in range(N):

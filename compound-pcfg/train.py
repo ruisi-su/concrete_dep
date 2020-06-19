@@ -480,7 +480,7 @@ def eval(data, model):
             gold_tree_log = "Gold Tree: %s" % get_tree(gold_actions[b], sent_str)
             count += 1
 
-            output.write(pred_tree_log + '\t' + gold_tree_log + '\n')
+            output.write(pred_tree_log + '\t' + gold_tree_log + '\t' + str(argmax_spans[b]) + '\n')
 
   tp, fp, fn = corpus_f1
   prec = tp / (tp + fp)
