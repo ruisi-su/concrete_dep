@@ -66,3 +66,4 @@ data/coco/train_log_*.txt
 data/coco/cc_coco_old/
 data/coco/VGNSL_split/*_trees.txt
 data/coco/VGNSL_ids/
+compound-pcfg/glove_*/
