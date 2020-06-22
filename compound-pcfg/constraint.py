@@ -147,12 +147,12 @@ def get_align(alignment):
     return aligns
 
 # ((two horses) (grazing (together (in (a field)))))
-aligns = 'horses:agent_horse grazing:item_grass field:place_field'
-frame = 'foraging_item_grass	foraging_place_field	foraging_agent_horse'
-sent = 'two horses grazing together in a field'
-invals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1)
-invals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2)
-invals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3)
-print(invals)
-print(invals_2)
-print(set(invals).union(set(invals_2)) == set(invals_3))
+#aligns = 'horses:agent_horse grazing:item_grass field:place_field'
+#frame = 'foraging_item_grass	foraging_place_field	foraging_agent_horse'
+#sent = 'two horses grazing together in a field'
+#invals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1)
+#invals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2)
+#invals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3)
+#print(invals)
+#print(invals_2)
+#print(set(invals).union(set(invals_2)) == set(invals_3))
