@@ -390,11 +390,11 @@ def get_data(args):
         return max_sent_l
 
     print("First pass through data to get vocab...")
-    num_sents_train, train_seqlength = make_vocab(args.trainfile, args.seqlength, args.minseqlength,args.lowercase, args.replace_num, 1, 1)
+    num_sents_train, train_seqlength = make_vocab(args.inputdir + 'train_trees.txt', args.seqlength, args.minseqlength,args.lowercase, args.replace_num, 1, 1)
     print("Number of sentences in training: {}".format(num_sents_train))
-    num_sents_valid, valid_seqlength = make_vocab(args.valfile, args.seqlength, args.minseqlength,args.lowercase, args.replace_num, 0, 0)
+    num_sents_valid, valid_seqlength = make_vocab(args.inputdir + 'dev_trees.txt', args.seqlength, args.minseqlength,args.lowercase, args.replace_num, 0, 0)
     print("Number of sentences in valid: {}".format(num_sents_valid))
-    num_sents_test, test_seqlength = make_vocab(args.testfile, args.seqlength, args.minseqlength,args.lowercase, args.replace_num, 0, 0)
+    num_sents_test, test_seqlength = make_vocab(args.inputdir + 'test_trees.txt', args.seqlength, args.minseqlength,args.lowercase, args.replace_num, 0, 0)
     print("Number of sentences in test: {}".format(num_sents_test))
 
     if args.vocabminfreq >= 0:
