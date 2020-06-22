@@ -45,7 +45,6 @@ def invalid_phrases_type2(frame, predicate, phrase, start, end, invalids, sent, 
         log_file = open(log_path, "a")
 
     intersect = set(phrase).intersection(arguments)
-    # print(intersect)
     # predicate is present in this phrase
     if predicate != '':
         head_ind = start
@@ -64,14 +63,13 @@ def invalid_phrases_type2(frame, predicate, phrase, start, end, invalids, sent, 
     return invalids
 
 # generate all possible phrases from left to right, not including the entire sentence
-def gen_phrases(sent, frame, alignment, type):
+def gen_phrases(sent, frame, alignment, constraint_type):
     alignment = alignment
     # parse alignment
     alignment = get_align(alignment.lower())
-
     sent = sent.split(' ')
     predicate = frame[0].split('_')[0]
-
+    # print(alignment)
     # add alignments
     arguments = set()
     for f in frame:
@@ -84,7 +82,7 @@ def gen_phrases(sent, frame, alignment, type):
         # else add the aligned word instead
             align = alignment[arg]
             arguments.add(align)
-
+    # print(arguments)
     pointer = 0
     # end = len(sent)
     invalids = set()
@@ -108,11 +106,11 @@ def gen_phrases(sent, frame, alignment, type):
             elif (predicate in alignment.keys()) and (alignment[predicate] in phrase):
                 pred_cap = alignment[predicate]
             # generate list of heads
-            if type == 1:
+            if constraint_type == 1:
                 invalids = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments)
-            elif type == 2:
+            elif constraint_type == 2:
                 invalids = invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments)
-            elif type == 3:
+            elif constraint_type == 3:
                 invalids = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments).union(invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments))
         pointer += 1
     return list(invalids)
@@ -120,6 +118,7 @@ def gen_phrases(sent, frame, alignment, type):
 def get_align(alignment):
     # key is frame, value is cap
     aligns = {}
+
     alignment = alignment.strip().split(' ')
     if len(alignment) == 0 or alignment[0] == '':
         return aligns
@@ -129,26 +128,31 @@ def get_align(alignment):
         if len(als) > 2:
             cap = als[0] + ':' + als[1]
             frame = als[2]
+            print('colon is detected, cap is ' + cap + ' frame is ' + frame)
         else:
             cap, frame = als
-        # remove indicators from the alignment: place_dining -> dining
         frame = frame.split('_')
-        if len(frame) > 1:
-            frame = frame[1]
-        else:
+        # remove indicators from the alignment by type
+        # single word alignment
+        if len(frame) == 1:
             frame = frame[0]
-        # only store the first occurance of the aligned word
+        elif len(frame) == 2:
+            frame = frame[1]
+        elif len(frame) == 3:
+            frame = frame[2]
+        else:
+            raise ValueError('length of frame is invalid for ' + '_'.join(frame))
         if frame not in aligns.keys():
-            aligns[frame] = cap
+                aligns[frame] = cap
     return aligns
 
-# gold is ( ( ( ( A man) ) ( doing ( a  hand ) ) ) ( stand ( next ( to (a Frisbee ) ) ) ) (. .))
-# aligns = 'man:agent_man hand:tool_hand Frisbee:caughtitem_Frisbee '
-# frame = 'catching_tool_hand	catching_agent_man	catching_caughtitem_Frisbee	catching_place_park'
-# sent = 'a man catching a hand stand next to a frisbee'
-# invals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1)
-# invals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2)
-# invals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3)
-# print(invals)
-# print(invals_2)
-# print(set(invals).union(set(invals_2)) == set(invals_3))
+# ((two horses) (grazing (together (in (a field)))))
+aligns = 'horses:agent_horse grazing:item_grass field:place_field'
+frame = 'foraging_item_grass	foraging_place_field	foraging_agent_horse'
+sent = 'two horses grazing together in a field'
+invals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1)
+invals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2)
+invals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3)
+print(invals)
+print(invals_2)
+print(set(invals).union(set(invals_2)) == set(invals_3))

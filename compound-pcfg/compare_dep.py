@@ -53,14 +53,14 @@ diff = 0
 # generate comparison results
 dim = sys.argv[1]
 out_file = sys.argv[2]
-
-with open('test_h{}_base_dep.txt'.format(dim), 'r') as base, open('test_h{}_type1_dep.txt'.format(dim), 'r') as t1, open('test_h{}_type2_dep.txt'.format(dim), 'r') as t2, open('test_h{}_type3_dep.txt'.format(dim), 'r') as t3,  open(out_file, 'w') as out:
+out_dir = 'outputs/'
+with open(out_dir+'test_h{}_base_span.txt'.format(dim), 'r') as base, open(out_dir+'test_h{}_type1_span.txt'.format(dim), 'r') as t1, open(out_dir+'test_h{}_type2_span.txt'.format(dim), 'r') as t2, open(out_dir+'test_h{}_type3_span.txt'.format(dim), 'r') as t3,  open(out_dir+out_file, 'w') as out:
     for l0, l1, l2, l3 in zip(base, t1, t2, t3):
 
-        pred_0, gold = l0.rstrip().split('\t')
-        pred_1, _ = l1.rstrip().split('\t')
-        pred_2, _ = l2.rstrip().split('\t')
-        pred_3, _ = l3.rstrip().split('\t')
+        pred_0, gold, span_0 = l0.rstrip().split('\t')
+        pred_1, _, span_1 = l1.rstrip().split('\t')
+        pred_2, _, span_2 = l2.rstrip().split('\t')
+        pred_3, _, span_3 = l3.rstrip().split('\t')
         pred_0 = pred_1.split(' ')[2:]
         pred_1 = pred_1.split(' ')[2:]
         pred_2 = pred_2.split(' ')[2:]
@@ -76,7 +76,7 @@ with open('test_h{}_base_dep.txt'.format(dim), 'r') as base, open('test_h{}_type
         else:
             diff += 1
             out.write('-----DIFF-----'+'\n')
-            output_line = 'baseline : ' + ' '.join(pred_0) + '\n' + 'type 1 : ' +' '.join(pred_1) + '\n' + 'type 2 : ' + ' '.join(pred_2) + '\n' + 'type 3 : ' + ' '.join(pred_3) + '\n' + 'gold tree : ' + ' '.join(gold) + '\n' + 'alignment : ' + align + '\n' + 'frame : ' + frame + '\n'
+            output_line = 'baseline : ' + ' '.join(pred_0) + '\n' + str(span_0) + '\n' + 'type 1 : ' +' '.join(pred_1) + '\n' + str(span_1) + '\n' + 'type 2 : ' + ' '.join(pred_2) + '\n' + str(span_2) + '\n' + 'type 3 : ' + ' '.join(pred_3) + '\n' + str(span_0) + '\n' + 'gold tree : ' + ' '.join(gold) + '\n' + 'alignment : ' + align + '\n' + 'frame : ' + frame + '\n'
             # print(output_line)
         out.write(output_line)
     out.write('--------------'+'\n')

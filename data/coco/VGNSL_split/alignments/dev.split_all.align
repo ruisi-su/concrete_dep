@@ -1,0 +1,5000 @@
+child:male-child petting:leading yak:bull 
+young:male-child umbrella:bull herd:leading 
+boy:male-child the:place cow:bull 
+boy:male-child the:place cow:bull 
+boy:male-child umbrella:bull livestock:leading 
+kitchen:kitchen appliances:stove 
+appliances:stove on:agent 
+kitchen:kitchen appliances:stove 
+kitchen:kitchen stove:stove 
+the:place kitchen:kitchen 
+girl:female-child kitten:cat fence:outdoors 
+Girl:patting in:agent kitten:cat yard:outdoors 
+girl:female-child cat:cat 
+Girl:patting yellow:outdoors cat:cat 
+girl:female-child holds:patting cat:cat 
+toilet:toilet bathroom:bathroom 
+toilet:toilet bathroom:bathroom 
+bathroom:bathroom 
+toilet:toilet bathroom:bathroom 
+bathroom:bathroom 
+
+
+
+
+
+woman:woman bicycle:bicycle median:street 
+her:woman bike:bicycle street:street 
+lady:woman bicycle:bicycle street:street 
+bike:bicycle street:street 
+woman:woman bike:bicycle divider:street 
+tub:bathing bathroom:bathroom 
+bathroom:bathroom 
+tub:bathing sink:bathroom 
+bathroom:bathroom bathtub:bathing 
+bathroom:bathroom bathtub:bathing 
+meters:brancher 
+on:place street:street meters:brancher 
+located:brancher 
+on:place street:street traffic:city 
+on:place street:street 
+tub:bathtub 
+tub:bathtub 
+claw-footed:bathtub 
+bathtub:bathtub 
+tub:bathtub 
+on:agent toilet:bucket dirt:outdoors 
+toilet:bucket on:agent 
+toilet:bucket 
+toilet:bucket on:agent 
+old:bucket dirt:outdoors on:agent 
+car:towing some:item a:tool field:field 
+car:towing some:item 
+car:towing on:agent top:tool 
+vehicle:truck 
+old:towing on:agent 
+cat:cat on:agent of:container toilet:toilet 
+of:container cat:cat on:agent toilet:toilet 
+cat:cat on:agent toilet:toilet bowl:lapping 
+cat:cat on:agent of:container toilet:toilet bathroom:bathroom 
+cat:cat on:agent toilet:toilet 
+An:land building:pulley flying:flag 
+spire:outside roof:pulley tiles:source 
+tower:pulley towering:outside over:land a:tool small:source 
+and:source its:land tall:hoisting steeple:pulley 
+fly:flag a:tool tall:hoisting building:pulley with:source 
+woman:woman motorcycle:motorcycle street:street 
+woman:woman motorcycle:motorcycle car:street 
+woman:woman motor:motorcycle street:street 
+woman:woman motorcycle:motorcycle street:street 
+woman:woman motorcycle:motorcycle street:street 
+person:woman desk:working 
+woman:woman desk:working intently:room 
+woman:woman desk:working in:agent 
+woman:woman working:undertaking on:agent the:place 
+woman:woman in:agent desk:working 
+bananas:banana 
+Bananas:banana 
+bananas:banana in:agent 
+Bananas:banana in:agent 
+bananas:banana 
+airplane:airplane airport:airport runway:runway 
+runway:runway 
+airplane:airplane runway:runway 
+plane:airplane 
+airplane:airplane 
+airplane:airplane tarmac:taxiing airport:airport 
+Plane:airplane airport:airport 
+plane:airplane runway:runway 
+AIRPLANE:airplane RUNWAY:runway 
+plan:airplane terminal:airport 
+car:car stopped:driver in:agent the:place street:street 
+car:car stopped:driver 
+car:car intersection:driver the:place street:street 
+car:car in:agent the:place crosswalk:street 
+car:car street:street 
+street:street night:light-bulb 
+night:light-bulb appearing:place confusing:street 
+glows:glowing night:light-bulb 
+lights:light-bulb 
+street:street light:light-bulb in:agent 
+plane:airplane sky:sky 
+plane:airplane on:agent cloudy:sky 
+biplane:airplane sky:sky 
+plane:airplane flying:soaring 
+airplane:airplane sky:sky 
+building:building shines:glowing the:place as:agent 
+tall:building skyscrapers:city in:agent the:place 
+building:building shining:glowing on:agent 
+WITH:glowing SCRAPERS:city 
+modern:glowing buildings:city on:agent 
+candidate:hitch on:agent the:place a:tool bus:bus 
+Here:item candidate:hitch trailer:trailer 
+a:tool bus:bus 
+A:tool bus:bus on:agent the:place 
+trailer:trailer in:agent 
+giraffe:giraffe on:agent 
+giraffes:giraffe bush:prey 
+giraffes:giraffe 
+giraffes:giraffe 
+giraffes:giraffe on:agent 
+giraffe:giraffe lying:goal ground:land 
+giraffe:giraffe laying:resting ground:land 
+giraffe:giraffe lying:goal dirt:land 
+giraffe:giraffe sitting:resting ground:land 
+giraffe:giraffe laying:resting of:item dirt:land 
+giraffes:giraffe 
+giraffes:giraffe 
+giraffes:giraffe by:outdoors 
+giraffes:giraffe 
+giraffe:giraffe 
+beside:outdoors hydrant:fireplug 
+hydrant:fireplug 
+hydrant:fireplug face:outdoors on:place 
+hydrant:fireplug road:street 
+hydrant:fireplug which:source on:place 
+hydrant:fireplug 
+hydrant:fireplug gushing:water 
+hydrant:fireplug water:water 
+hydrant:fireplug opened:overflowing 
+hydrant:fireplug spouting:water with:overflowing trees:outdoors 
+on:place sidewalk:street 
+the:place sidewalk:street 
+sign:brancher north:city yellow:street 
+hydrant:brancher curb:street 
+hydrant:brancher painted:street 
+street:street in:agent 
+street:street on:agent 
+street:street on:agent vertical:place 
+English:turneditem foreign:street 
+Two:agent street:street the:place 
+background:field photo:intermingling sheet:sheep 
+sheep:sheep are:agents 
+sheep:sheep 
+gathering:agents of:intermingling sheep:sheep the:place field:field 
+group:agents sheep:sheep grassy:field 
+bus:turneditem on:agent traffic:driver 
+bus:turneditem cars:driver street:street 
+bus:turneditem on:agent 
+City:driver bus:turneditem far:place 
+bus:turneditem on:agent cars:driver 
+giraffe:giraffe each:nuzzling on:agent 
+giraffes:giraffe in:agent 
+in:agent giraffes:giraffe zebras:nuzzling 
+giraffe:giraffe 
+of:item giraffes:giraffe zebras:nuzzling in:agent 
+bird:bird branch:branch 
+bird:bird branch:branch 
+bird:bird branch:branch 
+bird:bird branch:branch 
+bird:bird branch:branch 
+the:place building:outside 
+A:tool sign:sign adorns:displaying concrete:outside 
+sign:sign live:tool 
+sign:sign on:place a:tool wall:displaying 
+painting:displaying the:place a:tool building:outside 
+bird:bird tree:tree 
+bird:bird feathers:wing in:agent tree:tree 
+bird:bird in:agent tree:tree 
+BIRD:bird INSIDE:agent 
+bird:bird tree:tree 
+street:street sign:brancher on:place traffic:city 
+Broadway:city Street:brancher the:place 
+street:street the:place Broadway:city avenue:brancher 
+street:street signs:city 
+sign:brancher on:place 
+train:train by:outdoors the:place 
+train:train on:agent 
+train:train near:outdoors of:item 
+train:train 
+train:train behind:outdoors 
+Train:train depot:railway-station people:people 
+boarding:disembarking train:train station:railway-station 
+train:train 
+train:train station:railway-station 
+people:people train:train station:railway-station 
+sign:panhandling street:street 
+graffiti:panhandling pictured:person on:agent 
+graffiti:panhandling Red:person 
+Graffiti:panhandling 
+written:panhandling on:agent 
+a:tool man:camera the:place cement:outdoors around:cameraman 
+construction:tool jack:cameraman next:outdoors camera:camera 
+a:tool man:camera near:cameraman outside:outdoors 
+man:camera operating:filming a:tool jackhammer:cameraman 
+man:camera jack:cameraman on:agent the:place next:outdoors to:tool 
+cat:cat near:waddling 
+cat:cat the:waddling side:outdoors 
+cat:cat wooden:waddling 
+brown:agentpart cat:cat the:waddling 
+cat:cat ledge:waddling 
+sitting:crouching next:outdoors dogs:dog 
+white:dog sits:crouching by:outdoors 
+cat:crouching dogs:dog by:outdoors 
+dogs:dog cat:crouching edge:outdoors 
+cat:crouching dogs:dog by:outdoors the:place 
+dog:dog cat:cat together:coagent couch:sofa 
+dog:dog cat:cat together:coagent couch:sofa 
+cat:cat dog:dog together:coagent the:place couch:sofa 
+dog:dog cat:cat together:coagent couch:sofa 
+cat:cat dog:dog together:coagent couch:sofa 
+cat:cat lays:sleeping 
+cat:cat in:agent chair:sofa 
+cat:cat 
+cat:cat chair:sofa 
+cat:cat 
+Two:item cats:cat on:agent shoes:shoe 
+cats:cat outside:outdoors on:agent sneakers:shoe 
+Two:item cats:cat on:agent shoes:shoe outdoors:outdoors 
+cats:cat sneakers:shoe on:agent 
+cat:cat on:agent shoes:shoe 
+cat:cat in:agent suitcase:bag 
+cat:cat in:agent suitcase:bag 
+cat:cat suitcase:bag 
+cat:cat suitcase:bag 
+cat:cat in:agent the:place suitcase:bag 
+chair:chair in:agent room:room 
+cat:resting peek:agent two:item chairs:chair 
+Cat:resting maroon:place behind:item 
+recliner:chair sitting:resting next:item 
+cat:resting in:agent recliner:chair 
+cows:cattle grazing:grass field:field 
+Cows:cattle meadow:grass 
+cows:cattle field:field 
+cows:cattle grazing:grass 
+Cows:cattle grass:grass 
+truck:truck filled:bikes on:place 's:item flatbed:hauling 
+vehicle:truck transporting:trailer bicycles:bikes 
+truck:truck hauling:hauling bicycles:bikes 
+flatbed:hauling bicycles:bikes 
+A:tool several:item bikes:bikes back:hauling 
+cows:cow 
+cows:cow grass:grass 
+cows:cow mud:outdoors grass:grass 
+cows:cow on:agent 
+cows:cow grassy:grass 
+kitten:cat remote:telephone 
+kitten:cat remote:telephone 
+cat:cat control:telephone 
+phones:telephone kitten:cat 
+kitten:cat phones:telephone 
+elephant:elephant carrying:fetching 
+elephant:elephant two:item on:agent 
+elephant:elephant carrying:fetching 
+on:agent elphant:elephant stick:outdoors 
+elephant:elephant carries:fetching two:item 
+elephant:elephant 
+elephant:elephant trees:outdoors 
+elephant:elephant 
+very:water elephant:elephant tall:outdoors 
+elephant:elephant 
+elephants:elephant 
+several:place elephants:elephant background:outdoors 
+elephant:elephant 
+elephant:elephant 
+elephants:elephant trees:outdoors 
+elephants:elephant bathing:wading 
+elephants:elephant 
+Elephants:elephant shallow:wading on:agent 
+several:place elephants:elephant 
+elephants:elephant 
+zebra:grass elephant:elephant trees:foraging 
+elephant:elephant the:place herd:foraging 's:item 
+elephants:elephant trees:foraging 
+elephants:elephant on:agent trees:foraging 
+herd:foraging elephants:elephant 
+elephant:elephant field:field 
+elephants:elephant on:agent field:field 
+elephant:elephant 
+elephant:elephant besides:place 
+elephant:elephant field:field 
+elephant:elephant 
+elephant:elephant stands:standing the:place 
+elephant:elephant standing:standing 
+elephant:elephant stands:standing amid:outdoors 
+elephant:elephant standing:standing the:place 
+elephants:elephant wire:target cage:peeing 
+elephants:elephant 
+elephants:elephant 
+elephants:elephant 
+elephants:elephant 
+woman:woman frisbee:Frisbee 
+woman:woman park:park frisbee:Frisbee 
+woman:woman frisbee:Frisbee 
+person:woman on:agent a:tool Frisbee:Frisbee 
+woman:woman Frisbee:Frisbee the:place on:agent 
+people:people lake:lake 
+people:people frisbee:Frisbee 
+people:people on:agent shoreline:shore woods:throwing 
+group:people standing:shore to:destination play:throwing catch:Frisbee 
+friends:people on:agent beach:shore 
+dogs:dog area:outdoors other:item 
+dogs:dog on:agent other:item 
+similar:item dogs:dog near:outdoors 
+dogs:dog against:outdoors other:item 
+dogs:dog on:agent the:place dirt:outdoors 
+kid:male-child frisbee:Frisbee the:place 
+young:male-child a:tool frisbee:Frisbee on:agent park:park 
+toddler:male-child a:tool frisbee:Frisbee hand:hand 
+toddler:male-child the:place a:tool park:park 
+child:male-child frisbee:Frisbee 
+zebra:zebra on:agent green:item 
+zebras:zebra through:agent 
+zebra:zebra 
+zebra:zebra on:agent 
+zebra:zebra on:agent 
+Person:person riding:riding horse:horse 
+person:person riding:riding horse:horse trail:mountain 
+person:person riding:riding donkey:horse between:place mountains:mountain 
+down:vehicle path:riding in:agent mountains:mountain 
+person:person in:agent riding:riding horse:horse hills:mountain 
+herd:foraging zebras:zebra 
+zebras:zebra 
+zebras:zebra beside:outdoors the:place 
+herd:foraging zebra:zebra 
+zebras:zebra field:grass 
+Horses:horse the:place 
+horses:horse background:field 
+Horses:horse 
+Horses:horse field:field 
+horses:horse 
+leads:leading girl:girl horseback:horse 
+girl:girl riding:path horse:horse 
+girls:girl pathway:path large:place horse:horse 
+horse:horse girl:girl rides:path 
+horse:horse led:leading 
+horse:horse drawn:carriage on:agent the:place 
+horse:horse before:tool pull:carriage street:street 
+horse:horse drawn:carriage in:agent the:place street:street 
+horse:horse pulling:harness 
+on:agent a:tool horse:horse the:place street:street 
+horses:horse wooded:forest 
+horses:horse woods:forest 
+grass:grass woods:forest 
+horses:horse trees:forest 
+horses:horse woods:forest 
+apples:apple 
+plate:table apples:apple 
+the:place table:table apples:apple 
+table:table fruit:apple 
+array:table apples:apple 
+throw:hurling ball:ball 
+pitch:hurling 
+throw:hurling ball:ball 
+man:man throw:hurling ball:ball 
+male:man throw:hurling ball:ball 
+necklace:giggling 
+necklace:giggling 
+person:woman in:agent laughing:giggling 
+in:agent necklace:giggling 
+performer:outdoors poses:woman joyously:giggling in:agent 
+fork:spoiling onion:tomato 
+fork:spoiling onion:tomato 
+fork:spoiling onion:tomato in:agent 
+fork:spoiling onion:tomato 
+fork:spoiling onion:tomato in:agent 
+grasshopper:cup cage:peeing 
+up:person large:place something:target 
+grasshopper:cup cage:peeing colored:person 
+cage:peeing 
+wooden:room cage:peeing 
+clock:clock on:agent the:place shape:glowing 
+clock:clock shaped:glowing 
+clock:clock shaped:glowing 
+clock:clock shaped:glowing 
+cock:clock on:agent the:place 
+Two:agent cup:cup 
+cup:cup 
+cup:cup 
+in:agent cup:cup 
+in:agent cup:cup 
+person:man riding:vehicle sidewalk:sidewalk skateboard:skateboard 
+person:man riding:vehicle skateboard:skateboard sidewalk:sidewalk 
+Person:man skateboard:skateboard sidewalk:sidewalk 
+PERSON:sidewalk SKATEBOARDING:skating ON:vehicle 
+person:man skateboarding:skateboard 
+man:man holding:hand sausage:hotdog 
+man:man hot:hotdog eating:eating 
+man:man eating:eating a:tool hot:hotdog 
+man:man holds:hand hotdog:hotdog 
+man:man in:agent a:tool at:eating chili:hotdog 
+hot:hotdog plate:plate 
+hot:hotdog plate:plate 
+hot:hotdog 
+hot:hotdog plate:plate 
+hotdog:hotdog plate:plate 
+girl:female-child in:agent the:place a:tool restaurant:restaurant 
+girl:female-child a:tool missing:restaurant enjoys:eating hotdog:sandwich 
+child:female-child a:tool bar:restaurant eating:eating 
+a:tool girl:female-child the:place eating:eating 
+girl:female-child eating:eating food:food a:tool restaurant:restaurant 
+skating:skating rink:rink 
+snowboard:ice-skate across:vehicle in:agent 
+competition:ice-skate 
+Man:man snowboard:ice-skate riding:vehicle 
+snowboarder:ice-skate practicing:rink his:man 
+snowboard:ice-skate 
+boy:skating on:vehicle snowboard:ice-skate 
+man:man riding:vehicle snowboard:ice-skate 
+man:man down:vehicle jacket:ice-skate 
+man:man riding:vehicle snowboard:ice-skate 
+lady:woman lots:selling food:food 
+woman:woman food:food 
+food:food 
+looks:woman plates:food fruit:selling 
+woman:woman food:food 
+donuts:doughnut 
+doughnuts:doughnut 
+donuts:doughnut 
+doughnuts:doughnut 
+donuts:doughnut 
+person:person holding:beer chocolate:cocoa on:agent 
+holding:beer chocolate:cocoa desert:dipping 
+person:person tasty:dipping treat:cocoa 
+holding:beer cookie:cocoa bitten:person 
+person:person cookie:cocoa in:agent of:substance 
+on:agent candles:candle 
+candles:candle 
+Someone:person other:item candles:candle on:agent 
+birthday:candle cake:birthday-cake on:agent being:person 
+2nd:birthday-cake year:decorated birthday:candle 
+soccer:soccer-ball 
+boys:male-child on:agent grassy:field soccer:soccer-ball 
+soccer:soccer-ball on:agent field:field 
+soccer:soccer-ball field:field 
+soccer:soccer-ball on:agent grass:field 
+on:agent top:cresting beach:ocean 
+surfboards:ocean on:agent 
+water:ocean on:agent 
+Surfers:ocean 
+surfers:ocean 
+cake:candle table:table 
+cake:candle table:table 
+cake:candle and:glowing eaten:table 
+decorated:glowing table:table candles:candle 
+table:table candles:candle 
+a:surface ball:ball 
+some:foot men:man field:field ball:ball 
+head:item the:place ball:ball 
+Man:man a:surface ball:ball 
+soccer:bouncing that:item 
+soccer:soccer-player on:agent field:field 
+soccer:soccer-player the:place 
+soccer:soccer-player on:agent the:place 
+soccer:soccer-player on:agent the:place field:field 
+Soccer:soccer-player the:place 
+plate:bowl dessert:fruit on:agent 
+chocolate:rotting dessert:fruit on:agent plate:bowl 
+stack:container on:agent plate:bowl chocolate:rotting 
+chocolate:rotting desert:fruit 
+frosting:rotting on:agent plate:bowl 
+messy:garbage room:room 
+in:agent house:room renovated:garbage 
+bags:garbage the:place 
+messy:garbage room:room 
+messy:garbage wall:room 
+man:man standing:walking beach:beach 
+man:man ocean:beach 
+Rear:agent man:man standing:walking beach:beach 
+person:man water:beach 
+man:man ocean:beach 
+An:outdoors older:encouraging woman:woman 
+old:outdoors woman:woman playing:encouraging in:agent the:place 
+lady:woman children:encouraging in:agent the:place 
+girls:female-child outside:outdoors 
+Children:female-child playing:encouraging old:outdoors woman:woman in:agent the:place 
+guys:people sandwiches:theme 
+men:people sandwiches:theme table:room 
+men:people enjoying:theme 
+men:people sandwiches:theme 
+men:people in:agent sandwiches:theme 
+girl:female-child teeth:dentition a:tool tooth:toothbrush 
+A:tool child:female-child teeth:dentition 
+a:tool girl:female-child teeth:dentition toothbrush:toothbrush 
+a:tool girl:female-child toothbrush:toothbrush 
+girl:female-child a:tool toothbrush:toothbrush 
+child:female-child brushes:toothpaste teeth:dentition a:tool toothbrush:toothbrush 
+child:female-child toothbrush:toothbrush teeth:dentition 
+girl:female-child a:tool teeth:dentition toothbrush:toothbrush 
+child:female-child brushes:toothpaste teeth:dentition a:tool toothbrush:toothbrush 
+girl:female-child teeth:dentition a:tool toothbrush:toothbrush 
+boy:male-child draped:tool control:telephone couch:living-room 
+boy:male-child a:tool couch:living-room blanket:phoning 
+boy:male-child a:tool 
+a:tool kid:male-child coach:living-room 
+boy:male-child the:place television:living-room remote:telephone 
+room:room windows:light-bulb 
+room:room lit:glowing 
+room:room windows:light-bulb 
+room:room lamps:glowing 
+room:room windows:light-bulb 
+sky:sky kites:parachute 
+kites:parachute flying:sky 
+kites:parachute cloudy:sky 
+kites:parachute sky:sky 
+bunch:people sky:sky 
+skis:skiing in:agent 
+on:agent the:place snow:skiing 
+on:agent snowboard:skier 
+on:agent the:place snow:skiing 
+on:agent snow:skiing 
+a:tool room:room of:item laptop:laptop 
+a:tool room:room laptops:laptop 
+laptop:laptop a:tool projection:room 
+computer:laptop a:tool 
+some:item laptops:laptop board:tool 
+building:building 
+architectural:building dock:floating 
+Scaffolding:floating 
+Scaffolding:floating remodeling:water 
+building:building 
+baseball:baseball swinging:hitting 
+in:agent baseball:baseball swinging:hitting bat:bat 
+baseball:baseball swings:hitting bat:bat 
+on:agent a:tool baseball:baseball bat:bat 
+batter:bat hits:hitting League:ball-field 
+baseball:baseball bat:bat 
+baseball:baseball Barry:bat 
+Base:ballplayer on:agent base:ball-field umpire:bat 
+bat:bat baseball:baseball 
+baseball:baseball bat:bat 
+boy:male-child baseball:baseball bat:bat 
+boy:male-child the:place ball:pitching bat:bat 
+holding:male-child baseball:baseball bat:bat 
+bat:bat kick:male-child 
+boy:male-child bat:bat baseball:baseball heading:agent 
+baseball:baseball in:agent 
+baseball:baseball bat:bat on:agent 
+baseball:baseball hit:hitting 
+in:agent baseball:baseball bat:bat 
+baseball:baseball on:agent 
+tennis:tennis-court 
+man:man the:place Tennis:tennis-court ball:tennis-ball 
+man:man returning:tennis-ball 
+tennis:tennis-court hit:tennis-ball 
+Man:man return:tennis-court game:ducking 
+tennis:tennis-racket player:stadium ball:ball 
+woman:woman hitting:hitting tennis:tennis-racket ball:ball 
+woman:woman tennis:tennis-racket player:stadium in:agent playing:ball 
+tennis:tennis-racket player:stadium ball:ball she:woman lifts:agent 
+woman:woman strike:tennis-racket ball:ball 
+person:man swing:hitting tennis:tennis-racket ball:ball 
+in:agent shirt:man tennis:tennis-racket 
+tennis:tennis-racket player:stadium hits:hitting ball:ball 
+person:man tennis:tennis-racket 
+swinging:hitting tennis:tennis-racket on:agent 
+desk:office on:agent 
+desk:office coffee:overflowing 
+various:overflowing office:office supplies:mailbox adjacent:place 
+large:place desk:office arranged:overflowing 
+desk:office mugs:overflowing 
+Two:agent a:tool computer:laptop 
+a:tool laptop:laptop 
+woman:woman typing:typing a:tool laptop:laptop 
+woman:woman a:tool laptop:laptop the:place 
+typing:typing a:tool laptop:laptop 
+cords:installing 
+wires:installing computer:computer 
+setting:place cords:installing 
+wires:installing the:place 
+open:installing laptop:computer on:place 
+of:item men:man in:agent using:dialing computers:office 
+men:man by:item on:agent laptops:office 
+Business:office devices:telephone 
+men:man desk:office 
+laptops:office one:item man:man phone:telephone 
+A:tool girl:female-child eating:eating food:food sitting:room 
+a:tool girl:female-child eating:eating sandwich:bread 
+girl:female-child bites:eating bun:bread 
+girl:female-child biting:eating 
+girl:female-child bite:eating sandwich:bread 
+women:woman walking:walking 
+woman:woman walking:walking the:place 
+woman:woman in:agent heels:walking 
+woman:woman walking:walking the:place 
+woman:woman walking:walking the:place in:agent 
+girl:female-child in:agent chair:chair 
+child:female-child stuffed:rocking 
+girl:female-child in:agent chair:chair 
+girl:female-child on:agent chair:chair 
+girl:female-child on:agent chair:chair 
+clock:clock the:place of:item a:tool 
+the:place sidewalk:outside of:item a:tool 
+a:tool clock:clock on:place 
+there:item a:tool clock:clock the:place 
+clock:clock on:place of:item a:tool 
+on:place a:tool clock:clock two:item 
+the:place a:tool tower:clock 
+clock:clock entertainment:displaying 
+clock:clock two:item 
+A:tool clock:clock on:place 
+table:table flowers:blossoming come:agent 
+in:agent vase:blossoming the:place table:table 
+flowers:blossoming table:table 
+Flowers:blossoming table:table 
+large:tree table:table 
+people:people table:dining-room having:dining 
+people:people table:dining-room 
+people:people table:dining-room 
+people:people table:dining-room 
+people:people table:dining-room 
+woman:woman kitchen:kitchen 
+woman:woman stripped:agent the:place kitchen:kitchen 
+on:agent the:place kitchen:kitchen 
+purpose:agent made:pan kitchen:kitchen 
+woman:woman kitchen:kitchen 
+kitchen:kitchen 
+view:glowing kitchen:kitchen 
+kitchen:kitchen lights:glowing 
+kitchen:kitchen living:lamp 
+in:agent kitchen:kitchen 
+man:man bicycle:bicycle riding:riding 
+man:man bicycle:bicycle back:riding 
+person:man bike:bicycle parking:street 
+man:man riding:riding bike:bicycle 
+man:man riding:riding bike:bicycle 
+tub:bathtub 
+tub:bathtub 
+bathtub:bathtub 
+bathroom:bathtub 
+bathroom:bathtub the:place 
+person:person toothbrush:toothbrush faucet:sink 
+toothbrush:toothbrush facet:sink 
+person:person toothbrush:toothbrush sink:sink 
+toothbrush:toothbrush 
+Person:person toothbrush:toothbrush faucet:sink 
+bus:bus 
+bus:bus is:victim blue:ramming 
+bus:bus is:victim parked:ramming on:agent 
+bus:bus parked:ramming ready:victim more:place 
+is:victim bus:bus stopped:ramming on:agent 
+woman:woman a:tool table:restaurant 
+woman:woman a:tool table:restaurant plate:plate 
+woman:woman restaurant:restaurant in:agent plate:plate 
+woman:woman just:tool desert:plate 
+presses:agent her:woman face:eating bowl:food 
+bird:bird pond:wading 
+bird:bird shallow:wading 
+bird:bird shallow:wading 
+bird:bird water:wading 
+bird:bird water:wading 
+rest:bathroom toilets:toilet 
+toilet:toilet sink:bathroom 
+toilets:toilet 
+Two:agent toilets:toilet bathroom:bathroom 
+bathroom:bathroom 
+plate:plate chicken:food silverware:dining-room 
+plate:plate on:agent 
+plate:plate food:food silverware:dining-room cup:overflowing 
+plate:plate on:agent table:dining-room 
+plate:plate food:food on:agent table:dining-room 
+plate:plate 
+plate:plate 
+plate:plate 
+fork:plate 
+plate:plate 
+oranges:tomato table:table 
+oranges:tomato 
+Clear:table oranges:tomato 
+oranges:tomato in:agent 
+tangerines:tomato wooden:table 
+motorcycle:motorcycle 
+motorcycle:motorcycle in:agent setting:place 
+motorcycle:motorcycle in:agent driveway:road 
+motor:motorcycle 
+motorcycle:motorcycle road:road 
+man:man motorcycle:motorcycle 
+man:man motorcylce:motorcycle 
+man:man motorcycle:motorcycle 
+man:man motorcycle:motorcycle sidewalk:sidewalk 
+man:man motor:motorcycle 
+motorcycle:motorcycle each:agents lined:intermingling the:place 
+motorcycles:motorcycle 
+row:intermingling motorcycles:motorcycle 
+row:intermingling motorcycles:motorcycle forest:outdoors 
+motorcycles:motorcycle trees:outdoors 
+jetliner:jet sky:sky 
+sky:sky 
+jet:jet flies:soaring sky:sky 
+plane:jet sky:sky 
+plane:jet sky:sky 
+jet:jet airport:airport runway:runway 
+strip:runway 
+airport:airport airstrip:runway 
+Lufthansa:jet airport:airport 
+runway:runway airport:airport 
+plan:airplane 
+propeller:airplane runway:runway 
+propeller:airplane runway:runway 
+airplane:airplane airport:airport 
+aircraft:airplane tarmac:taxiing 
+airplane:runway terminal:airport 
+tarmac:taxiing 
+runway:runway 
+airplane:runway 
+terminal:airport 
+airplane:airplane smoke:plummeting 
+plane:airplane flying:air sky:plummeting 
+plane:airplane flies:air sky:plummeting 
+jet:plummeting airplane:airplane streams:air 
+its:yard sky:plummeting 
+cat:cat feet:crouching bench:bench 
+cat:cat bench:bench 
+cat:cat bench:bench 
+cat:cat bench:bench 
+cat:cat sitting:crouching bench:bench 
+giraffe:giraffe marina:shore 
+giraffe:giraffe marina:shore 
+giraffe:giraffe boats:shore 
+giraffe:giraffe water:shore lined:brancher 
+giraffe:giraffe front:brancher 
+shoe:erasing 
+showing:source pointy-toed:erasing 
+with:source in:agent shoe:erasing 
+shoe:erasing on:agent and:source 
+shoe:erasing and:source 
+animal:dog sitting:resting rocks:land 
+lays:goal rocky:outdoors area:land 
+lying:goal grass:land 
+on:goal countryside:outdoors rocks:land 
+sheep:dog sits:resting rocky:outdoors 
+giraffe:giraffe looking:head rocks:rubbing 
+giraffe:giraffe rests:head on:agentpart rocks:rubbing 
+giraffe:giraffe head:neck rocks:rubbing 
+giraffe:giraffe two:item obtain:rubbing 
+giraffe:giraffe head:neck rocks:rubbing 
+street:street 
+People:people bus:street 
+bus:street people:people 
+Men:people in:agent street:street 
+city:street 
+sheep:sheep 
+sheep:sheep standing:standing around:pen 
+sheep:sheep standing:standing 
+One:agent sheep:sheep stand:standing 
+sheep:sheep barn:standing 
+a:tool wheelchair:pole-path street:street 
+crossing:blocking a:tool traffic:pole-path 
+a:tool traffic:pole-path 
+road:blocking a:tool wheelchair:pole-path 
+The:tool traffic:pole-path crosswalk:street 
+traffic:city hanging:brancher 
+light:city hanging:brancher 
+light:city houses:road 
+city:city 
+stoplight:city 
+bus:bus the:place 
+bus:bus the:place street:street 
+bus:bus on:agent street:street England:turneditem 
+double-decked:turneditem bus:bus the:place 
+bus:bus the:place on:agent street:street 
+OFF:agent WHITE:destination BUS:bus 
+of:item just:destination bus:bus lot:towing 
+off:destination of:item bus:bus 
+bus:bus onto:destination gravel:road lot:towing 
+a:tool lot:towing feild:item 
+of:container in:agent pink:dentition paint:rotting 
+pink:dentition nut:rotting on:agent 
+close:rotting bright:person 
+decaying:dentition with:container worn:rotting 
+close:rotting pink:dentition on:agent 
+old:outdoors hydrant:fountain on:agent 
+small:water decorative:fountain yard:outdoors 
+hydrant:fountain on:agent patch:outdoors of:overflowing 
+green:outdoors on:agent cementery:fountain 
+style:overflowing hydrant:fountain on:agent 
+of:item birds:bird floating:body-of-water boat:boat 
+birds:bird row:colliding boat:boat of:item water:body-of-water 
+boat:boat water:body-of-water birds:bird it:item 
+Birds:bird boat:boat water:body-of-water 
+of:item boat:boat 
+bird:bird 
+Bird:bird sun:outdoors 
+bird:bird 
+bird:bird an:outdoors 
+bird:bird 
+bird:bird tide:beach 
+bird:bird water:wading ocean:beach 
+bird:bird beach:beach 
+pelican:bird beach:beach 
+bird:bird shore:beach come:agent 
+geese:duck lot:road grassy:foraging 
+Ducks:duck lot:road 
+birds:duck on:agent patch:foraging 
+geese:duck lot:road 
+ducks:duck grassy:foraging lot:road 
+lights:light-bulb 
+giving:outside the:place light:light-bulb 
+light:light-bulb says:outside 
+on:agent traffic:light-bulb post:outside 
+lights:light-bulb 
+bird:bird water:wading 
+bird:bird by:outdoors water:wading 
+bird:bird river:wading 
+edge:wading 
+bird:bird next:outdoors water:wading 
+birds:bird 
+birds:bird 
+Sea:waddling birds:bird 
+birds:bird 
+birds:bird 
+man:man moving:subway-station 
+man:man passing:commuting train:subway-station 
+Man:man platform:subway-station speeds:vehicle 
+man:man train:subway-station 
+waiting:subway-station 
+birds:bird and:source branches:tree 
+birds:bird tree:tree and:source 
+of:source birds:bird the:place tree:tree 
+birds:bird in:agent tree:tree 
+birds:bird in:agent tree:tree with:source 
+toucan:neck perches:bird 
+bird:bird cage:neck 
+bird:bird in:agent cage:neck 
+bird:bird standing:agentpart 
+toucan:neck beak:bird 
+train:train 
+train:train the:place in:agent 
+train:train on:agent the:place 
+train:train the:place 
+train:train 
+meter:leaking next:source car:car 
+meter:leaking next:source car:car 
+front:outside car:car meter:leaking 
+meter:leaking and:source car:car 
+parking:car meter:leaking with:source very:water 
+cows:cow camera:drooling trees:outdoors 
+cows:cow tagged:drooling 
+cow:cow 
+cows:cow close:drooling 
+cow:cow near:outdoors 
+cat:cat drinking:lapping glass:glass table:table 
+cat:cat table:table drinking:lapping glass:glass 
+cat:cat drinking:lapping glass:glass 
+cat:cat drinking:lapping glass:glass 
+cat:cat drinking:lapping glass:glass 
+cat:cat chair:chair 
+cat:cat the:place chair:chair 
+cat:cat chair:chair 
+cat:cat chair:chair 
+cat:cat chair:chair 
+Cat:cat on:agent wood:source down:land reflection:leaping 
+and:source cat:cat reflection:leaping 
+cat:cat and:source the:destination 
+cat:cat at:inside the:destination 
+cats:cat it:source reflection:leaping on:agent 
+cat:cat standing:agentpart laptop:laptop 
+cat:cat laptop:laptop 
+cat:cat standing:agentpart laptop:laptop 
+cat:cat computer:laptop 
+Cat:cat laptop:laptop 
+cow:cow 
+cow:cow the:destination 
+Cow:cow chain:pooing outdoor:outdoors 
+cow:cow on:agent 
+cow:cow to:destination 
+man:man in:agent of:item bus:driving 
+man:man of:item bus:driving on:agent road:road 
+man:man in:agent of:item bus:driving 
+man:man in:agent of:item bus:driving rural:road setting:place 
+man:man in:agent tour:driving rural:road 
+People:people beach:beach umbrellas:tent 
+umbrellas:tent beach:beach 
+people:people beach:beach 
+Many:people umbrellas:tent beach:beach 
+Many:people shade:shelter coverings:place beach:beach 
+Two:field on:agent dogs:leash 
+on:agent group:field dogs:leash 
+on:agent group:field dogs:leash 
+several:item dogs:leash 
+on:agent grass:field dogs:leash 
+people:people tables:dining on:agent 
+patio:dining in:agent 
+patio:dining people:people reddish:agent 
+tables:dining umbrellas:people shading:outdoors 
+table:dining near:outdoors people:people 
+dressed:saluting by:outdoors 
+An:outdoors leather:saluting 
+people:soldier 
+dressed:saluting green:outdoors 
+in:agent mask:saluting 
+white:wagging terrier:dog in:agent sun:outdoors dressed:agentpart 
+dog:dog yellow:outdoors 
+Terrier:dog dressed:agentpart in:agent vest:wagging sunshine:outdoors 
+no:outdoors to:agentpart caption:agent 
+dog:dog pavement:outdoors 
+people:people in:agent front:shop a:tool 
+People:people in:agent a:tool wooden:floor 
+a:tool of:shop people:people small:source 
+people:people a:tool indoor:shop 
+wood:floor as:tool for:shop people:people 
+large:place in:agent ski:skiing 
+skiing:skiing with:person snow:snow 
+snow:snow skier:skiing 
+skiing:skiing 
+in:agent snow:snow person:person skiing:skiing the:place 
+bears:bear in:agent bed:bed the:place 
+stuffed:snuggling in:agent bed:bed 
+bear:bear comforter:bed 
+bears:bear bed:bed 
+in:agent bed:bed cuddled:snuggling 
+man:man catch:caughtitem frisbee:Frisbee 
+man:man catch:caughtitem frisbee:Frisbee 
+man:man catch:caughtitem frisbee:Frisbee 
+man:man Frisbee:Frisbee 
+Man:man frisbee:Frisbee 
+zebras:zebra grassy:field 
+zebra:zebra rocks:foraging 
+of:item zebras:zebra field:field 
+zebra:zebra field:field 
+zebras:zebra on:agent grassy:field 
+zebra:zebra eating:gnawing grass:grass 
+zebra:zebra grazing:grass on:agent 
+zebra:zebra grazing:grass 
+zebra:zebra grass:grass its:gnawing 
+zebra:zebra grazing:grass on:agent 
+horses:horse grazing:grass field:field the:place 
+horse:horse lush:grass field:field 
+horse:horse grazing:grass the:place 
+horse:horse grazing:grass field:field 
+horse:horse grazing:grass field:field 
+horse:horse girl:girl 
+girl:girl horse:horse 
+girl:girl riding:riding horse:horse 
+girl:girl on:vehicle big:place horse:horse 
+girl:girl atop:riding horse:horse 
+horse:horse carriage:carriage 
+horse:horse carriage:carriage 
+large:outdoors horse:horse to:tool open:item carriage:carriage 
+horse:horse carriage:carriage stands:outdoors in:agent the:place to:tool 
+close:item up:tool horse:horse carriage:carriage on:agent 
+plate:plate orange:tomato 
+orange:tomato plate:plate 
+dish:plate orange:tomato 
+fruit:tomato crackers:plate 
+orange:tomato plate:plate 
+people:people on:agent snow:snow skis:skiing 
+friends:people ski:skiing 
+people:people skis:skiing 
+people:people 
+people:people the:place snow:snow on:agent skis:skiing 
+baseball:baseball players:baseball-glove catch:caughtitem 
+playing:catching baseball:baseball on:agent 
+Baseball:ballplayer players:baseball-glove in:agent the:place air:caughtitem 
+baseball:baseball glove:baseball-glove 
+players:baseball-glove leaping:caughtitem the:place 
+girls:daughter on:agent bed:bedroom bananas:disciplining 
+child:mother bananas:disciplining 
+mother:mother together..:disciplining 
+child:mother bananas:disciplining 
+girl:mother on:agent bed:bedroom bananas:disciplining 
+salad:theme out:cramming meats:food 
+food:food such:container 
+holding:mouth foods:food 
+food:food 
+vegetables:food sitting:mouth 
+bananas:corn 
+covering:place who:woman selling:buyer bananas:corn 
+women:woman buying:buyer banana:corn 's:item 
+banana:corn sale:selling 
+women:woman farmers:market 
+in:agent skiing:skiing 
+ski:ski-slope 
+in:agent ski:ski-slope 
+in:agent skiing:skiing 
+ski:ski-slope poles:skier in:agent the:place 
+people:people ski:skiing 
+people:people on:agent the:place snow:skiing 
+group:people skiers:skiing on:agent mountain:mountain 
+skiers:skiing steep:mountain 
+people:people on:agent the:place ski:skiing 
+skis:skiing on:agent legs:person 
+skis:skiing leans:agent legs:person 
+on:agent ski:skiing 's:person 
+There:person on:agent skis:skiing 
+Person:person on:agent skis:skiing snow:snow 
+unable:place 
+group:people skiers:skiing in:agent the:place 
+skiing:skiing 
+group:people on:agent skis:skiing 
+skiers:skiing the:place 
+plate:plate onions:bean 
+plate:plate pasta:sprouting 
+noodles:bean 
+pasta:sprouting 
+noodles:bean 
+man:man skateboard:skateboard ramp:ramp 
+man:man skateboard:skateboard 
+skating:skating 
+skateboarder:ramp 
+riding:vehicle his:man skateboard:skateboard skate:ramp 
+skiing:skiing in:agent 
+skiing:skiing 
+downhill:skier skiing:skiing 
+skiing:skiing 
+ski:ski-slope on:agent 
+pair:sealant red:vent black:item skis:caulk on:agent 
+brand:person snow:vent skis:caulk 
+red:vent skis:caulk 
+skis:caulk on:agent snow:vent 
+someone:person skis:caulk on:agent snow:vent 
+ARE:people SKIING:skiing 
+women:people on:agent snow:snow slope:skiing 
+people:people on:agent skis:skiing snowy:snow 
+people:people on:agent ski:skiing the:place 
+skiers:skiing on:agent bright:place 
+sandwich:sandwich to:hand yellow:person 
+stuff:person to:hand sandwich:sandwich below:outdoors 
+held:person sandwich:sandwich 
+placed:person sandwich:sandwich if:outdoors eating:eating areas:place 
+eating:eating a:tool sandwich:sandwich on:agent grass:outdoors covered:person 
+skateboard:skateboard parking:street 
+person:man skateboard:skateboard 
+man:man skate:skateboard parking:street 
+guy:man parking:street skateboard:skateboard 
+man:man riding:vehicle skateboard:skateboard 
+guy:man riding:vehicle skateboard:skateboard 
+person:man skateboard:skateboard 
+shirt:man jeans:skateboard jumping:skating black:outdoors 
+his:man skateboard:skateboard 
+skating:skating dry:outdoors his:man 
+plate:plate sandwich:sandwich 
+sandwich:sandwich plate:plate 
+slices:spoiling sandwich:sandwich 
+sandwich:sandwich plate:plate 
+sandwich:sandwich plate:plate 
+a:tool waves:surfer 
+a:tool wave:surfing surfboard:surfboard 
+A:tool surfboard:surfboard 
+a:tool waters:ocean 
+a:tool surfing:surfing 
+sandwich:sandwich 
+sandwich:sandwich made:person on:agent 
+sub:sandwich 
+person:person sandwich:sandwich 
+person:person on:agent sub:sandwich 
+bed:bed in:agent 
+bed:bed 
+bed:bed 
+beds:bed 
+through:agent bed:bed 
+lamps:lamp in:agent 
+furniture:lamp 
+love:glowing 
+in:agent room:lamp 
+lamp:lamp 
+girl:female-child sitting:rocking on:agent bed:bed 
+girl:female-child brightly:place room:bedroom 
+girl:female-child on:agent bed:bed 
+girl:female-child sitting:rocking on:agent bed:bed 
+girl:female-child sitting:rocking in:agent bed:bed 
+woman:woman holding:hand pizza:pizza in:agent the:place 
+woman:woman pizza:pizza in:agent hands:eating 
+woman:woman pizza:pizza in:agent hands:eating 
+lady:woman holding:hand pizza:pizza 
+woman:woman holding:hand pizza:pizza in:agent 
+pizza:pizza on:agent plate:plate 
+pizza:pizza on:agent plate:plate 
+pizza:pizza on:agent plate:plate t.v:room 
+pizza:pizza plate:plate 
+pizza:pizza on:agent plate:plate TV:room 
+vegetables:rotting on:agent 
+greens:rotting on:agent 
+bacon:plate 
+bacon:plate spinach:rotting 
+on:agent pita:rotting bread:bread 
+pizza:food greens:rotting on:agent 
+pizza:food bacon:plate bits:rotting on:agent 
+greens:rotting dried:agent 
+prosciutto:rotting topping:plate 
+pizza:food toppings:rotting on:agent 
+man:man tennis:tennis-court 
+tennis:tennis-court ball:aiming in:target him:man serve:tennis-ball 
+tennis:tennis-court on:agent to:target serve:tennis-ball 
+tennis:tennis-court to:target serve:tennis-ball ball:aiming 
+man:man in:target serve:tennis-ball ball:aiming tennis:tennis-court 
+boy:male-child wii:model 
+boy:male-child the:place wii:model 
+kid:male-child video:model 
+video:model 
+child:male-child TV:living-room 
+man:man in:knocking order:item 
+person:man facing:item door:door 
+male:man in:knocking white:door 
+man:man front:door some:item 
+man:man standing:knocking up:item 
+fans:tool windows:art 
+of:item a:tool room:room 
+a:tool room:room from:item the:place 
+room:room a:tool 
+A:tool room:room 
+whale:ballooning on:agent 
+whale:ballooning on:agent 
+whale:ballooning 
+balloon:ballooning 
+balloon:ballooning 
+girl:girl on:agent umbrella:hitchhiking 
+girl:girl on:agent road:road 
+girl:girl on:agent 
+young:girl carrying:hitchhiking 
+child:girl holding:hitchhiking 
+kite:ballooning that:person 
+flying:sky on:agent 
+kite:ballooning on:agent 
+closeup:person kites:ballooning flying:sky on:agent 
+kite:ballooning as:agent air:sky 
+tennis:tennis-court intercept:woman the:place 
+woman:woman on:agent tennis:tennis-court 
+woman:woman in:agent racquet:tennis-racket 
+tennis:tennis-court looking:woman find:place 
+tennis:tennis-court 
+brown:outdoors pot:pot design:overflowing on:agent 
+vase:pot placed:overflowing outside:outdoors 
+rocks:outdoors set:overflowing plants:pot 
+vase:pot on:agent the:water outside:outdoors 
+vase:pot outside:outdoors on:agent the:water 
+people:people sitting:hunching wall:room 
+working:hunching laptop:laptop 
+using:hunching laptop:laptop 
+a:surface their:people devices:room 
+people:people sitting:hunching the:place wall:room 
+woman:woman talking:telephoning the:place laptop:room 
+woman:woman laptop:room talking:telephoning the:place 
+lady:woman computer:room talking:telephoning 
+Woman:woman talking:telephoning computer:room 
+woman:woman desk:room talking:telephoning 
+person:man sitting:sitting the:place ground:floor 
+man:man seated:sitting floor:floor computer:room 
+male:man college:place student:room sits:sitting floor:floor 
+man:man in:agent the:place floor:floor outlet:room 
+sitting:sitting the:place floor:floor plugged:room 
+baby:baby bed:bed 
+baby:baby in:agent laptop:sleeping 
+baby:baby bed:bed 
+baby:baby the:place bed:bed 
+bed:bed 
+microwave:microwaving 
+microwave:microwaving the:place 
+microwave:microwaving old:outdoors the:place 
+microwave:microwaving the:place 
+microwave:microwaving next:outdoors on:place 
+man:man phone:telephone 
+man:man that:item cellphone:telephone in:agent 
+man:man phone:telephone in:agent 
+man:man phone:telephone 
+man:man smart:telephone in:agent 
+girl:woman talking:phoning a:tool 
+woman:woman the:place phone:phoning a:tool 
+a:tool woman:woman talks:phoning 
+woman:woman talks:phoning to:tool 
+A:tool talking:phoning her:woman 
+different:overflowing appliances:garbage sitting:ashcan on:agent 
+fridge:garbage 
+makeshift:source microwave:ashcan 
+microwave:ashcan in:agent 
+microwave:ashcan on:agent white:source 
+next:substance to:destination 
+An:substance old:leaking on:place table:inside 
+An:substance old:leaking 
+laying:land on:place table:inside in:water 
+GREEN:destination TABLE:inside 
+cart:tool finger:cupcake the:place 
+a:tool stuffed:room pastries:cupcake 
+teddy:room on:place loaded:item 
+are:cupcake as:tool if:room they:item 
+A:tool snacks:cupcake 
+flowers:flower on:agent 
+roses:flower in:agent 
+Wilted:flower on:agent 
+drooping:flower in:agent 
+plant:wilting flower:flower in:agent 
+poodle:dog the:place couch:chair 
+dog:dog the:place couch:chair 
+dog:dog the:place 
+dog:dog sitting:contact the:place 
+dog:dog couch:chair 
+man:man on:agent table:dining food:food 
+In:place buffet:restaurant man:man seated:dining plate:shrimp 
+man:man table:dining 
+man:man table:dining 
+man:man the:place food:food eating:dining 
+finishing:tool meal:sauce restaurant:tasting 
+sitting:room a:tool cups:sauce 
+a:tool table:sauce while:tasting the:place 
+woman:woman contemplating:agent something:tasting a:tool 
+Friends:woman having:tasting of:item the:place end:tool meal:sauce 
+poured:coffee-bean the:place it:overflowing 
+poured:coffee-bean 
+with:overflowing poured:coffee-bean 
+being:source doused:coffee-bean in:agent liquid:cup 
+poured:coffee-bean the:place 
+kitchen:kitchen 
+kitchen:kitchen 
+kitchen:kitchen 
+kitchen:kitchen 
+large:place kitchen:kitchen 
+kitchen:kitchen 
+kitchen:kitchen the:place 
+Kitchen:kitchen brightly:place 
+big:place kitchen:kitchen 
+kitchen:kitchen the:place 
+modern:glowing kitchen:kitchen stove:stove 
+in:agent kitchen:kitchen 
+kitchen:kitchen appliances:stove 
+kitchen:kitchen modern:glowing appliances:stove 
+kitchen:kitchen stove:stove 
+bathroom:bathroom 
+bathroom:bathroom with:person toilet:toilet 
+bathroom:bathroom toilet:toilet it:person 
+shower:bathroom enclosure:target anything:place 
+bathroom:bathroom toilet:toilet up:person 
+bicycles:cyclist race:racing 
+racing:racing bicycles:cyclist 
+riders:cyclist street:road 
+bikes:cyclist road:road 
+cyclists:cyclist race:racing 
+man:man standing:target bathroom:bathroom mirror:urinal 
+man:man himself:urinal bathroom:bathroom 
+bathroom:bathroom mirror:urinal holding:man 
+man:man selfie:urinal 
+man:man bathroom:bathroom 
+cat:cat bathroom:bathroom 
+cat:cat bathroom:bathroom 
+cat:cat sink:bathroom 
+cat:cat standing:target on:agent bathroom:bathroom 
+Cat:cat bathroom:bathroom 
+toilet:bathroom 
+bathroom:bathroom 
+bathroom:bathroom 
+bathroom:bathroom 
+that:person bathroom:bathroom 
+toilet:toilet the:place in:agent messy:garbage bathroom:bathroom 
+bathroom:bathroom toilet:toilet on:agent the:place floor:garbage 
+toilet:toilet on:agent the:place floor:garbage 
+toilet:toilet bathroom:bathroom 
+bathroom:bathroom toilet:toilet 
+white:waddling cat:cat floor:living-room 
+white:waddling cat:cat floor:living-room 
+white:waddling cat:cat floor:living-room 
+white:waddling cat:cat floor:living-room brown:agentpart 
+white:waddling cat:cat floor:living-room 
+rider:jumping 
+dirt:jumping bike:motorcycle 
+motorcyclist:motorcycle mid:jumping on:agent 
+jump:jumping on:agent motorcycle:motorcycle 
+mid:jumping on:agent motorcycle:motorcycle 
+flying:destination air:earth 
+jumping:jumping on:agent motorcycle:motorcycle 
+MOTOR:motorcycle AND:source RIDER:earth 
+mid:jumping air:earth motor:motorcycle 
+on:agent motorcycle:motorcycle air:earth 
+air:earth with:source 
+motorcycle:motorcycle rider:earth and:source 
+motorcycle:motorcycle rider:earth with:source blue:destination 
+air:earth onto:destination handles:source 
+motorcycle:motorcycle and:source rider:earth 
+motorcycle:motorcycle 
+lady:couple driving:road motor:motorcycle 
+bike:motorcycle helmets:riding 
+woman:couple motor:motorcycle 
+motorcycle:motorcycle 
+dog:dog laying:sleeping 
+dog:dog sleeping:sleeping 
+dog:dog sleeps:sleeping the:place 
+dog:dog sleeping:sleeping in:agent the:place 
+dog:dog laying:sleeping 
+
+
+
+
+
+
+
+
+
+
+air:sky on:agent Navy:circling Angels:airplane 
+formation:circling sky:sky 
+flying:sky formation:circling 
+planes:airplane sky:sky 
+sky:sky 
+plane:airplane sky:sky 
+airplane:airplane flying:sky 
+airplane:airplane sky:sky 
+plane:airplane sky:sky 
+plane:airplane sky:sky 
+Giraffe:giraffe standing:drooling 
+close:drooling giraffe:giraffe 
+giraffe:giraffe camera:drooling 
+giraffe:giraffe camera:drooling 
+giraffe:giraffe camera:drooling 
+sign:brancher the:place 
+stores:street on:place 
+Transit:street Station:city 
+sign:brancher M:city 
+marks:brancher the:place Transit:street Station:city 
+bench:outdoors next:source potted:pot 
+small:water sets:place old:outdoors 
+wooden:overflowing bench:outdoors potted:pot 
+outside:outdoors potted:pot 
+bench:outdoors in:water pots:pot 
+people:people bench:bench 
+people:people bench:bench 
+people:people bench:bench the:place 
+people:people bench:bench near:outdoors the:place 
+people:people bench:bench the:place 
+empty:brancher park:park bench:bench 
+bench:bench the:place green:brancher 
+bench:bench the:place park:park 
+bench:bench 
+bench:bench empty:brancher the:place park:park 
+yellow:pulling in:agent bike:bicycle 
+sidewalk:bicycle 
+bike:bicycle on:agent 
+bicycle:bicycle 
+yellow:pulling on:agent sidewalk:bicycle 
+hydrant:fireplug 
+hydrant:fireplug 
+hydrant:fireplug 
+hydrant:fireplug 
+hydrant:fireplug 
+the:place 's:item bus:bus 
+there:item old:colliding bus:bus on:agent the:place 
+of:item van:bus outside:outdoors 
+old:colliding bus:bus 
+in:agent van:bus 
+sheep:sheep standing:standing field:field 
+sheep:sheep stands:standing the:place field:field 
+Single:standing sheep:sheep field:field 
+sheep:sheep standing:standing grass:field 
+sheep:sheep standing:standing grass:field 
+man:man punching:feeding giraffe:giraffe in:agent the:place side:outside it:source 
+young:hand man:man with:source giraffe:giraffe 
+man:man pretending:hand giraffe:giraffe sculpture:outside 
+man:man punching:feeding giraffe:giraffe statue:outside 
+man:man pretending:hand statue:outside of:source giraffe:giraffe 
+giraffe:giraffe some:rock 
+giraffe:giraffe goes:place 
+giraffe:giraffe standing:standing 
+Giraffe:giraffe rock:rock 
+large:rock giraffe:giraffe standing:standing 
+street:street signs:barrier-car a:tool 
+pole:barrier-car street:street 
+street:street sign:barrier-car 
+street:street sign:barrier-car 
+A:tool street:street sign:barrier-car 
+bird:bird branch:branch 
+bird:bird branch:branch 
+bird:bird branch:branch 
+bird:bird perched:branch 
+bird:bird branch:branch 
+road:road 
+signs:brancher road:road 
+sign:brancher 
+road:road Jackson:brancher Main:town 
+residential:town trees:brancher 
+woman:woman in:agent black:item getting:hand 
+woman:woman blue:truck suitcase:opening getting:hand 
+woman:woman train:outdoors 
+woman:woman 
+woman:woman holding:hand suitcase:opening 
+
+
+
+
+
+train:train trees:outdoors 
+train:train under:outdoors 
+train:train the:place 
+train:train on:agent the:place 
+train:train under:outdoors 
+baseball:ducking bat:golf-ball while:man on:agent 
+man:man hitting:blow the:place bat:golf-ball 
+man:man swinging:golf-ball baseball:ducking 
+baseball:ducking swinging:golf-ball 
+swinging:golf-ball 
+tunnel:track 
+tunnel:track 
+tunnel:track greenery:outdoors 
+tunnel:track by:outdoors 
+tunnel:track the:place 
+Street:street painted:miming on:agent 
+street:street painted:miming 
+as:agent 
+large:place on:agent intersection:street 
+street:street painted:miming 
+train:train 
+train:train the:place 
+train:train station:railway-station the:place in:agent 
+train:train 
+train:train 
+two:people trucks:truck trees:forest 
+truck:truck dirt:fording to:tool trees:forest 
+Two:people cars:truck forest:forest 
+a:tool truck:truck dirt:fording trees:forest 
+Two:people trucks:truck with:tool trees:forest 
+field:field two:item cows:cattle hay:hay 
+cows:cattle graze:foraging field:field on:agent 
+cows:cattle field:field dreary:place 
+cows:cattle field:field 
+cows:cattle field:field 
+A:tool cows:cattle river:river 
+cows:cattle water:river 
+A:tool cows:cattle in:agent water:river 
+cows:cattle a:tool lake:river 
+cows:cattle a:tool stream:river 
+cattle:cattle grazing:grass on:agent field:field 
+animals:cattle field:field the:place 
+cows:cattle mill:item field:field 
+cows:cattle other:item field:field 
+of:item cows:cattle the:place field:field 
+ferrets:paweditem in:agent 
+ferrets:paweditem 
+couple:agentpart laying:cat top:paweditem a:hand 
+a:hand Ferrat:paweditem laying:cat in:agent 
+Two:agentpart they:hand 
+laying:sleeping bed:bed 
+its:dog sleeping:sleeping bed:bed 
+lays:sleeping bed:bed 
+back:dog bed:bed the:place 
+lying:sleeping bed:bed 
+cow:cattle person:man on:agent street:street 
+is:instrument to:plowing caption:agent 
+man:man the:place street:street cow:cattle 
+Person:man cow:cattle on:agent street:street 
+man:man road:street cow:cattle 
+woman:woman on:crouching boat:boat 
+lady:woman is:crouching observing:agent the:boat 
+woman:woman sitting:crouching in:agent boat:boat 
+person:woman sitting:crouching in:agent boat:boat 
+person:woman sitting:crouching boat:boat 
+elephants:elephant each:nuzzling 
+elephants:elephant on:agent 
+elephants:elephant 
+elephants:elephant each:nuzzling the:place 
+the:place elephants:elephant each:nuzzling 
+man:man in:agent car:car 
+man:man car:car 
+man:man in:agent vehicle:car 
+man:man purple:agent car:car 
+man:man black:item purple:agent driving:driving automobile:car 
+man:man on:vehicle elephant:elephant 
+person:man riding:riding elephant:elephant 
+man:man riding:riding elephant:elephant 
+man:man on:vehicle elephants:elephant 
+riding:riding elephant:elephant in:agent 
+man:man sitting:sitting outside:outdoors 
+man:man under:outdoors 
+man:man in:agent sitting:sitting an:outdoors 
+man:man in:agent sits:sitting under:outdoors 
+man:man sitting:sitting an:outdoors 
+elephants:elephant people:people backs:riding 
+elephants:elephant are:people field:field 
+elephants:elephant people:people riding:riding 
+Elephants:elephant riders:riding grassy:field 
+people:people ride:riding elephants:elephant 
+
+
+
+
+
+people:people boats:boat water:body-of-water 
+people:people life:body-of-water boat:boat 
+boats:boat are:people water:body-of-water 
+boats:boat people:people 
+Groups:boarding boats:boat ride:vehicle water:body-of-water 
+trunk:car bags:garbage 
+car:car packed:garbage 
+car:car suitcases:ashcan 
+the:place car:car bags:garbage 
+packed:garbage 
+of:container people:people next:item luggage:bag 
+people:people in:agent luggage:bag 
+family:people to:item go:bag 
+luggage:bag 
+People:people in:agent different:container luggage:bag 
+dog:dog running:chasing in:agent horse:horse 
+horse:horse dog:dog running:chasing in:agent yard:outdoors 
+dog:dog running:chasing horse:horse in:agent 
+horse:horse dog:dog playing:chasing in:agent 
+dog:dog running:chasing next:outdoors horse:horse 
+to:target either:place around:fence fallen:outdoors 
+elephant:elephant pin:fence 
+elephants:elephant fence:fence 
+Elephants:elephant fence:fence 
+elephant:elephant exhibit:fence 
+dog:dog frisbee:yard 
+dog:dog collar:wagging frisbee:yard 
+dog:dog next:agentpart Frisbee:yard 
+frisbee:yard dog:dog 
+dog:dog Frisbee:yard 
+small:clothing on:agent 
+items:clothing 
+and:overflowing blanket:clothing 
+and:overflowing in:agent 
+and:overflowing red:bag blanket:clothing 
+Frisbee:Frisbee beach:beach 
+young:male-child frisbee:Frisbee beach:beach 
+beach:beach up:item frisbee:Frisbee 
+disc:Frisbee beach:beach or:destination lake:body-of-water 
+frisbee:Frisbee beach:beach 
+girl:woman the:place catch:caughtitem frisbee:Frisbee 
+girl:woman catch:caughtitem the:place frisbee:Frisbee 
+the:place catch:caughtitem frisbee:Frisbee 
+Woman:woman catch:caughtitem disc:Frisbee large:place field:field 
+woman:woman the:place catch:caughtitem Frisbee:Frisbee 
+dog:dog on:agent bed:bed 
+Labrador:dog bed:bed 
+dog:dog on:agent bed:bed 
+dog:dog on:agent bed:bed 
+dog:dog on:agent bed:bed the:place 
+few:people near:outside fountain:drenching 
+group:people spouting:water water:drenching 
+group:people fountain:drenching 
+fountain:drenching 
+Kids:people fountain:drenching 
+zebras:zebra walking:wading 
+zebra:zebra walking:wading 
+small:water zebra:zebra walking:wading on:agent 
+zebras:zebra walking:wading 
+zebra:zebra walking:wading 
+plate:table pineapple:pineapple 
+plate:table pineapple:pineapple 
+fruit:pineapple table:table 
+pineapple:pineapple oranges:spoiling plate:table 
+pineapple:pineapple plate:table 
+people:people the:place mountainside:mountain 
+people:people skis:skiing mountain:mountain 
+large:place group:people mountain:mountain snow:skiing 
+group:people skiers:skiing large:place mountain:mountain 
+large:place group:people skiers:skiing mountain:mountain 
+young:male-child play:student game:ball-field basketball:skill 
+boy:male-child baseball:baseball 
+baseball:baseball 
+baseball:baseball the:place 
+little:male-child league:coaching baseball:baseball the:place 
+broccoli:vegetable plate:plate 
+plate:plate 
+close-up:rotting plate:plate vegetables:vegetable 
+plate:plate broccoli:vegetable 
+plate:plate in:agent 
+plate:plate cooked:sprouting 
+big:place plate:plate 
+plate:plate 
+Plate:plate 
+plate:plate chicken:sprouting 
+Woman:woman banana:nipping the:place 
+woman:woman lips:nipping open:item 
+lady:woman some:item in:agent hand:nipping 
+girl:woman showing:room the:place banana:nipping 
+woman:woman banana:nipping 
+table:table cake:decorated 
+plate:plate shown:person in:agent between:paint two:item 
+table:table cake:decorated 
+the:place table:table next:item empty:person plate:plate 
+cake:decorated 's:person 
+man:man working:drill on:agent a:tool living:living-room 
+man:man fixing:drill so:tool 
+A:tool man:man on:agent the:place floor:living-room 
+man:man equipment:assembling room:living-room 
+A:tool man:man fixing:drill on:agent the:place floor:living-room 
+people:people skis:skiing on:agent mountain:mountain 
+people:people snowboards:skiing 
+People:people in:agent the:place snow:skiing 
+people:people skis:skiing 
+people:people ski:skiing on:agent 
+a:tool bowl:spoon pasta:pasta foods:food 
+salad:spoon meat:food 
+bowl:spoon is:tool pasta:pasta vegetables:food 
+A:tool pasta:pasta vegetables:food 
+big:tool bowl:spoon pasta:pasta meat:food 
+Pasta:sprouting bowl:bowl 
+bowl:bowl pasta:sprouting 
+Bowl:bowl pasta:sprouting 
+bowl:bowl pasta:sprouting 
+bowl:bowl pasta:sprouting 
+few:place broccoli:sprouting 
+broccoli:sprouting found:place 
+broccoli:sprouting 
+Broccoli:sprouting florets:plant 
+broccoli:sprouting 
+food:food bits:rotting 
+filled:pan vegetables:rotting 
+dish:pan yummy:food 
+bread:pan 
+salad:food broccoli:rotting 
+plate:chicken 
+broccoli:chicken 
+large:item chicken:chicken 
+food:chicken 
+large:item meat:chicken 
+in:agent skiing:skiing hill:mountain 
+skiing:skiing 
+skier:skier hill:mountain 
+skier:skier 
+the:place ski:skiing mountains:mountain 
+boy:male-child riding:vehicle skateboard:skateboard 
+boy:male-child skateboard:skateboard 
+boy:male-child riding:vehicle 
+skateboarding:skateboard 
+boy:male-child riding:vehicle skate:skateboard 
+the:place slope:skiing 
+downhill:skier in:agent 
+hill:skiing 
+the:place snow:skiing on:agent 
+hill:skiing 
+man:man riding:vehicle skateboard:skateboard hall:inside 
+man:man smiles:inside skateboards:skateboard 
+man:man skateboard:skateboard 
+man:man riding:vehicle skateboard:skateboard indoors:inside 
+man:man skateboard:skateboard 
+people:people picture:room 
+Four:people wall:room stuffed:shivering 
+Four:people ,:room in:agent his:shivering 
+group:people in:agent various:room 
+at:people in:agent his:shivering 
+Man:man audience:ball 
+man:man in:agent helmet:ball 
+person:man helmet:ball 
+his:man trick:bouncing 
+guy:man helmet:ball 
+man:man riding:vehicle skateboard:skateboard in:agent street:street 
+man:man skateboarding:skateboard street:street 
+man:man skateboarding:skateboard in:agent street:street 
+man:man rides:vehicle skateboard:skateboard street:street 
+man:man skateboard:skateboard street:street 
+plated:plate corn:corn olives:sprouting 
+Tortellini:corn vegetable:sprouting entree:plate 
+vegetarian:sprouting corn:corn 
+pate:plate corn:corn 
+plate:plate corn:corn pasta:sprouting 
+buns:sausage 
+cloth:table different:spoiling hot:sausage 
+piece:spoiling hot:sausage 
+hotdogs:sausage 
+piece:spoiling the:place hot:sausage 
+the:destination snowboard:snowboard 
+the:destination snowboard:snowboard 
+snowboard:snowboard the:destination 
+man:man is:destination snowboard:snowboard 
+snowboarder:snowboard the:destination his:man 
+donut:biting 
+Someone:person bite:biting 
+bite:biting 
+donut:biting to:item 
+Someone:person bun:bread in:agent hand:biting 
+glazed:loaf-of-bread 
+sugar:loaf-of-bread table:table 
+sugar:loaf-of-bread 
+sugar:loaf-of-bread 
+doughnuts:loaf-of-bread 
+donuts:doughnut 
+Polaroid:man out:baking sandwiches:food 
+doughnuts:doughnut 
+doughnuts:doughnut on:agent the:place 
+Two:agent the:place donuts:doughnut 
+his:man sand:beach water:wading 
+surf:beach man:man 
+person:man beach:beach 
+man:man beach:beach 
+man:man beach:beach 
+person:man two:item surfboards:surfboard on:contact beach:beach 
+man:man in:agent sand:sand a:tool surfboard:surfboard 
+person:man surfboard:surfboard beach:beach sand:sand 
+A:tool his:man surfboard:surfboard beach:beach 
+person:man two:item surfboards:surfboard on:contact a:tool sandy:sand beach:beach 
+different:displaying 
+on:place display:displaying a:tool 
+A:tool cakes:cake 
+desserts:cake being:tool displayed:displaying 
+A:tool of:item cakes:cake sitting:room the:place 
+wedding:wedding 
+cutting:wedding 
+wedding:wedding together:nuzzling 
+wedding:wedding together:nuzzling 
+Groom:wedding together:nuzzling 
+girl:female-child looking:item cake:cake 
+girl:female-child table:table cake:cake 
+girl:female-child table:table cake:cake in:agent 
+girl:female-child looking:item cake:cake table:table 
+young:female-child table:table cake:cake 
+man:man a:tool wave:surfing 
+man:man surfing:surfing during:tool 
+A:tool man:man surfs:surfing ocean:ocean 
+man:man ocean:ocean a:tool wave:surfing 
+man:man a:tool wave:surfing surfboard:surfboard 
+dog:dog bed:recuperating 
+dog:dog bed:recuperating 
+dog:dog bed:recuperating 
+bed:recuperating 
+in:agent doggy:dog bed:recuperating 
+bed:bed in:agent 
+the:place bed:bed 
+bed:bed 
+bed:bed in:agent 
+bed:bed in:agent 
+pizza:pizza plate:plate 
+pizza:pizza 
+pizza:pizza 
+appetizing:plate pizza:pizza 
+pizza:pizza 
+bed:bed where:place person:person 
+laying:sleeping bed:bed wood:person 
+bed:bed in:agent 
+bed:bed someone:person 
+bed:bed 
+pieces:spoiling 
+baked:bread slices:spoiling 
+pieces:spoiling 
+Pieces:bread 
+slices:spoiling 
+A:destination pizza:pizza salad:bowl 
+pizza:pizza to:destination bowl:bowl 
+A:destination pizza:pizza salad:bowl 
+made:person pizza:pizza to:destination bowl:bowl 
+salad:bowl pizza:pizza 
+Man:man tennis:tennis-court on:agent 
+man:man on:agent a:tool tennis:tennis-court 
+man:man in:agent tennis:tennis-court 
+man:man a:tool racket:racket on:agent court:tennis-court 
+man:man tennis:tennis-court raised:place receive:practicing 
+sink:bathroom toothpaste:gap 
+sink:bathroom paste:gap 
+bathroom:bathroom hygiene:gap 
+care:sealing on:place sink:bathroom 
+toothpaste:gap on:place it:item 
+girl:female-child in:agent of:item shelf:shoe chair:living-room 
+girl:female-child in:agent Christmas:living-room stocking:lacing 
+girl:female-child christmas:living-room stocking:lacing 
+girl:female-child Christmas:living-room stocking:lacing on:agent 
+girl:female-child Christmas:living-room stocking..:lacing 
+person:person on:agent living:living-room 
+television:living-room sits:person 
+living:living-room on:agent 
+in:agent room:living-room 
+is:person on:agent living:living-room 
+the:place shocked:gasping 
+playing:male-child remote:gasping 
+standing:outside in:agent remote:gasping 
+face:gasping playing:male-child 
+standing:outside in:agent hand:gasping 
+There:container are:people video:unpacking 
+women:people living:living-room the:place Wii:unpacking 
+couple:people of:container video:unpacking 
+Two:people with:container the:place Wii:unpacking 
+of:container people:people video:unpacking 
+facing:item TV:room on:agent the:place channel:person 
+hand:person television:room on:agent 
+television:room a:object the:place 
+person:person holding:object television:room 
+Someone:person videogame:room 
+game:room at:people 
+People:people standing:standing screen:room 
+visitors:people in:standing booth:room 
+people:people area:standing 
+people:people standing:standing room:room 
+monitor:computer on:place 
+a:tool computer:computer on:place 
+computer:computer on:place other:item 
+a:tool brown:item desk:computer on:place 
+OFFICE:computer 
+breaks:ocean cloudy:sky 
+water:ocean sky:sky 
+kite:parachute sky:sky 
+Sun:place breaking:ocean sky:sky 
+jetty:ocean 
+boy:male-child play:skill on:agent field:ball-field 
+a:tool boy:male-child in:agent baseball:baseball 
+boy:male-child holding:practicing bat:bat on:agent the:place 
+boy:male-child in:agent baseball:baseball bat:bat 
+young:male-child on:agent holding:practicing baseball:baseball bat:bat 
+in:agent baseball:baseball 
+baseball:baseball bat:bat 
+hit:hitting baseball:baseball 
+league:baseball bat:bat 
+playing:victim baseball:baseball 
+woman:woman swinging:hitting tennis:tennis-racket on:agent 
+tennis:tennis-racket player:stadium swing:hitting ball:ball 
+woman:woman hitting:hitting tennis:tennis-racket ball:ball 
+woman:woman on:agent serve:stadium ball:ball 
+girl:woman ready:hitting serve:stadium on:agent 
+MAN:man THAT:place TENNIS:tennis-ball COURT:tennis-court 
+tennis:tennis-court on:agent the:place 
+man:man tennis:tennis-court serving:serving 
+tennis:tennis-court hit:tennis-ball the:place 
+man:man tennis:tennis-court up:item 
+boxes:selling dish:pizza 
+pizzas:pizza store:selling 
+grocery:selling 
+pizza:pizza price:selling 
+frozen:pizza boxes:selling 
+man:man back:outdoors tennis:tennis-racket racket:aiming 
+tennis:tennis-racket in:target yellow:outdoors 
+man:man tennis:tennis-racket in:target of:item 
+man:man tennis:tennis-racket racket:aiming next:target 
+man:man tennis:tennis-racket rock:outdoors 
+of:item child:hand playing:living-room laptop:laptop 
+girl:woman a:tool laptop:laptop 
+little:hand laptop:laptop in:agent her:woman living:living-room 
+child:hand working:operating a:tool laptop:laptop that:item 
+girl:woman childs:tool ':item laptop:laptop 
+clock:clock a:tool 
+two:item clock:clock 
+clock:clock next:item to:tool 
+a:tool closeup:item clock:clock the:place 
+clock:clock 
+woman:woman street:street talking:telephoning 
+woman:woman cellphone:telephoning the:place city:street 
+talking:telephoning her:woman 
+women:woman talking:telephoning the:place 
+woman:woman sidewalk:street phone:telephoning 
+in:agent front:outside vandalized:panhandling 
+used:person wall:panhandling 
+items:person in:agent front:outside 
+in:agent with:person graffiti:panhandling 
+up:person in:agent front:outside 
+man:man woman:woman singing:shouting wall:room 
+singing:shouting 
+man:man women:woman into:shouting 
+Man:man woman:woman 
+Two:addressee 
+slices:spoiling fruit:apple 
+peach:apple teapot:spoiling 
+fruit:apple cut:spoiling the:place table:table 
+plate:table fruit:apple 
+fruit:apple tea:table 
+the:place tower:cresting 
+tower:cresting beneath:outdoors 
+steeple:cloud 
+tower:cresting in:agent 
+tower:cresting in:agent the:place 
+yellow:outdoors tower:cresting clocks:clock 
+gigantic:place clock:clock tower:cresting on:agent 
+clocks:clock on:agent tower:cresting the:place 
+clock:clock tower:cresting on:agent the:place 
+clock:clock tower:cresting 
+a:tool the:place ceiling:clock 
+hangs:clock 
+clock:clock from:item 
+this:displaying a:tool sculpture:clock 
+mobile:item the:place ceiling:clock 
+flowers:flower 
+vase:flower 
+flowers:flower table:table 
+Flowers:flower table:table 
+irises:blossoming table:table 
+fried:food egg:table salad:bowl 
+salad:bowl egg:table 
+food:food egg:table salad:bowl 
+fried:food egg:table salad:bowl 
+food:food egg:table vegetables:bowl 
+baby:baby is:person on:agent 
+baby:baby in:agent control:person 
+child:baby 
+baby:baby control:person 
+baby:baby control:person in:agent 
+kitchen:kitchen 
+Kitchen:kitchen metal:brancher 
+kitchen:kitchen metal:brancher 
+empty:brancher kitchen:kitchen 
+kitchen:kitchen 
+man:man taking:photographing in:agent 
+man:man takes:photographing the:place 
+man:man a:tool in:agent mirror:photographing 
+man:man taking:photographing in:agent 
+man:man takes:photographing in:agent the:place 
+modern:glowing bathroom:bathroom 
+bathroom:bathroom counters:glowing 
+bathroom:bathroom in:agent 
+sinks:bathroom 
+vase:glowing in:agent bathroom:bathroom 
+sinks:bathroom 
+sinks:bathroom 
+sinks:bathroom 
+sinks:bathroom 
+sinks:bathroom 
+vanity:light-bulb 
+on:agent shelf:room window:light-bulb the:place 
+sit:room on:agent the:place clean:glowing 
+dresser:room on:agent 
+window:light-bulb in:agent 
+ON:carrier CONTRAPTION:wheelchair SURROUNDED:place BY:outdoors PERSON:woman 
+on:body resembling:item bicycle:wheeling wheels:carrier 
+man:wheelchair on:body vehicle:carrier making:woman 
+person:woman two:item bike:wheeling on:body 
+man:wheelchair standing:outdoors on:body two:item wheels:carrier 
+toilet:bathroom 
+bathroom:bathroom on:place 
+clean:bathing toilet:bathroom the:place 
+bathroom:bathroom 
+bathroom:bathroom 
+cat:cat on:agent toilet:toilet 
+cat:cat blue:destination on:agent toilet:toilet 
+small:toilet cat:cat on:agent 
+cat:cat from:destination toilet:toilet 
+cat:cat on:agent toilet:toilet looking:pooing the:destination 
+building:building plane:airplane in:agent the:place 
+jet:airplane in:agent over:against religious:building 
+plane:airplane over:against building:building 
+old:crashing building:building plane:airplane in:agent the:place 
+church:building airplane:airplane 
+bathroom:bathroom toilet:toilet it:person 
+toilet:toilet generic:person bathroom:bathroom 
+commode:toilet tiled:bathroom 
+toilet:toilet bathroom:bathroom 
+THIS:person DOWN:agent TOILET:toilet 
+bathroom:bathroom 
+BATHROOM:bathroom THAT:place REMODEL:toilet 
+toilet:toilet 
+bathroom:bathroom toilet:toilet 
+toilet:toilet bathroom:bathroom 
+toilet:toilet opened:overflowing bathroom:bathroom 
+toilet:toilet bathroom:bathroom 
+toilet:toilet shower:bathroom 
+toilet:toilet 
+toilet:toilet tiled:bathroom 
+toilet:toilet 
+toilet:toilet bathroom:bathroom 
+toilet:toilet bathroom:bathroom 
+bathroom:bathroom toilet:toilet 
+toilet:toilet bathroom:bathroom 
+clock:clock on:agent 
+Building:outside clocks:clock the:place windows:glowing 
+WITH:glowing TALL:clock 
+clock:clock 
+clocks:clock surrounded:place 
+toilet:toilet 
+bathroom:bathroom 
+nasty:toilet rest:bathroom 
+toilet:toilet 
+crude:water sink:bathroom toilet:toilet 
+street:street sign:brancher 
+street:street signs:city on:place 
+street:street signs:city 
+street:street signs:city 
+street:street signs:city 
+dog:dog near:outdoors bowl:bowl 
+dog:dog on:agent ground:outdoors bowl:bowl 
+dog:dog near:outdoors bowl:bowl 
+dog:dog its:lapping dish:bowl 
+dog:dog bowl:bowl on:agent ground:outdoors 
+signal:lamp on:agent television:livingroom-suite 
+Light:glowing 
+view:glowing TV:livingroom-suite in:agent the:place 
+television:livingroom-suite 
+TV:livingroom-suite 
+top:pot of:plant the:place 
+it:plant 
+and:sprouting the:place 
+top:pot of:plant 
+plant:pot bright:place 
+giraffes:giraffe 
+giraffes:giraffe some:item 
+giraffes:giraffe 
+Giraffes:giraffe on:agent 
+giraffes:giraffe in:agent 
+giraffe:giraffe standing:standing on:agent 
+giraffe:giraffe 
+giraffe:giraffe standing:standing 
+giraffe:giraffe standing:standing 
+giraffe:giraffe on:agent the:place 
+unison:air 
+formation:air 
+formation:air 
+planes:air 
+flying:air 
+light:light-bulb on:agent street:street 
+light:light-bulb on:agent curb:street 
+street:street light:light-bulb 
+street:street light:light-bulb 
+light:light-bulb 
+cat:cat sleeping:sleeping the:place bench:bench 
+cat:cat sleeping:sleeping bench:bench the:place 
+cat:cat nap:sleeping bench:bench the:place 
+cat:cat curled:sleeping bench:bench 
+cat:cat laying:sleeping in:agent the:place 
+waiting:waiting corner:street 
+the:place bus:street up:person 
+waiting:waiting bus:street up:person 
+by:waiting big:place street:street with:person 
+on:waiting the:place road:street 
+giraffes:giraffe standing:standing outdoors:outdoors 
+giraffes:giraffe yard:outdoors 
+giraffes:giraffe standing:standing dirt:outdoors 
+giraffes:giraffe standing:standing courtyard:outdoors 
+giraffes:giraffe the:place yard:outdoors 
+street:road trees:outdoors 
+photo:outdoors vehicle:road traffic:brancher 
+street:road 
+streaming:place leading:road to:outdoors 
+road:road 
+light:lamp 
+light:lamp 
+light:lamp 
+light:lamp on:agent pole:outside 
+light:lamp on:agent 
+pasture:grass animals:sheep the:place 
+of:item sheep:sheep field:field 
+sheep:sheep field:field 
+field:field holds:item sheep:sheep meadow:grass 
+sheep:sheep field:field 
+goat:goat house:outside 
+sheep:goat standing:target house:outside 
+goat:goat stands:target legs:peeing 
+goat:goat against:outside 
+GOAT:goat SOME:peeing 
+man:man turning:car off:destination hydrant:gasoline 
+city:storage worker:man hydrant:gasoline turns:car 
+man:man bent:car hydrant:gasoline 
+man:man up:tool hydrant:gasoline 
+attendant:man hydrant:gasoline 
+birds:bird beach:beach water:wading 
+birds:bird shore:beach 
+birds:bird water:wading 
+birds:bird water:wading sea:beach 
+cranes:bird water:wading 
+bus:bus on:agent a:tool street:street 
+bus:bus next:item to:tool bag:bag 
+bus:bus on:agent road:street a:tool 
+bus:bus on:agent the:place bag:bag to:tool 
+bus:bus is:tool open:bag the:place sidewalk:street 
+group:hiking animals:sheep on:agent 
+sheep:sheep on:agent mountain:mountain 
+the:place hill:mountain 
+Sheep:sheep in:agent the:place mountains:mountain 
+sheep:sheep on:agent hill:mountain 
+birds:bird 
+of:source birds:bird the:place iron:outside 
+birds:bird metal:source 
+birds:bird the:place metal:source 
+birds:bird 
+
+
+
+
+
+big:place boat:motorboat 
+boat:motorboat water:body-of-water 
+boat:motorboat water:body-of-water it:person 
+yacht:boating 
+boat:motorboat sailing:boating 
+
+
+
+
+
+that:person on:vehicle 
+reflection:bus-stop someone:person in:agent the:vehicle 
+door:boarding in:agent the:vehicle reflection:bus-stop 
+a:vehicle reflection:bus-stop 
+subway:boarding seen:person reflection:bus-stop 
+boy:theme against:outdoors window:car on:agent 
+in:agent the:place of:container silver:car 
+adults:people out:cramming the:place of:container 
+next:outdoors some:container people:people out:cramming the:place bus:car 
+boy:theme outside:outdoors window:car on:agent 
+a:tool train:railroad-track sitting:wood on:place 
+a:tool red:trailer train:railroad-track on:place 
+old:wood tracks:railroad-track 
+old:wood on:place rusted:hauling tracks:railroad-track 
+A:tool train:railroad-track 
+street:street Kerouac:city Road:brancher 
+street:street signs:city 
+street:street sign:brancher Kerouac:city 
+large:place pole:brancher street:street 
+street:street on:place lamppost:brancher 
+by:outdoors train:train 
+train:train the:place garden:outdoors 
+stone:outdoors front:crashing 
+lot:crashing greenery:outdoors train:train in:agent the:place 
+green:outdoors next:crashing 
+train:train 
+train:train the:place 
+train:train 
+train:train the:place 
+the:place train:train on:agent 
+truck:truck on:agent 
+truck:truck a:tool 
+truck:truck on:agent a:tool 
+truck:truck trailers:towing 
+A:tool truck:truck 
+green:item truck:truck on:agent a:tool street:street 
+truck:truck a:tool street:street 
+truck:truck street:street 
+truck:truck on:agent a:tool street:street 
+truck:truck on:agent a:tool street:street 
+Two:agent kites:kite sky:sky 
+Two:agent kites:kite sky:sky 
+kite:kite sky:sky 
+kites:kite 
+Two:agent kites:kite sky:sky 
+cows:cattle laying:resting area:land 
+of:item cattle:cattle laying:resting sandy:land 
+of:item cows:cattle laying:resting 
+of:item cattle:cattle laying:resting 
+of:item cows:cattle sitting:resting 
+cats:cat laying:sleeping the:place chair:chair 
+cat:cat lying:sleeping couch:chair 
+cats:cat laying:sleeping couch:chair 
+cats:cat laying:sleeping couch:chair 
+One:agent cat:cat sleeping:sleeping cushion:chair 
+Cattle:cattle the:place grass:grass 
+cows:cattle field:field grass:grass 
+cows:cattle field:field grass:grass 
+cows:cattle on:agent field:field grass:grass 
+cows:cattle on:agent grass:grass 
+man:hand next:source cow:cow pen:farm 
+a:tool boy:male-child cow:cow 
+boy:male-child the:destination cow:cow barn:farm 
+boy:male-child observing:agent a:tool cow:cow 
+man:hand a:tool fence:farm cow:cow it:source 
+Dairy:cow fence:fence 
+Cows:cow fence:fence 
+cows:cow fence:fence 
+cows:cow fencing:fence 
+cows:cow fence:fence 
+elephant:elephant in:agent 
+exhibit:hay elephant:elephant 
+elephant:elephant 
+elephant:elephant in:agent 
+elephant:elephant in:agent 
+people:people on:agent street:street 
+People:people procession:parading on:agent 
+people:people parade:parading on:agent 
+are:people on:agent the:place street:street 
+observes:agent parade:parading 
+
+
+
+
+
+of:item ties:clothesline a:tool 
+ties:clothesline 
+ties:clothesline 
+A:tool OF:clothesline DIFFERENT:item TABLE:fabric 
+ties:clothesline to:tool other:item 
+people:people luggage:warehouse 
+people:people cases:warehouse in:agent 
+walking:queuing 
+people:people 
+People:people luggage:warehouse 
+luggage:bag in:agent a:tool truck:parking-lot 
+luggage:bag truck:parking-lot 
+suitcases:bag are:people a:tool pickup:parking-lot 
+truck:parking-lot loads:unloading garbage:source in:agent 
+truck:parking-lot pile:bag trash:source in:agent road:car 
+chair:rocking-chair 
+chair:rocking-chair 
+chair:rocking-chair 
+chair:rocking-chair 
+bear:rocking on:place telephone:room 
+bear:bear laptop:chair 
+bear:bear seated:sitting chair:chair 
+bear:bear in:agent chair:chair sitting:sitting 
+bear:bear glasses:room sitting:sitting 
+bear:bear laptop:chair 
+person:man skate:skateboard 
+person:man riding:vehicle skate:skateboard 
+skateboarder:skateboard 
+guy:man skateboard:skateboard in:barn 
+guy:man skateboard:skateboard 
+Two:item dogs:dog windows:house building:guarding 
+dog:dog window:house in:agent 
+Two:item dogs:dog the:place opposite:outdoors door:house 
+Two:item dogs:dog the:place door:house 
+door:house dogs:dog in:agent either:place 
+Zebras:zebra wild:lion on:agent 
+herd:hunted zebra:zebra field:field 
+Zebras:zebra feral:lion 
+large:place zebra:zebra 
+Zebras:zebra wild:lion Africa:hunting 
+dog:dog the:place grass:grass panting:plaything 
+dog:dog on:agent the:place 
+dog:dog on:agent lawn:grass 
+dog:dog on:agent the:place tongue:gnawing 
+dog:dog the:place grass:grass next:item toy:plaything 
+play:male-child park:field 
+playing:chasing on:agent field:field 
+playing:chasing park:field 
+playing:chasing on:agent grass:field 
+play:male-child field:field 
+horse:horse side:land 
+horse:horse 
+THERE:land WHITE:agentpart HORSE:horse DOWN:agent 
+horse:horse 
+horse:horse 
+People:people horse:horse buggy:carriage on:agent street:road 
+men:people in:agent horse:horse carriage:carriage street:road 
+horse:horse a:tool carriage:carriage street:road 
+people:people in:agent horse:horse carriage:carriage 
+people:people carriage:carriage horse:horse 
+group:people on:agent flags:parading 
+line:parading street:street 
+line:parading 
+group:people Flag:place flag:parading 
+group:people on:agent flags:parading 
+skis:skiing 
+on:agent skis:skiing 
+skier:skier in:agent slope:skiing 
+skier:skier ski:ski-slope 
+on:agent skis:skiing the:place 
+ski:skiing on:agent snow:snow 
+skiier:skier skiing:skiing snow:snow 
+skis:skiing snow:snow 
+skiing:skiing on:agent snow:snow 
+skier:skier skis:skiing snow:snow 
+group:child riding:playground snow:snow 
+kids:child the:sled equipment:snow 
+kids:child 
+kids:child snow:snow 
+group:child snow:snow 
+muffin:bread on:agent customers:restaurant sit:dining the:place 
+muffin:bread on:agent cafe:restaurant 
+muffin:bread on:agent cafe:restaurant 
+muffin:bread on:agent 
+picture:people muffin:bread on:agent plate:food 
+glass:glass wine:barroom on:agent it:flaming 
+glass:glass wine:barroom on:agent 
+glass:glass 
+glass:glass wine:barroom on:agent 
+glass:glass wine:barroom on:agent 
+plate:plate noodles:bean 
+noodles:bean plate:plate 
+tasty:plate pasta:sprouting 
+pasta:sprouting entree:bean plate:plate 
+plate:plate noodles:bean 
+bowl:bowl cooked:food 
+to:item pot:whisking broccoli:bowl stove:kitchen 
+big:item pot:whisking stove:kitchen 
+was:item cooked:food the:place pot:whisking 
+pot:whisking 
+skateboarder:skateboard stairs:stairs 
+skaterboarder:skating stairs:stairs shoot:place 
+skate:skateboard stairs:stairs 
+skateboarder:skateboard riding:vehicle stairs:stairs 
+man:man skateboarding:skateboard steps:stairs 
+Plate:plate mixed:sprouting 
+plate:plate shredded:sprouting 
+plate:plate vegetables:sprouting 
+dish:sprouting served:plate 
+plate:plate vegetables:sprouting 
+carrot:carrot chew:dog 
+person:person feeding:feeding animal:dog carrot:carrot 
+being:person fed:feeding carrot:carrot 
+is:person on:agent carrot:carrot 
+Someone:person feeding:feeding carrot:carrot 
+food:food fork:whisking in:agent it:person 
+spoon:whisking that:person 
+brown:item spoon:whisking in:agent it:person 
+food:food fork:whisking in:agent it:person 
+it:person liquid:whisking 
+large:place knife:hunter standing:hunting 
+large:place knife:hunter stands:hunting 
+black:forest butcher:hunting knife:hunter 
+black:forest knife:hunter 
+black:forest large:place knife:hunter 
+skateboard:skateboard 
+ramp:ramp 
+ramp:ramp 
+young:male-child ridding:vehicle skateboard:skateboard ramp:ramp 
+boy:male-child skateboard:skateboard tricks:ramp 
+bowl:bowl carrots:carrot and:source a:tool spoon:spoon 
+bowl:bowl a:tool utensil:spoon 
+bowl:bowl a:tool spoon:spoon 
+bowl:bowl carrots:carrot 
+food:spoon eaten:scooping 
+hot:hotdog held:person in:agent baseball:baseball-diamond 
+hot:hotdog held:person baseball:baseball-diamond 
+hot:hotdog baseball:baseball-diamond 
+hotdog:hotdog stadium:baseball-diamond 
+Person:person hotdog:hotdog baseball:baseball-diamond 
+city:street with:flaming 
+street:street 
+street:street 
+food:flaming 
+lights:flaming 
+bun:loaf-of-bread 
+bun:loaf-of-bread purple:agent 
+bacon:loaf-of-bread plate:plate 
+bun:loaf-of-bread topped:plate 
+onion:loaf-of-bread 
+man:man board:drumming in:agent elevator:room 
+man:man 
+person:man holding:drumming 
+man:man in:agent holding:drumming 
+Man:man holding:drumming 
+woman:woman food:food cart:seller next:item the:place street:street 
+person:woman stand:selling meats:food 
+food:food market:buyer 
+street:street food:food sale:selling 
+woman:woman booth:seller food:food 
+person:person hot:sausage fixings:food 
+THIS:person PICTURE:agent LOADED:sausage 
+hand:person hot:sausage in:agent 
+person:person hot:sausage 
+Somebody:person bite:food hot:sausage 
+three:people plates:dining-room on:agent 
+three:people teapots:dining napkins:dining-room 
+table:dining-room 
+are:people on:agent table:dining-room 
+table:dining-room 
+person:person snowboarding:snow hill:skiing 
+snowboarder:snow hill:skiing it:person 
+Person:person on:agent snowy:snow 
+snowy:snow slope:skiing 
+on:agent snowboard:snow 
+is:person time:decomposer 
+hot:decomposer 
+person:person hot:decomposer 
+time:decomposer 
+time:decomposer 
+plate:plate donuts:loaf-of-bread 
+donuts:loaf-of-bread the:place plate:plate 
+plate:plate pastries:loaf-of-bread 
+plate:plate doughnuts:loaf-of-bread 
+donut:loaf-of-bread plate:plate 
+leafy:plant 
+topped:sprouting 
+garnish:sprouting the:land 
+food:sprouting leaf:plant 
+rice:sprouting 
+Sugar:spoiling donuts:box in:agent 
+sugary:bread donuts:box the:place 
+donuts:box 
+doughnuts:box through:agent pastry:bread 
+donuts:box 
+table:table person:person by:item fries:french-fries beverages:beer 
+person:person fries:french-fries 
+Someone:person burger:french-fries beer:beer 
+hand:person holding:beer eaten:dipping sandwich:french-fries 
+eaten:dipping fries:french-fries 
+food:serving which:outside people:people up:item 
+people:people buffet:served setup:item 
+long:place buffet:served people:people it:item 
+group:people ladies:woman buffet:served 
+People:people taking:woman plates:serving 
+A:tool MAN:man CUPCAKE:match OUT:item CANDLES:candle 
+man:man blowing:match candles:candle on:agent a:tool 
+a:tool man:man blowing:match some:item candles:candle on:agent 
+man:man blowing:match candles:candle on:agent a:tool 
+man:man 3:item candles:candle in:agent 
+a:tool wetsuit:surfer wave:surfing 
+surfer:surfer a:tool wave:surfing ocean:ocean 
+a:tool surfboard:surfboard wave:surfing 
+a:tool wave:surfing surfboard:surfboard 
+a:tool wave:surfing surfboard:surfboard 
+pizza:pizza veggies:rotting 
+pizza:pizza 
+pizza:pizza herbs:rotting 
+Closeup:rotting pizza:pizza 
+sausage:rotting pizza:pizza 
+pizza:sprouting table:table 
+toppings:sprouting 
+whole:sprouting the:place table:table 
+toppings:sprouting 
+several:place toppings:sprouting tray:food 
+tennis:tennis-court match:racket 
+man:man on:agent tennis:tennis-court 
+man:man in:agent defensive:racket tennis:tennis-court 
+tennis:tennis-court on:agent the:place 
+man:man on:agent a:tool tennis:tennis-court 
+on:agent tennis:tennis-court 
+in:agent his:male-child tennis:tennis-court 
+tennis:tennis-court the:place 
+tennis:tennis-court shirt:male-child 
+in:agent tennis:tennis-court 
+man:man teeth:dentition 
+man:man teeth:dentition 
+Man:man teeth:dentition 
+man:man teeth:dentition 
+man:man brushes:toothbrush teeth:dentition 
+boy:male-child Christmas:living-room 
+kid:male-child Nintendo:living-room 
+dog:dog in:agent boy:male-child video:living-room 
+child:male-child Wii:living-room dog:dog on:agent 
+boy:male-child remote:living-room 
+kids:family system:living-room 
+kids:family controllers:living-room 
+children:family before:admired TV:living-room 
+children:family video:living-room 
+children:family in:agent front:admiring the:place video:living-room 
+living:living-room 
+in:agent the:place living:living-room 
+t.v:living-room in:agent 
+living:living-room 
+living:living-room cabinets:dining 
+flown:parachute sky:sky 
+kit:parachute that:person sky:sky 
+kite:parachute sky:sky 
+kite:parachute sky:sky 
+kite:parachute sky:sky 
+windsurfing:ocean a:tool grey:water 
+a:tool ocean:ocean 
+A:tool ocean:ocean 
+surf:surfboard 
+A:tool surfing:surfing ocean:ocean 
+man:man marley:celebrating in:agent the:place 
+person:man green:outdoors kite:celebrating 
+man:man kite:celebrating large:outdoors on:agent 
+male:man kite:celebrating in:agent the:place park:outdoors 
+kite:celebrating the:place words:outdoors on:agent 
+Dozens:gathering people:people 
+banner:outside 
+people:people 
+crowd:gathering 
+crowd:gathering people:people outside:outside 
+person:woman lays:sleeping bed:bed 
+her:woman bed:bed 
+lays:sleeping her:woman bed:bed 
+laying:sleeping her:woman 
+person:woman laying:sleeping bed:bed 
+bear:bear sitting:waiting table:table 
+bear:bear sitting:waiting plate:table 
+bear:bear table:table 
+bear:bear sitting:waiting table:table 
+table:table bear:bear 
+baseball:baseball home:bat 
+batter:bat hit:hitting baseball:baseball 
+PICTURE:agent BASEBALL:ball-field 
+baseball:baseball bat:bat in:agent 
+batter:bat in:agent a:tool pitch:baseball 
+baseball:baseball bat:bat on:agent 
+baseball:baseball bat:bat 
+batter:bat in:agent baseball:baseball 
+HOLDING:tool BASE:ball-field BAT:bat 
+baseball:baseball on:agent bat:bat 
+tennis:tennis-court the:place 
+man:man tennis:tennis-court on:agent the:place 
+man:man tennis:tennis-court on:agent 
+man:man tennis:tennis-court on:agent 
+man:man tennis:tennis-court on:agent 
+truck:truck wood:log it:person 
+Truck:truck wood:log a:tool 
+A:tool truck:truck wood:log 
+There:person a:tool truck:truck logs:log 
+a:tool truck:truck wood:log 
+woman:woman baked:pan bread:bread 
+woman:woman bread:bread oven:oven 
+woman:woman loaf:bread the:place oven:oven 
+Woman:woman the:place bread:bread oven:oven 
+woman:woman the:place oven:oven bread:bread 
+flowers:flower in:agent vase:vase 
+vase:vase flowers:flower 
+small:source vase:vase the:place table:table flowers:flower 
+vase:vase flowers:flower in:agent 
+wooden:table vase:vase flowers:flower in:agent 
+man:man on:agent standing:standing 
+man:man standing:standing on:agent the:place small:room 
+man:man on:agent 
+man:man in:standing on:agent 
+man:man against:standing the:place 
+A:tool woman:woman through:agent an:weighing 
+A:tool lady:woman an:weighing 
+large:place holding:woman tell:agent time:mass 
+Samsung:mass large:place holding:woman 
+phone:scale in:agent a:tool large:place 
+woman:woman phone:photographing 
+taking:photographing her:woman 
+woman:woman phone:photographing in:agent the:place 
+woman:woman phone:photographing 
+woman:woman take:photographing 
+couch:man-man 
+couch:man-man 
+couch:man-man 
+couch:man-man 
+couch:man-man 
+boy:male-child brush:dentition 
+kid:male-child holding:toothbrush room:family 
+boy:male-child brush:dentition on:agent floor:family 
+boy:male-child black:target hairbrush:family 
+boy:male-child hairbrush:family in:target 
+stuffed:doll 
+in:agent shirt:male-child teddy:doll wall:room 
+hugging:admired stuffed:doll while:male-child in:agent room:room 
+downward:agent teddy:doll 
+hugs:male-child stuffed:doll 
+vase:flower on:agent 
+flower:flower matches:inside on:agent 
+oriental:inside red:flower on:agent 
+flowers:flower 
+Decorative:blossoming on:agent picture:inside 
+vases:wilting wall:room 
+plants:wilting same:room 
+plants:wilting in:agent 
+flowers:wilting on:agent wall:room 
+plants:wilting 
+woman:woman a:tool sheet:room with:source scissors:dusting 
+person:woman a:tool table:table with:source scissors:dusting 
+plywood:source cabinets:rag woman:woman 
+woman:woman table:table fabric:dusting 
+woman:woman fabric:dusting with:source 
+small:water kitchen:kitchen items:overflowing 
+kitchen:kitchen 
+'s:source kitchen:kitchen real:glass 
+kitchen:kitchen 
+kitchen:kitchen features:overflowing 
+kitchen:kitchen is:tool 
+kitchen:kitchen knife:knife 
+kitchen:kitchen utensils:knife a:tool 
+a:tool cheese:knife 
+knife:knife toaster:kitchen 
+people:people bench:bench 
+park:park 
+on:sitting by:bench people:people 
+on:sitting grass:park 
+people:people 
+woman:woman in:agent a:tool television:room 
+television:room on:agent the:place a:tool 
+woman:woman photographing:camera a:tool television:room in:agent 
+woman:woman in:agent a:tool tv:room the:place 
+television:room in:agent the:place 
+bathroom:bathroom 
+sink:bathroom 
+bathroom:bathroom mint:painting green:item 
+bathroom:bathroom showing:displaying 
+has:displaying a:tool vanity:bathroom 
+woman:woman standing:target bathroom:bathroom mirror:urinal 
+person:woman mirror:urinal sink:bathroom 
+woman:woman herself:urinal bathroom:bathroom 
+herself:urinal 
+woman:woman selfie:urinal bathroom:bathroom 
+bicycle:bicycle in:agent 
+bike:bicycle in:agent 
+Bike:bicycle 
+bike:bicycle 
+bicycle:bicycle 
+street:street traffic:driver 
+traffic:driver on:agent street:street 
+on:agent busy:driver street:street 
+street:street the:place 
+cars:driver street:street 
+bathroom:bathroom opened:overflowing toilet:toilet 
+toilet:toilet 
+bathroom:bathroom toliet:toilet 
+bathroom:bathroom toilet:toilet 
+toilet:toilet bathroom:bathroom 
+group:people bikers:parading 
+motorcyclists:parading walkers:people in:agent city:street 
+people:people on:agent sidewalk:street 
+People:people bikers:parading on:agent the:place street:street 
+crowd:parading people:people on:agent sidewalk:street 
+wooden:wood window:house 
+wooden:wood window:house 
+outhouse:components window:house 
+outhouse:components window:house 
+wood:wood window:house 
+garage:garage 
+motor:motorcycle bikes:garage 
+scooters:garage indoors:goalitem on:agent 
+garage:garage with:person 
+Scooters:motorcycle garage:garage 
+Two:child computers:computer on:agent a:tool 
+desktop:computer on:agent 
+desktop:computer on:agent 
+next:item to:hand monitor:computer on:agent 
+monitors:computer 
+bedroom:bedroom 
+in:agent small:source room:bedroom 
+bedroom:bedroom cloths:apparel on:agent the:place 
+bed:bedroom in:agent it:overflowing 
+bunch:bag hanging:apparel on:agent the:place all:overflowing room:bedroom 
+the:place people:people in:agent restaurant:restaurant 
+crowded:people enormous:restaurant on:agent the:place 
+people:people 
+people:people sitting:dining in:agent 
+People:people tables:dining large:place 
+Giraffes:giraffe zebra:zebra in:agent 
+giraffe:giraffe zebra:zebra 
+zebra:zebra giraffes:giraffe follow:agent 
+of:item giraffes:giraffe zebra:zebra in:agent 
+on:agent giraffes:giraffe zebra:zebra 
+street:street lights:light-bulb 
+street:street lights:light-bulb 
+lights:light-bulb the:place lane:street on:agent 
+sidewalk:street lights:light-bulb 
+lights:light-bulb on:agent street:street 
+woman:couple in:agent western:grinning front:outside 
+posts:outside picture:grinning in:agent 
+in:agent western:grinning pose:couple front:outside 
+woman:couple in:agent front:outside 
+Two:couple leaning:outside 
+a:tool building:outside 
+is:tool of:item the:place building:outside 
+a:tool building:outside 
+on:place of:item a:tool building:outside 
+a:tool sign:sign on:place outside:outside 
+pole:brancher 
+pole:brancher an:outdoors 
+trees:outdoors 
+trees:outdoors 
+sign:brancher 
+giraffe:giraffe sitting:crouching the:place grass:field 
+Giraffe:giraffe laying:crouching field:field the:place 
+giraffe:giraffe curled:crouching 
+giraffe:giraffe laying:crouching the:place grass:field 
+giraffe:giraffe lying:crouching field:field 
+giraffes:giraffe 
+of:item giraffe:giraffe in:agent 
+giraffes:giraffe each:nuzzling 
+giraffes:giraffe 
+giraffes:giraffe each:nuzzling 
+sheep:sheep stands:standing 
+sheep:sheep standing:standing on:agent front:outside 
+sheep:sheep on:agent the:place 
+sheep:sheep standing:standing 
+sheep:sheep coat:standing will:place 
+street:street light:lamp 
+light:lamp intersection:street 
+traffic:street lights:glowing on:agent the:place 
+street:street light:lamp on:agent 
+light:lamp street:street twilight:glowing in:agent 
+man:man bench:bench tree:outdoors 
+man:man bench:bench 
+man:man bench:bench tree:outdoors 
+man:man bench:bench tree:outdoors 
+man:man bench:bench 
+hydrant:fireplug Canada:destination 
+hydrant:fireplug 
+hydrant:fireplug 
+hydrant:fireplug Canada:destination ,:source 
+hydrant:fireplug on:place 
+hydrant:fireplug 
+hydrant:fireplug 
+hydrant:fireplug yard:outdoors 
+hydrant:fireplug 
+hydrant:fireplug 
+and:overflowing bench:sewer falling:water 
+bench:sewer falls:water 
+ground:outdoors bench:sewer has:overflowing 
+with:overflowing bench:sewer hole:water 
+water:water river:sewer it:overflowing be:source 
+giraffe:giraffe the:place as:agent its:sniffing 
+giraffe:giraffe tree:tree 
+giraffe:giraffe the:place its:sniffing 
+giraffe:giraffe in:agent the:place tree:tree 
+giraffe:giraffe tree:tree 
+woman:woman takes:camera park:outdoors 
+woman:woman taking:camera park:outdoors 
+lady:woman on:agent lawn:outdoors taking:camera 
+a:tool woman:woman photographing:camera park:outdoors 
+cement:outdoors in:agent a:tool 
+duck:swan 
+on:agent buoy:swan 
+standing:wading on:agent buoy:swan behind:outdoors 
+on:agent buoy:swan water:wading 
+on:agent water:wading 
+giraffe:giraffe 
+giraffe:giraffe 
+giraffe:giraffe standing:standing near:outdoors 
+giraffe:giraffe standing:standing 
+giraffe:giraffe 
+a:tool truck:tow-truck two:item busses:bus 
+recovery:tow-truck of:item a:tool bus:bus 
+truck:tow-truck bus:bus 
+Two:item trucks:tow-truck on:agent a:tool 
+towing:tow-truck bus:bus 
+birds:bird chairs:railing 
+birds:bird chairs:railing 
+birds:bird chairs:railing 
+Birds:bird poolside:railing 
+birds:bird chairs:railing 
+women:woman at:hand giraffes:giraffe fence:feeding 
+Giraffes:giraffe in:agent women:woman 
+giraffe:giraffe as:hand women:woman 
+up:hand giraffes:giraffe fence:feeding 
+giraffes:giraffe wooden:source fence:feeding at:hand women:woman 
+An:outdoors truck:truck a:tool men:people in:agent the:place back:carting 
+group:people in:agent the:place back:carting a:tool truck:truck 
+people:people in:agent the:place back:carting a:tool 
+people:people in:agent back:carting a:tool truck:truck 
+lining:people the:place truck:truck 
+wearing:veteran hat:saluting 
+wearing:veteran hat:saluting 
+costume:veteran in:agent 
+in:agent period:veteran 
+dressed:saluting uniform:veteran on:agent 
+street:street sign:brancher 
+Av:brancher ST:city street:street on:place 
+street:street signs:city 
+street:street signs:city 
+street:street signs:city on:place 
+bird:waddling looking:agentpart 
+photo:outdoors birds:duck 
+birds:duck 
+miniature:outdoors birds:duck 
+birds:duck 
+train:train on:agent the:place 
+caboose:train on:agent the:place 
+train:train on:agent distance:outdoors 
+train:train on:agent 
+train:train 
+pickup:towing truck:truck on:agent a:tool street:street 
+by:item truck:truck on:agent street:street 
+up:tool truck:truck corner:street 
+the:destination streets:street of:item a:tool 
+pickup:towing truck:truck next:item 
+
+
+
+
+
+tennis:tennis-court 
+tennis:tennis-court player:hitting 
+tennis:tennis-court player:hitting serve:tennis-ball 
+tennis:tennis-court 
+tennis:tennis-court player:hitting in:agent 
+a:hand kitten:cat 
+cat:cat holding:hand 
+cat:cat in:agent door:room 
+hand:hand in:agent cat:cat 
+a:hand cat:cat and:room aqua:place 
+deer:deer forest:forest 
+moose:deer 
+antelope:deer bushes:forest 
+deer:deer bushes:forest its:item 
+deer:deer woods:forest 
+vase:flower of:item chair:cat backyard:outdoors 
+cat:cat under:outdoors flowers:flower in:agent 
+flowers:flower over:outdoors cat:cat 
+cat:cat under:outdoors flowers:flower 
+cat:cat yard:outdoors flowers:flower 
+cat:cat asleep:sleeping the:place sofa:sofa 
+cat:cat sleeping:sleeping the:place couch:sofa 
+cat:cat asleep:sleeping the:place couch:sofa 
+CAT:cat SLEEPING:sleeping COUCH:sofa 
+cat:cat sleeping:sleeping couch:sofa 
+cement:tank truck:truck to:tool 
+cement:tank truck:truck of:item a:tool on:place 
+cement:tank truck:truck a:tool 
+cement:tank truck:truck one:item 
+cement:tank truck:truck to:tool 
+metal:substance lake:submerging 
+water:submerging 
+water:submerging 
+water:submerging 
+water:submerging 
+cat:cat to:hand monitor:computer 
+cat:cat standing:agentpart to:hand monitor:computer 
+cat:cat desk:computer paw:paweditem 
+cat:cat standing:agentpart a:hand desk:computer 
+cat:cat paw:paweditem computer:computer 
+boy:male-child 
+boy:male-child poses:grinning 
+smiling:grinning boy:male-child big:place 
+smiling:grinning boy:male-child large:place 
+boy:male-child 
+mountains:cloud from:outdoors 
+on:agent near:outdoors 
+mountains:cloud 
+in:agent the:place green:outdoors 
+massive:cresting mountains:cloud in:agent the:place 
+ferry:ferry 
+water:body-of-water boats:boating it:person 
+boat:ferry is:person 
+Boats:boating Ellis:ferry 
+boat:ferry 
+herd:intermingling elephants:elephant 
+elephants:elephant the:place 
+herd:intermingling elephants:elephant ones:agents 
+herd:intermingling elephants:elephant among:outdoors the:place 
+herd:intermingling elephants:elephant 
+Dog:dog suitcase:contact large:place room:room 
+dog:dog blanket:slouching suitcase:contact 
+dog:dog suitcase:contact purple:agent sheets:slouching 
+dog:dog sitting:contact floor:room 
+dog:dog purple:agent suitcase:contact the:place floor:room 
+group:people boats:river the:place 
+number:intermingling water:river 
+large:place people:people boats:river 
+large:place people:people water:river 
+boats:river the:place people:people 
+Many:queuing people:people through:agent hallway:inside 
+people:people 
+people:people in:agent lobby:inside 
+people:people on:agent hallway:inside 
+people:people on:agent 
+elephants:elephant each:nuzzling in:agent 
+elephants:elephant on:agent the:place 
+elephants:elephant tan:item trees:outdoors on:agent 
+elephants:elephant trees:outdoors on:agent 
+elephants:elephant zoo:nuzzling 
+cup:overflowing filled:basket canes:laundry 
+basket:basket umbrellas:laundry 
+'s:source of:basket umbrellas:laundry this:overflowing 
+of:basket umbrellas:laundry in:agent holder:overflowing 
+canes:laundry in:agent basket:basket 
+
+
+
+
+
+girl:woman 
+woman:woman standing:walking building:outside 
+lady:woman suitcase:walking building:outside 
+woman:woman standing:walking building:outside 
+woman:woman building:outside 
+desktop:desktop-computer 
+Two:item a:tool on:place desk:desktop-computer 
+desktop:desktop-computer 
+desktop:desktop-computer 
+desk:desktop-computer a:tool on:place 
+bear:bear swims:body-of-water 
+bear:bear water:body-of-water 
+bear:bear from:item river:body-of-water 
+bear:bear water:body-of-water 
+bear:bear water:body-of-water 
+bear:bear 
+bear:bear pool:pool 
+bear:bear 
+There:container bear:bear 
+bear:bear diving:pool 
+a:tool luggage:bag airport:airport 
+luggage:bag the:destination plane:airplane 
+A:tool looking:item baggage:loading on:agent the:destination airport:airport 
+handlers:loading luggage:bag on:agent 
+luggage:bag on:agent the:destination tarmac:airport 
+bear:bear grass:foraging 
+bear:bear wandering:foraging paved:road 
+bear:bear field:foraging 
+bear:bear grass:foraging 
+bear:bear grass:foraging trail:road 
+large:outdoors bear:dog two:item balls:ball 
+bear:dog green:outdoors ball:ball 
+bear:dog ball:ball 
+bear:dog two:item balls:ball 
+bear:dog in:agent the:place two:item balls:ball 
+dog:dog laying:sleeping floor:floor 
+puppy:dog 
+dog:dog bed:sleeping 
+dog:dog bed:sleeping 
+dog:dog the:place bed:sleeping 
+bears:bear rearing:agent fighting:caughtitem 
+bears:bear on:agent fighting:caughtitem 
+bears:bear woods:forest fighting:caughtitem with:tool 
+bears:bear face:mouth 
+bears:bear on:agent trees:forest 
+man:man 
+man:man sandy:wading area:water 
+man:man in:water 
+man:man by:outside the:wading 
+man:man with:substance outside:outside 
+zebras:zebra 
+zebras:zebra 
+zebra:zebra on:agent 
+zebra:zebra in:agent 
+zebras:zebra in:agent 
+horse:horse bug-gee:carriage next:item to:tool the:place buildings:street 
+horse:horse carriage:carriage is:tool the:place street:street 
+horse:horse carriage:carriage on:agent street:street 
+horse:horse carriage:carriage 
+horse:horse pulling:harness in:agent buildings:street 
+a:tool person:surfer 
+a:tool ocean:ocean 
+single:water rider:path a:tool 
+a:tool water:ocean 
+a:tool ocean:ocean 
+plate:plate banana:banana slices:spoiling 
+banana:banana plate:plate 
+banana:banana sliced:spoiling plate:plate 
+banana:banana pieces:spoiling plate:plate 
+plate:plate slices:spoiling banana:banana 
+plate:plate chicken:meat herbs:rotting 
+chicken:meat on:agent plate:plate 
+chicken:meat on:agent plate:plate steaming:container 
+plate:plate meat:meat 
+meat:meat on:agent plate:plate 
+broccoli:rotting 
+Peas:grocery-store carrots:carrot 
+carrots:carrot 
+carrots:carrot 
+Peas:grocery-store carrots:carrot in:agent 
+a:tool pizza:pizza in:agent 
+expressing:tool pizza:pizza in:agent 
+person:person the:place to:tool pizza:pizza 
+This:person a:tool pizza:pizza 
+He:tool the:place pizza:pizza in:agent fingers:person 
+apple:apple in:agent 
+apple:apple the:place in:agent 
+apple:apple the:place table:table 
+apple:apple bloody:table 
+apple:apple in:agent 
+vegetables:vegetable onion:rotting 
+squash:vegetable mushrooms:rotting 
+vegetables:vegetable potatoes:rotting 
+broccoli:vegetable mushrooms:rotting 
+mushrooms:rotting squash:vegetable on:agent 
+in:agent skis:skiing mountain:mountain 
+skier:skiing on:agent mountain:mountain 
+skis:skiing on:agent walking:people mountain:mountain 
+walking:people on:agent mountain:mountain 
+the:place mountain:mountain 
+plate:plate broccoli:vegetable 
+plate:plate broccoli:vegetable 
+Broccoli:vegetable cooked:rotting plate:plate 
+plate:plate table:table broccoli:vegetable 
+broccoli:vegetable plate:plate 
+man:man up:tool waves:surfing 
+A:tool man:man life:ocean 
+man:man water:ocean 
+man:man water:ocean 
+man:man wave:surfing 
+on:agent skis:skiing 
+ski:ski-slope the:place 
+on:agent skis:skiing the:place 
+skier:skier in:agent the:place 
+skier:skier 
+holds:woman long:place skates:skateboard 
+skateboard:skateboard hands:woman 
+holds:woman long:place skateboards:skateboard 
+skateboard:skateboard holding:woman 
+skateboard:skateboard 
+skiing:skiing hill:mountain in:agent 
+on:agent skiing:skiing the:place snowy:mountain 
+skis:skiing 
+skier:skier hill:mountain 
+freestyle:skier skis:skiing steep:mountain 
+middle:outside jump:flipping 
+below:outside person:person on:agent air:flipping 
+person:person on:agent jump:flipping 
+person:person trick:flipping on:agent 
+the:place person:person on:agent snowboard:flipping 
+the:place cliff:mountain skiing:skiing 
+skier:skier on:agent the:place ski:skiing 
+skier:skier cliff:mountain 
+ski:skiing snowy:mountain 
+skier:skier in:agent the:place cliff:mountain 
+
+
+
+
+
+on:agent snow:snow the:place air:flipping 
+Man:man jump:flipping on:agent 
+the:place air:flipping on:agent 
+in:agent the:place air:flipping 
+mid:flipping on:agent 
+tennis:tennis-court player:hitting racket:tennis-ball 
+a:tool tennis:tennis-court balls:tennis-ball on:agent 
+a:tool on:agent tennis:tennis-court racket:tennis-ball 
+tennis:tennis-court player:hitting racket:tennis-ball on:agent 
+a:tool on:agent tennis:tennis-court 
+woman:woman bites:eating 
+girl:woman eating:eating a:tool 
+a:tool woman:woman eating:eating 
+woman:woman eating:eating a:tool 
+woman:woman in:agent the:place bite:eating 
+pizza:pizza egg:rotting on:agent 
+pizza:pizza on:agent 
+pizza:pizza on:agent 
+pizza:pizza sprinkled:rotting 
+pizza:pizza burned:rotting 
+table:table pizza:making 
+person:woman table:table 
+woman:woman table:table 
+women:woman table:table 
+woman:woman table:table 
+holds:tugging the:place of:people on:agent field:field 
+playing:tugging 
+son:tugging are:people on:agent the:place field:field 
+little:tugging are:people on:agent field:field 
+son:tugging 
+laptop:screen computer:computer on:agent a:tool 
+Flickr:screen loaded:item on:agent the:place 
+the:place on:agent Flickr:screen 
+black:item television:screen 
+screen:screen computer:computer displaying:displaying 
+man:man holding:carrying surfboard:surfboard 
+man:man carrying:carrying surf:surfboard outside:outdoors 
+man:man holding:carrying surfboard:surfboard 
+man:man holding:carrying surfboard:surfboard 
+man:man in:agent holding:carrying surfboard:surfboard under:outdoors 
+a:tool surfboard:surfboard 
+wave:surfing 
+surfboard:surfboard to:tool sea:ocean 
+to:tool water:ocean 
+a:tool surfboard:surfboard 
+man:man waves:plunged on:body 
+man:man is:destination on:body wave:ocean 
+surfer:ocean red:destination shirt:man surfing:plunged on:body 
+above:plunged surfer:ocean 
+man:man is:destination surfing:plunged wave:ocean on:body 
+child:male-child water:body-of-water boogie:inner-tube 
+child:male-child is:tool raft:body-of-water 
+toddler:male-child a:tool surfboard:inner-tube shore:floating 
+A:tool boy:male-child water:body-of-water 
+toddler:male-child water:body-of-water 
+surf:canoe floating:submerging on:agent 
+surfboard:canoe a:object 
+surfboard:canoe a:object ocean:body-of-water 
+surfers:water ocean:body-of-water board:canoe 
+a:object surfboard:canoe water:body-of-water 
+man:man on:agent tennis:tennis-court 
+man:man tennis:tennis-court 
+man:man tennis:tennis-court 
+guy:man in:agent playing:competing tennis:tennis-court 
+tennis:tennis-court match:tennis 
+dining:dining room:home 
+dinner:dining 
+on:agent little:home tables:dining the:place 
+table:dining in:agent front:home 
+dining:dining in:agent room:home 
+platter:spoiling baked:bread 
+bread:bread plate:table 
+cheese:spoiling table:table 
+surface:spoiling table:table 
+cracker:spoiling cutting:table 
+Two:item pizzas:pizza 
+pizza:pizza next:source to:hand uncooked:sprinkling 
+Two:item pizzas:pizza of:source a:hand 
+hand:hand of:source two:item pizzas:pizza in:destination 
+Two:item unbaked:pizza ,:source homemade:sprinkling a:hand 
+very:water living:living-room with:overflowing 
+couch:living-room ,:overflowing 
+containing:overflowing couch:living-room coffee:cup 
+on:agent table:overflowing in:water livingroom:living-room 
+couch:living-room and:overflowing that:water 
+boy:baby in:agent mouth:biting 
+blonde:finger sucks:baby on:agent mouth:biting 
+chewing:baby on:agent 
+toddler:baby on:agent 
+chewing:baby on:agent 
+room:room of:item chairs:art a:tool 
+A:tool room:room chairs:art 
+room:room chairs:art 
+concept:displaying furniture:art 
+room:room two:item chairs:art a:tool 
+replace:paying 
+apart:paying controls:person table:table 
+apart:paying 
+sets:person table:table 
+apart:paying 
+women:giggling video:living-room 
+girls:girl system:living-room 
+women:giggling wii:living-room 
+Two:giggling on:agent couch:living-room 
+Young:girl women:giggling remote:living-room 
+woman:coagent standing:people in:agent room:room 
+woman:coagent standing:people 
+people:people controllers:socializing 
+hugging:coagent in:agent big:place room:room 
+and:room hugging:coagent group:people 
+couch:living-room front:hand 
+couple:man-woman a:object room:living-room 
+controllers:man-woman sofa:living-room 
+video:living-room controllers:man-woman 
+WII:tickling 
+field:field kite:ballooning the:place 
+'s:person morning:place here:field 
+person:person kite:ballooning field:field the:place 
+kite:ballooning on:agent field:field the:place country:person 
+field:field kite:ballooning person:person the:place 
+baseball:baseball swinging:hitting bat:bat 
+baseball:baseball swinging:hitting bat:bat 
+baseball:baseball on:agent 
+batter:bat baseball:baseball 
+baseball:baseball swing:bat 
+baseball:baseball bat:bat 
+baseball:baseball bat:bat in:agent 
+baseball:baseball 
+baseball:baseball batter:bat quite:agent 
+baseball:baseball hit:hitting 
+baseball:baseball bat:bat across:place 
+Player:hitting away:agent bat:bat 
+baseball:baseball away:agent bat:bat 
+baseball:baseball hitting:hitting in:agent 
+in:agent a:tool bat:bat 
+baseball:baseball swing:bat 
+baseball:baseball on:agent a:tool 
+bunting:ball-field 
+in:agent baseball:baseball 
+batter:bat hit:hitting base:ball-field 
+on:place pizza:pizza pans:heatsource stove:stove 
+pizza:pizza on:place stove:stove 
+trays:food pizza:pizza the:place stove:stove 
+pizza:pizza on:place kitchen:kitchen stove:stove 
+pizzas:pizza the:place stove:stove 
+windows:light-bulb 
+stained:light-bulb glass:inside 
+windows:light-bulb 
+stain:light-bulb 
+night:light-bulb 
+desktop:desktop-computer on:place 
+a:tool of:item on:place desk:desktop-computer 
+On:tool computer:desktop-computer 
+desk:desktop-computer 
+desk:desktop-computer 
+people:people in:agent computers:undertaking 
+group:people laptops:undertaking 
+group:people working:undertaking 
+Several:people students:undertaking 
+people:people large:place working:undertaking on:agent 
+computer:computer on:agent of:item a:tool 
+computer:computer on:agent 
+laptop:computer on:agent a:tool 
+a:tool laptop:computer on:agent 
+TOP:computer WOOD:place 
+a:tool talking:phoning 
+man:man phone:phoning 
+a:tool talking:phoning the:place 
+man:man the:place talking:phoning a:tool 
+a:tool man:man talking:phoning 
+man:man walking:target street:street pole:panhandling 
+walk:passerby street:street 
+walk:passerby streets:street 
+man:man walking:target 
+man:man standing:target pole:panhandling 
+refrigerator:cup tiled:water 
+fridge:cup on:agent 
+refrigerator:cup 
+refrigerator:cup 
+refrigerator:cup 
+
+
+
+
+
+wall:room 
+Round:agent from:liquid wall:room 
+on:agent shelf:room holding:man drinking:liquid 
+on:agent wall:room up:liquid 
+has:immersing decorative:water balls:man 
+is:tool ceiling:clock furniture:room 
+clocks:clock 
+clocks:clock other:item 
+furniture:room on:place display:displaying 
+clocks:clock 
+book:book books:bookshelf the:destination 
+there:item is:destination book:book shelf:library 
+on:place book:book shelf:library 
+on:place in:destination library:library 
+some:item books:bookshelf in:destination 
+plate:buttering of:item a:tool cup:table 
+A:tool toast:toast the:place side:person 
+bread:buttering egg:table a:tool 
+plate:buttering shown:person a:tool 
+the:place has:person toast:toast 
+A:tool sauce:chicken 
+food:chicken a:tool cup:brushing 
+a:tool plate:chicken kids:brushing 
+food:chicken a:tool 
+a:tool food:chicken near:target cup:brushing 
+bowl:bowl 
+dish:bowl is:tool 
+A:tool bowl:bowl in:agent it:source 
+spoon:scooping in:agent a:tool bowl:bowl of:fish 
+A:tool bowl:bowl meat:scooping 
+salsa:dipping 
+dip:dipping in:water 
+small:water salsa:dipping table:table 
+person:person table:table food:bread 
+This:person lunch:bread drinks:dipping 
+people:people beach:beach 
+people:people beach:beach 
+people:people sand:beach 
+Adults:stooping beach:beach 
+people:people sand:beach 
+the:place restaurant:dining 
+people:people outside:outdoors cafe:dining 
+Black:outdoors umbrellas:people 
+people:people 
+are:people sitting:dining on:agent the:place 
+car:car on:agent 
+car:car on:agent 
+Car:car bikes:crashing on:agent 
+CAR:car WITH:crashing 
+vehicle:car on:agent 
+people:people on:agent the:place back:carting a:tool 
+A:tool yellow:outdoors people:people it:carting 
+people:people outside:outdoors during:tool the:place 
+holding:tool people:people 
+Yellow:outdoors allow:tool people:people sit:cart on:agent it:carting 
+tub:bathtub 
+tub:bathtub 
+tub:bathtub 
+person:person tub:bathtub 
+lookign:place laid:person tile:bathtub 
+sinks:bathroom 
+vanity:bathroom 
+vanity:bathroom 
+sinks:bathroom 
+sinks:bathroom 
+tub:bathtub 
+bathtub:bathtub 
+tub:bathtub 
+tub:bathtub 
+bathtub:bathtub 
+people:people to:hand food:bread cart:unloading 
+a:tool lady:hand from:unloading on:agent the:place 
+street:outside vendor:unloading food:bread to:hand 
+food:bread at:hand cart:unloading on:agent the:place sidewalk:outside 
+people:people next:source to:hand food:bread stand:unloading 
+clock:clock 
+clock:clock the:place 
+clock:clock on:agent the:place 
+clock:clock 
+tower:clock color:glowing 
+man:man on:agent motorcycle:motorcycle back:driving 
+man:man on:agent motorcycle:motorcycle behind:item 
+Two:item on:agent motorcycle:motorcycle 
+Male:man on:agent motorcycle:motorcycle 
+man:man motorcycle:motorcycle on:agent the:place back:driving 
+men:people motorcycle:motorcycle 
+adults:people motorcycle:motorcycle 
+people:people scooter:motorcycle street:street 
+motorcycle:motorcycle together:people 
+scooter:motorcycle people:people 
+sitting:sitting 
+sitting:sitting in:agent 
+stuffed:teddy sitting:sitting 
+stuffed:teddy sitting:sitting 
+table:chair on:sitting 
+THAT:place PARKED:motorcyclist 
+motorcycles:motorcyclist another:item 
+Motorcycles:motorcyclist the:place street:street front:seller 
+cycles:motorcyclist the:place street:street outside:buyer 
+motorcycles:motorcyclist 
+jet:jet sky:sky 
+flying:soaring 
+Lufthansa:jet flight:soaring sky:sky 
+plane:jet 
+commercial:jet flying:soaring 
+man:man bench:bench 
+man:man bench:bench by:outdoors 
+man:man bench:bench alongside:outdoors the:place 
+person:man bench:bench the:place 
+man:man talking:sitting from:outdoors 
+the:place city:city street:street 
+streets:city 
+street:street buildings:city 
+signal:city the:place street:street 
+city:city street:street the:place 
+man:man riding:vehicle bike:bicycle street:street 
+man:man riding:vehicle bike:bicycle city:street 
+person:man biking:bicycle street:street 
+riding:vehicle street:street 
+man:man bike:bicycle street:street 
+SHEEP:shearing WITH:source 
+sheep:sheep pen:farm 
+sheep:sheep three:item 
+man:man in:agent the:place pen:farm with:source sheep:sheep 
+of:source three:item sheep:sheep 
+cat:cat petted:finger on:agent bench:outdoors 
+brown:gnawing cat:cat on:agent bench:outdoors 
+cat:cat the:place attention:finger from:outdoors 
+Cat:cat on:agent wooden:gnawing bench:outdoors petted:finger 
+cat:cat attention:finger on:agent outdoor:outdoors 
+van:bus given:item 
+bus:bus 
+BUS:bus 
+bus:bus in:agent lot:colliding 
+in:agent parked:colliding bus:bus 
+park:park night:light 
+very:glowing benches:park the:place 
+nighttime:glowing park:park 
+park:park illuminated:glowing 
+park:park setting:glowing 
+sheep:sheep standing:standing on:agent field:field 
+sheep:sheep the:place 
+sheep:sheep standing:standing field:field 
+lamb:sheep standing:standing on:agent the:place 
+sheep:sheep standing:standing the:place grass:field 
+hydrant:fireplug landscaping:outdoors 
+hydrant:fireplug on:place stone:outdoors ground:land 
+hydrant:fireplug outside:outdoors 
+hydrant:fireplug near:outdoors 
+hydrant:fireplug 
+fire:fireplug 
+hydrant:fireplug post:outdoors 
+hydrant:fireplug yard:outdoors 
+hydrant:fireplug 
+hydrant:fireplug 
+Two:people horses:horse 
+riding:riding their:people horses:horse 
+women:people on:vehicle horses:horse 
+women:people on:vehicle horses:horse 
+women:people on:vehicle horses:horse 
+that:item on:agent a:tool horse:horse 
+person:woman on:agent a:tool horse:horse 
+a:tool horse:horse in:agent of:item brick:outdoors 
+on:agent a:tool horse:horse of:item building:outdoors 
+on:agent of:item a:tool horse:horse brick:outdoors 
+train:train 
+Train:train it:item 
+train:train 
+train:train on:agent 
+train:train 
+train:train in:agent dry:outdoors 
+two:item train:train on:agent 
+train:train on:agent tall:outdoors 
+caboose:train in:agent the:place yard:outdoors 
+railway:train yard:outdoors 
+subway:boarding 
+train:train station:railway-station 
+train:train 
+train:train in:agent 
+train:train 
+stop:hoisting sign:pulley fashioned:source into:tool store:outside 
+stop:hoisting sign:pulley out:land a:tool snack:source beneath:outside display:item 
+DECORATIVE:source LOOKS:place SHIP:pulley 
+signs:pulley a:tool with:source one:item like:land stop:hoisting 
+signs:pulley to:tool people:flag 
+stop:barrier-road a:tool 
+On:tool stop:barrier-road by:outdoors 
+stop:barrier-road a:tool patch:outdoors 
+a:tool stop:barrier-road 
+stop:barrier-road a:tool 
+DOWN:road 
+truck:truck as:agent drives:turneditem street:road 
+truck:truck on:agent road:road car:driver 
+truck:truck driving:turneditem road:road in:agent 
+truck:truck driving:turneditem on:agent highway:road 
+bear:bear 
+BEAR:bear 
+bear:bear hanging:clinging in:agent 
+bear:bear in:agent 
+bear:bear 
+long:place truck:trailer a:tool lot:parking-lot 
+'s:item truck:trailer a:tool 
+pickup:towing truck:trailer cars:car 
+up:tool truck:trailer lot:parking-lot on:agent 
+a:tool low:destination truck:trailer on:agent 
+ox:cattle grass:land 
+steer:cattle 
+cows:cattle 
+Two:item cows:cattle sitting:resting tree:outdoors fence:land 
+Two:item cows:cattle laying:resting grass:land tree:outdoors 
+large:place cow:cow walks:target grass:field 
+cow:cow field:field next:target 
+cow:cow field:field next:target 
+field:field cow:cow walking:target 
+bull:cow field:field 
+man:man water:river umbrella:tent give:place 
+man:man umbrella:tent water:river 
+man:man umbrella:tent on:agent boat:river 
+person:man on:agent water:river umbrella:tent 
+man:man umbrella:tent water:river 
+boat:motorboat 
+boat:motorboat 
+boat:motorboat beach:beach 
+boat:motorboat beach:beach 
+boat:motorboat beach:beach 
+the:place Goodmayes:queuing 
+Goodmayes:queuing 
+in:agent group:people 
+adults:people 
+Goodmayes:queuing dated:place 
+man:man chart:speaking 
+businessman:man presentation:speaking in:agent 
+man:man in:agent front:stage 
+chart:speaking 
+man:man in:agent front:stage projector:speaking 
+whit:place tie:shivering 
+on:agent tie:shivering 
+tie:shivering 
+bow:shivering 
+sitting:chair on:agent his:man tie:shivering 
+elephant:elephant on:agent 
+children:child elephant:elephant 
+a:tool children:child washing:brush elephant:elephant 
+Children:child elephants:elephant a:tool brush:brushing 
+children:child help:brushing elephant:elephant 
+group:people 
+group:people 
+bunch:gathering adults:people 
+group:people 
+people:people posing:gathering 
+siting:contact posing:kneeling 
+chalkboard:kneeling 
+class:kneeling South:outdoors 
+group:people in:land chalkboard:kneeling 
+photograph:kneeling 
+child:male-child luggage:bag 
+child:male-child luggage:bag 
+suitcase:bag in:agent terminal:plaza 
+boy:male-child looking:sniffing away:agent the:place suitcase:bag 
+boy:male-child luggage:bag in:agent 
+bear:bear lays:goal bed:bed 
+bear:bear laying:resting bed:bed 
+bear:bear lying:goal bed:bed 
+bear:bear laying:resting comforter:bed 
+animal:bear bed:bed 
+bear:bear water:body-of-water 
+bear:bear water:body-of-water gray:body 
+bear:bear water:body-of-water 
+bear:bear river:body-of-water 
+BEAR:bear SPLASHING:shaking 
+black:lapping dog:dog on:agent the:water ground:outdoors 
+dog:dog at:food its:lapping like:container 
+dog:dog to:outdoors reflection:lapping 
+dog:dog in:water some:food its:lapping 
+black:lapping dog:dog near:outdoors 
+rainbow:intermingling the:place zebra:zebra 
+zebras:zebra rainbow:intermingling 
+zebra:zebra rainbow:intermingling 
+depiction:intermingling zebras:zebra 
+zebra:zebra rainbow:intermingling 
+Someone:person holding:brush dog:dog 
+person:person dogs:dog teeth:brushing 
+dog:dog brushed:brushing 
+person:person a:tool dogs:dog teeth:brushing 
+Someone:person playing:tool the:target mouth:brushing dog:dog 
+larger:nuzzling zebra:zebra on:agent 
+zebra:zebra 
+Zebra:zebra on:agent 
+zebras:zebra through:agent 
+zebras:zebra on:agent 
+horse:horse drawn:wagon beach:beach 
+horse:horse pulling:wagon beach:beach 
+horse:horse trailer:wagon beach:beach 
+horse:horse carrying:carting a:tool beach:beach 
+horse:horse pulling:wagon shore:beach line:people 
+horses:horse snowy:snow 
+horses:horse in:agent the:place 
+horses:horse on:agent snowy:snow terrain:stampeding 
+horses:horse snowy:snow 
+horses:horse in:agent the:place snow:snow 
+horse:horse jumping:jumping 
+horse:horse obstacle:hurdle 
+horse:horse jump:jumping 
+hurdle:hurdle horse:horse 
+British:destination horse:horse jumping:jumping 
+horses:horse man:man on:agent cart:wagon 
+horses:horse wagon:wagon 
+horses:horse cart:wagon behind:outdoors 
+horses:horse cart:wagon man:man 
+of:item horses:horse a:tool man:man on:agent carriage:wagon 
+racing:racetrack motorcycles:motorcycle 
+motorcycles:motorcycle race:racetrack 
+finish:racing 
+bikes:motorcycle track:racetrack 
+bikers:motorcycle racing:racetrack the:place 
+person:man in:agent the:place baseball:baseball 
+Fans:baseball hit:skill 
+group:people baseball:baseball 
+baseball:baseball 
+baseball:baseball in:agent man:man the:place crowd:people 
+people:people skis:skiing 
+people:people in:agent the:place snow:skiing 
+people:people the:place mountain:mountain 
+people:people skis:skiing on:agent mountain:mountain 
+Skiers:skiing on:agent mountain:mountain 
+on:agent the:place slope:skiing 
+People:people ski:ski-slope 
+People:people in:agent the:place snow:skiing 
+MANY:agent SKIERS:skiing 
+on:agent ski:ski-slope 
+banana:peeling 
+banana:peeling in:agent 
+spotted:agent banana:peeling 
+banana:peeling in:agent 
+banana:peeling in:agent 
+bananas:banana 
+bananas:banana sale:selling 
+bananas:banana sale:selling 
+bananas:banana 
+Bunches:banana 
+plate:table bananas:banana 
+bananas:banana table:table 
+plate:table bananas:banana 
+plate:table bananas:banana 
+bananas:banana plate:table 
+of:item on:agent baseball:baseball diamond:ball-field 
+Two:item boys:male-child playing:throwing baseball:baseball 
+Two:item catchers:ball-field 
+two:item kids:male-child playing:throwing baseball:baseball on:agent the:place 
+BOYS:male-child BASEBALL:ball-field 
+crouching:base 
+catcher:base 
+in:land catcher:base 
+catcher:base in:land 
+catcher:base red:destination 
+on:agent skis:skiing 
+on:agent skis:skiing mountain:mountain 
+skiing:skiing on:agent large:place mountain:mountain 
+on:agent skis:skiing the:place mountains:mountain 
+skier:skier large:place mountain:mountain 
+on:agent skis:skiing 
+on:agent skis:skiing 
+on:agent skis:skiing 
+in:agent skis:skiing the:place 
+skier:skier the:place 
+boy:male-child on:agent it:item 
+child:male-child on:agent photo:outdoors 
+boy:male-child on:agent of:item 
+black:item boy:male-child 
+boy:male-child as:agent the:place background:outdoors 
+table:table different:overflowing ingredients:milk 
+counter:glass items:overflowing 
+items:overflowing counter:glass 
+containers:overflowing milk:milk egg:table 
+table:table cups:milk 
+guy:man in:agent 
+Several:goalitem skate:man in:agent a:tool 
+guys:man on:agent a:tool made:components 
+man:man standing:outdoors on:agent a:tool wooden:components 
+wooden:components a:tool the:place his:man 
+person:person skis:skiing snow:snow 
+person:person snow:snow on:agent skis:skiing 
+person:person cross-country:snow on:agent winters:skiing 
+person:person skis:skiing snow:snow 
+is:person on:agent snow:snow skis:skiing 
+florets:grape 
+leaves:grape 
+lots:brancher fresh:grape 
+florets:grape 
+florets:grape 
+GALA:grocery-store APPLES:apple DISPLAY:spoiling 
+large:place apples:apple display:grocery-store 
+apples:apple in:agent 
+apples:apple supermarket:grocery-store 
+apples:apple in:agent market:grocery-store 
+fruit:fruit radishes:rotting 
+fruit:fruit on:agent foil:rotting 
+fruits:fruit in:agent foil:rotting 
+fruits:fruit in:agent 
+Assorted:fruit in:agent 
+Men:man pictures:tool of:smashing on:agent car:car 
+doing:man skateboarding:hammer-null on:agent a:tool car:car 
+skateboarding:hammer-null in:agent lot:parking-lot 
+doing:man skateboard:hammer-null on:agent car:car 
+in:agent a:tool watching:man 
+man:man skateboard:skateboard 
+skateboarding:skateboard sidewalk:sidewalk 
+skateboards:skateboard 
+Two:agent skate:skateboard 
+Two:agent skateboarders:skateboard 
+plate:plate ,:source vegetables:food a:tool fork:scooping 
+fork:scooping next:source to:tool chicken:food 
+a:tool plate:plate fork:scooping and:source 
+fork:scooping plate:plate to:tool 
+a:tool fork:scooping and:source 
+hill:mountain 
+on:agent the:place mountains:mountain full:person 
+few:place mountain:mountain 
+mountain:mountain 
+hiking:ascending 
+
+
+
+
+
+person:person heart:crafting 
+in:agent heart:crafting 
+birthday:crafting on:agent 
+birthday:crafting 
+birthday:crafting 
+plate:plate in:agent 
+meat:meat cheese:rotting 
+cheese:rotting on:agent plate:plate 
+on:agent plate:plate 
+bacon:meat on:agent plate:plate 
+hot:hotdog 
+hot:hotdog containers:tray 
+hot:hotdog 
+hotdogs:hotdog tray:tray 
+chili:hotdog tray:tray 
+plated:plate on:agent 
+meat:plate 
+on:agent plate:plate 
+on:agent plate:plate 
+on:agent plate:plate 
+figures:item on:agent 
+a:tool on:agent it:item 
+to:tool look:item the:place toy:male-child on:agent 
+and:room on:agent board:drumming 
+a:tool figurine:room on:agent it:item 
+beach:beach surfboard:surfer 
+lone:wading surfer:surfer 
+waves:surfer 
+surf:surfer water:wading 
+surfer:surfer beach:beach 
+food:food plate:plate 
+plate:plate table:food 
+Plate:plate west:place pieces:spoiling food:food in:agent 
+plate:plate 
+pieces:spoiling food:food the:place plate:plate 
+a:tool surfboard:surfboard 
+surfer:surfer wave:surfing to:tool 
+surfer:surfer wave:surfing 
+surfing:surfing 
+Surfer:surfer wave:surfing ocean:ocean 
+plate:plate 
+on:agent plate:plate 
+sandwich:plate with:overflowing 
+plate:plate food:food 
+plate:plate sandwiches:food on:agent 
+a:tool surfing:surfing teaches:skill surfboards:surfboard beach:beach large:place 
+people:people learning:skill to:tool surf:surfboard beach:beach 
+The:tool people:people practicing:skill surfboards:surfboard beach:beach 
+people:people beach:beach surf:surfboard 
+people:people standing:skill a:tool beach:beach surfboards:surfboard 
+desktops:computer 
+screens:computer 
+monitors:computer 
+television:room monitors:computer 
+The:tool computers:computer the:place 
+woman:woman table:dining in:agent pizza:pizza 
+woman:woman the:place pizza:pizza restaurant:restaurant 
+woman:woman table:dining pizza:pizza in:agent 
+woman:woman table:dining pizza:pizza in:agent 
+woman:woman away:agent pizza:pizza restaurant:restaurant 
+young:male-child swinging:ball racquet:stadium on:agent 
+ball:ball 
+serve:stadium 
+player:stadium he:male-child ball:ball 
+playing:throwing tennis:stadium on:agent 
+tennis:tennis-court in:agent 
+tennis:tennis-court in:agent 
+woman:woman tennis:tennis-court the:place 
+lady:woman tennis:tennis-court on:agent 
+a:tool on:agent tennis:tennis-court 
+tennis:tennis-court in:agent wearing:grimacing cap:man 
+tennis:tennis-court his:man 
+tennis:tennis-court 
+Tennis:tennis-court 
+man:man on:agent tennis:tennis-court 
+toothbrush:toothbrush 
+toothbrush:toothbrush 
+toothbrush:toothbrush 
+A:tool child:baby brushes:toothbrush teeth:dentition 
+up:tool child:baby teeth:dentition 
+on:agent living:living-room 
+living:living-room 
+room:living-room 
+living:living-room 
+living:living-room in:agent 
+furnished:livingroom-suite 
+living:livingroom-suite 
+couches:livingroom-suite TV:television 
+couches:livingroom-suite television:television 
+couches:livingroom-suite television:television 
+in:agent living:living-room 
+nice:glowing room:living-room in:agent 
+living:living-room colored:art 
+living:living-room decorated:art 
+living:living-room center:glowing 
+living:living-room and:overflowing 
+IMAGE:source LIVING:living-room WITH:glass AND:overflowing 
+couch:living-room the:water oval:glass 
+very:water living:living-room oval:glass 
+den:living-room ,:overflowing 
+player:hitting lunges:tennis-court serve:tennis-ball 
+tennis:tennis-court hit:tennis-ball 
+man:man tennis:tennis-court on:agent 
+tennis:tennis-court hit:tennis-ball 
+man:man tennis:tennis-court racket:tennis-ball in:agent 
+woman:woman on:agent tennis:tennis-court 
+woman:woman tennis:tennis-court 
+tennis:tennis-court match:tennis the:place players:skill 
+woman:woman tennis:tennis-court the:place in:agent serve:tennis-racket 
+woman:woman a:tool tennis:tennis-court on:agent 
+apartment:light-bulb 
+room:room 
+in:agent TV:room window:light-bulb 
+room:room the:place 
+room:room furniture:glowing 
+people:people flying:sky kites:parachute 
+people:people on:agent kites:parachute 
+People:people field:field kites:parachute sky:sky 
+Several:people kites:parachute flying:sky 
+people:people flies:sky kites:parachute field:field 
+child:baby chair:chair teddy:hugging 
+cute:agentpart stuffed:hugging 
+boy:baby in:agent chair:chair teddy:hugging 
+stuffed:hugging chair:chair 
+boy:baby chair:chair teddy:hugging 
+kite:parachute choppy:ocean 
+person:person ocean:ocean glider:parachute 
+rough:ocean foggy:person day:parachute 
+kite:parachute sea:ocean 
+ocean:ocean parachute:parachute 
+lights:glowing clock:clock 
+building:clock in:agent lit:glowing 
+has:glowing clock:clock on:agent 
+Big:clock in:agent 
+Big:clock in:agent the:place 
+man:man wheelchair:wheelchair bat:ball-field another:item 
+man:man another:item in:agent wheel:wheelchair 
+man:man baseball:ball-field on:body the:carrier 
+man:man on:body field:ball-field 
+man:man in:agent wheel:wheelchair baseball:ball-field 
+boys:male-child playing:skill softball:coaching 
+baseball:baseball on:agent the:place 
+boy:male-child baseball:baseball 
+umpire:ball-field kids:male-child playing:skill 
+child:male-child baseball:baseball 
+Ms:grimacing Williams:tennis-player participating:agent tennis:tennis-court 
+in:agent dress:grimacing tennis:tennis-court 
+in:agent tennis:tennis-court dress:grimacing large:place 
+dressed:grimacing in:agent tennis:tennis-court 
+tennis:tennis-court in:agent outfit:tennis-player 
+office:room with:person equipment:camera 
+on:agent a:tool office:room 
+with:person desks:room equipment:camera 
+laptop:room the:place 
+beneath:place to:tool desk:room 
+man:man laptop:laptop 
+man:man laptop:laptop otherwise:agent 
+man:man laptop:laptop 
+Man:man laptop:laptop in:agent 
+person:man next:item laptop:laptop in:agent 
+
+
+
+
+
+dressed:man in:agent black:outdoors the:place phone:telephoning 
+THAT:outdoors TALKING:telephoning 
+talking:telephoning black:outdoors shirt:man 
+walking:outdoors talking:telephoning 
+talks:telephoning 
+counter:kitchen microwave:microwaving 
+microwave:microwaving kitchen:kitchen 
+microwave:microwaving 
+large:place microwave:microwaving 
+kitchen:kitchen microwave:microwaving 
+couch:living-room 
+people:nagging in:agent room:living-room 
+man:husband woman:nagging 
+man:husband 
+on:agent couch:living-room the:place 
+
+
+
+
+
+in:agent restaurant:restaurant man:man phone:cellular-telephone 
+male:man smart:cellular-telephone in:agent restaurant:restaurant 
+restaurant:restaurant phone:cellular-telephone 
+man:man smart:cellular-telephone in:agent cafe:restaurant 
+man:man looking:staring cell:cellular-telephone restaurant:restaurant 
+woman:woman to:tool fridge:art has:displaying on:agent 
+woman:woman behind:item fridge:art has:displaying on:agent 
+woman:woman is:tool behind:item refrigerator:art in:agent the:place 
+in:agent the:place while:woman it:displaying being:tool painted:art 
+scene:displaying a:tool person:woman refrigerator:art 
+woman:woman in:agent holding:admired vase:flower 
+woman:woman flowers:flower in:agent 
+lady:woman showing:room vase:flower bought:agent 
+Lady:woman holding:admired flowers:flower 
+lady:woman holding:admired flowers:flower 
+on:agent the:water counter:kitchen 
+tissues:overflowing supplies:cup 
+on:agent counter:kitchen 
+items:cup on:agent 
+full:overflowing view:water on:agent 
+scissors:wood 
+pair:wood wrapped:rotting in:agent 
+scissors:wood displayed:rotting 
+pair:wood on:agent 
+,:rotting scissors:wood 
+man:man in:agent restaurant:restaurant holding:grinning 
+man:man holding:grinning wine:restaurant 
+man:man holds:grinning wine:restaurant 
+man:man drink:restaurant smiles:grinning 
+Man:man holding:grinning wine:restaurant 
+woman:woman umbrella:shivering next:outdoors 
+woman:woman in:agent the:place rain:shivering 
+woman:woman umbrella:shivering on:agent the:place 
+Woman:woman standing:outdoors on:agent the:place rain:shivering 
+Woman:woman umbrella:shivering on:agent abandoned:outdoors 
+window:room plants:plant 
+Plants:plant window:room 
+plants:plant window:room 
+room:room plants:plant 
+chair:room plants:plant the:place 
+woman:woman to:destination oven:oven 
+woman:woman to:destination cook:oven food:food kitchen:kitchen 
+woman:woman is:destination oven:oven 
+woman:woman kitchen:kitchen food:food 
+woman:woman in:destination kitchen:kitchen baking:oven 
+a:tool window:painting 
+furniture:painting a:tool 
+A:tool tulips:painting 
+a:tool tulips:painting by:item 
+of:item flowers:painting on:place a:tool table:room 
+man:man skateboard:sidewalk by:begging 
+his:man the:place sidewalk:sidewalk 
+man:man skateboard:sidewalk wheels:begging 
+skateboard:sidewalk 
+man:man skateboard:sidewalk 
+woman:woman is:tool hair:comb 
+woman:woman hair:comb 
+woman:woman hair:comb 
+woman:woman hair:comb 
+lady:woman hair:comb huge:place 
+
+
+
+
+
+shower:bathing bathroom:bathroom 
+bath:bathing sink:bathroom 
+the:place bathroom:bathroom 
+bathroom:bathroom shower:bathing 
+shower:bathing sink:bathroom 
+
+
+
+
+
+motorcycle:motorcycle antlers:agent 
+motorcycle:motorcycle painted:street 
+motorcycle:motorcycle costumes:street 
+painted:street ride:riding motorcycle:motorcycle 
+person:person painted:street motorcycle:motorcycle 
+urinals:urinal on:agent bathroom:bathroom 
+urinals:urinal 
+Urinals:urinal bathroom:bathroom 
+urinals:urinal bathroom:bathroom 
+toilets:urinal 
+motorcycle:motorcycle street:road a:tool cow:cow other:item 
+motorcyclist:motorcycle a:tool cow:cow on:agent road:road 
+motorcycle:motorcycle photo:people into:tool 
+on:agent motor:motorcycle next:item to:tool cows:cow 
+on:agent a:tool motorcycle:motorcycle past:road of:people cows:cow 
+church:inside of:people 
+cross:people in:agent the:place church:inside 
+in:agent the:place of:people 
+sit:dining 
+of:people large:place church:inside 
+horses:horse grazing:grass field:field the:place 
+grazing:grass field:field 
+two:item horses:horse pasture:grass 
+horses:horse on:agent lush:grass field:field 
+two:item horses:horse the:place grass:grass 
+bathroom:bathroom toilet:toilet 
+toilet:toilet 
+toilets:toilet with:person bathroom:bathroom 
+Looking:person bidet:toilet 
+Toilet:toilet bathroom:bathroom it:person 
+dog:dog food:food on:agent the:place ground:floor 
+dog:dog food:food 
+dog:dog feeding:food 
+dog:dog in:agent food:food 
+dog:dog at:food the:place 
+man:man bananas:banana 
+man:man bananas:banana 
+photograph:man bananas:banana 
+Bananas:banana sold:seller man:man 
+man:man bananas:banana 
+airliner:landing airport:airport 
+liner:runway over:landing 
+jetliner:airplane 
+jet:airplane airliner:landing 
+plane:airplane liner:runway 
+
+
+
+
+
+giraffe:giraffe tongue:licking the:place fence:fence 
+giraffe:giraffe tongue:licking 
+giraffe:giraffe 's:item tongue:licking fence:fence 
+giraffe:giraffe fence:fence licking:licking 
+giraffe:giraffe tongue:licking fence:fence 
+giraffes:giraffe the:place 
+giraffes:giraffe grassy:field the:place 
+Four:field giraffes:giraffe standing:standing 
+giraffes:giraffe standing:standing on:agent field:field 
+Several:field giraffe:giraffe somewhat:place standing:standing on:agent 
+sun:outside plane:airplane 
+plane:airplane 
+plane:airplane 
+airplane:airplane 
+plane:airplane 
+giraffe:giraffe walking:walking 
+giraffe:giraffe stands:outside on:agent 
+giraffe:giraffe walking:walking on:agent the:place 
+giraffe:giraffe walks:walking on:agent 
+giraffe:giraffe on:agent 
+bird:bird 
+benches:waddling 
+bird:bird 
+couple:agentpart benches:waddling 
+bird:bird 
+giraffe:giraffe 
+giraffe:giraffe wilderness:prowling 
+giraffe:giraffe 
+giraffe:giraffe shrubs:prey 
+giraffe:giraffe 
+flies:soaring sky:sky 
+plane:jet flies:soaring sky:sky 
+land:soaring on:agent tarmac:jet 
+jet:jet flying:soaring 
+commercial:jet sky:sky 
+bench:bench 
+their:people bench:bench 
+benches:bench 
+bench:bench tree:outdoors 
+couple:people bench:bench 
+giraffes:giraffe standing:standing the:place dirt:outdoors 
+giraffes:giraffe the:place 
+giraffe:giraffe the:place 
+giraffe:giraffe the:place 
+giraffes:giraffe 
+near:branching large:place hill:mountain 
+mountain:mountain 
+area:brancher grazing:mountain 
+away:place mountain:mountain 
+green:brancher hillside:mountain on:path 
+bus:turneditem stopped:driver in:agent 
+bus:turneditem on:agent street:street 
+bus:turneditem on:agent the:place city:street 
+bus:turneditem in:agent city:street 
+bus:turneditem far:place street:street 
+flowers:flower dirt:forest 
+Two:agent flowers:flower 
+starting:agent bloom:blossoming in:forest 
+field:forest flowers:flower 
+wildflowers:flower blooming:blossoming near:forest 
+hydrant:leaking 
+metal:pipe hydrant:leaking 
+hydrant:leaking on:place 
+hydrant:leaking can:source 
+hydrant:leaking 
+on:agent snow:skiing 
+on:agent snow:skiing 
+mountain:skiing 
+surface:skiing 
+the:place snow:skiing on:agent 
+bus:bus is:tool parked:hitch on:agent street:road 
+bus:bus driving:trailer a:tool street:road 
+bus:bus advertising:trailer on:agent a:tool 
+A:tool bus:bus in:agent street:road 
+bus:bus parked:hitch on:agent a:tool street:road 
+bus:bus traveling:skidding down:snow 
+bus:bus 
+bus:bus on:agent snowy:snow road:skidding 
+bus:bus parked:skidding on:agent 
+bus:bus on:agent snowy:snow road:skidding 
+bus:bus street:road 
+bus:bus street:road as:agent 
+bus:bus on:agent street:road 
+bus:bus stopped:driver road:road 
+bus:bus on:agent road:road 
+red:parking-lot bus:bus driving:trailer 
+A:tool bus:bus on:agent the:destination road:trailer 
+bus:bus on:agent the:destination road:trailer 
+A:tool bus:bus on:agent side:towing 
+a:tool bus:bus on:agent street:towing 
+giraffe:giraffe branch:post 
+giraffe:giraffe 
+giraffe:giraffe 
+giraffe:giraffe branch:post 
+giraffe:giraffe standing:target 's:post 
+THERE:land IT:sprouting 
+wooden:sprouting with:plant 
+side:land it:plant 
+painted:land it:plant 
+white:sprouting flowers:plant 
+sign:sign 
+sign:sign on:agent the:place sidewalk:outside 
+sign:sign on:agent the:place 
+sign:sign place:glowing on:agent the:place 
+sign:sign 
+swans:waddling people:park 
+boys:male-child ducks:waddling 
+boys:male-child geese:waddling 
+young:male-child goose:waddling 
+boys:male-child looking:agentpart swans:waddling 
+sign:brancher over:outdoors 
+area:outdoors sign:brancher 
+Sign:brancher near:outdoors 
+signs:brancher on:place 
+sign:brancher 
+young:arm woman:woman cat:cat 
+woman:woman holding:arm kissing:hugging cat:cat 
+her:woman cat:cat in:agent arms:arm 
+woman:woman cat:cat 
+woman:woman holding:arm kissing:hugging cat:cat 
+man:man horse:horse in:agent to:tool trees:outdoors 
+man:man in:agent a:tool horse:horse 
+an:outdoors of:item a:tool man:man on:agent horse:horse 
+man:man in:agent a:tool horse:horse the:place 
+Person:man in:agent a:tool horse:horse 
+train:train o:agent 
+train:train the:place 
+train:train on:agent the:place 
+train:train on:agent bushes:outdoors 
+train:train 
+brick:outdoors side:blocking a:tool 
+sign:tree-path to:tool 
+flooded:tree-path a:tool 
+sign:tree-path is:tool 
+street:blocking next:outdoors to:tool flooded:tree-path 
+signs:city large:place 
+sign:brancher freeway:road 
+traffic:city sign:brancher 
+parked:road near:branching one:city 
+signs:city on:place 
+train:train on:agent 
+train:train 
+train:train yard:outdoors 
+train:train by:outdoors 
+train:train the:place 
+character:agent the:place Train:train 
+train:train on:agent 
+locomotive:train 
+on:agent train:train 
+the:place locomotive:train on:agent 
+tram:train trees:rail 
+train:train traveling:rail 
+train:train on:vehicle tracks:rail 
+train:train tracks:rail 
+train:train is:person riding:riding tracks:rail 
+train:train 
+train:train 
+Train:train on:agent 
+train:train on:agent the:place 
+Train:train platform:railway-station in:agent 
+cow:cow field:field 
+cow:cow together:nuzzling on:agent grass:field 
+cow:cow on:agent 
+cow:cow 
+cow:cow on:agent the:place 
+lot:colliding 
+as:agent pickup:car truck:colliding 
+lot:colliding cars:car 
+lot:colliding cars:car in:agent the:place 
+two:item cars:car 
+cat:cat sleeping:sleeping in:agent chair:chair 
+cat:cat sleeps:sleeping in:agent 
+cat:cat asleep:sleeping in:agent chair:chair 
+cat:cat sleeping:sleeping chair:chair 
+cat:cat sleeping:sleeping in:agent 
+cat:cat standing:agentpart in:agent TV:television 
+cat:cat at:hand television:television 
+cat:cat at:hand tv:television 
+cat:cat at:hand television:television in:agent 
+cat:cat at:hand TV:television 
+elephants:elephant 
+elephants:elephant 
+elephants:elephant 
+elephants:elephant world:outdoors 
+elephants:elephant 
+picture:room of:item dog:dog 
+dog:dog bow:neck 
+dog:dog bow:neck 
+dog:dog bow:neck 
+puppy:dog tie:neck 
+day:lake 
+boat:boating 
+water:lake 
+lake:lake 
+boat:boating red:person 
+people:people 
+the:place ceiling:shopping of:people terminal:plaza 
+on:agent the:place ceiling:shopping 
+ceiling:shopping 
+shopping:shopping mall:plaza 
+adjusting:saluting her:woman 
+person:woman tie:saluting in:agent room:room 
+woman:woman tie:saluting 
+tie:saluting 
+the:place tie:saluting on:agent 
+man:man pants:standing 
+Man:man tie:standing 
+man:man tie:standing 
+short:standing man:man 
+man:man dressed:standing 
+elephant:elephant 
+elephant:elephant on:agent 
+elephant:elephant 
+on:agent elephant:elephant 
+elephant:elephant chain:outdoors 
+boats:boat are:people water:ocean 
+boats:boat are:people water:ocean 
+is:tool on:agent water:ocean boats:boat 
+skyline:floating waterway:boat 
+of:people water:ocean boats:boat to:tool 
+people:people carrying:carrying luggage:bag 
+Neither:carrying people:people 
+are:people on:agent the:place suitcases:bag 
+gathered:people luggage:bag the:place 
+the:place their:people bags:bag 
+holding:photographing umbrella:outside 
+THAT:place CONCERT:photographing 
+holding:photographing umbrella:outside in:agent 
+recording:photographing in:agent the:place rain:outside 
+umbrella:outside in:agent taking:photographing the:place 
+Luggage:molding on:agent 
+Luggage:molding 
+revolving:molding on:agent 
+bagage:molding 
+Luggage:molding on:agent 
+holding:grinning frisbee:swimming-pool on:agent 
+hold:grinning frisbee:swimming-pool 
+posing:grinning 
+together:people holding:grinning 
+pose:grinning frisbee:swimming-pool 
+pale:agent wall:room couch:sofa dog:dog 
+dog:dog sitting:sitting sofa:sofa 
+dog:dog sitting:sitting couch:sofa 
+dog:dog sits:sitting sofa:sofa 
+dog:dog sitting:sitting couch:sofa 
+group:people frisbee:tugging 
+Four:people playing:tugging in:agent 
+playing:tugging in:agent dry:outdoors 
+group:people playing:tugging 
+Four:people playing:tugging in:agent 
+Car:car dog:dog head:head on:agent 
+dog:dog 
+dog:dog on:agent car:car 
+dog:dog head:head 
+dog:dog head:head in:agent rear:car the:place 
+futon:bed in:agent student:sleeping 
+bed:bed 
+in:agent red:person pillows:bed 
+bedroom:bed in:agent various:person 
+with:person pillows:bed 
+man:man Frisbee:Frisbee water:beach 
+Man:man in:agent frisbee:Frisbee beach:beach 
+man:man flying:flinging disk:Frisbee 
+man:man in:agent the:beach Frisbee:Frisbee 
+person:man in:agent Frisbee:Frisbee beach:beach 
+zebras:zebra wild:stampeding 
+herd:stampeding zebra:zebra field:field 
+herd:stampeding zebra:zebra 
+Herd:stampeding zebras:zebra long:place grass:field 
+herd:stampeding zebra:zebra field:field 
+large:place riding:racing horse:horse 
+horse:horse large:place flag:racing field:playing-field 
+horse:horse flag:racing field:playing-field 
+riding:racing horse:horse stadium:playing-field 
+arena:horse 
+city:street with:person 
+group:leading on:agent the:place sidewalk:street 
+horse:horse with:person on:agent street:street 
+the:place street:street 
+horse:horse on:agent sidewalk:street 
+yellow:outdoors helmets:racing horses:horse 
+Clydesdale:horse 
+riding:racing horses:horse 
+horse:horse 
+riding:racing the:place horses:horse 
+man:man snowboard:snowboard snow:snow 
+snowboard:snowboard the:destination snow:snow 
+the:destination side:outside snowy:snow hill:snowboard 
+snowy:snow dressed:man 
+snowboard:snowboard in:destination setting:place 
+
+
+
+
+
+people:people jet-ski:white-water on:agent 
+life:rafting on:agent watercraft:white-water 
+water:white-water 
+people:people doo:white-water the:place 
+people:people riding:white-water 
+bananas:fruit market:seller 
+Bundles:shop bananas:fruit on:place farmers:seller 
+vendor:seller his:man bananas:fruit on:place 
+two:item bunches:seller bananas:fruit the:place 
+bananas:fruit on:place 
+cross-country:snow 
+the:place skies:skiing 
+in:agent skies:skiing the:place snow:snow 
+skis:skiing snow:snow 
+skier:skier as:agent the:place snow:snow 
+baseball:baseball swinging:hitting bat:bat 
+baseball:baseball bat:bat 
+baseball:baseball swinging:hitting bat:bat 
+baseball:baseball on:agent 
+baseball:baseball batter:bat swinging:hitting 
+held:person christmas:decoration tree:tree 
+hand:person next:item Christmas:decoration tree:tree 
+person:person in:agent tree:tree 
+person:person next:item tree:tree 
+held:person in:agent christmas:decoration tree:tree 
+baseball:baseball players:coaching in:agent wait:people 
+group:people wearing:man baseball:baseball uniforms:coaching on:agent 
+group:people baseball:baseball players:coaching in:agent 
+baseball:baseball team:coaching on:agent 
+on:agent baseball:baseball team:coaching the:place 
+competitive:ski-slope skier:skier 
+skier:skier in:agent 
+skier:skier skies:skiing on:agent 
+in:agent faster:skier 
+skiing:skiing 
+person:man skateboard:skateboard top:body of:item 
+man:man on:body skateboard:skateboard 
+skateboarder:skateboard on:body 
+skateboarder:skateboard dressed:man in:agent black:tilting 
+person:man skateboard:skateboard to:item 
+pile:carrot 
+vegetables:carrot on:agent 
+vegetables:carrot on:agent 
+Assorted:carrot on:agent 
+vegetables:carrot on:agent 
+man:man riding:vehicle skateboard:skate 
+skaters:skate 
+man:man riding:vehicle skateboard:skate 
+man:man riding:vehicle skateboard:skate 
+man:man riding:vehicle skateboard:skate in:agent 
+Carrots:carrot bowl:pot on:place 
+carrots:carrot inside:kitchen 
+carrots:carrot container:food 
+pot:pot carrots:carrot 
+carrots:carrot long:place stems:pot 
+jump:sliding skateboard:slide girl:child 
+aerial:land girl:child 
+a:surface air:sliding girl:child 
+kid:child 
+a:surface couple:child skateboarders:sliding skateboard:slide 
+tall:outside in:agent skateboarder:skateboard 
+outdoors:outside 
+man:man skateboard:skateboard structure:outside 
+person:man skate:skateboard 
+skateboard:skateboard statue:outside 
+table:dining-room of:congregating 
+table:dining-room people:people 
+table:dining-room of:congregating 
+table:dining-room 
+table:dining-room many:congregating 
+man:man holding:hand sandwich:sandwich table:table 
+a:tool man:man table:table eating:eating sandwich:sandwich 
+person:man holding:hand sandwich:sandwich sitting:container table:table 
+man:man eating:eating a:tool sandwich:sandwich 
+person:man holding:hand large:place sandwich:sandwich in:agent restaurant:food 
+Woman:woman in:agent bite:eating sandwich:sandwich 
+woman:woman bite:eating food:food 
+woman:woman bites:eating sandwich:sandwich 
+woman:woman eating:eating sandwich:sandwich left:tool 
+woman:woman red:outdoors eats:eating sandwich:sandwich 
+
+
+
+
+
+men:people restaurant:restaurant 
+people:people the:place table:dining soda:food 
+men:people table:dining drinks:restaurant 
+people:people table:dining doughnuts:food 
+people:people eating:dining food:food 
+box:box bottle:container 
+box:box eaten:rotting 
+box:box liquor:container on:agent 
+box:box eaten:rotting on:agent 
+close:rotting box:box 
+surfboards:canoe laying:body a:tool beach:beach 
+A:tool boards:canoe in:agent sand:sand 
+surfboards:canoe laying:body a:tool sandy:sand beach:beach 
+laying:body sandy:sand beach:beach a:tool day:floating 
+on:body beach:beach afternoon:tool 
+kneeling:man water:wading 
+man:man water:wading 
+person:man on:agent surfboard:wading 
+holding:man water:wading 
+water:wading 
+cream:rotting on:agent plate:plate 
+some:hamburger frosting:rotting strawberries:plate in:agent the:place 
+sandwich:hamburger cookie:rotting in:agent the:place 
+patty:plate on:agent the:place 
+plate:plate on:agent 
+A:tool birthday:igniting topped:table 
+candles:candle been:person 
+seems:tool be:person candles:candle 
+a:tool with:person candles:candle table:table 
+A:tool candles:candle 
+surfer:surfer a:tool surfboard:surfboard wave:surfing 
+surfboard:surfboard 
+A:tool Surfer:surfer surfboard:surfboard 
+surfing:surfing surf:surfboard ocean:ocean 
+a:tool surfboard:surfboard ocean:ocean wave:surfing 
+bed:bed 
+bed:bed it:person 
+bed:bed colorful:person 
+bed:bed yellow:person 
+bed:bed 
+people:people a:tool wave:surfing 
+men:people a:tool waves:surfing 
+A:tool people:people ocean:ocean 
+people:people splash:water with:tool wakeboards:ocean 
+A:tool people:people ocean:ocean 
+in:agent bedroom:bedroom 
+in:agent hotel:bedroom 
+bed:bedroom lamp:lamp in:agent 
+neatly:bedroom 
+well-made:bedroom in:agent night:glowing 
+beach:beach surfboard:surfer 
+swimsuit:beach surfboard:surfer 
+surfer:surfer carrying:wading 
+wavy:surfer shore:beach 
+walking:wading surfboard:surfer beach:beach 
+woman:woman taking:photographing lunch:food 
+girl:woman taking:photographing pizza:food on:agent 
+Woman:woman photographing:camera a:tool meal:food on:agent 
+Person:photographing eating:food that:item on:agent a:tool 
+girl:woman a:tool photographing:camera food:food 
+Men:people video:studio on:agent 
+people:people games:studio 
+on:agent big:place screen:television 
+guys:studio on:agent 
+people:people television:television in:agent 
+baby:baby in:agent 
+child:baby in:agent 
+baby:baby with:source tattoos:woman on:agent 
+baby:baby brushing:spoon 
+baby:baby brushing:spoon with:source 
+girls:wallpaper next:source on:agent the:place 
+girls:wallpaper next:source 
+of:source girls:wallpaper front:wall a:tool tv:room 
+girls:wallpaper sit:source holding:hand television:room 
+There:source little:hand girls:wallpaper sitting:room on:agent a:tool 
+Two:agent men:man living:living-room 
+Two:agent men:man the:place living:living-room 
+Two:agent men:man living:living-room 
+men:man in:agent living:living-room 
+Two:agent men:man a:tool living:living-room 
+furniture:painting 
+room:painting shelves:displaying 
+a:tool floral:painting 
+a:tool bedroom:painting 
+a:tool room:painting 
+flying:sky kite:parachute beach:desert 
+people:people flying:sky kite:parachute on:agent cliff:desert 
+People:people on:agent sand:desert kite:parachute sky:sky 
+people:people on:agent beach:desert flying:sky kite:parachute 
+people:people on:agent beach:desert sky:sky 
+sailing:sailboat water:body-of-water 
+sailboat:sailboat 
+sailboat:sailboat 
+sail:sailboat boat:boating 
+sail:sailboat 
+baseball:baseball swing:bat 
+batter:bat 
+baseball:baseball on:agent 
+Batter:bat in:agent baseball:baseball 
+in:agent baseball:baseball 
+baseball:baseball bat:bat across:place 
+baseball:baseball bat:bat 
+bat:bat 
+batter:bat hit:hitting 
+a:tool baseball:baseball on:agent diamond:ball-field 
+batter:bat baseball:baseball 
+Batter:bat baseball:baseball 
+baseball:baseball bat:bat 
+in:agent a:tool bat:bat 
+home:bat base:ballplayer hit:hitting 
+a:tool woman:woman pizza:pizza in:agent 
+woman:woman pizza:pizza 
+woman:woman pizza:pizza in:agent 
+woman:woman onto:hand piece:eating pizza:pizza 
+woman:woman a:tool piece:eating pizza:pizza 
+tennis:tennis-court in:agent 
+women:woman a:tool on:agent tennis:tennis-court 
+woman:woman tennis:tennis-court on:agent the:place 
+woman:woman tennis:tennis-court 
+tennis:tennis-court her:woman fist:skill 
+boy:male-child tennis:racket 
+boy:male-child tennis:racket 
+boy:male-child on:agent the:place porch:backyard a:tool tennis:racket 
+boy:male-child tennis:racket 
+tennis:racket in:agent 
+woman:woman in:agent kitchen:kitchen a:tool large:place measuring:dusting cup:table 
+woman:woman a:tool kitchen:kitchen measuring:dusting cup:table 
+woman:woman is:tool in:agent the:place kitchen:kitchen 
+woman:woman in:agent a:tool kitchen:kitchen food:table 
+woman:woman in:agent a:tool kitchen:kitchen food:table 
+refrigerator:cabinet sitting:waiting top:cat 
+mat:cat next:waiting refrigerator:cabinet 
+cat:cat sits:waiting the:place refrigerator:cabinet 
+refrigerator:cabinet 
+cat:cat sitting:waiting refrigerator:cabinet 
+cat:cat two:item the:place screen:room 
+cat:cat lap:sofa 
+cat:cat computer:room 
+kitten:cat lying:goal the:place 
+cat:cat lays:goal computer:room 's:item 
+A:tool cameras:camera 
+cameras:camera on:agent a:tool bed:bedroom 
+cameras:camera 
+to:tool cameras:camera 
+to:tool cameras:camera 
+tree:outdoors balloons:rubbish it:ashcan the:place 
+telephone:ashcan decorated:overflowing 
+of:overflowing stuffed:rubbish on:agent the:place 
+tree:outdoors in:agent and:overflowing balloons:rubbish 
+tree:outdoors filled:overflowing balloons:rubbish 
+ELECTRONICS:metro 
+people:people subway:metro 
+people:people public:metro transit:commuting 
+people:people subway:metro 
+friends:people riding:vehicle subway:metro 
+man:path hillside:hiking 
+packs:hiking 
+man:path holding:hiking 
+men:people in:agent the:path woods:hiking 
+person:path backpack:hiking 
+cellular:dialing 
+Someone:person phone:telephone text:dialing 
+someone:person iphone:telephone 
+text:dialing on:agent phone:telephone 
+phone:telephone in:agent 
+man:man on:agent cellphone:telephone other:item 
+men:man phones:dialing 
+man:man in:agent green:item cellphones:dialing 
+men:man stand:item in:agent phones:dialing 
+of:item man:man phone:telephone 
+clocks:clock 
+a:tool clock:clock room:room on:place 
+clocks:clock on:place 
+clocks:clock 
+clocks:clock on:place 
+hand:person scissors:wire 
+person:person scissors:wire 
+person:person scissors:wire 
+hand:person scissors:wire 
+person:person scissors:wire 
+A:tool pieces:knife large:item piece:sharpening 
+scissors:sharpening on:agent 
+scissors:sharpening on:agent a:tool 
+table:knife in:agent colors:item 
+displaying:room scissors:sharpening 
+pieces:inside scissors:paper 
+man:man paper:paper 
+in:agent shirt:man scissors:paper a:tool 
+person:man paper:paper a:tool 
+person:man a:tool paper:paper 
+
+
+
+
+
+people:people bike:motorcycle road:street 
+of:people motor:motorcycle 
+people:people street:street 
+car:street people:people scooter:motorcycle 
+people:people ride:riding moped:motorcycle street:street 
+Black:outdoors dog:woman-dog 
+grass:outdoors dog:woman-dog lap:restrained 
+dog:woman-dog 
+dog:woman-dog lap:restrained 
+dog:woman-dog lap:restrained 
+stove:stove window:glowing 
+stove:stove in:agent kitchen:kitchen 
+kitchen:kitchen stove:stove 
+kitchen:kitchen stove:stove 
+kitchen:kitchen the:place stove:stove window:glowing 
+woman:woman in:agent dining:kitchen 
+shawl:woman man:man kitchen:kitchen 
+person:man at:boringthing in:agent the:place kitchen:kitchen 
+woman:woman man:man cooking:kitchen 
+Man:man woman:woman in:agent kitchen:kitchen the:place 
+boat:sewer alongside:outdoors of:overflowing 
+barge:rubbish in:agent filled:overflowing river:sewer 
+bunch:overflowing the:place river:sewer 
+red:rubbish next:source 
+barge:rubbish next:source area:outdoors 
+toilet:toilet bathroom:bathroom 
+bathroom:bathroom toilet:toilet 
+bathroom:bathroom toilet:toilet 
+toilet:toilet 
+toilet:toilet sink:bathroom 
+selfie:room teeth:mime in:agent the:place 
+looking:room holding:miming 
+man:miming selfie:room in:agent the:place 
+man:miming glasses:room in:agent the:place his:mime 
+looking:room in:agent the:place teeth:mime 
+Bathroom:bathing 
+tub:bathtub 
+tub:bathtub 
+bathroom:bathtub 
+tub:bathtub 
+vanity:bathroom hairdryer:bathing 
+bath:bathing sink:bathroom 
+bathroom:bathroom 
+vanity:bathroom 
+bathroom:bathroom 
+person:man motor:motorcycle street:street 
+man:man city:street motorcycle:motorcycle 
+person:man motorcycle:motorcycle large:place street:street 
+man:man motorcycle:motorcycle car:street 
+through:vehicle intersection:street 
+bathroom:bathroom odd:overflowing toilet:toilet 
+bathroom:bathroom toilet:toilet 
+toilet:toilet tiled:bathroom 
+bathroom:bathroom 
+bathroom:bathroom toilet:toilet 
+women:woman large:place pair:heaving 
+woman:woman giant:heaving 
+woman:woman giant:heaving 
+lady:woman large:place pair:heaving 
+woman:woman giant:heaving 
+motorcycle:motorcycle truck:road 
+motorcycle:motorcycle being:person car:road 
+motorcycle:motorcycle tied:person road:road 
+motorcycle:motorcycle 
+motorcycle:motorcycle vehicle:road 
+toilet:toilet window:glowing in:agent bathroom:bathroom 
+framed:glowing toilet:toilet 
+restroom:toilet the:place 
+bathroom:bathroom window:glowing 
+bathroom:bathroom window:glowing the:place toilet:toilet 
+toilet:bathroom in:agent the:place trash:garbage 
+dirty:garbage in:agent the:place bathroom:bathroom 
+toilet:bathroom on:agent the:place trash:garbage 
+toilet:bathroom on:agent the:place trash:garbage 
+toilet:bathroom trash:garbage 
+motorcycle:motorcycle 
+riding:riding bike:motorcycle 
+open:person motocross:motorcycle 
+person:person riding:riding bike:motorcycle 
+page:person motor:motorcycle 
+motorcycle:motorcycle road:road 
+motorcycle:motorcycle in:agent 
+motorcycle:motorcycle road:road 
+motorcycle:motorcycle road:road 
+motorcycle:motorcycle bottom:person 
+motorcycles:motorcycle parked:crashing by:outdoors 
+parked:crashing motorcycle:motorcycle some:outdoors 
+motorcycles:motorcycle parked:crashing on:agent the:place 
+bikers:motorcycle on:agent near:crashing 
+motorcycles:motorcycle parked:crashing on:agent 
+motorcycles:motorcycle parked:towing 
+motorcycles:motorcycle parked:towing on:agent the:destination a:tool 
+Few:parking-lot motorcycles:motorcycle parked:towing on:agent 
+parked:towing motorcycles:motorcycle on:agent the:destination rod:tool 
+up:tool motorcycles:motorcycle on:agent 
+motorcycle:motorcycle 
+motorcycle:motorcycle compartment:person in:agent lot:road 
+motorcycle:motorcycle road:road 
+motorcycle:motorcycle in:agent 
+motorcycle:motorcycle in:agent setting:place 
+plane:airplane tarmac:taxiing 
+airplane:airplane 
+World:airplane taxiing:taxiing runway:runway 
+plane:airplane 
+airplane:airplane 
+plane:airplane runway:runway airport:airport 
+plane:airplane runway:runway 
+airplane:airplane runway:runway airport:airport 
+jet:airplane runway:runway 
+plane:airplane runway:runway 
+runway:runway old-fashioned:place planes:airplane 
+propeller:airplane runway:runway 
+runway:runway aircraft:airplane 
+airplanes:airplane airport:airport runway:runway 
+airplane:airplane 
+runway:runway airport:airport 
+runway:runway 
+airplane:runway 
+jet:jet runway:runway airport:airport 
+commercial:jet runway:runway airport:airport 
+jetliner:jet sky:sky 
+sky:sky 
+ANA:jet flies:soaring sky:sky 
+ANA:jet on:agent flying:soaring 
+air:sky 
+
+
+
+
+
+park:park leaves:leaf 
+bench:park sits:container on:agent leaves:leaf 
+park:park leaves:leaf 
+park:park leaves:leaf on:agent the:place ground:outdoors 
+bench:park leaves:leaf 
+street:street bus:turneditem in:agent the:place 
+decker:turneditem street:street 
+cars:driver on:agent street:street 
+deckered:turneditem on:agent street:street 
+STREET:street BUS:turneditem CARS:driver 
+parked:car 
+vintage:car buses:turneditem 
+buses:turneditem in:agent parking:car 
+buses:turneditem in:agent parking:car 
+trio:agent transit:turning street:street 
+bus:bus street:street 
+bus:bus the:place street:street 
+bus:bus street:street 
+city:street bus:bus 
+bus:bus on:place street:street 
+river:pier tree:tree 
+bench:tree empty:brancher 
+body:pier park:tree 
+bench:tree bridge:pier 
+bench:tree body:pier 
+bench:bench in:agent the:place 
+bench:bench mountains:mountain in:agent the:place 
+bench:bench in:agent mountainous:mountain 
+bench:bench mountain:mountain 
+bench:bench hills:mountain 
+rusted:outdoors in:agent the:place middle:glowing 
+on:agent the:place rusting:outdoors 
+on:agent city:light-bulb 
+on:agent this:glowing street:light-bulb black:outdoors 
+on:agent brick:outdoors 
+articulated:bus in:agent Europe:street 
+man:man in:agent of:item bus:bus 
+man:man in:agent of:item bus:bus 
+man:man extended:place bus:bus 
+bus:bus next:item man:man 
+street:street bus:bus 
+bus:bus 
+bus:bus the:place street:street 
+bus:bus city:street 
+bus:bus the:place 
+mountain:mountain goats:goat 
+mountain:mountain goats:goat on:agent 
+goats:goat on:agent mountain:mountain 
+Rams:goat mountain:mountain 
+rams:goat on:agent mountains:mountain 
+bus:bus on:place street:street 
+city:street bus:bus the:place 
+bus:bus the:place traffic:street 
+the:place curb:bus 
+bus:bus street:street 
+flamingos:flamingo other:item 
+flamingos:flamingo t:agent 
+of:item flamingos:flamingo 
+of:item flamingos:flamingo 
+of:item flamingos:flamingo 
+on:agent window:light-bulb 
+on:agent the:place window:light-bulb 
+on:agent window:light-bulb 
+next:inside light:light-bulb 
+window:light-bulb in:agent 
+detour:brancher under:outdoors 
+sign:brancher on:place 
+an:outdoors detour:brancher 
+sign:brancher 
+detour:brancher on:place 
+train:train yard:outdoors 
+train:train 
+on:agent train:train 
+locomotive:train on:agent the:place 
+train:train 
+
+
+
+
+
+meter:land on:agent 
+on:agent in:target front:urinating 
+standing:urinating side:land 
+close:outdoors meter:land 
+Two:urinating meters:land on:agent 
+cat:cat head:neck 
+cat:cat head:neck and:room 
+cat:cat camera:neck 
+cat:cat 
+cat:cat head:neck through:agent 
+Two:agent kittens:cat pot:bowl 
+Two:agent kittens:cat pot:bowl 
+Two:agent cats:cat bowl:bowl 
+Two:agent kittens:cat curled:lapping bowl:bowl 
+Two:agent kittens:cat curled:lapping pot:bowl 
+on:agent motor:motorcycle cow:cow 
+motorcycle:motorcycle dirt:chasing road:road 
+scooter:motorcycle dirt:chasing road:road 
+on:agent moped:motorcycle animals:cow walking:chasing road:road 
+on:agent motorcycle:motorcycle dirt:chasing road:road 
+cat:cat of:item dresser:chair 
+cat:cat the:place of:item dresser:chair 
+cat:cat chair:chair 
+cat:cat chair:chair 
+cat:cat of:item chair:chair 
+paint:rotting parked:car if:outdoors 
+shown:rotting the:place dirt:outdoors lot:car 
+rusty:outdoors parked:car in:agent 
+vintage:car paint:rotting in:agent 
+truck:car yard:outdoors 
+car:car on:agent freeway:road 
+car:car 
+car:car 
+on:agent road:road car:car 
+on:agent 
+man:man tie:saluting 
+man:man wearing:saluting on:agent 
+man:man in:agent finger:saluting 
+man:man in:agent the:place 
+man:man tie:saluting on:agent 
+man:man eyeglasses:inside tie:laughing 
+smiling:laughing man:man in:agent 
+man:man tie:laughing in:agent 
+man:man tie:laughing 
+man:man 
+person:man elephant:elephant is:tool spraying:hose 
+man:man on:agent the:place elephant:elephant which:tool spraying:hose 
+a:tool person:man sitting:coagent on:agent elephant:elephant 
+man:man elephant:elephant is:tool spraying:hose 
+elephant:elephant a:tool person:man on:agent 
+a:tool laptop:laptop 
+beside:item a:tool laptop:laptop floor:room 
+a:tool black:item laptop:laptop legs:person 
+laptop:laptop that:person a:tool 
+laptop:laptop a:tool case:displaying 
+child:family umbrellas:tent 
+umbrella:tent child:family 
+umbrellas:tent on:agent 
+umbrellas:tent 
+umbrella:tent head:outdoors child:family 
+
+
+
+
+
+bear:dog sits:resting ground:land 
+laying:resting ground:land 
+bear:dog gently:place sleeps:resting dirt:land 
+brown:dog sleepy:resting dirt:land 
+brown:dog laying:resting stone:outdoors 
+bear:bear sitting:sitting rusty:land 
+bear:bear sits:sitting chain:land 
+bear:bear fence:land 
+bear:bear sitting:sitting near:outdoors fence:land 
+bear:bear sits:sitting chain:land 
+born:agent bears:bear forest:prowling trees:prey 
+bears:bear habitat:prowling 
+bears:bear woods:prowling 
+bears:bear 
+bears:bear woods:prowling 
+frisbee:Frisbee 
+frisbee:Frisbee 
+frisbee:Frisbee 
+wearing:man Frisbee:Frisbee 
+frisbee:Frisbee 
+zebra:zebra each:nuzzling 
+zebras:zebra in:agent different:item 
+zebra:zebra each:nuzzling in:agent 
+zebras:zebra in:agent 
+zebras:zebra on:agent 
+large:place zebra:zebra standing:standing grass:field 
+zebra:zebra field:field 
+zebra:zebra grass:field 
+zebra:zebra the:place grass:field 
+Zebra:zebra field:field agitated:standing 
+man:man a:tool horse:horse buggy:carting beach:beach 
+horse:horse man:man carriage:carting beach:beach 
+man:man beach:beach in:agent cart:cart horse:horse 
+horse:horse pulling:carting beach:beach 
+man:man beach:beach a:tool horse:horse 
+people:people horses:horse down:vehicle trail:mountain 
+people:people riding:riding horses:horse in:agent 
+people:people riding:riding horses:horse 
+Group:people horseback:horse snow:mountain 
+people:people horseback:horse mountains:mountain 
+horse:horse 
+horse:horse is:destination vendor:food 
+horse:horse hauling:loading the:destination market:food while:man child:hand 
+outdoor:outdoors horse:horse 
+kid:hand stands:outdoors in:destination of:food horse:horse 
+rides:riding horse:horse 
+woman:woman riding:riding horse:horse 
+woman:woman equestrian:horse rides:riding field:field 
+riding:riding horse:horse field:field 
+lady:woman riding:riding horse:horse 
+apples:apple in:agent 
+apples:apple 
+apples:apple in:agent 
+Apples:apple in:agent 
+apples:apple 
+banana:banana tree:tree in:agent 
+tree:tree the:place bananas:banana on:agent 
+vine:tree bananas:banana 
+fruit:banana growing:tree in:agent the:place 
+banana:banana on:agent tree:tree 
+plate:plate food:food vegetables:rotting 
+vegetables:rotting meat:plate on:agent 
+plate:plate vegetables:rotting 
+on:agent table:food 
+plate:plate food:food carrots:rotting 
+skiing:skiing in:agent the:place 
+skier:skier 
+the:place on:agent skis:skiing 
+ski:skiing jumper:skier 
+on:agent snow:snow skis:skiing 
+man:man riding:vehicle rail:stairs skateboard:skateboard 
+man:man skating:skating stairs:stairs 
+man:man skating:skating stair:stairs in:agent 
+skating:skating stairs:stairs 
+man:man riding:vehicle skateboard:skateboard stairs:stairs 
+man:man riding:vehicle skateboard:skateboard 
+skateboarder:skateboard riding:vehicle 
+MAN:man SKATEBOARD:skating 
+man:man skateboard:skateboard 
+man:man skateboarding:skateboard 
+people:people river:pier 
+people:people benches:pier 
+people:people benches:pier 
+people:people in:agent front:waiting water:pier 
+People:people sidewalk:waiting river:pier 
+bowl:bowl 
+rice:bowl broccoli:broccoli table:table 
+nice:water looking:item broccoli:broccoli rice:bowl 
+broccolli:broccoli 
+Broccoli:broccoli in:water large:item bowl:bowl table:table 
+person:man riding:vehicle skate:skateboard street:road 
+man:man lane:road ride:vehicle skateboard:skateboard 
+skate:skateboard 
+man:man skateboard:skateboard street:road 
+man:man skateboard:skateboard road:road 
+skateboarder:ramp 
+skateboarding:skateboard ramp:ramp 
+lip:ramp 
+ride:vehicle ramp:ramp 
+skateboard:skateboard ramp:ramp 
+ramp:ramp skateboard:skateboard 
+wearing:woman helmet:vehicle skateboard:skateboard ramp:ramp 
+rides:vehicle skateboard:skateboard 
+rides:vehicle skateboard:skateboard ramp:ramp 
+ride:vehicle skateboard:skateboard 
+group:people in:agent the:place snow:snow 
+on:agent skis:skiing the:place snow:snow 
+ski:skiing 
+snow:snow skis:skiing 
+they:people in:agent the:place snow:snow 
+in:agent wrapper:loaf-of-bread 
+fast:agent wrapper:loaf-of-bread 
+sandwich:loaf-of-bread table:table 
+table:table sandwich:loaf-of-bread 
+wrapper:loaf-of-bread table:table 
+man:man riding:vehicle skateboard:skateboard street:road 
+man:man riding:vehicle skateboard:skateboard road:road 
+man:man skateboards:skateboard down:road 
+MAN:man SKATE:skateboard CROSSING:road 
+man:man riding:vehicle skateboard:skateboard down:road 
+Pizza:pizza on:agent restaurant:restaurant 
+pizza:pizza on:agent restaurant:restaurant 
+Pizza:pizza on:agent restaurant:restaurant 
+pizza:pizza restaurant:restaurant people:people 
+pizza:pizza on:agent restaurant:restaurant 
+sandwich:bread meat:plate 
+sandwich:bread 
+sandwich:bread 
+beef:plate sandwich:bread 
+meat:plate sandwich:bread 
+donuts:cupcake 
+doughnuts:cupcake 
+plate:table donuts:cupcake 
+large:place plate:table doughnuts:cupcake 
+the:place donuts:cupcake plate:table 
+laptop:laptop 
+laptop:laptop 
+laptop:laptop 
+laptop:laptop the:place 
+laptop:laptop 
+office:room was:tool 
+a:tool laptop:laptop office:room 
+office:room laptop:laptop 
+a:tool desk:laptop dresser:room 
+a:tool laptop:laptop 
+book:reading on:agent 
+book:reading on:agent 
+book:reading on:agent colorful:person 
+book:reading on:agent 
+paperback:reading left:person on:agent 
+bed:bed it:person 
+bed:bed it:person 
+messed:sleeping the:place bed:bed 
+bed:bed 
+bed:bed 
+waves:surfer ocean:ocean to:tool 
+surfboards:surfboard up:tool waves:surfer 
+A:tool ocean:ocean waves:surfer 
+wave:surfing 
+ready:tool waves:surfer 
+bedroom:bed with:person in:agent the:place 
+bed:bed early:place 
+that:person on:sleeping the:place 
+bedroom:bed has:person large:place 
+bed:bed large:place 
+on:agent pizza:pizza kitchen:kitchen 
+in:agent kitchen:kitchen pizza:pizza 
+person:woman pizza:pizza on:agent the:place kitchen:kitchen 
+in:agent the:place kitchen:kitchen pizza:pizza 
+Person:woman pizza:pizza on:agent 
+pizza:pizza bacon:plate in:agent 
+pizza:pizza in:agent topped:plate 
+pizza:pizza in:agent plate:plate 
+ham:plate pizza:pizza in:agent 
+pizza:pizza surface:spoiling 
+little:baby laying:gnawing on:agent of:item bed:bed 
+in:agent bed:bed stuffed:plaything 
+in:agent the:place bed:bed 
+child:baby the:place laying:gnawing on:agent bed:bed 
+little:baby in:agent bed:bed stuffed:plaything 
+laptop:laptop 
+unit:room electronics:laptop occupied:place 
+computer:laptop a:tool 
+tv:room laptop:laptop a:tool 
+a:tool computers:laptop 
+man:man on:agent tennis:tennis-court 
+man:man tennis:tennis-court 
+tennis:tennis-court his:man 
+tennis:tennis-court on:agent 
+Tennis:tennis-court enthusiast:man serve:tennis-racket 
+cook:oven pizza:pizza kitchen:kitchen 
+Man:man pizza:pizza 
+man:man placing:oven pizza:pizza through:agent 
+man:man serving:foodcontainer pizza:pizza customer:cookie-sheet 
+man:man serving:foodcontainer food:food customer:cookie-sheet 
+pieces:spoiling pizza:pizza plate:table 
+Two:agent pizza:pizza 
+Pizza:pizza fork:spoiling cup:table 
+pizza:pizza table:table 
+pizza:pizza table:table 
+controller:block 
+remote:block 
+instructions:block 
+Mario:child instructions:block 
+instructions:block 
+bedroom:glowing surrounded:place 
+furniture:glowing in:agent 
+table:inside on:agent it:glowing 
+room:glowing furnitures:light-bulb 
+furniture:glowing in:agent the:place 
+wii:living-room 
+standing:miming in:agent living:living-room 
+video:miming games:living-room on:agent 
+video:miming 
+video:miming the:place 
+woman:woman controller:bothering 
+man:man woman:woman in:agent 
+man:man woman:woman to:victim 
+man:man woman:woman file:place on:agent 
+women:woman man:man 
+Man:man blue:destination Wii:installing 
+man:man a:tool remote:installing at:hand 
+man:man is:destination Wii:installing on:agent small:floor 
+man:man the:destination Wii:installing 
+man:man blue:destination Wii:installing 
+filled:kitchen hardwood:column 
+house:brancher clean:kitchen 
+kitchen:kitchen living:column 
+kitchen:kitchen hardwood:column 
+living:column modern:kitchen 
+A:tool waves:surfer ocean:ocean 
+surfboard:surfboard 
+person:surfer parasailing:ocean a:tool white:water 
+surfer:surfer 
+ocean:ocean a:tool wet:surfboard 
+small:bird girl:woman kite:releasing the:place 
+young:woman fly:releasing park:park 
+kites:releasing park:park 
+park:park kite:releasing 
+young:woman kite:releasing 
+boat:boat water:river to:tool 
+is:tool river:river 
+was:tool river:river 
+as:tool viewed:place water:river 
+boat:boat water:river 
+Two:agent pizza:pizza 
+pizza:pizza sprinkled:rotting 
+pizza:pizza shaker:table pepper:rotting 
+pizza:pizza tray:table 
+pizza:pizza plate:plate 
+boy:male-child in:agent eating:theme cookie:container 
+young:male-child up:mouth like:container 
+child:male-child food:container 
+kid:male-child in:agent eating:theme 
+boy:male-child black-and-white:place eats:mouth 
+woman:woman bounces:tennis-ball on:agent 
+woman:woman hitting:tennis-ball 
+woman:woman bouncing:tennis-ball 
+the:place green:outdoors bounces:tennis-ball on:agent her:woman 
+person:woman racket:tennis-ball 
+children:female-child the:place kitchen:kitchen meal:serving 
+in:agent the:place kitchen:kitchen served:served food:serving mom:female 
+girl:female-child pizza:pizza 
+pizza:pizza at:served the:place kitchen:kitchen 
+of:item food:serving in:agent kitchen:kitchen 
+computer:filming pictures:camera giraffes:giraffe the:place homescreen:performer 
+IS:camera A:tool ELECTRONIC:living-room COLLECTION:performer 
+a:tool camera:camera 
+computer:filming sitting:performer a:tool 
+camera:camera flash:filming 
+his:man phone:telephone 
+of:item men:man in:agent 
+man:man in:agent phone:telephone 
+man:man in:agent mobile:telephone 
+some:item male:man in:agent cellphone:telephone 
+ritz:pumpkin 
+attached:pumpkin 
+yellow:pumpkin 
+attached:pumpkin it:spoiling 
+attached:pumpkin 
