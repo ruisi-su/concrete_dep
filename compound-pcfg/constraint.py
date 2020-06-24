@@ -63,10 +63,10 @@ def invalid_phrases_type2(frame, predicate, phrase, start, end, invalids, sent, 
     return invalids
 
 # generate all possible phrases from left to right, not including the entire sentence
-def gen_phrases(sent, frame, alignment, constraint_type):
+def gen_phrases(sent, frame, alignment, constraint_type, threshold):
     alignment = alignment
     # parse alignment
-    alignment = get_align(alignment.lower())
+    alignment = get_align(alignment.lower(), threshold)
     sent = sent.split(' ')
     predicate = frame[0].split('_')[0]
     # print(alignment)
@@ -86,7 +86,6 @@ def gen_phrases(sent, frame, alignment, constraint_type):
     pointer = 0
     # end = len(sent)
     invalids = set()
-
     while pointer < len(sent):
         # loop for current pointer
         if pointer == 0:
@@ -113,12 +112,21 @@ def gen_phrases(sent, frame, alignment, constraint_type):
             elif constraint_type == 3:
                 invalids = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments).union(invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments))
         pointer += 1
-    return list(invalids)
+    # get the index of pred and arg
+    if pred_cap in sent:
+        pred_idx = sent.index(pred_cap)
+    else:
+        pred_idx = -1
+    arg_idcs = []
+    for argument in arguments:
+        if argument in sent:
+            arg_idcs.append(sent.index(argument))
+    return list(invalids), pred_idx, arg_idcs
 
-def get_align(alignment):
+def get_align(alignment, threshold):
     # key is frame, value is cap
     aligns = {}
-
+    # print(threshold)
     alignment = alignment.strip().split(' ')
     if len(alignment) == 0 or alignment[0] == '':
         return aligns
@@ -128,9 +136,13 @@ def get_align(alignment):
         if len(als) > 3:
             cap = als[0] + ':' + als[1]
             frame = als[2]
+            score = als[3]
             print('colon is detected, cap is ' + cap + ' frame is ' + frame)
         else:
-            cap, frame, _ = als
+            cap, frame, score = als
+        # if below threshold, continue
+        if float(score) < threshold:
+            continue
         frame = frame.split('_')
         # remove indicators from the alignment by type
         # single word alignment
@@ -147,12 +159,11 @@ def get_align(alignment):
     return aligns
 
 # ((two horses) (grazing (together (in (a field)))))
-#aligns = 'horses:agent_horse grazing:item_grass field:place_field'
-#frame = 'foraging_item_grass	foraging_place_field	foraging_agent_horse'
-#sent = 'two horses grazing together in a field'
-#invals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1)
-#invals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2)
-#invals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3)
-#print(invals)
-#print(invals_2)
-#print(set(invals).union(set(invals_2)) == set(invals_3))
+# aligns = 'horses:agent_horse:0.8 grazing:item_grass:0.1 field:place_field:0.79'
+# frame = 'foraging_item_grass	foraging_place_field	foraging_agent_horse'
+# sent = 'two horses grazing together in a field'
+# invals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1)
+# invals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2)
+# invals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3)
+# print(invals)
+# print(invals_2)

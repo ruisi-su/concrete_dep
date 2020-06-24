@@ -389,6 +389,8 @@ def eval(data, model):
     for i in range(len(data)):
       gold_actions = []
       gold_spans = []
+      pred = -1
+      arguments = []
       # gold_binary_trees = []
       if args.multimodal==1:
         invalid_spans = []
@@ -397,21 +399,19 @@ def eval(data, model):
 
       if (not args.evaluate_dep):
         sents, length, batch_size, other_data = data[i]
-        for j in range(batch_size):
-            gold_actions.append(other_data[j][4])
-            gold_spans.append(other_data[j][6])
-            # gold_binary_trees.append(other_data[j][7])
-            if args.multimodal==1:
-                invalid_spans.append(other_data[j][1])
+        heads = None
       else:
           sents, length, batch_size, other_data, _ = data[i]
           heads = []
-          for j in range(batch_size):
-              gold_actions.append(other_data[j][4])
-              gold_spans.append(other_data[j][6])
-              # gold_binary_trees.append(other_data[j][7])
-              if args.multimodal==1:
-                  invalid_spans.append(other_data[j][1])
+      for j in range(batch_size):
+          gold_actions.append(other_data[j][4])
+          gold_spans.append(other_data[j][6])
+          # gold_binary_trees.append(other_data[j][7])
+          if args.multimodal==1:
+              # TODO make use of pred and args in inside later
+              (invalid_idcs, pred_idx, arg_idcs) = other_data[j][1]
+              invalid_spans.append(invalid_idcs)
+          if heads != None:
               heads.append(other_data[j][8])
       # else:
         # sents, length, batch_size, _, _, gold_spans, gold_binary_trees, other_data, heads = data[i]

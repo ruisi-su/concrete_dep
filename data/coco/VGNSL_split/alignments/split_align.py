@@ -1,5 +1,5 @@
-type = 'split_all'
-eqn_type = 'dice'
+type = 'split_verb'
+eqn_type = 'pmi'
 file_name = 'traindevtest.cap-frame.{}.{}_output'.format(type, eqn_type)
 
 file = open(file_name, 'r')
