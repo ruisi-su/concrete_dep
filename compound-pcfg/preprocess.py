@@ -413,19 +413,19 @@ def get_data(args):
                          args.batchsize, test_seqlength, args.minseqlength,
                          args.outputfile + "test.pkl", num_sents_test,
                          max_sent_l, args.shuffle, args.include_boundary, 0,
-                         args.inputdir + 'test_frames.txt', args.inputdir + 'alignments/test.{}.align'.format(args.align_type), args.constraint_type,
+                         args.inputdir + 'test_frames.txt', args.inputdir + 'alignments/test.{}.{}.align'.format(args.align_type,args.eqn_type), args.constraint_type,
                          conllfile="data/dep/test.conllx" if args.dep else "", test=True)
     max_sent_l = convert(args.inputdir + 'dev_trees.txt', args.lowercase, args.replace_num,
                          args.batchsize, valid_seqlength, args.minseqlength,
                          args.outputfile + "val.pkl", num_sents_valid,
                          max_sent_l, args.shuffle, args.include_boundary, 0,
-                        args.inputdir + 'dev_frames.txt', args.inputdir + 'alignments/dev.{}.align'.format(args.align_type), args.constraint_type,
+                        args.inputdir + 'dev_frames.txt', args.inputdir + 'alignments/dev.{}.{}.align'.format(args.align_type,args.eqn_type), args.constraint_type,
                          conllfile="data/dep/dev.conllx" if args.dep else "")
     max_sent_l = convert(args.inputdir + 'train_trees.txt', args.lowercase, args.replace_num,
                          args.batchsize, args.seqlength,  args.minseqlength,
                          args.outputfile + "train.pkl", num_sents_train,
                          max_sent_l, args.shuffle, args.include_boundary, 1,
-                         args.inputdir + 'train_frames.txt', args.inputdir + 'alignments/train.{}.align'.format(args.align_type), args.constraint_type,
+                         args.inputdir + 'train_frames.txt', args.inputdir + 'alignments/train.{}.{}.align'.format(args.align_type, args.eqn_type), args.constraint_type,
                          conllfile="" if args.dep else "")
     print("Max sent length (before dropping): {}".format(max_sent_l))
 
@@ -479,7 +479,7 @@ def main(arguments):
     parser.add_argument('--inputdir', help='directory for trees, alignments, and frames', type = str, default='../data/coco/VGNSL_split/')
     parser.add_argument('--constraint_type', help='Type for constraint setup, rule 1 or rule 2 or both', type = int, required=True)
     parser.add_argument('--align_type', help='Type for alignments setup', type = str, required=True)
-
+    parser.add_argument('--eqn_type', help='Equation type for alignments', type = str, required=True)
     args = parser.parse_args(arguments)
     np.random.seed(3435)
     get_data(args)

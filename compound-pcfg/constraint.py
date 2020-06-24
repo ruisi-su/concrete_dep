@@ -125,12 +125,12 @@ def get_align(alignment):
     # alignment is from cap : frame
     for al in alignment:
         als = al.split(':')
-        if len(als) > 2:
+        if len(als) > 3:
             cap = als[0] + ':' + als[1]
             frame = als[2]
             print('colon is detected, cap is ' + cap + ' frame is ' + frame)
         else:
-            cap, frame = als
+            cap, frame, _ = als
         frame = frame.split('_')
         # remove indicators from the alignment by type
         # single word alignment

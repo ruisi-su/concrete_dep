@@ -1,10 +1,11 @@
-type = 'split_verb'
-file_name = 'traindevtest.cap-frame.{}.output'.format(type)
+type = 'split_all'
+eqn_type = 'dice'
+file_name = 'traindevtest.cap-frame.{}.{}_output'.format(type, eqn_type)
 
 file = open(file_name, 'r')
-train_file = open('train.{}.align'.format(type), 'w')
-dev_file = open('dev.{}.align'.format(type), 'w')
-test_file = open('test.{}.align'.format(type), 'w')
+train_file = open('train.{}.{}.align'.format(type, eqn_type), 'w')
+dev_file = open('dev.{}.{}.align'.format(type, eqn_type), 'w')
+test_file = open('test.{}.{}.align'.format(type, eqn_type), 'w')
 
 file = file.readlines()
 

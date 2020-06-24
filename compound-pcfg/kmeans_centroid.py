@@ -16,5 +16,7 @@ vals = np.array(list(data.values()), dtype=float)
 vals = torch.from_numpy(vals)
 # kmeans
 cluster_ids_x, cluster_centers = kmeans(
-    X=vals, num_clusters=num_clusters, distance='euclidean', device=torch.device('cuda:0')
+    X=vals, num_clusters=num_clusters, distance='cosine', device=torch.device('cuda:0')
 )
+np.savetxt('glovevico-kmeans-20-centroids.txt.', cluster_centers.numpy())
+#torch.save(cluster_centers.data, 'glovevico-kmeans-20-centroids.txt')

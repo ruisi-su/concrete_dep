@@ -1,3 +1,3 @@
 #!/bin/bash
 # python preprocess.py --trainfile ../data/coco/VGNSL_split/train_trees.txt --valfile ../data/coco/VGNSL_split/dev_trees.txt --testfile ../data/coco/VGNSL_split/test_trees.txt --vocabsize 100000 --replace_num 1 --trainframe ../data/coco/VGNSL_split/train_frames.txt --valframe ../data/coco/VGNSL_split/dev_frames.txt --testframe ../data/coco/VGNSL_split/test_frames.txt --trainalign ../data/coco/VGNSL_split/train.align --valalign ../data/coco/VGNSL_split/dev.align --testalign ../data/coco/VGNSL_split/test.align --constraint_type 3 --dep --outputfile data/multimodal_dep/coco
-python preprocess.py --vocabsize 100000 --replace_num 1 --constraint_type 3 --align_type split_verb --dep --outputfile data/multimodal_dep_3_split_verb/coco
+python preprocess.py --vocabsize 100000 --replace_num 1 --constraint_type 3 --align_type split_verb --eqn_type pmi --dep --outputfile data/multimodal_dep_3_split_verb_pmi/coco
