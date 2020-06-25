@@ -123,13 +123,18 @@ def gen_phrases(sent, frame, alignment, constraint_type, threshold):
             arg_idcs.append(sent.index(argument))
     return list(invalids), pred_idx, arg_idcs
 
+
+# threshold is a relative percentage to the current set of alignments
+# if threshold = 0.1 -> alignment with a score lower than 0.1 * max of current set is ignored
 def get_align(alignment, threshold):
     # key is frame, value is cap
     aligns = {}
-    # print(threshold)
     alignment = alignment.strip().split(' ')
     if len(alignment) == 0 or alignment[0] == '':
         return aligns
+    # the alignment with the max score is the first
+    max_score = alignment[0].split(':')[-1]
+    thresh = max_score * threshold
     # alignment is from cap : frame
     for al in alignment:
         als = al.split(':')
@@ -141,7 +146,7 @@ def get_align(alignment, threshold):
         else:
             cap, frame, score = als
         # if below threshold, continue
-        if float(score) < threshold:
+        if float(score) < thresh:
             continue
         frame = frame.split('_')
         # remove indicators from the alignment by type
