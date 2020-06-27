@@ -32,10 +32,10 @@ parser = argparse.ArgumentParser()
 
 # Program options
 parser.add_argument('--mode', default='train', help='train/test')
-parser.add_argument('--test_file', default='data/multimodal/cocotest.pkl')
+parser.add_argument('--test_file', default='data/multimodal_dep/cocotest.pkl')
 # Data path options
-parser.add_argument('--train_file', default='data/multimodal/cocotrain.pkl')
-parser.add_argument('--val_file', default='data/multimodal/cocoval.pkl')
+parser.add_argument('--train_file', default='data/multimodal_dep/cocotrain.pkl')
+parser.add_argument('--val_file', default='data/multimodal_dep/cocoval.pkl')
 parser.add_argument('--save_path', default='compound-pcfg.pt', help='where to save the model')
 parser.add_argument('--pretrained_word_emb', default="", help="word emb file")
 # Model options
@@ -398,8 +398,8 @@ def eval(data, model):
         invalid_spans = None
 
       if (not args.evaluate_dep):
-        sents, length, batch_size, other_data = data[i]
-        heads = None
+          sents, length, batch_size, other_data = data[i]
+          heads = None
       else:
           sents, length, batch_size, other_data, _ = data[i]
           heads = []
@@ -409,8 +409,12 @@ def eval(data, model):
           # gold_binary_trees.append(other_data[j][7])
           if args.multimodal==1:
               # TODO make use of pred and args in inside later
-              (invalid_idcs, pred_idx, arg_idcs) = other_data[j][1]
-              invalid_spans.append(invalid_idcs)
+              #print(other_data[j][1])
+              if len(other_data[j][1]) == 0:
+                  invalid_spans.append(other_data[j][1])
+              else:
+                  (invalid_idcs, pred_idx, arg_idcs) = other_data[j][1]
+                  invalid_spans.append(invalid_idcs)
           if heads != None:
               heads.append(other_data[j][8])
       # else:

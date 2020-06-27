@@ -134,7 +134,7 @@ def get_align(alignment, threshold):
         return aligns
     # the alignment with the max score is the first
     max_score = alignment[0].split(':')[-1]
-    thresh = max_score * threshold
+    thresh = float(max_score) * threshold
     # alignment is from cap : frame
     for al in alignment:
         als = al.split(':')
