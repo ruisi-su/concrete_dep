@@ -2,7 +2,7 @@ import sys
 
 type = sys.argv[1]
 eqn_type = sys.argv[2]
-file_name = 'traindevtest.cap-frame.{}.{}_output'.format(type, eqn_type)
+file_name = 'traindevtest.cap-frame.{}.{}_output.v2'.format(type, eqn_type)
 
 file = open(file_name, 'r')
 train_file = open('train.{}.{}.align'.format(type, eqn_type), 'w')

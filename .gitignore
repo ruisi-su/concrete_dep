@@ -46,8 +46,7 @@ coco_val/
 annotations_2014/
 data/coco/.ipynb_checkpoints/
 data/coco/annotations/
-data/coco/cc_cocositu_coco/
-data/coco/cc_imsitu_coco/
+data/coco/cc_*/
 data/coco/cleaning_scripts/
 
 # Data & Code #

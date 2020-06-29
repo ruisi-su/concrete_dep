@@ -28,6 +28,8 @@ def pair_h_r_t(h, frame):
             if len(frame[f]) > 0:
                 word = frame[f][0]
                 words = frame[f]
+                if 'null' in words:
+                    words.remove('null')
                 if word != 'null':
                     words = '-'.join(words)
                     # word = word.replace(' ','-')
@@ -43,8 +45,8 @@ def find_by_id(im_id, arguments):
     print('could not find id ' + im_id)
     return {}
 
-split_type = 'train'
-path_cap = './cc_cocositu_coco'
+split_type = 'test'
+path_cap = './cc_allcocositu_coco'
 # path_cap = './cc_imsitu_coco' <-- old
 
 cap_path = './VGNSL_split'

@@ -67,4 +67,3 @@ with open(args.srctrg_file, 'r') as fsrctrg:
       dsrctrg[:,idtrg] = args.thresh
       idsrc, idtrg = np.unravel_index(np.argmax(dsrctrg), dsrctrg.shape)
     print(' '.join(aligns))
-
