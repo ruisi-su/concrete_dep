@@ -134,8 +134,8 @@ def get_align(alignment, threshold):
     if len(alignment) == 0 or alignment[0] == '':
         return aligns
     # the alignment with the max score is the first
-    # max_score = alignment[0].split(':')[-1]
-    # thresh = float(max_score) * threshold
+    max_score = alignment[0].split(':')[-1]
+    thresh = float(max_score) * threshold
     # alignment is from cap : frame
     for al in alignment:
         als = al.split(':')
@@ -147,7 +147,7 @@ def get_align(alignment, threshold):
         else:
             cap, frame, score = als
         # if below threshold, continue
-        if float(score) < threshold:
+        if float(score) < thresh:
             continue
         frame = frame.split('_')
         # remove indicators from the alignment by type
