@@ -113,9 +113,13 @@ def gen_phrases(sent, frame, alignment, constraint_type, threshold):
                 invalids = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments).union(invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments))
         pointer += 1
     # get the index of pred and arg
-    print(pred_cap)
-    if pred_cap in sent:
-        pred_idx = sent.index(pred_cap)
+
+    # find predicate in caption phrase, if any, or if it is aligned to any word of the caption phrase
+    # print(alignment)
+    if (predicate in sent):
+        pred_idx = sent.index(predicate)
+    elif (predicate in alignment.keys()) and (alignment[predicate] in sent):
+        pred_idx = sent.index(alignment[predicate])
     else:
         pred_idx = -1
     arg_idcs = []
@@ -166,12 +170,12 @@ def get_align(alignment, threshold):
 
 # ((two horses) (grazing (together (in (a field)))))
 # gold tree : ((a (large post)) (with ((a clock) outside)))
-aligns = 'a:place:0.890 clock:clock:0.702 with:item:0.236 large:displaying:0.070 outside:outside:0.052 post:tool:0.004'
-frame = 'displaying_tool_tool\tdisplaying_item_clock\tdisplaying_place_outside\t'
-sent = 'a large post with a clock outside'
-invals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1, 0.005)
-invals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2, 0.005)
-invals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3, 0.005)
-print(invals)
-print(invals_2)
-print(invals_3)
+# aligns = 'a:place:0.890 clock:clock:0.702 with:item:0.236 large:displaying:0.070 outside:outside:0.052 post:tool:0.004'
+# frame = 'displaying_tool_tool\tdisplaying_item_clock\tdisplaying_place_outside\t'
+# sent = 'a large post with a clock outside'
+# invals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1, 0.005)
+# invals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2, 0.005)
+# invals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3, 0.005)
+# print(invals)
+# print(invals_2)
+# print(invals_3)
