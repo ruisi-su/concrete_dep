@@ -227,40 +227,47 @@ def main(args):
       # gold_binary_trees = []
       if args.multimodal==1:
         invalid_spans = []
+        frame_args = []
+        frame_preds = []
       else:
-        invalid_spans =None
+        invalid_spans = None
+        frame_args = None
+        frame_pred = None
+      if args.evaluate_dep:
+        heads = []
 
-      if(not args.evaluate_dep):
-        sents, length, batch_size, other_data = train_data[i]
-        for j in range(batch_size):
-            gold_actions.append(other_data[j][4])
-            gold_spans.append(other_data[j][6])
-            # gold_binary_trees.append(other_data[j][7])
-            if args.multimodal==1:
-                invalid_spans.append(other_data[j][1])
+      sents, length, batch_size, other_data = train_data[i]
 
-      else:
-          sents, length, batch_size, other_data, _ = train_data[i]
-          heads = []
-          for j in range(batch_size):
-              gold_actions.append(other_data[j][4])
-              gold_spans.append(other_data[j][6])
-              # gold_binary_trees.append(other_data[j][7])
-              if args.multimodal==1:
+      for j in range(batch_size):
+          gold_actions.append(other_data[j][4])
+          gold_spans.append(other_data[j][6])
+
+          # gold_binary_trees.append(other_data[j][7])
+          if args.multimodal==1:
+              invalid_spans.append(other_data[j][1])
+              if len(other_data[j][1]) == 0:
                   invalid_spans.append(other_data[j][1])
+              else:
+                  (invalid_idcs, pred_idx, arg_idcs) = other_data[j][1]
+                  invalid_spans.append(invalid_idcs)
+                  frame_args.append(arg_idcs)
+                  frame_preds.append(pred_idx)
+
+          if args.evaluate_dep:
               heads.append(other_data[j][8])
 
-          if(len(args.supervised_signals)):
-            gold_tree = []
-            for j in range(len(heads)):
-              gold_tree.append(get_span2head(gold_spans[j], heads[j], gold_actions=gold_actions[j], gold_tags=gold_tags[j]))
-              for span, (head, label) in gold_tree[j].items():
-                if(span[0] == span[1]):
-                  gold_tree[j][span] = (head, PT2ID[label])
-                else:
-                  f = lambda x : x[:x.find('-')] if x.find('-') != -1 else x
-                  g = lambda y : y[:y.find('=')] if y.find('=') != -1 else y
-                  gold_tree[j][span] = (head, NT2ID[f(g(label))])
+              if(len(args.supervised_signals)):
+                  gold_tree = []
+                  for j in range(len(heads)):
+                      gold_tree.append(get_span2head(gold_spans[j], heads[j], gold_actions=gold_actions[j], gold_tags=gold_tags[j]))
+                      for span, (head, label) in gold_tree[j].items():
+                          if(span[0] == span[1]):
+                              gold_tree[j][span] = (head, PT2ID[label])
+                    else:
+                        f = lambda x : x[:x.find('-')] if x.find('-') != -1 else x
+                        g = lambda y : y[:y.find('=')] if y.find('=') != -1 else y
+                        gold_tree[j][span] = (head, NT2ID[f(g(label))])
+
 
       #print(invalid_spans)
       if length > args.max_length or length == 1: #length filter based on curriculum
@@ -279,7 +286,7 @@ def main(args):
                 gold_tree[j][(span[0], span[1])] = (-1, span[2] - args.nt_states)
               else:
                 gold_tree[j][(span[0], span[1])] = (-1, span[2])
-      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, gold_tree=gold_tree, invalid_spans=invalid_spans)
+      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans, frame_args = frame_args, frame_preds = frame_preds)
       loss = (nll + kl).mean()
       if(args.opt_level != "O0"):
         with amp.scale_loss(loss, optimizer) as scaled_loss:
@@ -394,8 +401,12 @@ def eval(data, model):
       # gold_binary_trees = []
       if args.multimodal==1:
         invalid_spans = []
+        frame_args = []
+        frame_preds = []
       else:
         invalid_spans = None
+        frame_args = None
+        frame_pred = None
 
       if (not args.evaluate_dep):
           sents, length, batch_size, other_data = data[i]
@@ -410,11 +421,14 @@ def eval(data, model):
           if args.multimodal==1:
               # TODO make use of pred and args in inside later
               #print(other_data[j][1])
+              # if no frame
               if len(other_data[j][1]) == 0:
                   invalid_spans.append(other_data[j][1])
               else:
                   (invalid_idcs, pred_idx, arg_idcs) = other_data[j][1]
                   invalid_spans.append(invalid_idcs)
+                  frame_args.append(arg_idcs)
+                  frame_preds.append(pred_idx)
           if heads != None:
               heads.append(other_data[j][8])
       # else:
@@ -431,7 +445,7 @@ def eval(data, model):
       # but we don't for eval since we want a valid upper bound on PPL for early stopping
       # see eval.py for proper MAP inference
       # nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True)
-      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans)
+      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans, frame_args = frame_args, frame_preds = frame_preds)
 
       total_nll += nll.sum().item()
       total_kl  += kl.sum().item()

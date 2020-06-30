@@ -23,6 +23,9 @@ class LexicalizedPCFG(nn.Module):
     self.states = nt_states + t_states
     self.nt_emission = nt_emission
     self.huge = 1e9
+    self.arg_perc = 0.1
+    self.pred_perc = 0.2
+    self.reward = 30
 
     if(self.nt_emission):
       self.word_span_slice = slice(self.states)
@@ -130,7 +133,7 @@ class LexicalizedPCFG(nn.Module):
             mask[i][l, r+1, :, acceptable_heads] = 0
     return mask
 
-  def _inside(self, gold_tree=None, invalid_spans= None, **kwargs):
+  def _inside(self, gold_tree=None, invalid_spans= None, frame_args = None, frame_preds = None, **kwargs):
     #inside step
 
     rule_scores, root_scores, unary_scores = self.__get_scores(**kwargs)
@@ -155,14 +158,26 @@ class LexicalizedPCFG(nn.Module):
     # create masks
     mask = self.beta.new(B, N+1, N+1, T, N).fill_(0)
     if (invalid_spans != None) and (len(invalid_spans) > 0):
-      #print('inside' + str(len(invalid_spans)))
       for i in range(B):
         if len(invalid_spans[i]) < 1:
           continue
-        # print('inside' + str(len(invalid_spans[i])))
         for (l, r, h) in invalid_spans[i]:
             mask[i][l, r+1, :, h].fill_(-self.huge)
 
+    # reward
+    if (frame_args != None) and (len(frame_args) > 0):
+        for i in range(B):
+          if len(frame_args[i]) < 1:
+            continue
+          for arg in frame_args:
+            mask[i][:, :, :, arg].fill_(self.reward*self.arg_perc)
+
+    if (frame_preds != None) and (len(frame_preds) > 0):
+        for i in range(B):
+          for pred in frame_preds:
+            if pred == -1:
+                continue
+            mask[i][:, :, :, pred].fill_(self.reward*self.pred_perc)
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -236,7 +251,7 @@ class LexicalizedPCFG(nn.Module):
     log_Z = torch.logsumexp(log_Z, dim='T')
     return log_Z
 
-  def _viterbi(self, invalid_spans= None, **kwargs):
+  def _viterbi(self, invalid_spans= None, frame_args = None, frame_preds = None, **kwargs):
     #unary scores : b x n x T
     #rule scores : b x NT x (NT+T) x (NT+T)
 
@@ -275,6 +290,21 @@ class LexicalizedPCFG(nn.Module):
           for (l, r, h) in invalid_spans[i]:
             #print('applying mask')
             mask[i][l, r+1, :, h].fill_(-self.huge)
+
+    # reward
+    if (frame_args != None) and (len(frame_args) > 0):
+        for i in range(B):
+          if len(frame_args[i]) < 1:
+            continue
+          for arg in frame_args:
+            mask[i][:, :, :, arg].fill_(self.reward*self.arg_perc)
+
+    if (frame_preds != None) and (len(frame_preds) > 0):
+        for i in range(B):
+          for pred in frame_preds:
+            if pred == -1:
+                continue
+            mask[i][:, :, :, pred].fill_(self.reward*self.pred_perc)
 
     # initialization: f[k, k+1]
     for k in range(N):
