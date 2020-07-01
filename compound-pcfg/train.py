@@ -232,7 +232,7 @@ def main(args):
       else:
         invalid_spans = None
         frame_args = None
-        frame_pred = None
+        frame_preds = None
       if args.evaluate_dep:
         heads = []
 
@@ -408,7 +408,7 @@ def eval(data, model):
       else:
         invalid_spans = None
         frame_args = None
-        frame_pred = None
+        frame_preds = None
 
       if (not args.evaluate_dep):
           sents, length, batch_size, other_data = data[i]
