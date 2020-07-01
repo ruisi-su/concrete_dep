@@ -247,6 +247,8 @@ def main(args):
               invalid_spans.append(other_data[j][1])
               if len(other_data[j][1]) == 0:
                   invalid_spans.append(other_data[j][1])
+                  frame_args.append([])
+                  frame_preds.append(-1)
               else:
                   (invalid_idcs, pred_idx, arg_idcs) = other_data[j][1]
                   invalid_spans.append(invalid_idcs)
@@ -263,10 +265,10 @@ def main(args):
                       for span, (head, label) in gold_tree[j].items():
                           if(span[0] == span[1]):
                               gold_tree[j][span] = (head, PT2ID[label])
-                    else:
-                        f = lambda x : x[:x.find('-')] if x.find('-') != -1 else x
-                        g = lambda y : y[:y.find('=')] if y.find('=') != -1 else y
-                        gold_tree[j][span] = (head, NT2ID[f(g(label))])
+                          else:
+                              f = lambda x : x[:x.find('-')] if x.find('-') != -1 else x
+                              g = lambda y : y[:y.find('=')] if y.find('=') != -1 else y
+                              gold_tree[j][span] = (head, NT2ID[f(g(label))])
 
 
       #print(invalid_spans)
@@ -424,6 +426,8 @@ def eval(data, model):
               # if no frame
               if len(other_data[j][1]) == 0:
                   invalid_spans.append(other_data[j][1])
+                  frame_args.append([])
+                  frame_preds.append(-1)
               else:
                   (invalid_idcs, pred_idx, arg_idcs) = other_data[j][1]
                   invalid_spans.append(invalid_idcs)

@@ -23,9 +23,9 @@ class LexicalizedPCFG(nn.Module):
     self.states = nt_states + t_states
     self.nt_emission = nt_emission
     self.huge = 1e9
-    self.arg_perc = 0.1
-    self.pred_perc = 0.2
-    self.reward = 30
+    self.arg_perc = 0.2
+    self.pred_perc = 0.3
+    self.reward = 0
 
     if(self.nt_emission):
       self.word_span_slice = slice(self.states)
@@ -166,18 +166,18 @@ class LexicalizedPCFG(nn.Module):
 
     # reward
     if (frame_args != None) and (len(frame_args) > 0):
+        #print(frame_args)
         for i in range(B):
           if len(frame_args[i]) < 1:
             continue
-          for arg in frame_args:
+          for arg in frame_args[i]:
             mask[i][:, :, :, arg].fill_(self.reward*self.arg_perc)
 
     if (frame_preds != None) and (len(frame_preds) > 0):
         for i in range(B):
-          for pred in frame_preds:
-            if pred == -1:
-                continue
-            mask[i][:, :, :, pred].fill_(self.reward*self.pred_perc)
+          if frame_preds[i] != -1:
+            #print('has pred')
+            mask[i][:, :, :, frame_preds[i]].fill_(self.reward*self.pred_perc)
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -296,15 +296,14 @@ class LexicalizedPCFG(nn.Module):
         for i in range(B):
           if len(frame_args[i]) < 1:
             continue
-          for arg in frame_args:
+          for arg in frame_args[i]:
             mask[i][:, :, :, arg].fill_(self.reward*self.arg_perc)
 
     if (frame_preds != None) and (len(frame_preds) > 0):
         for i in range(B):
-          for pred in frame_preds:
-            if pred == -1:
-                continue
-            mask[i][:, :, :, pred].fill_(self.reward*self.pred_perc)
+          if frame_preds[i] != -1:
+            #print('has pred')
+            mask[i][:, :, :, frame_preds[i]].fill_(self.reward*self.pred_perc)
 
     # initialization: f[k, k+1]
     for k in range(N):
