@@ -35,7 +35,7 @@ def get_af(tree, dict):
 
             diff = tree_toks.difference(cap_toks)
             # print(diff)
-            if (len(diff) < 3) and (diff.pop() in filter_words):
+            if diff == diff.intersection(filter_words):
                 a = ' '.join(dict[i]['alignment'])
                 f = ' '.join(dict[i]['frame'])
                 return (a, f)
