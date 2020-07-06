@@ -23,8 +23,8 @@ class LexicalizedPCFG(nn.Module):
     self.states = nt_states + t_states
     self.nt_emission = nt_emission
     self.huge = 1e9
-    self.arg_perc = 0.1
-    self.pred_perc = 0.5
+    self.arg_perc = 0.5
+    self.pred_perc = 0.2
     self.reward = 30
 
     if(self.nt_emission):

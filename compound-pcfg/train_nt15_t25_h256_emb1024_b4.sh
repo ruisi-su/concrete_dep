@@ -1,0 +1,2 @@
+#!/bin/bash
+python train.py --t_states 25 --nt_states 15 --num_epochs 20 --train_file data/multimodal_dep_2_split_noverb_dice_v2/cocotrain.pkl --val_file data/multimodal_dep_2_split_noverb_dice_v2/cocoval.pkl --test_file data/multimodal_dep_2_split_noverb_dice_v2/cocotest.pkl --save_path dump_model/baseline_1024_h256_nt15_t25.pt --log_dir runs/baseline_1024_h256_nt15_t25 --print_every 100 --max_length 20 --final_max_length 35 --state_dim 1024 --h_dim 256 --seperate_nt_emb_for_emission --head_first --tie_word_emb --gpu 1

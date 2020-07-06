@@ -349,8 +349,8 @@ class LexicalizedCompPCFG(nn.Module):
     if self.z_dim == 0:
       kl = torch.zeros_like(log_Z)
 
-    if(log_Z.sum().item() > -0.1):
-      pdb.set_trace()
+#    if(log_Z.sum().item() > -0.1):
+#      pdb.set_trace()
 
     if argmax:
       with torch.no_grad():

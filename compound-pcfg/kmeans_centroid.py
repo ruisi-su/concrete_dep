@@ -4,7 +4,7 @@ from kmeans_pytorch import kmeans
 import pickle
 
 # data
-num_clusters = 20
+num_clusters = 25
 
 
 with open('./data/vico_500.pkl', 'rb') as f:
@@ -18,5 +18,5 @@ vals = torch.from_numpy(vals)
 cluster_ids_x, cluster_centers = kmeans(
     X=vals, num_clusters=num_clusters, distance='cosine', device=torch.device('cuda:0')
 )
-np.savetxt('glovevico-kmeans-20-centroids.txt.', cluster_centers.numpy())
+np.savetxt('glovevico-kmeans-25-centroids-500.txt', cluster_centers.numpy())
 #torch.save(cluster_centers.data, 'glovevico-kmeans-20-centroids.txt')
