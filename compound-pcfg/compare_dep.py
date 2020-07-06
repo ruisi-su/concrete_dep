@@ -1,6 +1,18 @@
 import tqdm
 import sys
 from preprocess import *
+import argparse
+
+# generate comparison results
+
+parser = argparse.ArgumentParser(description="Parse arguments")
+parser.add_argument("--out_file", required=True, help="the output file name")
+parser.add_argument("--dim", required=True, help="hidden dim of the model")
+parser.add_argument("--align_type", required=True, help="the alignment type")
+parser.add_argument("--eqn", default="dice", help="What type of equation to use (dice/pmi)")
+parser.add_argument("--spans", action="store_true", help="Whether to include spans")
+args = parser.parse_args()
+
 # parse alignments and frames
 def gen_dict(data_path, align_path, align_type, eqn_type):
     test_dict = {}
@@ -47,14 +59,6 @@ same = 0
 diff = 0
 
 
-# generate comparison results
-dim = sys.argv[1]
-cons_type = sys.argv[2]
-align_t0 = sys.argv[3]
-# align_t1 = sys.argv[4]
-
-eqn_type = sys.argv[4]
-out_file = sys.argv[5]
 
 # align_t0 = 'split_all'
 # align_t1 = 'split_noverb'
@@ -70,7 +74,7 @@ align_path = '../data/coco/VGNSL_split/alignments/test.'
 # noverb_dict = gen_dict(data_path, align_path, 'split_noverb', eqn_type)
 compare_rule = True
 
-with open(out_dir+'test_h{}_{}_{}_{}.txt'.format(dim, 1, align_t0, eqn_type), 'r') as t0, open(out_dir+'test_h{}_{}_{}_{}.txt'.format(dim, 2, align_t0, eqn_type), 'r') as t1, open(out_dir+'test_h{}_{}_{}_{}.txt'.format(dim, 3, align_t0, eqn_type), 'r') as t2, open(out_dir+'test_h{}_base_span.txt'.format(dim), 'r') as t3, open(out_dir+out_file, 'w') as out:
+with open(out_dir+'test_h{}_{}_{}_{}_v2_no_thresh.txt'.format(args.dim, 1, args.align_type, args.eqn), 'r') as t0, open(out_dir+'test_h{}_{}_{}_{}_v2_no_thresh.txt'.format(args.dim, 2, args.align_type, args.eqn), 'r') as t1, open(out_dir+'test_h{}_{}_{}_{}_v2_no_thresh.txt'.format(args.dim, 3, args.align_type, args.eqn), 'r') as t2, open(out_dir+'test_h{}_base_span.txt'.format(args.dim), 'r') as t3, open(out_dir+args.out_file, 'w') as out:
 
     for l0, l1, l2, l3 in zip(t0, t1, t2, t3):
     # for l0, l1, l2 in zip(t0, t1, t2):
@@ -86,7 +90,7 @@ with open(out_dir+'test_h{}_{}_{}_{}.txt'.format(dim, 1, align_t0, eqn_type), 'r
         pred_3 = pred_3.split(' ')[2:]
         gold = gold.split(' ')[2:]
 
-        dict_t0 = gen_dict(data_path, align_path, align_t0, eqn_type)
+        dict_t0 = gen_dict(data_path, align_path, args.align_type, args.eqn)
         # dict_t1 = gen_dict(data_path, align_path, align_t1, eqn_type)
 
         align_0, frame = get_af(' '.join(gold), dict_t0)
@@ -108,10 +112,17 @@ with open(out_dir+'test_h{}_{}_{}_{}.txt'.format(dim, 1, align_t0, eqn_type), 'r
         # output_line_1 = align_t1 + ' : ' +' '.join(pred_1) + '\n' + str(span_1) + '\n' + 'alignment : ' + align_1 + '\n'
         # output_line_2 = 'split verb : ' + ' '.join(pred_2) + '\n' + str(span_2) + '\n' + 'alignment : ' + align_2 + '\n'
         # output_line_3 = 'split no verb : ' + ' '.join(pred_3) + '\n' + str(span_0) + '\n' + 'alignment : ' + align_3 + '\n'
-        output_line_0 = 'rule 1 : ' + ' '.join(pred_0) + '\n' + str(span_0) + '\n'
-        output_line_1 = 'rule 2 : ' + ' '.join(pred_1) + '\n' + str(span_1) + '\n'
-        output_line_2 = 'rule 3 : ' + ' '.join(pred_2) + '\n' + str(span_2) + '\n'
-        output_line_3 = 'base : ' + ' '.join(pred_3) + '\n' + str(span_3) + '\n'
+        if args.spans:
+            output_line_0 = 'rule 1 : ' + ' '.join(pred_0) + '\n' + str(span_0) + '\n'
+            output_line_1 = 'rule 2 : ' + ' '.join(pred_1) + '\n' + str(span_1) + '\n'
+            output_line_2 = 'rule 3 : ' + ' '.join(pred_2) + '\n' + str(span_2) + '\n'
+            output_line_3 = 'base : ' + ' '.join(pred_3) + '\n' + str(span_3) + '\n'
+        else:
+            output_line_0 = 'rule 1 : ' + ' '.join(pred_0) + '\n'
+            output_line_1 = 'rule 2 : ' + ' '.join(pred_1) + '\n'
+            output_line_2 = 'rule 3 : ' + ' '.join(pred_2) + '\n'
+            output_line_3 = 'base : ' + ' '.join(pred_3) + '\n'
+
         # output_line_2 = 'rule 3 : ' + ' '.join(pred_2) + '\n' + str(span_2) + '\n'
 
         output_line_gold = 'gold tree : ' + ' '.join(gold) + '\n'
