@@ -2,7 +2,7 @@ import argparse
 from collections import defaultdict
 
 def make_input(captions_file, frames_file, frame_preproc):
-    captions = open(captions_file).readlines()    
+    captions = open(captions_file).readlines()
     frames = open(frames_file).readlines()
     assert len(frames) == len(captions)
 
@@ -44,6 +44,20 @@ def make_input(captions_file, frames_file, frame_preproc):
                     print('No valid splitting provided.')
             out.write('{} ||| {}\n'.format(' '.join(caption.split()), ' '.join(frame_words)))
 
+def make_input_temp(captions_file, tempcap_file):
+    captions = open(captions_file).readlines()
+    tempcaps = open(tempcap_file).readlines()
+    assert len(tempcaps) == len(captions)
+
+    tokenized_captions = [c.strip() for c in captions]
+    tokenized_tempcaps = [t.strip() for t in tempcaps]
+    with open(tempcap_file.replace('_templates.txt','') + '.cap-templates', 'w') as out:
+        for caption, tempcap in zip(tokenized_captions, tokenized_tempcaps):
+            if not tempcap.strip():
+                out.write('\n')
+                continue
+            out.write('{} ||| {}\n'.format(' '.join(caption.split()), ' '.join(tempcap.split())))
+
 def align_words(align_output, align_input):
     intersect_alignment = open(align_output).readlines()
     pairs = open(align_input).readlines()
@@ -70,12 +84,18 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--frames')
 parser.add_argument('--captions')
 parser.add_argument('--make_input', action='store_true')
+parser.add_argument('--template', action='store_true', help='generate templates')
 parser.add_argument('--frame_preproc')
 parser.add_argument('--align_output')
 parser.add_argument('--align_input')
 args = parser.parse_args()
 
 if args.make_input:
-    make_input(args.captions, args.frames, args.frame_preproc)
+    if args.template:
+        print('temp')
+        make_input_temp(args.captions, args.frames)
+    else:
+        make_input(args.captions, args.frames, args.frame_preproc)
+
 elif args.align_output:
     align_words(args.align_output, args.align_input)

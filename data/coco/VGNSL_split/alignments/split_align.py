@@ -1,9 +1,13 @@
 import sys
 
-type = sys.argv[1]
-eqn_type = sys.argv[2]
-file_name = './traindevtest.cap-frame.{}.{}_output'.format(type, eqn_type)
-
+#
+# type = sys.argv[1]
+# eqn_type = sys.argv[2]
+# file_name = './traindevtest.cap-frame.{}.{}_output'.format(type, eqn_type)
+# 
+# eqn_type = 'dice'
+# type = 'temp'
+file_name = './traindevtest.temp.cap-templates.dice_output'
 file = open(file_name, 'r')
 train_file = open('train.{}.{}.align'.format(type, eqn_type), 'w')
 dev_file = open('dev.{}.{}.align'.format(type, eqn_type), 'w')
