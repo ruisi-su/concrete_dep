@@ -19,7 +19,7 @@ with rule 2, if we had a phrase "dogs eat", the head could not be "dogs", and "d
 def invalid_phrases_type1(frame, predicate, phrase, start, end, invalids, valids, sent, arguments, log_path=''):
     if log_path != '':
         log_file = open(log_path, "a")
-
+    print(arguments)
     intersect = set(phrase).intersection(arguments)
     # rule 1 applies when predicate does not exist in the phrase
     if predicate == '':
@@ -53,18 +53,19 @@ def invalid_phrases_type2(frame, predicate, phrase, start, end, invalids, valids
     # predicate is present in this phrase
     if predicate != '':
         head_ind_invalid = start
-        for head in phrase:
-            phrase_range = (start, end, head_ind_invalid)
-            assert(head_ind_invalid <= end)
-            # if this head is an argument, it is invalid (because the span contains the predicate)
-            if (head in intersect):
-                log = 'R2 invalid is ('  + str(' '.join(sent[start:end+1])) + ') head is ' + str(head_ind_invalid) + '-' + str(sent[head_ind_invalid])
-                invalids.add(phrase_range)
-                if log_path != '':
-                    log_file.write(log + '\n')
-            head_ind_invalid += 1
         # add valid span that has pred as head
         pred_ind = sent.index(predicate)
+        for head in phrase:
+            assert(head_ind_invalid <= end and head_ind_invalid >= start)
+                # if this head is an argument, it is invalid (because the span contains the predicate)
+            if (head in intersect):
+                assert(head_ind_invalid != pred_ind)
+                phrase_range = (start, end, head_ind_invalid)
+                # log = 'R2 invalid is ('  + str(' '.join(sent[start:end+1])) + ') head is ' + str(head_ind_invalid) + '-' + str(sent[head_ind_invalid])
+                invalids.add(phrase_range)
+                # if log_path != '':
+                    # log_file.write(log + '\n')
+            head_ind_invalid += 1
         if pred_ind <= end and pred_ind >= start:
             valids.add((start, end, sent.index(predicate)))
     if log_path != '':
@@ -145,6 +146,7 @@ def gen_phrases(sent, frame, alignment, constraint_type, threshold):
     assert(len(invalids.intersection(valids)) == 0)
     return list(invalids), list(valids)
 
+    # return invalids, valids
 
 # threshold is a relative percentage to the current set of alignments
 # if threshold = 0.1 -> alignment with a score lower than 0.1 * max of current set is ignored
@@ -182,14 +184,16 @@ def get_align(alignment, threshold):
         else:
             raise ValueError('length of frame is invalid for ' + '_'.join(frame))
         if frame not in aligns.keys():
-                aligns[frame] = cap
+            aligns[frame] = cap
     return aligns
 
 # ((two horses) (grazing (together (in (a field)))))
+
+# {'taxiing': 'runway', 'airport': 'airport'}
 # gold tree : (S (NP (DT A) (NN restaurant)) (VP (VBZ has) (NP (JJ modern) (JJ wooden) (NNS tables) (CC and) (NNS chairs))) (. .))
-# aligns = 'hydrant:fireplug:0.498 a:outside:0.130 street:glowing:0.062'
-# frame = 'glowing_place_outside\tglowing_agent_fireplug'
-# sent = 'a fire hydrant on a city street'
+# aligns = 'runway:taxxiing:0.498 airport:airport:0.130'
+# frame = 'taxiing_place_airport\ttaxiing_agent_airplane\ttaxiing_ground_runway'
+# sent = 'the view of runway from behind the windows of airport .'
 # invals, vals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1, 0.0)
 # invals_2, vals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2, 0.0)
 # invals_3, vals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3, 0.0)
@@ -201,4 +205,5 @@ def get_align(alignment, threshold):
 # print(vals_3)
 # print(len(invals.union(invals_2)))
 # print(len(invals_3))
+# print(invals_3.intersection(vals_3))
 # assert(len(invals.union(invals_2))== len(invals_3))
