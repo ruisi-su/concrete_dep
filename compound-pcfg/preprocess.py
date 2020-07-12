@@ -192,7 +192,6 @@ def get_data(args):
             tree.strip()
             tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
             assert(len(tags) == len(sent))
-
             if lowercase == 1:
                 sent = sent_lower
             if replace_num == 1:
@@ -408,24 +407,32 @@ def get_data(args):
                                                           len(indexer.d)))
     print(train_seqlength, valid_seqlength, test_seqlength)
     max_sent_l = 0
-    max_sent_l = convert(args.inputdir + 'test_trees.txt', args.lowercase, args.replace_num,
+    if args.test_only:
+        max_sent_l = convert(args.inputdir + 'test_trees.txt', args.lowercase, args.replace_num,
                          args.batchsize, test_seqlength, args.minseqlength,
                          args.outputfile + "test.pkl", num_sents_test,
                          max_sent_l, args.shuffle, args.include_boundary, 0,
                          args.inputdir + 'test_frames.txt', args.inputdir + 'alignments/test.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
                          conllfile="data/dep/test.conllx" if args.dep else "", test=True)
-    max_sent_l = convert(args.inputdir + 'dev_trees.txt', args.lowercase, args.replace_num,
-                         args.batchsize, valid_seqlength, args.minseqlength,
-                         args.outputfile + "val.pkl", num_sents_valid,
-                         max_sent_l, args.shuffle, args.include_boundary, 0,
-                        args.inputdir + 'dev_frames.txt', args.inputdir + 'alignments/dev.{}.{}.align'.format(args.align_type,args.eqn_type), args.constraint_type,
-                         conllfile="data/dep/dev.conllx" if args.dep else "")
-    max_sent_l = convert(args.inputdir + 'train_trees.txt', args.lowercase, args.replace_num,
-                         args.batchsize, args.seqlength,  args.minseqlength,
-                         args.outputfile + "train.pkl", num_sents_train,
-                         max_sent_l, args.shuffle, args.include_boundary, 1,
-                         args.inputdir + 'train_frames.txt', args.inputdir + 'alignments/train.{}.{}.align'.format(args.align_type, args.eqn_type), args.constraint_type,
-                         conllfile="" if args.dep else "")
+    else:
+        max_sent_l = convert(args.inputdir + 'test_trees.txt', args.lowercase, args.replace_num,
+                             args.batchsize, test_seqlength, args.minseqlength,
+                             args.outputfile + "test.pkl", num_sents_test,
+                             max_sent_l, args.shuffle, args.include_boundary, 0,
+                             args.inputdir + 'test_frames.txt', args.inputdir + 'alignments/test.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
+                             conllfile="data/dep/test.conllx" if args.dep else "", test=True)
+        max_sent_l = convert(args.inputdir + 'dev_trees.txt', args.lowercase, args.replace_num,
+                             args.batchsize, valid_seqlength, args.minseqlength,
+                             args.outputfile + "val.pkl", num_sents_valid,
+                             max_sent_l, args.shuffle, args.include_boundary, 0,
+                            args.inputdir + 'dev_frames.txt', args.inputdir + 'alignments/dev.{}.{}.align'.format(args.align_type,args.eqn_type), args.constraint_type,
+                             conllfile="data/dep/dev.conllx" if args.dep else "")
+        max_sent_l = convert(args.inputdir + 'train_trees.txt', args.lowercase, args.replace_num,
+                             args.batchsize, args.seqlength,  args.minseqlength,
+                             args.outputfile + "train.pkl", num_sents_train,
+                             max_sent_l, args.shuffle, args.include_boundary, 1,
+                             args.inputdir + 'train_frames.txt', args.inputdir + 'alignments/train.{}.{}.align'.format(args.align_type, args.eqn_type), args.constraint_type,
+                             conllfile="" if args.dep else "")
     print("Max sent length (before dropping): {}".format(max_sent_l))
 
 def main(arguments):
@@ -442,15 +449,6 @@ def main(arguments):
     parser.add_argument('--include_boundary', help="Add BOS/EOS tokens", type=int, default=1)
     parser.add_argument('--lowercase', help="Lower case", type=int, default=1)
     parser.add_argument('--replace_num', help="Replace numbers with N", type=int, default=1)
-    # parser.add_argument('--trainfile', help="Path to training data.", required=True)
-    # parser.add_argument('--valfile', help="Path to validation data.", required=True)
-    # parser.add_argument('--testfile', help="Path to test validation data.", required=True)
-    # parser.add_argument('--trainstart', help="index of the start of training data.", required=True)
-    # parser.add_argument('--valstart', help="index of the start of validation data.", required=True)
-    # parser.add_argument('--teststart', help="index of the start of test validation data.", required=True)
-    # parser.add_argument('--textfile', help='fix file manually change indices to split', required=True)
-    # parser.add_argument('--alignfile', help='File for alignment between frame and sent', type = str, default='')
-
     parser.add_argument('--batchsize', help="Size of each minibatch.", type=int, default=4)
     parser.add_argument('--seqlength', help="Maximum sequence length. Sequences longer "
                                                "than this are dropped.", type=int, default=150)
@@ -468,13 +466,7 @@ def main(arguments):
     parser.add_argument('--dep', action="store_true", help="Including dependency parse files. Their "
                                                            "names should be same as data file, but extensions "
                                                            "are .conllx.")
-    # parser.add_argument('--multimodal', help='Using multimodal', type = int, default = 0)
-    # parser.add_argument('--trainframe', help='File for train frame results', type = str, default='')
-    # parser.add_argument('--valframe', help='File for val frame results', type = str, default='')
-    # parser.add_argument('--testframe', help='File for test frame results', type = str, default='')
-    # parser.add_argument('--trainalign', help='File for train align results', type = str, default='')
-    # parser.add_argument('--valalign', help='File for val align results', type = str, default='')
-    # parser.add_argument('--testalign', help='File for test align results', type = str, default='')
+    parser.add_argument('--test_only', action="store_true", help="preprocess just the test data")
     parser.add_argument('--inputdir', help='directory for trees, alignments, and frames', type = str, default='../data/coco/VGNSL_split/')
     parser.add_argument('--constraint_type', help='Type for constraint setup, rule 1 or rule 2 or both', type = int, required=True)
     parser.add_argument('--align_type', help='Type for alignments setup', type = str, required=True)

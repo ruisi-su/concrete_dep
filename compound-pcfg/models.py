@@ -236,7 +236,7 @@ class LexicalizedCompPCFG(nn.Module):
     result =  -0.5 * (logvar - torch.pow(mean, 2)- torch.exp(logvar) + 1)
     return result
 
-  def forward(self, x, argmax=False, use_mean=False, gold_tree=None, invalid_spans=None, frame_args = None, frame_preds = None):
+  def forward(self, x, argmax=False, use_mean=False, gold_tree=None, invalid_spans = None, valid_spans = None):
     #x : batch x n
     n = x.size(1)
     batch_size = x.size(0)
@@ -344,8 +344,7 @@ class LexicalizedCompPCFG(nn.Module):
                               root_scores = root_scores,
                               gold_tree=gold_tree,
                               invalid_spans = invalid_spans,
-                              frame_args = frame_args,
-                              frame_preds = frame_preds)
+                              valid_spans = valid_spans)
     if self.z_dim == 0:
       kl = torch.zeros_like(log_Z)
 
@@ -358,8 +357,7 @@ class LexicalizedCompPCFG(nn.Module):
                                                              rule_scores = rule_scores,
                                                              root_scores = root_scores,
                                                              invalid_spans = invalid_spans,
-                                                             frame_args = frame_args,
-                                                             frame_preds = frame_preds)
+                                                             valid_spans = valid_spans)
         self.tags = self.pcfg.argmax_tags
       return -log_Z, kl, binary_matrix, spans
     else:

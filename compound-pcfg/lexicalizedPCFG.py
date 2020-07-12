@@ -133,7 +133,7 @@ class LexicalizedPCFG(nn.Module):
             mask[i][l, r+1, :, acceptable_heads] = 0
     return mask
 
-  def _inside(self, gold_tree=None, invalid_spans= None, frame_args = None, frame_preds = None, **kwargs):
+  def _inside(self, gold_tree=None, invalid_spans = None, valid_spans = None, **kwargs):
     #inside step
 
     rule_scores, root_scores, unary_scores = self.__get_scores(**kwargs)
@@ -164,20 +164,27 @@ class LexicalizedPCFG(nn.Module):
         for (l, r, h) in invalid_spans[i]:
             mask[i][l, r+1, :, h].fill_(-self.huge)
 
-    # reward
-    if (frame_args != None) and (len(frame_args) > 0):
-        #print(frame_args)
+    if (valid_spans != None) and (len(valid_spans) > 0):
         for i in range(B):
-          if len(frame_args[i]) < 1:
+          if len(valid_spans[i]) < 1:
             continue
-          for arg in frame_args[i]:
-            mask[i][:, :, :, arg].fill_(self.reward*self.arg_perc)
+          for (l, r, h) in valid_spans[i]:
+            mask[i][l, r+1, :, h].fill_(self.reward)
 
-    if (frame_preds != None) and (len(frame_preds) > 0):
-        for i in range(B):
-          if frame_preds[i] != -1:
-            #print('has pred')
-            mask[i][:, :, :, frame_preds[i]].fill_(self.reward*self.pred_perc)
+    # # reward
+    # if (frame_args != None) and (len(frame_args) > 0):
+    #     #print(frame_args)
+    #     for i in range(B):
+    #       if len(frame_args[i]) < 1:
+    #         continue
+    #       for arg in frame_args[i]:
+    #         mask[i][:, :, :, arg].fill_(self.reward*self.arg_perc)
+    #
+    # if (frame_preds != None) and (len(frame_preds) > 0):
+    #     for i in range(B):
+    #       if frame_preds[i] != -1:
+    #         #print('has pred')
+    #         mask[i][:, :, :, frame_preds[i]].fill_(self.reward*self.pred_perc)
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -251,7 +258,7 @@ class LexicalizedPCFG(nn.Module):
     log_Z = torch.logsumexp(log_Z, dim='T')
     return log_Z
 
-  def _viterbi(self, invalid_spans= None, frame_args = None, frame_preds = None, **kwargs):
+  def _viterbi(self, invalid_spans = None, valid_spans = None, **kwargs):
     #unary scores : b x n x T
     #rule scores : b x NT x (NT+T) x (NT+T)
 
@@ -291,19 +298,25 @@ class LexicalizedPCFG(nn.Module):
             #print('applying mask')
             mask[i][l, r+1, :, h].fill_(-self.huge)
 
-    # reward
-    if (frame_args != None) and (len(frame_args) > 0):
+    if (valid_spans != None) and (len(valid_spans) > 0):
         for i in range(B):
-          if len(frame_args[i]) < 1:
+          if len(valid_spans[i]) < 1:
             continue
-          for arg in frame_args[i]:
-            mask[i][:, :, :, arg].fill_(self.reward*self.arg_perc)
-
-    if (frame_preds != None) and (len(frame_preds) > 0):
-        for i in range(B):
-          if frame_preds[i] != -1:
-            #print('has pred')
-            mask[i][:, :, :, frame_preds[i]].fill_(self.reward*self.pred_perc)
+          for (l, r, h) in valid_spans[i]:
+            mask[i][l, r+1, :, h].fill_(self.reward)
+    # reward
+    # if (frame_args != None) and (len(frame_args) > 0):
+    #     for i in range(B):
+    #       if len(frame_args[i]) < 1:
+    #         continue
+    #       for arg in frame_args[i]:
+    #         mask[i][:, :, :, arg].fill_(self.reward*self.arg_perc)
+    #
+    # if (frame_preds != None) and (len(frame_preds) > 0):
+    #     for i in range(B):
+    #       if frame_preds[i] != -1:
+    #         #print('has pred')
+    #         mask[i][:, :, :, frame_preds[i]].fill_(self.reward*self.pred_perc)
 
     # initialization: f[k, k+1]
     for k in range(N):
