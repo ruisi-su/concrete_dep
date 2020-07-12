@@ -19,7 +19,7 @@ with rule 2, if we had a phrase "dogs eat", the head could not be "dogs", and "d
 def invalid_phrases_type1(frame, predicate, phrase, start, end, invalids, valids, sent, arguments, log_path=''):
     if log_path != '':
         log_file = open(log_path, "a")
-    print(arguments)
+    #print(arguments)
     intersect = set(phrase).intersection(arguments)
     # rule 1 applies when predicate does not exist in the phrase
     if predicate == '':
@@ -58,7 +58,9 @@ def invalid_phrases_type2(frame, predicate, phrase, start, end, invalids, valids
         for head in phrase:
             assert(head_ind_invalid <= end and head_ind_invalid >= start)
                 # if this head is an argument, it is invalid (because the span contains the predicate)
-            if (head in intersect):
+            if (head in intersect) and (head != predicate):
+                #print(head)
+                #print(predicate)
                 assert(head_ind_invalid != pred_ind)
                 phrase_range = (start, end, head_ind_invalid)
                 # log = 'R2 invalid is ('  + str(' '.join(sent[start:end+1])) + ') head is ' + str(head_ind_invalid) + '-' + str(sent[head_ind_invalid])
@@ -143,6 +145,8 @@ def gen_phrases(sent, frame, alignment, constraint_type, threshold):
             arg_idcs.append(sent.index(argument))
     # return list(invalids), pred_idx, arg_idcs
     # return list(invalids), list(valids)
+    #print(invalids)
+    #print(valids)
     assert(len(invalids.intersection(valids)) == 0)
     return list(invalids), list(valids)
 
