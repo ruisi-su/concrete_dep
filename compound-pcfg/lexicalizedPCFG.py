@@ -23,8 +23,8 @@ class LexicalizedPCFG(nn.Module):
     self.states = nt_states + t_states
     self.nt_emission = nt_emission
     self.huge = 1e9
-    self.arg_perc = 0.5
-    self.pred_perc = 0.5
+    # self.arg_perc = 0.5
+    # self.pred_perc = 0.5
     self.reward = 30
 
     if(self.nt_emission):
@@ -162,14 +162,14 @@ class LexicalizedPCFG(nn.Module):
         if len(invalid_spans[i]) < 1:
           continue
         for (l, r, h) in invalid_spans[i]:
-            mask[i][l, r+1, :, h].fill_(-self.huge)
+          mask[i][l, r+1, :, h].fill_(-self.huge)
 
     if (valid_spans != None) and (len(valid_spans) > 0):
-        for i in range(B):
-          if len(valid_spans[i]) < 1:
-            continue
-          for (l, r, h) in valid_spans[i]:
-            mask[i][l, r+1, :, h].fill_(self.reward)
+      for i in range(B):
+        if len(valid_spans[i]) < 1:
+          continue
+        for (l, r, h) in valid_spans[i]:
+          mask[i][l, r+1, :, h].fill_(self.reward)
 
     # # reward
     # if (frame_args != None) and (len(frame_args) > 0):
@@ -290,20 +290,20 @@ class LexicalizedPCFG(nn.Module):
     # create masks
     mask = self.scores.new(B, N+1, N+1, T, N).fill_(0)
     if (invalid_spans != None) and (len(invalid_spans) > 0):
-        for i in range(B):
-          if len(invalid_spans[i]) < 1:
-            continue
-          # print(len(invalid_spans[i]))
-          for (l, r, h) in invalid_spans[i]:
-            #print('applying mask')
-            mask[i][l, r+1, :, h].fill_(-self.huge)
+      for i in range(B):
+        if len(invalid_spans[i]) < 1:
+          continue
+        # print(len(invalid_spans[i]))
+        for (l, r, h) in invalid_spans[i]:
+          #print('applying mask')
+          mask[i][l, r+1, :, h].fill_(-self.huge)
 
     if (valid_spans != None) and (len(valid_spans) > 0):
-        for i in range(B):
-          if len(valid_spans[i]) < 1:
-            continue
-          for (l, r, h) in valid_spans[i]:
-            mask[i][l, r+1, :, h].fill_(self.reward)
+      for i in range(B):
+        if len(valid_spans[i]) < 1:
+          continue
+        for (l, r, h) in valid_spans[i]:
+          mask[i][l, r+1, :, h].fill_(self.reward)
     # reward
     # if (frame_args != None) and (len(frame_args) > 0):
     #     for i in range(B):

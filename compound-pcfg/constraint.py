@@ -142,6 +142,7 @@ def gen_phrases(sent, frame, alignment, constraint_type, threshold):
             arg_idcs.append(sent.index(argument))
     # return list(invalids), pred_idx, arg_idcs
     # return list(invalids), list(valids)
+    assert(len(invalids.intersection(valids)) == 0)
     return list(invalids), list(valids)
 
 
@@ -186,12 +187,12 @@ def get_align(alignment, threshold):
 
 # ((two horses) (grazing (together (in (a field)))))
 # gold tree : (S (NP (DT A) (NN restaurant)) (VP (VBZ has) (NP (JJ modern) (JJ wooden) (NNS tables) (CC and) (NNS chairs))) (. .))
-aligns = 'hydrant:fireplug:0.498 a:outside:0.130 street:glowing:0.062'
-frame = 'glowing_place_outside\tglowing_agent_fireplug'
-sent = 'a fire hydrant on a city street'
-invals, vals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1, 0.0)
-invals_2, vals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2, 0.0)
-invals_3, vals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3, 0.0)
+# aligns = 'hydrant:fireplug:0.498 a:outside:0.130 street:glowing:0.062'
+# frame = 'glowing_place_outside\tglowing_agent_fireplug'
+# sent = 'a fire hydrant on a city street'
+# invals, vals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1, 0.0)
+# invals_2, vals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2, 0.0)
+# invals_3, vals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3, 0.0)
 # print(invals)
 # print(vals)
 # print(invals_2)
