@@ -169,13 +169,13 @@ def get_align(alignment, threshold):
     return aligns
 
 # ((two horses) (grazing (together (in (a field)))))
-# gold tree : ((a (large post)) (with ((a clock) outside)))
-# aligns = 'a:place:0.890 clock:clock:0.702 with:item:0.236 large:displaying:0.070 outside:outside:0.052 post:tool:0.004'
-# frame = 'displaying_tool_tool\tdisplaying_item_clock\tdisplaying_place_outside\t'
-# sent = 'a large post with a clock outside'
-# invals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1, 0.005)
-# invals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2, 0.005)
-# invals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3, 0.005)
+# gold tree : (S (NP (DT A) (NN restaurant)) (VP (VBZ has) (NP (JJ modern) (JJ wooden) (NNS tables) (CC and) (NNS chairs))) (. .))
+# aligns = 'hydrant:fireplug:0.498 a:outside:0.130 street:glowing:0.062'
+# frame = 'glowing_place_outside\tglowing_agent_fireplug'
+# sent = 'a fire hydrant on a city street'
+# invals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1, 0.0)
+# invals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2, 0.0)
+# invals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3, 0.0)
 # print(invals)
 # print(invals_2)
 # print(invals_3)

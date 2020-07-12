@@ -412,7 +412,7 @@ def get_data(args):
                          args.batchsize, test_seqlength, args.minseqlength,
                          args.outputfile + "test.pkl", num_sents_test,
                          max_sent_l, args.shuffle, args.include_boundary, 0,
-                         args.inputdir + 'test_frames.txt', args.inputdir + 'alignments/test.{}.{}.align'.format(args.align_type,args.eqn_type), args.constraint_type,
+                         args.inputdir + 'test_frames.txt', args.inputdir + 'alignments/test.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
                          conllfile="data/dep/test.conllx" if args.dep else "", test=True)
     max_sent_l = convert(args.inputdir + 'dev_trees.txt', args.lowercase, args.replace_num,
                          args.batchsize, valid_seqlength, args.minseqlength,

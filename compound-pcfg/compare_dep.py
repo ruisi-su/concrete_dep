@@ -17,7 +17,7 @@ args = parser.parse_args()
 def gen_dict(data_path, align_path, align_type, eqn_type):
     test_dict = {}
 
-    with open(data_path+'_caps.txt', 'r') as cap, open(data_path+'_frames.txt', 'r') as frame, open(align_path+align_type+'.'+eqn_type+'.align', 'r') as align:
+    with open(data_path+'_caps.txt', 'r') as cap, open(data_path+'_frames.txt', 'r') as frame, open(align_path+'split_'+align_type+'.'+eqn_type+'.align', 'r') as align:
         for i, (c, f, a) in enumerate(zip(cap, frame, align)):
             if i not in test_dict.keys():
                 test_dict[i] = {}
@@ -74,7 +74,7 @@ align_path = '../data/coco/VGNSL_split/alignments/test.'
 # noverb_dict = gen_dict(data_path, align_path, 'split_noverb', eqn_type)
 compare_rule = True
 
-with open(out_dir+'test_h{}_{}_{}_{}_v2_no_thresh.txt'.format(args.dim, 1, args.align_type, args.eqn), 'r') as t0, open(out_dir+'test_h{}_{}_{}_{}_v2_no_thresh.txt'.format(args.dim, 2, args.align_type, args.eqn), 'r') as t1, open(out_dir+'test_h{}_{}_{}_{}_v2_no_thresh.txt'.format(args.dim, 3, args.align_type, args.eqn), 'r') as t2, open(out_dir+'test_h{}_base_span.txt'.format(args.dim), 'r') as t3, open(out_dir+args.out_file, 'w') as out:
+with open(out_dir+'test_h{}_{}_{}_{}_noreward.txt'.format(args.dim, 1, args.align_type, args.eqn), 'r') as t0, open(out_dir+'test_h{}_{}_{}_{}_noreward.txt'.format(args.dim, 2, args.align_type, args.eqn), 'r') as t1, open(out_dir+'test_h{}_{}_{}_{}_noreward.txt'.format(args.dim, 3, args.align_type, args.eqn), 'r') as t2, open(out_dir+'test_h{}_baseline_all_dice_noreward.txt'.format(args.dim), 'r') as t3, open(out_dir+args.out_file, 'w') as out:
 
     for l0, l1, l2, l3 in zip(t0, t1, t2, t3):
     # for l0, l1, l2 in zip(t0, t1, t2):
