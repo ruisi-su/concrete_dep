@@ -24,8 +24,8 @@ class LexicalizedPCFG(nn.Module):
     self.nt_emission = nt_emission
     self.huge = 1e9
     self.arg_perc = 0.5
-    self.pred_perc = 0.2
-    self.reward = 0
+    self.pred_perc = 0.5
+    self.reward = 30
 
     if(self.nt_emission):
       self.word_span_slice = slice(self.states)
