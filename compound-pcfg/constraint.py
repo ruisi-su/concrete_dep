@@ -74,26 +74,63 @@ def invalid_phrases_type2(frame, predicate, phrase, start, end, invalids, valids
         log_file.close()
     return invalids, valids
 
+# rule 2 exclusive: a phrase containing a predicate MUST has the predicate as the head, a phrase contains only the argument MUST has the argument as the head
+def invalid_phrases_type2_exclusive(frame, predicate, phrase, start, end, invalids, valids, sent, arguments, log_path=''):
+    if log_path != '':
+        log_file = open(log_path, "a")
+
+    intersect = set(phrase).intersection(arguments)
+    # predicate is present in this phrase
+    if predicate != '':
+        head_ind_invalid = start
+        # add valid span that has pred as head
+        pred_ind = sent.index(predicate)
+        for head in phrase:
+            assert(head_ind_invalid <= end and head_ind_invalid >= start)
+            # if this head is not the pred, it is invalid (because the span contains the predicate)
+            if (head != predicate):
+                assert(head_ind_invalid != pred_ind)
+                phrase_range = (start, end, head_ind_invalid)
+                invalids.add(phrase_range)
+            head_ind_invalid += 1
+        if pred_ind <= end and pred_ind >= start:
+            valids.add((start, end, sent.index(predicate)))
+    else:
+        head_ind = start
+        for head in phrase:
+            assert(head_ind <= end and head_ind >= start)
+            # if this head is not the pred, it is invalid (because the span contains the predicate)
+            if (head not in intersect):
+                phrase_range = (start, end, head_ind)
+                invalids.add(phrase_range)
+            else:
+                valids.add((start, end, head_ind))
+            head_ind += 1
+
+    return invalids, valids
+
 # generate all possible phrases from left to right, not including the entire sentence
-def gen_phrases(sent, frame, alignment, constraint_type, threshold):
-    alignment = alignment
-    # parse alignment
-    alignment = get_align(alignment.lower(), threshold)
+def gen_phrases(sent, frame, alignment, constraint_type, threshold, is_align):
+
     sent = sent.split(' ')
     predicate = frame[0].split('_')[0]
-    # print(alignment)
-    # add alignments
+    if is_align:
+        alignment = get_align(alignment.lower(), threshold)
+
     arguments = set()
     for f in frame:
         args = f.split('_')
         arg = args[2]
-        # if arg is not part of the alignment
-        if arg not in alignment.keys():
-            arguments.add(arg)
+        if is_align:
+            # if arg is not part of the alignment
+            if arg not in alignment.keys():
+                arguments.add(arg)
+            else:
+            # else add the aligned word instead
+                align = alignment[arg]
+                arguments.add(align)
         else:
-        # else add the aligned word instead
-            align = alignment[arg]
-            arguments.add(align)
+            arguments.add(arg)
     # print(arguments)
     pointer = 0
     # end = len(sent)
@@ -115,13 +152,15 @@ def gen_phrases(sent, frame, alignment, constraint_type, threshold):
             # find predicate in caption phrase, if any, or if it is aligned to any word of the caption phrase
             if (predicate in phrase):
                 pred_cap = predicate
-            elif (predicate in alignment.keys()) and (alignment[predicate] in phrase):
+            elif is_align and (predicate in alignment.keys()) and (alignment[predicate] in phrase):
                 pred_cap = alignment[predicate]
             # generate list of heads
             if constraint_type == 1:
                 invalids, valids = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
             elif constraint_type == 2:
                 invalids, valids = invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
+            elif constraint_type == 4:
+                invalids, valids = invalid_phrases_type2_exclusive(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
             elif constraint_type == 3:
                 invalids_1, valids_1 = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
                 invalids_2, valids_2 = invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
@@ -129,22 +168,6 @@ def gen_phrases(sent, frame, alignment, constraint_type, threshold):
                 valids = valids_1.union(valids_2)
                 # invalids = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments).union(invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments))
         pointer += 1
-    # get the index of pred and arg
-
-    # find predicate in caption phrase, if any, or if it is aligned to any word of the caption phrase
-    # print(alignment)
-    if (predicate in sent):
-        pred_idx = sent.index(predicate)
-    elif (predicate in alignment.keys()) and (alignment[predicate] in sent):
-        pred_idx = sent.index(alignment[predicate])
-    else:
-        pred_idx = -1
-    arg_idcs = []
-    for argument in arguments:
-        if argument in sent:
-            arg_idcs.append(sent.index(argument))
-    # return list(invalids), pred_idx, arg_idcs
-    # return list(invalids), list(valids)
     #print(invalids)
     #print(valids)
     assert(len(invalids.intersection(valids)) == 0)
@@ -155,6 +178,7 @@ def gen_phrases(sent, frame, alignment, constraint_type, threshold):
 # threshold is a relative percentage to the current set of alignments
 # if threshold = 0.1 -> alignment with a score lower than 0.1 * max of current set is ignored
 def get_align(alignment, threshold):
+    # print('alignment is called')
     # key is frame, value is cap
     aligns = {}
     alignment = alignment.strip().split(' ')
@@ -198,9 +222,9 @@ def get_align(alignment, threshold):
 # aligns = 'runway:taxxiing:0.498 airport:airport:0.130'
 # frame = 'taxiing_place_airport\ttaxiing_agent_airplane\ttaxiing_ground_runway'
 # sent = 'the view of runway from behind the windows of airport .'
-# invals, vals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1, 0.0)
-# invals_2, vals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2, 0.0)
-# invals_3, vals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3, 0.0)
+# invals, vals = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 1, 0.0, False)
+# invals_2, vals_2 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 2, 0.0, False)
+# invals_3, vals_3 = gen_phrases(sent, frame.strip().split('\t'), aligns.lower(), 3, 0.0, False)
 # print(invals)
 # print(vals)
 # print(invals_2)

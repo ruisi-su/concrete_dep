@@ -7,17 +7,19 @@ import argparse
 
 parser = argparse.ArgumentParser(description="Parse arguments")
 parser.add_argument("--out_file", required=True, help="the output file name")
-parser.add_argument("--dim", required=True, help="hidden dim of the model")
+parser.add_argument("--dim", default=512, help="hidden dim of the model")
 parser.add_argument("--align_type", required=True, help="the alignment type")
 parser.add_argument("--eqn", default="dice", help="What type of equation to use (dice/pmi)")
 parser.add_argument("--spans", action="store_true", help="Whether to include spans")
+parser.add_argument("--align", action="store_true", help="Whether to include alignments")
+
 args = parser.parse_args()
 
 # parse alignments and frames
 def gen_dict(data_path, align_path, align_type, eqn_type):
     test_dict = {}
 
-    with open(data_path+'_caps.txt', 'r') as cap, open(data_path+'_frames.txt', 'r') as frame, open(align_path+'split_'+align_type+'.'+eqn_type+'.align', 'r') as align:
+    with open(data_path+'_caps.txt', 'r') as cap, open(data_path+'_frames.txt', 'r') as frame, open(align_path+'split_'+align_type+'.'+eqn_type+'.align.filter', 'r') as align:
         for i, (c, f, a) in enumerate(zip(cap, frame, align)):
             if i not in test_dict.keys():
                 test_dict[i] = {}
@@ -74,31 +76,35 @@ align_path = '../data/coco/VGNSL_split/alignments/test.'
 # noverb_dict = gen_dict(data_path, align_path, 'split_noverb', eqn_type)
 compare_rule = True
 
-with open(out_dir+'test_h{}_{}_{}_{}_noreward.txt'.format(args.dim, 1, args.align_type, args.eqn), 'r') as t0, open(out_dir+'test_h{}_{}_{}_{}_noreward.txt'.format(args.dim, 2, args.align_type, args.eqn), 'r') as t1, open(out_dir+'test_h{}_{}_{}_{}_noreward.txt'.format(args.dim, 3, args.align_type, args.eqn), 'r') as t2, open(out_dir+'test_h{}_baseline_all_dice_noreward.txt'.format(args.dim), 'r') as t3, open(out_dir+args.out_file, 'w') as out:
+with open(out_dir+'test_h{}_{}_{}_{}_filter_best.txt'.format(args.dim, 3, args.align_type, args.eqn), 'r') as t0,
+ open(out_dir+'test_h{}_{}_{}_{}_invalid_valid.txt'.format(args.dim, 3, args.align_type, args.eqn), 'r') as t1, open(out_dir+'test_h{}_{}_{}_{}_invalid_valid_small.txt'.format(args.dim, 3, args.align_type, args.eqn), 'r') as t2,
+  open(out_dir+'test_h{}_baseline_all_dice_best.txt'.format(args.dim), 'r') as t3, open(out_dir+args.out_file, 'w') as out:
 
     for l0, l1, l2, l3 in zip(t0, t1, t2, t3):
     # for l0, l1, l2 in zip(t0, t1, t2):
-    # for l0, l1 in zip(t0, t1):
+    # for l0, l3 in zip(t0, t3):
 
         pred_0, gold, span_0 = l0.rstrip().split('\t')
-        pred_1, _, span_1 = l1.rstrip().split('\t')
-        pred_2, _, span_2 = l2.rstrip().split('\t')
+        # pred_1, _, span_1 = l1.rstrip().split('\t')
+        # pred_2, _, span_2 = l2.rstrip().split('\t')
         pred_3, _, span_3 = l3.rstrip().split('\t')
         pred_0 = pred_0.split(' ')[2:]
-        pred_1 = pred_1.split(' ')[2:]
-        pred_2 = pred_2.split(' ')[2:]
+        # pred_1 = pred_1.split(' ')[2:]
+        # pred_2 = pred_2.split(' ')[2:]
         pred_3 = pred_3.split(' ')[2:]
         gold = gold.split(' ')[2:]
 
-        dict_t0 = gen_dict(data_path, align_path, args.align_type, args.eqn)
-        # dict_t1 = gen_dict(data_path, align_path, align_t1, eqn_type)
+        if args.align:
+            dict_t0 = gen_dict(data_path, align_path, args.align_type, args.eqn)
+            # dict_t1 = gen_dict(data_path, align_path, align_t1, eqn_type)
 
-        align_0, frame = get_af(' '.join(gold), dict_t0)
-        # align_1, frame = get_af(' '.join(gold), dict_t1)
-        # align_2, frame = get_af(' '.join(gold), verb_dict)
-        # align_3, frame = get_af(' '.join(gold), noverb_dict)
+            align_0, frame = get_af(' '.join(gold), dict_t0)
+            # align_1, frame = get_af(' '.join(gold), dict_t1)
+            # align_2, frame = get_af(' '.join(gold), verb_dict)
+            # align_3, frame = get_af(' '.join(gold), noverb_dict)
 
         if (pred_0 == pred_1 == pred_2 == pred_3):
+        # if (pred_0)
             # print(pred_0)
             # print(pred_1)
              # and (pred_1 == pred_2) and (pred_2 == pred_3) and (pred_3 == pred_0):
@@ -125,13 +131,16 @@ with open(out_dir+'test_h{}_{}_{}_{}_noreward.txt'.format(args.dim, 1, args.alig
 
         # output_line_2 = 'rule 3 : ' + ' '.join(pred_2) + '\n' + str(span_2) + '\n'
 
-        output_line_gold = 'gold tree : ' + ' '.join(gold) + '\n'
-        output_line_frame =  'frame : ' + frame + '\n'
-        output_line_align = 'align : ' + align_0 + '\n'
 
-        # out.write(output_line_0 + output_line_1 + output_line_gold + output_line_frame)
-        out.write(output_line_3 + output_line_0 + output_line_1 +output_line_2 + output_line_gold + output_line_frame + output_line_align)
-        # out.write(output_line_0 + output_line_1 +output_line_2 + output_line_gold + output_line_frame)
+        output_line_gold = 'gold tree : ' + ' '.join(gold) + '\n'
+        if args.align:
+            output_line_frame =  'frame : ' + frame + '\n'
+
+            output_line_align = 'align : ' + align_0 + '\n'
+            # out.write(output_line_0 + output_line_1 + output_line_gold + output_line_frame)
+            out.write(output_line_3 + output_line_0 + output_line_1 +output_line_2 + output_line_gold + output_line_frame + output_line_align)
+        else:
+            out.write(output_line_3 + output_line_0 + output_line_1 +output_line_2 + output_line_gold)
 
     out.write('--------------'+'\n')
     out.write(str(same) + ' identical outputs ' + str(diff) + ' different outputs' )
