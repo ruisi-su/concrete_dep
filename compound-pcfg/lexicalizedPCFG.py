@@ -25,7 +25,7 @@ class LexicalizedPCFG(nn.Module):
     self.huge = 1e9
     # self.arg_perc = 0.5
     # self.pred_perc = 0.5
-    self.reward = 0
+    self.reward = 0.5
 
     if(self.nt_emission):
       self.word_span_slice = slice(self.states)
@@ -156,7 +156,7 @@ class LexicalizedPCFG(nn.Module):
       mask = self.beta.new(B, N+1, N+1, T, N).fill_(0)
 
     # create masks
-    mask = self.beta.new(B, N+1, N+1, T, N).fill_(0)
+    # mask = self.beta.new(B, N+1, N+1, T, N).fill_(0)
     if (invalid_spans != None) and (len(invalid_spans) > 0):
       for i in range(B):
         if len(invalid_spans[i]) < 1:
@@ -361,9 +361,14 @@ class LexicalizedPCFG(nn.Module):
 
         self.scores[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
         # apply mask to tmp_
-
+        # print('----temp-----')
+        # print(tmp)
         tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        # print('----after mask-----')
+        # print(tmp)
         tmp_ = tmp + unary_scores[:, l:r, :self.nt_states].align_as(tmp)
+        # print('----after unary-----')
+        # print(tmp_)
         tmp_, new_head = torch.max(tmp_, dim='H')
 
         #
