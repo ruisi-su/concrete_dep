@@ -227,6 +227,9 @@ def get_data(args):
         else:
             is_align = True
         if test:
+
+            match = 0
+
             with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align, open('../data/coco/VGNSL_split/test_ground-truth.txt', 'r') as truth:
                 for (tree, frame, alignment, ground_truth) in zip(txt, fr, align, truth):
                     tree = tree.strip()
@@ -267,7 +270,11 @@ def get_data(args):
                     sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
                     if frame[0] == '':
                         invalids = []
+
+                    elif frame[0].split('_')[0] not in sent:
+                        invalids = []
                     else:
+                        match += 1
                         invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.thresh, is_align)
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
@@ -285,6 +292,7 @@ def get_data(args):
                     if sent_id % 100000 == 0:
                         print("{}/{} sentences processed".format(sent_id, num_sents))
         else:
+            match = 0
             with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align:
                 for (tree, frame, alignment) in zip(txt, fr, align):
                     frame = frame.strip().split('\t')
@@ -322,7 +330,10 @@ def get_data(args):
                     sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
                     if frame[0] == '':
                         invalids = []
+                    elif frame[0].split('_')[0] not in sent:
+                        invalids = []
                     else:
+                        match += 1
                         invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.thresh, is_align)
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
@@ -385,6 +396,8 @@ def get_data(args):
         f["idx2word"] = indexer.idx2word
         f["word2idx"] = {word : idx for idx, word in indexer.idx2word.items()}
 
+        # print how many direct caption - frame matches
+        print("Total {} sentences have direct caption - frame match.".format(match))
         print("Saved {} sentences (dropped {} due to length/unk filter)".format(
             len(f["source"]), dropped))
         pickle.dump(f, open(outfile, 'wb'))
