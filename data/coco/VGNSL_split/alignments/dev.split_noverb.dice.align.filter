@@ -1,0 +1,5000 @@
+holding:hand:0.092
+man:man:0.578 cattle:cow:0.103 herd:farm:0.043
+cow:cow:0.533 holding:hand:0.092
+cow:cow:0.533
+livestock:milking:0.009
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+girl:girl:0.312
+girl:girl:0.312 holding:hand:0.092
+cat:cat:0.861 girl:girl:0.312 holding:hand:0.092
+cat:cat:0.861 girl:girl:0.312 holding:hand:0.092
+cat:cat:0.861 girl:girl:0.312
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+
+
+
+
+
+woman:woman:0.563 bicycle:bicycle:0.371 road:street:0.106
+bike:bicycle:0.402 street:street:0.370 her:woman:0.227
+bicycle:bicycle:0.371 street:street:0.370 her:woman:0.227
+bike:bicycle:0.402 street:street:0.370
+woman:woman:0.563 bike:bicycle:0.402 street:street:0.370
+tub:bathtub:0.384 bath:bathing:0.168
+bathroom:bathtub:0.196
+tub:bathtub:0.384 bath:bathing:0.168
+bathtub:bathtub:0.270 shower:bathing:0.178
+bathtub:bathtub:0.270
+cars:car:0.194
+cars:car:0.194
+cars:car:0.194
+car:car:0.418
+cars:car:0.194
+bathroom:bathroom:0.709 tub:bathtub:0.384
+tub:bathtub:0.384
+bathroom:bathroom:0.709 tub:bathtub:0.384
+bathroom:bathroom:0.709 bathtub:bathtub:0.270
+bathroom:bathroom:0.709 tub:bathtub:0.384
+
+
+
+
+
+car:car:0.418
+car:car:0.418
+car:car:0.418
+
+
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861 bowl:bowl:0.371
+cat:cat:0.861
+cat:cat:0.861
+building:building:0.254
+
+
+
+
+motorcycle:motorcycle:0.636 woman:woman:0.563 street:road:0.243 riding:riding:0.207
+motorcycle:motorcycle:0.636 woman:woman:0.563 car:road:0.100
+woman:woman:0.563 street:road:0.243 motor:motorcycle:0.121
+motorcycle:motorcycle:0.636 woman:woman:0.563 street:road:0.243
+motorcycle:motorcycle:0.636 woman:woman:0.563 street:road:0.243
+desk:office:0.348 keyboard:laptop:0.155
+woman:woman:0.563 desk:office:0.348
+woman:woman:0.563 desk:office:0.348
+woman:woman:0.563 desk:office:0.348 computer:laptop:0.329
+woman:woman:0.563 desk:office:0.348
+bananas:banana:0.566
+bananas:banana:0.566
+bananas:banana:0.566 boxes:box:0.148
+bananas:banana:0.566 box:box:0.361
+bananas:banana:0.566 box:box:0.361
+airplane:airplane:0.492 runway:taxiing:0.461 airport:airport:0.426
+runway:taxiing:0.461
+airplane:airplane:0.492 runway:taxiing:0.461
+plane:airplane:0.462
+airplane:airplane:0.492
+airplane:airplane:0.492 airport:airport:0.426
+plane:airplane:0.462 airport:airport:0.426
+plane:airplane:0.462 runway:taxiing:0.461
+airplane:airplane:0.492 runway:taxiing:0.461 airport:airport:0.426
+
+car:car:0.418 street:street:0.370 the:turning:0.046
+car:car:0.418
+car:car:0.418 street:street:0.370 the:turning:0.046
+car:car:0.418
+car:car:0.418 street:street:0.370
+street:street:0.370 traffic:traffic-light:0.283
+traffic:traffic-light:0.283 light:glowing:0.115
+
+traffic:traffic-light:0.283 road:street:0.106
+street:street:0.370 light:traffic-light:0.270
+plane:airplane:0.462
+plane:airplane:0.462
+
+plane:airplane:0.462
+airplane:airplane:0.492
+
+street:road:0.243
+
+city:city:0.142
+street:road:0.243 buildings:city:0.145
+bus:bus:0.780
+
+bus:bus:0.780
+bus:bus:0.780
+parked:bus:0.183
+giraffe:giraffe:0.727 standing:standing:0.173
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541 standing:standing:0.173
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541
+giraffe:giraffe:0.727 lying:resting:0.073
+giraffe:giraffe:0.727 laying:resting:0.167
+giraffe:giraffe:0.727 lying:resting:0.073
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727 laying:resting:0.167
+giraffes:giraffe:0.541 standing:standing:0.173
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541
+giraffe:giraffe:0.727 standing:standing:0.173
+bicycle:wheel:0.012
+
+
+road:road:0.268
+
+
+
+
+
+
+
+
+
+
+
+sign:sign:0.357
+signs:sign:0.202
+sign:sign:0.357
+sign:sign:0.357
+signs:sign:0.202 in:outside:0.113
+
+sheep:sheep:0.800
+sheep:sheep:0.800
+sheep:sheep:0.800 field:field:0.308
+sheep:sheep:0.800
+bus:bus:0.780
+bus:bus:0.780 street:road:0.243 driving:turning:0.186
+bus:bus:0.780 road:road:0.268 driving:turning:0.186
+bus:bus:0.780
+bus:bus:0.780
+giraffe:giraffe:0.727
+giraffes:giraffe:0.541
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffes:giraffe:0.541
+bird:bird:0.600 tree:tree:0.391
+bird:bird:0.600
+bird:bird:0.600
+bird:bird:0.600 tree:tree:0.391
+bird:bird:0.600
+
+sign:sign:0.357
+sign:sign:0.357
+sign:sign:0.357
+
+bird:bird:0.600 tree:tree:0.391
+bird:bird:0.600 tree:tree:0.391
+bird:bird:0.600 tree:tree:0.391
+bird:bird:0.600
+bird:bird:0.600 tree:tree:0.391
+street:city:0.160
+street:city:0.160 city:street-sign:0.023
+street:city:0.160
+signs:street-sign:0.325
+
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848 pulling:pulling:0.099
+train:train:0.848
+train:train:0.848 station:railway-station:0.491 passengers:boarding:0.096
+train:train:0.848
+train:train:0.848 man:man:0.578 station:railway-station:0.491
+train:train:0.848 station:railway-station:0.491
+
+
+
+
+
+woman:woman:0.563
+woman:woman:0.563 camera:camera:0.095
+
+
+
+cat:cat:0.861 sitting:staring:0.049
+cat:cat:0.861 sitting:staring:0.049
+cat:cat:0.861 sitting:staring:0.049
+cat:cat:0.861
+cat:cat:0.861
+boat:boat:0.462 dogs:dog:0.142
+river:boat:0.102
+dogs:dog:0.142
+boat:boat:0.462 dogs:dog:0.142
+dogs:dog:0.142
+cat:cat:0.861 dog:dog:0.706 couch:sofa:0.434
+cat:cat:0.861 dog:dog:0.706 couch:sofa:0.434
+cat:cat:0.861 dog:dog:0.706 couch:sofa:0.434
+cat:cat:0.861 dog:dog:0.706 couch:sofa:0.434 sleeping:snuggling:0.082
+cat:cat:0.861 dog:dog:0.706 couch:sofa:0.434
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861
+
+cats:cat:0.114
+
+cats:cat:0.114
+cat:cat:0.861
+cat:cat:0.861 suitcase:bag:0.296
+cat:cat:0.861 suitcase:bag:0.296 sleeping:resting:0.024
+cat:cat:0.861 suitcase:bag:0.296
+cat:cat:0.861 suitcase:bag:0.296 sleeping:resting:0.024
+cat:cat:0.861 suitcase:bag:0.296 laying:resting:0.167
+chair:chair:0.320 room:sleeping:0.093
+chairs:chair:0.094
+couch:chair:0.066
+sitting:chair:0.055
+chair:chair:0.320
+cows:cattle:0.442 field:field:0.308
+cows:cattle:0.442 grass:grass:0.255
+cows:cattle:0.442 field:field:0.308 grassy:grass:0.122
+cows:cattle:0.442 grass:grass:0.255
+cows:cattle:0.442 grass:grass:0.255
+truck:hauling:0.325
+
+truck:hauling:0.325
+
+
+cows:cow:0.416
+cows:cow:0.416
+cows:cow:0.416
+cows:cow:0.416
+cows:cow:0.416
+
+
+cat:cat:0.861
+phones:telephone:0.084 blanket:rug:0.018
+phones:telephone:0.084
+
+man:man:0.578
+
+man:man:0.578
+
+elephant:elephant:0.704 field:field:0.308 walking:walking:0.241
+elephant:elephant:0.704
+elephant:elephant:0.704
+elephant:elephant:0.704 field:field:0.308
+elephant:elephant:0.704
+elephants:elephant:0.564 water:river:0.156
+elephant:elephant:0.704 walking:foot:0.020
+elephant:elephant:0.704 water:river:0.156
+elephant:elephant:0.704 water:river:0.156
+elephants:elephant:0.564 water:river:0.156
+elephants:elephant:0.564 water:river:0.156
+elephants:elephant:0.564 water:river:0.156
+elephants:elephant:0.564 lake:river:0.076
+elephants:elephant:0.564 river:river:0.320
+elephants:elephant:0.564 water:river:0.156
+elephant:elephant:0.704
+elephant:elephant:0.704
+elephants:elephant:0.564
+elephants:elephant:0.564
+elephants:elephant:0.564
+elephant:elephant:0.704
+elephants:elephant:0.564
+elephant:elephant:0.704
+elephant:elephant:0.704
+elephant:elephant:0.704
+elephant:elephant:0.704 tree:tree:0.391
+elephant:elephant:0.704 tree:tree:0.391
+elephant:elephant:0.704 tree:tree:0.391
+elephant:elephant:0.704 tree:tree:0.391
+elephant:elephant:0.704
+elephants:elephant:0.564
+elephants:elephant:0.564
+elephants:elephant:0.564
+elephants:elephant:0.564
+elephants:elephant:0.564
+frisbee:frisbee:0.692 throwing:throwing:0.109 child:mother:0.019
+frisbee:frisbee:0.692 park:park:0.115 girl:daughter:0.012 woman:mother:0.007
+frisbee:frisbee:0.692 child:mother:0.019 woman:daughter:0.005
+frisbee:frisbee:0.692 throwing:throwing:0.109 kid:mother:0.005
+frisbee:frisbee:0.692 girl:daughter:0.012 woman:mother:0.007
+people:people:0.486 lake:lake:0.212
+frisbee:frisbee:0.692 people:people:0.486
+people:people:0.486
+
+are:people:0.204
+dogs:dog:0.142
+dogs:dog:0.142
+dogs:dog:0.142
+dogs:dog:0.142
+dogs:dog:0.142
+
+young:male-child:0.239 park:park:0.115
+
+young:male-child:0.239 park:park:0.115
+child:male-child:0.206
+zebra:zebra:0.666
+zebras:zebra:0.612
+zebra:zebra:0.666
+zebra:zebra:0.666
+zebra:zebra:0.666
+horse:horse:0.667 riding:riding:0.207 person:person:0.199
+horse:horse:0.667 riding:riding:0.207 person:person:0.199
+riding:riding:0.207 person:person:0.199 mountains:desert:0.025
+mountains:desert:0.025
+horse:horse:0.667 riding:riding:0.207 person:person:0.199 hills:desert:0.038
+zebras:zebra:0.612
+zebras:zebra:0.612
+zebras:zebra:0.612
+zebra:zebra:0.666
+zebras:zebra:0.612
+horses:horse:0.481
+horses:horse:0.481
+horses:horse:0.481
+horses:horse:0.481
+horses:horse:0.481
+girl:girl:0.312 leads:leading:0.027
+horse:horse:0.667 girl:girl:0.312
+horse:horse:0.667 girls:girl:0.100
+horse:horse:0.667 girl:girl:0.312
+horse:horse:0.667 child:girl:0.091 led:leading:0.037
+horse:horse:0.667
+horse:horse:0.667 street:street:0.370
+horse:horse:0.667 street:street:0.370
+horse:horse:0.667
+horse:horse:0.667 street:street:0.370
+horses:horse:0.481
+horses:horse:0.481 woods:forest:0.199 standing:standing:0.173
+woods:forest:0.199
+horses:horse:0.481
+horses:horse:0.481 woods:forest:0.199
+apples:fruit:0.222
+fruit:fruit:0.366
+table:table:0.284 apples:fruit:0.222
+fruit:fruit:0.366 table:table:0.284
+apples:fruit:0.222
+
+pitch:pitching:0.178
+
+man:man:0.578
+
+
+
+
+
+
+apple:apple:0.419
+apple:apple:0.419
+apple:apple:0.419
+apple:apple:0.419
+apple:apple:0.419
+
+
+
+
+inside:window:0.018
+clock:clock:0.559
+clock:clock:0.559
+clock:clock:0.559
+clock:clock:0.559
+
+toothbrushes:toothbrush:0.177 toothpaste:brushing:0.047
+tooth:toothbrush:0.179 brushes:brushing:0.098
+toothbrushes:toothbrush:0.177 toothpaste:brushing:0.047
+toothbrushes:toothbrush:0.177 toothpaste:brushing:0.047
+toothbrushes:toothbrush:0.177 toothpaste:brushing:0.047
+skateboard:skateboard:0.634 riding:skating:0.199 sidewalk:sidewalk:0.198
+skateboard:skateboard:0.634 riding:skating:0.199 sidewalk:sidewalk:0.198
+skateboard:skateboard:0.634 sidewalk:sidewalk:0.198
+skateboarding:skating:0.136
+skateboarding:skating:0.136 street:sidewalk:0.115
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+table:table:0.284
+
+
+
+hotdog:hotdog:0.203
+girl:female-child:0.225 restaurant:restaurant:0.192
+girl:female-child:0.225 hotdog:hotdog:0.203
+child:female-child:0.086
+girl:female-child:0.225
+girl:female-child:0.225 restaurant:restaurant:0.192
+
+snow:skiing:0.499 snowboard:ski-slope:0.063
+snowboard:ski-slope:0.063
+snowboard:skiing:0.116
+snow:skiing:0.499
+
+
+man:man:0.578 riding:skating:0.199
+man:man:0.578 snowy:ice-skate:0.008
+man:man:0.578 riding:skating:0.199
+food:food:0.216
+woman:woman:0.563 food:food:0.216
+food:food:0.216
+
+woman:woman:0.563 food:food:0.216
+
+doughnuts:donut:0.023
+donuts:donut:0.045
+doughnuts:donut:0.023
+donuts:donut:0.045
+
+
+
+
+
+cake:cake:0.638
+cake:cake:0.638
+cake:cake:0.638
+cake:cake:0.638
+cake:cake:0.638
+soccer:soccer-ball:0.777
+soccer:soccer-ball:0.777
+soccer:soccer-ball:0.777 playing:playing-field:0.132
+soccer:soccer-ball:0.777 playing:playing-field:0.132
+soccer:soccer-ball:0.777 chasing:kicking:0.021
+people:people:0.486 beach:ocean:0.131
+people:people:0.486 beach:ocean:0.131
+water:ocean:0.212 are:people:0.204
+beach:ocean:0.131
+water:ocean:0.212
+
+
+
+
+
+soccer:soccer-ball:0.777 player:soccer-player:0.015
+soccer:soccer-ball:0.777 playing:soccer-player:0.035
+soccer:soccer-ball:0.777 game:soccer-player:0.030
+soccer:soccer-ball:0.777
+soccer:soccer-ball:0.777 playing:playing-field:0.132 game:soccer-player:0.030
+playing:soccer-player:0.035
+
+playing:soccer-player:0.035
+ball:soccer-player:0.052
+players:soccer-player:0.084
+dessert:pie:0.012
+fudge:pie:0.042
+creme:pie:0.038
+
+frosting:pie:0.007
+room:room:0.218
+
+
+room:room:0.218
+
+beach:beach:0.635 man:man:0.578
+man:man:0.578 ocean:beach:0.116
+beach:beach:0.635 man:man:0.578
+surfboard:beach:0.114
+man:man:0.578 ocean:beach:0.116
+
+street:sidewalk:0.115
+street:sidewalk:0.115
+girls:girl:0.100
+street:sidewalk:0.115
+sandwiches:food:0.030
+eating:food:0.052
+restaurant:restaurant:0.192 meal:food:0.055
+restaurant:restaurant:0.192 eating:food:0.052
+restaurant:restaurant:0.192 eating:food:0.052
+girl:female-child:0.225 teeth:chewing:0.043
+child:female-child:0.086 teeth:chewing:0.043
+girl:female-child:0.225 teeth:chewing:0.043
+girl:female-child:0.225
+girl:female-child:0.225 mouth:chewing:0.046
+teeth:dentition:0.547 toothbrush:toothbrush:0.346 child:girl:0.091
+teeth:dentition:0.547 brushing:toothpaste:0.445 toothbrush:toothbrush:0.346 child:girl:0.091
+teeth:dentition:0.547 brushing:toothpaste:0.445 toothbrush:toothbrush:0.346 girl:girl:0.312
+teeth:dentition:0.547 toothbrush:toothbrush:0.346 child:girl:0.091
+teeth:dentition:0.547 brushing:toothpaste:0.445 toothbrush:toothbrush:0.346 girl:girl:0.312
+boy:male-child:0.464 couch:sofa:0.434
+boy:male-child:0.464 couch:sofa:0.434
+boy:male-child:0.464 sitting:sofa:0.046
+kid:male-child:0.083
+boy:male-child:0.464
+
+
+
+
+
+flying:sky:0.431
+flying:sky:0.431
+flying:sky:0.431
+flying:sky:0.431
+flying:sky:0.431
+skis:skiing:0.422
+snow:skiing:0.499 snowboard:snow:0.189
+snowboard:snow:0.189
+snow:skiing:0.499 snowboard:snow:0.189
+snow:skiing:0.499
+room:room:0.218
+room:room:0.218
+
+
+
+
+wooden:wood:0.041
+
+building:building:0.254
+
+
+bat:ballplayer:0.406 swinging:hitting:0.258 catcher:bat:0.161
+bat:ballplayer:0.406
+bat:ballplayer:0.406
+ball:hitting:0.404 game:baseball:0.216
+bat:baseball-bat:0.462
+bat:baseball-bat:0.462 game:ball:0.132
+ball:hitting:0.404
+bat:baseball-bat:0.462 game:ball:0.132 crowd:stadium:0.071
+bat:baseball-bat:0.462 crowd:stadium:0.071
+boy:male-child:0.464 bat:baseball-bat:0.462 ball:hitting:0.404
+boy:male-child:0.464 bat:baseball-bat:0.462 ball:hitting:0.404
+bat:baseball-bat:0.462
+bat:baseball-bat:0.462
+boy:male-child:0.464 bat:baseball-bat:0.462 swinging:hitting:0.258
+baseball:baseball-bat:0.461
+bat:baseball-bat:0.462
+baseball:baseball-bat:0.461 ball:hitting:0.404
+bat:baseball-bat:0.462
+baseball:baseball-bat:0.461
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928 man:man:0.578 ball:tennis-ball:0.415
+man:man:0.578 ball:tennis-ball:0.415
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928 man:man:0.578
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928 ball:tennis-ball:0.415 racquet:tennis-racket:0.233
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 ball:tennis-ball:0.415 racket:tennis-racket:0.388
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928 ball:tennis-ball:0.415 swing:hitting:0.140
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 swinging:hitting:0.258 racquet:tennis-ball:0.214
+sitting:room:0.139
+
+
+
+
+people:people:0.486 computer:laptop:0.329 mouse:typing:0.037
+laptop:laptop:0.609
+laptop:laptop:0.609 typing:typing:0.096
+laptop:laptop:0.609 mouse:typing:0.037
+laptop:laptop:0.609 typing:typing:0.096
+laptop:laptop:0.609 oven:kitchen:0.184 toaster:microwave:0.065
+kitchen:kitchen:0.625 computer:laptop:0.329
+kitchen:kitchen:0.625
+
+laptop:laptop:0.609 toaster:microwave:0.065
+
+
+people:people:0.486
+desk:office:0.348
+
+eating:eating:0.293 girl:female-child:0.225 food:bread:0.060
+eating:eating:0.293 girl:female-child:0.225 sandwich:bread:0.136
+girl:female-child:0.225 bun:bread:0.023
+girl:female-child:0.225
+girl:female-child:0.225 sandwich:bread:0.136
+walking:walking:0.241
+woman:woman:0.563 walking:walking:0.241 sidewalk:sidewalk:0.198
+woman:woman:0.563
+woman:woman:0.563 walking:walking:0.241 street:sidewalk:0.115
+woman:woman:0.563 walking:walking:0.241 sidewalk:sidewalk:0.198
+teddy:teddy:0.436 chair:sofa:0.064
+bear:teddy:0.287 child:male-child:0.206 holding:arm:0.032
+teddy:teddy:0.436 chair:sofa:0.064
+teddy:teddy:0.436 chair:sofa:0.064
+bear:teddy:0.287 chair:sofa:0.064
+clock:clock:0.559
+
+clock:clock:0.559
+clock:clock:0.559
+clock:clock:0.559
+standing:standing:0.173
+tower:building:0.360
+
+
+
+table:table:0.284
+table:table:0.284
+table:table:0.284
+table:table:0.284
+table:table:0.284
+people:people:0.486 table:dining:0.246 food:restaurant:0.142
+people:people:0.486 table:dining:0.246
+people:people:0.486 table:dining:0.246
+people:people:0.486 table:dining:0.246
+people:people:0.486 table:dining:0.246
+kitchen:kitchen:0.625 woman:woman:0.563
+kitchen:kitchen:0.625 woman:woman:0.563
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625 woman:woman:0.563
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+man:man:0.578 riding:road:0.107 bicycle:biking:0.045
+man:man:0.578 bike:biking:0.049
+bike:biking:0.049
+man:man:0.578 riding:road:0.107 bike:biking:0.049
+man:man:0.578 riding:road:0.107 bike:biking:0.049
+tub:bathtub:0.384 bath:bathing:0.168
+tub:bathtub:0.384
+bathtub:bathtub:0.270
+bathroom:bathtub:0.196
+bathroom:bathtub:0.196
+toothbrush:toothbrush:0.346 person:person:0.199 faucet:sink:0.058
+toothbrush:toothbrush:0.346
+sink:bathroom:0.389 toothbrush:toothbrush:0.346 person:person:0.199
+toothbrush:toothbrush:0.346
+toothbrush:toothbrush:0.346 person:person:0.199 faucet:sink:0.058
+bus:bus:0.780 street:street:0.370 driving:turning:0.186
+bus:bus:0.780
+bus:bus:0.780 street:street:0.370
+bus:bus:0.780
+bus:bus:0.780
+woman:woman:0.563
+woman:woman:0.563
+woman:woman:0.563 restaurant:restaurant:0.192
+woman:woman:0.563
+her:woman:0.227 face:mouth:0.017
+
+
+
+
+
+dirty:toilet:0.068
+toilet:toilet:0.731 sink:bathroom:0.389
+toilets:toilet:0.056
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+plate:plate:0.470 carrots:carrot:0.409
+plate:plate:0.470 carrots:carrot:0.409
+plate:plate:0.470 cup:carrot:0.009
+plate:plate:0.470 carrots:carrot:0.409 table:table:0.284
+plate:plate:0.470 carrots:carrot:0.409 table:table:0.284
+cake:cake:0.638 plate:plate:0.470 fork:fork:0.241
+cake:cake:0.638 plate:plate:0.470 fork:fork:0.241
+cake:cake:0.638 plate:plate:0.470 fork:fork:0.241
+cake:cake:0.638 fork:fork:0.241
+cake:cake:0.638 plate:plate:0.470 fork:fork:0.241
+oranges:orange:0.476 table:table:0.284
+oranges:orange:0.476
+oranges:orange:0.476
+oranges:orange:0.476
+tangerines:orange:0.046
+motorcycle:motorcycle:0.636
+motorcycle:motorcycle:0.636
+motorcycle:motorcycle:0.636
+
+motorcycle:motorcycle:0.636 road:road:0.268
+motorcycle:motorcycle:0.636 man:man:0.578 riding:riding:0.207
+man:man:0.578
+motorcycle:motorcycle:0.636 man:man:0.578 riding:riding:0.207
+motorcycle:motorcycle:0.636 man:man:0.578 sidewalk:sidewalk:0.198
+man:man:0.578 motor:motorcycle:0.121
+the:outside:0.110
+
+
+
+people:people:0.486
+flying:airplane:0.231
+airplane:airplane:0.492 flying:air:0.152
+airplane:airplane:0.492 jet:air:0.126
+plane:airplane:0.462 flying:air:0.152
+plane:airplane:0.462 flying:air:0.152
+runway:taxiing:0.461 airport:airport:0.426 jet:jet:0.263
+landing:taxiing:0.057
+airport:airport:0.426
+airport:airport:0.426
+runway:taxiing:0.461 airport:airport:0.426
+
+plane:airplane:0.462 runway:taxiing:0.461
+plane:airplane:0.462 runway:taxiing:0.461
+airplane:airplane:0.492 airport:airport:0.426
+
+airplane:airplane:0.492
+plane:airplane:0.462
+plane:airplane:0.462 runway:taxiing:0.461
+airplane:airplane:0.492
+airplane:airplane:0.492 airport:airport:0.426
+airplane:airplane:0.492
+plane:airplane:0.462
+plane:airplane:0.462
+airplane:airplane:0.492 jet:air:0.126
+jet:airplane:0.218
+cat:cat:0.861 bench:bench:0.587
+cat:cat:0.861 bench:bench:0.587
+cat:cat:0.861 bench:bench:0.587
+cat:cat:0.861 bench:bench:0.587
+cat:cat:0.861 bench:bench:0.587
+giraffe:giraffe:0.727 stands:standing:0.076
+giraffe:giraffe:0.727 marina:shore:0.006
+giraffe:giraffe:0.727 boats:shore:0.048
+giraffe:giraffe:0.727 standing:standing:0.173
+giraffe:giraffe:0.727 standing:standing:0.173
+
+woman:female:0.029
+woman:female:0.029
+
+lady:female:0.021
+rocks:rock:0.115
+rocky:rock:0.065
+lying:resting:0.073
+rocks:rock:0.115
+rocky:rock:0.065
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+bus:bus:0.780 street:road:0.243
+bus:bus:0.780
+bus:bus:0.780 car:road:0.100
+bus:bus:0.780 street:road:0.243
+bus:bus:0.780 city:road:0.086
+sheep:sheep:0.800
+sheep:sheep:0.800
+sheep:sheep:0.800
+sheep:sheep:0.800
+sheep:sheep:0.800
+man:man:0.578 street:street:0.370
+bicycle:biking:0.045
+
+man:man:0.578 road:street:0.106
+bicycles:biking:0.090
+
+
+
+
+
+bus:bus:0.780 road:road:0.268
+bus:bus:0.780 street:road:0.243
+bus:bus:0.780 street:road:0.243
+bus:bus:0.780 driving:road:0.097
+bus:bus:0.780 road:road:0.268
+bus:bus:0.780
+bus:bus:0.780 parking:car:0.109
+bus:bus:0.780
+bus:bus:0.780
+parking:car:0.109
+
+
+
+
+
+
+
+
+
+
+boat:boat:0.462
+boat:boat:0.462
+boat:boat:0.462
+boat:boat:0.462
+boat:boat:0.462
+bird:bird:0.600
+bird:bird:0.600
+bird:bird:0.600 standing:flapping:0.008
+bird:bird:0.600
+bird:bird:0.600
+bird:bird:0.600 water:water:0.271
+bird:bird:0.600 ocean:ocean:0.351 water:water:0.271
+bird:bird:0.600 beach:ocean:0.131
+waves:ocean:0.169
+bird:bird:0.600 waves:ocean:0.169
+
+
+birds:bird:0.350
+
+
+traffic:traffic-light:0.283 lights:glowing:0.075
+traffic:traffic-light:0.283 light:glowing:0.115
+traffic:traffic-light:0.283 light:glowing:0.115
+traffic:traffic-light:0.283
+traffic:traffic-light:0.283
+bird:bird:0.600
+bird:bird:0.600
+bird:bird:0.600 river:shore:0.027
+sand:shore:0.056
+bird:bird:0.600 beach:shore:0.065
+
+beach:beach:0.635
+beach:beach:0.635
+beach:beach:0.635
+beach:beach:0.635
+train:train:0.848 man:man:0.578
+train:train:0.848 man:man:0.578
+train:train:0.848 man:man:0.578
+train:train:0.848 man:man:0.578
+train:train:0.848
+birds:bird:0.350 branches:tree:0.055
+tree:tree:0.391 birds:bird:0.350
+tree:tree:0.391 birds:bird:0.350
+tree:tree:0.391 birds:bird:0.350
+tree:tree:0.391 birds:bird:0.350
+the:turning:0.046
+bird:bird:0.600
+bird:bird:0.600
+bird:bird:0.600
+
+tracks:track:0.288
+tracks:track:0.288
+tracks:track:0.288
+tracks:track:0.288
+tracks:track:0.288
+car:car:0.418
+car:car:0.418
+car:car:0.418
+car:car:0.418
+parked:car:0.138
+cows:cow:0.416
+cows:cow:0.416
+cow:cow:0.533
+cows:cow:0.416
+cow:cow:0.533
+cat:cat:0.861 table:table:0.284 glass:glass:0.182
+cat:cat:0.861 table:table:0.284 water:water:0.271 glass:glass:0.182
+cat:cat:0.861 water:water:0.271 glass:glass:0.182
+cat:cat:0.861 water:water:0.271 glass:glass:0.182
+cat:cat:0.861 glass:glass:0.182
+cat:cat:0.861 chair:chair:0.320
+cat:cat:0.861 chair:chair:0.320
+cat:cat:0.861 chair:chair:0.320
+cat:cat:0.861 chair:chair:0.320
+cat:cat:0.861 chair:chair:0.320
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861
+
+cat:cat:0.861 laptop:laptop:0.609
+cat:cat:0.861 laptop:laptop:0.609
+cat:cat:0.861 laptop:laptop:0.609
+cat:cat:0.861 computer:laptop:0.329
+cat:cat:0.861 laptop:laptop:0.609
+cow:farm:0.150
+cow:farm:0.150
+cow:farm:0.150
+cow:farm:0.150
+cow:farm:0.150
+man:man:0.578 stands:standing:0.076
+man:man:0.578 standing:standing:0.173 road:car:0.076
+man:man:0.578 standing:standing:0.173
+man:man:0.578
+man:man:0.578 standing:standing:0.173
+beach:beach:0.635 people:people:0.486
+beach:beach:0.635
+beach:beach:0.635 people:people:0.486
+beach:beach:0.635 sandy:sand:0.071
+beach:beach:0.635 sandy:sand:0.071
+dogs:dog:0.142
+dogs:dog:0.142
+dogs:dog:0.142
+man:man:0.578 dogs:dog:0.142
+dogs:dog:0.142
+people:people:0.486
+
+people:people:0.486
+chairs:dining:0.102
+people:people:0.486 table:dining:0.246
+
+
+
+
+
+
+dog:dog:0.706
+
+
+dog:dog:0.706
+people:people:0.486
+people:people:0.486 building:building:0.254
+people:people:0.486
+people:people:0.486
+people:people:0.486 wood:floor:0.028
+ski:skiing:0.266
+snow:skiing:0.499 skiing:snow:0.192
+snow:skiing:0.499 skier:snow:0.185
+skiing:skiing:0.314
+snow:skiing:0.499 person:person:0.199 skiing:snow:0.192
+bed:bed:0.633 teddy:teddy:0.436
+bed:bed:0.633 stuffed:teddy:0.221
+bear:teddy:0.287
+bed:bed:0.633 teddy:teddy:0.436
+bed:bed:0.633 stuffed:teddy:0.221
+frisbee:frisbee:0.692 man:man:0.578
+frisbee:frisbee:0.692 man:man:0.578
+frisbee:frisbee:0.692 man:man:0.578
+frisbee:frisbee:0.692 man:man:0.578
+frisbee:frisbee:0.692 man:man:0.578
+zebras:zebra:0.612
+zebra:zebra:0.666
+zebras:zebra:0.612
+zebra:zebra:0.666
+zebras:zebra:0.612
+zebra:zebra:0.666
+zebra:zebra:0.666
+zebra:zebra:0.666
+zebra:zebra:0.666
+zebra:zebra:0.666
+horses:horse:0.481
+horse:horse:0.667
+horse:horse:0.667 grass:grass:0.255
+horse:horse:0.667
+horse:horse:0.667
+horse:horse:0.667 girl:girl:0.312
+horse:horse:0.667 girl:girl:0.312
+horse:horse:0.667 girl:girl:0.312
+horse:horse:0.667 girl:girl:0.312
+horse:horse:0.667 girl:girl:0.312
+horse:horse:0.667 carriage:carriage:0.460 street:road:0.243 down:pulling:0.101
+horse:horse:0.667 carriage:carriage:0.460
+horse:horse:0.667 carriage:carriage:0.460
+horse:horse:0.667 carriage:carriage:0.460 street:road:0.243
+horse:horse:0.667 carriage:carriage:0.460 road:road:0.268
+orange:lemon:0.029
+orange:lemon:0.029
+orange:lemon:0.029
+fruit:lemon:0.026
+orange:lemon:0.029
+people:people:0.486 skis:hiking:0.029
+are:people:0.204 ski:hiking:0.026
+people:people:0.486 skis:hiking:0.029
+people:people:0.486
+people:people:0.486 skis:hiking:0.029
+baseball:baseball:0.647
+baseball:baseball:0.647
+baseball:baseball:0.647
+baseball:baseball:0.647
+
+bed:bedroom:0.433
+child:mother:0.019
+daughter:mother:0.054 mother:daughter:0.014
+child:mother:0.019
+bed:bedroom:0.433 girl:daughter:0.012
+
+
+
+
+
+people:people:0.486
+people:people:0.486 tent:tent:0.117
+
+people:people:0.486
+
+person:person:0.199 skiing:snow:0.192
+snow:skiing:0.499 skis:snow:0.275 person:person:0.199
+snow:skiing:0.499 person:person:0.199 ski:snow:0.143
+skiing:snow:0.192
+skiing:snow:0.192
+snow:skiing:0.499 people:people:0.486 slope:slope:0.126
+snow:skiing:0.499 people:people:0.486
+skiers:skiing:0.162 mountain:slope:0.100
+
+people:people:0.486 skis:skiing:0.422 slope:slope:0.126
+skis:skiing:0.422
+skis:skiing:0.422
+ski:skiing:0.266
+skis:skiing:0.422
+snow:skiing:0.499 skis:snow:0.275 person:person:0.199
+
+snow:skiing:0.499 skiers:ski-slope:0.214
+skiing:skiing:0.314 hill:ski-slope:0.146
+skis:skiing:0.422
+snow:skiing:0.499 skiers:ski-slope:0.214
+onions:bean:0.025
+
+crumbs:bean-sprout:0.066 noodles:bean:0.032
+crumbs:bean-sprout:0.066 cooked:bean:0.022
+crumbs:bean-sprout:0.066 noodles:bean:0.032
+skateboard:skateboard:0.634 ramp:ramp:0.352
+skateboard:skateboard:0.634
+people:people:0.486
+skateboarder:skateboard:0.260
+skateboard:skateboard:0.634 riding:skating:0.199
+snow:skiing:0.499 skiing:ski-slope:0.285
+man:man:0.578 skiing:skiing:0.314 snowy:ski-slope:0.191
+man:man:0.578 skiing:ski-slope:0.285
+man:man:0.578 skiing:skiing:0.314 snowy:ski-slope:0.191
+man:man:0.578 ski:ski-slope:0.291
+
+
+
+
+
+skiing:skiing:0.314 are:people:0.204
+snow:skiing:0.499 slope:ski-slope:0.281
+people:people:0.486 skis:skiing:0.422 snowy:ski-slope:0.191
+people:people:0.486 ski:ski-slope:0.291
+skiers:ski-slope:0.214 mountain:skiing:0.158
+sandwich:sandwich:0.412
+sandwich:sandwich:0.412
+sandwich:sandwich:0.412
+sandwich:sandwich:0.412 eating:eating:0.293
+sandwich:sandwich:0.412 eating:eating:0.293
+skateboard:skateboard:0.634
+skateboard:skateboard:0.634
+man:man:0.578 skate:skateboard:0.315
+skateboard:skateboard:0.634
+skateboard:skateboard:0.634 man:man:0.578 riding:skating:0.199
+skateboard:skateboard:0.634 riding:skating:0.199
+skateboard:skateboard:0.634
+
+skateboard:skateboard:0.634 skate:skating:0.311
+
+plate:plate:0.470 sandwich:sandwich:0.412
+plate:plate:0.470 sandwich:sandwich:0.412
+sandwich:sandwich:0.412
+plate:plate:0.470 sandwich:sandwich:0.412
+plate:plate:0.470 sandwich:sandwich:0.412
+man:man:0.578
+man:man:0.578 surfboard:surfboard:0.477
+man:man:0.578 surfboard:surfboard:0.477 water:water:0.271 surf:surfing:0.228
+
+man:man:0.578 surfing:surfing:0.295 water:water:0.271
+sandwich:sandwich:0.412 hand:knife:0.026
+sandwich:sandwich:0.412
+lettuce:sandwich:0.066
+sandwich:sandwich:0.412 person:person:0.199
+sandwich:sandwich:0.412 person:person:0.199
+bed:bed:0.633 room:sleeping:0.093
+bed:bed:0.633 bedroom:sleeping:0.114
+bed:bed:0.633 room:sleeping:0.093
+room:sleeping:0.093 beds:bed:0.076
+bed:bed:0.633 room:sleeping:0.093
+living:living-room:0.377
+living:living-room:0.377
+living:living-room:0.377
+room:living-room:0.251
+living:living-room:0.377
+bed:bedroom:0.433 girl:girl:0.312
+girl:girl:0.312 room:bedroom:0.127
+bed:bedroom:0.433 girl:girl:0.312
+bed:bedroom:0.433 girl:girl:0.312
+bed:bedroom:0.433 girl:girl:0.312
+pizza:pizza:0.769 woman:woman:0.563
+pizza:pizza:0.769 woman:woman:0.563
+pizza:pizza:0.769 woman:woman:0.563
+pizza:pizza:0.769
+pizza:pizza:0.769 woman:woman:0.563
+plate:plate:0.470 sitting:room:0.139 pizza:food:0.097
+plate:plate:0.470 pizza:food:0.097
+plate:plate:0.470 sitting:room:0.139 pizza:food:0.097
+plate:plate:0.470 pizza:food:0.097
+plate:plate:0.470 pizza:food:0.097
+
+pizza:pizza:0.769
+pizza:pizza:0.769
+pizza:pizza:0.769
+slice:pizza:0.141
+pizza:food:0.097
+pizza:food:0.097
+
+pizza:food:0.097
+pizza:food:0.097
+tennis:tennis-court:0.928 man:man:0.578 ball:tennis-ball:0.415 racquet:tennis-racket:0.233
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928 man:man:0.578 ball:tennis-ball:0.415 swing:hitting:0.140
+boy:male-child:0.464
+boy:male-child:0.464
+kid:male-child:0.083
+
+child:male-child:0.206
+man:man:0.578
+door:door:0.134
+in:outside:0.113
+man:man:0.578 front:door:0.006
+man:man:0.578
+ceiling:ceiling:0.094
+house:house:0.080 room:floor:0.042
+room:floor:0.042 living:house:0.033
+floor:floor:0.185 room:house:0.031 walls:ceiling:0.014
+room:floor:0.042 living:house:0.033 walls:ceiling:0.014
+
+
+
+
+
+girl:girl:0.312 walking:hitchhiking:0.019
+girl:girl:0.312 road:road:0.268
+girl:girl:0.312
+child:girl:0.091 carrying:hitchhiking:0.017
+child:girl:0.091
+
+flying:sky:0.431
+
+flying:sky:0.431
+
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 woman:woman:0.563 racquet:tennis:0.174
+woman:woman:0.563 racquet:tennis-racket:0.233
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928
+
+
+
+
+
+people:people:0.486 sitting:room:0.139
+
+sitting:room:0.139
+
+people:people:0.486 sitting:room:0.139
+woman:woman:0.563
+woman:woman:0.563 sitting:room:0.139
+her:woman:0.227
+woman:woman:0.563
+woman:woman:0.563 sitting:room:0.139
+sitting:room:0.139 ground:floor:0.028
+man:man:0.578 floor:floor:0.185
+floor:floor:0.185 sits:sitting:0.056
+man:man:0.578 floor:floor:0.185
+floor:floor:0.185 sitting:room:0.139
+bed:bed:0.633 baby:baby:0.363 laughing:laughing:0.085
+baby:baby:0.363 smiling:laughing:0.014
+bed:bed:0.633 baby:baby:0.363
+bed:bed:0.633 baby:baby:0.363
+bed:bed:0.633 smiles:laughing:0.008
+television:television:0.244 street:sidewalk:0.115
+television:television:0.244 sidewalk:sidewalk:0.198
+tv:television:0.215 street:sidewalk:0.115
+television:television:0.244 street:sidewalk:0.115
+tv:television:0.215 sidewalk:sidewalk:0.198
+man:man:0.578 phone:cellular-telephone:0.339
+man:man:0.578 cellphone:cellular-telephone:0.144
+man:man:0.578 phone:cellular-telephone:0.339
+man:man:0.578 phone:cellular-telephone:0.339
+man:man:0.578 phone:cellular-telephone:0.339
+
+woman:woman:0.563
+woman:woman:0.563
+woman:woman:0.563
+her:woman:0.227 sitting:room:0.139
+
+
+
+
+
+
+
+
+
+
+
+
+food:food:0.216
+eating:food:0.052
+display:displaying:0.094
+
+
+
+
+
+couch:sofa:0.434
+dog:dog:0.706 couch:sofa:0.434
+dog:dog:0.706 couch:sofa:0.434 sleeping:sleeping:0.189
+dog:dog:0.706 couch:sofa:0.434
+dog:dog:0.706 couch:sofa:0.434
+man:man:0.578
+man:man:0.578 smiles:grinning:0.052
+man:man:0.578 smiling:grinning:0.174
+man:man:0.578
+man:man:0.578 food:restaurant:0.142
+people:people:0.486 restaurant:dining:0.138
+people:people:0.486 table:dining:0.246
+people:people:0.486 table:dining:0.246
+
+restaurant:dining:0.138
+
+
+
+
+
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625 oven:microwaving:0.226
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625 stove:microwaving:0.095
+
+
+
+
+
+race:race:0.038
+racing:race:0.012
+riders:race:0.007
+
+race:race:0.038 cyclists:cyclist:0.027
+bathroom:bathroom:0.709 man:man:0.578
+bathroom:bathroom:0.709 man:man:0.578
+bathroom:bathroom:0.709
+man:man:0.578
+bathroom:bathroom:0.709 man:man:0.578
+cat:cat:0.861 bathroom:bathroom:0.709 sink:toilet:0.214
+cat:cat:0.861 bathroom:bathroom:0.709 sink:toilet:0.214
+cat:cat:0.861 sink:bathroom:0.389
+cat:cat:0.861 bathroom:bathroom:0.709 sink:toilet:0.214
+cat:cat:0.861 bathroom:bathroom:0.709 sink:toilet:0.214
+
+
+
+
+
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+cat:cat:0.861 sitting:room:0.139 dish:bowl:0.084
+cat:cat:0.861 sitting:room:0.139
+cat:cat:0.861 sitting:room:0.139 dish:bowl:0.084
+cat:cat:0.861
+cat:cat:0.861 sitting:room:0.139
+bike:motorcycle:0.115 jump:jumping:0.086
+bike:motorcycle:0.115 riding:jumping:0.021
+
+motorcycle:motorcycle:0.636 jump:jumping:0.086
+motorcycle:motorcycle:0.636
+bike:motorcycle:0.115
+motorcycle:motorcycle:0.636 jumping:jumping:0.163
+motor:motorcycle:0.121
+motor:motorcycle:0.121
+motorcycle:motorcycle:0.636
+bike:motorcycle:0.115
+motorcycle:motorcycle:0.636
+motorcycle:motorcycle:0.636
+bike:motorcycle:0.115
+motorcycle:motorcycle:0.636
+motorcycle:motorcycle:0.636 woman:couple:0.044
+motor:motorcycle:0.121 driving:road:0.097
+bike:motorcycle:0.115 two:couple:0.020
+motor:motorcycle:0.121 bike:riding:0.055 woman:couple:0.044
+motorcycle:motorcycle:0.636 two:couple:0.020
+dog:dog:0.706
+dog:dog:0.706 sleeping:sleeping:0.189
+dog:dog:0.706
+dog:dog:0.706 bed:sleeping:0.345
+dog:dog:0.706
+airplane:airplane:0.492 sky:sky:0.349
+airplane:airplane:0.492 sky:sky:0.349
+
+flying:sky:0.431
+plane:airplane:0.462
+flying:sky:0.431 jets:jet:0.152
+sky:sky:0.349 air:jet:0.060
+flying:sky:0.431 sky:circling:0.193 jets:jet:0.152
+
+flying:sky:0.431 sky:circling:0.193 planes:jet:0.112
+
+flying:sky:0.431 sky:circling:0.193
+flying:sky:0.431 airplanes:jet:0.089
+flying:sky:0.431 sky:circling:0.193 planes:jet:0.112
+flying:sky:0.431 sky:circling:0.193 airplanes:jet:0.089
+plane:airplane:0.462 flying:sky:0.431
+airplane:airplane:0.492 flying:sky:0.431
+airplane:airplane:0.492 flying:sky:0.431
+plane:airplane:0.462 flying:sky:0.431
+plane:airplane:0.462 flying:sky:0.431
+giraffe:giraffe:0.727 mouth:drooling:0.008
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+next:waiting:0.026
+
+
+
+
+plants:plant:0.110 potted:pot:0.065
+
+plants:plant:0.110 potted:pot:0.065
+plants:plant:0.110 potted:pot:0.065
+plants:plant:0.110 pots:pot:0.067
+bench:bench:0.587 people:people:0.486 sitting:sitting:0.109
+bench:bench:0.587 people:people:0.486 sitting:sitting:0.109
+bench:bench:0.587 people:people:0.486 sitting:sitting:0.109 ocean:shore:0.043
+bench:bench:0.587 people:people:0.486
+bench:bench:0.587 people:people:0.486 sitting:sitting:0.109 ocean:shore:0.043
+park:park:0.115 trees:tree:0.097
+
+park:park:0.115
+
+park:park:0.115
+
+
+
+
+
+fire:fire:0.053
+fire:fire:0.053
+fire:fire:0.053
+fire:fire:0.053
+fire:fire:0.053
+bus:bus:0.780 man:man:0.578
+bus:bus:0.780
+man:man:0.578
+bus:bus:0.780 man:man:0.578
+man:man:0.578
+sheep:sheep:0.800 field:field:0.308 standing:standing:0.173
+sheep:sheep:0.800 field:field:0.308 stands:standing:0.076
+sheep:sheep:0.800 field:field:0.308
+sheep:sheep:0.800 standing:standing:0.173
+sheep:sheep:0.800 standing:standing:0.173
+giraffe:giraffe:0.727 man:man:0.578
+giraffe:giraffe:0.727 man:man:0.578
+giraffe:giraffe:0.727 man:man:0.578
+giraffe:giraffe:0.727 man:man:0.578
+giraffe:giraffe:0.727 man:man:0.578
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727 tree:tree:0.391
+giraffe:giraffe:0.727
+signs:street-sign:0.325 street:road:0.243
+street:road:0.243
+street:road:0.243
+street:road:0.243 way:street-sign:0.062
+street:road:0.243
+bird:bird:0.600 tree:tree:0.391
+bird:bird:0.600
+bird:bird:0.600
+bird:bird:0.600 tree:tree:0.391
+bird:bird:0.600
+road:road:0.268
+road:road:0.268 street:town:0.015
+street:road:0.243
+road:road:0.268
+street:road:0.243 trees:branching:0.069
+woman:woman:0.563
+woman:woman:0.563
+woman:woman:0.563
+woman:woman:0.563
+woman:woman:0.563
+
+train:train:0.848
+
+train:train:0.848
+train:train:0.848
+train:train:0.848 bridge:railway:0.045
+train:train:0.848 bridge:railway:0.045
+train:train:0.848 down:pulling:0.101
+train:train:0.848
+train:train:0.848 bridge:railway:0.045
+bat:baseball-bat:0.462
+bat:baseball-bat:0.462 hitting:hitting:0.133
+bat:baseball-bat:0.462 swinging:hitting:0.258
+bat:baseball-bat:0.462
+swinging:hitting:0.258
+tunnel:tunnel:0.129
+tunnel:tunnel:0.129
+tunnel:tunnel:0.129
+tunnel:tunnel:0.129
+tunnel:tunnel:0.129
+in:outside:0.113
+
+that:outside:0.064
+
+
+train:train:0.848
+train:train:0.848
+train:train:0.848 station:railway-station:0.491 pulling:pulling:0.099
+train:train:0.848
+train:train:0.848
+trucks:truck:0.140
+truck:truck:0.582 down:pulling:0.101
+
+truck:truck:0.582
+trucks:truck:0.140
+horse:horse:0.667
+horse:horse:0.667 graze:hoof:0.021
+horse:horse:0.667 cows:hoof:0.014
+horse:horse:0.667 cows:hoof:0.014
+horse:horse:0.667 cows:hoof:0.014
+cows:cow:0.416 river:river:0.320
+cows:cow:0.416 water:river:0.156
+cows:cow:0.416 water:river:0.156
+cows:cow:0.416 lake:river:0.076
+cows:cow:0.416
+field:field:0.308 herd:stampeding:0.285 cattle:cattle:0.264
+field:field:0.308 animals:cattle:0.089
+cows:cattle:0.442 field:field:0.308
+cows:cattle:0.442 field:field:0.308
+cows:cattle:0.442 field:field:0.308
+
+ferrets:feline:0.021
+
+
+
+bed:bed:0.633
+bed:bed:0.633
+bed:bed:0.633
+bed:bed:0.633
+bed:bed:0.633
+street:road:0.243
+
+man:man:0.578 street:road:0.243
+street:road:0.243
+man:man:0.578 road:road:0.268
+woman:woman:0.563 boat:boat:0.462
+food:fruit:0.043
+woman:woman:0.563 boat:boat:0.462 fruit:fruit:0.366
+boat:boat:0.462
+boat:boat:0.462
+elephants:elephant:0.564
+elephants:elephant:0.564
+elephants:elephant:0.564
+elephants:elephant:0.564
+elephants:elephant:0.564
+man:man:0.578 car:car:0.418
+man:man:0.578 car:car:0.418
+man:man:0.578 driving:car:0.086
+man:man:0.578 car:car:0.418
+man:man:0.578 driving:car:0.086
+elephant:elephant:0.704 man:man:0.578
+elephant:elephant:0.704 riding:riding:0.207
+elephant:elephant:0.704 man:man:0.578 riding:riding:0.207
+man:man:0.578 elephants:elephant:0.564
+elephant:elephant:0.704 riding:riding:0.207
+man:man:0.578 sitting:sitting:0.109
+man:man:0.578
+man:man:0.578 sitting:sitting:0.109
+man:man:0.578 sits:sitting:0.056
+man:man:0.578 sitting:sitting:0.109
+elephants:elephant:0.564 people:people:0.486
+elephants:elephant:0.564 field:field:0.308
+elephants:elephant:0.564 people:people:0.486 riding:riding:0.207
+elephants:elephant:0.564 riders:riding:0.027
+elephants:elephant:0.564 people:people:0.486 ride:riding:0.066
+
+
+
+
+
+people:people:0.486
+people:people:0.486
+are:people:0.204
+people:people:0.486
+people:people:0.486 ride:motorboat:0.009
+bags:clothing:0.056 backpacks:luggage-compartment:0.030
+car:car:0.418
+car:car:0.418
+car:car:0.418 bags:clothing:0.056
+
+people:people:0.486 luggage:baggage:0.390 bags:bag:0.108
+people:people:0.486 luggage:baggage:0.390
+
+luggage:baggage:0.390
+people:people:0.486 luggage:baggage:0.390
+dog:dog:0.706 horse:horse:0.667
+dog:dog:0.706 horse:horse:0.667
+dog:dog:0.706 horse:horse:0.667
+dog:dog:0.706 horse:horse:0.667
+dog:dog:0.706 horse:horse:0.667
+
+elephant:elephant:0.704
+elephants:elephant:0.564
+elephants:elephant:0.564
+elephant:elephant:0.704
+dog:dog:0.706 frisbee:frisbee:0.692
+dog:dog:0.706 frisbee:frisbee:0.692
+dog:dog:0.706 frisbee:frisbee:0.692 grass:yard:0.038
+dog:dog:0.706 frisbee:frisbee:0.692 grass:yard:0.038
+dog:dog:0.706 frisbee:frisbee:0.692
+chair:rocking:0.113
+sleigh:rocking-chair:0.019
+sleigh:rocking-chair:0.019
+sleigh:rocking-chair:0.019
+couch:rocking:0.019
+frisbee:frisbee:0.692
+frisbee:frisbee:0.692 man:man:0.578 catching:flinging:0.072 beach:lake:0.017
+frisbee:frisbee:0.692 man:man:0.578
+man:man:0.578 lake:lake:0.212
+frisbee:frisbee:0.692 man:man:0.578 catching:flinging:0.072 beach:lake:0.017
+frisbee:frisbee:0.692
+frisbee:frisbee:0.692
+frisbee:frisbee:0.692
+woman:woman:0.563
+frisbee:frisbee:0.692 woman:woman:0.563
+dog:dog:0.706 bed:bed:0.633
+bed:bed:0.633
+dog:dog:0.706 bed:bed:0.633
+dog:dog:0.706 bed:bed:0.633
+dog:dog:0.706 bed:bed:0.633
+fountain:fountain:0.109
+water:water:0.271
+fountain:fountain:0.109
+water:water:0.271 fountain:fountain:0.109
+fountain:fountain:0.109
+zebras:zebra:0.612
+zebra:zebra:0.666
+zebra:zebra:0.666
+zebras:zebra:0.612
+zebra:zebra:0.666
+pineapple:pineapple:0.120
+pineapple:pineapple:0.120
+table:table:0.284 fruit:pineapple:0.006
+pineapple:pineapple:0.120
+pineapple:pineapple:0.120
+people:people:0.486 snowy:skiing:0.228
+people:people:0.486 skis:skiing:0.422 mountain:slope:0.100
+snow:skiing:0.499 mountain:slope:0.100
+snowy:skiing:0.228
+skiers:skiing:0.162 mountain:slope:0.100
+game:baseball:0.216 kids:child:0.087 play:playing-field:0.051
+baseball:baseball:0.647 game:playing-field:0.097 boy:child:0.028
+baseball:baseball:0.647
+baseball:baseball:0.647 game:playing-field:0.097
+baseball:baseball:0.647 league:coaching:0.027
+plate:bowl:0.070
+plate:bowl:0.070
+
+dish:bowl:0.084
+plate:bowl:0.070
+
+
+
+
+
+woman:woman:0.563 banana:fruit:0.064
+woman:woman:0.563 banana:fruit:0.064
+
+banana:fruit:0.064
+woman:woman:0.563 banana:fruit:0.064
+
+
+
+
+
+man:man:0.578 living:room:0.133
+man:man:0.578 fixing:repairing:0.028
+man:man:0.578 sitting:room:0.139
+man:man:0.578 room:room:0.218
+man:man:0.578 fixing:repairing:0.028
+people:people:0.486 mountain:mountain:0.207 skis:hiking:0.029
+people:people:0.486 snowboards:mountain:0.028
+people:people:0.486 snow:mountain:0.087 snowboards:hiking:0.013
+people:people:0.486 skis:mountain:0.098
+people:people:0.486 snow:mountain:0.087 ski:hiking:0.026
+
+broccoli:vegetable:0.157 meat:frying:0.057 salad:frying-pan:0.016
+vegetables:vegetable:0.259 bowl:frying-pan:0.014
+vegetables:vegetable:0.259
+meat:frying:0.057 pasta:frying-pan:0.026
+bowl:bowl:0.371
+bowl:bowl:0.371
+bowl:bowl:0.371
+bowl:bowl:0.371
+bowl:bowl:0.371
+broccoli:broccoli:0.302
+broccoli:broccoli:0.302
+broccoli:broccoli:0.302
+broccoli:broccoli:0.302
+broccoli:broccoli:0.302
+noodles:noodle:0.100
+bowl:bowl:0.371 noodles:noodle:0.100
+bowl:bowl:0.371 yummy:noodle:0.038
+noodles:noodle:0.100
+noodles:noodle:0.100 salad:bowl:0.070
+
+
+chicken:grilling:0.040
+
+meat:meat:0.245
+skiing:skiing:0.314 person:person:0.199 snowy:snow:0.182
+snow:skiing:0.499 person:person:0.199
+skier:skiing:0.208
+snow:skiing:0.499 skier:snow:0.185
+ski:skiing:0.266
+skateboard:skateboard:0.634 boy:male-child:0.464 riding:skating:0.199
+skateboard:skateboard:0.634 boy:male-child:0.464
+boy:male-child:0.464 riding:skating:0.199
+skateboarding:skating:0.136
+boy:male-child:0.464 skate:skateboard:0.315 riding:skating:0.199
+
+
+
+
+
+skateboard:skating:0.611 man:man:0.578
+man:man:0.578 skateboards:skating:0.073
+skateboard:skating:0.611 man:man:0.578
+skateboard:skating:0.611 man:man:0.578
+skateboard:skating:0.611 man:man:0.578
+people:people:0.486
+
+
+
+
+man:man:0.578 skate:skateboard:0.315
+skateboard:skateboard:0.634 man:man:0.578 riding:skating:0.199
+skateboard:skateboard:0.634
+skate:skateboard:0.315
+skate:skateboard:0.315
+skateboard:skateboard:0.634 man:man:0.578 street:street:0.370 riding:skating:0.199
+man:man:0.578 street:street:0.370 skateboarding:skating:0.136
+man:man:0.578 street:street:0.370 skateboarding:skating:0.136
+skateboard:skateboard:0.634 man:man:0.578 street:street:0.370
+skateboard:skateboard:0.634 man:man:0.578 street:street:0.370
+corn:corn:0.224
+tortellini:corn:0.032
+corn:corn:0.224
+corn:corn:0.224
+plate:plate:0.470 corn:corn:0.224
+
+
+
+hotdogs:hotdog:0.126
+
+snow:snow:0.439
+snow:snow:0.439
+snow:snow:0.439
+man:man:0.578 snowboard:snow:0.189
+
+
+
+
+
+
+donut:doughnut:0.251
+donuts:doughnut:0.417 table:table:0.284
+doughnuts:doughnut:0.294
+doughnuts:doughnut:0.294
+doughnuts:doughnut:0.294
+
+
+
+
+
+surfboard:surfboard:0.477 surfer:surfing:0.302 water:water:0.271
+surf:surfboard:0.252
+surfboard:surfboard:0.477 person:person:0.199 beach:ocean:0.131
+surfboard:surfboard:0.477 beach:ocean:0.131
+surf:surfboard:0.252
+beach:beach:0.635 surfboards:surfboard:0.110 holding:carrying:0.037
+man:man:0.578 surfboard:surfboard:0.477 sand:beach:0.154
+beach:beach:0.635 surfboard:surfboard:0.477 holding:carrying:0.037
+beach:beach:0.635 surfboard:surfboard:0.477
+beach:beach:0.635 surfboards:surfboard:0.110
+
+display:displaying:0.094
+food:food:0.216
+
+sitting:room:0.139
+wedding:wedding:0.376
+cake:wedding:0.073
+wedding:wedding:0.376
+wedding:wedding:0.376 groom:bride:0.173 bride:groom:0.142
+bride:wedding:0.347 groom:bride:0.173
+cake:cake:0.638 girl:girl:0.312
+cake:cake:0.638 girl:girl:0.312 table:table:0.284
+cake:cake:0.638 girl:girl:0.312 table:table:0.284
+cake:cake:0.638 girl:girl:0.312 table:table:0.284
+cake:cake:0.638 table:table:0.284 young:girl:0.088
+surfing:surfboard:0.267
+surfing:surfing:0.295 water:water:0.271
+ocean:ocean:0.351 surfs:surfer:0.027
+ocean:ocean:0.351 surfing:surfboard:0.267
+surfboard:surfboard:0.477
+dog:dog:0.706 bed:sleeping:0.345
+dog:dog:0.706 bed:sleeping:0.345
+dog:dog:0.706 bed:sleeping:0.345
+bed:sleeping:0.345
+dog:dog:0.706 bed:sleeping:0.345
+bed:bed:0.633 room:sleeping:0.093
+bed:bed:0.633
+bed:bed:0.633
+bed:bed:0.633 bedroom:sleeping:0.114
+bed:bed:0.633 room:sleeping:0.093
+pizza:pizza:0.769
+pizza:pizza:0.769
+pizza:pizza:0.769
+pizza:pizza:0.769
+pizza:pizza:0.769 slices:pan:0.036
+dog:dog:0.706 bed:bed:0.633 bedroom:sleeping:0.114
+dog:dog:0.706 bed:bed:0.633
+dog:dog:0.706 bed:bed:0.633 room:sleeping:0.093
+dog:dog:0.706 bed:bed:0.633
+dog:dog:0.706 bed:bed:0.633 room:sleeping:0.093
+
+
+
+
+
+pizza:pizza:0.769 salad:bowl:0.070
+pizza:pizza:0.769 bowl:bowl:0.371
+pizza:pizza:0.769 salad:bowl:0.070 meal:cheese:0.013
+pizza:pizza:0.769 bowl:bowl:0.371
+pizza:pizza:0.769 salad:bowl:0.070
+tennis:tennis-court:0.928 racket:tennis-ball:0.329
+tennis:tennis-court:0.928 racket:tennis-ball:0.329
+tennis:tennis-court:0.928
+court:tennis-court:0.536 racket:tennis-racket:0.388
+tennis:tennis-court:0.928 ball:tennis-ball:0.415 racket:tennis-racket:0.388
+sink:bathroom:0.389 toothpaste:toothbrush:0.079 kitchen:sink:0.049
+sink:bathroom:0.389 tooth:toothbrush:0.179
+bathroom:bathroom:0.709 sink:sink:0.242
+sink:bathroom:0.389
+bathroom:bathroom:0.709 sink:sink:0.242 toothpaste:toothbrush:0.079
+girl:female-child:0.225
+girl:female-child:0.225
+girl:female-child:0.225
+girl:female-child:0.225
+girl:female-child:0.225
+room:room:0.218
+
+room:room:0.218
+room:room:0.218
+room:room:0.218
+shocked:crying:0.056
+
+
+
+
+are:people:0.204
+living:living-room:0.377
+
+
+people:people:0.486
+
+holding:hand:0.092
+
+person:person:0.199
+
+
+people:people:0.486
+
+people:people:0.486
+people:people:0.486
+desk:desk:0.431
+desk:desk:0.431
+desk:desk:0.431 sitting:room:0.139
+desk:desk:0.431
+desk:desk:0.431
+
+
+
+
+
+boy:male-child:0.464 play:playing-field:0.051
+baseball:baseball:0.647 boy:male-child:0.464 field:playing-field:0.093
+boy:male-child:0.464 bat:baseball:0.307
+baseball:baseball:0.647 boy:male-child:0.464
+baseball:baseball:0.647 man:man:0.578 young:male-child:0.239 field:playing-field:0.093
+
+bat:baseball-bat:0.462
+hit:hitting:0.211
+bat:baseball-bat:0.462
+
+tennis:tennis-court:0.928 swinging:hitting:0.258 racquet:tennis-ball:0.214
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928 ball:tennis-ball:0.415 racket:tennis-racket:0.388
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 man:man:0.578
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 man:man:0.578 ball:tennis-ball:0.415 serving:serving:0.082
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928 man:man:0.578 ball:tennis-ball:0.415
+
+pizzas:pizza:0.148 store:selling:0.094
+store:selling:0.094
+pizza:pizza:0.769
+
+tennis:tennis-racket:0.759 man:man:0.578 racket:tennis-ball:0.329 reaching:aiming:0.009
+tennis:tennis-racket:0.759
+tennis:tennis-racket:0.759 man:man:0.578 ball:tennis-ball:0.415
+tennis:tennis-racket:0.759 man:man:0.578 ball:tennis-ball:0.415
+tennis:tennis-racket:0.759 man:man:0.578 playing:tennis-ball:0.127
+laptop:laptop:0.609
+laptop:laptop:0.609 desk:room:0.112
+laptop:laptop:0.609 her:woman:0.227 room:room:0.218
+laptop:laptop:0.609 table:room:0.114
+laptop:laptop:0.609
+clock:clock:0.559 tall:standing:0.080
+clock:clock:0.559
+clock:clock:0.559
+clock:clock:0.559 stands:standing:0.076
+clock:clock:0.559
+woman:woman:0.563 street:sidewalk:0.115
+woman:woman:0.563 sidewalk:sidewalk:0.198
+her:woman:0.227
+
+woman:woman:0.563 sidewalk:sidewalk:0.198
+wall:wall:0.092
+wall:wall:0.092
+wall:wall:0.092
+wall:wall:0.092
+wall:wall:0.092
+man:man:0.578 woman:woman:0.563
+hair:hair:0.272
+man:man:0.578
+man:man:0.578 woman:woman:0.563
+
+
+
+table:table:0.284
+fruit:apple:0.071
+table:table:0.284 fruit:apple:0.071
+
+
+
+
+
+tower:building:0.360
+
+tower:building:0.360
+
+
+ceiling:ceiling:0.094
+
+clock:clock:0.559 hanging:ceiling:0.024
+
+ceiling:ceiling:0.094
+flowers:blossoming:0.499
+
+flowers:blossoming:0.499
+flowers:blossoming:0.499
+
+egg:egg:0.171
+egg:egg:0.171
+egg:egg:0.171
+egg:egg:0.171
+egg:egg:0.171
+baby:baby:0.363 sitting:room:0.139
+baby:baby:0.363 sitting:room:0.139
+child:baby:0.082
+baby:baby:0.363
+baby:baby:0.363
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+man:man:0.578
+bathroom:bathroom:0.709 man:man:0.578
+bathroom:bathroom:0.709 man:man:0.578
+man:man:0.578
+man:man:0.578
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+wall:bathroom:0.075
+
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:wall:0.022
+bathroom:wall:0.022
+bathroom:wall:0.022
+
+sitting:room:0.139 window:wall:0.011
+
+
+
+
+
+toilet:toilet:0.731
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861 bowl:bowl:0.371 sitting:room:0.139
+cat:cat:0.861
+cat:cat:0.861
+plane:airplane:0.462
+jet:airplane:0.218
+plane:airplane:0.462 flying:sky:0.431
+plane:airplane:0.462 flying:sky:0.431
+airplane:airplane:0.492 flying:sky:0.431
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+toilet:bathroom:0.569 room:floor:0.042
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 shower:bathroom:0.135
+toilet:toilet:0.731
+toilet:toilet:0.731
+toilet:toilet:0.731
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+
+
+
+
+
+toilet:toilet:0.731
+bathroom:bathroom:0.709
+dirty:toilet:0.068
+toilet:toilet:0.731
+toilet:toilet:0.731 sink:bathroom:0.389
+sign:sign:0.357
+sign:sign:0.357
+sign:sign:0.357
+sign:sign:0.357
+sign:sign:0.357
+dog:dog:0.706 bowl:bowl:0.371
+dog:dog:0.706 bowl:bowl:0.371
+dog:dog:0.706 bowl:bowl:0.371
+dog:dog:0.706 water:water:0.271 dish:bowl:0.084
+dog:dog:0.706 bowl:bowl:0.371 water:water:0.271
+
+
+
+
+
+desk:office:0.348
+desk:office:0.348
+desk:office:0.348
+desk:office:0.348
+desk:office:0.348
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541
+giraffe:giraffe:0.727 standing:standing:0.173
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727 standing:standing:0.173
+giraffe:giraffe:0.727 standing:standing:0.173
+giraffe:giraffe:0.727
+flying:sky:0.431 airplanes:airplane:0.091
+flying:sky:0.431
+flying:sky:0.431
+sky:sky:0.349 planes:airplane:0.098
+flying:sky:0.431
+street:street:0.370 light:traffic-light:0.270
+traffic:traffic-light:0.283 light:glowing:0.115
+street:street:0.370 light:traffic-light:0.270
+street:street:0.370 light:traffic-light:0.270
+traffic:traffic-light:0.283 light:glowing:0.115
+cat:cat:0.861 bench:bench:0.587 sleeping:sleeping:0.189
+cat:cat:0.861 bench:bench:0.587 sleeping:sleeping:0.189
+cat:cat:0.861 bench:bench:0.587
+cat:cat:0.861 bench:bench:0.587
+cat:cat:0.861
+man:man:0.578 waiting:waiting:0.038
+man:man:0.578 standing:sidewalk:0.048
+man:man:0.578 standing:sidewalk:0.048 waiting:waiting:0.038
+street:sidewalk:0.115
+man:man:0.578
+giraffes:giraffe:0.541 standing:standing:0.173
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541 standing:standing:0.173
+giraffes:giraffe:0.541 standing:standing:0.173
+giraffes:giraffe:0.541
+
+
+
+
+tower:building:0.360
+traffic:traffic-light:0.283 light:glowing:0.115
+traffic:traffic-light:0.283 light:glowing:0.115
+traffic:traffic-light:0.283 light:glowing:0.115
+light:traffic-light:0.270
+traffic:traffic-light:0.283 light:glowing:0.115
+green:grass:0.094 animals:sheep:0.072
+sheep:sheep:0.800 field:field:0.308
+sheep:sheep:0.800 field:field:0.308
+sheep:sheep:0.800 field:field:0.308
+sheep:sheep:0.800 field:field:0.308
+goat:goat:0.133
+sheep:goat:0.058
+goat:goat:0.133
+goat:goat:0.133
+goat:goat:0.133
+man:man:0.578
+
+man:man:0.578
+man:man:0.578
+
+beach:shore:0.065
+shore:shore:0.098
+
+
+
+bus:bus:0.780 street:sidewalk:0.115
+bus:bus:0.780
+bus:bus:0.780
+bus:bus:0.780
+bus:bus:0.780 sidewalk:sidewalk:0.198
+grazing:sheep:0.169
+sheep:sheep:0.800 mountain:mountain:0.207
+hill:mountain:0.066
+sheep:sheep:0.800 mountains:mountain:0.079
+sheep:sheep:0.800 hill:mountain:0.066 herd:congregating:0.042
+birds:bird:0.350
+birds:bird:0.350
+birds:bird:0.350
+birds:bird:0.350
+birds:bird:0.350
+
+
+
+
+
+river:boating:0.075
+
+
+yacht:motorboat:0.013
+sailing:boating:0.088 river:motorboat:0.028
+
+
+hospital:hospital:0.316
+
+
+
+
+
+
+station:train:0.303 subway:metro:0.124
+
+
+
+people:people:0.486
+
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+street:city:0.160 road:street-sign:0.017
+signs:street-sign:0.325
+street:city:0.160
+street:city:0.160
+street:city:0.160
+train:train:0.848
+train:train:0.848
+front:pulling:0.027
+train:train:0.848
+
+train:train:0.848
+train:train:0.848
+train:train:0.848 down:pulling:0.101
+train:train:0.848
+train:train:0.848
+truck:truck:0.582 road:road:0.268
+truck:truck:0.582 road:road:0.268
+truck:truck:0.582 road:road:0.268
+truck:truck:0.582
+truck:truck:0.582 street:road:0.243
+truck:truck:0.582 street:street:0.370
+truck:truck:0.582 street:street:0.370
+truck:truck:0.582 street:street:0.370
+truck:truck:0.582 street:street:0.370
+truck:truck:0.582 street:street:0.370
+sky:sky:0.349
+sky:sky:0.349
+sky:sky:0.349
+flying:sky:0.431
+flying:sky:0.431
+cows:cow:0.416
+cattle:cow:0.103
+cows:cow:0.416
+cattle:cow:0.103
+cows:cow:0.416
+cats:cat:0.114 chair:sofa:0.064
+cat:cat:0.861 couch:sofa:0.434 lying:sleeping:0.071
+couch:sofa:0.434 cats:cat:0.114
+couch:sofa:0.434 cats:cat:0.114
+cat:cat:0.861 sleeping:sleeping:0.189 sofa:sofa:0.116
+cattle:cow:0.103
+cows:cow:0.416 lying:resting:0.073
+cows:cow:0.416 laying:resting:0.167
+cows:cow:0.416
+cows:cow:0.416
+man:man:0.578 cow:cow:0.533
+cow:cow:0.533
+cow:cow:0.533 barn:farm:0.055
+cow:cow:0.533
+man:man:0.578 cow:cow:0.533
+cows:cow:0.416 grass:grass:0.255
+cows:cow:0.416 grass:grass:0.255
+cows:cow:0.416
+cows:cow:0.416
+cows:cow:0.416
+elephant:elephant:0.704
+elephant:elephant:0.704
+elephant:elephant:0.704
+elephant:elephant:0.704
+elephant:elephant:0.704
+people:people:0.486 street:street:0.370
+people:people:0.486 street:street:0.370
+people:people:0.486 parade:parading:0.147
+street:street:0.370 are:people:0.204
+parade:parading:0.147
+
+
+
+
+
+
+
+
+
+
+people:people:0.486
+people:people:0.486
+street:sidewalk:0.115
+people:people:0.486 walking:sidewalk:0.114
+people:people:0.486
+luggage:baggage:0.390 truck:car:0.131
+luggage:baggage:0.390 truck:car:0.131
+suitcases:baggage:0.256 parked:car:0.138
+truck:car:0.131
+truck:car:0.131
+sitting:room:0.139 chair:rocking:0.113
+chair:rocking:0.113
+chair:rocking:0.113
+chair:rocking:0.113
+sitting:room:0.139
+teddy:teddy:0.436
+teddy:teddy:0.436 chair:chair:0.320
+teddy:teddy:0.436 chair:chair:0.320 sitting:room:0.139
+teddy:teddy:0.436 sitting:room:0.139 couch:chair:0.066
+teddy:teddy:0.436
+
+riding:skating:0.199
+ramp:ramp:0.352 skateboarder:skating:0.256
+skateboard:skateboard:0.634 ramp:ramp:0.352
+skateboard:skateboard:0.634 ramp:ramp:0.352
+
+
+
+
+
+zebras:zebra:0.612
+zebra:zebra:0.666 field:field:0.308
+zebras:zebra:0.612
+zebra:zebra:0.666
+zebras:zebra:0.612
+dog:dog:0.706
+dog:dog:0.706
+dog:dog:0.706
+dog:dog:0.706
+dog:dog:0.706
+frisbee:frisbee:0.692 people:people:0.486
+frisbee:frisbee:0.692 field:field:0.308 are:people:0.204
+frisbee:frisbee:0.692
+people:people:0.486
+frisbee:frisbee:0.692 field:field:0.308
+horse:horse:0.667
+horse:horse:0.667
+horse:horse:0.667
+horse:horse:0.667
+horse:horse:0.667 galloping:hoof:0.007
+street:street:0.370
+carriage:carriage:0.460 street:street:0.370
+carriage:carriage:0.460 street:street:0.370
+carriage:carriage:0.460
+carriage:carriage:0.460
+
+street:street:0.370
+
+
+
+snow:skiing:0.499 skis:ski-slope:0.336
+snow:skiing:0.499 skis:ski-slope:0.336 mountain:skier:0.064
+skier:skier:0.231
+snow:skiing:0.499 ski:ski-slope:0.291 skier:skier:0.231
+skis:skiing:0.422 slope:ski-slope:0.281 mountain:skier:0.064
+snow:skiing:0.499 skiing:snow:0.192
+snow:skiing:0.499
+snow:skiing:0.499 skis:snow:0.275
+snow:skiing:0.499 skiing:snow:0.192
+snow:skiing:0.499 skis:snow:0.275
+people:people:0.486
+are:people:0.204 kids:playground:0.009
+
+kids:playground:0.009
+people:people:0.486
+
+
+
+
+
+table:table:0.284
+table:table:0.284
+table:table:0.284
+table:table:0.284
+table:table:0.284
+noodles:noodle:0.100
+noodles:noodle:0.100 dish:frying:0.039
+dish:frying:0.039 pasta:noodle:0.037
+pasta:noodle:0.037
+noodles:noodle:0.100
+broccoli:broccoli:0.302 cooked:frying:0.057 bowl:pot:0.036
+broccoli:broccoli:0.302 stove:kitchen:0.190 pot:pot:0.150
+broccoli:broccoli:0.302 stove:kitchen:0.190 pot:pot:0.150
+broccoli:broccoli:0.302 pot:pot:0.150 cooked:frying:0.057
+broccoli:broccoli:0.302 pot:pot:0.150
+skateboarder:skateboard:0.260 stairs:stairs:0.232 jumping:skating:0.122
+stairs:stairs:0.232
+skate:skateboard:0.315 stairs:stairs:0.232 jumping:skating:0.122
+skateboarder:skateboard:0.260 stairs:stairs:0.232 riding:skating:0.199
+man:man:0.578 steps:stairs:0.161 skateboarding:skating:0.136
+plate:plate:0.470
+plate:plate:0.470
+plate:plate:0.470 stirfry:bean:0.014
+
+plate:plate:0.470
+carrot:carrot:0.290 chew:gnawing:0.014
+carrot:carrot:0.290
+carrot:carrot:0.290
+carrot:carrot:0.290 biting:gnawing:0.016
+carrot:carrot:0.290
+food:food:0.216
+spoon:bowl:0.051
+spoon:bowl:0.051
+food:food:0.216
+
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578 knife:sword:0.008
+man:man:0.578
+skateboard:skateboard:0.634
+ramp:ramp:0.352 skateboarder:skateboard:0.260 jumping:skating:0.122
+ramp:ramp:0.352 skate:skateboard:0.315
+skateboard:skateboard:0.634 man:man:0.578 ramp:ramp:0.352
+skateboard:skateboard:0.634
+carrots:carrot:0.409 bowl:bowl:0.371
+bowl:bowl:0.371
+bowl:bowl:0.371 spoon:carrot:0.039
+carrots:carrot:0.409 bowl:bowl:0.371
+
+baseball:stadium:0.242
+baseball:stadium:0.242
+baseball:stadium:0.242 holding:hand:0.092
+baseball:stadium:0.242 hotdog:hotdog:0.203
+baseball:stadium:0.242 hotdog:hotdog:0.203 holding:hand:0.092
+people:people:0.486 city:street:0.228
+people:people:0.486 street:street:0.370
+street:street:0.370
+people:people:0.486
+
+onions:meat:0.020
+
+bacon:meat:0.020
+
+
+man:man:0.578
+man:man:0.578
+holding:carrying:0.037
+man:man:0.578 holding:carrying:0.037
+man:man:0.578 holding:carrying:0.037
+food:meat:0.126
+
+market:market:0.406 food:meat:0.126
+food:meat:0.126
+food:meat:0.126
+person:person:0.199
+
+
+person:person:0.199
+
+
+table:table:0.284
+table:table:0.284
+table:table:0.284 food:food:0.216
+table:table:0.284
+person:person:0.199 hill:mountain:0.066
+hill:mountain:0.066 sliding:ascending:0.007
+mountain:mountain:0.207 person:person:0.199
+snowy:mountain:0.105
+snowboard:mountain:0.039
+man:man:0.578
+man:man:0.578
+
+man:man:0.578
+man:man:0.578
+donuts:doughnut:0.417
+donuts:doughnut:0.417
+
+doughnuts:doughnut:0.294 table:table:0.284
+donut:doughnut:0.251
+
+
+
+
+
+
+
+
+
+
+fries:french-fries:0.416 table:dining:0.246 person:person:0.199 dinner:restaurant:0.050
+fries:french-fries:0.416 person:person:0.199
+burger:french-fries:0.076
+
+fries:french-fries:0.416
+people:people:0.486
+people:people:0.486
+people:people:0.486
+
+people:people:0.486
+man:man:0.578 candles:candle:0.195
+man:man:0.578 candles:candle:0.195
+man:man:0.578 candles:candle:0.195
+man:man:0.578 candles:candle:0.195
+man:man:0.578 candles:candle:0.195
+surfer:surfboard:0.281
+ocean:ocean:0.351 surfer:surfboard:0.281
+surfboard:surfboard:0.477
+surfboard:surfboard:0.477
+surfboard:surfboard:0.477
+pepperoni:pepperoni:0.197
+pepperoni:pepperoni:0.197
+cheese:pepperoni:0.021
+pepperoni:pepperoni:0.197
+sausage:pepperoni:0.027
+pizza:pizza:0.769 table:table:0.284
+pizza:pizza:0.769
+pizza:pizza:0.769 table:table:0.284
+pizza:pizza:0.769
+pizza:pizza:0.769
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 man:man:0.578
+tennis:tennis-court:0.928 man:man:0.578 racquet:tennis-racket:0.233
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 man:man:0.578
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 racket:tennis-player:0.311
+tennis:tennis-court:0.928 racket:tennis-player:0.311
+tennis:tennis-court:0.928 player:tennis-player:0.212
+tennis:tennis-court:0.928 racket:tennis-player:0.311
+man:man:0.578 teeth:dentition:0.547 brushing:toothpaste:0.445
+man:man:0.578 teeth:dentition:0.547 brushing:toothpaste:0.445
+man:man:0.578 teeth:dentition:0.547 brushing:toothpaste:0.445
+man:man:0.578 teeth:dentition:0.547 brushing:toothpaste:0.445
+man:man:0.578 teeth:dentition:0.547
+boy:male-child:0.464
+
+dog:dog:0.706 boy:male-child:0.464
+dog:dog:0.706 child:male-child:0.206
+boy:male-child:0.464
+kids:family:0.015
+kids:family:0.015
+
+children:family:0.028
+children:family:0.028
+room:room:0.218
+room:room:0.218
+room:room:0.218
+room:room:0.218
+living:room:0.133
+sky:sky:0.349
+flying:sky:0.431
+flying:sky:0.431
+flying:sky:0.431
+flying:sky:0.431
+person:person:0.199
+ocean:ocean:0.351
+ocean:ocean:0.351 person:person:0.199
+surf:surfboard:0.252 person:person:0.199
+ocean:ocean:0.351 surfing:surfing:0.295
+man:man:0.578
+
+man:man:0.578
+
+
+people:people:0.486
+
+people:people:0.486
+
+people:people:0.486
+bed:bed:0.633 computer:laptop:0.329
+bed:bed:0.633 laptop:laptop:0.609 her:woman:0.227
+bed:bed:0.633 laptop:laptop:0.609 her:woman:0.227
+laptop:laptop:0.609 her:woman:0.227
+bed:bed:0.633 computer:laptop:0.329
+plate:plate:0.470 teddy:teddy:0.436 table:table:0.284 sitting:eating:0.020
+plate:plate:0.470 bear:teddy:0.287 sitting:eating:0.020
+teddy:teddy:0.436 table:table:0.284
+plate:plate:0.470 bear:teddy:0.287 table:table:0.284
+teddy:teddy:0.436 table:table:0.284
+
+hit:hitting:0.211
+
+bat:ballplayer:0.406
+catcher:ballplayer:0.173
+bat:baseball-bat:0.462
+bat:baseball-bat:0.462
+game:baseball:0.216 catcher:ballplayer:0.173
+bat:baseball-bat:0.462 ball:hitting:0.404
+bat:baseball-bat:0.462
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928 man:man:0.578 playing:tennis-ball:0.127
+tennis:tennis-court:0.928 man:man:0.578 playing:tennis-ball:0.127
+tennis:tennis-court:0.928 man:man:0.578 ball:tennis-ball:0.415 hitting:hitting:0.133
+tennis:tennis-court:0.928 man:man:0.578 ball:tennis-ball:0.415 hitting:hitting:0.133
+truck:truck:0.582
+truck:truck:0.582
+truck:truck:0.582
+truck:truck:0.582 logs:log:0.107 bed:truck-bed:0.002
+truck:truck:0.582
+woman:woman:0.563 bread:bread:0.184
+woman:woman:0.563 oven:oven:0.230 bread:bread:0.184
+woman:woman:0.563 oven:oven:0.230 bread:bread:0.184
+woman:woman:0.563 oven:oven:0.230 bread:bread:0.184
+woman:woman:0.563 oven:oven:0.230 bread:bread:0.184
+
+
+table:table:0.284
+
+
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+woman:woman:0.563
+
+
+
+
+
+picture:camera:0.076
+
+
+
+couch:sofa:0.434
+man:man:0.578 couch:sofa:0.434
+man:man:0.578 couch:sofa:0.434
+couch:sofa:0.434
+man:man:0.578 couch:sofa:0.434
+boy:male-child:0.464
+
+boy:male-child:0.464
+boy:male-child:0.464 hairbrush:toothpaste:0.005
+boy:male-child:0.464
+
+
+
+
+
+sitting:inside:0.042
+
+
+
+
+trees:tree:0.097
+flowers:blossoming:0.499
+plants:tree:0.024
+flowers:blossoming:0.499
+plants:tree:0.024
+woman:woman:0.563
+table:table:0.284
+woman:woman:0.563
+woman:woman:0.563 table:table:0.284
+woman:woman:0.563
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625 cutting:knife:0.244
+kitchen:kitchen:0.625 stove:cooking:0.073
+
+cutting:knife:0.244
+people:people:0.486 bike:bicycle:0.402
+park:park:0.115
+people:people:0.486 bike:bicycle:0.402
+bike:bicycle:0.402
+people:people:0.486 bikes:bicycle:0.138
+woman:woman:0.563
+
+woman:woman:0.563
+woman:woman:0.563
+
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 sink:bathroom:0.389
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+sink:bathroom:0.389
+bathroom:bathroom:0.709
+
+bathroom:bathroom:0.709
+bicycle:bicycle:0.371
+bike:bicycle:0.402
+bike:bicycle:0.402
+bike:bicycle:0.402
+bicycle:bicycle:0.371
+street:street:0.370
+street:street:0.370
+street:street:0.370
+street:street:0.370
+street:street:0.370
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731
+bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+pizza:restaurant:0.178
+
+people:people:0.486
+people:people:0.486
+people:people:0.486
+
+
+
+
+
+
+
+
+
+
+desk:office:0.348 computers:operating:0.159
+desk:office:0.348 computer:computer:0.287
+computers:operating:0.159 desktop:computer:0.137
+desk:office:0.348 computer:computer:0.287
+computer:computer:0.287
+bed:bedroom:0.433
+room:bedroom:0.127
+bedroom:bedroom:0.325
+bed:bedroom:0.433
+room:bedroom:0.127
+people:people:0.486 restaurant:restaurant:0.192
+restaurant:restaurant:0.192
+people:people:0.486
+people:people:0.486
+people:people:0.486
+zebra:zebra:0.666 giraffes:giraffe:0.541
+giraffe:giraffe:0.727 zebra:zebra:0.666
+zebra:zebra:0.666 giraffes:giraffe:0.541
+zebra:zebra:0.666 giraffes:giraffe:0.541
+zebra:zebra:0.666 giraffes:giraffe:0.541
+
+
+
+
+
+standing:standing:0.173 woman:couple:0.044
+
+woman:couple:0.044
+standing:standing:0.173 woman:couple:0.044
+
+
+
+
+
+
+light:traffic-light:0.270
+traffic:traffic-light:0.283
+traffic:traffic-light:0.283 trees:branching:0.069
+light:traffic-light:0.270
+traffic:traffic-light:0.283 street:city:0.160
+giraffe:cheetah:0.028
+giraffe:cheetah:0.028
+giraffe:cheetah:0.028
+giraffe:cheetah:0.028
+giraffe:cheetah:0.028
+giraffes:giraffe:0.541
+giraffe:giraffe:0.727
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541
+sheep:sheep:0.800 field:field:0.308 stands:standing:0.076
+sheep:sheep:0.800 standing:standing:0.173
+sheep:sheep:0.800 field:field:0.308
+sheep:sheep:0.800 standing:standing:0.173
+sheep:sheep:0.800
+street:street:0.370 light:glowing:0.115
+light:glowing:0.115
+lights:lamp:0.030
+street:street:0.370 light:glowing:0.115
+street:street:0.370 light:glowing:0.115
+bench:bench:0.587 man:man:0.578 sitting:sitting:0.109
+bench:bench:0.587 man:man:0.578
+bench:bench:0.587 man:man:0.578 sitting:sitting:0.109
+bench:bench:0.587 man:man:0.578 sitting:sitting:0.109
+bench:bench:0.587 man:man:0.578 sitting:sitting:0.109
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727 tree:tree:0.391
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727 tree:tree:0.391
+giraffe:giraffe:0.727 tree:tree:0.391
+woman:woman:0.563
+woman:woman:0.563
+
+woman:woman:0.563
+
+water:water:0.271 duck:swan:0.025
+
+
+water:water:0.271 body:body-of-water:0.121
+water:water:0.271
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727 standing:standing:0.173
+giraffe:giraffe:0.727 standing:standing:0.173
+giraffe:giraffe:0.727
+truck:towing:0.177
+bus:bus:0.780 truck:towing:0.177
+bus:bus:0.780 truck:towing:0.177
+trucks:towing:0.158
+bus:bus:0.780 truck:towing:0.177 towing:tow-truck:0.055
+birds:bird:0.350
+birds:bird:0.350
+birds:bird:0.350
+birds:bird:0.350
+birds:bird:0.350
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541
+giraffe:giraffe:0.727
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541
+street:road:0.243 driving:bus:0.180
+riding:riding:0.207 truck:road:0.166
+people:people:0.486
+people:people:0.486 truck:road:0.166
+truck:road:0.166
+
+
+
+man:soldier:0.004
+
+street:city:0.160
+signs:street-sign:0.325
+signs:street-sign:0.325
+signs:street-sign:0.325
+signs:street-sign:0.325
+bird:bird:0.600
+birds:bird:0.350
+birds:bird:0.350
+birds:bird:0.350
+birds:bird:0.350
+train:train:0.848 cargo:cargo:0.076
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+truck:truck:0.582 street:road:0.243
+truck:truck:0.582 street:road:0.243
+truck:truck:0.582
+
+truck:truck:0.582
+truck:truck:0.582 tow:hauling:0.043
+tractor:truck:0.037
+
+truck:truck:0.582
+truck:truck:0.582
+tennis:tennis-court:0.928 woman:woman:0.563 racquet:tennis-ball:0.214
+tennis:tennis-court:0.928 her:woman:0.227
+tennis:tennis-court:0.928 ball:tennis-ball:0.415 serve:serving:0.100
+tennis:tennis-court:0.928 woman:woman:0.563 racket:tennis-ball:0.329
+tennis:tennis-court:0.928 woman:woman:0.563 racket:tennis-ball:0.329
+
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861
+deer:deer:0.130
+moose:deer:0.038
+antelope:deer:0.049
+deer:deer:0.130
+deer:deer:0.130
+
+cat:cat:0.861 flowers:flower:0.600
+cat:cat:0.861
+cat:cat:0.861 flowers:flower:0.600
+cat:cat:0.861
+sofa:sofa:0.116 tabby:feline:0.044
+couch:sofa:0.434
+couch:sofa:0.434
+couch:sofa:0.434
+couch:sofa:0.434 tabby:feline:0.044
+truck:truck:0.582
+truck:truck:0.582
+truck:truck:0.582
+truck:truck:0.582
+truck:truck:0.582
+boat:boat:0.462
+water:body-of-water:0.199
+water:body-of-water:0.199 ship:boat:0.043
+boat:boat:0.462 water:body-of-water:0.199
+boat:boat:0.462 water:body-of-water:0.199
+cat:cat:0.861 sitting:staring:0.049 monitor:computer-monitor:0.037
+cat:cat:0.861 monitor:computer-monitor:0.037
+cat:cat:0.861 desk:desk:0.431
+cat:cat:0.861 desk:desk:0.431
+cat:cat:0.861
+boy:male-child:0.464
+boy:male-child:0.464
+boy:male-child:0.464 smiling:grinning:0.174
+boy:male-child:0.464 smiling:grinning:0.174
+boy:male-child:0.464
+
+
+
+
+
+
+boats:boat:0.436 water:water:0.271
+boat:boat:0.462
+boats:boat:0.436
+boat:boat:0.462
+elephants:elephant:0.564 herd:stampeding:0.285
+elephants:elephant:0.564
+elephants:elephant:0.564 herd:stampeding:0.285
+elephants:elephant:0.564 herd:stampeding:0.285
+elephants:elephant:0.564 herd:stampeding:0.285
+dog:dog:0.706 suitcase:bag:0.296 room:living-room:0.251 lying:resting:0.073
+dog:dog:0.706 suitcase:bag:0.296
+dog:dog:0.706 suitcase:bag:0.296
+dog:dog:0.706 luggage:bag:0.224 floor:living-room:0.037
+dog:dog:0.706 suitcase:bag:0.296 laying:resting:0.167 floor:living-room:0.037
+boats:boat:0.436 docked:pier:0.141 passengers:boarding:0.096
+boats:boat:0.436
+people:people:0.486 boats:boat:0.436
+people:people:0.486
+people:people:0.486 boats:boat:0.436
+people:people:0.486
+people:people:0.486
+people:people:0.486
+people:people:0.486 in:inside:0.033
+people:people:0.486
+elephants:elephant:0.564
+elephants:elephant:0.564
+elephants:elephant:0.564
+elephants:elephant:0.564
+elephants:elephant:0.564
+
+
+
+
+
+man:man:0.578
+man:man:0.578
+
+
+man:man:0.578
+
+woman:woman:0.563 outside:waiting:0.032
+waiting:waiting:0.038
+woman:woman:0.563
+woman:woman:0.563
+laptop:laptop:0.609 desk:office:0.348
+desk:office:0.348 computers:operating:0.159 keyboard:laptop:0.155
+laptop:laptop:0.609 desk:office:0.348
+laptop:laptop:0.609 desk:office:0.348
+laptop:laptop:0.609 desk:office:0.348
+bear:bear:0.493
+bear:bear:0.493
+bear:bear:0.493
+bear:bear:0.493
+bear:bear:0.493
+bear:bear:0.493
+bear:bear:0.493 water:water:0.271
+bear:bear:0.493 water:water:0.271
+bear:bear:0.493 water:water:0.271
+bear:bear:0.493 water:water:0.271
+runway:runway:0.449 airport:airplane:0.243
+plane:airplane:0.462 are:people:0.204
+
+
+
+bear:bear:0.493
+bear:bear:0.493
+bear:bear:0.493
+bear:bear:0.493
+bear:bear:0.493
+
+ball:ball:0.143
+ball:ball:0.143
+
+
+dog:dog:0.706 bed:sleeping:0.345 floor:floor:0.185
+
+dog:dog:0.706 bed:sleeping:0.345
+dog:dog:0.706 bed:sleeping:0.345
+dog:dog:0.706 bed:sleeping:0.345
+bears:bear:0.252
+bears:bear:0.252
+bears:bear:0.252 woods:forest:0.199
+bears:bear:0.252
+bears:bear:0.252 trees:forest:0.068
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+zebras:zebra:0.612
+zebras:zebra:0.612
+zebra:zebra:0.666
+zebra:zebra:0.666
+zebras:zebra:0.612
+horse:horse:0.667
+horse:horse:0.667 carriage:carriage:0.460 street:street:0.370
+horse:horse:0.667 carriage:carriage:0.460 street:street:0.370
+horse:horse:0.667 carriage:carriage:0.460
+horse:horse:0.667
+person:person:0.199
+ocean:ocean:0.351
+
+water:water:0.271 person:person:0.199
+ocean:ocean:0.351
+plate:plate:0.470 banana:banana:0.351
+plate:plate:0.470 banana:banana:0.351
+plate:plate:0.470 banana:banana:0.351
+plate:plate:0.470 banana:banana:0.351
+plate:plate:0.470 banana:banana:0.351
+plate:plate:0.470 chicken:meat:0.056
+plate:plate:0.470 chicken:meat:0.056
+plate:plate:0.470 chicken:meat:0.056
+plate:plate:0.470 meat:meat:0.245
+plate:plate:0.470 meat:meat:0.245
+broccoli:carrot:0.035
+carrots:carrot:0.409
+carrots:carrot:0.409
+carrots:carrot:0.409
+carrots:carrot:0.409
+pizza:pizza:0.769 box:box:0.361
+pizza:pizza:0.769 box:box:0.361
+pizza:pizza:0.769 box:box:0.361 person:person:0.199
+pizza:pizza:0.769
+pizza:pizza:0.769 box:box:0.361
+apple:apple:0.419
+apple:apple:0.419
+apple:apple:0.419 table:table:0.284
+apple:apple:0.419
+apple:apple:0.419
+vegetables:vegetable:0.259
+vegetable:vegetable:0.064
+vegetables:vegetable:0.259
+broccoli:vegetable:0.157
+broccoli:vegetable:0.157
+mountain:mountain:0.207 person:person:0.199
+mountain:mountain:0.207
+mountain:mountain:0.207
+mountain:mountain:0.207
+mountain:mountain:0.207
+plate:plate:0.470 meat:food:0.076
+plate:plate:0.470 meat:food:0.076
+plate:plate:0.470 meat:food:0.076
+plate:plate:0.470 food:food:0.216
+plate:plate:0.470
+man:man:0.578 water:water:0.271 waves:surfboard:0.183
+man:man:0.578 water:water:0.271
+man:man:0.578 water:water:0.271
+man:man:0.578 water:water:0.271
+man:man:0.578 water:water:0.271
+skis:skiing:0.422 person:person:0.199
+ski:skiing:0.266
+snow:skiing:0.499 skis:snow:0.275
+snow:skiing:0.499 skier:snow:0.185
+skier:skiing:0.208
+
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+skiing:skiing:0.314
+skiing:skier:0.170
+snow:skiing:0.499 skis:skier:0.166 slope:slope:0.126
+skier:skier:0.231
+skis:skiing:0.422 steep:slope:0.050
+
+
+
+
+
+skiing:skiing:0.314
+skier:skier:0.231
+skier:skier:0.231
+ski:skiing:0.266
+skier:skier:0.231
+
+
+
+
+snowboarder:snowboarder:0.081
+
+jump:jumping:0.086
+jumping:jumping:0.163
+jumping:jumping:0.163 snowboarder:snowboarder:0.081
+snowboarder:snowboarder:0.081
+tennis:tennis-court:0.928 racket:tennis-ball:0.329 player:tennis-player:0.212
+tennis:tennis-court:0.928 racket:tennis-ball:0.329 balls:bouncing:0.148
+tennis:tennis-court:0.928 racket:tennis-ball:0.329
+tennis:tennis-court:0.928 racket:tennis-ball:0.329
+tennis:tennis-court:0.928
+woman:woman:0.563
+eating:eating:0.293 donut:sandwich:0.011
+woman:woman:0.563 eating:eating:0.293
+woman:woman:0.563 eating:eating:0.293
+woman:woman:0.563
+
+
+
+
+
+
+
+woman:woman:0.563 sitting:room:0.139
+sitting:room:0.139
+woman:woman:0.563 sitting:room:0.139
+soccer:soccer-ball:0.777 boy:male-child:0.464 field:playing-field:0.093
+boy:male-child:0.464 playing:playing-field:0.132
+soccer:soccer-ball:0.777 playing:playing-field:0.132
+soccer:soccer-ball:0.777 boy:male-child:0.464 field:playing-field:0.093
+young:male-child:0.239 playing:playing-field:0.132
+laptop:laptop:0.609 sitting:room:0.139
+laptop:laptop:0.609
+laptop:laptop:0.609
+laptop:laptop:0.609
+laptop:laptop:0.609
+man:man:0.578 surfboard:surfboard:0.477 holding:carrying:0.037
+man:man:0.578 surf:surfboard:0.252 carrying:carrying:0.108
+man:man:0.578 surfboard:surfboard:0.477 holding:carrying:0.037
+man:man:0.578 surfboard:surfboard:0.477 holding:carrying:0.037
+man:man:0.578 surfboard:surfboard:0.477 holding:carrying:0.037
+man:man:0.578 surfboard:surfboard:0.477 water:water:0.271
+man:man:0.578
+surfboard:surfboard:0.477
+water:water:0.271
+man:man:0.578 surfboard:surfboard:0.477
+man:man:0.578
+man:man:0.578
+surfer:ocean:0.246
+
+man:man:0.578
+child:male-child:0.206
+young:male-child:0.239
+surfboard:beach:0.114
+beach:beach:0.635 boy:male-child:0.464
+
+surf:surfboard:0.252
+surfboard:surfboard:0.477
+surfboard:surfboard:0.477 ocean:ocean:0.351
+ocean:ocean:0.351 surfers:surfing:0.075
+surfboard:surfboard:0.477 water:water:0.271
+tennis:tennis-court:0.928 racquet:tennis-ball:0.214
+tennis:tennis-court:0.928 ball:tennis-ball:0.415 hit:hitting:0.211
+tennis:tennis-court:0.928 ball:tennis-ball:0.415 racket:tennis-racket:0.388
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+are:people:0.204 dining:dining-room:0.162 room:dining:0.079
+table:dining:0.246 chairs:dining-room:0.112
+tables:dining:0.081 room:dining-room:0.078
+table:dining:0.246 chairs:dining-room:0.112
+table:dining:0.246 dining:dining-room:0.162
+baked:bread:0.033
+bread:bread:0.184
+table:table:0.284 cheese:bread:0.067
+table:table:0.284
+
+pizzas:pizza:0.148 pan:baking:0.073
+pizza:pizza:0.769 uncooked:baking:0.017
+pizzas:pizza:0.148 baking:cookie-sheet:0.068
+pizzas:pizza:0.148 pan:baking:0.073
+pizzas:pizza:0.148 baking:cookie-sheet:0.068
+couch:sofa:0.434 room:room:0.218
+couch:sofa:0.434
+couch:sofa:0.434 room:room:0.218
+
+couch:sofa:0.434
+boy:male-child:0.464 mouth:dentition:0.093
+young:male-child:0.239 mouth:dentition:0.093
+child:male-child:0.206 chewing:dentition:0.010
+boy:male-child:0.464
+boy:male-child:0.464 chewing:dentition:0.010
+living:living-room:0.377
+living:living-room:0.377
+living:living-room:0.377
+furniture:living-room:0.115
+room:living-room:0.251
+people:people:0.486
+people:people:0.486
+people:people:0.486
+
+people:people:0.486
+
+
+
+couch:living-room:0.182
+
+living:living-room:0.377
+
+people:people:0.486
+room:living-room:0.251
+
+people:people:0.486 sitting:room:0.139
+people:people:0.486 room:room:0.218
+people:people:0.486
+people:people:0.486
+are:people:0.204
+field:field:0.308
+
+flying:sky:0.431 field:field:0.308 person:person:0.199
+field:field:0.308
+field:field:0.308 person:person:0.199
+baseball:baseball:0.647 bat:ballplayer:0.406 ball:hitting:0.404
+baseball:baseball:0.647 bat:ballplayer:0.406
+baseball:baseball:0.647
+baseball:baseball:0.647 swinging:hitting:0.258 catcher:ballplayer:0.173
+baseball:baseball:0.647 ball:hitting:0.404
+bat:baseball-bat:0.462
+bat:baseball-bat:0.462
+baseball:baseball-bat:0.461
+baseball:baseball-bat:0.461 batter:batter:0.204
+baseball:baseball-bat:0.461 ball:hitting:0.404
+holding:hand:0.092
+
+
+
+man:man:0.578
+ball:hitting:0.404
+players:baseball:0.135
+ball:hitting:0.404
+game:baseball:0.216
+ball:hitting:0.404
+pizza:pizza:0.769 stove:stove:0.365
+pizza:pizza:0.769 stove:stove:0.365
+pizza:pizza:0.769 stove:stove:0.365 homemade:baking:0.038
+pizza:pizza:0.769 kitchen:kitchen:0.625 stove:stove:0.365
+stove:stove:0.365 pizzas:pizza:0.148 homemade:baking:0.038
+sitting:inside:0.042
+
+
+
+
+sitting:room:0.139
+sitting:room:0.139
+
+
+
+people:people:0.486 sitting:room:0.139
+
+working:working:0.084
+
+people:people:0.486 working:working:0.084
+laptop:laptop:0.609
+laptop:laptop:0.609
+laptop:laptop:0.609 sitting:desk:0.041
+laptop:laptop:0.609
+laptop:laptop:0.609
+man:man:0.578 phone:cellular-telephone:0.339 talking:calling:0.223
+man:man:0.578 phone:cellular-telephone:0.339
+man:man:0.578 phone:cellular-telephone:0.339 talking:calling:0.223
+man:man:0.578 phone:cellular-telephone:0.339 talking:calling:0.223
+man:man:0.578 phone:cellular-telephone:0.339 talking:calling:0.223
+
+
+
+
+
+kitchen:kitchen:0.625 refrigerator:refrigerator:0.363
+kitchen:kitchen:0.625 fridge:refrigerator:0.217
+kitchen:kitchen:0.625 refrigerator:refrigerator:0.363
+kitchen:kitchen:0.625 refrigerator:refrigerator:0.363
+kitchen:kitchen:0.625 refrigerator:refrigerator:0.363
+
+
+
+
+
+
+clock:clock:0.559
+clock:clock:0.559
+clock:clock:0.559
+clock:clock:0.559
+
+lamps:light-bulb:0.022
+
+
+lights:glowing:0.075
+teddy:teddy:0.436
+bear:teddy:0.287 sitting:sitting:0.109 shelf:bookshelf:0.062
+teddy:teddy:0.436 sitting:sitting:0.109 shelf:bookshelf:0.062
+teddy:teddy:0.436 library:library:0.239 sitting:sitting:0.109 shelf:bookshelf:0.062
+bear:teddy:0.287 room:sitting:0.067
+table:table:0.284
+toast:toast:0.129
+egg:toast:0.052
+table:table:0.284
+table:table:0.284 toast:toast:0.129
+sauce:sauce:0.082
+table:table:0.284 dish:chicken:0.035 chopsticks:sauce:0.024
+ravioli:sauce:0.011
+
+table:table:0.284 food:chicken:0.025 cup:sauce:0.021
+beef:chicken:0.013
+dish:chicken:0.035
+food:chicken:0.025
+
+meat:chicken:0.063
+
+fried:toast:0.017
+table:table:0.284
+table:table:0.284 person:person:0.199
+
+people:people:0.486
+people:people:0.486
+people:people:0.486 lake:lake:0.212
+
+people:people:0.486 pier:lake:0.037
+restaurant:restaurant:0.192
+
+
+
+
+car:car:0.418
+car:car:0.418
+car:car:0.418 road:road:0.268
+car:car:0.418
+vehicle:car:0.063
+bus:bus:0.780 people:people:0.486 riding:riding:0.207
+bus:bus:0.780 people:people:0.486
+bus:bus:0.780 people:people:0.486
+bus:bus:0.780 people:people:0.486
+bus:bus:0.780 people:people:0.486
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709 tub:shower:0.026
+tub:bathroom:0.104 bath:shower:0.027
+person:person:0.199 tub:shower:0.026
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+
+man:man:0.578 the:outside:0.110 buying:selling:0.017
+
+
+
+church:church:0.272
+church:church:0.272
+
+church:church:0.272
+church:church:0.272
+motorcycle:motorcycle:0.636 man:man:0.578
+motorcycle:motorcycle:0.636 man:man:0.578 riding:riding:0.207
+motorcycle:motorcycle:0.636
+motorcycle:motorcycle:0.636
+motorcycle:motorcycle:0.636 man:man:0.578 riding:riding:0.207
+motorcycle:motorcycle:0.636 riding:riding:0.207
+motorcycle:motorcycle:0.636 riding:riding:0.207
+people:people:0.486 street:road:0.243 scooter:motorcycle:0.043
+motorcycle:motorcycle:0.636 riding:riding:0.207
+people:people:0.486 riding:riding:0.207 scooter:motorcycle:0.043
+oranges:orange:0.476 table:table:0.284
+oranges:orange:0.476
+oranges:orange:0.476 table:table:0.284
+oranges:orange:0.476 table:table:0.284
+oranges:orange:0.476 table:table:0.284
+street:street:0.370
+motorcycles:motorcycle:0.254
+street:street:0.370 motorcycles:motorcycle:0.254
+street:street:0.370 motor:motorcycle:0.121
+motorcycles:motorcycle:0.254
+flying:airplane:0.231
+airplane:airplane:0.492 flying:landing:0.081
+flying:airplane:0.231
+plane:airplane:0.462
+plane:airplane:0.462 flying:landing:0.081
+man:man:0.578
+man:man:0.578
+man:man:0.578
+
+man:man:0.578 phone:telephone:0.272
+street:road:0.243 city:city:0.142
+city:city:0.142
+street:road:0.243 buildings:city:0.145
+street:road:0.243
+road:road:0.268 city:city:0.142
+man:man:0.578 bike:bicycle:0.402 street:street:0.370
+man:man:0.578 bike:bicycle:0.402 city:street:0.228
+street:street:0.370 road:bicycle:0.043
+street:street:0.370 riding:bicycle:0.121
+man:man:0.578 bike:bicycle:0.402 street:street:0.370
+sheep:sheep:0.800
+sheep:sheep:0.800
+sheep:sheep:0.800
+sheep:sheep:0.800 man:man:0.578
+sheep:sheep:0.800
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861 arm:head:0.014
+cat:cat:0.861
+
+bus:bus:0.780
+bus:bus:0.780
+bus:bus:0.780
+bus:bus:0.780
+
+
+
+
+
+sheep:sheep:0.800 field:field:0.308 standing:walking:0.032
+sheep:sheep:0.800
+sheep:sheep:0.800 field:field:0.308 standing:walking:0.032
+lamb:sheep:0.057
+sheep:sheep:0.800 standing:walking:0.032
+
+
+
+
+
+
+fire:fire-hydrant:0.023
+fire:fire-hydrant:0.023
+fire:fire-hydrant:0.023
+
+horses:horse:0.481
+horses:horse:0.481 riding:riding:0.207
+horses:horse:0.481
+horses:horse:0.481
+horses:horse:0.481
+horse:horse:0.667 man:man:0.578
+horse:horse:0.667
+horse:horse:0.667
+horse:horse:0.667
+horse:horse:0.667
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+
+woman:woman:0.563 subway:railway-station:0.096
+train:train:0.848 station:railway-station:0.491
+train:train:0.848
+train:train:0.848
+train:train:0.848
+sign:sign:0.357
+sign:sign:0.357
+
+sign:sign:0.357
+signs:sign:0.202
+stop:stop-sign:0.132
+road:road:0.268 stop:stop-sign:0.132
+stop:stop-sign:0.132
+street:road:0.243 stop:stop-sign:0.132
+stop:stop-sign:0.132
+street:road:0.243 driving:turning:0.186
+truck:truck:0.582 street:road:0.243 down:turning:0.105
+truck:truck:0.582 road:road:0.268
+truck:truck:0.582 road:road:0.268 driving:turning:0.186
+truck:truck:0.582 driving:turning:0.186
+
+
+
+
+
+truck:road:0.166 parked:car:0.138
+truck:road:0.166 parked:car:0.138
+cars:car:0.194 truck:road:0.166
+road:road:0.268 parked:car:0.138
+street:road:0.243 parked:car:0.138
+
+
+cows:cow:0.416
+cows:cow:0.416
+cows:cow:0.416 laying:resting:0.167
+cow:cow:0.533
+dog:dog:0.706 cow:cow:0.533
+dog:dog:0.706 cow:cow:0.533
+dog:dog:0.706 cow:cow:0.533
+
+man:man:0.578
+man:man:0.578
+man:man:0.578 boat:boat:0.462
+boat:boat:0.462 water:river:0.156
+man:man:0.578
+boat:boat:0.462 shore:shore:0.098 the:body-of-water:0.028
+boat:boat:0.462 water:body-of-water:0.199 shore:shore:0.098
+boat:boat:0.462 shore:shore:0.098
+boat:boat:0.462 shore:shore:0.098 the:body-of-water:0.028
+boat:boat:0.462 beach:shore:0.065 the:body-of-water:0.028
+
+
+
+
+
+man:man:0.578
+
+man:man:0.578
+
+man:man:0.578
+
+bed:sleeping:0.345
+
+
+bed:sleeping:0.345 sitting:chair:0.055
+elephant:elephant:0.704
+elephant:elephant:0.704
+elephant:elephant:0.704
+elephants:elephant:0.564 brush:brushing:0.153
+elephant:elephant:0.704
+
+
+sitting:room:0.139
+
+people:people:0.486
+
+
+
+
+
+luggage:bag:0.224 child:male-child:0.206 holding:carrying:0.037
+luggage:bag:0.224 child:male-child:0.206
+suitcase:bag:0.296
+boy:male-child:0.464 suitcase:bag:0.296 holding:carrying:0.037
+boy:male-child:0.464 luggage:bag:0.224
+bed:bed:0.633 teddy:teddy:0.436
+bed:bed:0.633 teddy:teddy:0.436 laying:resting:0.167
+bed:bed:0.633 teddy:teddy:0.436 lying:resting:0.073
+bed:bed:0.633 teddy:teddy:0.436 laying:resting:0.167
+bed:bed:0.633 stuffed:teddy:0.221
+water:water:0.271
+water:water:0.271 swimming:swimming:0.255
+water:water:0.271
+swimming:swimming:0.255
+water:water:0.271
+dog:dog:0.706
+dog:dog:0.706
+dog:dog:0.706 in:outside:0.113
+dog:dog:0.706
+dog:dog:0.706
+zebra:zebra:0.666
+zebras:zebra:0.612
+zebra:zebra:0.666
+zebras:zebra:0.612
+zebra:zebra:0.666
+dog:dog:0.706 holding:hand:0.092
+dogs:dog:0.142 teeth:biting:0.038
+dog:dog:0.706 teeth:biting:0.038
+dogs:dog:0.142 teeth:biting:0.038
+dog:dog:0.706 mouth:biting:0.042
+zebra:zebra:0.666
+zebra:zebra:0.666
+zebra:zebra:0.666
+zebras:zebra:0.612
+zebras:zebra:0.612
+horse:horse:0.667 beach:beach:0.635
+horse:horse:0.667 beach:beach:0.635 man:man:0.578
+horse:horse:0.667 beach:beach:0.635 man:man:0.578
+horse:horse:0.667 beach:beach:0.635
+horse:horse:0.667 shore:beach:0.045
+horses:horse:0.481
+horses:horse:0.481
+horses:horse:0.481
+horses:horse:0.481 field:field:0.308
+horses:horse:0.481
+horse:horse:0.667 jumping:jumping:0.163
+horse:horse:0.667 obstacle:hurdle:0.269 jumping:jumping:0.163
+horse:horse:0.667 jump:jumping:0.086
+horse:horse:0.667 jumping:jumping:0.163 hurdle:hurdle:0.158
+horse:horse:0.667 jumping:jumping:0.163
+man:man:0.578 horses:horse:0.481 cart:cart:0.237
+horses:horse:0.481
+horses:horse:0.481 cart:cart:0.237
+man:man:0.578 horses:horse:0.481 cart:cart:0.237
+man:man:0.578 horses:horse:0.481
+motorcycles:motorcycle:0.254 racing:racetrack:0.179
+motorcycles:motorcycle:0.254 race:racetrack:0.220
+
+bikes:motorcycle:0.045
+racing:racetrack:0.179
+game:baseball:0.216
+
+game:baseball:0.216
+
+man:man:0.578
+snow:skiing:0.499 people:people:0.486 slope:slope:0.126
+snow:skiing:0.499 people:people:0.486
+people:people:0.486 mountain:skiing:0.158
+people:people:0.486 skis:skiing:0.422 mountain:slope:0.100
+skiers:skiing:0.162 mountain:slope:0.100
+
+snow:skiing:0.499 people:people:0.486 ski:ski-slope:0.291
+snow:skiing:0.499 people:people:0.486
+skiers:ski-slope:0.214 mountain:skiing:0.158
+ski:ski-slope:0.291
+banana:banana:0.351 person:person:0.199
+banana:banana:0.351 person:person:0.199
+banana:banana:0.351 person:person:0.199
+banana:banana:0.351 person:person:0.199
+banana:banana:0.351
+bananas:banana:0.566 store:grocery-store:0.081
+bananas:banana:0.566 store:grocery-store:0.081
+bananas:banana:0.566
+bananas:banana:0.566
+bananas:banana:0.566
+bananas:banana:0.566
+bananas:banana:0.566 table:table:0.284
+bananas:banana:0.566
+bananas:banana:0.566
+bananas:banana:0.566
+
+
+catchers:baseball:0.021
+
+young:male-child:0.239
+
+
+
+
+
+snow:skiing:0.499 skis:mountain:0.098
+snow:skiing:0.499 mountain:mountain:0.207
+skiing:skiing:0.314 mountain:mountain:0.207
+skis:skiing:0.422 mountains:mountain:0.079
+skier:skiing:0.208 mountain:mountain:0.207
+skis:skiing:0.422 snowy:snow:0.182
+skis:skiing:0.422 mountain:snow:0.099
+skis:skiing:0.422 snowy:snow:0.182
+snow:skiing:0.499 skis:snow:0.275
+snowy:skiing:0.228 skier:snow:0.185
+boy:male-child:0.464
+young:male-child:0.239
+boy:male-child:0.464
+boy:male-child:0.464
+boy:male-child:0.464 sidewalk:sidewalk:0.198
+table:table:0.284
+
+
+fruit:fruit:0.366
+table:table:0.284 bowls:spoon:0.061
+in:outside:0.113
+
+
+man:man:0.578 standing:standing:0.173
+
+snow:skiing:0.499 skis:snow:0.275 person:person:0.199
+snow:skiing:0.499 skis:snow:0.275 person:person:0.199
+skiing:skiing:0.314 person:person:0.199
+snow:skiing:0.499 skis:snow:0.275 person:person:0.199
+snow:skiing:0.499 skis:snow:0.275
+
+
+
+
+
+apples:fruit:0.222
+apples:fruit:0.222
+apples:fruit:0.222
+apples:fruit:0.222 supermarket:grocery-store:0.050
+apples:fruit:0.222
+fruit:fruit:0.366
+fruit:fruit:0.366
+fruits:fruit:0.269
+fruits:fruit:0.269
+bowl:bowl:0.371 vegetables:fruit:0.139
+car:car:0.418
+car:car:0.418
+the:outside:0.110 parking:car:0.109
+car:car:0.418
+
+skateboard:skateboard:0.634 flipping:flipping:0.065
+sidewalk:sidewalk:0.198 skateboarding:skateboard:0.135
+skateboards:skateboarder:0.003
+skate:skateboard:0.315
+skateboarders:skateboarder:0.008
+fork:fork:0.241 vegetables:carrot:0.074
+fork:fork:0.241
+carrots:carrot:0.409 fork:fork:0.241
+carrots:carrot:0.409 fork:fork:0.241
+carrots:carrot:0.409 fork:fork:0.241
+people:people:0.486 hill:mountain:0.066
+people:people:0.486 snow:mountain:0.087
+mountain:mountain:0.207 are:people:0.204
+people:people:0.486 mountain:mountain:0.207
+people:people:0.486 mountain:mountain:0.207
+kneeling:leg:0.011
+kneeling:leg:0.011
+arm:leg:0.009
+man:man:0.578
+arm:leg:0.009
+person:person:0.199
+
+
+
+
+plate:plate:0.470 sandwich:meat:0.061
+meat:meat:0.245
+plate:plate:0.470 sandwich:meat:0.061
+plate:plate:0.470 sandwich:meat:0.061
+plate:plate:0.470 sandwich:meat:0.061
+
+
+
+hotdogs:hotdog:0.126
+
+table:table:0.284 sandwich:hamburger:0.253
+sandwich:hamburger:0.253
+plate:plate:0.470 sandwich:hamburger:0.253
+plate:plate:0.470 sandwich:hamburger:0.253 sits:sitting:0.056
+plate:plate:0.470 sandwich:hamburger:0.253 sits:sitting:0.056
+cake:cake:0.638
+cake:cake:0.638
+cake:cake:0.638
+cake:cake:0.638
+cake:cake:0.638
+man:man:0.578 surfboard:ocean:0.413
+surfboard:ocean:0.413
+man:man:0.578 surf:ocean:0.209
+man:man:0.578 water:water:0.271 surf:ocean:0.209
+surfer:ocean:0.246
+plate:plate:0.470 food:food:0.216
+plate:plate:0.470
+plate:plate:0.470 food:food:0.216
+plate:plate:0.470
+plate:plate:0.470 food:food:0.216
+surfboard:surfboard:0.477 beach:ocean:0.131
+surfer:surfboard:0.281
+surfer:surfboard:0.281
+surfing:surfing:0.295 water:water:0.271
+ocean:ocean:0.351 surfer:surfboard:0.281
+plate:plate:0.470 sandwiches:sandwich:0.124
+plate:plate:0.470 sandwich:sandwich:0.412
+sandwich:sandwich:0.412
+plate:plate:0.470 sandwich:sandwich:0.412
+plate:plate:0.470 sandwiches:sandwich:0.124
+surfing:surfing:0.295 beach:ocean:0.131 surfboards:surfboard:0.110
+people:people:0.486 surf:surfboard:0.252 beach:ocean:0.131
+people:people:0.486 beach:ocean:0.131 surfboards:surfboard:0.110
+people:people:0.486 surf:surfboard:0.252 beach:ocean:0.131
+people:people:0.486 beach:ocean:0.131 surfboards:surfboard:0.110
+desk:office:0.348 computer:computer:0.287
+desk:office:0.348
+desk:office:0.348 monitors:computer:0.192
+computer:computer:0.287
+
+pizza:pizza:0.769 woman:woman:0.563 table:dining:0.246
+pizza:pizza:0.769 woman:woman:0.563 restaurant:restaurant:0.192
+pizza:pizza:0.769 woman:woman:0.563 table:dining:0.246
+pizza:pizza:0.769 woman:woman:0.563 table:dining:0.246
+pizza:pizza:0.769 woman:woman:0.563 restaurant:restaurant:0.192
+tennis:tennis-court:0.928 young:male-child:0.239
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 woman:woman:0.563 racket:tennis:0.261
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 racket:tennis-player:0.311
+tennis:tennis-court:0.928 racket:tennis-player:0.311
+tennis:tennis-court:0.928 racket:tennis-player:0.311
+tennis:tennis-court:0.928 racket:tennis-player:0.311
+tennis:tennis-court:0.928 racket:tennis-player:0.311
+boy:male-child:0.464 toothbrush:toothbrush:0.346 mouth:dentition:0.093
+boy:male-child:0.464 toothbrush:toothbrush:0.346 mouth:dentition:0.093
+boy:male-child:0.464 toothbrush:toothbrush:0.346
+teeth:dentition:0.547 child:male-child:0.206
+teeth:dentition:0.547 brushing:toothpaste:0.445 child:male-child:0.206
+
+
+
+
+
+
+living:living-room:0.377
+living:living-room:0.377 tv:television:0.215
+living:living-room:0.377 television:television:0.244
+television:television:0.244 couches:living-room:0.087
+living:living-room:0.377
+room:living-room:0.251
+living:living-room:0.377
+living:living-room:0.377
+living:living-room:0.377
+living:living-room:0.377
+living:living-room:0.377
+couch:living-room:0.182
+living:living-room:0.377
+couches:living-room:0.087
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928 playing:tennis-ball:0.127
+tennis:tennis-court:0.928 ball:tennis-ball:0.415
+tennis:tennis-court:0.928 ball:tennis-ball:0.415 racket:tennis-racket:0.388
+tennis:tennis-court:0.928 woman:woman:0.563
+tennis:tennis-court:0.928 woman:woman:0.563 ball:tennis-ball:0.415 serving:serving:0.082
+tennis:tennis-court:0.928 ball:tennis-ball:0.415 serving:serving:0.082
+tennis:tennis-court:0.928 woman:woman:0.563 ball:tennis-ball:0.415 serve:serving:0.100
+tennis:tennis-court:0.928 woman:woman:0.563
+living:room:0.133
+room:room:0.218
+sitting:room:0.139 window:sliding:0.006
+room:room:0.218
+room:room:0.218
+people:people:0.486 flying:circling:0.164
+people:people:0.486
+people:people:0.486 sky:circling:0.193
+are:people:0.204 flying:circling:0.164
+people:people:0.486
+sitting:room:0.139
+
+sitting:room:0.139
+sitting:room:0.139
+sitting:room:0.139
+surfer:surfing:0.302 waves:surfboard:0.183
+ocean:ocean:0.351 person:person:0.199
+surfing:surfing:0.295 waves:surfboard:0.183
+surfer:surfing:0.302 waves:ocean:0.169
+ocean:ocean:0.351 surf:surfboard:0.252
+
+building:building:0.254
+
+
+
+man:man:0.578 wheelchair:wheelchair:0.144
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+
+
+boy:male-child:0.464 bat:baseball:0.307
+
+bat:baseball:0.307 child:male-child:0.206
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 playing:tennis-player:0.102
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 playing:tennis-player:0.102
+tennis:tennis-court:0.928 player:tennis-player:0.212
+room:room:0.218 laptops:laptop:0.091
+laptops:laptop:0.091 office:desk:0.084
+room:room:0.218
+laptop:laptop:0.609
+laptop:laptop:0.609 desk:desk:0.431 sitting:room:0.139
+laptop:laptop:0.609 man:man:0.578
+laptop:laptop:0.609 man:man:0.578
+laptop:laptop:0.609 man:man:0.578
+laptop:laptop:0.609 man:man:0.578
+laptop:laptop:0.609 sitting:staring:0.049
+
+
+
+
+
+woman:woman:0.563
+woman:woman:0.563
+woman:woman:0.563
+woman:woman:0.563
+woman:woman:0.563
+stove:kitchen:0.190
+kitchen:kitchen:0.625
+stove:kitchen:0.190
+stove:kitchen:0.190
+kitchen:kitchen:0.625
+man:man:0.578 woman:woman:0.563 sitting:room:0.139
+room:room:0.218
+man:man:0.578 woman:woman:0.563
+man:man:0.578 sitting:room:0.139
+man:man:0.578
+table:table:0.284 cellphone:telephone:0.117
+table:table:0.284 phone:telephone:0.272
+phone:telephone:0.272
+table:table:0.284
+table:table:0.284 phone:telephone:0.272
+man:man:0.578 phone:telephone:0.272 restaurant:restaurant:0.192
+phone:telephone:0.272 restaurant:restaurant:0.192
+phone:telephone:0.272
+man:man:0.578 phone:telephone:0.272
+man:man:0.578 phone:telephone:0.272 restaurant:restaurant:0.192
+woman:woman:0.563 fridge:refrigerator:0.217
+woman:woman:0.563 fridge:refrigerator:0.217
+kitchen:kitchen:0.625 woman:woman:0.563 refrigerator:refrigerator:0.363
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625 refrigerator:refrigerator:0.363
+woman:woman:0.563
+woman:woman:0.563
+her:woman:0.227
+
+her:woman:0.227
+
+
+
+
+
+
+
+
+
+
+man:man:0.578 restaurant:restaurant:0.192
+man:man:0.578
+man:man:0.578
+man:man:0.578 smiles:grinning:0.052
+man:man:0.578
+woman:woman:0.563
+woman:woman:0.563
+woman:woman:0.563
+woman:woman:0.563 in:outside:0.113
+woman:woman:0.563
+plants:tree:0.024
+sitting:room:0.139 plants:tree:0.024
+plants:tree:0.024
+room:room:0.218 plants:tree:0.024
+sitting:room:0.139
+woman:woman:0.563 oven:microwaving:0.226
+kitchen:kitchen:0.625 woman:woman:0.563
+woman:woman:0.563 oven:microwaving:0.226
+kitchen:kitchen:0.625 woman:woman:0.563
+kitchen:kitchen:0.625 woman:woman:0.563 baking:microwaving:0.008
+
+furniture:chair:0.041
+table:table:0.284 chairs:chair:0.094
+table:table:0.284
+table:table:0.284
+skateboard:skateboard:0.634 man:man:0.578 riding:riding:0.207
+skateboarder:skateboard:0.260 riding:riding:0.207 sidewalk:sidewalk:0.198
+skateboard:skateboard:0.634 man:man:0.578 riding:riding:0.207
+skateboard:skateboard:0.634 riding:riding:0.207
+skateboard:skateboard:0.634 man:man:0.578
+woman:woman:0.563 hair:hair:0.272
+woman:woman:0.563 hair:hair:0.272
+woman:woman:0.563 hair:hair:0.272
+woman:woman:0.563 hair:hair:0.272
+hair:hair:0.272 her:woman:0.227
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+motorcycle:motorcycle:0.636 riding:riding:0.207
+motorcycle:motorcycle:0.636
+motorcycle:motorcycle:0.636
+motorcycle:motorcycle:0.636 ride:riding:0.066
+motorcycle:motorcycle:0.636 riding:riding:0.207 person:person:0.199
+bathroom:toilet:0.492 urinals:urinal:0.413
+urinals:urinal:0.413
+bathroom:toilet:0.492 urinals:urinal:0.413
+bathroom:toilet:0.492 urinals:urinal:0.413
+toilets:toilet:0.056
+motorcycle:riding:0.312 street:road:0.243 cow:bull:0.045
+road:road:0.268 cow:bull:0.045
+man:man:0.578 motorcycle:riding:0.312
+bike:riding:0.055 cows:bull:0.019
+man:man:0.578 motorcycle:riding:0.312 riding:road:0.107 cows:bull:0.019
+church:church:0.272
+church:church:0.272
+
+
+church:church:0.272
+horses:horse:0.481
+
+horses:horse:0.481 eating:eating:0.293 grass:grass:0.255
+horses:horse:0.481
+horses:horse:0.481 grass:grass:0.255
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731
+bathroom:bathroom:0.709 toilets:toilet:0.056
+
+toilet:toilet:0.731 bathroom:bathroom:0.709
+dog:dog:0.706 food:food:0.216
+dog:dog:0.706 food:food:0.216
+dog:dog:0.706
+dog:dog:0.706 food:food:0.216
+dog:dog:0.706
+man:man:0.578 bananas:banana:0.566
+man:man:0.578 bananas:banana:0.566
+bananas:banana:0.566
+man:man:0.578 bananas:banana:0.566 sold:market:0.029
+man:man:0.578 bananas:banana:0.566
+airport:airplane:0.243 water:ocean:0.212
+flying:airplane:0.231 water:ocean:0.212
+ocean:ocean:0.351 flying:airplane:0.231
+flying:airplane:0.231 water:ocean:0.212
+plane:airplane:0.462 water:ocean:0.212
+flying:sky:0.431 air:jet:0.060
+flying:sky:0.431 plane:jet:0.148
+flying:sky:0.431
+flying:sky:0.431 sky:circling:0.193 airplanes:jet:0.089
+flying:sky:0.431 sky:circling:0.193 planes:jet:0.112
+giraffe:giraffe:0.727 tongue:biting:0.038
+giraffe:giraffe:0.727 tongue:biting:0.038
+giraffe:giraffe:0.727 tongue:biting:0.038
+giraffe:giraffe:0.727 wooden:wood:0.041 licking:biting:0.012
+giraffe:giraffe:0.727 wooden:wood:0.041 tongue:biting:0.038
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541
+giraffes:giraffe:0.541 standing:standing:0.173
+giraffes:giraffe:0.541 standing:standing:0.173
+giraffe:giraffe:0.727 standing:standing:0.173
+plane:airplane:0.462
+plane:airplane:0.462
+plane:airplane:0.462
+airplane:airplane:0.492
+plane:airplane:0.462
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727 standing:standing:0.173
+bird:bird:0.600 bench:bench:0.587
+
+bird:bird:0.600 bench:bench:0.587
+bench:bench:0.587
+bird:bird:0.600 benches:bench:0.070
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727 standing:standing:0.173
+giraffe:giraffe:0.727 tall:standing:0.080
+giraffe:giraffe:0.727
+sky:sky:0.349
+sky:sky:0.349
+
+flying:sky:0.431 jet:jet:0.263
+flying:sky:0.431 plane:jet:0.148
+bench:bench:0.587 man:father:0.005
+bench:bench:0.587 girl:daughter:0.012
+benches:bench:0.070 woman:daughter:0.005 man:father:0.005
+bench:bench:0.587 man:father:0.005
+bench:bench:0.587 girl:daughter:0.012
+giraffes:giraffe:0.541 standing:standing:0.173
+giraffes:giraffe:0.541
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+giraffes:giraffe:0.541
+fence:fence:0.110
+fence:fence:0.110
+
+fence:fence:0.110
+
+bus:bus:0.780 stop:turning:0.076
+bus:bus:0.780 street:street:0.370
+bus:bus:0.780 city:street:0.228
+bus:bus:0.780 city:street:0.228
+bus:bus:0.780 street:street:0.370
+flowers:flower:0.600
+flowers:flower:0.600
+flower:flower:0.210
+flowers:flower:0.600
+
+
+
+
+
+
+
+pole:pole:0.043
+
+
+in:outside:0.113
+bus:bus:0.780
+bus:bus:0.780
+bus:bus:0.780
+bus:bus:0.780
+bus:bus:0.780
+bus:bus:0.780
+bus:bus:0.780
+bus:bus:0.780 snowy:snow:0.182
+bus:bus:0.780
+bus:bus:0.780 snowy:snow:0.182
+bus:bus:0.780 street:road:0.243 down:pulling:0.101
+bus:bus:0.780 street:road:0.243
+bus:bus:0.780 street:road:0.243
+bus:bus:0.780 road:road:0.268
+bus:bus:0.780 road:road:0.268
+street:road:0.243
+road:road:0.268
+road:road:0.268
+bus:road:0.220
+street:road:0.243
+giraffe:giraffe:0.727 eating:gnawing:0.021
+giraffe:giraffe:0.727 chewing:gnawing:0.083
+giraffe:giraffe:0.727 eating:gnawing:0.021
+giraffe:giraffe:0.727
+giraffe:giraffe:0.727
+wall:wall:0.092
+artwork:painting:0.020
+house:house:0.080 mounted:wall:0.023
+painted:wall:0.021
+
+sign:sign:0.357
+sign:sign:0.357
+sign:sign:0.357
+sign:sign:0.357
+sign:sign:0.357
+
+young:male-child:0.239
+boys:male-child:0.087
+young:male-child:0.239 in:outside:0.113
+boys:male-child:0.087
+
+
+
+
+
+cat:cat:0.861 woman:woman:0.563 holding:arm:0.032
+cat:cat:0.861 woman:woman:0.563 holding:arm:0.032
+cat:cat:0.861 her:woman:0.227
+cat:cat:0.861 woman:woman:0.563 kiss:hugging:0.006
+cat:cat:0.861 woman:woman:0.563 holding:arm:0.032 kissing:hugging:0.006
+
+
+man:soldier:0.004
+street:street:0.370
+
+
+road:road:0.268
+
+
+
+river:river:0.320
+river:river:0.320
+
+
+
+city:road:0.086
+road:road:0.268
+
+
+
+train:train:0.848
+train:train:0.848 rail:railway:0.048
+train:train:0.848 rail:railway:0.048
+train:train:0.848
+train:train:0.848
+
+
+
+
+
+
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+train:train:0.848
+cow:cow:0.533 lying:resting:0.073
+cow:cow:0.533 laying:resting:0.167
+cow:cow:0.533 lying:resting:0.073
+cow:cow:0.533 laying:resting:0.167
+cow:cow:0.533
+truck:towing:0.177 parking:parking-lot:0.166 driving:car:0.086
+truck:towing:0.177
+cars:car:0.194 truck:towing:0.177 parking:parking-lot:0.166
+cars:car:0.194 truck:towing:0.177 parking:parking-lot:0.166
+cars:car:0.194
+cat:cat:0.861 sleeping:sleeping:0.189 chair:sofa:0.064
+cat:cat:0.861
+cat:cat:0.861 chair:sofa:0.064
+cat:cat:0.861 sleeping:sleeping:0.189 chair:sofa:0.064
+cat:cat:0.861 sleeping:sleeping:0.189
+cat:cat:0.861 tv:television:0.215
+cat:cat:0.861 television:television:0.244
+cat:cat:0.861 tv:television:0.215
+cat:cat:0.861 television:television:0.244
+cat:cat:0.861 tv:television:0.215
+elephants:elephant:0.564 water:water:0.271
+elephants:elephant:0.564 water:water:0.271
+elephants:elephant:0.564 water:water:0.271
+elephants:elephant:0.564
+elephants:elephant:0.564
+dog:dog:0.706 bed:sofa:0.049
+dog:dog:0.706 sofa:sofa:0.116
+dog:dog:0.706 sitting:sofa:0.046
+dog:dog:0.706 bed:sofa:0.049
+neck:head:0.024
+forest:river:0.016
+river:river:0.320 boat:floating:0.240
+water:water:0.271
+
+water:water:0.271 boat:floating:0.240
+people:people:0.486 walking:shopping:0.007
+
+are:people:0.204
+
+shopping:shopping:0.095 mall:department-store:0.047
+her:woman:0.227
+room:room:0.218
+woman:woman:0.563
+
+
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+elephant:elephant:0.704 water:river:0.156
+elephant:elephant:0.704 lake:river:0.076
+elephant:elephant:0.704 man:man:0.578 river:river:0.320
+elephant:elephant:0.704 man:man:0.578 water:river:0.156
+elephant:elephant:0.704 man:man:0.578 water:river:0.156
+boats:boat:0.436 water:water:0.271 the:body-of-water:0.028
+boats:boat:0.436 water:water:0.271 the:body-of-water:0.028
+boats:boat:0.436 water:water:0.271 the:body-of-water:0.028
+waterway:boat:0.014 as:body-of-water:0.009
+boats:boat:0.436 water:water:0.271 body:body-of-water:0.121
+couple:couple:0.070
+
+woman:couple:0.044
+couple:couple:0.070
+woman:couple:0.044
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dog:dog:0.706 couch:sofa:0.434
+dog:dog:0.706 sitting:room:0.139 sofa:sofa:0.116
+dog:dog:0.706 couch:sofa:0.434 sitting:room:0.139
+dog:dog:0.706 sofa:sofa:0.116
+dog:dog:0.706 couch:sofa:0.434 sitting:room:0.139
+
+
+
+
+are:people:0.204
+dog:dog:0.706 car:car:0.418 head:head:0.061
+dog:dog:0.706
+dog:dog:0.706 car:car:0.418
+dog:dog:0.706 head:head:0.061
+dog:dog:0.706 head:head:0.061
+room:sleeping:0.093
+bed:bed:0.633
+bedroom:bed:0.184
+bedroom:bed:0.184
+bedroom:bed:0.184 blanket:sleeping:0.077
+frisbee:frisbee:0.692 man:man:0.578 catching:flinging:0.072
+frisbee:frisbee:0.692 beach:beach:0.635 man:man:0.578 catching:flinging:0.072
+man:man:0.578
+frisbee:frisbee:0.692 man:man:0.578
+frisbee:frisbee:0.692 beach:beach:0.635
+zebras:zebra:0.612
+zebra:zebra:0.666 field:field:0.308 herd:stampeding:0.285
+zebra:zebra:0.666 herd:stampeding:0.285
+zebras:zebra:0.612 herd:stampeding:0.285
+zebra:zebra:0.666 field:field:0.308 herd:stampeding:0.285
+horse:horse:0.667 riding:racing:0.059
+horse:horse:0.667
+horse:horse:0.667
+horse:horse:0.667 stadium:stadium:0.063 riding:racing:0.059
+arena:stadium:0.025
+city:street:0.228
+
+horse:horse:0.667 street:street:0.370
+street:street:0.370
+horse:horse:0.667
+horses:horse:0.481 riding:riding:0.207
+horses:horse:0.481 ride:riding:0.066
+horses:horse:0.481 riding:riding:0.207
+horse:horse:0.667
+horses:horse:0.481 riding:riding:0.207
+snow:skiing:0.499
+snow:skiing:0.499 person:person:0.199 snowboard:snow:0.189
+snowy:skiing:0.228
+snowy:skiing:0.228
+person:person:0.199 snowboard:snow:0.189
+
+
+
+
+
+people:people:0.486 water:river:0.156
+people:people:0.486
+are:people:0.204 water:river:0.156
+people:people:0.486 water:river:0.156
+people:people:0.486 lake:river:0.076 ski:rafting:0.006
+bananas:banana:0.566 market:market:0.406
+bananas:banana:0.566 market:market:0.406
+bananas:banana:0.566
+bananas:banana:0.566
+bananas:banana:0.566
+skiing:skiing:0.314 her:woman:0.227
+woman:woman:0.563
+woman:woman:0.563 snow:skiing:0.499
+woman:woman:0.563 snow:skiing:0.499
+snow:skiing:0.499
+bat:baseball-bat:0.462 game:baseball:0.216
+bat:baseball-bat:0.462
+bat:baseball-bat:0.462 swinging:hitting:0.258 game:baseball:0.216
+
+swinging:hitting:0.258
+tree:tree:0.391
+tree:tree:0.391
+tree:tree:0.391 person:person:0.199
+tree:tree:0.391 person:person:0.199
+tree:tree:0.391
+
+
+
+
+standing:standing:0.173
+skier:skier:0.231
+snow:skiing:0.499 skier:skier:0.231
+snow:skiing:0.499 skier:skier:0.231
+skier:skier:0.231
+skiing:ski-slope:0.285 snowy:skier:0.103
+skateboard:skateboard:0.634 riding:skating:0.199
+skateboard:skateboard:0.634 man:man:0.578
+skateboarder:skateboard:0.260
+skateboarder:skateboard:0.260
+skateboard:skateboard:0.634
+fresh:vegetable:0.071
+vegetables:vegetable:0.259
+vegetables:vegetable:0.259
+vegetables:vegetable:0.259
+vegetables:vegetable:0.259
+skateboard:skateboard:0.634 man:man:0.578 riding:skating:0.199
+street:sidewalk:0.115
+skateboard:skateboard:0.634 man:man:0.578 riding:skating:0.199
+skateboard:skateboard:0.634 man:man:0.578 riding:skating:0.199
+skateboard:skateboard:0.634 man:man:0.578 riding:skating:0.199
+carrots:carrot:0.409
+carrots:carrot:0.409
+carrots:carrot:0.409
+carrots:carrot:0.409
+carrots:carrot:0.409
+skateboard:skateboard:0.634
+skateboarder:skateboard:0.260
+skateboarder:skateboard:0.260
+skateboard:skateboard:0.634
+skateboard:skateboard:0.634
+skateboarder:skateboard:0.260
+
+skateboard:skateboard:0.634 man:man:0.578
+skate:skateboard:0.315
+skateboard:skateboard:0.634
+table:dining:0.246
+people:people:0.486 table:dining:0.246 food:restaurant:0.142
+table:dining:0.246 food:restaurant:0.142
+table:dining:0.246
+table:dining:0.246 food:restaurant:0.142
+man:man:0.578 sandwich:sandwich:0.412 table:dining:0.246
+man:man:0.578 sandwich:sandwich:0.412 table:dining:0.246
+sandwich:sandwich:0.412 table:dining:0.246
+man:man:0.578 sandwich:sandwich:0.412 restaurant:restaurant:0.192
+sandwich:sandwich:0.412 restaurant:restaurant:0.192
+woman:woman:0.563 sandwich:sandwich:0.412
+woman:woman:0.563 food:sandwich:0.047
+woman:woman:0.563 sandwich:sandwich:0.412
+woman:woman:0.563 sandwich:sandwich:0.412 eating:eating:0.293
+woman:woman:0.563 sandwich:sandwich:0.412 eats:eating:0.078
+
+
+
+
+
+table:dining-room:0.098
+table:dining-room:0.098
+table:dining-room:0.098
+table:dining-room:0.098
+
+box:box:0.361
+box:box:0.361 eaten:meat:0.024
+box:box:0.361
+box:box:0.361 eaten:meat:0.024
+box:box:0.361
+beach:beach:0.635 laying:resting:0.167 surfboards:surfboard:0.110
+surf:surfboard:0.252 sand:beach:0.154
+beach:beach:0.635 laying:resting:0.167 surfboards:surfboard:0.110 sandy:sand:0.071
+beach:beach:0.635 surfboard:surfboard:0.477 laying:resting:0.167 sandy:sand:0.071
+beach:beach:0.635 surfboards:surfboard:0.110
+water:water:0.271
+man:man:0.578 water:water:0.271
+
+water:water:0.271
+water:water:0.271
+plate:plate:0.470
+
+sandwich:hamburger:0.253
+
+plate:plate:0.470
+cake:cake:0.638
+cake:cake:0.638
+cake:cake:0.638
+cake:cake:0.638
+cake:cake:0.638
+surfboard:surfboard:0.477 surfer:ocean:0.246
+man:man:0.578 surfboard:surfboard:0.477 water:water:0.271
+surfboard:surfboard:0.477 surfer:surfing:0.302
+man:man:0.578 ocean:ocean:0.351 surfing:surfing:0.295 surf:surfboard:0.252
+man:man:0.578 surfboard:surfboard:0.477 ocean:ocean:0.351
+bed:bed:0.633
+bed:bed:0.633
+bed:bed:0.633
+bed:bed:0.633
+bed:bed:0.633
+people:people:0.486
+waves:ocean:0.169
+people:people:0.486 ocean:ocean:0.351
+people:people:0.486 ocean:ocean:0.351
+people:people:0.486 ocean:ocean:0.351 water:swimming:0.034
+bed:bedroom:0.433
+bed:bedroom:0.433
+bed:bedroom:0.433 lamp:lamp:0.149
+bed:bedroom:0.433
+bed:bedroom:0.433
+beach:shore:0.065
+
+
+shore:shore:0.098
+beach:shore:0.065
+woman:woman:0.563 picture:camera:0.076
+
+woman:woman:0.563 photographing:photographing:0.014
+
+food:food:0.216 camera:camera:0.095 photographing:photographing:0.014
+
+
+
+
+
+toothbrush:toothbrush:0.346 mouth:dentition:0.093
+
+
+teeth:dentition:0.547 brushing:toothpaste:0.445
+teeth:dentition:0.547 brushing:toothpaste:0.445 tooth:toothbrush:0.179 brush:brushing:0.153
+sitting:room:0.139
+
+sitting:room:0.139
+
+sitting:room:0.139
+living:living-room:0.377 standing:standing:0.173
+living:living-room:0.377
+living:living-room:0.377
+living:living-room:0.377
+living:living-room:0.377
+
+room:room:0.218 display:displaying:0.094
+
+
+room:room:0.218
+flying:sky:0.431
+flying:sky:0.431
+sky:sky:0.349
+flying:sky:0.431
+sky:sky:0.349
+boat:boat:0.462 water:body-of-water:0.199
+
+
+boat:boat:0.462
+sailboat:boat:0.025
+ball:hitting:0.404
+ball:hitting:0.404 catcher:ballplayer:0.173
+
+ball:hitting:0.404 game:baseball:0.216
+game:baseball:0.216
+bat:ballplayer:0.406
+bat:ballplayer:0.406
+bat:ballplayer:0.406
+hit:hitting:0.211
+
+
+catcher:ballplayer:0.173
+bat:baseball-bat:0.462 catcher:ballplayer:0.173
+bat:baseball-bat:0.462
+ball:hitting:0.404
+pizza:pizza:0.769 woman:woman:0.563
+pizza:pizza:0.769 woman:woman:0.563
+pizza:pizza:0.769 woman:woman:0.563
+pizza:pizza:0.769 woman:woman:0.563
+pizza:pizza:0.769 woman:woman:0.563
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928 her:woman:0.227 racquet:tennis:0.174
+tennis:tennis-court:0.928 woman:woman:0.563 racket:tennis:0.261
+tennis:tennis-court:0.928 woman:woman:0.563
+tennis:tennis-court:0.928 her:woman:0.227
+
+
+
+
+man:man:0.578
+kitchen:kitchen:0.625 woman:woman:0.563
+kitchen:kitchen:0.625 woman:woman:0.563
+kitchen:kitchen:0.625 woman:woman:0.563 cooking:baking:0.049
+kitchen:kitchen:0.625 woman:woman:0.563
+kitchen:kitchen:0.625 woman:woman:0.563
+stove:kitchen:0.190
+stove:kitchen:0.190
+cat:cat:0.861 kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+cat:cat:0.861 refrigerator:kitchen:0.165 sitting:staring:0.049
+cat:cat:0.861
+cat:cat:0.861 sitting:head:0.012
+cat:cat:0.861 sitting:head:0.012
+
+cat:cat:0.861
+photo:camera:0.039
+cameras:camera:0.015
+photograph:photographing:0.029 cameras:camera:0.015
+photo:camera:0.039
+cameras:camera:0.015
+
+
+street:sidewalk:0.115
+
+street:sidewalk:0.115
+people:people:0.486
+people:people:0.486
+train:train:0.848 people:people:0.486
+people:people:0.486
+
+man:man:0.578 hillside:trail:0.010
+
+man:man:0.578
+woods:trail:0.051 camping:hiking:0.009
+
+phone:cellular-telephone:0.339
+phone:cellular-telephone:0.339
+is:person:0.134
+phone:cellular-telephone:0.339
+phone:cellular-telephone:0.339
+man:man:0.578 cellphone:cellular-telephone:0.144
+cell:cellular-telephone:0.323
+man:man:0.578
+cell:cellular-telephone:0.323
+man:man:0.578 phone:cellular-telephone:0.339
+clocks:clock:0.155
+clock:clock:0.559 room:room:0.218
+clocks:clock:0.155
+clock:clock:0.559
+clocks:clock:0.155 display:displaying:0.094
+
+person:person:0.199
+person:person:0.199
+
+person:person:0.199
+table:table:0.284
+
+table:table:0.284
+table:table:0.284
+table:table:0.284
+
+sitting:room:0.139 paper:paper:0.101
+
+
+
+
+
+
+
+
+road:truck:0.108
+
+street:street:0.370
+car:car:0.418
+street:street:0.370
+labrador:woman-dog:0.037
+
+
+
+park:park:0.115 dog:woman-dog:0.004
+stove:stove:0.365 oven:kitchen:0.184
+kitchen:kitchen:0.625 stove:stove:0.365
+kitchen:kitchen:0.625 stove:stove:0.365
+kitchen:kitchen:0.625 stove:stove:0.365
+kitchen:kitchen:0.625 stove:stove:0.365
+woman:woman:0.563 table:kitchen:0.072
+kitchen:kitchen:0.625 woman:woman:0.563
+kitchen:kitchen:0.625 stands:standing:0.076
+woman:woman:0.563 table:kitchen:0.072
+kitchen:kitchen:0.625 woman:woman:0.563
+boat:river:0.126 bicycles:bicycle:0.116
+river:river:0.320
+river:river:0.320 bikes:bicycle:0.138
+bikes:bicycle:0.138
+bike:bicycle:0.402
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731
+toilet:toilet:0.731 sink:bathroom:0.389
+man:man:0.578 teeth:dentition:0.547 brushing:toothpaste:0.445
+man:man:0.578 toothbrush:toothbrush:0.346
+bathroom:bathroom:0.709 man:man:0.578 toothbrush:toothbrush:0.346
+man:man:0.578 toothbrush:toothbrush:0.346
+man:man:0.578 teeth:dentition:0.547 brush:toothbrush:0.162
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709 mirror:mirror:0.191
+sink:bathroom:0.389 mirror:mirror:0.191
+bathroom:bathroom:0.709 mirror:mirror:0.191
+bathroom:bathroom:0.709
+bathroom:bathroom:0.709
+street:street:0.370 motor:motorcycle:0.121 bike:riding:0.055
+motorcycle:motorcycle:0.636 man:man:0.578 city:street:0.228 riding:riding:0.207
+motorcycle:motorcycle:0.636 street:street:0.370 riding:riding:0.207
+motorcycle:motorcycle:0.636 man:man:0.578 riding:riding:0.207
+
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 shower:bathroom:0.135
+bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+
+woman:woman:0.563
+woman:woman:0.563
+
+woman:woman:0.563
+motorcycle:motorcycle:0.636 truck:road:0.166
+motorcycle:motorcycle:0.636 car:road:0.100
+motorcycle:motorcycle:0.636 road:road:0.268
+motorcycle:motorcycle:0.636 truck:road:0.166
+motorcycle:motorcycle:0.636
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731
+restroom:toilet:0.063
+bathroom:bathroom:0.709
+toilet:toilet:0.731 bathroom:bathroom:0.709
+toilet:toilet:0.731 ground:floor:0.028
+bathroom:toilet:0.492 floor:floor:0.185 urinal:urinal:0.149
+toilet:toilet:0.731 ground:floor:0.028
+toilet:toilet:0.731 floor:floor:0.185
+toilet:toilet:0.731
+motorcycle:motorcycle:0.636 rider:racing:0.048
+bike:motorcycle:0.115 riding:road:0.107
+racing:racing:0.113
+bike:motorcycle:0.115 riding:road:0.107
+race:racing:0.122 motor:motorcycle:0.121
+motorcycle:motorcycle:0.636 road:road:0.268
+motorcycle:motorcycle:0.636
+motorcycle:motorcycle:0.636 road:road:0.268
+motorcycle:motorcycle:0.636 road:road:0.268
+motorcycle:motorcycle:0.636
+motorcycles:motorcycle:0.254 that:man:0.060
+motorcycle:motorcycle:0.636
+motorcycles:motorcycle:0.254
+
+motorcycles:motorcycle:0.254
+motorcycles:motorcycle:0.254
+motorcycles:motorcycle:0.254 street:road:0.243
+motorcycles:motorcycle:0.254
+motorcycles:motorcycle:0.254
+motorcycles:motorcycle:0.254
+motorcycle:motorcycle:0.636
+motorcycle:motorcycle:0.636
+motorcycle:motorcycle:0.636 road:road:0.268
+motorcycle:motorcycle:0.636
+motorcycle:motorcycle:0.636
+
+jet:jet:0.263
+runway:taxiing:0.461
+jet:jet:0.263
+
+plane:airplane:0.462 runway:taxiing:0.461 airport:airport:0.426
+plane:airplane:0.462 runway:taxiing:0.461
+airplane:airplane:0.492 runway:taxiing:0.461 airport:airport:0.426
+runway:taxiing:0.461 airliner:airport:0.051
+plane:airplane:0.462 runway:taxiing:0.461
+runway:taxiing:0.461 planes:airplane:0.098
+plane:airplane:0.462 runway:taxiing:0.461
+plane:airplane:0.462 runway:taxiing:0.461
+runway:taxiing:0.461 airport:airport:0.426
+airplane:airplane:0.492
+plane:airplane:0.462 runway:taxiing:0.461 airport:airport:0.426
+runway:taxiing:0.461
+airplane:airplane:0.492
+runway:taxiing:0.461 airport:airport:0.426
+airplane:airplane:0.492 runway:taxiing:0.461 airport:airport:0.426
+flying:sky:0.431
+airplane:airplane:0.492 flying:sky:0.431
+airplane:airplane:0.492 sky:sky:0.349
+airplane:airplane:0.492 flying:sky:0.431
+airplane:airplane:0.492
+
+
+lights:light-bulb:0.060
+
+
+
+
+
+
+
+bus:bus:0.780 street:street:0.370
+bus:bus:0.780 street:street:0.370 driving:driver:0.101
+street:street:0.370 parked:bus:0.183
+bus:bus:0.780 street:street:0.370 driving:driver:0.101
+bus:bus:0.780 street:street:0.370
+parked:bus:0.183
+buses:bus:0.185
+buses:bus:0.185
+buses:bus:0.185
+street:road:0.243 buses:bus:0.185
+bus:bus:0.780 street:road:0.243
+bus:bus:0.780 street:road:0.243
+bus:bus:0.780 street:road:0.243 down:turning:0.105
+bus:bus:0.780
+bus:bus:0.780 street:road:0.243
+tree:tree:0.391 river:pier:0.044
+
+
+
+
+bench:bench:0.587
+bench:bench:0.587
+bench:bench:0.587
+bench:bench:0.587 snowy:snow:0.182
+bench:bench:0.587 snow:snow:0.439
+
+
+
+
+
+bus:bus:0.780
+bus:bus:0.780 man:man:0.578
+bus:bus:0.780 man:man:0.578
+bus:bus:0.780 man:man:0.578
+bus:bus:0.780 man:man:0.578
+bus:bus:0.780 street:street:0.370
+bus:bus:0.780
+bus:bus:0.780 street:street:0.370
+bus:bus:0.780 city:street:0.228
+bus:bus:0.780
+mountain:mountain:0.207
+mountain:mountain:0.207
+mountain:mountain:0.207
+mountain:mountain:0.207 rams:ram:0.201
+rams:ram:0.201 mountains:mountain:0.079
+bus:bus:0.780 street:street:0.370
+bus:bus:0.780 city:street:0.228
+bus:bus:0.780
+parked:bus:0.183
+bus:bus:0.780 street:street:0.370
+water:pond:0.039
+water:pond:0.039
+water:pond:0.039
+pond:pond:0.138
+water:pond:0.039
+window:window:0.321 bottle:bottle:0.245
+window:window:0.321 bottle:bottle:0.245
+window:window:0.321 bottle:bottle:0.245
+bottle:bottle:0.245
+window:window:0.321
+sign:sign:0.357
+sign:sign:0.357
+sign:sign:0.357
+sign:sign:0.357
+sign:sign:0.357
+train:train:0.848
+train:train:0.848
+train:train:0.848
+railroad:railway:0.121
+train:train:0.848
+
+
+
+
+
+
+
+standing:standing:0.173
+
+
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861
+
+pot:bowl:0.017
+bowl:bowl:0.371 cats:cat:0.114
+bowl:bowl:0.371
+pot:bowl:0.017
+cow:cow:0.533
+road:road:0.268
+road:road:0.268
+road:road:0.268 animals:cow:0.037
+people:people:0.486 road:road:0.268
+cat:cat:0.861
+cat:cat:0.861
+cat:cat:0.861 chair:chair:0.320
+cat:cat:0.861 chair:chair:0.320
+cat:cat:0.861 chair:chair:0.320
+truck:car:0.131
+truck:car:0.131
+truck:car:0.131
+truck:car:0.131
+truck:car:0.131
+car:car:0.418 truck:road:0.166
+car:car:0.418
+car:car:0.418
+car:car:0.418 road:road:0.268
+truck:road:0.166
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578 sitting:laughing:0.002
+man:man:0.578
+man:man:0.578
+elephant:elephant:0.704
+elephant:elephant:0.704
+elephant:elephant:0.704
+elephant:elephant:0.704
+elephant:elephant:0.704
+laptop:laptop:0.609
+laptop:laptop:0.609
+laptop:laptop:0.609
+laptop:laptop:0.609
+laptop:laptop:0.609
+woman:woman:0.563
+woman:woman:0.563
+
+woman:woman:0.563
+her:woman:0.227
+
+
+
+
+
+
+
+
+
+
+bear:bear:0.493
+bear:bear:0.493
+bear:bear:0.493
+bear:bear:0.493
+bear:bear:0.493
+bears:bear:0.252
+bears:bear:0.252
+bears:bear:0.252
+bears:bear:0.252
+bears:bear:0.252
+
+
+
+
+
+zebra:zebra:0.666
+zebras:zebra:0.612
+zebra:zebra:0.666
+zebras:zebra:0.612
+zebras:zebra:0.612
+zebra:zebra:0.666 standing:standing:0.173
+zebra:zebra:0.666
+zebra:zebra:0.666
+zebra:zebra:0.666
+zebra:zebra:0.666
+beach:beach:0.635 man:man:0.578
+beach:beach:0.635 man:man:0.578
+beach:beach:0.635 man:man:0.578
+beach:beach:0.635
+beach:beach:0.635 man:man:0.578
+people:people:0.486 horses:horse:0.481
+people:people:0.486 horses:horse:0.481 riding:riding:0.207
+people:people:0.486 horses:horse:0.481 riding:riding:0.207
+riding:riding:0.207
+people:people:0.486 riding:riding:0.207
+horse:horse:0.667
+horse:horse:0.667
+horse:horse:0.667
+horse:horse:0.667
+horse:horse:0.667
+horse:horse:0.667
+horse:horse:0.667 woman:woman:0.563 riding:riding:0.207
+woman:woman:0.563 field:field:0.308 rides:riding:0.050
+horse:horse:0.667 field:field:0.308 riding:riding:0.207
+horse:horse:0.667 riding:riding:0.207
+apples:fruit:0.222
+apples:fruit:0.222
+apples:fruit:0.222
+apples:fruit:0.222
+apples:fruit:0.222
+tree:tree:0.391
+tree:tree:0.391
+
+forest:tree:0.036
+tree:tree:0.391
+plate:plate:0.470 meat:meat:0.245
+meat:meat:0.245
+plate:plate:0.470 meat:meat:0.245
+
+plate:plate:0.470 meat:meat:0.245
+skiing:skiing:0.314
+skier:skiing:0.208
+skis:skiing:0.422 person:person:0.199
+skiing:skiing:0.314
+snow:skiing:0.499 skis:snow:0.275
+skateboard:skateboard:0.634 man:man:0.578 riding:skating:0.199
+man:man:0.578 stairs:stairs:0.232 skating:skating:0.065
+man:man:0.578 skating:skateboard:0.064
+skateboarder:skateboard:0.260 stairs:stairs:0.232
+skateboard:skateboard:0.634 man:man:0.578 stairs:stairs:0.232 riding:skating:0.199
+skateboard:skateboard:0.634 man:man:0.578 riding:skating:0.199
+skateboarder:skateboard:0.260 riding:skating:0.199
+skateboard:skateboard:0.634 man:man:0.578
+skateboard:skateboard:0.634 man:man:0.578
+man:man:0.578 skate:skateboard:0.315
+people:people:0.486 river:pier:0.044
+people:people:0.486 sitting:waiting:0.050
+people:people:0.486
+people:people:0.486
+people:people:0.486 river:pier:0.044
+bowl:bowl:0.371 rice:broccoli:0.042
+broccoli:broccoli:0.302 rice:bowl:0.091
+broccoli:broccoli:0.302 rice:bowl:0.091
+bowl:bowl:0.371 broccolli:broccoli:0.010
+bowl:bowl:0.371 broccoli:broccoli:0.302
+street:street:0.370 skate:skateboard:0.315 riding:skating:0.199
+skateboard:skateboard:0.634 man:man:0.578
+skate:skateboard:0.315
+skateboard:skateboard:0.634 man:man:0.578 street:street:0.370
+skateboard:skateboard:0.634 man:man:0.578 road:street:0.106
+skateboarder:skateboard:0.260
+ramp:ramp:0.352 skateboarding:skating:0.136
+ramp:ramp:0.352 skateboarder:skateboard:0.260
+ramp:ramp:0.352 skate:skateboard:0.315
+skateboard:skateboard:0.634 ramp:ramp:0.352
+skateboard:skateboard:0.634 ramp:ramp:0.352
+skateboard:skateboard:0.634 ramp:ramp:0.352
+skateboard:skateboard:0.634
+skateboard:skateboard:0.634 ramp:ramp:0.352
+skateboard:skateboard:0.634
+snow:snow:0.439
+snow:snow:0.439
+ski:snow:0.143
+snow:snow:0.439
+snow:snow:0.439 are:people:0.204
+chicken:bread:0.016
+
+table:table:0.284
+table:table:0.284
+table:table:0.284
+skateboard:skateboard:0.634 man:man:0.578 street:road:0.243 riding:skating:0.199
+skateboard:skateboard:0.634 man:man:0.578 road:road:0.268 riding:skating:0.199
+man:man:0.578 skateboards:skateboard:0.076
+man:man:0.578 skate:skateboard:0.315
+skateboard:skateboard:0.634 man:man:0.578 riding:skating:0.199
+pizza:pizza:0.769 table:dining:0.246 restaurant:restaurant:0.192
+pizza:pizza:0.769 table:dining:0.246 restaurant:restaurant:0.192
+pizza:pizza:0.769 table:dining:0.246 restaurant:restaurant:0.192
+pizza:pizza:0.769 people:people:0.486 table:dining:0.246 restaurant:restaurant:0.192
+pizza:pizza:0.769 table:dining:0.246 restaurant:restaurant:0.192
+meat:bread:0.026
+eaten:bread:0.031
+
+
+meat:bread:0.026
+sprinkles:cupcake:0.073
+doughnuts:cupcake:0.037
+donuts:cupcake:0.033
+doughnuts:cupcake:0.037
+donuts:cupcake:0.033
+laptop:laptop:0.609 bed:bedroom:0.433
+laptop:laptop:0.609 bed:bedroom:0.433
+laptop:laptop:0.609 bed:bedroom:0.433
+laptop:laptop:0.609 bed:bedroom:0.433
+laptop:laptop:0.609 bed:bedroom:0.433
+office:desk:0.084
+desk:desk:0.431 sitting:room:0.139
+desk:desk:0.431
+desk:desk:0.431 room:room:0.218
+desk:desk:0.431
+bed:bed:0.633 book:book:0.347
+bed:bed:0.633 book:book:0.347
+bed:bed:0.633 book:book:0.347
+bed:bed:0.633 book:book:0.347
+bed:bed:0.633 book:book:0.347 paperback:reading:0.013
+bed:bed:0.633 bedroom:sleeping:0.114
+bed:bed:0.633
+bed:bed:0.633
+bed:bed:0.633 bedroom:sleeping:0.114
+bed:bed:0.633 pillows:sleeping:0.060
+people:people:0.486 ocean:ocean:0.351 surfers:surfboard:0.078
+surfboards:surfboard:0.110 surfers:ocean:0.068
+ocean:ocean:0.351 waves:surfboard:0.183
+surfers:ocean:0.068
+are:people:0.204 surfers:surfboard:0.078
+bedroom:bedroom:0.325
+bed:bed:0.633 bedroom:bedroom:0.325
+
+bedroom:bedroom:0.325
+bed:bed:0.633 bedroom:bedroom:0.325
+pizza:pizza:0.769 kitchen:kitchen:0.625
+pizza:pizza:0.769 kitchen:kitchen:0.625
+pizza:pizza:0.769 kitchen:kitchen:0.625 cutting:knife:0.244
+pizza:pizza:0.769 kitchen:kitchen:0.625 cutting:knife:0.244
+pizza:pizza:0.769 cutting:knife:0.244
+pizza:pizza:0.769 pan:pan:0.203
+pizza:pizza:0.769 pan:pan:0.203
+pizza:pizza:0.769 pie:pan:0.045
+pizza:pizza:0.769 tin:pan:0.023
+pizza:pizza:0.769 pan:pan:0.203
+bed:bed:0.633 girl:female-child:0.225
+bed:bed:0.633 girl:female-child:0.225 stuffed:plaything:0.145
+bed:bed:0.633 girl:female-child:0.225
+bed:bed:0.633 child:female-child:0.086
+bed:bed:0.633 girl:female-child:0.225 stuffed:plaything:0.145
+desk:desk:0.431
+desk:desk:0.431 room:room:0.218
+desk:desk:0.431
+desk:desk:0.431 room:room:0.218
+desk:desk:0.431
+tennis:tennis-court:0.928 man:man:0.578 racquet:tennis:0.174
+tennis:tennis-court:0.928 man:man:0.578 racket:tennis-racket:0.388
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928
+tennis:tennis-court:0.928
+pizza:pizza:0.769 kitchen:kitchen:0.625
+pizza:pizza:0.769 man:man:0.578
+pizza:pizza:0.769 man:man:0.578
+pizza:pizza:0.769 man:man:0.578
+man:man:0.578 food:kitchen:0.111
+pizza:pizza:0.769
+pizza:pizza:0.769
+pizza:pizza:0.769
+pizza:pizza:0.769 table:table:0.284
+pizza:pizza:0.769 table:table:0.284
+
+
+
+
+
+
+
+
+
+
+
+people:people:0.486 living:living-room:0.377
+
+
+
+
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578
+man:man:0.578 television:television:0.244
+man:man:0.578 television:television:0.244
+man:man:0.578
+man:man:0.578 tv:television:0.215
+furniture:livingroom-suite:0.107
+
+
+
+
+ocean:ocean:0.351 person:person:0.199
+surfboard:surfboard:0.477
+person:person:0.199 beach:ocean:0.131
+surfer:surfing:0.302
+ocean:ocean:0.351
+
+young:male-child:0.239
+
+child:male-child:0.206
+boy:male-child:0.464
+boat:boat:0.462 water:water:0.271
+river:river:0.320
+river:river:0.320
+water:water:0.271
+boat:boat:0.462 water:water:0.271
+pizza:pizza:0.769
+pizza:pizza:0.769
+pizza:pizza:0.769
+pizza:pizza:0.769
+pizza:pizza:0.769
+
+man:man:0.578
+food:food:0.216 bite:mouth:0.020
+food:food:0.216
+
+tennis:tennis-racket:0.759
+tennis:tennis-racket:0.759
+tennis:tennis-racket:0.759
+tennis:tennis-racket:0.759
+tennis:tennis-racket:0.759
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625 kids:girl:0.028
+girl:girl:0.312
+kitchen:kitchen:0.625
+kitchen:kitchen:0.625
+laptop:laptop:0.609
+
+laptop:laptop:0.609
+laptop:laptop:0.609
+laptop:laptop:0.609
+
+
+man:man:0.578
+man:man:0.578
+
+phone:telephone:0.272
+phone:telephone:0.272
+phone:telephone:0.272
+phone:telephone:0.272
+phone:telephone:0.272

@@ -15,7 +15,7 @@ with open(sys.argv[1], 'r') as alignment_file:
     for alignment in alignments:
       align_list = alignment.split(':')
       if len(align_list) == 4:
-          cap = align_list[:2]
+          cap = ':'.join(align_list[:2])
           frame = align_list[2]
           score = align_list[3]
       else:

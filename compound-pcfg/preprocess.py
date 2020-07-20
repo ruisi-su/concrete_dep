@@ -222,7 +222,10 @@ def get_data(args):
             deptrees = utils.read_conll(open(conllfile, 'r'))
             dep_list = list(deptrees)
         # count for when pred is in the caption
-
+        if args.no_align:
+            is_align = False
+        else:
+            is_align = True
         if test:
             with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align, open('../data/coco/VGNSL_split/test_ground-truth.txt', 'r') as truth:
                 for (tree, frame, alignment, ground_truth) in zip(txt, fr, align, truth):
@@ -265,7 +268,7 @@ def get_data(args):
                     if frame[0] == '':
                         invalids = []
                     else:
-                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.thresh, args.is_align)
+                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.thresh, is_align)
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
                     span = extract_spans(ground_truth)
@@ -320,7 +323,7 @@ def get_data(args):
                     if frame[0] == '':
                         invalids = []
                     else:
-                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.thresh)
+                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.thresh, is_align)
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
                     other_data_item = [sent_str, invalids, tags, action,
@@ -472,7 +475,7 @@ def main(arguments):
     parser.add_argument('--align_type', help='Type for alignments setup', type = str, required=True)
     parser.add_argument('--eqn_type', help='Equation type for alignments', type = str, required=True)
     parser.add_argument('--thresh', help='The threshold for alignments', type = float, default=-1.0e5)
-    parser.add_argument('--is_align', help='Whether to use alignment', type = bool, default=-1.0e5)
+    parser.add_argument('--no_align', action="store_true", help='Not to use alignment')
 
     args = parser.parse_args(arguments)
     np.random.seed(3435)

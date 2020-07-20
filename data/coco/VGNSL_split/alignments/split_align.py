@@ -1,17 +1,17 @@
 import sys
 
 #
-# type = sys.argv[1]
-# eqn_type = sys.argv[2]
+type = sys.argv[1]
+eqn_type = sys.argv[2]
 # file_name = './traindevtest.cap-frame.{}.{}_output'.format(type, eqn_type)
 # 
 # eqn_type = 'dice'
 # type = 'temp'
-file_name = './traindevtest.temp.cap-templates.dice_output'
+file_name = '../traindevtest.cap-frame.split_all.dice_output.v2.filter'
 file = open(file_name, 'r')
-train_file = open('train.{}.{}.align'.format(type, eqn_type), 'w')
-dev_file = open('dev.{}.{}.align'.format(type, eqn_type), 'w')
-test_file = open('test.{}.{}.align'.format(type, eqn_type), 'w')
+train_file = open('train.{}.{}.align.filter'.format(type, eqn_type), 'w')
+dev_file = open('dev.{}.{}.align.filter'.format(type, eqn_type), 'w')
+test_file = open('test.{}.{}.align.filter'.format(type, eqn_type), 'w')
 
 file = file.readlines()
 
