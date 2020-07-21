@@ -166,13 +166,14 @@ def gen_phrases(sent, frame, alignment, constraint_type, threshold, is_align):
                 invalids_2, valids_2 = invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
                 invalids = invalids_1.union(invalids_2)
                 valids = valids_1.union(valids_2)
-                # invalids = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments).union(invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, sent, arguments))
+            elif constraint_type == 5:
+                invalids_1, valids_1 = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
+                invalids_2, valids_2 = invalid_phrases_type2_exclusive(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
+                invalids = invalids_1.union(invalids_2)
+                valids = valids_1.union(valids_2)
         pointer += 1
-    #print(invalids)
-    #print(valids)
     assert(len(invalids.intersection(valids)) == 0)
     return list(invalids), list(valids)
-
     # return invalids, valids
 
 # threshold is a relative percentage to the current set of alignments
