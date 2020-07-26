@@ -17,5 +17,5 @@ vals = torch.from_numpy(vals)
 cluster_ids_x, cluster_centers = kmeans(
     X=vals, num_clusters=num_clusters, distance='cosine', device=torch.device('cuda:0')
 )
-np.savetxt('fasttext-kmeans-25-centroids-300.txt', cluster_centers.numpy())
+np.savetxt('fasttext-ptb-kmeans-25-centroids-300.txt', cluster_centers.numpy())
 #torch.save(cluster_centers.data, 'glovevico-kmeans-20-centroids.txt')

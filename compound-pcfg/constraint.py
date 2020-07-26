@@ -172,6 +172,11 @@ def gen_phrases(sent, frame, alignment, constraint_type, threshold, is_align):
                 invalids = invalids_1.union(invalids_2)
                 valids = valids_1.union(valids_2)
         pointer += 1
+    print(invalids.intersection(valids))
+    print(sent)
+    print(frame)
+    print(invalids)
+    print(valids)
     assert(len(invalids.intersection(valids)) == 0)
     return list(invalids), list(valids)
     # return invalids, valids

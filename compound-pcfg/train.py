@@ -113,6 +113,7 @@ def main(args):
           (train_data.sents.size(0), len(train_data), val_data.sents.size(0), len(val_data)))
     if(not args.pretrained_word_emb == ""):
       pretrained_word_emb_matrix = get_word_emb_matrix(args.pretrained_word_emb, train_data.idx2word)
+      print(pretrained_word_emb_matrix.shape)
     else:
       pretrained_word_emb_matrix = None
   else:
