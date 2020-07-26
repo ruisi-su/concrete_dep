@@ -479,6 +479,9 @@ def eval(data, model):
 
         if args.evaluate_dep:
           assert(len(argmax_spans) == len(heads))
+          print(heads[b])
+          sent_str = [data.idx2word[word_idx] for word_idx in list(sents[b].cpu().numpy())]
+          print(sent_str)
           update_dep_stats(argmax_spans[b], heads[b], dep_stats)
 
         if args.out_file != '':

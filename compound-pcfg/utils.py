@@ -90,7 +90,7 @@ def get_tree(actions, sent = None, SHIFT = 0, REDUCE = 1):
       right = stack.pop()
       left = stack.pop()
       stack.append('(' + left + ' ' + right + ')')
-  #print(stack)
+  # print(stack)
   assert(len(stack) == 1)
   return stack[-1]
 
