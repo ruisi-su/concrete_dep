@@ -216,10 +216,9 @@ def get_data(args):
         dropped = 0
         sent_id = 0
         other_data = []
-        # dep_idx = 0
         if (conllfile != ''):
             deptrees = utils.read_conll(open(conllfile, 'r'))
-            # dep_list = list(deptrees)
+
         # count for when pred is in the caption
         if args.no_align:
             is_align = False
@@ -228,80 +227,76 @@ def get_data(args):
 
         # open input files
         txt =  open(textfile).readlines()
-        if os.path.isfile(alignfile):
-            align = open(alignfile).readlines()
-        if os.path.isfile(framefile):
-            fr = open(framefile).readlines()
 
-        if test:
-            match = 0
-            truth = open('../data/coco/VGNSL_split/test_ground-truth.txt', 'r')
-            # with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align, open('../data/coco/VGNSL_split/test_ground-truth.txt', 'r') as truth:
-            for (tree, frame, alignment, ground_truth) in zip(txt, fr, align, truth):
-                tree = tree.strip()
-                ground_truth = ground_truth.strip()
-                action = get_actions(tree)
-                tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
-                assert(len(tags) == len(sent))
 
-                if (conllfile != ''):
-                    # try:
-                    words, heads = next(deptrees)
-                    # except IndexError:
-                    #     continue
-                    if words != sent:
-                        print("Data mismatch, got {} in {}, but {} in {}.".format(sent, textfile, words, conllfile))
-                        assert(len(words) == len(heads))
-                    # else:
-                    #     dep_idx += 1
-                    # assert(len(words) == len(heads))
-                    assert(len(heads) == len(sent))
-                if lowercase == 1:
-                    sent = sent_lower
-                    alignment = alignment.lower()
-                    frame = frame.lower()
-
-                frame = frame.strip().split('\t')
-                sent_str = " ".join(sent)
-                if replace_num == 1:
-                    sent = [clean_number(w) for w in sent]
-                if (len(sent) > seqlength and apply_length_filter == 1) or len(sent) < minseqlength:
-                    dropped += 1
-                    continue
-                if include_boundary == 1:
-                    sent = [indexer.BOS] + sent + [indexer.EOS]
-                max_sent_l = max(len(sent), max_sent_l)
-                sent_pad = pad(sent, newseqlength, indexer.PAD)
-                sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
-                sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
-                if frame[0] == '':
-                    invalids = []
-
-                elif frame[0].split('_')[0] not in sent:
-                    invalids = []
-                else:
-                    match += 1
-                    invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.thresh, is_align)
-                span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
-
-                span = extract_spans(ground_truth)
-                other_data_item = [sent_str, invalids, tags, action,
-                    binary_actions, nonbinary_actions, span, tree]
-
-                if (conllfile != ''):
-                    other_data_item.append(heads)
-
-                other_data.append(other_data_item)
-                assert(2*(len(sent)- 2) - 1 == len(binary_actions))
-                assert(sum(binary_actions) + 1 == len(sent) - 2)
-                sent_id += 1
-                if sent_id % 100000 == 0:
-                    print("{}/{} sentences processed".format(sent_id, num_sents))
-
-        else:
-            match = 0
-            # with open(textfile, 'r') as txt, open(framefile, 'r') as fr, open(alignfile, 'r') as align:
+        if args.data_type == 'constraints':
+            # check files existence
             if (os.path.isfile(framefile)) and (os.path.isfile(alignfile)):
+                align = open(alignfile).readlines()
+                fr = open(framefile).readlines()
+            else:
+                raise ValueError('Frame and alignment files must exist for using constraints.')
+            # parse test and other data splits
+            if test:
+                match = 0
+                truth = open('../data/coco/VGNSL_split/test_ground-truth.txt', 'r')
+                for (tree, frame, alignment, ground_truth) in zip(txt, fr, align, truth):
+                    tree = tree.strip()
+                    ground_truth = ground_truth.strip()
+                    action = get_actions(tree)
+                    tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
+                    assert(len(tags) == len(sent))
+
+                    if (conllfile != ''):
+                        words, heads = next(deptrees)
+                        if words != sent:
+                            print("Data mismatch, got {} in {}, but {} in {}.".format(sent, textfile, words, conllfile))
+                            assert(len(words) == len(heads))
+                        assert(len(heads) == len(sent))
+                    if lowercase == 1:
+                        sent = sent_lower
+                        alignment = alignment.lower()
+                        frame = frame.lower()
+
+                    frame = frame.strip().split('\t')
+                    sent_str = " ".join(sent)
+                    if replace_num == 1:
+                        sent = [clean_number(w) for w in sent]
+                    if (len(sent) > seqlength and apply_length_filter == 1) or len(sent) < minseqlength:
+                        dropped += 1
+                        continue
+                    if include_boundary == 1:
+                        sent = [indexer.BOS] + sent + [indexer.EOS]
+                    max_sent_l = max(len(sent), max_sent_l)
+                    sent_pad = pad(sent, newseqlength, indexer.PAD)
+                    sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
+                    sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
+                    if frame[0] == '':
+                        invalids = []
+
+                    elif frame[0].split('_')[0] not in sent:
+                        invalids = []
+                    else:
+                        match += 1
+                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.thresh, is_align)
+                    span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
+
+                    span = extract_spans(ground_truth)
+                    other_data_item = [sent_str, invalids, tags, action,
+                        binary_actions, nonbinary_actions, span, tree]
+
+                    if (conllfile != ''):
+                        other_data_item.append(heads)
+
+                    other_data.append(other_data_item)
+                    assert(2*(len(sent)- 2) - 1 == len(binary_actions))
+                    assert(sum(binary_actions) + 1 == len(sent) - 2)
+                    sent_id += 1
+                    if sent_id % 100000 == 0:
+                        print("{}/{} sentences processed".format(sent_id, num_sents))
+
+            else:
+                match = 0
                 for (tree, frame, alignment) in zip(txt, fr, align):
                     frame = frame.strip().split('\t')
                     tree = tree.strip()
@@ -309,16 +304,10 @@ def get_data(args):
                     tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
                     assert(len(tags) == len(sent))
                     if (conllfile != ''):
-                        # try:
                         words, heads = next(deptrees)
-                        # except IndexError:
-                        #     continue
                         if words != sent:
                             print("Data mismatch, got {} in {}, but {} in {}.".format(sent, textfile, words, conllfile))
                             assert(len(words) == len(heads))
-                        # else:
-                        #     dep_idx += 1
-                        # assert(len(words) == len(heads))
                         assert(len(heads) == len(sent))
                     if lowercase == 1:
                         sent = sent_lower
@@ -355,57 +344,121 @@ def get_data(args):
                     sent_id += 1
                     if sent_id % 100000 == 0:
                         print("{}/{} sentences processed".format(sent_id, num_sents))
-            else:
-                # for ptb
-                print('PTB')
-                for tree in txt:
-                    tree = tree.strip().replace("\\", "")
-                    action = get_actions(tree)
-                    tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
-                    assert(len(tags) == len(sent))
-                    if (conllfile != ''):
-                        # try:
-                        words, heads = next(deptrees)
-                        # except IndexError:
-                        #     continue
-                        if words != sent:
-                            print("Data mismatch, got {} in {}, but {} in {}.".format(sent, textfile, words, conllfile))
-                            assert(len(words) == len(heads))
-                        # else:
-                        #     dep_idx += 1
-                        # assert(len(words) == len(heads))
-                        assert(len(heads) == len(sent))
-                    if lowercase == 1:
-                        sent = sent_lower
-                    sent_str = " ".join(sent)
-                    if replace_num == 1:
-                        sent = [clean_number(w) for w in sent]
-                    if (len(sent) > seqlength and apply_length_filter == 1) or len(sent) < minseqlength:
-                        dropped += 1
+        elif args.data_type == 'ptb':
+            # for ptb
+            print('PTB')
+            for tree in txt:
+                tree = tree.strip().replace("\\", "")
+                action = get_actions(tree)
+                tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
+                assert(len(tags) == len(sent))
+                if (conllfile != ''):
+                    words, heads = next(deptrees)
+                    if words != sent:
+                        print("Data mismatch, got {} in {}, but {} in {}.".format(sent, textfile, words, conllfile))
+                        assert(len(words) == len(heads))
+                    assert(len(heads) == len(sent))
+                if lowercase == 1:
+                    sent = sent_lower
+                sent_str = " ".join(sent)
+                if replace_num == 1:
+                    sent = [clean_number(w) for w in sent]
+                if (len(sent) > seqlength and apply_length_filter == 1) or len(sent) < minseqlength:
+                    dropped += 1
+                    continue
+                if include_boundary == 1:
+                    sent = [indexer.BOS] + sent + [indexer.EOS]
+                max_sent_l = max(len(sent), max_sent_l)
+                sent_pad = pad(sent, newseqlength, indexer.PAD)
+                sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
+                sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
+
+                invalids = []
+
+                span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
+
+                other_data_item = [sent_str, invalids, tags, action,
+                    binary_actions, nonbinary_actions, span, tree]
+
+                if (conllfile != ''):
+                    other_data_item.append(heads)
+
+                other_data.append(other_data_item)
+                assert(2*(len(sent)- 2) - 1 == len(binary_actions))
+                assert(sum(binary_actions) + 1 == len(sent) - 2)
+                sent_id += 1
+                if sent_id % 100000 == 0:
+                    print("{}/{} sentences processed".format(sent_id, num_sents))
+
+        elif args.data_type == 'concreteness':
+            print('using concreteness')
+            def get_concreteness():
+                con = {}
+                with open(args.concrete_file, 'r') as c:
+                    for line in c:
+                        line = line.strip().split(' ')
+                        if len(line) < 2:
+                            continue
+                        # print(line)
+                        word = line[0]
+                        score = line[1]
+                        con[word] = score
+                return con
+
+            con = get_concreteness()
+
+            for tree in txt:
+                tree = tree.strip()
+                action = get_actions(tree)
+                tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
+                assert(len(tags) == len(sent))
+                if (conllfile != ''):
+                    words, heads = next(deptrees)
+                    if words != sent:
+                        print("Data mismatch, got {} in {}, but {} in {}.".format(sent, textfile, words, conllfile))
+                        assert(len(words) == len(heads))
+                    assert(len(heads) == len(sent))
+                if lowercase == 1:
+                    sent = sent_lower
+                sent_str = " ".join(sent)
+                if replace_num == 1:
+                    sent = [clean_number(w) for w in sent]
+                if (len(sent) > seqlength and apply_length_filter == 1) or len(sent) < minseqlength:
+                    dropped += 1
+                    continue
+                if include_boundary == 1:
+                    sent = [indexer.BOS] + sent + [indexer.EOS]
+                max_sent_l = max(len(sent), max_sent_l)
+                sent_pad = pad(sent, newseqlength, indexer.PAD)
+                sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
+                sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
+
+                span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
+
+                w_c_list = [-1 for w in sent]
+                w_c_idx = 0
+                for w in sent:
+                    if w in con.keys():
+                        w_c_list[w_c_idx] = con[w]
+                        w_c_idx += 1
+                    else:
+                        w_c_idx += 1
                         continue
-                    if include_boundary == 1:
-                        sent = [indexer.BOS] + sent + [indexer.EOS]
-                    max_sent_l = max(len(sent), max_sent_l)
-                    sent_pad = pad(sent, newseqlength, indexer.PAD)
-                    sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
-                    sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
 
-                    invalids = []
+                # print(w_c_list)
+                other_data_item = [sent_str, w_c_list, tags, action,
+                    binary_actions, nonbinary_actions, span, tree]
 
-                    span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
+                if (conllfile != ''):
+                    other_data_item.append(heads)
 
-                    other_data_item = [sent_str, invalids, tags, action,
-                        binary_actions, nonbinary_actions, span, tree]
+                other_data.append(other_data_item)
+                assert(2*(len(sent)- 2) - 1 == len(binary_actions))
+                assert(sum(binary_actions) + 1 == len(sent) - 2)
+                sent_id += 1
+                if sent_id % 100000 == 0:
+                    print("{}/{} sentences processed".format(sent_id, num_sents))
 
-                    if (conllfile != ''):
-                        other_data_item.append(heads)
-
-                    other_data.append(other_data_item)
-                    assert(2*(len(sent)- 2) - 1 == len(binary_actions))
-                    assert(sum(binary_actions) + 1 == len(sent) - 2)
-                    sent_id += 1
-                    if sent_id % 100000 == 0:
-                        print("{}/{} sentences processed".format(sent_id, num_sents))
 
         print(sent_id, num_sents)
         if shuffle == 1:
@@ -455,7 +508,8 @@ def get_data(args):
         f["word2idx"] = {word : idx for idx, word in indexer.idx2word.items()}
 
         # print how many direct caption - frame matches
-        print("Total {} sentences have direct caption - frame match.".format(match))
+        if args.data_type == 'constraints':
+            print("Total {} sentences have direct caption - frame match.".format(match))
         print("Saved {} sentences (dropped {} due to length/unk filter)".format(
             len(f["source"]), dropped))
         pickle.dump(f, open(outfile, 'wb'))
@@ -481,46 +535,38 @@ def get_data(args):
                                                           len(indexer.d)))
     print(train_seqlength, valid_seqlength, test_seqlength)
 
-    if args.ptb:
+    if args.data_type == 'ptb':
         conlldir = 'data/derived/ptb-'
     else:
         conlldir = "data/dep/"
 
     max_sent_l = 0
-    if args.test_only:
-        max_sent_l = convert(args.inputdir + 'test_trees.txt', args.lowercase, args.replace_num,
+
+    vgnsl_truth = False
+    if (args.data_type != 'ptb'):
+        vgnsl_truth = True
+
+    max_sent_l = convert(args.inputdir + 'test_trees.txt', args.lowercase, args.replace_num,
                          args.batchsize, test_seqlength, args.minseqlength,
                          args.outputfile + "test.pkl", num_sents_test,
                          max_sent_l, args.shuffle, args.include_boundary, 0,
-                         args.inputdir + 'test_frames.txt', args.inputdir + 'alignments/test.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
-                         conllfile=conlldir + "test.conllx" if args.dep else "", test=True)
-    else:
-        if args.ptb:
-            max_sent_l = convert(args.inputdir + 'test_trees.txt', args.lowercase, args.replace_num,
-                                 args.batchsize, test_seqlength, args.minseqlength,
-                                 args.outputfile + "test.pkl", num_sents_test,
-                                 max_sent_l, args.shuffle, args.include_boundary, 0,
-                                 args.inputdir + 'test_frames.txt', args.inputdir + 'alignments/test.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
-                                 conllfile=conlldir + "test.conllx" if args.dep else "")
-        else:
-            max_sent_l = convert(args.inputdir + 'test_trees.txt', args.lowercase, args.replace_num,
-                                 args.batchsize, test_seqlength, args.minseqlength,
-                                 args.outputfile + "test.pkl", num_sents_test,
-                                 max_sent_l, args.shuffle, args.include_boundary, 0,
-                                 args.inputdir + 'test_frames.txt', args.inputdir + 'alignments/test.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
-                                 conllfile=conlldir + "test.conllx" if args.dep else "", test=True)
-        max_sent_l = convert(args.inputdir + 'dev_trees.txt', args.lowercase, args.replace_num,
-                             args.batchsize, valid_seqlength, args.minseqlength,
-                             args.outputfile + "val.pkl", num_sents_valid,
-                             max_sent_l, args.shuffle, args.include_boundary, 0,
-                            args.inputdir + 'dev_frames.txt', args.inputdir + 'alignments/dev.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
-                             conllfile=conlldir + "dev.conllx" if args.dep else "")
-        max_sent_l = convert(args.inputdir + 'train_trees.txt', args.lowercase, args.replace_num,
-                             args.batchsize, args.seqlength,  args.minseqlength,
-                             args.outputfile + "train.pkl", num_sents_train,
-                             max_sent_l, args.shuffle, args.include_boundary, 1,
-                             args.inputdir + 'train_frames.txt', args.inputdir + 'alignments/train.{}.{}.align.filter'.format(args.align_type, args.eqn_type), args.constraint_type,
-                             conllfile=conlldir + 'train.conllx' if args.dep else "")
+                 args.inputdir + 'test_frames.txt', args.inputdir + 'alignments/test.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
+                         conllfile=conlldir + "test.conllx" if args.dep else "", test=vgnsl_truth)
+    #
+    # max_sent_l = convert(args.inputdir + 'dev_trees.txt', args.lowercase, args.replace_num,
+    #                      args.batchsize, valid_seqlength, args.minseqlength,
+    #                      args.outputfile + "val.pkl", num_sents_valid,
+    #                      max_sent_l, args.shuffle, args.include_boundary, 0,
+    #                 args.inputdir + 'dev_frames.txt', args.inputdir + 'alignments/dev.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
+    #                      conllfile=conlldir + "dev.conllx" if args.dep else "")
+    #
+    # max_sent_l = convert(args.inputdir + 'train_trees.txt', args.lowercase, args.replace_num,
+    #                      args.batchsize, args.seqlength,  args.minseqlength,
+    #                      args.outputfile + "train.pkl", num_sents_train,
+    #                      max_sent_l, args.shuffle, args.include_boundary, 1,
+    #                  args.inputdir + 'train_frames.txt', args.inputdir + 'alignments/train.{}.{}.align.filter'.format(args.align_type, args.eqn_type), args.constraint_type,
+    #                      conllfile=conlldir + 'train.conllx' if args.dep else "")
+
     print("Max sent length (before dropping): {}".format(max_sent_l))
 
 def main(arguments):
@@ -554,16 +600,23 @@ def main(arguments):
     parser.add_argument('--dep', action="store_true", help="Including dependency parse files. Their "
                                                            "names should be same as data file, but extensions "
                                                            "are .conllx.")
-    parser.add_argument('--test_only', action="store_true", help="preprocess just the test data")
     parser.add_argument('--inputdir', help='directory for trees, alignments, and frames', type = str, default='../data/coco/VGNSL_split/')
     parser.add_argument('--constraint_type', help='Type for constraint setup, rule 1 or rule 2 or both', type = int)
     parser.add_argument('--align_type', help='Type for alignments setup', type = str, default='split_noverb')
     parser.add_argument('--eqn_type', help='Equation type for alignments', type = str, default='dice')
     parser.add_argument('--thresh', help='The threshold for alignments', type = float, default=-1.0e5)
     parser.add_argument('--no_align', action="store_true", help='Not to use alignment')
-    parser.add_argument('--ptb', action="store_true", help='Run the baseline on ptb')
+    parser.add_argument('--concrete_file', help = 'The file for concreteness scores', type = str, default='./concreteness.txt')
+    # parser.add_argument('--ptb', action="store_true", help='Run the baseline on ptb')
+    parser.add_argument('--data_type', choices=['constraints', 'concreteness', 'ptb'], help='Use constraints, concreteness, or ptb', required=True)
 
     args = parser.parse_args(arguments)
+
+
+    if (args.data_type == 'constraints') and (args.align_type is None or args.constraint_type is None):
+        parser.error("using constraints requires --align_type and --constraint_type.")
+
+
     np.random.seed(3435)
     get_data(args)
 

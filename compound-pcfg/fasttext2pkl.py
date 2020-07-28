@@ -12,13 +12,16 @@ ft = fasttext.load_model('../../Downloads/cc.en.300.bin')
 # write to pickle
 w2v = dict()
 
+c = 0
 with open(sys.argv[1], 'r') as dict:
     for l in tqdm.tqdm(dict):
+        c += 1
         word, count = l.strip().split(' ')
 
         w2v[word] = ft.get_word_vector(word)
         # w2v[word] = word_embed
 pickle.dump(w2v, open(sys.argv[2], "wb"))
+print(c)
 # def load_vectors(fname):
 #     fin = io.open(fname, 'r', encoding='utf-8', newline='\n', errors='ignore')
 #     n, d = map(int, fin.readline().split())
