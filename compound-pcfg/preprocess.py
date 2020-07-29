@@ -552,20 +552,20 @@ def get_data(args):
                          max_sent_l, args.shuffle, args.include_boundary, 0,
                  args.inputdir + 'test_frames.txt', args.inputdir + 'alignments/test.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
                          conllfile=conlldir + "test.conllx" if args.dep else "", test=vgnsl_truth)
-    #
-    # max_sent_l = convert(args.inputdir + 'dev_trees.txt', args.lowercase, args.replace_num,
-    #                      args.batchsize, valid_seqlength, args.minseqlength,
-    #                      args.outputfile + "val.pkl", num_sents_valid,
-    #                      max_sent_l, args.shuffle, args.include_boundary, 0,
-    #                 args.inputdir + 'dev_frames.txt', args.inputdir + 'alignments/dev.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
-    #                      conllfile=conlldir + "dev.conllx" if args.dep else "")
-    #
-    # max_sent_l = convert(args.inputdir + 'train_trees.txt', args.lowercase, args.replace_num,
-    #                      args.batchsize, args.seqlength,  args.minseqlength,
-    #                      args.outputfile + "train.pkl", num_sents_train,
-    #                      max_sent_l, args.shuffle, args.include_boundary, 1,
-    #                  args.inputdir + 'train_frames.txt', args.inputdir + 'alignments/train.{}.{}.align.filter'.format(args.align_type, args.eqn_type), args.constraint_type,
-    #                      conllfile=conlldir + 'train.conllx' if args.dep else "")
+    
+    max_sent_l = convert(args.inputdir + 'dev_trees.txt', args.lowercase, args.replace_num,
+                          args.batchsize, valid_seqlength, args.minseqlength,
+                          args.outputfile + "val.pkl", num_sents_valid,
+                          max_sent_l, args.shuffle, args.include_boundary, 0,
+                     args.inputdir + 'dev_frames.txt', args.inputdir + 'alignments/dev.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
+                          conllfile=conlldir + "dev.conllx" if args.dep else "")
+    
+    max_sent_l = convert(args.inputdir + 'train_trees.txt', args.lowercase, args.replace_num,
+                          args.batchsize, args.seqlength,  args.minseqlength,
+                          args.outputfile + "train.pkl", num_sents_train,
+                          max_sent_l, args.shuffle, args.include_boundary, 1,
+                      args.inputdir + 'train_frames.txt', args.inputdir + 'alignments/train.{}.{}.align.filter'.format(args.align_type, args.eqn_type), args.constraint_type,
+                          conllfile=conlldir + 'train.conllx' if args.dep else "")
 
     print("Max sent length (before dropping): {}".format(max_sent_l))
 
