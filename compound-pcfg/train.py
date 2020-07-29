@@ -80,7 +80,9 @@ parser.add_argument('--vocab_mlp_identity_init', action='store_true', help="init
 parser.add_argument('--evaluate_dep', action='store_true', help='evaluate dependency parsing results')
 parser.add_argument('--log_dir', type=str, default="", help='tensorboard logdir')
 # multimodal
-parser.add_argument('--multimodal', type=int, default=0, help='use multimodal')
+# parser.add_argument('--multimodal', type=int, default=0, help='use multimodal')
+parser.add_argument('--data_type', choices=['constraints', 'concreteness', 'ptb', 'baseline'], help='Use constraints, concreteness, ptb, or baseline', required=True)
+
 parser.add_argument('--out_file', type=str, default='', help='print output of model to a file')
 args = parser.parse_args()
 
@@ -226,12 +228,16 @@ def main(args):
       gold_actions = []
       gold_spans = []
       # gold_binary_trees = []
-      if args.multimodal==1:
+
+      invalid_spans = None
+      valid_spans = None
+      w_c_list = None
+      if args.data_type == 'constraints':
         invalid_spans = []
         valid_spans = []
-      else:
-        invalid_spans = None
-        valid_spans = None
+      elif args.data_type == 'concreteness':
+       w_c_list = []
+
       if args.evaluate_dep:
         heads = []
 
@@ -242,8 +248,9 @@ def main(args):
           gold_spans.append(other_data[j][6])
 
           # gold_binary_trees.append(other_data[j][7])
-          if args.multimodal==1:
-              invalid_spans.append(other_data[j][1])
+          if args.data_type == 'constraints':
+              # invalid_spans.append(other_data[j][1])
+              # no frame info
               if len(other_data[j][1]) == 0:
                   invalid_spans.append(other_data[j][1])
                   valid_spans.append([])
@@ -251,6 +258,8 @@ def main(args):
                   (invalid_idcs, valid_idcs) = other_data[j][1]
                   invalid_spans.append(invalid_idcs)
                   valid_spans.append(valid_idcs)
+          elif args.data_type == 'concreteness':
+              w_c_list.append(other_data[j][1])
 
           if args.evaluate_dep:
               heads.append(other_data[j][8])
@@ -285,7 +294,7 @@ def main(args):
                 gold_tree[j][(span[0], span[1])] = (-1, span[2] - args.nt_states)
               else:
                 gold_tree[j][(span[0], span[1])] = (-1, span[2])
-      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans, valid_spans = valid_spans)
+      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans, valid_spans = valid_spans, con_list = w_c_list)
       loss = (nll + kl).mean()
       if(args.opt_level != "O0"):
         with amp.scale_loss(loss, optimizer) as scaled_loss:
@@ -398,26 +407,27 @@ def eval(data, model):
       pred = -1
       arguments = []
       # gold_binary_trees = []
-      if args.multimodal==1:
+
+      invalid_spans = None
+      valid_spans = None
+      w_c_list = None
+      heads = None
+      if args.data_type == 'constraints':
         invalid_spans = []
         valid_spans = []
-      else:
-        invalid_spans = None
-        valid_spans = None
+      elif args.data_type == 'concreteness':
+        w_c_list = []
 
-      if (not args.evaluate_dep):
-          sents, length, batch_size, other_data = data[i]
-          heads = None
-      else:
-          sents, length, batch_size, other_data, _ = data[i]
+      if args.evaluate_dep:
           heads = []
+
+      sents, length, batch_size, other_data = data[i]
+
       for j in range(batch_size):
           gold_actions.append(other_data[j][4])
           gold_spans.append(other_data[j][6])
           # gold_binary_trees.append(other_data[j][7])
-          if args.multimodal==1:
-              # TODO make use of pred and args in inside later
-              #print(other_data[j][1])
+          if args.data_type == 'constraints':
               # if no frame
               if len(other_data[j][1]) == 0:
                   invalid_spans.append(other_data[j][1])
@@ -426,12 +436,18 @@ def eval(data, model):
                   (invalid_idcs, valid_idcs) = other_data[j][1]
                   invalid_spans.append(invalid_idcs)
                   valid_spans.append(valid_idcs)
+          elif args.data_type == 'concreteness':
+              w_c_list.append(other_data[j][1])
+
           if heads != None:
               heads.append(other_data[j][8])
       # else:
         # sents, length, batch_size, _, _, gold_spans, gold_binary_trees, other_data, heads = data[i]
-      if args.multimodal==1:
+      if (invalid_spans != None) and (valid_spans) != None:
           assert len(sents)==len(invalid_spans)==len(valid_spans)
+      elif (w_c_list != None):
+          assert len(sents) == len(w_c_list)
+
       if length == 1 or length > args.eval_max_length:
         continue
 
@@ -442,7 +458,7 @@ def eval(data, model):
       # but we don't for eval since we want a valid upper bound on PPL for early stopping
       # see eval.py for proper MAP inference
       # nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True)
-      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans, valid_spans = valid_spans)
+      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans, valid_spans = valid_spans, con_list = w_c_list)
 
       total_nll += nll.sum().item()
       total_kl  += kl.sum().item()

@@ -132,7 +132,7 @@ class LexicalizedPCFG(nn.Module):
             mask[i][l, r+1, :, acceptable_heads] = 0
     return mask
 
-  def _inside(self, gold_tree=None, invalid_spans = None, valid_spans = None, **kwargs):
+  def _inside(self, gold_tree=None, invalid_spans = None, valid_spans = None, con_list = None, **kwargs):
     #inside step
 
     rule_scores, root_scores, unary_scores = self.__get_scores(**kwargs)
@@ -170,20 +170,11 @@ class LexicalizedPCFG(nn.Module):
         for (l, r, h) in valid_spans[i]:
           mask[i][l, r+1, :, h].fill_(self.reward)
 
-    # # reward
-    # if (frame_args != None) and (len(frame_args) > 0):
-    #     #print(frame_args)
-    #     for i in range(B):
-    #       if len(frame_args[i]) < 1:
-    #         continue
-    #       for arg in frame_args[i]:
-    #         mask[i][:, :, :, arg].fill_(self.reward*self.arg_perc)
-    #
-    # if (frame_preds != None) and (len(frame_preds) > 0):
-    #     for i in range(B):
-    #       if frame_preds[i] != -1:
-    #         #print('has pred')
-    #         mask[i][:, :, :, frame_preds[i]].fill_(self.reward*self.pred_perc)
+
+    if (con_list != None) and (len(con_list) > 0):
+      for i in range(B):
+          for j in range(len(con_list)):
+             mask[i][:, :, :, j].fill_(con_list[j])
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -257,7 +248,7 @@ class LexicalizedPCFG(nn.Module):
     log_Z = torch.logsumexp(log_Z, dim='T')
     return log_Z
 
-  def _viterbi(self, invalid_spans = None, valid_spans = None, **kwargs):
+  def _viterbi(self, invalid_spans = None, valid_spans = None, con_list = None, **kwargs):
     #unary scores : b x n x T
     #rule scores : b x NT x (NT+T) x (NT+T)
 
@@ -284,8 +275,6 @@ class LexicalizedPCFG(nn.Module):
     self.argmax_tags = rule_scores.new(B, N).long().fill_(-1)
     self.spans = [[] for _ in range(B)]
 
-
-
     # create masks
     mask = self.scores.new(B, N+1, N+1, T, N).fill_(0)
     if (invalid_spans != None) and (len(invalid_spans) > 0):
@@ -303,19 +292,11 @@ class LexicalizedPCFG(nn.Module):
           continue
         for (l, r, h) in valid_spans[i]:
           mask[i][l, r+1, :, h].fill_(self.reward)
-    # reward
-    # if (frame_args != None) and (len(frame_args) > 0):
-    #     for i in range(B):
-    #       if len(frame_args[i]) < 1:
-    #         continue
-    #       for arg in frame_args[i]:
-    #         mask[i][:, :, :, arg].fill_(self.reward*self.arg_perc)
-    #
-    # if (frame_preds != None) and (len(frame_preds) > 0):
-    #     for i in range(B):
-    #       if frame_preds[i] != -1:
-    #         #print('has pred')
-    #         mask[i][:, :, :, frame_preds[i]].fill_(self.reward*self.pred_perc)
+
+    if (con_list != None) and (len(con_list) > 0):
+      for i in range(B):
+          for j in range(len(con_list)):
+             mask[i][:, :, :, j].fill_(con_list[j])
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -359,18 +340,13 @@ class LexicalizedPCFG(nn.Module):
         max_dir = max_pos
 
         self.scores[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
-        # apply mask to tmp_
-        # print('----temp-----')
-        # print(tmp)
+
         tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
-        # print('----after mask-----')
-        # print(tmp)
+
         tmp_ = tmp + unary_scores[:, l:r, :self.nt_states].align_as(tmp)
-        # print('----after unary-----')
-        # print(tmp_)
+
         tmp_, new_head = torch.max(tmp_, dim='H')
 
-        #
         self.scores_[:, l, r, :self.nt_states] = tmp_.rename(None)
 
         self.bp[:, l, r, :self.nt_states, l:r] = max_idx
@@ -383,7 +359,6 @@ class LexicalizedPCFG(nn.Module):
     max_score, max_idx = torch.max(max_score, dim='T')
     for b in range(B):
       self._backtrack(b, 0, N, max_idx[b].item())
-    # print('viterbi spans ' + str(self.spans))
     return self.scores, self.argmax, self.spans
 
   def _backtrack(self, b, s, t, state, head=-1):
