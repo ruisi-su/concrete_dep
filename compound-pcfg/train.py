@@ -240,8 +240,9 @@ def main(args):
 
       if args.evaluate_dep:
         heads = []
-
-      sents, length, batch_size, other_data = train_data[i]
+        sents, length, batch_size, other_data, _ = train_data[i]
+      else:
+        sents, length, batch_size, other_data = train_data[i]
 
       for j in range(batch_size):
           gold_actions.append(other_data[j][4])
@@ -420,8 +421,9 @@ def eval(data, model):
 
       if args.evaluate_dep:
           heads = []
-
-      sents, length, batch_size, other_data = data[i]
+          sents, length, batch_size, other_data, _ = data[i]
+      else:
+          sents, length, batch_size, other_data = data[i]
 
       for j in range(batch_size):
           gold_actions.append(other_data[j][4])
@@ -496,9 +498,9 @@ def eval(data, model):
 
         if args.evaluate_dep:
           assert(len(argmax_spans) == len(heads))
-          print(heads[b])
+          #print(heads[b])
           sent_str = [data.idx2word[word_idx] for word_idx in list(sents[b].cpu().numpy())]
-          print(sent_str)
+          #print(sent_str)
           update_dep_stats(argmax_spans[b], heads[b], dep_stats)
 
         if args.out_file != '':
@@ -514,7 +516,7 @@ def eval(data, model):
             gold_tree_log = "Gold Tree: %s" % get_tree(gold_actions[b], sent_str)
             count += 1
 
-            output.write(pred_tree_log + '\t' + gold_tree_log + '\n')
+            output.write(pred_tree_log + '\t' + gold_tree_log + '\t' + str(argmax_spans[b]) + '\n')
 
   tp, fp, fn = corpus_f1
   prec = tp / (tp + fp)

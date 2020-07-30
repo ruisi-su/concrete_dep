@@ -173,8 +173,10 @@ class LexicalizedPCFG(nn.Module):
 
     if (con_list != None) and (len(con_list) > 0):
       for i in range(B):
-          for j in range(len(con_list)):
-             mask[i][:, :, :, j].fill_(con_list[j])
+          r = len(con_list[i][1:-1])
+          for j in range(len(con_list[i][1:-1])):
+          #print(con_list[i])     
+            mask[i][0, r, :, j].fill_(float(con_list[i][j]))
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -295,8 +297,9 @@ class LexicalizedPCFG(nn.Module):
 
     if (con_list != None) and (len(con_list) > 0):
       for i in range(B):
-          for j in range(len(con_list)):
-             mask[i][:, :, :, j].fill_(con_list[j])
+          r = len(con_list[i][1:-1])
+          for j in range(len(con_list[i][1:-1])):
+             mask[i][0, r, :, j].fill_(float(con_list[i][j]))
 
     # initialization: f[k, k+1]
     for k in range(N):
