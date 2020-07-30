@@ -396,12 +396,10 @@ def get_data(args):
                 con = {}
                 with open(args.concrete_file, 'r') as c:
                     for line in c:
-                        line = line.strip().split(' ')
-                        if len(line) < 2:
-                            continue
+                        line = line.strip().split('\t')
                         # print(line)
                         word = line[0]
-                        score = line[1]
+                        score = line[2]
                         con[word] = score
                 return con
 
@@ -444,8 +442,8 @@ def get_data(args):
                     else:
                         w_c_idx += 1
                         continue
-
-                # print(w_c_list)
+                print(sent)
+                print(w_c_list)
                 other_data_item = [sent_str, w_c_list, tags, action,
                     binary_actions, nonbinary_actions, span, tree]
 
@@ -552,14 +550,14 @@ def get_data(args):
                          max_sent_l, args.shuffle, args.include_boundary, 0,
                  args.inputdir + 'test_frames.txt', args.inputdir + 'alignments/test.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
                          conllfile=conlldir + "test.conllx" if args.dep else "", test=vgnsl_truth)
-    
+
     max_sent_l = convert(args.inputdir + 'dev_trees.txt', args.lowercase, args.replace_num,
                           args.batchsize, valid_seqlength, args.minseqlength,
                           args.outputfile + "val.pkl", num_sents_valid,
                           max_sent_l, args.shuffle, args.include_boundary, 0,
                      args.inputdir + 'dev_frames.txt', args.inputdir + 'alignments/dev.{}.{}.align.filter'.format(args.align_type,args.eqn_type), args.constraint_type,
                           conllfile=conlldir + "dev.conllx" if args.dep else "")
-    
+
     max_sent_l = convert(args.inputdir + 'train_trees.txt', args.lowercase, args.replace_num,
                           args.batchsize, args.seqlength,  args.minseqlength,
                           args.outputfile + "train.pkl", num_sents_train,
@@ -606,7 +604,7 @@ def main(arguments):
     parser.add_argument('--eqn_type', help='Equation type for alignments', type = str, default='dice')
     parser.add_argument('--thresh', help='The threshold for alignments', type = float, default=-1.0e5)
     parser.add_argument('--no_align', action="store_true", help='Not to use alignment')
-    parser.add_argument('--concrete_file', help = 'The file for concreteness scores', type = str, default='./concreteness.txt')
+    parser.add_argument('--concrete_file', help = 'The file for concreteness scores', type = str, default='./Concreteness_ratings_Brysbaert_et_al_BRM.txt')
     # parser.add_argument('--ptb', action="store_true", help='Run the baseline on ptb')
     parser.add_argument('--data_type', choices=['constraints', 'concreteness', 'ptb'], help='Use constraints, concreteness, or ptb', required=True)
 
