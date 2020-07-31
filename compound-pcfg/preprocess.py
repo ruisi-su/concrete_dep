@@ -435,15 +435,14 @@ def get_data(args):
 
                 w_c_list = [-1 for w in sent]
                 w_c_idx = 0
-                for w in sent:
+                sent_lemma = nlp(sent_str)
+                for w in sent_lemma:
                     if w in con.keys():
                         w_c_list[w_c_idx] = con[w]
                         w_c_idx += 1
                     else:
                         w_c_idx += 1
                         continue
-                print(sent)
-                print(w_c_list)
                 other_data_item = [sent_str, w_c_list, tags, action,
                     binary_actions, nonbinary_actions, span, tree]
 
