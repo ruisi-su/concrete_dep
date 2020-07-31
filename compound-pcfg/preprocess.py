@@ -15,7 +15,8 @@ import utils
 import re
 from constraint import gen_phrases
 from itertools import islice
-
+import spacy
+nlp = spacy.load('en_core_web_sm')
 
 class Indexer:
     def __init__(self, symbols = ["<pad>","<unk>","<s>","</s>"]):
