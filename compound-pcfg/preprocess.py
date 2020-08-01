@@ -16,7 +16,9 @@ import re
 from constraint import gen_phrases
 from itertools import islice
 import spacy
+from nltk.tokenize import SpaceTokenizer 
 nlp = spacy.load('en_core_web_sm')
+tk = SpaceTokenizer()
 
 class Indexer:
     def __init__(self, symbols = ["<pad>","<unk>","<s>","</s>"]):
@@ -434,16 +436,24 @@ def get_data(args):
 
                 span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
-                w_c_list = [-1 for w in sent]
+                w_c_list = [-1 for w in sent[1:-1]]
+                #print(len(sent))
+                #print(sent)
                 w_c_idx = 0
-                sent_lemma = nlp(sent_str)
-                for w in sent_lemma:
+                sent_tokenize = tk.tokenize(sent_str)
+                #print(len(sent_lemma))
+                #print(sent_lemma)
+                #print(len(w_c_list))
+                for w in sent_tokenize:
+                    w = nlp(w)
+                    w = w[0].lemma_
                     if w in con.keys():
                         w_c_list[w_c_idx] = con[w]
                         w_c_idx += 1
                     else:
                         w_c_idx += 1
                         continue
+                assert(len(w_c_list)==len(sent_tokenize))
                 other_data_item = [sent_str, w_c_list, tags, action,
                     binary_actions, nonbinary_actions, span, tree]
 
