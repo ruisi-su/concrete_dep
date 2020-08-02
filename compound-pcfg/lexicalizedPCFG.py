@@ -175,8 +175,10 @@ class LexicalizedPCFG(nn.Module):
       for i in range(B):
           r = len(con_list[i][1:-1])
           for j in range(len(con_list[i][1:-1])):
-          #print(con_list[i])     
-            mask[i][0, r, :, j].fill_(float(con_list[i][j]))
+            concrete_score = float(con_list[i][j])
+            if concrete_score <= 4.0:
+              concrete_score = -self.huge
+            mask[i][0, r, :, j].fill_(concrete_score)
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -299,7 +301,10 @@ class LexicalizedPCFG(nn.Module):
       for i in range(B):
           r = len(con_list[i][1:-1])
           for j in range(len(con_list[i][1:-1])):
-             mask[i][0, r, :, j].fill_(float(con_list[i][j]))
+            concrete_score = float(con_list[i][j])
+            if concrete_score <= 4.0:
+              concrete_score = -self.huge
+            mask[i][0, r, :, j].fill_(concrete_score)
 
     # initialization: f[k, k+1]
     for k in range(N):
