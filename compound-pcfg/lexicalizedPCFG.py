@@ -302,7 +302,7 @@ class LexicalizedPCFG(nn.Module):
           r = len(con_list[i][1:-1])
           for j in range(len(con_list[i][1:-1])):
             concrete_score = float(con_list[i][j])
-            if concrete_score <= 4.0:
+            if concrete_score <= 3.5:
               concrete_score = -self.huge
             mask[i][0, r, :, j].fill_(concrete_score)
 
