@@ -82,7 +82,9 @@ parser.add_argument('--log_dir', type=str, default="", help='tensorboard logdir'
 # multimodal
 # parser.add_argument('--multimodal', type=int, default=0, help='use multimodal')
 parser.add_argument('--data_type', choices=['constraints', 'concreteness', 'ptb', 'baseline'], help='Use constraints, concreteness, ptb, or baseline', required=True)
-
+# concreteness
+parser.add_argument('--concrete_scr', type=float, help='The threshold for concreteness values')
+parser.add_argument('--concrete_type', choices=['all', 'root'], help='Which type of spans is the concreteness score applied')
 parser.add_argument('--out_file', type=str, default='', help='print output of model to a file')
 args = parser.parse_args()
 
@@ -295,7 +297,7 @@ def main(args):
                 gold_tree[j][(span[0], span[1])] = (-1, span[2] - args.nt_states)
               else:
                 gold_tree[j][(span[0], span[1])] = (-1, span[2])
-      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans, valid_spans = valid_spans, con_list = w_c_list)
+      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans, valid_spans = valid_spans, con_list = w_c_list, concrete_scr = args.concrete_scr, concrete_type = args.concrete_type)
       loss = (nll + kl).mean()
       if(args.opt_level != "O0"):
         with amp.scale_loss(loss, optimizer) as scaled_loss:
@@ -460,7 +462,7 @@ def eval(data, model):
       # but we don't for eval since we want a valid upper bound on PPL for early stopping
       # see eval.py for proper MAP inference
       # nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True)
-      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans, valid_spans = valid_spans, con_list = w_c_list)
+      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans, valid_spans = valid_spans, con_list = w_c_list, concrete_scr = args.concrete_scr, concrete_type = args.concrete_type)
 
       total_nll += nll.sum().item()
       total_kl  += kl.sum().item()

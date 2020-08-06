@@ -132,7 +132,7 @@ class LexicalizedPCFG(nn.Module):
             mask[i][l, r+1, :, acceptable_heads] = 0
     return mask
 
-  def _inside(self, gold_tree=None, invalid_spans = None, valid_spans = None, con_list = None, **kwargs):
+  def _inside(self, gold_tree=None, invalid_spans = None, valid_spans = None, con_list = None, concrete_scr = 0.0, concrete_type = '', **kwargs):
     #inside step
 
     rule_scores, root_scores, unary_scores = self.__get_scores(**kwargs)
@@ -170,15 +170,20 @@ class LexicalizedPCFG(nn.Module):
         for (l, r, h) in valid_spans[i]:
           mask[i][l, r+1, :, h].fill_(self.reward)
 
-
     if (con_list != None) and (len(con_list) > 0):
       for i in range(B):
-          r = len(con_list[i][1:-1])
-          for j in range(len(con_list[i][1:-1])):
+          r = len(con_list[i])
+          for j in range(len(con_list[i])):
             concrete_score = float(con_list[i][j])
-            if concrete_score <= 4.0:
+            if concrete_score <= concrete_scr:
               concrete_score = -self.huge
-            mask[i][0, r, :, j].fill_(concrete_score)
+
+            if concrete_type == 'all':
+                mask[i][:, :, :, j].fill_(concrete_score)
+            elif concrete_type == 'root':
+                mask[i][0, r, :, j].fill_(concrete_score)
+            else:
+                raise ValueError('concrete_type is invalid. must be all or root.')
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -252,7 +257,8 @@ class LexicalizedPCFG(nn.Module):
     log_Z = torch.logsumexp(log_Z, dim='T')
     return log_Z
 
-  def _viterbi(self, invalid_spans = None, valid_spans = None, con_list = None, **kwargs):
+  def _viterbi(self, invalid_spans = None, valid_spans = None, con_list = None,
+  concrete_scr = 0.0, concrete_type = '', **kwargs):
     #unary scores : b x n x T
     #rule scores : b x NT x (NT+T) x (NT+T)
 
@@ -302,9 +308,15 @@ class LexicalizedPCFG(nn.Module):
           r = len(con_list[i])
           for j in range(len(con_list[i])):
             concrete_score = float(con_list[i][j])
-            if concrete_score <= 2.0:
+            if concrete_score <= concrete_scr:
               concrete_score = -self.huge
-            mask[i][:, :, :, j].fill_(concrete_score)
+
+            if concrete_type == 'all':
+                mask[i][:, :, :, j].fill_(concrete_score)
+            elif concrete_type == 'root':
+                mask[i][0, r, :, j].fill_(concrete_score)
+            else:
+                raise ValueError('concrete_type is invalid. must be all or root.')
             #print(con_list[i])
 
     # initialization: f[k, k+1]
