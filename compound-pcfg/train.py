@@ -237,7 +237,7 @@ def main(args):
       if args.data_type == 'constraints':
         invalid_spans = []
         valid_spans = []
-      elif args.data_type == 'concreteness':
+      elif (args.data_type == 'concreteness') and (epoch > 1):
        w_c_list = []
 
       if args.evaluate_dep:
@@ -261,7 +261,7 @@ def main(args):
                   (invalid_idcs, valid_idcs) = other_data[j][1]
                   invalid_spans.append(invalid_idcs)
                   valid_spans.append(valid_idcs)
-          elif args.data_type == 'concreteness':
+          elif (args.data_type == 'concreteness') and (epoch > 1):
               w_c_list.append(other_data[j][1])
 
           if args.evaluate_dep:
