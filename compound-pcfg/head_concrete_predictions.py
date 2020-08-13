@@ -6,7 +6,7 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 
 
-predictions = open('./outputs/baseline_concrete_all_20.txt', 'r')
+predictions = open('./outputs/concrete_all_00_30.txt', 'r')
 
 head_dict = {}
 pos_dict = {}

@@ -132,7 +132,7 @@ class LexicalizedPCFG(nn.Module):
             mask[i][l, r+1, :, acceptable_heads] = 0
     return mask
 
-  def _inside(self, gold_tree=None, invalid_spans = None, valid_spans = None, con_list = None, concrete_scr = 0.0, concrete_type = '', **kwargs):
+  def _inside(self, gold_tree=None, invalid_spans = None, valid_spans = None, con_list = None, con_mult = 0.0, **kwargs):
     #inside step
 
     rule_scores, root_scores, unary_scores = self.__get_scores(**kwargs)
@@ -174,16 +174,8 @@ class LexicalizedPCFG(nn.Module):
       for i in range(B):
           r = len(con_list[i])
           for j in range(len(con_list[i])):
-            concrete_score = float(con_list[i][j])
-            if concrete_score <= concrete_scr:
-              concrete_score = -self.huge
-
-            if concrete_type == 'all':
-                mask[i][:, :, :, j].fill_(concrete_score)
-            elif concrete_type == 'root':
-                mask[i][0, r, :, j].fill_(concrete_score)
-            else:
-                raise ValueError('concrete_type is invalid. must be all or root.')
+            concrete_score = float(con_list[i][j]) / 5.0 * con_mult
+            mask[i][0, r, :, j].fill_(concrete_score)
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -247,7 +239,9 @@ class LexicalizedPCFG(nn.Module):
                    rule_scores[:, :, :, l:r, :self.nt_states, :self.nt_states].align_to('D', 'B', 'T', 'H', 'U', ...))
           tmp = self.logadd(self.logadd(f(tmp1), f(tmp2)), f(tmp3))
 
-        tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        if W == N+1:
+          tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+
         self.beta[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
         tmp_ = torch.logsumexp(tmp + unary_scores[:, l:r, :self.nt_states].align_as(tmp), dim='H')
         self.beta_[:, l, r, :self.nt_states] = tmp_.rename(None)
@@ -257,8 +251,7 @@ class LexicalizedPCFG(nn.Module):
     log_Z = torch.logsumexp(log_Z, dim='T')
     return log_Z
 
-  def _viterbi(self, invalid_spans = None, valid_spans = None, con_list = None,
-  concrete_scr = 0.0, concrete_type = '', **kwargs):
+  def _viterbi(self, invalid_spans = None, valid_spans = None, con_list = None, con_mult = 0.0, **kwargs):
     #unary scores : b x n x T
     #rule scores : b x NT x (NT+T) x (NT+T)
 
@@ -307,17 +300,8 @@ class LexicalizedPCFG(nn.Module):
       for i in range(B):
           r = len(con_list[i])
           for j in range(len(con_list[i])):
-            concrete_score = float(con_list[i][j])
-            if concrete_score <= concrete_scr:
-              concrete_score = -self.huge
-
-            if concrete_type == 'all':
-                mask[i][:, :, :, j].fill_(concrete_score)
-            elif concrete_type == 'root':
-                mask[i][0, r, :, j].fill_(concrete_score)
-            else:
-                raise ValueError('concrete_type is invalid. must be all or root.')
-            #print(con_list[i])
+            concrete_score = float(con_list[i][j]) / 5.0 * con_mult
+            mask[i][0, r, :, j].fill_(concrete_score)
 
     # initialization: f[k, k+1]
     for k in range(N):
