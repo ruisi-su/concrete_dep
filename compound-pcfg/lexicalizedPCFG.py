@@ -174,9 +174,14 @@ class LexicalizedPCFG(nn.Module):
       for i in range(B):
           r = len(con_list[i])
           for j in range(len(con_list[i])):
-            concrete_score = float(con_list[i][j]) / 5.0 * con_mult
+            concrete_score = float(con_list[i][j])
+            if concrete_score != -1.0:
+              concrete_score = concrete_score / 5.0 * con_mult
+            else:
+              concrete_score = 0.0
+            #print(concrete_score)
             mask[i][0, r, :, j].fill_(concrete_score)
-
+    
     # initialization: f[k, k+1]
     for k in range(N):
       for state in range(self.states):
@@ -238,8 +243,12 @@ class LexicalizedPCFG(nn.Module):
                    self.beta_[:, l+2:r-1, r, :self.nt_states].rename(L='U'),
                    rule_scores[:, :, :, l:r, :self.nt_states, :self.nt_states].align_to('D', 'B', 'T', 'H', 'U', ...))
           tmp = self.logadd(self.logadd(f(tmp1), f(tmp2)), f(tmp3))
-
-        if W == N+1:
+        
+        if W == N:
+          #print('n = ' + str(W))
+          #print('l = ' + str(l))
+          #print('r = ' + str(r))
+          #print(mask[:, l, r, :self.nt_states, l:r])
           tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
 
         self.beta[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
@@ -345,8 +354,8 @@ class LexicalizedPCFG(nn.Module):
         max_dir = max_pos
 
         self.scores[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
-
-        tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        # do not mask during inference
+        # tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
 
         tmp_ = tmp + unary_scores[:, l:r, :self.nt_states].align_as(tmp)
 
