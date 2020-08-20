@@ -16,7 +16,9 @@ import re
 from constraint import gen_phrases
 from itertools import islice
 import spacy
-from nltk.tokenize import SpaceTokenizer 
+from nltk.tokenize import SpaceTokenizer
+# uses GPU for spacy
+spacy.require_gpu()
 nlp = spacy.load('en_core_web_sm')
 tk = SpaceTokenizer()
 
@@ -400,8 +402,9 @@ def get_data(args):
                 with open(args.concrete_file, 'r') as c:
                     for line in c:
                         line = line.strip().split('\t')
-                        # print(line)
-                        word = line[0]
+                        # if bigram == 1
+                        if int(line[1]) == 1:
+                            word = '-'.join(line[0].split(' '))
                         score = line[2]
                         con[word] = score
                 return con
@@ -436,17 +439,18 @@ def get_data(args):
 
                 span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
-                w_c_list = [-1 for w in sent[1:-1]]
-                #print(len(sent))
-                #print(sent)
+                w_c_list = [0.0 for w in sent[1:-1]]
+
                 w_c_idx = 0
                 sent_tokenize = tk.tokenize(sent_str)
-                #print(len(sent_lemma))
-                #print(sent_lemma)
-                #print(len(w_c_list))
+
                 for w in sent_tokenize:
                     w = nlp(w)
-                    w = w[0].lemma_
+                    if '-' in w.text:
+                        print('found hyphen from data ' + w.text)
+                        w = w.text
+                    else:
+                        w = w[0].lemma_
                     if w in con.keys():
                         w_c_list[w_c_idx] = con[w]
                         w_c_idx += 1
