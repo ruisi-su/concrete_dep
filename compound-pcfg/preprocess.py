@@ -403,8 +403,8 @@ def get_data(args):
                     for line in c:
                         line = line.strip().split('\t')
                         # if bigram == 1
-                        if int(line[1]) == 1:
-                            word = '-'.join(line[0].split(' '))
+                        #if int(line[1]) == 1:
+                        word = '-'.join(line[0].split(' '))
                         score = line[2]
                         con[word] = score
                 return con

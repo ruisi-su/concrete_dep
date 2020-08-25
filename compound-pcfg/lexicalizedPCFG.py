@@ -309,9 +309,14 @@ class LexicalizedPCFG(nn.Module):
       for i in range(B):
           r = len(con_list[i])
           for j in range(len(con_list[i])):
-            concrete_score = float(con_list[i][j]) / 5.0 * con_mult
+            concrete_score = float(con_list[i][j])
+            if concrete_score != -1.0:
+              concrete_score = concrete_score / 5.0 * con_mult
+            else:
+              concrete_score = 0.0
+              #print(concrete_score)
             mask[i][0, r, :, j].fill_(concrete_score)
-
+    
     # initialization: f[k, k+1]
     for k in range(N):
       for state in range(self.states):
@@ -355,6 +360,8 @@ class LexicalizedPCFG(nn.Module):
 
         self.scores[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
         # do not mask during inference
+        if W == N:
+          tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
         # tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
 
         tmp_ = tmp + unary_scores[:, l:r, :self.nt_states].align_as(tmp)
