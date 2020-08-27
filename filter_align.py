@@ -1,28 +1,34 @@
-import spacy
-import sys
-nlp = spacy.load("en_core_web_md")
+from numpy.linalg import norm
+import operator
+import fasttext
 
-threshold = 0.5
+ft = fasttext.load_model('../Downloads/cc.en.300.bin')
 
-with open(sys.argv[1], 'r') as alignment_file:
-  for aline in alignment_file:
-    alignments = aline.strip().split(' ')
-    if len(alignments) == 1:
-        print('')
-        continue
-    # filter by similarity
-    aitems_filt = []
-    for alignment in alignments:
-      align_list = alignment.split(':')
-      if len(align_list) == 4:
-          cap = ':'.join(align_list[:2])
-          frame = align_list[2]
-          score = align_list[3]
-      else:
-          cap, frame, score = align_list
-      cap_doc = nlp(cap)
-      frame_doc = nlp(frame)
-      if cap_doc.similarity(frame_doc) > threshold:
-        aitems_filt.append(alignment)
-    aline_filt = ' '.join(aitems_filt)
-    print(aline_filt)
+
+with open('./data/coco/VGNSL_split/traindevtest.cap', 'r') as cap, open('./data/coco/VGNSL_split/traindevtest.frame', 'r') as frame, open('./traindevtest.cos', 'w') as out:
+    for c, f in zip(cap, frame):
+        if not f.strip():
+            out.write('\n')
+            continue
+        c = c.strip()
+        f = f.strip().split('\t')
+        kwl = []
+        # get frame labels
+        for i, fr in enumerate(f):
+            fr = fr.split('_')
+            if i == 0:
+                kwl.append(fr[0])
+            kwl.append(fr[2])
+        for kw in kwl:
+            kwd = {}
+            kwv = ft.get_word_vector(kw)
+            # search captions
+            for w in c.split(' '):
+                wv = ft.get_word_vector(w)
+                dis = (wv @ kwv.T) / (norm(wv) * norm(kwv))
+                kwd[w] = dis
+            argmax = max(kwd.items(), key=operator.itemgetter(1))[0]
+            # print('for keyword %s, argmax is %s' % (kw, argmax))
+            # cap : frame
+            out.write('%s:%s\t' %(argmax, kw))
+        out.write('\n')

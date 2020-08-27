@@ -235,7 +235,7 @@ def main(args):
       w_c_list = None
       if args.data_type == 'constraints':
         invalid_spans = []
-        valid_spans = []
+        valid_spans = None
       elif (args.data_type == 'concreteness'):
        w_c_list = []
 
@@ -251,15 +251,15 @@ def main(args):
 
           # gold_binary_trees.append(other_data[j][7])
           if args.data_type == 'constraints':
-              # invalid_spans.append(other_data[j][1])
+              invalid_spans.append(other_data[j][1])
               # no frame info
-              if len(other_data[j][1]) == 0:
-                  invalid_spans.append(other_data[j][1])
-                  valid_spans.append([])
-              else:
-                  (invalid_idcs, valid_idcs) = other_data[j][1]
-                  invalid_spans.append(invalid_idcs)
-                  valid_spans.append(valid_idcs)
+              # if len(other_data[j][1]) == 0:
+              #     invalid_spans.append([])
+              #     valid_spans.append([])
+              # else:
+              #     (invalid_idcs, valid_idcs) = other_data[j][1]
+              #     invalid_spans.append(invalid_idcs)
+              #     valid_spans.append(valid_idcs)
           elif (args.data_type == 'concreteness'):
               w_c_list.append(other_data[j][1])
 
@@ -416,7 +416,7 @@ def eval(data, model):
       heads = None
       if args.data_type == 'constraints':
         invalid_spans = []
-        valid_spans = []
+        valid_spans = None
       elif args.data_type == 'concreteness':
         w_c_list = []
 
@@ -431,14 +431,16 @@ def eval(data, model):
           gold_spans.append(other_data[j][6])
           # gold_binary_trees.append(other_data[j][7])
           if args.data_type == 'constraints':
-              # if no frame
-              if len(other_data[j][1]) == 0:
-                  invalid_spans.append(other_data[j][1])
-                  valid_spans.append([])
-              else:
-                  (invalid_idcs, valid_idcs) = other_data[j][1]
-                  invalid_spans.append(invalid_idcs)
-                  valid_spans.append(valid_idcs)
+              invalid_spans.append(other_data[j][1])
+
+          #     # if no frame
+          #     if len(other_data[j][1]) == 0:
+          #         invalid_spans.append([])
+          #         valid_spans.append([])
+          #     else:
+          #         (invalid_idcs, valid_idcs) = other_data[j][1]
+          #         invalid_spans.append(invalid_idcs)
+          #         valid_spans.append(valid_idcs)
           elif args.data_type == 'concreteness':
               w_c_list.append(other_data[j][1])
 

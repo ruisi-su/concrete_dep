@@ -25,7 +25,7 @@ class LexicalizedPCFG(nn.Module):
     self.huge = 1e9
     # self.arg_perc = 0.5
     # self.pred_perc = 0.5
-    self.reward = 2.5
+    self.reward = 0.0
     if(self.nt_emission):
       self.word_span_slice = slice(self.states)
     else:
@@ -181,7 +181,7 @@ class LexicalizedPCFG(nn.Module):
               concrete_score = 0.0
             #print(concrete_score)
             mask[i][0, r, :, j].fill_(concrete_score)
-    
+
     # initialization: f[k, k+1]
     for k in range(N):
       for state in range(self.states):
@@ -243,7 +243,7 @@ class LexicalizedPCFG(nn.Module):
                    self.beta_[:, l+2:r-1, r, :self.nt_states].rename(L='U'),
                    rule_scores[:, :, :, l:r, :self.nt_states, :self.nt_states].align_to('D', 'B', 'T', 'H', 'U', ...))
           tmp = self.logadd(self.logadd(f(tmp1), f(tmp2)), f(tmp3))
-        
+
         if W == N:
           #print('n = ' + str(W))
           #print('l = ' + str(l))
@@ -316,7 +316,7 @@ class LexicalizedPCFG(nn.Module):
               concrete_score = 0.0
               #print(concrete_score)
             mask[i][0, r, :, j].fill_(concrete_score)
-    
+
     # initialization: f[k, k+1]
     for k in range(N):
       for state in range(self.states):

@@ -1,12 +1,12 @@
 import utils
-import preprocess
+# import preprocess
 from collections import Counter
 import argparse, sys
 import nltk
 from nltk.stem import WordNetLemmatizer
 
 
-predictions = open('./outputs/concrete_all_00_30.txt', 'r')
+predictions = open('./outputs/test_scale_2_constraints.txt', 'r')
 
 head_dict = {}
 pos_dict = {}

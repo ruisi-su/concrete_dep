@@ -16,11 +16,11 @@ import re
 from constraint import gen_phrases
 from itertools import islice
 import spacy
-from nltk.tokenize import SpaceTokenizer
+from nltk.tokenize import ToktokTokenizer
 # uses GPU for spacy
 spacy.require_gpu()
 nlp = spacy.load('en_core_web_sm')
-tk = SpaceTokenizer()
+tk = ToktokTokenizer()
 
 class Indexer:
     def __init__(self, symbols = ["<pad>","<unk>","<s>","</s>"]):
@@ -209,6 +209,13 @@ def get_data(args):
                 for word in sent:
                     indexer.vocab[word] += 1
         return num_sents, max_seqlength
+    def check_hyphen(str):
+
+        if '-' in str:
+            return str
+        else:
+            str = nlp(str)
+            return str[0].lemma_
 
     def convert(textfile, lowercase, replace_num,
                 batchsize, seqlength, minseqlength, outfile, num_sents, max_sent_l=0,
@@ -232,7 +239,6 @@ def get_data(args):
 
         # open input files
         txt =  open(textfile).readlines()
-
 
         if args.data_type == 'constraints':
             # check files existence
@@ -263,7 +269,6 @@ def get_data(args):
                         alignment = alignment.lower()
                         frame = frame.lower()
 
-                    frame = frame.strip().split('\t')
                     sent_str = " ".join(sent)
                     if replace_num == 1:
                         sent = [clean_number(w) for w in sent]
@@ -276,14 +281,25 @@ def get_data(args):
                     sent_pad = pad(sent, newseqlength, indexer.PAD)
                     sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
                     sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
-                    if frame[0] == '':
-                        invalids = []
 
-                    elif frame[0].split('_')[0] not in sent:
+                    if not frame.strip():
                         invalids = []
                     else:
-                        match += 1
-                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.thresh, is_align)
+                        frame = frame.strip().split('\t')
+                        sent_t = tk.sent_tokenize(sent_str)
+                        sent_lemmatize = []
+                        for w in sent_t:
+                            w = check_hyphen(w)
+                            sent_lemmatize.append(w)
+                            # any(item in l for item in l2)
+
+                        pred = check_hyphen(frame[0].split('_')[0])
+                        if pred not in sent_lemmatize:
+                          invalids = []
+                        else:
+                          match += 1
+                          invalids = gen_phrases(sent_lemmatize, pred, frame, alignment, constraint_type, args.thresh, is_align)
+
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
                     span = extract_spans(ground_truth)
@@ -303,7 +319,6 @@ def get_data(args):
             else:
                 match = 0
                 for (tree, frame, alignment) in zip(txt, fr, align):
-                    frame = frame.strip().split('\t')
                     tree = tree.strip()
                     action = get_actions(tree)
                     tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
@@ -328,13 +343,24 @@ def get_data(args):
                     sent_pad = pad(sent, newseqlength, indexer.PAD)
                     sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
                     sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
-                    if frame[0] == '':
-                        invalids = []
-                    elif frame[0].split('_')[0] not in sent:
+
+                    if not frame.strip():
                         invalids = []
                     else:
-                        match += 1
-                        invalids = gen_phrases(sent_str, frame, alignment, constraint_type, args.thresh, is_align)
+                        frame = frame.strip().split('\t')
+                        sent_t = tk.sent_tokenize(sent_str)
+                        sent_lemmatize = []
+                        for w in sent_t:
+                            w = check_hyphen(w)
+                            sent_lemmatize.append(w)
+                            # any(item in l for item in l2)
+                        pred = check_hyphen(frame[0].split('_')[0])
+                        if pred not in sent_lemmatize:
+                          invalids = []
+                        else:
+                          match += 1
+                          invalids = gen_phrases(sent_lemmatize, pred, frame, alignment, constraint_type, args.thresh, is_align)
+
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
                     other_data_item = [sent_str, invalids, tags, action,
@@ -445,12 +471,7 @@ def get_data(args):
                 sent_tokenize = tk.tokenize(sent_str)
 
                 for w in sent_tokenize:
-                    w = nlp(w)
-                    if '-' in w.text:
-                        print('found hyphen from data ' + w.text)
-                        w = w.text
-                    else:
-                        w = w[0].lemma_
+                    w = check_hyphen(w)
                     if w in con.keys():
                         w_c_list[w_c_idx] = con[w]
                         w_c_idx += 1

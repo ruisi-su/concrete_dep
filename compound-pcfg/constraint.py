@@ -13,10 +13,12 @@ with rule 1, "food at home" could not be a phrase, but "eat food at home", "food
 with rule 2, if we had a phrase "dogs eat", the head could not be "dogs", and "dogs eat food at home" the heads could not be "dogs", "food", or "home"
 '''
 # frame only has one verb
+
+# could also promote valid spans BUT removed for now
 # gets the invalid phrases that violent either rules
 # sent gives the original position of each word
 # constraint type: 1 = rule 1, 2 = rule 2
-def invalid_phrases_type1(frame, predicate, phrase, start, end, invalids, valids, sent, arguments, log_path=''):
+def invalid_phrases_type1(predicate, phrase, start, end, invalids, sent, arguments, log_path=''):
     if log_path != '':
         log_file = open(log_path, "a")
     #print(arguments)
@@ -35,17 +37,18 @@ def invalid_phrases_type1(frame, predicate, phrase, start, end, invalids, valids
                     if log_path != '':
                         log_file.write(log + '\n')
                 head_ind_invalid += 1
-        elif len(intersect) == 1:
-            arg = intersect.pop()
-            arg_ind = sent.index(arg)
-            if arg_ind <= end and arg_ind >= start:
-                valids.add((start, end, arg_ind))
+        # elif len(intersect) == 1:
+        #     arg = intersect.pop()
+        #     arg_ind = sent.index(arg)
+        #     if arg_ind <= end and arg_ind >= start:
+        #         valids.add((start, end, arg_ind))
     if log_path != '':
         log_file.close()
-    return invalids, valids
+    # return invalids, valids
+    return invalids
 
 # rule 2: an argument cannot be the head of a phrase that also contains its predicate
-def invalid_phrases_type2(frame, predicate, phrase, start, end, invalids, valids, sent, arguments, log_path=''):
+def invalid_phrases_type2(predicate, phrase, start, end, invalids, sent, arguments, log_path=''):
     if log_path != '':
         log_file = open(log_path, "a")
 
@@ -68,14 +71,14 @@ def invalid_phrases_type2(frame, predicate, phrase, start, end, invalids, valids
                 # if log_path != '':
                     # log_file.write(log + '\n')
             head_ind_invalid += 1
-        if pred_ind <= end and pred_ind >= start:
-            valids.add((start, end, sent.index(predicate)))
+        # if pred_ind <= end and pred_ind >= start:
+        #     valids.add((start, end, sent.index(predicate)))
     if log_path != '':
         log_file.close()
-    return invalids, valids
+    return invalids
 
 # rule 2 exclusive: a phrase containing a predicate MUST has the predicate as the head, a phrase contains only the argument MUST has the argument as the head
-def invalid_phrases_type2_exclusive(frame, predicate, phrase, start, end, invalids, valids, sent, arguments, log_path=''):
+def invalid_phrases_type2_exclusive(predicate, phrase, start, end, invalids, sent, arguments, log_path=''):
     if log_path != '':
         log_file = open(log_path, "a")
 
@@ -93,8 +96,8 @@ def invalid_phrases_type2_exclusive(frame, predicate, phrase, start, end, invali
                 phrase_range = (start, end, head_ind_invalid)
                 invalids.add(phrase_range)
             head_ind_invalid += 1
-        if pred_ind <= end and pred_ind >= start:
-            valids.add((start, end, sent.index(predicate)))
+        # if pred_ind <= end and pred_ind >= start:
+        #     valids.add((start, end, sent.index(predicate)))
     else:
         head_ind = start
         for head in phrase:
@@ -103,20 +106,20 @@ def invalid_phrases_type2_exclusive(frame, predicate, phrase, start, end, invali
             if (head not in intersect):
                 phrase_range = (start, end, head_ind)
                 invalids.add(phrase_range)
-            else:
-                valids.add((start, end, head_ind))
+            # else:
+            #     valids.add((start, end, head_ind))
             head_ind += 1
 
-    return invalids, valids
+    return invalids
 
 # generate all possible phrases from left to right, not including the entire sentence
-def gen_phrases(sent, frame, alignment, constraint_type, threshold, is_align):
+def gen_phrases(sent, predicate, frame, alignment, constraint_type, threshold, is_align):
 
-    sent = sent.split(' ')
+    # sent = sent.split(' ')
     predicate = frame[0].split('_')[0]
+
     if is_align:
         alignment = get_align(alignment.lower(), threshold)
-
     arguments = set()
     for f in frame:
         args = f.split('_')
@@ -131,11 +134,9 @@ def gen_phrases(sent, frame, alignment, constraint_type, threshold, is_align):
                 arguments.add(align)
         else:
             arguments.add(arg)
-    # print(arguments)
     pointer = 0
-    # end = len(sent)
     invalids = set()
-    valids = set()
+    # valids = set()
     while pointer < len(sent):
         # loop for current pointer
         if pointer == 0:
@@ -156,29 +157,26 @@ def gen_phrases(sent, frame, alignment, constraint_type, threshold, is_align):
                 pred_cap = alignment[predicate]
             # generate list of heads
             if constraint_type == 1:
-                invalids, valids = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
+                invalids = invalid_phrases_type1(pred_cap, phrase, pointer, ind-1, invalids, sent, arguments)
             elif constraint_type == 2:
-                invalids, valids = invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
+                invalids = invalid_phrases_type2(pred_cap, phrase, pointer, ind-1, invalids, sent, arguments)
             elif constraint_type == 4:
-                invalids, valids = invalid_phrases_type2_exclusive(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
+                invalids = invalid_phrases_type2_exclusive(pred_cap, phrase, pointer, ind-1, invalids, sent, arguments)
             elif constraint_type == 3:
-                invalids_1, valids_1 = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
-                invalids_2, valids_2 = invalid_phrases_type2(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
+                invalids_1 = invalid_phrases_type1(pred_cap, phrase, pointer, ind-1, invalids, sent, arguments)
+                invalids_2 = invalid_phrases_type2(pred_cap, phrase, pointer, ind-1, invalids, sent, arguments)
                 invalids = invalids_1.union(invalids_2)
-                valids = valids_1.union(valids_2)
+                # valids = valids_1.union(valids_2)
             elif constraint_type == 5:
-                invalids_1, valids_1 = invalid_phrases_type1(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
-                invalids_2, valids_2 = invalid_phrases_type2_exclusive(frame, pred_cap, phrase, pointer, ind-1, invalids, valids, sent, arguments)
+                invalids_1 = invalid_phrases_type1(pred_cap, phrase, pointer, ind-1, invalids, sent, arguments)
+                invalids_2 = invalid_phrases_type2_exclusive(pred_cap, phrase, pointer, ind-1, invalids, sent, arguments)
                 invalids = invalids_1.union(invalids_2)
-                valids = valids_1.union(valids_2)
+                # valids = valids_1.union(valids_2)
         pointer += 1
-    #print(invalids.intersection(valids))
-    #print(sent)
-    #print(frame)
-    #print(invalids)
-    #print(valids)
-    assert(len(invalids.intersection(valids)) == 0)
-    return list(invalids), list(valids)
+
+    # assert(len(invalids.intersection(valids)) == 0)
+    # return list(invalids), list(valids)
+    return list(invalids)
     # return invalids, valids
 
 # threshold is a relative percentage to the current set of alignments
