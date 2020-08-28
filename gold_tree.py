@@ -6,6 +6,7 @@ import benepar
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--splitType', default='train')
+parser.add_argument('--imsitu', action='store_true')
 args = parser.parse_args()
 
 nlp = spacy.load('en_core_web_sm')
@@ -36,8 +37,13 @@ def gen_trees(input_file, output_file):
 
 def main(args):
     data_path = 'data/coco/VGNSL_split'
-    input_file = '{}/{}_caps.txt'.format(data_path, args.splitType)
-    output_file = '{}/{}_trees.txt'.format(data_path, args.splitType)
+    input = 'caps'
+    output = 'trees'
+    if args.imsitu:
+        intput = 'templates'
+        output = 'temp_trees'
+    input_file = '{}/{}_{}.txt'.format(data_path, args.splitType, input)
+    output_file = '{}/{}_{}.txt'.format(data_path, args.splitType, output)
     gen_trees(input_file, output_file)
 
 if __name__ == '__main__':
