@@ -17,9 +17,6 @@ from constraint import gen_phrases
 from itertools import islice
 import spacy
 from nltk.tokenize import ToktokTokenizer
-# uses GPU for spacy
-spacy.require_gpu()
-nlp = spacy.load('en_core_web_sm')
 tk = ToktokTokenizer()
 
 class Indexer:
@@ -188,6 +185,9 @@ def clean_number(w):
     return new_w
 
 def get_data(args):
+    # uses GPU for spacy
+    spacy.require_gpu(args.gpu)
+    nlp = spacy.load('en_core_web_sm')
     indexer = Indexer(["<pad>","<unk>","<s>","</s>"])
     def make_vocab(textfile, seqlength, minseqlength, lowercase, replace_num,
                    train=1, apply_length_filter=1):
@@ -286,7 +286,7 @@ def get_data(args):
                         invalids = []
                     else:
                         frame = frame.strip().split('\t')
-                        sent_t = tk.sent_tokenize(sent_str)
+                        sent_t = tk.tokenize(sent_str)
                         sent_lemmatize = []
                         for w in sent_t:
                             w = check_hyphen(w)
@@ -348,7 +348,7 @@ def get_data(args):
                         invalids = []
                     else:
                         frame = frame.strip().split('\t')
-                        sent_t = tk.sent_tokenize(sent_str)
+                        sent_t = tk.tokenize(sent_str)
                         sent_lemmatize = []
                         for w in sent_t:
                             w = check_hyphen(w)
@@ -642,10 +642,8 @@ def main(arguments):
     parser.add_argument('--concrete_file', help = 'The file for concreteness scores', type = str, default='./Concreteness_ratings_Brysbaert_et_al_BRM.txt')
     # parser.add_argument('--ptb', action="store_true", help='Run the baseline on ptb')
     parser.add_argument('--data_type', choices=['constraints', 'concreteness', 'ptb'], help='Use constraints, concreteness, or ptb', required=True)
-
+    parser.add_argument('--gpu', type=int, default=0, help='GPU number for spacy')
     args = parser.parse_args(arguments)
-
-
     if (args.data_type == 'constraints') and (args.align_type is None or args.constraint_type is None):
         parser.error("using constraints requires --align_type and --constraint_type.")
 

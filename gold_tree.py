@@ -40,7 +40,7 @@ def main(args):
     input = 'caps'
     output = 'trees'
     if args.imsitu:
-        intput = 'templates'
+        input = 'templates'
         output = 'temp_trees'
     input_file = '{}/{}_{}.txt'.format(data_path, args.splitType, input)
     output_file = '{}/{}_{}.txt'.format(data_path, args.splitType, output)
