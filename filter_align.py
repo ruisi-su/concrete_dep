@@ -4,7 +4,6 @@ import fasttext
 
 ft = fasttext.load_model('../Downloads/cc.en.300.bin')
 
-
 with open('./data/coco/VGNSL_split/traindevtest.cap', 'r') as cap, open('./data/coco/VGNSL_split/traindevtest.frame', 'r') as frame, open('./traindevtest.cos', 'w') as out:
     for c, f in zip(cap, frame):
         if not f.strip():

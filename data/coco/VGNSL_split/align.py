@@ -1,5 +1,39 @@
 import argparse
 from collections import defaultdict
+import spacy
+from nltk.tokenize import ToktokTokenizer
+spacy.require_gpu(args.gpu)
+tk = ToktokTokenizer()
+nlp = spacy.load('en_core_web_sm')
+
+def check_hyphen(str):
+    if '-' in str:
+        return str
+    else:
+        str = nlp(str)
+        return str[0].lemma_
+
+def get_concreteness():
+    con = {}
+    with open(args.concrete_file, 'r') as c:
+        for line in c:
+            line = line.strip().split('\t')
+            # if bigram == 1
+            #if int(line[1]) == 1:
+            word = '-'.join(line[0].split(' '))
+            score = line[2]
+            con[word] = score
+    return con
+
+def filter_by_concreteness(sent_str):
+    con = get_concreteness()
+    sent_tokenize = tk.tokenize(sent_str)
+    filtered = []
+    for w in sent_tokenize:
+        w = check_hyphen(w)
+        if w in con.keys():
+            filtered.append(w)
+    return filtered
 
 def make_input(captions_file, frames_file, frame_preproc):
     captions = open(captions_file).readlines()
@@ -42,7 +76,12 @@ def make_input(captions_file, frames_file, frame_preproc):
                         frame_words.append(spl[2])
                 else:
                     print('No valid splitting provided.')
-            out.write('{} ||| {}\n'.format(' '.join(caption.split()), ' '.join(frame_words)))
+
+            cap_str = ' '.join(caption.split())
+            if args.filter:
+                cap_str = ' '.join(filter_by_concreteness(cap_str))
+
+            out.write('{} ||| {}\n'.format(cap_str, ' '.join(frame_words)))
 
 def make_input_temp(captions_file, tempcap_file):
     captions = open(captions_file).readlines()
@@ -88,6 +127,9 @@ parser.add_argument('--template', action='store_true', help='generate templates'
 parser.add_argument('--frame_preproc')
 parser.add_argument('--align_output')
 parser.add_argument('--align_input')
+parser.add_argument('--filter', action='store_true')
+parser.add_argument('--concrete_file', help = 'The file for concreteness scores', type = str, default='../../../compound-pcfg/Concreteness_ratings_Brysbaert_et_al_BRM_modified.txt')
+parser.add_argument('--gpu')
 args = parser.parse_args()
 
 if args.make_input:

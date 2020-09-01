@@ -1,10 +1,10 @@
 import sys
 
-#
+
 type = sys.argv[1]
 eqn_type = sys.argv[2]
 # file_name = './traindevtest.cap-frame.{}.{}_output'.format(type, eqn_type)
-# 
+#
 # eqn_type = 'dice'
 # type = 'temp'
 file_name = '../traindevtest.cap-frame.split_all.dice_output.v2.filter'

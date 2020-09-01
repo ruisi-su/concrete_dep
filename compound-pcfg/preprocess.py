@@ -210,7 +210,6 @@ def get_data(args):
                     indexer.vocab[word] += 1
         return num_sents, max_seqlength
     def check_hyphen(str):
-
         if '-' in str:
             return str
         else:
