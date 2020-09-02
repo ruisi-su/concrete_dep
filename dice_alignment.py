@@ -25,6 +25,9 @@ with open(args.srctrg_file, 'r') as fsrctrg:
     if not lsrctrg:
       continue
     tot_cnt += 1.0
+    print(lsrctrg)
+    if len(lsrctrg.split(' ||| ') == 1:
+      continue
     lsrc, ltrg = lsrctrg.split(' ||| ')
     wsrc = set(lsrc.lower().strip().split())
     wtrg = set(ltrg.lower().strip().split())
@@ -49,6 +52,7 @@ with open(args.srctrg_file, 'r') as fsrctrg:
     if not lsrctrg:
       print()
       continue
+    #print(lsrctrg)
     lsrc, ltrg = lsrctrg.split(' ||| ')
     wsrc = list(set(lsrc.lower().strip().split()))
     wtrg = list(set(ltrg.lower().strip().split()))

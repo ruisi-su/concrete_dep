@@ -2,7 +2,7 @@ import argparse
 from collections import defaultdict
 import spacy
 from nltk.tokenize import ToktokTokenizer
-spacy.require_gpu(args.gpu)
+
 tk = ToktokTokenizer()
 nlp = spacy.load('en_core_web_sm')
 
@@ -31,7 +31,7 @@ def filter_by_concreteness(sent_str):
     filtered = []
     for w in sent_tokenize:
         w = check_hyphen(w)
-        if w in con.keys():
+        if w in con.keys() and float(con[w]) > args.thresh:
             filtered.append(w)
     return filtered
 
@@ -42,7 +42,7 @@ def make_input(captions_file, frames_file, frame_preproc):
 
     tokenized_captions = [c.strip() for c in captions]
 
-    with open(frames_file.replace('_frames.txt','') + '.cap-frame.{}'.format(frame_preproc), 'w') as out:
+    with open(frames_file.replace('_frames.txt','') + '.cap-frame.{}.{}'.format(frame_preproc, str(args.thresh)), 'w') as out:
         for caption, frame in zip(tokenized_captions, frames):
             if not frame.strip():
                 out.write('\n')
@@ -80,7 +80,9 @@ def make_input(captions_file, frames_file, frame_preproc):
             cap_str = ' '.join(caption.split())
             if args.filter:
                 cap_str = ' '.join(filter_by_concreteness(cap_str))
-
+            if not cap_str:
+                out.write('\n')
+                continue
             out.write('{} ||| {}\n'.format(cap_str, ' '.join(frame_words)))
 
 def make_input_temp(captions_file, tempcap_file):
@@ -129,9 +131,10 @@ parser.add_argument('--align_output')
 parser.add_argument('--align_input')
 parser.add_argument('--filter', action='store_true')
 parser.add_argument('--concrete_file', help = 'The file for concreteness scores', type = str, default='../../../compound-pcfg/Concreteness_ratings_Brysbaert_et_al_BRM_modified.txt')
-parser.add_argument('--gpu')
+parser.add_argument('--gpu', type=int, default=0, help='GPU number for spacy')
+parser.add_argument('--thresh', type=float, default=0.0, help='threshold for filtering')
 args = parser.parse_args()
-
+spacy.require_gpu(args.gpu)
 if args.make_input:
     if args.template:
         print('temp')
