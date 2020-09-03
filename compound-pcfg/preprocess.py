@@ -356,11 +356,11 @@ def get_data(args):
                             # any(item in l for item in l2)
                         #pred = check_hyphen(frame[0].split('_')[0])
                         #if pred not in sent_lemmatize:
-                        if frame[0].split('_')[0] in sent:
+                        if frame[0].split('_')[0] in sent_str:
                           match += 1
                         #else:
                         #  match += 1
-                        invalids = gen_phrases(sent, frame[0].split('_')[0], frame, alignment, constraint_type, args.thresh, is_align)
+                        invalids = gen_phrases(sent_str.split(' '), frame[0].split('_')[0], frame, alignment, constraint_type, args.thresh, is_align)
 
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 

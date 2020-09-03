@@ -160,7 +160,7 @@ class LexicalizedPCFG(nn.Module):
       for i in range(B):
         if len(invalid_spans[i]) < 1:
           continue
-        print(invalid_spans[i])
+        #print(invalid_spans[i])
         for (l, r, h) in invalid_spans[i]:
           mask[i][l, r, :, h].fill_(-self.huge)
 
@@ -287,14 +287,15 @@ class LexicalizedPCFG(nn.Module):
     self.argmax = rule_scores.new(B, N, N).long().fill_(-1)
     self.argmax_tags = rule_scores.new(B, N).long().fill_(-1)
     self.spans = [[] for _ in range(B)]
-
+    
+    #print(invalid_spans)
     # create masks
     mask = self.scores.new(B, N+1, N+1, T, N).fill_(0)
     if (invalid_spans != None) and (len(invalid_spans) > 0):
       for i in range(B):
         if len(invalid_spans[i]) < 1:
           continue
-        # print(len(invalid_spans[i]))
+        #print(invalid_spans[i])
         for (l, r, h) in invalid_spans[i]:
           #print('applying mask')
           mask[i][l, r+1, :, h].fill_(-self.huge)
