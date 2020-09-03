@@ -22,12 +22,10 @@ tot_cnt = 0
 with open(args.srctrg_file, 'r') as fsrctrg:
   for lsrctrg in tqdm(fsrctrg):
     lsrctrg = lsrctrg.strip()
-    if not lsrctrg:
+    if (not lsrctrg) or (len(lsrctrg.split(' ||| ')) == 1):
       continue
     tot_cnt += 1.0
-    print(lsrctrg)
-    if len(lsrctrg.split(' ||| ') == 1:
-      continue
+    #print(lsrctrg)
     lsrc, ltrg = lsrctrg.split(' ||| ')
     wsrc = set(lsrc.lower().strip().split())
     wtrg = set(ltrg.lower().strip().split())
@@ -49,7 +47,7 @@ else:
 with open(args.srctrg_file, 'r') as fsrctrg:
   for lsrctrg in tqdm(fsrctrg):
     lsrctrg = lsrctrg.strip()
-    if not lsrctrg:
+    if (not lsrctrg) or (len(lsrctrg.split(' ||| ')) == 1):
       print()
       continue
     #print(lsrctrg)

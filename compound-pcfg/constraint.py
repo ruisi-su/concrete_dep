@@ -117,7 +117,9 @@ def gen_phrases(sent, predicate, frame, alignment, constraint_type, threshold, i
 
     # sent = sent.split(' ')
     predicate = frame[0].split('_')[0]
-
+    print(len(sent))
+    print(frame)
+    print(alignment)
     if is_align:
         alignment = get_align(alignment.lower(), threshold)
     arguments = set()
@@ -176,6 +178,7 @@ def gen_phrases(sent, predicate, frame, alignment, constraint_type, threshold, i
 
     # assert(len(invalids.intersection(valids)) == 0)
     # return list(invalids), list(valids)
+    print(invalids)
     return list(invalids)
     # return invalids, valids
 

@@ -160,8 +160,9 @@ class LexicalizedPCFG(nn.Module):
       for i in range(B):
         if len(invalid_spans[i]) < 1:
           continue
+        print(invalid_spans[i])
         for (l, r, h) in invalid_spans[i]:
-          mask[i][l, r+1, :, h].fill_(-self.huge)
+          mask[i][l, r, :, h].fill_(-self.huge)
 
     if (valid_spans != None) and (len(valid_spans) > 0):
       for i in range(B):

@@ -186,8 +186,9 @@ def clean_number(w):
 
 def get_data(args):
     # uses GPU for spacy
-    spacy.require_gpu(args.gpu)
-    nlp = spacy.load('en_core_web_sm')
+    if args.data_type == 'concreteness':
+        spacy.require_gpu(args.gpu)
+        nlp = spacy.load('en_core_web_sm')
     indexer = Indexer(["<pad>","<unk>","<s>","</s>"])
     def make_vocab(textfile, seqlength, minseqlength, lowercase, replace_num,
                    train=1, apply_length_filter=1):
@@ -246,7 +247,7 @@ def get_data(args):
                 fr = open(framefile).readlines()
             else:
                 raise ValueError('Frame and alignment files must exist for using constraints.')
-            # parse test and other data splits
+            # parse test and other data splits NOT USING VGNSL ground
             if test:
                 match = 0
                 truth = open('../data/coco/VGNSL_split/test_ground-truth.txt', 'r')
@@ -347,18 +348,19 @@ def get_data(args):
                         invalids = []
                     else:
                         frame = frame.strip().split('\t')
-                        sent_t = tk.tokenize(sent_str)
-                        sent_lemmatize = []
-                        for w in sent_t:
-                            w = check_hyphen(w)
-                            sent_lemmatize.append(w)
+                        #sent_t = tk.tokenize(sent_str)
+                        #sent_lemmatize = []
+                        #for w in sent_t:
+                        #    w = check_hyphen(w)
+                        #    sent_lemmatize.append(w)
                             # any(item in l for item in l2)
-                        pred = check_hyphen(frame[0].split('_')[0])
-                        if pred not in sent_lemmatize:
-                          invalids = []
-                        else:
+                        #pred = check_hyphen(frame[0].split('_')[0])
+                        #if pred not in sent_lemmatize:
+                        if frame[0].split('_')[0] in sent:
                           match += 1
-                          invalids = gen_phrases(sent_lemmatize, pred, frame, alignment, constraint_type, args.thresh, is_align)
+                        #else:
+                        #  match += 1
+                        invalids = gen_phrases(sent, frame[0].split('_')[0], frame, alignment, constraint_type, args.thresh, is_align)
 
                     span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
@@ -575,8 +577,8 @@ def get_data(args):
     max_sent_l = 0
 
     vgnsl_truth = False
-    if (args.data_type != 'ptb'):
-        vgnsl_truth = True
+    #if (args.data_type != 'ptb'):
+    #    vgnsl_truth = True
 
     max_sent_l = convert(args.inputdir + 'test_trees.txt', args.lowercase, args.replace_num,
                          args.batchsize, test_seqlength, args.minseqlength,
