@@ -6,20 +6,19 @@ import argparse
 # generate comparison results
 
 parser = argparse.ArgumentParser(description="Parse arguments")
-parser.add_argument("--out_file", required=True, help="the output file name")
-parser.add_argument("--dim", default=512, help="hidden dim of the model")
-parser.add_argument("--align_type", required=True, help="the alignment type")
-parser.add_argument("--eqn", default="dice", help="What type of equation to use (dice/pmi)")
-parser.add_argument("--spans", action="store_true", help="Whether to include spans")
-parser.add_argument("--align", action="store_true", help="Whether to include alignments")
-
+parser.add_argument('o1') #baseline
+parser.add_argument('o2') #concrete
+parser.add_argument('o3') # constraints
+parser.add_argument('o4') # constraints
+parser.add_argument("--align1", help="Specific alignment file to include")
+parser.add_argument("--align2", help="Specific alignment file to include")
 args = parser.parse_args()
 
 # parse alignments and frames
-def gen_dict(data_path, align_path, align_type, eqn_type):
+def gen_dict(data_path, align_path, align_file):
     test_dict = {}
 
-    with open(data_path+'_caps.txt', 'r') as cap, open(data_path+'_frames.txt', 'r') as frame, open(align_path+'split_'+align_type+'.'+eqn_type+'.align.filter', 'r') as align:
+    with open(data_path+'_caps.txt', 'r') as cap, open(data_path+'_frames.txt', 'r') as frame, open(align_path+align_file, 'r') as align:
         for i, (c, f, a) in enumerate(zip(cap, frame, align)):
             if i not in test_dict.keys():
                 test_dict[i] = {}
@@ -60,87 +59,67 @@ def get_af(tree, dict):
 same = 0
 diff = 0
 
-
-
-# align_t0 = 'split_all'
-# align_t1 = 'split_noverb'
-
 out_dir = 'outputs/'
 
 # gen dict
 data_path = '../data/coco/VGNSL_split/test'
-align_path = '../data/coco/VGNSL_split/alignments/test.'
-# none_dict = gen_dict(data_path, align_path, 'none', eqn_type)
-# all_dict = gen_dict(data_path, align_path, 'split_all', eqn_type)
-# verb_dict = gen_dict(data_path, align_path, 'split_verb', eqn_type)
-# noverb_dict = gen_dict(data_path, align_path, 'split_noverb', eqn_type)
+align_path = '../data/coco/VGNSL_split/alignments/'
 compare_rule = True
 
-with open(out_dir+'test_h{}_{}_{}_{}_filter_best.txt'.format(args.dim, 3, args.align_type, args.eqn), 'r') as t0,
- open(out_dir+'test_h{}_{}_{}_{}_invalid_valid.txt'.format(args.dim, 3, args.align_type, args.eqn), 'r') as t1, open(out_dir+'test_h{}_{}_{}_{}_invalid_valid_small.txt'.format(args.dim, 3, args.align_type, args.eqn), 'r') as t2,
-  open(out_dir+'test_h{}_baseline_all_dice_best.txt'.format(args.dim), 'r') as t3, open(out_dir+args.out_file, 'w') as out:
+
+# if args.align:
+dict_t0 = gen_dict(data_path, align_path, args.align1)
+dict_t1 = gen_dict(data_path, align_path, args.align2)
+
+with open(args.o1, 'r') as t0, open(args.o2, 'r') as t1, open(args.o3, 'r') as t2, open(args.o4, 'r') as t3:
 
     for l0, l1, l2, l3 in zip(t0, t1, t2, t3):
     # for l0, l1, l2 in zip(t0, t1, t2):
     # for l0, l3 in zip(t0, t3):
 
-        pred_0, gold, span_0 = l0.rstrip().split('\t')
-        # pred_1, _, span_1 = l1.rstrip().split('\t')
-        # pred_2, _, span_2 = l2.rstrip().split('\t')
-        pred_3, _, span_3 = l3.rstrip().split('\t')
+        pred_0, gold, _ = l0.rstrip().split('\t')
+        pred_1, _, _ = l1.rstrip().split('\t')
+        pred_2, _, _ = l2.rstrip().split('\t')
+        pred_3, _, _ = l3.rstrip().split('\t')
         pred_0 = pred_0.split(' ')[2:]
-        # pred_1 = pred_1.split(' ')[2:]
-        # pred_2 = pred_2.split(' ')[2:]
+        pred_1 = pred_1.split(' ')[2:]
+        pred_2 = pred_2.split(' ')[2:]
         pred_3 = pred_3.split(' ')[2:]
         gold = gold.split(' ')[2:]
 
-        if args.align:
-            dict_t0 = gen_dict(data_path, align_path, args.align_type, args.eqn)
-            # dict_t1 = gen_dict(data_path, align_path, align_t1, eqn_type)
+        # dict_t1 = gen_dict(data_path, align_path, align_t1, eqn_type)
 
-            align_0, frame = get_af(' '.join(gold), dict_t0)
-            # align_1, frame = get_af(' '.join(gold), dict_t1)
-            # align_2, frame = get_af(' '.join(gold), verb_dict)
-            # align_3, frame = get_af(' '.join(gold), noverb_dict)
+        align_0, frame = get_af(' '.join(gold), dict_t0)
+        align_1, _ = get_af(' '.join(gold), dict_t1)
+        # align_2, frame = get_af(' '.join(gold), verb_dict)
+        # align_3, frame = get_af(' '.join(gold), noverb_dict)
 
         if (pred_0 == pred_1 == pred_2 == pred_3):
-        # if (pred_0)
-            # print(pred_0)
-            # print(pred_1)
-             # and (pred_1 == pred_2) and (pred_2 == pred_3) and (pred_3 == pred_0):
             same += 1
-            out.write('-----SAME-----'+'\n')
+            print('-----SAME-----')
         else:
             diff += 1
-            out.write('-----DIFF-----'+'\n')
+            print('-----DIFF-----')
 
-        # output_line_0 = align_t0 + ' : ' + ' '.join(pred_0) + '\n' + str(span_0) + '\n' + 'alignment : ' + align_0 + '\n'
-        # output_line_1 = align_t1 + ' : ' +' '.join(pred_1) + '\n' + str(span_1) + '\n' + 'alignment : ' + align_1 + '\n'
-        # output_line_2 = 'split verb : ' + ' '.join(pred_2) + '\n' + str(span_2) + '\n' + 'alignment : ' + align_2 + '\n'
-        # output_line_3 = 'split no verb : ' + ' '.join(pred_3) + '\n' + str(span_0) + '\n' + 'alignment : ' + align_3 + '\n'
-        if args.spans:
-            output_line_0 = 'rule 1 : ' + ' '.join(pred_0) + '\n' + str(span_0) + '\n'
-            output_line_1 = 'rule 2 : ' + ' '.join(pred_1) + '\n' + str(span_1) + '\n'
-            output_line_2 = 'rule 3 : ' + ' '.join(pred_2) + '\n' + str(span_2) + '\n'
-            output_line_3 = 'base : ' + ' '.join(pred_3) + '\n' + str(span_3) + '\n'
-        else:
-            output_line_0 = 'rule 1 : ' + ' '.join(pred_0) + '\n'
-            output_line_1 = 'rule 2 : ' + ' '.join(pred_1) + '\n'
-            output_line_2 = 'rule 3 : ' + ' '.join(pred_2) + '\n'
-            output_line_3 = 'base : ' + ' '.join(pred_3) + '\n'
+        print('baseline : ' + ' '.join(pred_0))
 
-        # output_line_2 = 'rule 3 : ' + ' '.join(pred_2) + '\n' + str(span_2) + '\n'
+        print('output 1 : ' + ' '.join(pred_1))
 
+        print('output 2 : ' + ' '.join(pred_2))
+        print('align : ' + align_0)
 
-        output_line_gold = 'gold tree : ' + ' '.join(gold) + '\n'
-        if args.align:
-            output_line_frame =  'frame : ' + frame + '\n'
+        print('output 3 : ' + ' '.join(pred_3))
+        print('align : ' + align_1)
 
-            output_line_align = 'align : ' + align_0 + '\n'
-            # out.write(output_line_0 + output_line_1 + output_line_gold + output_line_frame)
-            out.write(output_line_3 + output_line_0 + output_line_1 +output_line_2 + output_line_gold + output_line_frame + output_line_align)
-        else:
-            out.write(output_line_3 + output_line_0 + output_line_1 +output_line_2 + output_line_gold)
+        print('gold tree : ' + ' '.join(gold))
+        print('frame : ' + frame)
+        # if args.align_file != '':
+        #     output_line_frame =  'frame : ' + frame + '\n'
+        #     output_line_align = 'align : ' + align_0 + '\n'
+        #     # out.write(output_line_0 + output_line_1 + output_line_gold + output_line_frame)
+        #     print(output_line_3 + output_line_0 + output_line_1 +output_line_2 + output_line_gold + output_line_frame + output_line_align)
+        # else:
+        #     print(output_line_3 + output_line_0 + output_line_1 +output_line_2 + output_line_gold)
 
-    out.write('--------------'+'\n')
-    out.write(str(same) + ' identical outputs ' + str(diff) + ' different outputs' )
+    print('--------------')
+    print(str(same) + ' identical outputs ' + str(diff) + ' different outputs' )
