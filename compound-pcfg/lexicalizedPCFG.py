@@ -289,6 +289,7 @@ class LexicalizedPCFG(nn.Module):
     self.spans = [[] for _ in range(B)]
     
     #print(invalid_spans)
+    #print(con_list)
     # create masks
     mask = self.scores.new(B, N+1, N+1, T, N).fill_(0)
     if (invalid_spans != None) and (len(invalid_spans) > 0):
