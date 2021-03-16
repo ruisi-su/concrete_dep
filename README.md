@@ -1,6 +1,6 @@
 # Multimodal Grammar Induction
 
-This repo adds visual priors to the lexicalized-pcfg, which can be found in here https://github.com/neulab/neural-lpcfg.
+This repo adds visual priors to the lexicalized-pcfg. The original repo for the lpcfg model is https://github.com/neulab/neural-lpcfg.
 
 # Preprocess
 
