@@ -1,8 +1,0 @@
-1862	['a', 'clock', 'on', 'a', 'pole', 'saying', 'it', 'is', '12', '45']	a clock on a pole saying it is 12 45 
-2068	['a', 'church', 'steeple', 'clock', 'with', 'roman', 'numerals', 'set', 'at', '1', '00']	a church steeple clock with roman numerals set at 1 00 
-2396	['two', 'toasts', 'in', 'a', 'plate', 'with', 'a', 'knife', 'and', 'a', 'fork', 'a', 'pipe', 'for', 'smoking', 'on', 'the', 'table']	two toasts in a plate with a knife and a fork a pipe for smoking on the table 
-2592	['a', 'frisco', 'clock', 'that', 'currently', 'reads', '2', '25']	a frisco clock that currently reads 2 25 
-3312	['a', 'clock', 'sits', 'atop', 'a', 'tower', 'claiming', 'the', 'time', 'to', 'be', '2', '56']	a clock sits atop a tower claiming the time to be 2 56 
-3343	['a', 'new', 'flat', 'screen', 't', 'v', 'on', 'top', 'of', 'an', 'older', 'model', 'television']	a new flat screen t v on top of an older model television 
-4287	['a', 'cake', 'piece', 'in', 'the', 'plate', 'a', 'spoon', 'is', 'in', 'the', 'plate']	a cake piece in the plate a spoon is in the plate 
-4534	['a', 'washroom', 'having', 'toilet', 'bathtub', 'in', 'between', 'is', 'a', 'partition', 'by', 'curtain']	a washroom having toilet bathtub in between is a partition by curtain 

@@ -1,17 +1,19 @@
-import spacy
-from benepar.spacy_plugin import BeneparComponent
+# import spacy
+# from benepar.spacy_plugin import BeneparComponent
 import argparse
 from nltk import Tree
 import benepar
+import os
 
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 parser = argparse.ArgumentParser()
 parser.add_argument('--splitType', default='train')
 parser.add_argument('--imsitu', action='store_true')
 args = parser.parse_args()
 
-nlp = spacy.load('en_core_web_sm')
-nlp.add_pipe(BeneparComponent('benepar_en2'))
-tree_parser = benepar.Parser("benepar_en2")
+# nlp = spacy.load('en_core_web_sm')
+# nlp.add_pipe(BeneparComponent('benepar_en2'))
+tree_parser = benepar.Parser("benepar_en3_large")
 
 def gen_gold_tree(in_sent):
     tree = tree_parser.parse(in_sent)
