@@ -6,15 +6,14 @@ import pickle
 import fasttext
 import fasttext.util
 
-
-ft = fasttext.load_model('../../Downloads/cc.en.300.bin')
+ft = fasttext.load_model('../../fastText/cc.en.300.bin')
 
 # write to pickle
 w2v = dict()
 
 c = 0
-with open(sys.argv[1], 'r') as dict:
-    for l in tqdm.tqdm(dict):
+with open(sys.argv[1], 'r') as dictfile:
+    for l in tqdm.tqdm(dictfile):
         c += 1
         word, count = l.strip().split(' ')
 
