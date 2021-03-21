@@ -132,7 +132,7 @@ class LexicalizedPCFG(nn.Module):
             mask[i][l, r+1, :, acceptable_heads] = 0
     return mask
 
-  def _inside(self, gold_tree=None, invalid_spans = None, valid_spans = None, con_list = None, con_mult = 0.0, **kwargs):
+  def _inside(self, gold_tree=None, prior_spans = None, con_list = None, **kwargs):
     #inside step
 
     rule_scores, root_scores, unary_scores = self.__get_scores(**kwargs)
@@ -147,41 +147,41 @@ class LexicalizedPCFG(nn.Module):
     # f[s, t] = logsumexp(f[s, :] * f[:, t])
     self.beta = rule_scores.new(B, N + 1, N + 1, T, N).fill_(-self.huge).refine_names('B', 'L', 'R', 'T', 'H')
     self.beta_ = rule_scores.new(B, N + 1, N + 1, T).fill_(-self.huge).refine_names('B', 'L', 'R', 'T')
+    
     # print('beta with head ' + str(self.beta))
     if(not gold_tree is None):
-      print('gold tree is not none')
+      # print('gold tree is not none')
       mask = self.get_mask(B, N, T, gold_tree)
     else:
       mask = self.beta.new(B, N+1, N+1, T, N).fill_(0)
 
     # create masks
     # mask = self.beta.new(B, N+1, N+1, T, N).fill_(0)
-    if (invalid_spans != None) and (len(invalid_spans) > 0):
+    if (prior_spans != None) and (len(prior_spans) > 0):
       for i in range(B):
-        if len(invalid_spans[i]) < 1:
+        if len(prior_spans[i]) < 1:
           continue
-        #print(invalid_spans[i])
-        for (l, r, h) in invalid_spans[i]:
-          mask[i][l, r, :, h].fill_(-self.huge)
+        for (l, r, h) in prior_spans[i]:
+          # mask[i][l, r, :, h].fill_(-self.huge)
+          mask[i][l, r, :, h].fill_(2) # TODO hard code rn 
 
-    if (valid_spans != None) and (len(valid_spans) > 0):
-      for i in range(B):
-        if len(valid_spans[i]) < 1:
-          continue
-        for (l, r, h) in valid_spans[i]:
-          mask[i][l, r+1, :, h].fill_(self.reward)
+    # if (valid_spans != None) and (len(valid_spans) > 0):
+    #   for i in range(B):
+    #     if len(valid_spans[i]) < 1:
+    #       continue
+    #     for (l, r, h) in valid_spans[i]:
+    #       mask[i][l, r+1, :, h].fill_(self.reward)
 
     if (con_list != None) and (len(con_list) > 0):
       for i in range(B):
           r = len(con_list[i])
           for j in range(len(con_list[i])):
-            concrete_score = float(con_list[i][j])
-            if concrete_score != -1.0:
-              concrete_score = concrete_score / 5.0 * con_mult
+            cc_score = float(con_list[i][j])
+            if cc_score != -1.0:
+              cc_score = cc_score # / 5.0 * con_mult
             else:
-              concrete_score = 0.0
-            #print(concrete_score)
-            mask[i][0, r, :, j].fill_(concrete_score)
+              cc_score = 0.0
+            mask[i][0, r, :, j].fill_(cc_score)
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -245,12 +245,15 @@ class LexicalizedPCFG(nn.Module):
                    rule_scores[:, :, :, l:r, :self.nt_states, :self.nt_states].align_to('D', 'B', 'T', 'H', 'U', ...))
           tmp = self.logadd(self.logadd(f(tmp1), f(tmp2)), f(tmp3))
 
-        if W == N:
+        if (con_list != None):
+          if W == N:
           #print('n = ' + str(W))
           #print('l = ' + str(l))
           #print('r = ' + str(r))
           #print(mask[:, l, r, :self.nt_states, l:r])
-          tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+            tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        # elif (prior_spans != None):
+        tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
 
         self.beta[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
         tmp_ = torch.logsumexp(tmp + unary_scores[:, l:r, :self.nt_states].align_as(tmp), dim='H')
@@ -261,7 +264,7 @@ class LexicalizedPCFG(nn.Module):
     log_Z = torch.logsumexp(log_Z, dim='T')
     return log_Z
 
-  def _viterbi(self, invalid_spans = None, valid_spans = None, con_list = None, con_mult = 0.0, **kwargs):
+  def _viterbi(self, prior_spans = None, con_list = None, **kwargs):
     #unary scores : b x n x T
     #rule scores : b x NT x (NT+T) x (NT+T)
 
@@ -288,37 +291,25 @@ class LexicalizedPCFG(nn.Module):
     self.argmax_tags = rule_scores.new(B, N).long().fill_(-1)
     self.spans = [[] for _ in range(B)]
     
-    #print(invalid_spans)
-    #print(con_list)
     # create masks
     mask = self.scores.new(B, N+1, N+1, T, N).fill_(0)
-    if (invalid_spans != None) and (len(invalid_spans) > 0):
+    if (prior_spans != None) and (len(prior_spans) > 0):
       for i in range(B):
-        if len(invalid_spans[i]) < 1:
+        if len(prior_spans[i]) < 1:
           continue
-        #print(invalid_spans[i])
-        for (l, r, h) in invalid_spans[i]:
-          #print('applying mask')
-          mask[i][l, r+1, :, h].fill_(-self.huge)
-
-    if (valid_spans != None) and (len(valid_spans) > 0):
-      for i in range(B):
-        if len(valid_spans[i]) < 1:
-          continue
-        for (l, r, h) in valid_spans[i]:
-          mask[i][l, r+1, :, h].fill_(self.reward)
+        for (l, r, h) in prior_spans[i]:
+          mask[i][l, r, :, h].fill_(2) # TODO HARD CODE
 
     if (con_list != None) and (len(con_list) > 0):
       for i in range(B):
           r = len(con_list[i])
           for j in range(len(con_list[i])):
-            concrete_score = float(con_list[i][j])
-            if concrete_score != -1.0:
-              concrete_score = concrete_score / 5.0 * con_mult
+            cc_score = float(con_list[i][j])
+            if cc_score != -1.0:
+              cc_score = cc_score #/ 5.0 * con_mult
             else:
-              concrete_score = 0.0
-              #print(concrete_score)
-            mask[i][0, r, :, j].fill_(concrete_score)
+              cc_score = 0.0
+            mask[i][0, r, :, j].fill_(cc_score)
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -363,9 +354,11 @@ class LexicalizedPCFG(nn.Module):
 
         self.scores[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
         # do not mask during inference
-        if W == N:
-          tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
-        # tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        if con_list != None:
+          if W == N:
+            tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        
+        tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
 
         tmp_ = tmp + unary_scores[:, l:r, :self.nt_states].align_as(tmp)
 

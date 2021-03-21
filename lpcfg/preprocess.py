@@ -192,7 +192,7 @@ def get_concreteness(concrete_file):
             line = line.strip().split('\t')
             word = '-'.join(line[0].split(' '))
             score = line[2]
-            con[word] = score
+            con[word] = float(score)
     return con
 
 def convert(indexer, lowercase, replace_num,
@@ -374,7 +374,7 @@ def convert(indexer, lowercase, replace_num,
             for w in sent_tokenize:
                 w = check_hyphen(w) 
                 if w in con.keys():
-                    w_c_list[w_c_idx] = con[w]
+                    w_c_list[w_c_idx] = con[w] / 5.0
                     w_c_idx += 1
                 else:
                     w_c_idx += 1

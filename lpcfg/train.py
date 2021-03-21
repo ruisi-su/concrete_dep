@@ -81,10 +81,10 @@ parser.add_argument('--evaluate_dep', action='store_true', help='evaluate depend
 parser.add_argument('--log_dir', type=str, default="", help='tensorboard logdir')
 # multimodal
 # parser.add_argument('--multimodal', type=int, default=0, help='use multimodal')
-parser.add_argument('--data_type', choices=['constraints', 'concreteness', 'ptb', 'baseline'], help='Use constraints, concreteness, ptb, or baseline', required=True)
+parser.add_argument('--data_type', choices=['constraints', 'coupling', 'concreteness', 'baseline'], help='Use constraints, concreteness, ptb, or baseline', required=True)
 # concreteness
-parser.add_argument('--con_mult', type=float, help='The multiplier for concreteness value')
-parser.add_argument('--out_file', type=str, default='', help='print output of model to a file')
+# parser.add_argument('--con_mult', type=float, help='The multiplier for concreteness value')
+# parser.add_argument('--out_file', type=str, default='', help='print output of model to a file')
 args = parser.parse_args()
 
 if(args.eval_max_length is None):
@@ -226,49 +226,59 @@ def main(args):
     for i in np.random.permutation(len(train_data)):
       b += 1
       gold_tree = None
-      gold_actions = []
-      gold_spans = []
-      # gold_binary_trees = []
 
-      invalid_spans = None
-      valid_spans = None
-      w_c_list = None
-      if args.data_type == 'constraints':
-        invalid_spans = []
-        valid_spans = None
-      elif (args.data_type == 'concreteness'):
-       w_c_list = []
+      # if args.data_type == 'constraints':
+      #   invalid_spans = []
+      #   valid_spans = None
+      # elif (args.data_type == 'concreteness'):
+      #   w_c_list = []
 
-      if args.evaluate_dep:
-        heads = []
-        sents, length, batch_size, other_data, _ = train_data[i]
+      if (not args.evaluate_dep):
+        if (args.data_type != 'baseline'):
+          sents, length, batch_size, _, _, gold_spans, gold_binary_trees, _, additionals = train_data[i]
+        else:
+          sents, length, batch_size, _, _, gold_spans, gold_binary_trees, _ = train_data[i]
       else:
-        sents, length, batch_size, other_data = train_data[i]
+        if (args.data_type != 'baseline'):
+          sents, length, batch_size, gold_tags, gold_actions, gold_spans, gold_binary_trees, _, additionals, heads = train_data[i]
+        else:
+          sents, length, batch_size, gold_tags, gold_actions, gold_spans, gold_binary_trees, _, heads = train_data[i]
+        
+        if(len(args.supervised_signals)):
+          gold_tree = []
+          for j in range(len(heads)):
+            gold_tree.append(get_span2head(gold_spans[j], heads[j], gold_actions=gold_actions[j], gold_tags=gold_tags[j]))
+            for span, (head, label) in gold_tree[j].items():
+              if(span[0] == span[1]):
+                gold_tree[j][span] = (head, PT2ID[label])
+              else:
+                f = lambda x : x[:x.find('-')] if x.find('-') != -1 else x
+                g = lambda y : y[:y.find('=')] if y.find('=') != -1 else y
+                gold_tree[j][span] = (head, NT2ID[f(g(label))])
 
-      for j in range(batch_size):
-          gold_actions.append(other_data[j][4])
-          gold_spans.append(other_data[j][6])
+        # for j in range(batch_size):
+        #   # gold_actions.append(other_data[j][4])
+        #   # gold_spans.append(other_data[j][6])
 
-          # gold_binary_trees.append(other_data[j][7])
-          if args.data_type == 'constraints':
-              invalid_spans.append(other_data[j][1])
-          elif (args.data_type == 'concreteness'):
-              w_c_list.append(other_data[j][1])
+        #   # gold_binary_trees.append(other_data[j][7])
+        #   if args.data_type == 'constraints':
+        #       invalid_spans.append(other_data[j][1])
+        #   elif (args.data_type == 'concreteness'):
+        #       w_c_list.append(other_data[j][1])
 
-          if args.evaluate_dep:
-              heads.append(other_data[j][8])
-
-              if(len(args.supervised_signals)):
-                  gold_tree = []
-                  for j in range(len(heads)):
-                      gold_tree.append(get_span2head(gold_spans[j], heads[j], gold_actions=gold_actions[j], gold_tags=gold_tags[j]))
-                      for span, (head, label) in gold_tree[j].items():
-                          if(span[0] == span[1]):
-                              gold_tree[j][span] = (head, PT2ID[label])
-                          else:
-                              f = lambda x : x[:x.find('-')] if x.find('-') != -1 else x
-                              g = lambda y : y[:y.find('=')] if y.find('=') != -1 else y
-                              gold_tree[j][span] = (head, NT2ID[f(g(label))])
+        #   if args.evaluate_dep:
+        #       # heads.append(other_data[j][8])
+        #       if(len(args.supervised_signals)):
+        #           gold_tree = []
+        #           for j in range(len(heads)):
+        #               gold_tree.append(get_span2head(gold_spans[j], heads[j], gold_actions=gold_actions[j], gold_tags=gold_tags[j]))
+        #               for span, (head, label) in gold_tree[j].items():
+        #                   if(span[0] == span[1]):
+        #                       gold_tree[j][span] = (head, PT2ID[label])
+        #                   else:
+        #                       f = lambda x : x[:x.find('-')] if x.find('-') != -1 else x
+        #                       g = lambda y : y[:y.find('=')] if y.find('=') != -1 else y
+        #                       gold_tree[j][span] = (head, NT2ID[f(g(label))])
 
       if length > args.max_length or length == 1: #length filter based on curriculum
         continue
@@ -286,7 +296,14 @@ def main(args):
                 gold_tree[j][(span[0], span[1])] = (-1, span[2] - args.nt_states)
               else:
                 gold_tree[j][(span[0], span[1])] = (-1, span[2])
-      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans, valid_spans = valid_spans, con_list = w_c_list, con_mult = args.con_mult)
+      con_list = prior_spans = None
+
+      if args.data_type == 'coupling':
+        prior_spans = additionals 
+      elif args.data_type == 'concreteness':
+        con_list = additionals
+
+      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, prior_spans = prior_spans, con_list = con_list)
       loss = (nll + kl).mean()
       if(args.opt_level != "O0"):
         with amp.scale_loss(loss, optimizer) as scaled_loss:
@@ -338,7 +355,7 @@ def main(args):
           print("Pred Tree: %s" % get_tagged_parse(get_tree(action, sent_str), argmax_spans[0]))
         else:
           print("Pred Tree: %s" % get_tree(action, sent_str))
-        print("Gold Tree: %s" % get_tree(gold_actions[0], sent_str))
+        print("Gold Tree: %s" % get_tree(gold_binary_trees[0], sent_str))
 
         # tensorboard
         if cuda.is_available():
@@ -360,7 +377,7 @@ def main(args):
         else:
           writer.add_text("Pred Tree", get_tree(action, sent_str), global_step)
         #writer.add_text("Gold Tree", gold_binary_trees, gold_step)
-        writer.add_text("Gold Tree", get_tree(gold_actions[0], sent_str), global_step)
+        writer.add_text("Gold Tree", get_tree(gold_binary_trees[0], sent_str), global_step)
 
     args.max_length = min(args.final_max_length, args.max_length + args.len_incr)
     print('--------------------------------')
@@ -394,44 +411,56 @@ def eval(data, model):
   count = 0
   with torch.no_grad():
     for i in range(len(data)):
-      gold_actions = []
-      gold_spans = []
-      pred = -1
-      arguments = []
-      # gold_binary_trees = []
+      # gold_actions = []
+      # gold_spans = []
+      # pred = -1
+      # arguments = []
+      # # gold_binary_trees = []
 
-      invalid_spans = None
-      valid_spans = None
-      w_c_list = None
-      heads = None
-      if args.data_type == 'constraints':
-        invalid_spans = []
-        valid_spans = None
-      elif args.data_type == 'concreteness':
-        w_c_list = []
+      # invalid_spans = None
+      # valid_spans = None
+      # w_c_list = None
+      # heads = None
 
-      if args.evaluate_dep:
-          heads = []
-          sents, length, batch_size, other_data, _ = data[i]
+      # if args.data_type == 'constraints':
+      #   invalid_spans = []
+      #   valid_spans = None
+      # elif args.data_type == 'concreteness':
+      #   w_c_list = []
+
+      # if args.evaluate_dep:
+      #     heads = []
+      #     sents, length, batch_size, other_data, _ = data[i]
+      # else:
+      #     sents, length, batch_size, other_data = data[i]
+
+      if (not args.evaluate_dep):
+        if (args.data_type != 'baseline'):
+          sents, length, batch_size, _, _, gold_spans, gold_binary_trees, _, additionals = data[i]
+        else:
+          sents, length, batch_size, _, _, gold_spans, gold_binary_trees, _ = data[i]
       else:
-          sents, length, batch_size, other_data = data[i]
-
+        if (args.data_type != 'baseline'):
+          sents, length, batch_size, gold_tags, gold_actions, gold_spans, gold_binary_trees, _, additionals, heads = data[i]
+        else:
+          sents, length, batch_size, gold_tags, gold_actions, gold_spans, gold_binary_trees, _, heads = data[i]
+        
       for j in range(batch_size):
-          gold_actions.append(other_data[j][4])
-          gold_spans.append(other_data[j][6])
-          if args.data_type == 'constraints':
-              invalid_spans.append(other_data[j][1])
+          # gold_actions.append(other_data[j][4])
+          # gold_spans.append(other_data[j][6])
+          # if args.data_type == 'constraints':
+          #     invalid_spans.append(other_data[j][1])
 
-          elif args.data_type == 'concreteness':
-              w_c_list.append(other_data[j][1])
+          # elif args.data_type == 'concreteness':
+          #     w_c_list.append(other_data[j][1])
 
-          if heads != None:
-              heads.append(other_data[j][8])
+          # if heads != None:
+          #     heads.append(other_data[j][8])
 
-      if (invalid_spans != None) and (valid_spans) != None:
-          assert len(sents)==len(invalid_spans)==len(valid_spans)
-      elif (w_c_list != None):
-          assert len(sents) == len(w_c_list)
+      # if (invalid_spans != None) and (valid_spans) != None:
+      #     assert len(sents)==len(invalid_spans)==len(valid_spans)
+      # elif (w_c_list != None):
+      #     assert len(sents) == len(w_c_list)
 
       if length == 1 or length > args.eval_max_length:
         continue
@@ -439,11 +468,18 @@ def eval(data, model):
       if cuda.is_available():
         sents = sents.cuda()
 
+      con_list = prior_spans = None
+      
+      if args.data_type == 'coupling':
+        prior_spans = additionals 
+      elif args.data_type == 'concreteness':
+        con_list = additionals
+
       # note that for unsuperised parsing, we should do model(sents, argmax=True, use_mean = True)
       # but we don't for eval since we want a valid upper bound on PPL for early stopping
       # see eval.py for proper MAP inference
       # nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True)
-      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, invalid_spans = invalid_spans, valid_spans = valid_spans, con_list = w_c_list, con_mult = args.con_mult)
+      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, prior_spans = prior, con_list = con_list)
 
       total_nll += nll.sum().item()
       total_kl  += kl.sum().item()
@@ -494,9 +530,8 @@ def eval(data, model):
                 # gold_tree_log = "Gold Tree: %s" % get_tagged_parse(get_tree(gold_actions[b], sent_str), gold_spans[b])
             else:
                 pred_tree_log = "Pred Tree: %s" % get_tree(action, sent_str)
-            gold_tree_log = "Gold Tree: %s" % get_tree(gold_actions[b], sent_str)
+            gold_tree_log = "Gold Tree: %s" % get_tree(gold_binary_trees[b], sent_str)
             count += 1
-
             output.write(pred_tree_log + '\t' + gold_tree_log + '\t' + str(argmax_spans[b]) + '\n')
 
   tp, fp, fn = corpus_f1
