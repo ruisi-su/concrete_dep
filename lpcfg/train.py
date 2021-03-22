@@ -105,10 +105,14 @@ def main(args):
   global global_step
   np.random.seed(args.seed)
   torch.manual_seed(args.seed)
+  additional = False
+  if(args.data_type != 'baseline'):
+    additional = True
+  
   if(args.mode == 'train'):
     print(args.train_file)
-    train_data = Dataset(args.train_file, load_dep=args.evaluate_dep)
-    val_data = Dataset(args.val_file, load_dep=args.evaluate_dep)
+    train_data = Dataset(args.train_file, load_dep=args.evaluate_dep, additional_data=additional)
+    val_data = Dataset(args.val_file, load_dep=args.evaluate_dep, additional_data=additional)
     train_sents = train_data.batch_size.sum()
     vocab_size = int(train_data.vocab_size)
     max_len = max(val_data.sents.size(1), train_data.sents.size(1))
@@ -120,7 +124,7 @@ def main(args):
     else:
       pretrained_word_emb_matrix = None
   else:
-    test_data = Dataset(args.test_file, load_dep=args.evaluate_dep)
+    test_data = Dataset(args.test_file, load_dep=args.evaluate_dep, additional_data=additional)
     vocab_size = int(test_data.vocab_size)
     max_len = test_data.sents.size(1)
     print("Test: %d sents / %d batches" % (test_data.sents.size(0), len(test_data)))
@@ -302,7 +306,9 @@ def main(args):
         prior_spans = additionals 
       elif args.data_type == 'concreteness':
         con_list = additionals
-
+      
+      print('sents' + str([[train_data.idx2word[word_idx] for word_idx in list(sent.cpu().numpy())] for sent in sents]))
+      print(prior_spans)
       nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, prior_spans = prior_spans, con_list = con_list)
       loss = (nll + kl).mean()
       if(args.opt_level != "O0"):
@@ -445,7 +451,7 @@ def eval(data, model):
         else:
           sents, length, batch_size, gold_tags, gold_actions, gold_spans, gold_binary_trees, _, heads = data[i]
         
-      for j in range(batch_size):
+      #for j in range(batch_size):
           # gold_actions.append(other_data[j][4])
           # gold_spans.append(other_data[j][6])
           # if args.data_type == 'constraints':

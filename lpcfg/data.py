@@ -41,7 +41,7 @@ class Dataset(object):
     if(self.load_dep):
         heads = [d[-1] for d in other_data]
     if(self.additional_data):
-        additionals = [[d-2] for d in other_data]
+        additionals = [d[-2] for d in other_data]
     batch_size = self.batch_size[idx].item()
     # original data includes </s>, which we don't need
     data_batch = [sents[:, 1:length-1], length-2, batch_size, tags, actions,
