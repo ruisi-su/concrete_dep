@@ -47,7 +47,7 @@ else:
   raise ValueError(f'Illegal equation {args.eqn}')
 
 #=============LOAD CONCRETE=================
-concrete_file = './lpcfg/Concreteness_ratings_Brysbaert_et_al_BRM_modified.txt'
+concrete_file = './data/concreteness_modified.txt'
 concretes = open(concrete_file, 'r').readlines()
 con = {}
 for line in concretes:

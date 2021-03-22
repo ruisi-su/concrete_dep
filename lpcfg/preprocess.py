@@ -610,8 +610,8 @@ def get_data(args):
                              max_sent_l, args.shuffle, args.include_boundary, 0,
                              # files 
                              textfile = args.inputdir + 'clean.' + split_type + '_trees.txt', 
-                             align_input = args.align_input + '.' + split_type if args.align_input != "" else None,
-                             align_output = args.align_output + '.' + split_type if args.align_output != "" else None,
+                             align_input = args.inputdir + args.align_input + '.' + split_type if args.align_input != "" else None,
+                             align_output = args.inputdir + args.align_output + '.' + split_type if args.align_output != "" else None,
                              concretefile = args.concrete_file,
                              conllfile = './data/dep/' + split_type + '.conllx' if args.dep else "")
     # max_sent_l = convert(args.inputdir + 'dev_trees.txt', args.lowercase, args.replace_num,
