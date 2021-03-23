@@ -39,7 +39,7 @@ def gen_trees(input_file, output_file):
             out_file.write(tree + '\n')
 
 def main(args):
-    data_path = 'data/coco/VGNSL_split'
+    data_path = 'data/VGNSL_split'
     input = 'caps'
     output = 'trees'
     # if args.imsitu:
