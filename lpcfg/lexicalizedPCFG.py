@@ -153,7 +153,7 @@ class LexicalizedPCFG(nn.Module):
       mask = self.get_mask(B, N, T, gold_tree)
     else:
       mask = self.beta.new(B, N+1, N+1, T, N).fill_(0)
-    print('N is ' + str(N))
+    # print('N is ' + str(N))
     # create masks
     # mask = self.beta.new(B, N+1, N+1, T, N).fill_(0)
     if (prior_spans != None) and (len(prior_spans) > 0):
@@ -162,8 +162,11 @@ class LexicalizedPCFG(nn.Module):
           continue
         for (l, r, h) in prior_spans[i]:
           # mask[i][l, r, :, h].fill_(-self.huge)
-          print((l, r, h))
-          mask[i][l, r-1, :, h].fill_(2) # TODO hard code rn 
+          try:
+            mask[i][l, r-1, :, h].fill_(2) # TODO hard code rn 
+          except IndexError:
+            print('Index mismatch')
+            continue # skip if there is a mismatch in length from spacy tokenization 
 
     # if (valid_spans != None) and (len(valid_spans) > 0):
     #   for i in range(B):
@@ -298,7 +301,11 @@ class LexicalizedPCFG(nn.Module):
         if not prior_spans[i]: #len(prior_spans[i]) < 1:
           continue
         for (l, r, h) in prior_spans[i]:
-          mask[i][l, r, :, h].fill_(2) # TODO HARD CODE
+          try:
+            mask[i][l, r, :, h].fill_(2) # TODO HARD CODE
+          except IndexError:
+            print('Index mismatch')
+            continue
 
     if (con_list != None) and (len(con_list) > 0):
       for i in range(B):

@@ -110,7 +110,7 @@ def main(args):
     additional = True
   
   if(args.mode == 'train'):
-    print(args.train_file)
+    # print(args.train_file)
     train_data = Dataset(args.train_file, load_dep=args.evaluate_dep, additional_data=additional)
     val_data = Dataset(args.val_file, load_dep=args.evaluate_dep, additional_data=additional)
     train_sents = train_data.batch_size.sum()
@@ -120,7 +120,7 @@ def main(args):
           (train_data.sents.size(0), len(train_data), val_data.sents.size(0), len(val_data)))
     if(not args.pretrained_word_emb == ""):
       pretrained_word_emb_matrix = get_word_emb_matrix(args.pretrained_word_emb, train_data.idx2word)
-      print(pretrained_word_emb_matrix.shape)
+      # print(pretrained_word_emb_matrix.shape)
     else:
       pretrained_word_emb_matrix = None
   else:
@@ -307,8 +307,8 @@ def main(args):
       elif args.data_type == 'concreteness':
         con_list = additionals
       
-      print('sents' + str([[train_data.idx2word[word_idx] for word_idx in list(sent.cpu().numpy())] for sent in sents]))
-      print(prior_spans)
+      # print('sents' + str([[train_data.idx2word[word_idx] for word_idx in list(sent.cpu().numpy())] for sent in sents]))
+      # print(prior_spans)
       nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, prior_spans = prior_spans, con_list = con_list)
       loss = (nll + kl).mean()
       if(args.opt_level != "O0"):
