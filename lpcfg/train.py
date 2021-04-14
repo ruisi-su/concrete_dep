@@ -84,7 +84,7 @@ parser.add_argument('--log_dir', type=str, default="", help='tensorboard logdir'
 parser.add_argument('--data_type', choices=['constraints', 'coupling', 'concreteness', 'baseline'], help='Use constraints, concreteness, ptb, or baseline', required=True)
 # concreteness
 # parser.add_argument('--con_mult', type=float, help='The multiplier for concreteness value')
-# parser.add_argument('--out_file', type=str, default='', help='print output of model to a file')
+parser.add_argument('--out_file', type=str, default='', help='print output of model to a file')
 args = parser.parse_args()
 
 if(args.eval_max_length is None):
@@ -227,6 +227,25 @@ def main(args):
       dep_stats = [[0., 0., 0.]]
     b = b_ = 0
     optimization_delay_count_down = args.delay_step
+    args.max_length = min(args.final_max_length, args.max_length + args.len_incr)
+    print('--------------------------------')
+    print('Checking validation perf...')
+    val_ppl, val_f1 = eval(val_data, model)
+    print('--------------------------------')
+    if val_f1 > best_val_f1:
+      best_val_ppl = val_ppl
+      best_val_f1 = val_f1
+      checkpoint = {
+        'args': args.__dict__,
+        'model': model.cpu().state_dict(),
+        'word2idx': train_data.word2idx,
+        'idx2word': train_data.idx2word
+      }
+      print('Saving checkpoint to %s' % args.save_path)
+      torch.save(checkpoint, args.save_path)
+      if cuda.is_available():
+        model.cuda()
+
     for i in np.random.permutation(len(train_data)):
       b += 1
       gold_tree = None
@@ -307,7 +326,7 @@ def main(args):
       elif args.data_type == 'concreteness':
         con_list = additionals
       
-      # print('sents' + str([[train_data.idx2word[word_idx] for word_idx in list(sent.cpu().numpy())] for sent in sents]))
+      #print('sents' + str([[train_data.idx2word[word_idx] for word_idx in list(sent.cpu().numpy())] for sent in sents]))
       # print(prior_spans)
       nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, prior_spans = prior_spans, con_list = con_list)
       loss = (nll + kl).mean()
@@ -384,25 +403,6 @@ def main(args):
           writer.add_text("Pred Tree", get_tree(action, sent_str), global_step)
         #writer.add_text("Gold Tree", gold_binary_trees, gold_step)
         writer.add_text("Gold Tree", get_tree(gold_binary_trees[0], sent_str), global_step)
-
-    args.max_length = min(args.final_max_length, args.max_length + args.len_incr)
-    print('--------------------------------')
-    print('Checking validation perf...')
-    val_ppl, val_f1 = eval(val_data, model)
-    print('--------------------------------')
-    if val_f1 > best_val_f1:
-      best_val_ppl = val_ppl
-      best_val_f1 = val_f1
-      checkpoint = {
-        'args': args.__dict__,
-        'model': model.cpu().state_dict(),
-        'word2idx': train_data.word2idx,
-        'idx2word': train_data.idx2word
-      }
-      print('Saving checkpoint to %s' % args.save_path)
-      torch.save(checkpoint, args.save_path)
-      if cuda.is_available():
-        model.cuda()
 
 def eval(data, model):
   global global_step
@@ -485,7 +485,7 @@ def eval(data, model):
       # but we don't for eval since we want a valid upper bound on PPL for early stopping
       # see eval.py for proper MAP inference
       # nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True)
-      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, prior_spans = prior, con_list = con_list)
+      nll, kl, binary_matrix, argmax_spans = model(sents, argmax=True, prior_spans = prior_spans, con_list = con_list)
 
       total_nll += nll.sum().item()
       total_kl  += kl.sum().item()

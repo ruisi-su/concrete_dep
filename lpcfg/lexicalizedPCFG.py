@@ -163,9 +163,9 @@ class LexicalizedPCFG(nn.Module):
         for (l, r, h) in prior_spans[i]:
           # mask[i][l, r, :, h].fill_(-self.huge)
           try:
-            mask[i][l, r-1, :, h].fill_(2) # TODO hard code rn 
+            mask[i][l, r-1, :, h].fill_(0.25) # TODO hard code rn 
           except IndexError:
-            print('Index mismatch')
+            print(f'Index mismatch {(l, r-1, h)}' )
             continue # skip if there is a mismatch in length from spacy tokenization 
 
     # if (valid_spans != None) and (len(valid_spans) > 0):
@@ -255,8 +255,8 @@ class LexicalizedPCFG(nn.Module):
           #print('r = ' + str(r))
           #print(mask[:, l, r, :self.nt_states, l:r])
             tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
-        # elif (prior_spans != None):
-        tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        elif (prior_spans != None):
+          tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
 
         self.beta[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
         tmp_ = torch.logsumexp(tmp + unary_scores[:, l:r, :self.nt_states].align_as(tmp), dim='H')
@@ -302,9 +302,9 @@ class LexicalizedPCFG(nn.Module):
           continue
         for (l, r, h) in prior_spans[i]:
           try:
-            mask[i][l, r, :, h].fill_(2) # TODO HARD CODE
+            mask[i][l, r-1, :, h].fill_(0.25) # TODO HARD CODE
           except IndexError:
-            print('Index mismatch')
+            print(f'Index mismatch {(l, r-1, h)}')
             continue
 
     if (con_list != None) and (len(con_list) > 0):
@@ -364,8 +364,8 @@ class LexicalizedPCFG(nn.Module):
         if con_list != None:
           if W == N:
             tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
-        
-        tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        elif prior_spans != None:
+          tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
 
         tmp_ = tmp + unary_scores[:, l:r, :self.nt_states].align_as(tmp)
 
