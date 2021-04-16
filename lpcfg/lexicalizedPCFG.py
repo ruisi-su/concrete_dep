@@ -16,7 +16,7 @@ class LexicalizedPCFG(nn.Module):
   # A[x] → B[y] C[x]    A, B, C ∈ N ∪ P, x, y ∈ 𝚺
   # T[x] → x            T ∈ P, x ∈ 𝚺
 
-  def __init__(self, nt_states, t_states, nt_emission=False, supervised_signals = []):
+  def __init__(self, nt_states, t_states, nt_emission=False, supervised_signals = [], reward=0.0):
     super(LexicalizedPCFG, self).__init__()
     self.nt_states = nt_states
     self.t_states = t_states
@@ -25,7 +25,7 @@ class LexicalizedPCFG(nn.Module):
     self.huge = 1e9
     # self.arg_perc = 0.5
     # self.pred_perc = 0.5
-    self.reward = 0.0
+    self.reward = reward
     if(self.nt_emission):
       self.word_span_slice = slice(self.states)
     else:
@@ -153,8 +153,6 @@ class LexicalizedPCFG(nn.Module):
       mask = self.get_mask(B, N, T, gold_tree)
     else:
       mask = self.beta.new(B, N+1, N+1, T, N).fill_(0)
-    # print('N is ' + str(N))
-    # create masks
     # mask = self.beta.new(B, N+1, N+1, T, N).fill_(0)
     if (prior_spans != None) and (len(prior_spans) > 0):
       for i in range(B):
@@ -163,17 +161,10 @@ class LexicalizedPCFG(nn.Module):
         for (l, r, h) in prior_spans[i]:
           # mask[i][l, r, :, h].fill_(-self.huge)
           try:
-            mask[i][l, r-1, :, h].fill_(0.25) # TODO hard code rn 
+            mask[i][l, r, :, h].fill_(self.reward) # TODO hard code rn 
           except IndexError:
-            print(f'Index mismatch {(l, r-1, h)}' )
+            print(f'Index mismatch {(l, r, h)}' )
             continue # skip if there is a mismatch in length from spacy tokenization 
-
-    # if (valid_spans != None) and (len(valid_spans) > 0):
-    #   for i in range(B):
-    #     if len(valid_spans[i]) < 1:
-    #       continue
-    #     for (l, r, h) in valid_spans[i]:
-    #       mask[i][l, r+1, :, h].fill_(self.reward)
 
     if (con_list != None) and (len(con_list) > 0):
       for i in range(B):
@@ -247,24 +238,28 @@ class LexicalizedPCFG(nn.Module):
                    self.beta_[:, l+2:r-1, r, :self.nt_states].rename(L='U'),
                    rule_scores[:, :, :, l:r, :self.nt_states, :self.nt_states].align_to('D', 'B', 'T', 'H', 'U', ...))
           tmp = self.logadd(self.logadd(f(tmp1), f(tmp2)), f(tmp3))
+        
 
         if (con_list != None):
           if W == N:
-          #print('n = ' + str(W))
-          #print('l = ' + str(l))
-          #print('r = ' + str(r))
-          #print(mask[:, l, r, :self.nt_states, l:r])
             tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
         elif (prior_spans != None):
+          # print('n = ' + str(W))
+          # print('l = ' + str(l))
+          # print('r = ' + str(r))
+          # print(mask[:, l, r, :self.nt_states, l:r])
+          print('reward is being placed')
           tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+
+        # print('max tmp ' + str(torch.max(tmp, dim='T')) + '\t' + str(torch.max(tmp, dim='H')))
 
         self.beta[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
         tmp_ = torch.logsumexp(tmp + unary_scores[:, l:r, :self.nt_states].align_as(tmp), dim='H')
         self.beta_[:, l, r, :self.nt_states] = tmp_.rename(None)
 
-
     log_Z = self.beta_[:, 0, N, :self.nt_states] + root_scores
     log_Z = torch.logsumexp(log_Z, dim='T')
+
     return log_Z
 
   def _viterbi(self, prior_spans = None, con_list = None, **kwargs):
@@ -302,9 +297,9 @@ class LexicalizedPCFG(nn.Module):
           continue
         for (l, r, h) in prior_spans[i]:
           try:
-            mask[i][l, r-1, :, h].fill_(0.25) # TODO HARD CODE
+            mask[i][l, r, :, h].fill_(self.reward) # TODO HARD CODE
           except IndexError:
-            print(f'Index mismatch {(l, r-1, h)}')
+            print(f'Index mismatch {(l, r, h)}')
             continue
 
     if (con_list != None) and (len(con_list) > 0):

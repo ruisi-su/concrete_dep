@@ -137,13 +137,14 @@ class LexicalizedCompPCFG(nn.Module):
                pretrained_word_emb=None,
                freeze_word_emb=False,
                nt_emission = False,
-               supervised_signals=[]):
+               supervised_signals=[],
+               reward=0.0):
     super(LexicalizedCompPCFG, self).__init__()
     self.state_dim = state_dim
     self.t_emb = nn.Parameter(torch.randn(t_states, state_dim))
     self.nt_emb = nn.Parameter(torch.randn(nt_states, state_dim))
     self.root_emb = nn.Parameter(torch.randn(1, state_dim))
-    self.pcfg = LexicalizedPCFG(nt_states, t_states, nt_emission=nt_emission, supervised_signals=supervised_signals)
+    self.pcfg = LexicalizedPCFG(nt_states, t_states, nt_emission=nt_emission, supervised_signals=supervised_signals, reward=reward)
     self.nt_states = nt_states
     self.t_states = t_states
     self.all_states = nt_states + t_states

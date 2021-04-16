@@ -82,6 +82,7 @@ parser.add_argument('--log_dir', type=str, default="", help='tensorboard logdir'
 # multimodal
 # parser.add_argument('--multimodal', type=int, default=0, help='use multimodal')
 parser.add_argument('--data_type', choices=['constraints', 'coupling', 'concreteness', 'baseline'], help='Use constraints, concreteness, ptb, or baseline', required=True)
+parser.add_argument('--reward', type=float, default=10, help='the reward to favor certain spans in the coupling methods')
 # concreteness
 # parser.add_argument('--con_mult', type=float, help='The multiplier for concreteness value')
 parser.add_argument('--out_file', type=str, default='', help='print output of model to a file')
@@ -173,7 +174,8 @@ def main(args):
                                 flow_word_emb=args.flow_word_emb,
                                 freeze_word_emb=args.freeze_word_emb,
                                 pretrained_word_emb=pretrained_word_emb_matrix,
-                                supervised_signals=args.supervised_signals)
+                                supervised_signals=args.supervised_signals,
+                                reward=args.reward)
   else:
     raise NotImplementedError
   for name, param in model.named_parameters():
