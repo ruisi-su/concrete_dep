@@ -1,0 +1,3 @@
+#!/bin/bash
+python -u train.py --t_states 20 --nt_states 15 --num_epochs 20 --train_file data/baseline/cocotrain.pkl --val_file data/baseline/cocodev.pkl --test_file data/baseline/cocotest.pkl --load_model dump_model/baseline_h128.pt --save_path dump_model/baseline_h128.pt --print_every 100 --pretrained_word_emb data/coco300fasttext.pkl --state_dim 300 --max_length 15 --final_max_length 20 --h_dim 128 --seperate_nt_emb_for_emission --head_first --tie_word_emb --seed 1022 --t_emb_init fasttext-coco-kmeans-20-centroids-300.txt --opt_level O2 --gpu 0 --delay_step 2 --lr 0.0005 --data_type baseline --evaluate_dep
+

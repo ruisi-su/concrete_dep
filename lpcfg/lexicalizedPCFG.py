@@ -248,7 +248,7 @@ class LexicalizedPCFG(nn.Module):
           # print('l = ' + str(l))
           # print('r = ' + str(r))
           # print(mask[:, l, r, :self.nt_states, l:r])
-          print('reward is being placed')
+          #print('reward is being placed')
           tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
 
         # print('max tmp ' + str(torch.max(tmp, dim='T')) + '\t' + str(torch.max(tmp, dim='H')))
