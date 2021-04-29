@@ -297,9 +297,10 @@ class LexicalizedPCFG(nn.Module):
           continue
         for (l, r, h) in prior_spans[i]:
           try:
+            #print(mask[i].shape)
             mask[i][l, r, :, h].fill_(self.reward) # TODO HARD CODE
           except IndexError:
-            print(f'Index mismatch {(l, r, h)}')
+            print(f'Index mismatch {(l, r, h)} shape is {mask[i].shape}')
             continue
 
     if (con_list != None) and (len(con_list) > 0):
