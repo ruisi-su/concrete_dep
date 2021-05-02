@@ -489,6 +489,17 @@ def get_span2head(spans, heads, gold_actions=None, gold_tags=None):
   _, span2head = dfs(sorted_spans, heads_set, nts, tags)
   return span2head
 
+# preserve hyphen in tokenization
+def custom_tokenizer(nlp):
+    inf = list(nlp.Defaults.infixes)               # Default infixes
+    inf.remove(r"(?<=[0-9])[+\-\*^](?=[0-9-])")    # Remove the generic op between numbers or between a number and a -
+    inf = tuple(inf)                               # Convert inf to tuple
+    infixes = inf + tuple([r"(?<=[0-9])[+*^](?=[0-9-])", r"(?<=[0-9])-(?=-)"])  # Add the removed rule after subtracting (?<=[0-9])-(?=[0-9]) pattern
+    infixes = [x for x in infixes if '-|–|—|--|---|——|~' not in x] # Remove - between letters rule
+    infix_re = compile_infix_regex(infixes)
+
+    return Tokenizer(nlp.vocab, prefix_search=nlp.tokenizer.prefix_search, suffix_search=nlp.tokenizer.suffix_search, infix_finditer=infix_re.finditer, token_match=nlp.tokenizer.token_match, rules=nlp.Defaults.tokenizer_exceptions)
+
 NT_list = ['NP', 'VP', 'S', 'ADVP', 'PP', 'ADJP', 'SBAR', 'WHADVP', 'WHNP', 'PRN', 'SINV', 'QP', 'PRT', 'NAC', 'NX', 'UCP', 'FRAG', 'INTJ', 'X', 'RRC', 'SQ', 'CONJP', 'WHPP', 'WHADJP', 'SBARQ', 'LST', 'PRT|ADVP']
 PT_list = ['DT', 'JJ', 'NNS', 'VBD', 'NN', 'CC', 'RB', 'IN', 'JJS', 'NNP', 'CD', 'TO', 'JJR', 'VBG', 'POS', 'VBP', 'VBN', 'RBR', 'WRB', 'PRP', 'PRP$', 'WDT', 'EX', 'MD', 'VB', 'VBZ', 'NNPS', 'WP', 'RP', 'PDT', 'WP$', 'RBS', 'FW', 'UH', 'SYM', 'LS']
 PUNCT_list = [',', '.', '#', ':', '``', "''"]

@@ -17,8 +17,10 @@ import re
 from coupling import couple
 from itertools import islice
 import spacy
-from nltk.tokenize import ToktokTokenizer
-tk = ToktokTokenizer()
+# from nltk.tokenize import ToktokTokenizer
+# tk = ToktokTokenizer()
+from spacy.util import compile_infix_regex
+import codecs
 
 class Indexer:
     def __init__(self, symbols = ["<pad>","<unk>","<s>","</s>"]):
@@ -187,19 +189,21 @@ def clean_number(w):
 
 def get_concreteness(concrete_file):
     con = {}
-    with open(concrete_file, 'r') as c:
-        for line in c:
-            line = line.strip().split('\t')
-            word = '-'.join(line[0].split(' '))
-            score = line[2]
-            con[word] = float(score)
+    c = open(concrete_file, 'r')
+    next(c)
+    for line in c:
+        line = line.strip().split('\t')
+        word = '-'.join(line[0].split(' '))
+        score = line[2]
+        con[word] = float(score)
+    c.close()
     return con
 
 def convert(indexer, lowercase, replace_num,
             batchsize, seqlength, minseqlength, 
             outfile, num_sents, max_sent_l=0,
             shuffle=0, include_boundary=1, apply_length_filter=1, 
-            textfile="", align_input="", align_output="", concretefile="", conllfile=""):
+            textfile="", align_input="", align_output="", concretefile="", conllfile="", gpu=0):
 
     newseqlength = seqlength
     if include_boundary == 1:
@@ -239,8 +243,12 @@ def convert(indexer, lowercase, replace_num,
     elif concretefile:
         print('Preprocessing data type is concreteness...')
         con = get_concreteness(concretefile)
-        spacy.require_gpu(args.gpu)
-        nlp = spacy.load('en_core_web_sm')
+        spacy.prefer_gpu(gpu)
+        nlp = spacy.load('en_core_web_sm', disable=['parser', 'ner'])
+        # preserve hyphenated words
+        infixes = ("…", r"(?<=[0-9])[*-+^](?=[0-9-])")
+        infix_regex = compile_infix_regex(infixes)
+        nlp.tokenizer.infix_finditer = infix_regex.finditer
     else:
         print('Preprocessing data type is baseline...')
         # parse test and other data splits NOT USING VGNSL ground
@@ -318,11 +326,14 @@ def convert(indexer, lowercase, replace_num,
         tree = tree.strip()
         action = get_actions(tree)
         tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
+        sent_decode = ' '.join(sent).replace('\\', '')
+        sent_decode = sent_decode.split(' ')
+
         assert(len(tags) == len(sent))
         if (conllfile != ''):
             words, heads = next(deptrees)
-            if words != sent:
-                print("Data mismatch, got {} in {}, but {} in {}.".format(sent, textfile, words, conllfile))
+            if words != sent_decode:
+                print("Data mismatch, got {} in {}, but {} in {}.".format(sent_decode, textfile, words, conllfile))
                 assert(len(words) == len(heads))
             assert(len(heads) == len(sent))
         if lowercase == 1:
@@ -370,15 +381,20 @@ def convert(indexer, lowercase, replace_num,
         elif con:
             w_c_list = [0.0 for w in sent[1:-1]]
             w_c_idx = 0
-            sent_tokenize = tk.tokenize(sent_str)
-            for w in sent_tokenize:
-                w = check_hyphen(w) 
+            # sent_tokenize = tk.tokenize(sent_str)
+            # sent_tokenize = nlp(' '.join(sent_orig))
+            for w in sent[1:-1]:
+                w_lemma = [token.lemma_ for token in nlp(w)][0] # always taking the first, second is punct
                 if w in con.keys():
+                    # print(w_c_idx)
                     w_c_list[w_c_idx] = con[w] / 5.0
+                    w_c_idx += 1
+                elif w_lemma in con.keys():
+                    w_c_list[w_c_idx] = con[w_lemma] / 5.0
                     w_c_idx += 1
                 else:
                     w_c_idx += 1
-            assert(len(w_c_list)==len(sent_tokenize))
+            assert(len(w_c_list)==w_c_idx)
             other_data_item.append(w_c_list)
 
         if (conllfile != ''):
@@ -609,11 +625,14 @@ def get_data(args):
                              args.outputfile + split_type + ".pkl", num_sents_type,
                              max_sent_l, args.shuffle, args.include_boundary, 0,
                              # files 
-                             textfile = args.inputdir + 'clean.' + split_type + '_trees.txt', 
+                             textfile = args.inputdir + 'clean.' + split_type + '_trees.txt',
+                             # textfile = args.inputdir + split_type + '_trees.txt', 
+ 
                              align_input = args.inputdir + args.align_input + '.' + split_type if args.align_input != "" else None,
                              align_output = args.inputdir + args.align_output + '.' + split_type if args.align_output != "" else None,
                              concretefile = args.concrete_file,
-                             conllfile = './data/dep/' + split_type + '.conllx' if args.dep else "")
+                             conllfile = './data/dep/' + split_type + '.conllx' if args.dep else "",
+                             gpu = args.gpu)
     # max_sent_l = convert(args.inputdir + 'dev_trees.txt', args.lowercase, args.replace_num,
     #                       args.batchsize, valid_seqlength, args.minseqlength,
     #                       args.outputfile + "val.pkl", num_sents_valid,
