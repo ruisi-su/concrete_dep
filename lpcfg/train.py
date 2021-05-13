@@ -81,7 +81,7 @@ parser.add_argument('--evaluate_dep', action='store_true', help='evaluate depend
 parser.add_argument('--log_dir', type=str, default="", help='tensorboard logdir')
 # multimodal
 # parser.add_argument('--multimodal', type=int, default=0, help='use multimodal')
-parser.add_argument('--data_type', choices=['constraints', 'coupling', 'concreteness', 'baseline'], help='Use constraints, concreteness, ptb, or baseline', required=True)
+parser.add_argument('--data_type', choices=['coupling', 'concreteness', 'baseline', 'both'], help='Use baseline, coupling, concreteness, or both', required=True)
 parser.add_argument('--reward', type=float, default=10, help='the reward to favor certain spans in the coupling methods')
 # concreteness
 # parser.add_argument('--con_mult', type=float, help='The multiplier for concreteness value')
@@ -327,6 +327,8 @@ def main(args):
         prior_spans = additionals 
       elif args.data_type == 'concreteness':
         con_list = additionals
+      elif args.data_type = 'both':
+        prior_spans, con_list = additionals
       
       #print('sents' + str([[train_data.idx2word[word_idx] for word_idx in list(sent.cpu().numpy())] for sent in sents]))
       # print(prior_spans)
@@ -482,6 +484,8 @@ def eval(data, model):
         prior_spans = additionals 
       elif args.data_type == 'concreteness':
         con_list = additionals
+      elif args.data_type = 'both':
+        prior_spans, con_list = additionals
 
       # note that for unsuperised parsing, we should do model(sents, argmax=True, use_mean = True)
       # but we don't for eval since we want a valid upper bound on PPL for early stopping

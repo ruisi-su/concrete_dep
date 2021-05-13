@@ -240,7 +240,7 @@ def convert(indexer, lowercase, replace_num,
         align_outfile = open(align_output)
         align_src = align_infile.readlines()
         align_scores = align_outfile.readlines()
-    elif concretefile:
+    if concretefile:
         print('Preprocessing data type is concreteness...')
         con = get_concreteness(concretefile)
         spacy.prefer_gpu(gpu)
@@ -249,84 +249,14 @@ def convert(indexer, lowercase, replace_num,
         infixes = ("…", r"(?<=[0-9])[*-+^](?=[0-9-])")
         infix_regex = compile_infix_regex(infixes)
         nlp.tokenizer.infix_finditer = infix_regex.finditer
-    else:
+    if (not align_input) and (not align_output) and (not concretefile):
         print('Preprocessing data type is baseline...')
-        # parse test and other data splits NOT USING VGNSL ground
-        # if test:
-        #     match = 0
-        #     truth = open('../data/coco/VGNSL_split/test_ground-truth.txt', 'r')
-        #     for (tree, frame, alignment, ground_truth) in zip(txt, fr, align, truth):
-        #         tree = tree.strip()
-        #         ground_truth = ground_truth.strip()
-        #         action = get_actions(tree)
-        #         tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
-        #         assert(len(tags) == len(sent))
-
-        #         if (conllfile != ''):
-        #             words, heads = next(deptrees)
-        #             if words != sent:
-        #                 print("Data mismatch, got {} in {}, but {} in {}.".format(sent, textfile, words, conllfile))
-        #                 assert(len(words) == len(heads))
-        #             assert(len(heads) == len(sent))
-        #         if lowercase == 1:
-        #             sent = sent_lower
-        #             alignment = alignment.lower()
-        #             frame = frame.lower()
-
-        #         sent_str = " ".join(sent)
-        #         if replace_num == 1:
-        #             sent = [clean_number(w) for w in sent]
-        #         if (len(sent) > seqlength and apply_length_filter == 1) or len(sent) < minseqlength:
-        #             dropped += 1
-        #             continue
-        #         if include_boundary == 1:
-        #             sent = [indexer.BOS] + sent + [indexer.EOS]
-        #         max_sent_l = max(len(sent), max_sent_l)
-        #         sent_pad = pad(sent, newseqlength, indexer.PAD)
-        #         sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
-        #         sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
-
-        #         if not frame.strip():
-        #             invalids = []
-        #         else:
-        #             frame = frame.strip().split('\t')
-        #             sent_t = tk.tokenize(sent_str)
-        #             sent_lemmatize = []
-        #             for w in sent_t:
-        #                 w = check_hyphen(w)
-        #                 sent_lemmatize.append(w)
-        #                 # any(item in l for item in l2)
-
-        #             pred = check_hyphen(frame[0].split('_')[0])
-        #             if pred not in sent_lemmatize:
-        #               invalids = []
-        #             else:
-        #               match += 1
-        #               invalids = gen_phrases(sent_lemmatize, pred, frame, alignment, constraint_type, args.thresh, is_align)
-
-        #         span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
-
-        #         span = extract_spans(ground_truth)
-        #         other_data_item = [sent_str, invalids, tags, action,
-        #             binary_actions, nonbinary_actions, span, tree]
-
-        #         if (conllfile != ''):
-        #             other_data_item.append(heads)
-
-        #         other_data.append(other_data_item)
-        #         assert(2*(len(sent)- 2) - 1 == len(binary_actions))
-        #         assert(sum(binary_actions) + 1 == len(sent) - 2)
-        #         sent_id += 1
-        #         if sent_id % 100000 == 0:
-        #             print("{}/{} sentences processed".format(sent_id, num_sents))
-
-        # else:
 
     for i, tree in enumerate(txt):
         tree = tree.strip()
         action = get_actions(tree)
         tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
-        sent_decode = ' '.join(sent).replace('\\', '')
+        # sent_decode = ' '.join(sent).replace('\\', '')
         sent_decode = sent_decode.split(' ')
 
         assert(len(tags) == len(sent))
@@ -351,21 +281,6 @@ def convert(indexer, lowercase, replace_num,
         sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
         sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
 
-        # if not frame.strip():
-        #     invalids = []
-        # else:
-        #     frame = frame.strip().split('\t')
-        #     #sent_t = tk.tokenize(sent_str)
-        #     #sent_lemmatize = []
-        #     #for w in sent_t:
-        #     #    w = check_hyphen(w)
-        #     #    sent_lemmatize.append(w)
-        #         # any(item in l for item in l2)
-        #     #pred = check_hyphen(frame[0].split('_')[0])
-        #     #if pred not in sent_lemmatize:
-
-        #     invalids = gen_phrases(sent_str.split(' '), frame[0].split('_')[0], frame, alignment, constraint_type, args.thresh, is_align)
-        
         span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
 
         other_data_item = [sent_str, tags, action, binary_actions, nonbinary_actions, span, tree]
@@ -377,8 +292,8 @@ def convert(indexer, lowercase, replace_num,
                 couple_spans, ctvb, ctnvb = couple(ai, ao, ctvb, ctnvb)
             else:
                 couple_spans = None
-            other_data_item.append(couple_spans)
-        elif con:
+            # other_data_item.append(couple_spans)
+        if con:
             w_c_list = [0.0 for w in sent[1:-1]]
             w_c_idx = 0
             # sent_tokenize = tk.tokenize(sent_str)
@@ -395,6 +310,13 @@ def convert(indexer, lowercase, replace_num,
                 else:
                     w_c_idx += 1
             assert(len(w_c_list)==w_c_idx)
+            # other_data_item.append(w_c_list)
+
+        if align_src and align_scores and con:
+            other_data_item.append([couple_spans, w_c_list])
+        elif align_src and align_scores:
+            other_data_item.append(couple_spans)
+        elif con:
             other_data_item.append(w_c_list)
 
         if (conllfile != ''):
@@ -410,103 +332,6 @@ def convert(indexer, lowercase, replace_num,
         print(f'num of sents with action (aligned): {ctvb} \n num of sents without: {ctnvb}')
         align_infile.close()
         align_outfile.close()
-    # elif args.data_type == 'baseline':
-    #     # for ptb
-    #     for tree in txt:
-    #         tree = tree.strip().replace("\\", "")
-    #         action = get_actions(tree)
-    #         tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
-    #         assert(len(tags) == len(sent))
-    #         if (conllfile != ''):
-    #             words, heads = next(deptrees)
-    #             if words != sent:
-    #                 print("Data mismatch, got {} in {}, but {} in {}.".format(sent, textfile, words, conllfile))
-    #                 assert(len(words) == len(heads))
-    #             assert(len(heads) == len(sent))
-    #         if lowercase == 1:
-    #             sent = sent_lower
-    #         sent_str = " ".join(sent)
-    #         if replace_num == 1:
-    #             sent = [clean_number(w) for w in sent]
-    #         if (len(sent) > seqlength and apply_length_filter == 1) or len(sent) < minseqlength:
-    #             dropped += 1
-    #             continue
-    #         if include_boundary == 1:
-    #             sent = [indexer.BOS] + sent + [indexer.EOS]
-    #         max_sent_l = max(len(sent), max_sent_l)
-    #         sent_pad = pad(sent, newseqlength, indexer.PAD)
-    #         sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
-    #         sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
-    #         span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
-
-    #         other_data_item = [sent_str, tags, action, binary_actions, nonbinary_actions, span, tree]
-
-    #         if (conllfile != ''):
-    #             other_data_item.append(heads)
-
-    #         other_data.append(other_data_item)
-    #         assert(2*(len(sent)- 2) - 1 == len(binary_actions))
-    #         assert(sum(binary_actions) + 1 == len(sent) - 2)
-    #         sent_id += 1
-    #         if sent_id % 100000 == 0:
-    #             print("{}/{} sentences processed".format(sent_id, num_sents))
-
-    # elif args.data_type == 'concreteness':
-    #     print('using concreteness')
-    #     for tree in txt:
-    #         tree = tree.strip()
-    #         action = get_actions(tree)
-    #         tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
-    #         assert(len(tags) == len(sent))
-    #         if (conllfile != ''):
-    #             words, heads = next(deptrees)
-    #             if words != sent:
-    #                 print("Data mismatch, got {} in {}, but {} in {}.".format(sent, textfile, words, conllfile))
-    #                 assert(len(words) == len(heads))
-    #             assert(len(heads) == len(sent))
-    #         if lowercase == 1:
-    #             sent = sent_lower
-    #         sent_str = " ".join(sent)
-    #         if replace_num == 1:
-    #             sent = [clean_number(w) for w in sent]
-    #         if (len(sent) > seqlength and apply_length_filter == 1) or len(sent) < minseqlength:
-    #             dropped += 1
-    #             continue
-    #         if include_boundary == 1:
-    #             sent = [indexer.BOS] + sent + [indexer.EOS]
-    #         max_sent_l = max(len(sent), max_sent_l)
-    #         sent_pad = pad(sent, newseqlength, indexer.PAD)
-    #         sents[sent_id] = np.array(indexer.convert_sequence(sent_pad), dtype=int)
-    #         sent_lengths[sent_id] = (sents[sent_id] != 0).sum()
-    #         span, binary_actions, nonbinary_actions = utils.get_nonbinary_spans(action)
-
-    #         w_c_list = [0.0 for w in sent[1:-1]]
-
-    #         w_c_idx = 0
-    #         sent_tokenize = tk.tokenize(sent_str)
-
-    #         for w in sent_tokenize:
-    #             w = check_hyphen(w)
-    #             if w in con.keys():
-    #                 w_c_list[w_c_idx] = con[w]
-    #                 w_c_idx += 1
-    #             else:
-    #                 w_c_idx += 1
-    #                 continue
-
-    #         assert(len(w_c_list)==len(sent_tokenize))
-
-    #         other_data_item = [sent_str, w_c_list, tags, action, binary_actions, nonbinary_actions, span, tree]
-
-    #         if (conllfile != ''):
-    #             other_data_item.append(heads)
-
-    #         other_data.append(other_data_item)
-    #         assert(2*(len(sent)- 2) - 1 == len(binary_actions))
-    #         assert(sum(binary_actions) + 1 == len(sent) - 2)
-    #         sent_id += 1
-    #         if sent_id % 100000 == 0:
-    #             print("{}/{} sentences processed".format(sent_id, num_sents))
 
     print(sent_id, num_sents)
     if shuffle == 1:
@@ -608,11 +433,6 @@ def get_data(args):
                                                           len(indexer.d)))
     print(train_seqlength, valid_seqlength, test_seqlength)
 
-    # if args.data_type == 'ptb':
-    #     conlldir = 'data/derived/ptb-'
-    # else:
-    #     conlldir = "data/dep/"
-
     max_sent_l = 0
 
     vgnsl_truth = False
@@ -633,19 +453,6 @@ def get_data(args):
                              concretefile = args.concrete_file,
                              conllfile = './data/dep/' + split_type + '.conllx' if args.dep else "",
                              gpu = args.gpu)
-    # max_sent_l = convert(args.inputdir + 'dev_trees.txt', args.lowercase, args.replace_num,
-    #                       args.batchsize, valid_seqlength, args.minseqlength,
-    #                       args.outputfile + "val.pkl", num_sents_valid,
-    #                       max_sent_l, args.shuffle, args.include_boundary, 0,
-    #                  args.inputdir + 'dev_frames.txt', args.inputdir + 'alignments/dev.{}.{}.align.filter'.format(args.align_type,args.eqn_type), 
-    #                       conllfile="./data/dep/dev.conllx" if args.dep else "")
-
-    # max_sent_l = convert(args.inputdir + 'train_trees.txt', args.lowercase, args.replace_num,
-    #                       args.batchsize, args.seqlength,  args.minseqlength,
-    #                       args.outputfile + "train.pkl", num_sents_train,
-    #                       max_sent_l, args.shuffle, args.include_boundary, 1,
-    #                   args.inputdir + 'train_frames.txt', args.inputdir + 'alignments/train.{}.{}.align.filter'.format(args.align_type, args.eqn_type), 
-    #                       conllfile='./data/dep/train.conllx' if args.dep else "")
     print("Max sent length (before dropping): {}".format(max_sent_l))
 
 def main(arguments):

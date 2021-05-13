@@ -25,7 +25,7 @@ align_out:
 def couple(align_in, align_out, ctvb, ctnvb):
 	lcap, lfra = align_in.split(' ||| ')
 	lali = align_out.lower().strip().split()
-	print(lali)
+	# print(lali)
 	lali = [a for a in lali if float(a.split(':')[-1]) >= 0.0] # remove alignments with negative scores
 	wcap = lcap.lower().strip().split()
 	wfra = lfra.lower().strip().split()

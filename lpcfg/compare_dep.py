@@ -10,8 +10,8 @@ parser.add_argument('o1') #baseline
 parser.add_argument('o2') #concrete
 parser.add_argument('o3') # constraints
 parser.add_argument('o4') # constraints
-parser.add_argument("--align1", help="Specific alignment file to include")
-parser.add_argument("--align2", help="Specific alignment file to include")
+# parser.add_argument("--align1", help="Specific alignment file to include")
+# parser.add_argument("--align2", help="Specific alignment file to include")
 args = parser.parse_args()
 
 # parse alignments and frames
@@ -68,8 +68,8 @@ compare_rule = True
 
 
 # if args.align:
-dict_t0 = gen_dict(data_path, align_path, args.align1)
-dict_t1 = gen_dict(data_path, align_path, args.align2)
+# dict_t0 = gen_dict(data_path, align_path, args.align1)
+# dict_t1 = gen_dict(data_path, align_path, args.align2)
 
 with open(args.o1, 'r') as t0, open(args.o2, 'r') as t1, open(args.o3, 'r') as t2, open(args.o4, 'r') as t3:
 
@@ -89,8 +89,8 @@ with open(args.o1, 'r') as t0, open(args.o2, 'r') as t1, open(args.o3, 'r') as t
 
         # dict_t1 = gen_dict(data_path, align_path, align_t1, eqn_type)
 
-        align_0, frame = get_af(' '.join(gold), dict_t0)
-        align_1, _ = get_af(' '.join(gold), dict_t1)
+        # align_0, frame = get_af(' '.join(gold), dict_t0)
+        # align_1, _ = get_af(' '.join(gold), dict_t1)
         # align_2, frame = get_af(' '.join(gold), verb_dict)
         # align_3, frame = get_af(' '.join(gold), noverb_dict)
 
@@ -101,18 +101,18 @@ with open(args.o1, 'r') as t0, open(args.o2, 'r') as t1, open(args.o3, 'r') as t
             diff += 1
             print('-----DIFF-----')
 
-        print('baseline : ' + ' '.join(pred_0))
+        print(args.o1 + '\n' + ' '.join(pred_0))
 
-        print('output 1 : ' + ' '.join(pred_1))
+        print(args.o2 + '\n'  + ' '.join(pred_1))
 
-        print('output 2 : ' + ' '.join(pred_2))
-        print('align : ' + align_0)
+        print(args.o3 + '\n'  + ' '.join(pred_2))
+        # print('align : ' + align_0)
 
-        print('output 3 : ' + ' '.join(pred_3))
-        print('align : ' + align_1)
+        print(args.o4 + '\n'  + ' '.join(pred_3))
+        # print('align : ' + align_1)
 
         print('gold tree : ' + ' '.join(gold))
-        print('frame : ' + frame)
+        # print('frame : ' + frame)
         # if args.align_file != '':
         #     output_line_frame =  'frame : ' + frame + '\n'
         #     output_line_align = 'align : ' + align_0 + '\n'
