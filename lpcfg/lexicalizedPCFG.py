@@ -16,7 +16,7 @@ class LexicalizedPCFG(nn.Module):
   # A[x] → B[y] C[x]    A, B, C ∈ N ∪ P, x, y ∈ 𝚺
   # T[x] → x            T ∈ P, x ∈ 𝚺
 
-  def __init__(self, nt_states, t_states, nt_emission=False, supervised_signals = [], reward=0.0):
+  def __init__(self, nt_states, t_states, nt_emission=False, supervised_signals = [], reward=0.0, non_root=False):
     super(LexicalizedPCFG, self).__init__()
     self.nt_states = nt_states
     self.t_states = t_states
@@ -31,6 +31,7 @@ class LexicalizedPCFG(nn.Module):
     else:
       self.word_span_slice = slice(self.nt_states,self.states)
     self.supervised_signals = supervised_signals
+    self.non_root=non_root
 
   # def logadd(self, x, y):
   #   d = torch.max(x,y)
@@ -242,8 +243,11 @@ class LexicalizedPCFG(nn.Module):
 
         #if (con_list != None):
         # TODO is this good? For all setup, only change at the whole length
-        if W == N:
-            tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        if self.non_root:
+          tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        else:
+          if W == N:
+              tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
         #elif (prior_spans != None):
           # print('n = ' + str(W))
           # print('l = ' + str(l))
@@ -293,7 +297,7 @@ class LexicalizedPCFG(nn.Module):
     self.spans = [[] for _ in range(B)]
     
     # create masks
-    mask = mask1 = self.scores.new(B, N+1, N+1, T, N).fill_(0)
+    mask = self.scores.new(B, N+1, N+1, T, N).fill_(0)
     if (prior_spans != None) and (len(prior_spans) > 0):
       for i in range(B):
         if not prior_spans[i]: #len(prior_spans[i]) < 1:
@@ -315,7 +319,7 @@ class LexicalizedPCFG(nn.Module):
               cc_score = cc_score #* 2.0 #/ 5.0 * con_mult
             else:
               cc_score = 0.0
-            mask1[i][0, r, :, j].fill_(cc_score)
+            mask[i][0, r, :, j].add_(cc_score)
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -360,11 +364,11 @@ class LexicalizedPCFG(nn.Module):
 
         self.scores[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
         # do not mask during inference
-        #if con_list != None:
-        if W == N:
-          tmp = tmp + mask1[:, l, r, :self.nt_states, l:r]
-        #if prior_spans != None:
-          #tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        if self.non_root:
+          tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        else:
+          if W == N:
+              tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
 
         tmp_ = tmp + unary_scores[:, l:r, :self.nt_states].align_as(tmp)
 

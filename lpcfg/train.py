@@ -86,6 +86,8 @@ parser.add_argument('--reward', type=float, default=10, help='the reward to favo
 # concreteness
 # parser.add_argument('--con_mult', type=float, help='The multiplier for concreteness value')
 parser.add_argument('--out_file', type=str, default='', help='print output of model to a file')
+# root/non-root levels
+parser.add_argument('--non_root', action='store_true', help='apply concreteness/coupling to non-root level')
 args = parser.parse_args()
 
 if(args.eval_max_length is None):
@@ -175,7 +177,8 @@ def main(args):
                                 freeze_word_emb=args.freeze_word_emb,
                                 pretrained_word_emb=pretrained_word_emb_matrix,
                                 supervised_signals=args.supervised_signals,
-                                reward=args.reward)
+                                reward=args.reward
+                                non_root=args.non_root)
   else:
     raise NotImplementedError
   for name, param in model.named_parameters():
@@ -229,34 +232,10 @@ def main(args):
       dep_stats = [[0., 0., 0.]]
     b = b_ = 0
     optimization_delay_count_down = args.delay_step
-    args.max_length = min(args.final_max_length, args.max_length + args.len_incr)
-    print('--------------------------------')
-    print('Checking validation perf...')
-    val_ppl, val_f1 = eval(val_data, model)
-    print('--------------------------------')
-    if val_f1 > best_val_f1:
-      best_val_ppl = val_ppl
-      best_val_f1 = val_f1
-      checkpoint = {
-        'args': args.__dict__,
-        'model': model.cpu().state_dict(),
-        'word2idx': train_data.word2idx,
-        'idx2word': train_data.idx2word
-      }
-      print('Saving checkpoint to %s' % args.save_path)
-      torch.save(checkpoint, args.save_path)
-      if cuda.is_available():
-        model.cuda()
-
+    
     for i in np.random.permutation(len(train_data)):
       b += 1
       gold_tree = None
-
-      # if args.data_type == 'constraints':
-      #   invalid_spans = []
-      #   valid_spans = None
-      # elif (args.data_type == 'concreteness'):
-      #   w_c_list = []
 
       if (not args.evaluate_dep):
         if (args.data_type != 'baseline'):
@@ -285,11 +264,6 @@ def main(args):
         #   # gold_actions.append(other_data[j][4])
         #   # gold_spans.append(other_data[j][6])
 
-        #   # gold_binary_trees.append(other_data[j][7])
-        #   if args.data_type == 'constraints':
-        #       invalid_spans.append(other_data[j][1])
-        #   elif (args.data_type == 'concreteness'):
-        #       w_c_list.append(other_data[j][1])
 
         #   if args.evaluate_dep:
         #       # heads.append(other_data[j][8])
@@ -410,6 +384,25 @@ def main(args):
         #writer.add_text("Gold Tree", gold_binary_trees, gold_step)
         writer.add_text("Gold Tree", get_tree(gold_binary_trees[0], sent_str), global_step)
 
+    args.max_length = min(args.final_max_length, args.max_length + args.len_incr)
+    print('--------------------------------')
+    print('Checking validation perf...')
+    val_ppl, val_f1 = eval(val_data, model)
+    print('--------------------------------')
+    if val_f1 > best_val_f1:
+      best_val_ppl = val_ppl
+      best_val_f1 = val_f1
+      checkpoint = {
+        'args': args.__dict__,
+        'model': model.cpu().state_dict(),
+        'word2idx': train_data.word2idx,
+        'idx2word': train_data.idx2word
+      }
+      print('Saving checkpoint to %s' % args.save_path)
+      torch.save(checkpoint, args.save_path)
+      if cuda.is_available():
+        model.cuda()
+
 def eval(data, model):
   global global_step
   model.eval()
@@ -456,23 +449,6 @@ def eval(data, model):
           sents, length, batch_size, gold_tags, gold_actions, gold_spans, gold_binary_trees, _, additionals, heads = data[i]
         else:
           sents, length, batch_size, gold_tags, gold_actions, gold_spans, gold_binary_trees, _, heads = data[i]
-        
-      #for j in range(batch_size):
-          # gold_actions.append(other_data[j][4])
-          # gold_spans.append(other_data[j][6])
-          # if args.data_type == 'constraints':
-          #     invalid_spans.append(other_data[j][1])
-
-          # elif args.data_type == 'concreteness':
-          #     w_c_list.append(other_data[j][1])
-
-          # if heads != None:
-          #     heads.append(other_data[j][8])
-
-      # if (invalid_spans != None) and (valid_spans) != None:
-      #     assert len(sents)==len(invalid_spans)==len(valid_spans)
-      # elif (w_c_list != None):
-      #     assert len(sents) == len(w_c_list)
 
       if length == 1 or length > args.eval_max_length:
         continue
@@ -490,6 +466,7 @@ def eval(data, model):
         con_list = [p[1] for p in additionals]
         #prior_spans, con_list = additionals
       #print('sents' + str([[data.idx2word[word_idx] for word_idx in list(sent.cpu().numpy())] for sent in sents]))
+      
       # note that for unsuperised parsing, we should do model(sents, argmax=True, use_mean = True)
       # but we don't for eval since we want a valid upper bound on PPL for early stopping
       # see eval.py for proper MAP inference
