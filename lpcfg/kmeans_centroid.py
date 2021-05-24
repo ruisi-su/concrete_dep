@@ -4,7 +4,7 @@ from kmeans_pytorch import kmeans
 import pickle
 
 # data
-num_clusters = 10
+num_clusters = 25
 
 with open('./data/coco300fasttext.pkl', 'rb') as f:
   data = pickle.load(f)

@@ -172,10 +172,10 @@ class LexicalizedPCFG(nn.Module):
           for j in range(len(con_list[i])):
             cc_score = float(con_list[i][j])
             if cc_score != -1.0:
-              cc_score = cc_score # / 5.0 * con_mult
+              cc_score = cc_score #* 2.0 # / 5.0 * con_mult
             else:
               cc_score = 0.0
-            mask[i][0, r, :, j].fill_(cc_score)
+            mask[i][0, r, :, j].add_(cc_score)
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -240,17 +240,20 @@ class LexicalizedPCFG(nn.Module):
           tmp = self.logadd(self.logadd(f(tmp1), f(tmp2)), f(tmp3))
         
 
-        if (con_list != None):
-          if W == N:
+        #if (con_list != None):
+        # TODO is this good? For all setup, only change at the whole length
+        if W == N:
             tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
-        elif (prior_spans != None):
+        #elif (prior_spans != None):
           # print('n = ' + str(W))
           # print('l = ' + str(l))
           # print('r = ' + str(r))
           # print(mask[:, l, r, :self.nt_states, l:r])
           #print('reward is being placed')
-          tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
-
+          #tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        #elif (con_list != None) and (prior_spans != None)：
+          #if W == N:
+            #tmp = tmp + 
         # print('max tmp ' + str(torch.max(tmp, dim='T')) + '\t' + str(torch.max(tmp, dim='H')))
 
         self.beta[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
@@ -290,7 +293,7 @@ class LexicalizedPCFG(nn.Module):
     self.spans = [[] for _ in range(B)]
     
     # create masks
-    mask = self.scores.new(B, N+1, N+1, T, N).fill_(0)
+    mask = mask1 = self.scores.new(B, N+1, N+1, T, N).fill_(0)
     if (prior_spans != None) and (len(prior_spans) > 0):
       for i in range(B):
         if not prior_spans[i]: #len(prior_spans[i]) < 1:
@@ -309,10 +312,10 @@ class LexicalizedPCFG(nn.Module):
           for j in range(len(con_list[i])):
             cc_score = float(con_list[i][j])
             if cc_score != -1.0:
-              cc_score = cc_score #/ 5.0 * con_mult
+              cc_score = cc_score #* 2.0 #/ 5.0 * con_mult
             else:
               cc_score = 0.0
-            mask[i][0, r, :, j].fill_(cc_score)
+            mask1[i][0, r, :, j].fill_(cc_score)
 
     # initialization: f[k, k+1]
     for k in range(N):
@@ -357,11 +360,11 @@ class LexicalizedPCFG(nn.Module):
 
         self.scores[:, l, r, :self.nt_states, l:r] = tmp.rename(None)
         # do not mask during inference
-        if con_list != None:
-          if W == N:
-            tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
-        elif prior_spans != None:
-          tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
+        #if con_list != None:
+        if W == N:
+          tmp = tmp + mask1[:, l, r, :self.nt_states, l:r]
+        #if prior_spans != None:
+          #tmp = tmp + mask[:, l, r, :self.nt_states, l:r]
 
         tmp_ = tmp + unary_scores[:, l:r, :self.nt_states].align_as(tmp)
 
