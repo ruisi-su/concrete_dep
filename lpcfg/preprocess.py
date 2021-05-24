@@ -257,8 +257,8 @@ def convert(indexer, lowercase, replace_num,
         action = get_actions(tree)
         tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
         # sent_decode = ' '.join(sent).replace('\\', '')
-        sent_decode = sent_decode.split(' ')
-
+        #sent_decode = sent_decode.split(' ')
+        sent_decode = sent
         assert(len(tags) == len(sent))
         if (conllfile != ''):
             words, heads = next(deptrees)

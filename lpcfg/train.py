@@ -327,8 +327,10 @@ def main(args):
         prior_spans = additionals 
       elif args.data_type == 'concreteness':
         con_list = additionals
-      elif args.data_type = 'both':
-        prior_spans, con_list = additionals
+      elif args.data_type == 'both':
+        prior_spans = [p[0] for p in additionals]
+        con_list = [p[1] for p in additionals]
+        #prior_spans, con_list = additionals
       
       #print('sents' + str([[train_data.idx2word[word_idx] for word_idx in list(sent.cpu().numpy())] for sent in sents]))
       # print(prior_spans)
@@ -479,14 +481,15 @@ def eval(data, model):
         sents = sents.cuda()
 
       con_list = prior_spans = None
-      
       if args.data_type == 'coupling':
         prior_spans = additionals 
       elif args.data_type == 'concreteness':
         con_list = additionals
-      elif args.data_type = 'both':
-        prior_spans, con_list = additionals
-
+      elif args.data_type == 'both':
+        prior_spans = [p[0] for p in additionals]
+        con_list = [p[1] for p in additionals]
+        #prior_spans, con_list = additionals
+      #print('sents' + str([[data.idx2word[word_idx] for word_idx in list(sent.cpu().numpy())] for sent in sents]))
       # note that for unsuperised parsing, we should do model(sents, argmax=True, use_mean = True)
       # but we don't for eval since we want a valid upper bound on PPL for early stopping
       # see eval.py for proper MAP inference
