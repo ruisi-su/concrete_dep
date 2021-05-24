@@ -257,12 +257,12 @@ def convert(indexer, lowercase, replace_num,
         action = get_actions(tree)
         tags, sent, sent_lower = get_tags_tokens_lowercase(tree)
         # sent_decode = ' '.join(sent).replace('\\', '')
-        sent_decode = sent_decode.split(' ')
+        # sent_decode = sent_decode.split(' ')
 
         assert(len(tags) == len(sent))
         if (conllfile != ''):
             words, heads = next(deptrees)
-            if words != sent_decode:
+            if words != sent: #sent_decode
                 print("Data mismatch, got {} in {}, but {} in {}.".format(sent_decode, textfile, words, conllfile))
                 assert(len(words) == len(heads))
             assert(len(heads) == len(sent))

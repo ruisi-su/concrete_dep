@@ -22,7 +22,7 @@ align_out:
 
 
 
-def couple(align_in, align_out, ctvb, ctnvb):
+def couple(align_in, align_out, ctvb, ctnvb, pred_only=True):
 	lcap, lfra = align_in.split(' ||| ')
 	lali = align_out.lower().strip().split()
 	# print(lali)
@@ -52,15 +52,17 @@ def couple(align_in, align_out, ctvb, ctnvb):
 	# frame labels are in the order: [pred, arg1, arg2, ..., argn]
 	# if predicate is never found in the captions
 	# couple each pair of argument in order (index of the caption)
-	# allow both arguments be heads
+	# allow both arguments be 
+	# if pred_only, do not couple arguments
 	spans = []
 	if ifra[0] == -1:
-		ctnvb += 1
-		ifra = [x for x in ifra if x != -1]
-		ifra.sort() # sort by order of occurance in caption
-		for i in range(1, len(ifra)):
-			spans.append((ifra[i-1], ifra[i]+1, ifra[i-1]))
-			spans.append((ifra[i-1], ifra[i]+1, ifra[i]))
+		if not pred_only:
+			ctnvb += 1
+			ifra = [x for x in ifra if x != -1]
+			ifra.sort() # sort by order of occurance in caption
+			for i in range(1, len(ifra)):
+				spans.append((ifra[i-1], ifra[i]+1, ifra[i-1]))
+				spans.append((ifra[i-1], ifra[i]+1, ifra[i]))
 	else:
 		ctvb += 1
 
@@ -81,7 +83,7 @@ def couple(align_in, align_out, ctvb, ctnvb):
 # print(s)
 
 # align_input = '../data/VGNSL_split/traindevtest.frame.cap-frame.split_noverb'
-# align_output = '../data/VGNSL_split/traindevtest.frame.cap-frame.split_noverb.out.no-lemmatization-frame'
+# align_output = '../data/VGNSL_split/traindevtest.frame.cap-frame.split_noverb.clean.out'
 # with open(align_input, 'r') as align_in, open(align_output, 'r') as align_out:
 # 	ctvb = ctnvb = 0
 # 	for ai, ao in zip(align_in, align_out):
