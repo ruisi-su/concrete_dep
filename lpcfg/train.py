@@ -177,7 +177,7 @@ def main(args):
                                 freeze_word_emb=args.freeze_word_emb,
                                 pretrained_word_emb=pretrained_word_emb_matrix,
                                 supervised_signals=args.supervised_signals,
-                                reward=args.reward
+                                reward=args.reward,
                                 non_root=args.non_root)
   else:
     raise NotImplementedError
@@ -197,6 +197,7 @@ def main(args):
     print("Model loaded from {}.".format(args.load_model))
   print("model architecture")
   model.train()
+  print(f'cuda is avail {cuda.is_available()}')
   if cuda.is_available():
     model.cuda()
   if init_model:

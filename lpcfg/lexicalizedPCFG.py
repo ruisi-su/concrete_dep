@@ -32,7 +32,6 @@ class LexicalizedPCFG(nn.Module):
       self.word_span_slice = slice(self.nt_states,self.states)
     self.supervised_signals = supervised_signals
     self.non_root=non_root
-
   # def logadd(self, x, y):
   #   d = torch.max(x,y)
   #   return torch.log(torch.exp(x-d) + torch.exp(y-d)) + d
@@ -173,7 +172,7 @@ class LexicalizedPCFG(nn.Module):
           for j in range(len(con_list[i])):
             cc_score = float(con_list[i][j])
             if cc_score != -1.0:
-              cc_score = cc_score #* 2.0 # / 5.0 * con_mult
+              cc_score = cc_score * self.reward # 2.0 # / 5.0 * con_mult
             else:
               cc_score = 0.0
             mask[i][0, r, :, j].add_(cc_score)
@@ -316,7 +315,7 @@ class LexicalizedPCFG(nn.Module):
           for j in range(len(con_list[i])):
             cc_score = float(con_list[i][j])
             if cc_score != -1.0:
-              cc_score = cc_score #* 2.0 #/ 5.0 * con_mult
+              cc_score = cc_score * self.reward #* 2.0 #/ 5.0 * con_mult
             else:
               cc_score = 0.0
             mask[i][0, r, :, j].add_(cc_score)
