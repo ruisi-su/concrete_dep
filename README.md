@@ -1,6 +1,6 @@
-# Multimodal Grammar Induction
+# Concrete Dependency Induction
 
-This repo adds visual priors to the lexicalized-pcfg. The original repo for the lpcfg model is https://github.com/neulab/neural-lpcfg.
+This is the implementation for the paper _Dependency Induction Through the Lens of Visual Perception_. We implemented based on the lpcfg [Lexicalized-PCFG](https://github.com/neulab/neural-lpcfg).
 
 # Preprocess
 
