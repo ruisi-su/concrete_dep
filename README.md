@@ -12,7 +12,9 @@ We provided the alignment input and output in the `data/proc_data` folder. Perio
 
 ## Dice scores
 To get the dice alignment scores:
-```python dice_alignment.py {alignment_file} > {file_prefix.out}
+
+```
+python dice_alignment.py {alignment_file} > {file_prefix.out}
 ```
 
 ## Baseline
