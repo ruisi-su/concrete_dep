@@ -4,8 +4,7 @@ The base code of the L-PCFG model is adapted from the paper
 Please see their [repo](https://github.com/neulab/neural-lpcfg) of the original paper for most up-to-date changes 
 
 ## Dependencies
-The code was tested in `python 3.6` and `pytorch 1.4`. We also require the `nltk` package if creating
-the processed data from the raw PTB dataset.
+The code was tested in `python 3.6` and `pytorch 1.4`.
 
 ## License
 MIT
