@@ -1,8 +1,6 @@
-# Compound Probabilistic Context-Free Grammars
-Code for the paper:  
+# Lexicalized Compound Probabilistic Context-Free Grammars (L-PCFG)
+The base code of the L-PCFG model is adapted from the paper 
 [The Return of Lexical Dependencies: Neural Lexicalized PCFGs](about:blank)  
-Hao Zhu, Yonatan Bisk, Graham Neubig 
-Submitted to TACL
 
 ## Dependencies
 The code was tested in `python 3.6` and `pytorch 1.4`. We also require the `nltk` package if creating
