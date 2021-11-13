@@ -14,10 +14,13 @@ To get the dice alignment scores:
 ```
 python dice_alignment.py {alignment_file} > {file_prefix.out}
 ```
+The dependencies (`.conllx` files) for MSCOCO are generated using [this repo](https://github.com/hankcs/TreebankPreprocessing)
+
+Dependencies folders should be placed in the `lpcfg/data` with the folder name `dep` to use during `preprocess.py`
 
 ## Train
 
-Sample training scripts are provided in `lpcfg/scripts` folder. Evaluation requires setting the argument `--mode test` when calling `train.py`
+Sample training scripts are provided in `lpcfg/scripts` folder. They can be executed `sh scripts/{script_you_want_to_run}.sh` in the `lpcfg` directory. Evaluation requires setting the argument `--mode test` when calling `train.py`
 
 ## Baseline
 ```python preprocess.py --vocabsize 100000 --replace_num 1 --dep --outputfile {OUTPUT_PATH}```
